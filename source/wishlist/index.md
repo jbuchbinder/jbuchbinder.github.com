@@ -17,12 +17,16 @@ This is a list of things that I’d like to have at some point or other, split u
 *   [ART DPS II][3] digital compressor
 *   [JoeMeek OneQ][4] compressor
 *   ~~[12′ TOSLINK cable][5]~~ – Found these at Ocean State Job Lot for 3$ a piece.
+*   [Carvin CTM100][25]: Someone had brought this model mic into the studio with them, and it seems to be versatile enough that I should be getting one.
+*   [Amazon Studio Wishlist][26]
 
  [1]: http://www.zzounds.com/item--AKGPERCEPTION220
  [2]: http://www.zzounds.com/item--AKGPERCEPTION420
  [3]: http://www.zzounds.com/item--ARTDPSII
  [4]: http://www.zzounds.com/item--JOEONEQ
  [5]: http://www.geekbro.com/index.cfm/hurl/page=product/itemid=699467?source=GoogleBase
+ [25]: http://www.carvinguitars.com/products/CTM100
+ [26]: http://www.amazon.com/registry/wishlist/2TWP127J38CO1/
 
 
 
@@ -40,8 +44,6 @@ This is a list of things that I’d like to have at some point or other, split u
  [9]: http://www.zzounds.com/item--ASDALSF500
 
 
-
-
 ## Photography/Cinematography Related
 
 *   ~~[Canon Speedlite 580EX][10] flash~~ - Purchased this in 2012. Then the 600EX came out, proving that Canon hates me.
@@ -51,6 +53,7 @@ This is a list of things that I’d like to have at some point or other, split u
 *   ~~[Two lighting umbrellas, stands, bulbs][14]~~
 *   [Three backdrops and stand][15]
 *   [Wireless flash trigger][16]
+*   [Amazon Photography/Cinematography Wishlist][24]: Externally maintained wishlist for my photography/cinematography gear. If you owe me one (or just like me a lot), I always appreciate gift purchases from there.
 
  [10]: http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&fcategoryid=141&modelid=10514
  [11]: http://www.lensplay.com/lenses/lens_data.php?lensID=26
@@ -59,6 +62,7 @@ This is a list of things that I’d like to have at some point or other, split u
  [14]: http://cgi.ebay.com/Photo-Studio-Light-Umbrella-Lighting-Essentials-FBB57_W0QQitemZ390165706188QQihZ026QQcategoryZ79009QQssPageNameZWDVWQQrdZ1QQcmdZViewItem
  [15]: http://cgi.ebay.com/Portrait-Backdrop-Background-Stand-3-Muslins-MS03-/260614029943
  [16]: http://cgi.ebay.com/PT-04-Wireless-Flash-Trigger-CANON-EOS-DSLR-SPEEDLIGHT-/280565851558
+ [24]: http://www.amazon.com/registry/wishlist/24PJBXIODO1IK/
 
 
 ## Computer/Gadget Related
