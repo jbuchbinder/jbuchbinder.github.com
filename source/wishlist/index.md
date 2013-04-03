@@ -31,7 +31,7 @@ This is a list of things that I’d like to have at some point or other, split u
 ## Music Related
 
 *   ~~Double bass bow~~ (thanks to Jere and his parents for buying me one of these)
-*   [Alvarez AV-2][6] baritone guitar (discontinued, needs to be purchased used) or [Alvarez-Yairi YB-1][7] baritone guitar (not discontinued yet)
+*   [Alvarez AV-2][6] baritone guitar (discontinued, needs to be purchased used) or [Alvarez-Yairi YB-1][7] baritone guitar (not discontinued yet) ; or the [Alvarez ABT60][27] (which is probably the best bet of the lot)
 *   ~~[Alesis DM-5 Pro Kit (with Surge Cymbals and mesh heads)][8] electronic drumkit~~ — ended up with a Roland V-Drum set instead, although those Surge cymbals sound nice…
 *   [Ashdown Superfly][9] bass amplifier
 
@@ -39,6 +39,7 @@ This is a list of things that I’d like to have at some point or other, split u
  [7]: http://guitars.musiciansfriend.com/product/Alvarez-Yairi-YB1-Jumbo-Baritone?sku=518851
  [8]: http://www.zzounds.com/item--ALEDM5PROKIT
  [9]: http://www.zzounds.com/item--ASDALSF500
+ [27]: http://www.zzounds.com/item--ALVABT60
 
 ## Photography/Cinematography Related
 
