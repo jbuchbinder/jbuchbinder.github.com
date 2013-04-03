@@ -28,9 +28,6 @@ This is a list of things that I’d like to have at some point or other, split u
  [25]: http://www.carvinguitars.com/products/CTM100
  [26]: http://www.amazon.com/registry/wishlist/2TWP127J38CO1/
 
-
-
-
 ## Music Related
 
 *   ~~Double bass bow~~ (thanks to Jere and his parents for buying me one of these)
@@ -42,7 +39,6 @@ This is a list of things that I’d like to have at some point or other, split u
  [7]: http://guitars.musiciansfriend.com/product/Alvarez-Yairi-YB1-Jumbo-Baritone?sku=518851
  [8]: http://www.zzounds.com/item--ALEDM5PROKIT
  [9]: http://www.zzounds.com/item--ASDALSF500
-
 
 ## Photography/Cinematography Related
 
@@ -64,15 +60,14 @@ This is a list of things that I’d like to have at some point or other, split u
  [16]: http://cgi.ebay.com/PT-04-Wireless-Flash-Trigger-CANON-EOS-DSLR-SPEEDLIGHT-/280565851558
  [24]: http://www.amazon.com/registry/wishlist/24PJBXIODO1IK/
 
-
 ## Computer/Gadget Related
 
 *   ~~[Linksys WRT54GL][17]~~ – Replacement wireless router for the one I’ve burned out. Needs to be the “L” model, otherwise it won’t work for me. Got my present router working for me.
 *   ~~[IBM eServer 325 Dual Opteron 248][18] rackmount server~~
-*   [GP2X Wiz][19] gaming unit
-*   [Archos][20] portable media device
-*   [22" LCD monitor][21] (alternate buy at [mwave][22])
-*   [Legend of Zelda: Twilight Princess (Wii game)][23] – need this for a Nintendo Wii hack to work properly … ended up soft-modding the Wii, no game requried.
+*   ~~[GP2X Wiz][19] gaming unit~~
+*   ~~[Archos][20] portable media device~~
+*   [22-24" LCD monitor][21] (alternate buy [here][22])
+*   ~~[Legend of Zelda: Twilight Princess (Wii game)][23]~~ – need this for a Nintendo Wii hack to work properly … ended up soft-modding the Wii, no game requried.
 
  [17]: http://www.amazon.com/gp/product/B000BTL0OA
  [18]: http://www.geeks.com/details.asp?invtid=E325-R&cat=SYS
