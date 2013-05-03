@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Remember, No One Cares | /home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/categories/remember-no-one-cares/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/categories/remember-no-one-cares/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Gear vs Skill]]></title>
-    <link href="http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill/"/>
+    <link href="http://jbuchbinder.com/blog/2013/05/03/gear-vs-skill/"/>
     <updated>2013-05-03T18:10:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill</id>
+    <id>http://jbuchbinder.com/blog/2013/05/03/gear-vs-skill</id>
     <content type="html"><![CDATA[<p>I remember a conversation I had with my brother, a few years back. He was
 talking about the amount of photographic equipment which he had been dumping
 money into purchasing, in the hopes of improving the output from his camera.
@@ -52,7 +52,7 @@ eye sucks, your footage sucks. A lot of the cinematographers (and just plain
 old camera operators) with which I've come in contact have bemoaned not
 owning a RED ONE, or even a higher grade DSLR camera body -- and assuming
 that any decent footage I can pull has everything to do with the equipment
-I'm using and nothing to do with my ability to use said equipment.</p>
+I'm using, and nothing to do with my ability to use said equipment.</p>
 
 <p>Years ago, I remember a gig I had, as a bass player. At the time, I had
 brought a <a href="http://www.vintagewashburn.com/Bass/Mercurybass.html">Washburn MB-6</a> (a strange Mercury series instrument with
@@ -65,15 +65,16 @@ that anyone would have been able to do the same, given the chance to play
 that instrument.</p>
 
 <p>To sum up, you need a good eye -- more than anything else -- but it's also
-important to have the right equipment for the right purpose.</p>
+important to have the right equipment for the right purpose. Oh, and don't
+forget to stablize your shots ...</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Migrating to Octopress]]></title>
-    <link href="http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress/"/>
+    <link href="http://jbuchbinder.com/blog/2013/04/02/migrating-to-octopress/"/>
     <updated>2013-04-02T08:58:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress</id>
+    <id>http://jbuchbinder.com/blog/2013/04/02/migrating-to-octopress</id>
     <content type="html"><![CDATA[<p>After much hemming, hawing, and gnashing of teeth, I'm migrating my years of sporadic blogging from <a href="http://wordpress.org/">Wordpress</a> to <a href="http://octopress.org/">Octopress</a>. It seems to integrate a little bit better with both my "command line ethos" and my workflow. I'm sure (for anyone keeping track) that there are probably going to be some weird formatting issues, potentially broken pages, and other incidences of oddness in some places. Please excuse the mess, we're remodeling.</p>
 
 <p>In addition to the move, I'm trying to move away from blog entries regarding political events -- not because I should be worried about potential ramifications for my professional/public life -- but rather because there's only a certain amount of pissing into the wind that a man can do before he gets tired of having a mouthful of piss. That's not to say that there won't be <em>any</em> political stuff here, but there's going to be far less.</p>
@@ -82,9 +83,9 @@ important to have the right equipment for the right purpose.</p>
   
   <entry>
     <title type="html"><![CDATA[Election 2012 Summary]]></title>
-    <link href="http://jbuchbinder.github.com/2012/11/06/election-2012-summary/"/>
+    <link href="http://jbuchbinder.com/2012/11/06/election-2012-summary/"/>
     <updated>2012-11-06T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2012/11/06/election-2012-summary</id>
+    <id>http://jbuchbinder.com/2012/11/06/election-2012-summary</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>It’s the day before the 2012 Presidental Election. I’m disappointed, as usual, by the choice of <a href="http://en.wikipedia.org/wiki/Mitt_Romney">far right</a> and <a href="http://en.wikipedia.org/wiki/Barack_Obama">center right</a> “choices” that we have. I again am forced into the decision of either voting for the preferable third party candidate, with whom I share views on the vast majority of issues (<a href="http://www.jillstein.org/">Dr. Jill Stein</a>, for anyone wondering — I still think Ron Paul is a complete crankcase, and Gary Johnson is way too “fuck Federalism” for my taste) and effectively helping to elect an out-of-touch sociopathic plutocrat butt-munch, or vote the “lesser of two evils” and probably end up with a Democrat who is going to “<a href="http://www.washingtonpost.com/business/economy/obama-says-hell-renew-pursuit-of-grand-bargain-offering-specifics-on-agenda/2012/10/24/0e2b843c-1e0e-11e2-9cd5-b55c38388962_story.html">Grand Bargain</a>” away the Great Society programs. All of that being said, I have a few serious issues with this election cycle.</p>
@@ -111,9 +112,9 @@ important to have the right equipment for the right purpose.</p>
   
   <entry>
     <title type="html"><![CDATA[Imaginary Horserace, 2012 Edition]]></title>
-    <link href="http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition/"/>
+    <link href="http://jbuchbinder.com/2012/11/05/imaginary-horserace-2012-edition/"/>
     <updated>2012-11-05T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition</id>
+    <id>http://jbuchbinder.com/2012/11/05/imaginary-horserace-2012-edition</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>So, the 2012 United States Presidental Election is effectively between Barack Obama and Willard “Mitt” Romney. I don’t think I can stress how little this registers on my “give-a-fuck-o-meter”, although I have been inundated by dire prognostications regarding the end of our “American Way of Life ™” (whatever that is) and a lot of scare-tactic advertising campaigns unleashed by the virtually unlimited flow of corporate money (or as Constitutional Originalist fuckwads like Antonin Scalia would say, “free speech”) into the current election cycle.</p>
@@ -142,9 +143,9 @@ important to have the right equipment for the right purpose.</p>
   
   <entry>
     <title type="html"><![CDATA[The Dangers of Over-Simplification]]></title>
-    <link href="http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification/"/>
+    <link href="http://jbuchbinder.com/2012/05/18/the-dangers-of-over-simplification/"/>
     <updated>2012-05-18T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification</id>
+    <id>http://jbuchbinder.com/2012/05/18/the-dangers-of-over-simplification</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I was listening to an FM talk-radio host (I know, I know, when will I ever learn…) this afternoon, and caught a peculiar rant. He was complaining about how terrible the public sector (and government in general) was compared to the private sector, based on two events.</p>

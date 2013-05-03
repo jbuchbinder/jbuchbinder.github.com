@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Film | /home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/categories/film/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/categories/film/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Adventures of Buckaroo Banzai Across the Eighth Dimension]]></title>
-    <link href="http://jbuchbinder.github.com/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension/"/>
+    <link href="http://jbuchbinder.com/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension/"/>
     <updated>2010-01-30T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension</id>
+    <id>http://jbuchbinder.com/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the 1980s called <a href="http://www.imdb.com/title/tt0086856/">The Adventures of Buckaroo Banzai Across the Eighth Dimension</a>.</p>

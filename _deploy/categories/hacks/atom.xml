@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/categories/hacks/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
-    <link href="http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files/"/>
+    <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
     <updated>2012-03-22T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files</id>
+    <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
@@ -52,9 +52,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Updated: Linux support for ADS DVD Xpress DX2]]></title>
-    <link href="http://jbuchbinder.github.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
+    <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
     <updated>2010-03-25T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
+    <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
@@ -68,9 +68,9 @@ Patch :</p>
   
   <entry>
     <title type="html"><![CDATA[OpenBSD pf states monitoring]]></title>
-    <link href="http://jbuchbinder.github.com/2010/01/29/openbsd-pf-states-monitoring/"/>
+    <link href="http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring/"/>
     <updated>2010-01-29T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2010/01/29/openbsd-pf-states-monitoring</id>
+    <id>http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>The simple recipe is to add this to root’s cron:</p>
@@ -126,9 +126,9 @@ while (chomp( my $line = )) {
   
   <entry>
     <title type="html"><![CDATA[Backing up MAPI contacts and calendar from Exchange Server]]></title>
-    <link href="http://jbuchbinder.github.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/"/>
+    <link href="http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/"/>
     <updated>2010-01-22T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server</id>
+    <id>http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.</p>
@@ -148,9 +148,9 @@ while (chomp( my $line = )) {
   
   <entry>
     <title type="html"><![CDATA[IMAP Synchronization]]></title>
-    <link href="http://jbuchbinder.github.com/2010/01/17/imap-synchronization/"/>
+    <link href="http://jbuchbinder.com/2010/01/17/imap-synchronization/"/>
     <updated>2010-01-17T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2010/01/17/imap-synchronization</id>
+    <id>http://jbuchbinder.com/2010/01/17/imap-synchronization</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I hate it. IMAP Synchronization, that is.</p>

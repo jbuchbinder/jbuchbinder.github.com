@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://jbuchbinder.github.com/sitemap.xml 
+Sitemap: http://jbuchbinder.com/sitemap.xml 

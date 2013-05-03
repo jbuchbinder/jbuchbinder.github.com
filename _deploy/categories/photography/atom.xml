@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Photography | /home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/categories/photography/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/categories/photography/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Succumbing to the Camera Phone]]></title>
-    <link href="http://jbuchbinder.github.com/2010/03/02/succumbing-to-the-camera-phone/"/>
+    <link href="http://jbuchbinder.com/2010/03/02/succumbing-to-the-camera-phone/"/>
     <updated>2010-03-02T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2010/03/02/succumbing-to-the-camera-phone</id>
+    <id>http://jbuchbinder.com/2010/03/02/succumbing-to-the-camera-phone</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I do not like camera phones in the same way that I don’t particularly care for flash photography; you can produce good results (or at least passable results) with either, but the majority of stuff that comes out of it is just pure crap.</p>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[Front page fail]]></title>
-    <link href="http://jbuchbinder.github.com/2009/01/20/front-page-fail/"/>
+    <link href="http://jbuchbinder.com/2009/01/20/front-page-fail/"/>
     <updated>2009-01-20T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2009/01/20/front-page-fail</id>
+    <id>http://jbuchbinder.com/2009/01/20/front-page-fail</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>One of my pictures made it to the front page of the infamous “<a href="http://failblog.org/">failblog</a>“, consisting of <a href="http://failblog.org/2009/01/20/reputable-kids-program-fail/">a picture of a very disreputable looking van</a> with “Little Angels Program” spraypainted on the side. I had caught that image earlier in 2008 in Willimantic, CT while I was walking through the hill section.</p>
@@ -45,9 +45,9 @@
   
   <entry>
     <title type="html"><![CDATA[First stopmotion test]]></title>
-    <link href="http://jbuchbinder.github.com/2007/05/21/first-stopmotion-test/"/>
+    <link href="http://jbuchbinder.com/2007/05/21/first-stopmotion-test/"/>
     <updated>2007-05-21T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2007/05/21/first-stopmotion-test</id>
+    <id>http://jbuchbinder.com/2007/05/21/first-stopmotion-test</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Our first few stopmotion animation tests were successful. As per everything else we do, everything was done with Linux and freely available opensource software. In this case, <a href="http://gphoto.org">gphoto2</a>, imagemagick and mplayer (with ffmpeg thrown in for the .flv conversion for <a href="http://www.youtube.com/">Gootube</a>.</p>
@@ -64,9 +64,9 @@
   
   <entry>
     <title type="html"><![CDATA[Stan at the Lake]]></title>
-    <link href="http://jbuchbinder.github.com/2006/08/03/stan-at-the-lake/"/>
+    <link href="http://jbuchbinder.com/2006/08/03/stan-at-the-lake/"/>
     <updated>2006-08-03T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2006/08/03/stan-at-the-lake</id>
+    <id>http://jbuchbinder.com/2006/08/03/stan-at-the-lake</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I took <a href="http://www.flickr.com/photos/whatsyourmeme/tags/stan/">Stan</a> up to Crystal Lake, where he had a great time swimming and doing whatever it is that dogs do. Some pictures:</p>
@@ -77,9 +77,9 @@
   
   <entry>
     <title type="html"><![CDATA[Straight from the horse&#8217;s &#8230; eyes?]]></title>
-    <link href="http://jbuchbinder.github.com/2006/04/10/straight-from-the-horses-eyes/"/>
+    <link href="http://jbuchbinder.com/2006/04/10/straight-from-the-horses-eyes/"/>
     <updated>2006-04-10T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2006/04/10/straight-from-the-horses-eyes</id>
+    <id>http://jbuchbinder.com/2006/04/10/straight-from-the-horses-eyes</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>[![Horse eyes][2]][2]<br/>

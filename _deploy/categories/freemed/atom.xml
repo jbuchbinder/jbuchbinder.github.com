@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: FreeMED | /home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/categories/freemed/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/categories/freemed/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Xela Redux 2011]]></title>
-    <link href="http://jbuchbinder.github.com/2011/12/28/xela-redux-2011/"/>
+    <link href="http://jbuchbinder.com/2011/12/28/xela-redux-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2011/12/28/xela-redux-2011</id>
+    <id>http://jbuchbinder.com/2011/12/28/xela-redux-2011</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Better late than never, these are the blog entries I had put together from the Xela trip this year, which I had never gotten around to posting.</p>
@@ -114,9 +114,9 @@
   
   <entry>
     <title type="html"><![CDATA[Project Review 2011]]></title>
-    <link href="http://jbuchbinder.github.com/2011/12/28/project-review-2011/"/>
+    <link href="http://jbuchbinder.com/2011/12/28/project-review-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2011/12/28/project-review-2011</id>
+    <id>http://jbuchbinder.com/2011/12/28/project-review-2011</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I’ve been a bit lax in posting about my work here, mainly because Twitter makes you lazy. (Why write complete sentences when you can summarize in 140 characters or less?)</p>
@@ -142,9 +142,9 @@
   
   <entry>
     <title type="html"><![CDATA[Xela Day Seven: Huevos revuelto con queso sin carne y adios]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios/"/>
+    <link href="http://jbuchbinder.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios/"/>
     <updated>2010-09-25T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios</id>
+    <id>http://jbuchbinder.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>It was my last day in Xela, with all of the basic setup, wiring, and other on-site work having been completed on Friday. As I’m lousy at negotiating prices even in English, Jorge was kind enough to go from shop to shop with me looking for some gifts for my wife and keepsakes to take home with me, after I went out with Irv to find a whiteboard for the clinic. The title of this refers to my normal breakfast order in the hotel, which I was finally able to order myself — “scrambled eggs with cheese, no meat”. When it comes to breakfast, I’m a bit more than mildly predictable.</p>
@@ -165,9 +165,9 @@
   
   <entry>
     <title type="html"><![CDATA[Xela Day Six: Implementation]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/24/xela-day-six-implementation/"/>
+    <link href="http://jbuchbinder.com/2010/09/24/xela-day-six-implementation/"/>
     <updated>2010-09-24T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/24/xela-day-six-implementation</id>
+    <id>http://jbuchbinder.com/2010/09/24/xela-day-six-implementation</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>More than half our our crew parted ways to do a mobile clinic today, whereas Irv, Shelley and I stayed behind with Dr Christian and a few med students to attempt to get the EMR functional in a way which would jive with the clinic’s workflow. I hit quite a few snags in some of the UI implementation, since I have been pretty hands-off in the development of the UI over the last few months. Even with that, we managed to get the registration and triage components up and operational, while at the same time stringing category 5 cable around the clinic.</p>
@@ -184,9 +184,9 @@
   
   <entry>
     <title type="html"><![CDATA[Xela Day Four: Aldea Pujujil]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/23/xela-day-four-aldea-pujujil/"/>
+    <link href="http://jbuchbinder.com/2010/09/23/xela-day-four-aldea-pujujil/"/>
     <updated>2010-09-23T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/23/xela-day-four-aldea-pujujil</id>
+    <id>http://jbuchbinder.com/2010/09/23/xela-day-four-aldea-pujujil</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Today we left early in the morning, around 7am, to head out to the village of “Aldea Pujujil” in Solola, Guatemala to do a travelling clinic. We took two “micro buses” with ten to thirteen people in each with equipment tied down to the top, and left Xela heading back towards Guatemala City on the Pan American Highway.</p>

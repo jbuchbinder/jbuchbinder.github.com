@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Video and Animation | /home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/categories/video-and-animation/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/categories/video-and-animation/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Improved Film Noir rendering]]></title>
-    <link href="http://jbuchbinder.github.com/2007/08/09/improved-film-noir-rendering/"/>
+    <link href="http://jbuchbinder.com/2007/08/09/improved-film-noir-rendering/"/>
     <updated>2007-08-09T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2007/08/09/improved-film-noir-rendering</id>
+    <id>http://jbuchbinder.com/2007/08/09/improved-film-noir-rendering</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Thanks to my brother, who is much better with <a href="http://www.goof.com/pcg/marc/gimp.html">gimp-perl</a> than I am, there’s a vastly improved version of the original <strong>RenderFilmNoir.pl</strong> script, available <a href="http://jeff.ourexchange.net/wp-content/uploads/2007/08/renderfilmnoirpl.gz">here</a>.</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[Linux support for ADS DVD Xpress DX2]]></title>
-    <link href="http://jbuchbinder.github.com/2007/07/22/linux-support-for-ads-dvd-xpress-dx2/"/>
+    <link href="http://jbuchbinder.com/2007/07/22/linux-support-for-ads-dvd-xpress-dx2/"/>
     <updated>2007-07-22T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2007/07/22/linux-support-for-ads-dvd-xpress-dx2</id>
+    <id>http://jbuchbinder.com/2007/07/22/linux-support-for-ads-dvd-xpress-dx2</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I take no credit for this at all, but the maintainer of the go7007 linux driver recently added support for the ADS DVD Xpress DX2 (which until recently was conveniently available at Walmart and other retail stores) after I took a picture of the board and asked him *very* nicely. If you get any kind of mileage out of it and decide that you really *have* to send someone money, please send it to him. (To avoid spam, check out the name of the package maintainer.)</p>
@@ -47,9 +47,9 @@ Site for device : <a href="http://www.adstech.com/products/USBAV-709-EF/intro/US
   
   <entry>
     <title type="html"><![CDATA[First stopmotion test]]></title>
-    <link href="http://jbuchbinder.github.com/2007/05/21/first-stopmotion-test/"/>
+    <link href="http://jbuchbinder.com/2007/05/21/first-stopmotion-test/"/>
     <updated>2007-05-21T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2007/05/21/first-stopmotion-test</id>
+    <id>http://jbuchbinder.com/2007/05/21/first-stopmotion-test</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Our first few stopmotion animation tests were successful. As per everything else we do, everything was done with Linux and freely available opensource software. In this case, <a href="http://gphoto.org">gphoto2</a>, imagemagick and mplayer (with ffmpeg thrown in for the .flv conversion for <a href="http://www.youtube.com/">Gootube</a>.</p>

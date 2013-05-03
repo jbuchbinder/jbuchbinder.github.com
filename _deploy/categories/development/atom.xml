@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Development | /home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/categories/development/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/categories/development/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
-    <link href="http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files/"/>
+    <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
     <updated>2012-03-22T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files</id>
+    <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
@@ -52,9 +52,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Xela Redux 2011]]></title>
-    <link href="http://jbuchbinder.github.com/2011/12/28/xela-redux-2011/"/>
+    <link href="http://jbuchbinder.com/2011/12/28/xela-redux-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2011/12/28/xela-redux-2011</id>
+    <id>http://jbuchbinder.com/2011/12/28/xela-redux-2011</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Better late than never, these are the blog entries I had put together from the Xela trip this year, which I had never gotten around to posting.</p>
@@ -151,9 +151,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Project Review 2011]]></title>
-    <link href="http://jbuchbinder.github.com/2011/12/28/project-review-2011/"/>
+    <link href="http://jbuchbinder.com/2011/12/28/project-review-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2011/12/28/project-review-2011</id>
+    <id>http://jbuchbinder.com/2011/12/28/project-review-2011</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I’ve been a bit lax in posting about my work here, mainly because Twitter makes you lazy. (Why write complete sentences when you can summarize in 140 characters or less?)</p>
@@ -179,9 +179,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Designing applications for clustering]]></title>
-    <link href="http://jbuchbinder.github.com/2010/05/21/designing-applications-for-clustering/"/>
+    <link href="http://jbuchbinder.com/2010/05/21/designing-applications-for-clustering/"/>
     <updated>2010-05-21T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/05/21/designing-applications-for-clustering</id>
+    <id>http://jbuchbinder.com/2010/05/21/designing-applications-for-clustering</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
@@ -201,9 +201,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Updated: Linux support for ADS DVD Xpress DX2]]></title>
-    <link href="http://jbuchbinder.github.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
+    <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
     <updated>2010-03-25T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
+    <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[/home/jeff/blog]]></title>
-  <link href="http://jbuchbinder.github.com/atom.xml" rel="self"/>
-  <link href="http://jbuchbinder.github.com/"/>
-  <updated>2013-05-03T18:28:35-04:00</updated>
-  <id>http://jbuchbinder.github.com/</id>
+  <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-05-03T18:42:48-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Gear vs Skill]]></title>
-    <link href="http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill/"/>
+    <link href="http://jbuchbinder.com/blog/2013/05/03/gear-vs-skill/"/>
     <updated>2013-05-03T18:10:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill</id>
+    <id>http://jbuchbinder.com/blog/2013/05/03/gear-vs-skill</id>
     <content type="html"><![CDATA[<p>I remember a conversation I had with my brother, a few years back. He was
 talking about the amount of photographic equipment which he had been dumping
 money into purchasing, in the hopes of improving the output from his camera.
@@ -53,7 +53,7 @@ eye sucks, your footage sucks. A lot of the cinematographers (and just plain
 old camera operators) with which I&#8217;ve come in contact have bemoaned not
 owning a RED ONE, or even a higher grade DSLR camera body &#8211; and assuming
 that any decent footage I can pull has everything to do with the equipment
-I&#8217;m using and nothing to do with my ability to use said equipment.</p>
+I&#8217;m using, and nothing to do with my ability to use said equipment.</p>
 
 <p>Years ago, I remember a gig I had, as a bass player. At the time, I had
 brought a <a href="http://www.vintagewashburn.com/Bass/Mercurybass.html">Washburn MB-6</a> (a strange Mercury series instrument with
@@ -66,15 +66,16 @@ that anyone would have been able to do the same, given the chance to play
 that instrument.</p>
 
 <p>To sum up, you need a good eye &#8211; more than anything else &#8211; but it&#8217;s also
-important to have the right equipment for the right purpose.</p>
+important to have the right equipment for the right purpose. Oh, and don&#8217;t
+forget to stablize your shots &#8230;</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Heading to the 2013 Boston International Film Festival]]></title>
-    <link href="http://jbuchbinder.github.com/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival/"/>
+    <link href="http://jbuchbinder.com/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival/"/>
     <updated>2013-04-12T13:38:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival</id>
+    <id>http://jbuchbinder.com/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival</id>
     <content type="html"><![CDATA[<p>I&#8217;m heading off to the 2013 <a href="http://www.bifilmfestival.com/">Boston International Film Festival</a>
 opening ceremonies this evening, where the first short film which I
 directed, edited, and shot is being screened/premiered. It&#8217;s called
@@ -94,9 +95,9 @@ postings.</em></p>
   
   <entry>
     <title type="html"><![CDATA[Migrating to Octopress]]></title>
-    <link href="http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress/"/>
+    <link href="http://jbuchbinder.com/blog/2013/04/02/migrating-to-octopress/"/>
     <updated>2013-04-02T08:58:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress</id>
+    <id>http://jbuchbinder.com/blog/2013/04/02/migrating-to-octopress</id>
     <content type="html"><![CDATA[<p>After much hemming, hawing, and gnashing of teeth, I&#8217;m migrating my years of sporadic blogging from <a href="http://wordpress.org/">Wordpress</a> to <a href="http://octopress.org/">Octopress</a>. It seems to integrate a little bit better with both my &#8220;command line ethos&#8221; and my workflow. I&#8217;m sure (for anyone keeping track) that there are probably going to be some weird formatting issues, potentially broken pages, and other incidences of oddness in some places. Please excuse the mess, we&#8217;re remodeling.</p>
 
 <p>In addition to the move, I&#8217;m trying to move away from blog entries regarding political events &#8211; not because I should be worried about potential ramifications for my professional/public life &#8211; but rather because there&#8217;s only a certain amount of pissing into the wind that a man can do before he gets tired of having a mouthful of piss. That&#8217;s not to say that there won&#8217;t be <em>any</em> political stuff here, but there&#8217;s going to be far less.</p>
@@ -105,9 +106,9 @@ postings.</em></p>
   
   <entry>
     <title type="html"><![CDATA[Election 2012 Summary]]></title>
-    <link href="http://jbuchbinder.github.com/2012/11/06/election-2012-summary/"/>
+    <link href="http://jbuchbinder.com/2012/11/06/election-2012-summary/"/>
     <updated>2012-11-06T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2012/11/06/election-2012-summary</id>
+    <id>http://jbuchbinder.com/2012/11/06/election-2012-summary</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>It’s the day before the 2012 Presidental Election. I’m disappointed, as usual, by the choice of <a href="http://en.wikipedia.org/wiki/Mitt_Romney">far right</a> and <a href="http://en.wikipedia.org/wiki/Barack_Obama">center right</a> “choices” that we have. I again am forced into the decision of either voting for the preferable third party candidate, with whom I share views on the vast majority of issues (<a href="http://www.jillstein.org/">Dr. Jill Stein</a>, for anyone wondering — I still think Ron Paul is a complete crankcase, and Gary Johnson is way too “fuck Federalism” for my taste) and effectively helping to elect an out-of-touch sociopathic plutocrat butt-munch, or vote the “lesser of two evils” and probably end up with a Democrat who is going to “<a href="http://www.washingtonpost.com/business/economy/obama-says-hell-renew-pursuit-of-grand-bargain-offering-specifics-on-agenda/2012/10/24/0e2b843c-1e0e-11e2-9cd5-b55c38388962_story.html">Grand Bargain</a>” away the Great Society programs. All of that being said, I have a few serious issues with this election cycle.</p>
@@ -134,9 +135,9 @@ postings.</em></p>
   
   <entry>
     <title type="html"><![CDATA[Imaginary Horserace, 2012 Edition]]></title>
-    <link href="http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition/"/>
+    <link href="http://jbuchbinder.com/2012/11/05/imaginary-horserace-2012-edition/"/>
     <updated>2012-11-05T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition</id>
+    <id>http://jbuchbinder.com/2012/11/05/imaginary-horserace-2012-edition</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>So, the 2012 United States Presidental Election is effectively between Barack Obama and Willard “Mitt” Romney. I don’t think I can stress how little this registers on my “give-a-fuck-o-meter”, although I have been inundated by dire prognostications regarding the end of our “American Way of Life ™” (whatever that is) and a lot of scare-tactic advertising campaigns unleashed by the virtually unlimited flow of corporate money (or as Constitutional Originalist fuckwads like Antonin Scalia would say, “free speech”) into the current election cycle.</p>
@@ -165,9 +166,9 @@ postings.</em></p>
   
   <entry>
     <title type="html"><![CDATA[The Dangers of Over-Simplification]]></title>
-    <link href="http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification/"/>
+    <link href="http://jbuchbinder.com/2012/05/18/the-dangers-of-over-simplification/"/>
     <updated>2012-05-18T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification</id>
+    <id>http://jbuchbinder.com/2012/05/18/the-dangers-of-over-simplification</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I was listening to an FM talk-radio host (I know, I know, when will I ever learn…) this afternoon, and caught a peculiar rant. He was complaining about how terrible the public sector (and government in general) was compared to the private sector, based on two events.</p>
@@ -192,9 +193,9 @@ postings.</em></p>
   
   <entry>
     <title type="html"><![CDATA[Money well spent]]></title>
-    <link href="http://jbuchbinder.github.com/2012/05/18/money-well-spent/"/>
+    <link href="http://jbuchbinder.com/2012/05/18/money-well-spent/"/>
     <updated>2012-05-18T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/05/18/money-well-spent</id>
+    <id>http://jbuchbinder.com/2012/05/18/money-well-spent</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I caught a piece on NPR this morning, regarding Governor Dannel Malloy’s proposed educational budget for Connecticut. Most of it was the normal policy discussion, but there was a part of it where they discussed increasing funding in some of the neediest municipalities in Connecticut. There, it was revealed that Litchfield had expressed concern with the governor’s plan to deallocate money which was designed to bring their students together with other kids for the purposes of “racial diversity”, citing that it wouldn’t foster “racial understanding”. The total program budget was around 11 million dollars, of which the governor had wanted to deallocate 5 million. (For those who don’t know about <a href="http://en.wikipedia.org/wiki/Litchfield_County,_Connecticut">Litchfield County</a>, it’s 95 % white, and pretty damn conservative and well off. It was the only county in Southern New England that went to Bush the Younger in the 2004 presidential contest.)</p>
@@ -209,9 +210,9 @@ postings.</em></p>
   
   <entry>
     <title type="html"><![CDATA[FJM Treatment of Charter School Argument]]></title>
-    <link href="http://jbuchbinder.github.com/2012/05/18/fjm-treatment-of-charter-school-argument/"/>
+    <link href="http://jbuchbinder.com/2012/05/18/fjm-treatment-of-charter-school-argument/"/>
     <updated>2012-05-18T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/05/18/fjm-treatment-of-charter-school-argument</id>
+    <id>http://jbuchbinder.com/2012/05/18/fjm-treatment-of-charter-school-argument</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>This is an argument I had with someone publicly a little while ago. I was fighting the concept that the entire educational system was a complete failure, and should be replaced with Michelle-Rhee-style charter schools.</p>
@@ -271,9 +272,9 @@ And if nothing else your statement above proves my point that if things like mon
   
   <entry>
     <title type="html"><![CDATA[Just a theory]]></title>
-    <link href="http://jbuchbinder.github.com/2012/03/27/just-a-theory/"/>
+    <link href="http://jbuchbinder.com/2012/03/27/just-a-theory/"/>
     <updated>2012-03-27T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/03/27/just-a-theory</id>
+    <id>http://jbuchbinder.com/2012/03/27/just-a-theory</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I’ve been trying to keep up with the <a href="http://www.myleftnutmeg.com/diary/14133/pelto-dan-malloy-and-the-national-forces-pushing-for-education-reform">education reform battle in Connecticut</a>, since it’s my home state. The people pushing for reform (along with such “luminaries” as <a href="http://www.dailykos.com/story/2011/08/22/1009422/-Michelle-Rhee-still-refuses-to-answer-questions-about-cheating-scandal">Michelle Rhee</a> and <a href="http://redgreenandblue.org/2011/11/30/the-worst-of-the-1-could-it-be-walmart-chairman-rob-walton/">The Walton Foundation</a>, who incidentally would privatize everything up to and including <a href="http://blogs.alternet.org/danbacher/2011/08/17/wal-mart-gives-36-million-to-ocean-privatization-efforts/">the ocean</a>) are pushing for publicly subsidized yet privatized “<a href="http://en.wikipedia.org/wiki/Charter_school">charter schools</a>” and the breaking of teachers’ union protections.</p>
@@ -292,9 +293,9 @@ And if nothing else your statement above proves my point that if things like mon
   
   <entry>
     <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
-    <link href="http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files/"/>
+    <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
     <updated>2012-03-22T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files</id>
+    <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
@@ -329,9 +330,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[The myth of moral hazards in health insurance]]></title>
-    <link href="http://jbuchbinder.github.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance/"/>
+    <link href="http://jbuchbinder.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance/"/>
     <updated>2011-12-30T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance</id>
+    <id>http://jbuchbinder.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>The entire “managed health” component of the privatized healthcare system which we now “enjoy” in the United States descended from the <a href="http://www.presidency.ucsb.edu/ws/index.php?pid=4092">HMO Act of 1973</a>, signed into law by the President whom Hunter S Thompson had famously claimed “could shake your hand and stab you in the back at the same time”. The insurance system we have today, primarily built on the foundation of the profit-inducing-but-patient-screwing HMO system, has built in something called a “moral hazard”, which ostensibly provides the conservatives’ requisite “<a href="http://fdlaction.firedoglake.com/2011/09/27/skin-in-the-game-is-failure-as-a-health-care-cost-control-idea/">skin in the game</a>“. For those unfamiliar with this concept, a simplified version of the basic premise is that forcing a patient to cover a certain amount of a medical procedure will decrease the “risk” than an insurance company will have to pay for a procedure.</p>
@@ -348,9 +349,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Xela Redux 2011]]></title>
-    <link href="http://jbuchbinder.github.com/2011/12/28/xela-redux-2011/"/>
+    <link href="http://jbuchbinder.com/2011/12/28/xela-redux-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2011/12/28/xela-redux-2011</id>
+    <id>http://jbuchbinder.com/2011/12/28/xela-redux-2011</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Better late than never, these are the blog entries I had put together from the Xela trip this year, which I had never gotten around to posting.</p>
@@ -447,9 +448,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Project Review 2011]]></title>
-    <link href="http://jbuchbinder.github.com/2011/12/28/project-review-2011/"/>
+    <link href="http://jbuchbinder.com/2011/12/28/project-review-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2011/12/28/project-review-2011</id>
+    <id>http://jbuchbinder.com/2011/12/28/project-review-2011</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>I’ve been a bit lax in posting about my work here, mainly because Twitter makes you lazy. (Why write complete sentences when you can summarize in 140 characters or less?)</p>
@@ -475,9 +476,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Wall Street, Occupied]]></title>
-    <link href="http://jbuchbinder.github.com/2011/10/05/wall-street-occupied/"/>
+    <link href="http://jbuchbinder.com/2011/10/05/wall-street-occupied/"/>
     <updated>2011-10-05T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2011/10/05/wall-street-occupied</id>
+    <id>http://jbuchbinder.com/2011/10/05/wall-street-occupied</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Finally, there’s some sort of <a href="http://occupywallst.com">populist anger</a> against the bastards who tanked the economy in 2008 to pad their pockets. It’s just too bad that there isn’t a cohesive set of demands to go along with all of that rage.</p>
@@ -498,9 +499,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Unemployment Benefits and the Masters of the Universe]]></title>
-    <link href="http://jbuchbinder.github.com/2010/12/07/unemployment-benefits-and-the-masters-of-the-universe/"/>
+    <link href="http://jbuchbinder.com/2010/12/07/unemployment-benefits-and-the-masters-of-the-universe/"/>
     <updated>2010-12-07T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.github.com/2010/12/07/unemployment-benefits-and-the-masters-of-the-universe</id>
+    <id>http://jbuchbinder.com/2010/12/07/unemployment-benefits-and-the-masters-of-the-universe</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>The <a href="http://www.guardian.co.uk/world/2007/dec/16/books.usa">Masters of the Universe</a> seem to have a vested interest in the <a href="http://www.examiner.com/unemployment-benefits-in-new-york/obama-s-deal-on-unemployment-extensions-does-not-include-tier-5-for-99ers">death of 99 week unemployment benefits</a>, which I’m just starting to realize.</p>
@@ -517,9 +518,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Xela Day Seven: Huevos revuelto con queso sin carne y adios]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios/"/>
+    <link href="http://jbuchbinder.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios/"/>
     <updated>2010-09-25T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios</id>
+    <id>http://jbuchbinder.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>It was my last day in Xela, with all of the basic setup, wiring, and other on-site work having been completed on Friday. As I’m lousy at negotiating prices even in English, Jorge was kind enough to go from shop to shop with me looking for some gifts for my wife and keepsakes to take home with me, after I went out with Irv to find a whiteboard for the clinic. The title of this refers to my normal breakfast order in the hotel, which I was finally able to order myself — “scrambled eggs with cheese, no meat”. When it comes to breakfast, I’m a bit more than mildly predictable.</p>
@@ -540,9 +541,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Xela Day Six: Implementation]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/24/xela-day-six-implementation/"/>
+    <link href="http://jbuchbinder.com/2010/09/24/xela-day-six-implementation/"/>
     <updated>2010-09-24T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/24/xela-day-six-implementation</id>
+    <id>http://jbuchbinder.com/2010/09/24/xela-day-six-implementation</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>More than half our our crew parted ways to do a mobile clinic today, whereas Irv, Shelley and I stayed behind with Dr Christian and a few med students to attempt to get the EMR functional in a way which would jive with the clinic’s workflow. I hit quite a few snags in some of the UI implementation, since I have been pretty hands-off in the development of the UI over the last few months. Even with that, we managed to get the registration and triage components up and operational, while at the same time stringing category 5 cable around the clinic.</p>
@@ -559,9 +560,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Xela Day Four: Aldea Pujujil]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/23/xela-day-four-aldea-pujujil/"/>
+    <link href="http://jbuchbinder.com/2010/09/23/xela-day-four-aldea-pujujil/"/>
     <updated>2010-09-23T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/23/xela-day-four-aldea-pujujil</id>
+    <id>http://jbuchbinder.com/2010/09/23/xela-day-four-aldea-pujujil</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>Today we left early in the morning, around 7am, to head out to the village of “Aldea Pujujil” in Solola, Guatemala to do a travelling clinic. We took two “micro buses” with ten to thirteen people in each with equipment tied down to the top, and left Xela heading back towards Guatemala City on the Pan American Highway.</p>
@@ -582,9 +583,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Xela Day Five: FreeMED, Finally]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/23/xela-day-five-freemed-finally/"/>
+    <link href="http://jbuchbinder.com/2010/09/23/xela-day-five-freemed-finally/"/>
     <updated>2010-09-23T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/23/xela-day-five-freemed-finally</id>
+    <id>http://jbuchbinder.com/2010/09/23/xela-day-five-freemed-finally</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>It’s day five of our trip to Xela, and we’ve come to the realization that the damn server isn’t going to clear Customs before I leave the country. That being understood, I got FreeMED up and running on the machine which was originally designated to be the secondary / failover server. The guy who set up the router which is being used by POP-WUJ is unfortunately in Spain, and has left no information on access, so I’m unable to appropriately set up port forwards for the server. In lieu of that, autossh tunnels are now running back to Connecticut, so I can still access the server. It’s just not very conducive to anyone *else* trying to access the server from beyond the walls of the POP-WUJ building.</p>
@@ -599,9 +600,9 @@ done
   
   <entry>
     <title type="html"><![CDATA[Xela Day Three: Clinic]]></title>
-    <link href="http://jbuchbinder.github.com/2010/09/21/xela-day-three-clinic/"/>
+    <link href="http://jbuchbinder.com/2010/09/21/xela-day-three-clinic/"/>
     <updated>2010-09-21T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.github.com/2010/09/21/xela-day-three-clinic</id>
+    <id>http://jbuchbinder.com/2010/09/21/xela-day-three-clinic</id>
     <content type="html"><![CDATA[<h1></h1>
 
 <p>The clinic was open for the first of the two days it will be open during my stay in Xela. It was a pretty crazy scene — a line going to the end, if not around the end, of the block.</p>
