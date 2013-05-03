@@ -1,0 +1,355 @@
+diff -uNr wis-go7007-linux-0.9.8-5.orig/kernel/go7007-driver.c wis-go7007-linux-0.9.8-5/kernel/go7007-driver.c
+--- wis-go7007-linux-0.9.8-5.orig/kernel/go7007-driver.c	2010-03-25 10:54:27.000000000 -0400
++++ wis-go7007-linux-0.9.8-5/kernel/go7007-driver.c	2010-03-25 10:55:56.074712507 -0400
+@@ -167,10 +167,22 @@
+ 		go7007_write_addr(go, 0x1000, 0x0811);
+ 		go7007_write_addr(go, 0x1000, 0x0c11);
+ 	}
+-	if (go->board_id == GO7007_BOARDID_MATRIX_REV) {
++	switch (go->board_id) {
++	case GO7007_BOARDID_MATRIX_REV:
+ 		/* Set GPIO pin 0 to be an output (audio clock control) */
+ 		go7007_write_addr(go, 0x3c82, 0x0001);
+ 		go7007_write_addr(go, 0x3c80, 0x00fe);
++		break;
++	case GO7007_BOARDID_ADS_USBAV_709:
++		/* GPIO pin 0: audio clock control */
++		/*      pin 2: TW9906 reset */
++		/*      pin 3: capture LED */
++		go7007_write_addr(go, 0x3c82, 0x000d);
++		go7007_write_addr(go, 0x3c80, 0x00f2);
++		break;
++	default:
++		/* No special setup */
++		break;
+ 	}
+ 	return 0;
+ }
+@@ -213,6 +225,9 @@
+ 	case I2C_DRIVERID_WIS_TW9903:
+ 		modname = "wis-tw9903";
+ 		break;
++	case I2C_DRIVERID_WIS_TW9906:
++		modname = "wis-tw9906";
++		break;
+ 	case I2C_DRIVERID_WIS_TW2804:
+ 		modname = "wis-tw2804";
+ 		break;
+@@ -270,6 +285,12 @@
+ 		go->i2c_adapter_online = 1;
+ 	}
+ 	if (go->i2c_adapter_online) {
++		if (go->board_id == GO7007_BOARDID_ADS_USBAV_709) {
++			/* Reset the TW9906 */
++			go7007_write_addr(go, 0x3c82, 0x0009);
++			msleep(50);
++			go7007_write_addr(go, 0x3c82, 0x000d);
++		}
+ 		for (i = 0; i < go->board_info->num_i2c_devs; ++i)
+ 			init_i2c_module(&go->i2c_adapter,
+ 					go->board_info->i2c_devs[i].type,
+@@ -417,18 +438,20 @@
+  */
+ void go7007_parse_video_stream(struct go7007 *go, u8 *buf, int length)
+ {
+-	int i, seq_start_code = -1, frame_start_code = -1;
++	int i, seq_start_code = -1, gop_start_code = -1, frame_start_code = -1;
+ 
+ 	spin_lock(&go->spinlock);
+ 
+ 	switch (go->format) {
+ 	case GO7007_FORMAT_MPEG4:
+ 		seq_start_code = 0xB0;
++		gop_start_code = 0xB3;
+ 		frame_start_code = 0xB6;
+ 		break;
+ 	case GO7007_FORMAT_MPEG1:
+ 	case GO7007_FORMAT_MPEG2:
+ 		seq_start_code = 0xB3;
++		gop_start_code = 0xB8;
+ 		frame_start_code = 0x00;
+ 		break;
+ 	}
+@@ -502,7 +525,7 @@
+ 					go->format == GO7007_FORMAT_MPEG2 ||
+ 					go->format == GO7007_FORMAT_MPEG4) &&
+ 					(buf[i] == seq_start_code ||
+-						buf[i] == 0xB8 || /* GOP code */
++						buf[i] == gop_start_code ||
+ 						buf[i] == frame_start_code)) {
+ 				if (go->active_buf == NULL || go->seen_frame)
+ 					frame_boundary(go);
+diff -uNr wis-go7007-linux-0.9.8-5.orig/kernel/go7007-priv.h wis-go7007-linux-0.9.8-5/kernel/go7007-priv.h
+--- wis-go7007-linux-0.9.8-5.orig/kernel/go7007-priv.h	2010-03-25 10:54:27.000000000 -0400
++++ wis-go7007-linux-0.9.8-5/kernel/go7007-priv.h	2010-03-25 11:05:49.214769067 -0400
+@@ -41,6 +41,8 @@
+ #define GO7007_BOARDID_ENDURA		22
+ #define GO7007_BOARDID_ADLINK_MPG24	23
+ #define GO7007_BOARDID_SENSORAY_2250	24 /* Sensoray 2250/2251 */
++#define GO7007_BOARDID_ADS_USBAV_709    26
++
+ 
+ /* Various characteristics of each board */
+ #define GO7007_BOARD_HAS_AUDIO		(1<<0)
+diff -uNr wis-go7007-linux-0.9.8-5.orig/kernel/go7007-usb.c wis-go7007-linux-0.9.8-5/kernel/go7007-usb.c
+--- wis-go7007-linux-0.9.8-5.orig/kernel/go7007-usb.c	2010-03-25 10:54:27.000000000 -0400
++++ wis-go7007-linux-0.9.8-5/kernel/go7007-usb.c	2010-03-25 10:55:56.084714197 -0400
+@@ -443,6 +443,43 @@
+ 	},
+ };
+ 
++static struct go7007_usb_board board_ads_usbav_709 = {
++	.flags		= GO7007_USB_EZUSB,
++	.main_info	= {
++		.firmware	 = "go7007tv.bin",
++		.flags		 = GO7007_BOARD_HAS_AUDIO |
++					GO7007_BOARD_USE_ONBOARD_I2C,
++		.audio_flags	 = GO7007_AUDIO_I2S_MODE_1 |
++					GO7007_AUDIO_I2S_MASTER |
++					GO7007_AUDIO_WORD_16,
++		.audio_rate	 = 48000,
++		.audio_bclk_div	 = 8,
++		.audio_main_div	 = 2,
++		.hpi_buffer_cap  = 7,
++		.sensor_flags	 = GO7007_SENSOR_656 |
++					GO7007_SENSOR_TV |
++					GO7007_SENSOR_VBI,
++		.num_i2c_devs	 = 1,
++		.i2c_devs	 = {
++			{
++				.id	= I2C_DRIVERID_WIS_TW9906,
++				.addr	= 0x44,
++			},
++		},
++		.num_inputs	 = 2,
++		.inputs 	 = {
++			{
++				.video_input	= 0,
++				.name		= "Composite",
++			},
++			{
++				.video_input	= 10,
++				.name		= "S-Video",
++			},
++		},
++	},
++};
++
+ static struct usb_device_id go7007_usb_id_table[] = {
+ 	{
+ 		.match_flags	= USB_DEVICE_ID_MATCH_DEVICE_AND_VERSION |
+@@ -544,6 +581,14 @@
+ 		.bcdDevice_hi	= 0x1,
+ 		.driver_info	= (kernel_ulong_t)GO7007_BOARDID_SENSORAY_2250,
+ 	},
++	{
++		.match_flags	= USB_DEVICE_ID_MATCH_DEVICE_AND_VERSION,
++		.idVendor	= 0x06e1,  /* Vendor ID of ADS Technologies */
++		.idProduct	= 0x0709,  /* Product ID of DVD Xpress DX2 */
++		.bcdDevice_lo	= 0x204,
++		.bcdDevice_hi	= 0x204,
++		.driver_info	= (kernel_ulong_t)GO7007_BOARDID_ADS_USBAV_709,
++	},
+ 	{ }					/* Terminating entry */
+ };
+ 
+@@ -1020,6 +1065,10 @@
+ 		name = "Sensoray 2250/2251\n";
+ 		board = &board_sensoray_2250;
+ 		break;
++	case GO7007_BOARDID_ADS_USBAV_709:
++		name = "ADS Tech DVD Xpress DX2";
++		board = &board_ads_usbav_709;
++		break;
+ 	default:
+ 		printk(KERN_ERR "go7007-usb: unknown board ID %d!\n",
+ 				(unsigned int)id->driver_info);
+diff -uNr wis-go7007-linux-0.9.8-5.orig/kernel/Makefile wis-go7007-linux-0.9.8-5/kernel/Makefile
+--- wis-go7007-linux-0.9.8-5.orig/kernel/Makefile	2010-03-25 10:54:27.000000000 -0400
++++ wis-go7007-linux-0.9.8-5/kernel/Makefile	2010-03-25 11:13:00.807311418 -0400
+@@ -2,7 +2,7 @@
+ 
+ obj-m += go7007.o go7007-usb.o snd-go7007.o wis-saa7115.o wis-tw9903.o \
+ 		wis-uda1342.o wis-sony-tuner.o wis-saa7113.o wis-ov7640.o \
+-		wis-tw2804.o
++		wis-tw2804.o wis-tw9906.o
+ 
+ 
+ obj-m += go7007.o
+diff -uNr wis-go7007-linux-0.9.8-5.orig/kernel/wis-i2c.h wis-go7007-linux-0.9.8-5/kernel/wis-i2c.h
+--- wis-go7007-linux-0.9.8-5.orig/kernel/wis-i2c.h	2010-03-25 10:54:27.000000000 -0400
++++ wis-go7007-linux-0.9.8-5/kernel/wis-i2c.h	2010-03-25 11:08:45.194720149 -0400
+@@ -24,6 +24,7 @@
+ #define	I2C_DRIVERID_WIS_OV7640		0xf0f5
+ #define	I2C_DRIVERID_WIS_TW2804		0xf0f6
+ #define	I2C_DRIVERID_S2250		0xf0f7
++#define	I2C_DRIVERID_WIS_TW9906         0xf0f8
+ 
+ /* Flag to indicate that the client needs to be accessed with SCCB semantics */
+ /* We re-use the I2C_M_TEN value so the flag passes through the masks in the
+diff -uNr wis-go7007-linux-0.9.8-5.orig/kernel/wis-tw9906.c wis-go7007-linux-0.9.8-5/kernel/wis-tw9906.c
+--- wis-go7007-linux-0.9.8-5.orig/kernel/wis-tw9906.c	2010-03-25 10:54:27.000000000 -0400
++++ wis-go7007-linux-0.9.8-5/kernel/wis-tw9906.c	2010-03-25 11:27:34.714765365 -0400
+@@ -19,8 +19,7 @@
+ #include <linux/init.h>
+ #include <linux/version.h>
+ #include <linux/i2c.h>
+-#include <linux/videodev.h>
+-#include <linux/video_decoder.h>
++#include <linux/videodev2.h>
+ 
+ #include "wis-i2c.h"
+ 
+@@ -85,21 +84,21 @@
+ 	struct wis_tw9906 *dec = i2c_get_clientdata(client);
+ 
+ 	switch (cmd) {
+-	case DECODER_SET_INPUT:
++	case VIDIOC_S_INPUT:
+ 	{
+ 		int *input = arg;
+ 
+ 		i2c_smbus_write_byte_data(client, 0x02, 0x40 | (*input << 1));
+ 		break;
+ 	}
+-	case DECODER_SET_NORM:
++	case VIDIOC_S_STD:
+ 	{
+ 		int *input = arg;
+ 		u8 regs[] = {
+-			0x05, *input == VIDEO_MODE_NTSC ? 0x81 : 0x01,
+-			0x07, *input == VIDEO_MODE_NTSC ? 0x02 : 0x12,
+-			0x08, *input == VIDEO_MODE_NTSC ? 0x14 : 0x18,
+-			0x09, *input == VIDEO_MODE_NTSC ? 0xf0 : 0x20,
++			0x05, *input == V4L2_STD_NTSC ? 0x81 : 0x01,
++			0x07, *input == V4L2_STD_NTSC ? 0x02 : 0x12,
++			0x08, *input == V4L2_STD_NTSC ? 0x14 : 0x18,
++			0x09, *input == V4L2_STD_NTSC ? 0xf0 : 0x20,
+ 			0,	0,
+ 		};
+ 		write_regs(client, regs);
+@@ -212,10 +211,11 @@
+ 	.driver		= &wis_tw9906_driver,
+ };
+ 
+-static int wis_tw9906_detect(struct i2c_adapter *adapter, int addr, int kind)
++static int wis_tw9906_probe(struct i2c_client *client,
++                            const struct i2c_device_id *id)
+ {
+-	struct i2c_client *client;
+-	struct wis_tw9906 *dec;
++        struct i2c_adapter *adapter = client->adapter;
++        struct wis_tw9906 *dec;
+ 
+ 	if (!i2c_check_functionality(adapter, I2C_FUNC_SMBUS_BYTE_DATA))
+ 		return 0;
+@@ -223,82 +223,56 @@
+ 	client = kmalloc(sizeof(struct i2c_client), GFP_KERNEL);
+ 	if (client == NULL)
+ 		return -ENOMEM;
+-	memcpy(client, &wis_tw9906_client_templ,
+-			sizeof(wis_tw9906_client_templ));
+-	client->adapter = adapter;
+-	client->addr = addr;
+-#if LINUX_VERSION_CODE < KERNEL_VERSION(2,6,12)
+-	client->id = wis_tw9906_i2c_id++;
+-#endif
+ 
+-	dec = kmalloc(sizeof(struct wis_tw9906), GFP_KERNEL);
+-	if (dec == NULL) {
+-		kfree(client);
+-		return -ENOMEM;
+-	}
+-	dec->norm = VIDEO_MODE_NTSC;
+-	dec->brightness = 0;
+-	dec->contrast = 0x60;
+-	dec->hue = 0;
+-	i2c_set_clientdata(client, dec);
+-
+-	printk(KERN_DEBUG
+-		"wis-tw9906: initializing TW9906 at address %d on %s\n",
+-		addr, adapter->name);
+-
+-	if (write_regs(client, initial_registers) < 0)
+-	{
+-		printk(KERN_ERR "wis-tw9906: error initializing TW9906\n");
+-		kfree(client);
+-		kfree(dec);
+-		return 0;
+-	}
++        dec = kmalloc(sizeof(struct wis_tw9906), GFP_KERNEL);
++        if (dec == NULL)
++                return -ENOMEM;
++
++        dec->norm = V4L2_STD_NTSC;
++        dec->brightness = 0;
++        dec->contrast = 0x60;
++        dec->hue = 0;
++        i2c_set_clientdata(client, dec);
++
++        printk(KERN_DEBUG
++                "wis-tw9906: initializing TW9906 at address %d on %s\n",
++                client->addr, adapter->name);
++
++        if (write_regs(client, initial_registers) < 0) {
++                printk(KERN_ERR "wis-tw9906: error initializing TW9906\n");
++                kfree(dec);
++                return -ENODEV;
++        }
+ 
+-	i2c_attach_client(client);
+ 	return 0;
+ }
+ 
+-static int wis_tw9906_detach(struct i2c_client *client)
++static int wis_tw9906_remove(struct i2c_client *client)
+ {
+-	struct wis_tw9906 *dec = i2c_get_clientdata(client);
+-	int r;
++        struct wis_tw9906 *dec = i2c_get_clientdata(client);
+ 
+-	r = i2c_detach_client(client);
+-	if (r < 0)
+-		return r;
+-
+-	kfree(client);
+-	kfree(dec);
+-	return 0;
++        i2c_set_clientdata(client, NULL);
++        kfree(dec);
++        return 0;
+ }
+ 
+ static struct i2c_driver wis_tw9906_driver = {
+-#if LINUX_VERSION_CODE < KERNEL_VERSION(2,6,16)
+-	.owner		= THIS_MODULE,
+-	.name		= "WIS TW9906 I2C driver",
+-#else
+ 	.driver = {
+ 		.name	= "WIS TW9906 I2C driver",
+ 	},
+-#endif
+ 	.id		= I2C_DRIVERID_WIS_TW9906,
+-	.detach_client	= wis_tw9906_detach,
+ 	.command	= wis_tw9906_command,
++	.probe		= wis_tw9906_probe,
++	.remove		= wis_tw9906_remove
+ };
+ 
+ static int __init wis_tw9906_init(void)
+ {
+-	int r;
+-
+-	r = i2c_add_driver(&wis_tw9906_driver);
+-	if (r < 0)
+-		return r;
+-	return wis_i2c_add_driver(wis_tw9906_driver.id, wis_tw9906_detect);
++        return i2c_add_driver(&wis_tw9906_driver);
+ }
+ 
+ static void __exit wis_tw9906_cleanup(void)
+ {
+-	wis_i2c_del_driver(wis_tw9906_detect);
+ 	i2c_del_driver(&wis_tw9906_driver);
+ }
+ 

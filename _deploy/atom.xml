@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[/home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.github.com/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.github.com/"/>
+  <updated>2013-05-03T18:28:35-04:00</updated>
+  <id>http://jbuchbinder.github.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gear vs Skill]]></title>
+    <link href="http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill/"/>
+    <updated>2013-05-03T18:10:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill</id>
+    <content type="html"><![CDATA[<p>I remember a conversation I had with my brother, a few years back. He was
+talking about the amount of photographic equipment which he had been dumping
+money into purchasing, in the hopes of improving the output from his camera.
+After months, if not years, of ordering and collecting equipment, he thought
+that <em>one more thing</em> would make some difference. He then had an epiphany,
+after viewing a photo of a sunset taken with a $12 disposable camera. The
+full comment was:</p>
+
+<blockquote><p>It&#8217;s even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, &#8220;ah, yes. Right.&#8221;</p></blockquote>
+
+
+<p>I&#8217;ve been thinking about this, as I acquire more cinematography gear. At
+which point does it become less about the gear, and more about the wetware?
+(Wetware, for those who are unaware, refers to your biological &#8220;meat
+equipment&#8221;.)</p>
+
+<p>I&#8217;m divided on this point. I do feel that there are certain limitations
+inherent in not possessing the proper tool for the job. To put a concrete
+example together: if you&#8217;re using a Canon EOS T2i, your image quality isn&#8217;t
+going to be the same as using a much higher quality camera and sensor
+(sticking to the DSLR for this point), but it&#8217;s theoretically possible to
+clean up footage in post-production to <em>approach</em> the type of output which
+you could acchieve with a higher-grade sensor and optics. However, if you&#8217;re
+using a standard kit lens on that camera (which probably tops out at an f/3.5
+if you&#8217;re really, really lucky), you&#8217;re not going to be able to get the
+narrow depth-of-field which is associated with most &#8220;cinematic&#8221; shots. A
+<a href="http://www.usa.canon.com/cusa/consumer/products/cameras/ef_lens_lineup/ef_50mm_f_1_8_ii">Canon 50mm f/1.8 &#8220;plastic fantasic&#8221;</a> lens (on which I&#8217;ve seen far too many
+budding cinematographers rely exclusively) is an interesting start, but can&#8217;t
+completely replace a series of really wide open glass primes (sub-f/2.0).</p>
+
+<p>The flip side of the coin is the point which my brother had made; if your
+eye sucks, your footage sucks. A lot of the cinematographers (and just plain
+old camera operators) with which I&#8217;ve come in contact have bemoaned not
+owning a RED ONE, or even a higher grade DSLR camera body &#8211; and assuming
+that any decent footage I can pull has everything to do with the equipment
+I&#8217;m using and nothing to do with my ability to use said equipment.</p>
+
+<p>Years ago, I remember a gig I had, as a bass player. At the time, I had
+brought a <a href="http://www.vintagewashburn.com/Bass/Mercurybass.html">Washburn MB-6</a> (a strange Mercury series instrument with
+fantastic action, scored on eBay for very little money), and had finished
+a really heart-felt set. Some jackass came up to me and complimented the
+instrument.  I figured, from that point on, I would just assume that if
+someone commented my instrument, they were implicitly insulting me, by
+implying that the instrument provided the quality which they admired, and
+that anyone would have been able to do the same, given the chance to play
+that instrument.</p>
+
+<p>To sum up, you need a good eye &#8211; more than anything else &#8211; but it&#8217;s also
+important to have the right equipment for the right purpose.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Heading to the 2013 Boston International Film Festival]]></title>
+    <link href="http://jbuchbinder.github.com/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival/"/>
+    <updated>2013-04-12T13:38:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival</id>
+    <content type="html"><![CDATA[<p>I&#8217;m heading off to the 2013 <a href="http://www.bifilmfestival.com/">Boston International Film Festival</a>
+opening ceremonies this evening, where the first short film which I
+directed, edited, and shot is being screened/premiered. It&#8217;s called
+&#8221;<a href="http://www.imdb.com/title/tt2538194/">Heroin; A Love Story</a>&#8221;, and centers around a friendship in the
+midst of addiction in South Boston, and was written by my partner in
+filmmaking/crime, <a href="http://www.imdb.com/name/nm4492303/">Brian Farmer</a>.</p>
+
+<p>I&#8217;m planning on posting some photos and information about the
+opening night and film screening as soon as I have them available.</p>
+
+<p><em>I hope to focus some of my upcoming entries on cinematography and
+filmmaking topics, rather than my usual fare of semi-coherent
+rants about miscellaneous topics, punctuated by obscure technical
+postings.</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Migrating to Octopress]]></title>
+    <link href="http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress/"/>
+    <updated>2013-04-02T08:58:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress</id>
+    <content type="html"><![CDATA[<p>After much hemming, hawing, and gnashing of teeth, I&#8217;m migrating my years of sporadic blogging from <a href="http://wordpress.org/">Wordpress</a> to <a href="http://octopress.org/">Octopress</a>. It seems to integrate a little bit better with both my &#8220;command line ethos&#8221; and my workflow. I&#8217;m sure (for anyone keeping track) that there are probably going to be some weird formatting issues, potentially broken pages, and other incidences of oddness in some places. Please excuse the mess, we&#8217;re remodeling.</p>
+
+<p>In addition to the move, I&#8217;m trying to move away from blog entries regarding political events &#8211; not because I should be worried about potential ramifications for my professional/public life &#8211; but rather because there&#8217;s only a certain amount of pissing into the wind that a man can do before he gets tired of having a mouthful of piss. That&#8217;s not to say that there won&#8217;t be <em>any</em> political stuff here, but there&#8217;s going to be far less.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Election 2012 Summary]]></title>
+    <link href="http://jbuchbinder.github.com/2012/11/06/election-2012-summary/"/>
+    <updated>2012-11-06T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2012/11/06/election-2012-summary</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>It’s the day before the 2012 Presidental Election. I’m disappointed, as usual, by the choice of <a href="http://en.wikipedia.org/wiki/Mitt_Romney">far right</a> and <a href="http://en.wikipedia.org/wiki/Barack_Obama">center right</a> “choices” that we have. I again am forced into the decision of either voting for the preferable third party candidate, with whom I share views on the vast majority of issues (<a href="http://www.jillstein.org/">Dr. Jill Stein</a>, for anyone wondering — I still think Ron Paul is a complete crankcase, and Gary Johnson is way too “fuck Federalism” for my taste) and effectively helping to elect an out-of-touch sociopathic plutocrat butt-munch, or vote the “lesser of two evils” and probably end up with a Democrat who is going to “<a href="http://www.washingtonpost.com/business/economy/obama-says-hell-renew-pursuit-of-grand-bargain-offering-specifics-on-agenda/2012/10/24/0e2b843c-1e0e-11e2-9cd5-b55c38388962_story.html">Grand Bargain</a>” away the Great Society programs. All of that being said, I have a few serious issues with this election cycle.</p>
+
+<p><em>Throwing bullshit at the wall to see what sticks / low information idiots destroy America.</em> Don’t bother reading Politifact. Their attempt to be “non partisan” by rating the attempt to replace Medicare with a privatized program (effectively ending the program as we know it) as “half true” (and then upgrading to “<a href="http://www.politifact.com/truth-o-meter/statements/2012/oct/03/barack-obama/obama-says-romney-wants-turn-medicare-voucher-prog/">mostly true</a>“, after rounds of pounding), simply because the word “voucher” was used to describe the festering husk of Medicare after it had been dessicated by years of crap like “Medicare Advantage” and Governor Rick Scott’s <a href="http://www.wusf.usf.edu/news/2010/06/18/whistleblowers_say_rick_scott_knew_about_medicare_fraud">side ventures into fraud</a>, then given out as coupons/vouchers to purchase overpriced and underregulated private insurance. You know, after “Obamacare is repealed” and the jackholes in the insurance industry can go back to fucking people in any way they see fit — government regulation and oversight is apparently for places like Europe, Canada — hell, anywhere but here. But I digress.</p>
+
+<p>The whole idea that Romney had been running a campaign which has profited greatly by effectively lying about the other guy — wholesale, mind you, not the usual half-truths we see from Presidental campaigns in the United States — is pretty sickening. A friend who works in the Connecticut prison system recently mentioned that he was going to vote for Romney because “Obamacare is going to make me pay more for my health insurance; and I have to look out for myself”. Some jackasses at work told him this, and he believed it — even though it’s patently and demonstrably false. As I saw somewhere on the interwebs “Obama isn’t a brown skinned guy who gives out free healthcare and hates rich people — you’re thinking of Jesus.” People apparently will follow their rampant self-interest, Grover-Norquist-style, even if it means screwing the shit out of everyone else. Not cool, America, not cool.</p>
+
+<p><em>Voting for a third party candidate isn’t going to change squat, even if they won.</em> I can’t stress this enough. Enough of the country lives in some weird mix of medieval England and the 1950s, and votes as a bloc for the <a href="http://en.wikipedia.org/wiki/Rick_Santorum">loudest, crassest bible-thumper</a> in any election cycle (think of Dubya, who shouldn’t have been able to win an election cycle against a warm jar of Russian piss, had the contest been set up that way). Look, we’re going to have tea-hadist, teanderthals, whatever you want to call them, in the House of Representatives and the Senate. Low information, Dunning-Kruger-Effect proving, “self made” government haters, who don’t believe in science, and sure as hell don’t believe in the government to which they have been elected. Nothing is going to go well that way — and it’s a pretty good indictment of why both direct and representative democracy do not function well in a country full of ill informed voters. Voters, to which “intellectualism” is an anathema to their way of life. I don’t want a President or Representative with whom I can drink a can of local alcoholic swill — I want someone who is smarter than I am; someone who is intellectually invested in leading. I want someone who actually gives a half a fuck about *everyone*, not just the guys with money or the guys who are the loudest at the moment. A Green Party president, however nice, is only one leg of the trifecta of United States government. They might be able to stop some wars, and perhaps appoint less awful corporatists to the Supreme Court — but they don’t make the laws around here. Educate, educate, educate — that’s the only way out of this shit-hole. (Also, don’t even think about “Charter Schools”. They’re not only *not* a panacea, but by effectively removing the top tier of students and privatizing education, we’re removing the only trappings of equality which the lower end of the socioeconomic chain has…)</p>
+
+<p><em>Voter disenfranchisement under the guise of “voter fraud”.</em> I don’t even need to really go into this, since so many other people have done it so well. I’ll lazy link to <a href="http://bobcesca.com/blog-archives/2012/11/six-hour-lines-and-voter-suppression-in-florida-and-ohio.html">Bob Cesca</a>, the <a href="http://www.aclu.org/voter-suppression-america">ACLU</a>, <a href="http://www.salon.com/2012/10/25/how_gop_voter_suppression_could_win_florida_and_the_white_house_for_romney/">Salon</a>, and <a href="http://www.motherjones.com/politics/2012/11/timeline-history-voter-suppression">Mother Jones</a>. I would find something a bit more right-leaning, but they’re still bitching about a statistically irrelevant excuse for disenfranchising <a href="http://www.cbsnews.com/8301-250_162-57511312/study-voter-id-law-would-exclude-up-to-700000-young-minorities/">primarily minority voters</a> — which apparently <a href="http://www.examiner.com/article/video-republicans-caught-committing-voter-fraud-only-registering-romney-voters">those same asshats have been perpetrating</a>. Stay classy, conservatives.</p>
+
+<p><em>Military industrial complex leg-humping time.</em> We need to find out who is going to <a href="http://www.iraqbodycount.org/">bomb more dark people into pits in the sand</a>, and fast! Candidates are now trying to <a href="http://www.tonysrants.com/military/breaking-five-hundred-generals-and-admirals-endorse-mitt-romney/">rack up military endorsements</a> as fast as they can. This does not bode well for not killing people unnecessarily, as you can probably guess. I mean, when you frame the “debate” (which there really isn’t, at this point) as “keeping us safe”, you already know what the outcome is going to be, since both major political parties are completely in the tank for <a href="http://articles.latimes.com/2010/mar/28/opinion/la-oe-hayden28-2010mar28">The Long War</a>. We haven’t been attacked by another country since Pearl Harbor, guys. And, in case you didn’t notice, the terrorists who flew planes into our buildings did so primarily because <a href="http://en.wikipedia.org/wiki/Motives_for_the_September_11_attacks">we’ve been dicking with their countries for years</a>. Noam Chomsky got his <a href="http://www.slate.com/articles/news_and_politics/fighting_words/2011/05/chomskys_follies.html">ass chewed out by Chris Hitchens</a> for saying just that (not that I agree with Chris Hitchens’s views on the Iraq War, it’s just interesting that he thought it worthy of a piece in Slate). Honestly, I think Chomsky is a bit more knowledgeable and trustworthy on the subject than Hitchens — but again, I digress.</p>
+
+<p><em>Trying to discredit math.</em> I wish I were kidding about this, since it is vaguely reminiscent of the same anti-intellectualism sentiment portrayed by Dick Nixon, and shows that the vast majority of people like to live in some sort of weird bubble. You know, the kind where “you’re for us, or you’re a fucking idiot”. Nate Silver, who has been <a href="http://www.advocate.com/politics/media/2012/10/28/nate-silver-laughs-accusation-he-too-effeminate-analyze-polls">vilified by Romney bootlickers for giving the answers straight from the math</a> demonstrates the bizarre “bubble world” that the GOP candidate has around him, reminiscent of the same “information bubble” of the less-than-venerable George W Bush.</p>
+
+<p><em>Redefining what it means to be a “businessman”.</em> Have you ever seen the movie “<a href="http://www.imdb.com/title/tt0102609/">Other People’s Money</a>“? Take away the empathy and life lessons learned, and you’ve got Willard Romney. “Leveraged buyouts”, especially when accomplished with a few million dollars of seed capital from your old man, have squat to do with the Conservative ideal of the job creator wunderkind. Seriously. Leveraged buyouts involve using other people’s money to purchase a controlling instance in a functional company, and saddle it with the burden of paying not only the original capital for its own takeover back, but also sucking the marrow of the company out to pay yourself a hefty sum for the pleasure of having downsized and screwed the hell out of that same company. It may be business (vulture capitalism at its very “best”), but it’s certainly not “business experience” in any relevant context to a nation’s economy, assuming that you were willing to accept the framing that a government should be run like a business, which it shouldn’t. (Quick rundown of that logic: Business’s primary motive is profit, whereas governments have to serve the populace without regard to financial status or profit. Governments also print their own money. It’s not the same thing, guys. It’s like saying that you can be the best train conductor *evar* because you have a driver’s license or learner’s permit.)</p>
+
+<p><em>Rampant self-interest trumping rational societal decisions.</em> Norquist proved this years ago in California; people simply will not vote for things that cost them money, even if it makes society better and enriches the country. I’m not sure if this is a “Boomer generation” thing, or if we’re just turning into selfish, ignorant, navel-gazing fuckwads through cultural inundation. I’ve seen people use the specter of “tax increases” as a reason for voting the GOP party line, even when those supposed “tax increases” aren’t born out by reality. Jeez, if you get your news from a crazy idiot like Glenn Beck (theblaze.com, anyone?), do you really think it’s going to somehow shape your decisions in some sort of informed and non-navel-gazing context?</p>
+
+<p>I’ll end this with a <a href="http://www.youtube.com/watch?v=efKguI0NFek">George Carlin quote</a>: “If you’ve got selfish, ignorant citizens, you’re going to get selfish ignorant leaders.” I don’t think I could have said it better, George.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Imaginary Horserace, 2012 Edition]]></title>
+    <link href="http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition/"/>
+    <updated>2012-11-05T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>So, the 2012 United States Presidental Election is effectively between Barack Obama and Willard “Mitt” Romney. I don’t think I can stress how little this registers on my “give-a-fuck-o-meter”, although I have been inundated by dire prognostications regarding the end of our “American Way of Life ™” (whatever that is) and a lot of scare-tactic advertising campaigns unleashed by the virtually unlimited flow of corporate money (or as Constitutional Originalist fuckwads like Antonin Scalia would say, “free speech”) into the current election cycle.</p>
+
+<p>The problem is, there <a href="http://fivethirtyeight.blogs.nytimes.com/">isn’t really a horse race to be had</a>. When FiveThirtyEight is pushing a 70 percent chance of a fairly popular incumbent president retaining a seat, one could wonder how the news media cycle could possibly make anything of it. As of this weekend, the Budgetary Wunderkind Paul Ryan has joined Mitt Romney’s unexciting ticket — and it doesn’t make any damn difference. Mittens ain’t winning this election, folks. We can show as many “real ‘muricans” as we can cram on the television, spitting opinions out of both sides of their figurative asses, but it’s not going to affect the outcome of this election. Well, unless the entire point of this chest-beating is going to be making a Mitt Romney victory seem plausible enough so that, if the need arises, disenfranchising voters can be made to seem to more naturally produce a victory for a statistical underdog. You know, if I were into conspiracy theories.</p>
+
+<p>As far as policies go, I don’t agree with any of the Republican candidates’ policies. That’s my general disclosure: I don’t believe dry humping stacks of Atlas Shrugged is going to magically cure the economy, and I don’t believe that dropping government involvement in economics and allowing self regulation will somehow stimulate anything other than the same massive greed and theft we’ve seen already. However, for the most part, both parties are pretty closely aligned on most of the substantial issues.</p>
+
+<p><em>Both parties are going to continue stacking bodies in other countries in wars we don’t belong in, and are going to continue funding the military at bank-busting levels.</em></p>
+
+<p><em>Both parties are going to eschew any audit of the Federal Reserve</em> (yeah, yeah, I know, Ron Paul and I coincide on something — even a broken crackpot is right once a day) <em>or any prosecution of the fuckers who blew up the global economy for their own person gain.</em> (If you don’t believe me on that one, check out Bill Black’s take on it. They’ve done bad, criminally prosecutable things. Obama won’t prosecute because he’s scared that he’ll appear to be discouraging “business”, and Mittens won’t touch them because his business ethics and interests are pretty closely aligned with those jackals.)</p>
+
+<p><em>Both parties are going to continue pushing “tax cuts” as economic stimulus.</em> They aren’t, at least not *lasting* economic stimulus. If we gave a shit about decreasing unemployment or “job creation”, we would be pushing another WPA, not giving handjobs to banksters.</p>
+
+<p><em>Both parties will get rid of Medicare and Social Security.</em> They may not talk about it, but both are going to do it, eventually. Simpson-Bowles was commissioned by the *Obama* administration, and Mittens has made the Paul Ryan budgetary plan of voucher-izing (read: privatizing) Social Security and Medicare a major plank of his campaign. Apparently, “very serious” people want you to fucking do everything on your own, because they don’t believe you’re anything but a Randian moocher….</p>
+
+<p>All they have for differences, at least in the running of their campaigns, are wedge issues. One supports abortion rights, another doesn’t. One is into allowing religious exemptions to health coverage, another isn’t. One is into the DREAM Act, one has a “nuanced” position (or whatever he’s decided his position is today — I don’t think the polls from “real ‘muricans” have come in yet today).</p>
+
+<p>We’re getting the Status Quo, folks. We never had a damn chance, either; both establishment parties are owned by the same basic money sources, and you’d better believe that they’re getting their money’s worth.</p>
+
+<p>Before anyone accuses me of leaving out Senator Ron Paul: <a href="http://dissentingjustice.blogspot.com/2011/08/five-reasons-why-ron-paul-should-never.html">he’s a fucking crank</a>. <a href="http://world.std.com/~mhuben/libindex.html">Libertarianism is a fucking crank “philosophy”</a>, and his bullshit disregard for other people, in the guise of individualism, is going to hurt more people than it helps. <a href="http://www.nakedcapitalism.com/2011/05/earth-to-libertarians-private-parties-have-coercive-power-too.html">Government isn’t the only coercive force</a>, people. More importantly, if you’re fine with state government but hate the federal government — we tried that “exceptionally limited Federal Government” thing with the Articles of Confederation. It failed pretty spectacularly, so stop asking for a do-over, please.</p>
+
+<p>The current paradigm, being pushed by the so-called “right” and “centrist right”, is that people don’t deserve anything other than what they “earn”. It’s an interesting wet-dream, which pays homage to the fraudulent concept of the meritocracy. If you’ve been paying attention for the last 20 years, we don’t have a meritocracy. Those who do well by others and play by the rules do *not* finish first, but those willing to loot, pillage, and burn — they are our new *Gods*. We deify CEOs, in the vain hope that we, too, may ascend to the Olympian summits with them, to enjoy the fruits of our Job Creator mojo. Honestly, I’m not sure whether the people pushing this fanticrap (a mixture of fantasy and crap, for the uninitiated) believe it, making them fools, or are using it to get ahead, making them scoundrels; regardless, if you hear someone trying to spread this particular Gospel of Supply Side Economics, try to make sure they end up on the outer side of your front door.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Dangers of Over-Simplification]]></title>
+    <link href="http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification/"/>
+    <updated>2012-05-18T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I was listening to an FM talk-radio host (I know, I know, when will I ever learn…) this afternoon, and caught a peculiar rant. He was complaining about how terrible the public sector (and government in general) was compared to the private sector, based on two events.</p>
+
+<p>The first was that he had bought a large amount of classical music using Amazon’s “one click” service, which he had “downloaded to a cloud driver [sic]“. He was able to listen to this music almost immediately following his purchase.</p>
+
+<p>The second was that he had received a call from a local town tax collector, saying that he owed excise tax on a car. He had told the woman that he had sold it already, and she told him that he would have to bring paperwork from the RMV (in Massachusetts they tend to call the “Department of Motor Vehicles” the “Registrar of Motor Vehicles”) indicating that he had, indeed, sold the car. When he questioned why she couldn’t do it herself because “you have a computer in front of you”, the woman told him that it “isn’t my job to help you.”</p>
+
+<p>At face value, these stories seem to confirm the free-market world viewpoint that private enterprise is more efficient than public institutions. However, there are a few problems with this story — namely that we’re really not comparing apples to apples, unless you’re living in the world of <a href="http://www.imdb.com/title/tt0133093/">The Matrix</a> or (ugh) <a href="http://www.imdb.com/title/tt0113243/">Hackers</a>, which have about as much to do with modern computing technology as a rock tends to resemble a Star Trek phaser, or a phone booth has the same abilities as the TARDIS (if you prefer a Doctor Who reference instead of a Star Trek reference).</p>
+
+<p>Amazon is a commercial company. They own every part of what they’re doing, and the only “standards” to which they conform (in this instance) is using HTTPS and MPEG Layer 3 audio encoding to deliver content. Everything else is part of their infrastructure. They own the entire thing — and more importantly, they’re just a reseller. They essentially produce nothing — just tack a profit on top for delivering something in an accessible way.</p>
+
+<p>The RMV is a public institution, which means that they most likely have purchased a suite of software to manage their data (and it’s probably ten or twenty years old). If it resembles the software used in other states, it’s pretty useless for anything other than its primary functions, because it was designed by a lowest-bid contractor to conform to a particular set of RFP standards. It probably does what it’s supposed to do pretty well. Interfacing with other software suites, particularly those not written by the same software vendor — not so much. I cut my teeth in the IT industry writing conversion software (back when I was 11 or 12 years old), and believe me, *nothing* speaks to anything easily without a particular set of standards to do so. Most town tax collectors receive a data dump from their motor vehicle registry/department (and vice versa), which is imported into their local software. There isn’t some Hackers-like ability for the two systems to talk to each other. Leave that crap for bad movies and bad TV shows (Horatio from CSI, anyone?) — computers simply don’t work that way.</p>
+
+<p>I’m sure most people with little or no interest in the intricacies of data import/export probably tuned out half-way through that last paragraph. It’s not particularly exciting stuff — yet it’s very important to understand in the context of the initial narrative.</p>
+
+<p>This vaguely resembles the traditional right-wing meme that “poor people caused the economic collapse” which occurred in 2008. It has been <a href="http://www.ritholtz.com/blog/2011/11/examining-the-big-lie-how-the-facts-of-the-economic-crisis-stack-up/">debunked repeatedly</a> — and yet the meme lives on. In a recent poll, <a href="http://politicalticker.blogs.cnn.com/2011/04/12/civil-war-still-divides-americans/">42% of Southerners</a> still cling to the notion that the “Civil War” was fought to preserve “States’ Rights” rather than simply being a way to exploit human labor, even though it’s very easy to demonstrably show that the primary motivation, both <a href="http://en.wikipedia.org/wiki/Origins_of_the_American_Civil_War">economic and social/political</a>, was maintaining the status quo of a slave-owning set of states. You can’t simplify a complicated argument, unless you want to lose the meaning which is meant to be present in that argument.</p>
+
+<p>Or, you could argue that this is all the end-result of cognitive bias. Maybe people see the government as broken because they *expect* to see it that way, and ignore evidence which is contradictory to their preconceived notions.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Money well spent]]></title>
+    <link href="http://jbuchbinder.github.com/2012/05/18/money-well-spent/"/>
+    <updated>2012-05-18T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2012/05/18/money-well-spent</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I caught a piece on NPR this morning, regarding Governor Dannel Malloy’s proposed educational budget for Connecticut. Most of it was the normal policy discussion, but there was a part of it where they discussed increasing funding in some of the neediest municipalities in Connecticut. There, it was revealed that Litchfield had expressed concern with the governor’s plan to deallocate money which was designed to bring their students together with other kids for the purposes of “racial diversity”, citing that it wouldn’t foster “racial understanding”. The total program budget was around 11 million dollars, of which the governor had wanted to deallocate 5 million. (For those who don’t know about <a href="http://en.wikipedia.org/wiki/Litchfield_County,_Connecticut">Litchfield County</a>, it’s 95 % white, and pretty damn conservative and well off. It was the only county in Southern New England that went to Bush the Younger in the 2004 presidential contest.)</p>
+
+<p>So, just to make sure that I’ve got this down properly: a bunch of overprivileged, racially segregated rich people want their overprivileged, racially segregated children to meet poor non-white people, and want to deprive those same poor non-white people and their communities of much-needed educational funds to do so. (To understand that last part, Connecticut derives the majority of the money to fund its municipal school programs from property taxes — which means that schools are generally funded in proportion to the affluence of their communities.)</p>
+
+<p>I don’t even know what to say about that. If you can’t see something wrong with it, there’s probably something wrong with you.</p>
+
+<p><em>(Note: Please don’t read this as an endorsement of Governor Malloy. After the <a href="http://jonathanpelto.com/2012/03/21/steven-adamowski-governor-malloy-and-perfecting-the-art-of-inflating-test-scores/">Adamowski debacle</a>, I don’t think I’m going to be liking him very much, thank you.)</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[FJM Treatment of Charter School Argument]]></title>
+    <link href="http://jbuchbinder.github.com/2012/05/18/fjm-treatment-of-charter-school-argument/"/>
+    <updated>2012-05-18T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2012/05/18/fjm-treatment-of-charter-school-argument</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>This is an argument I had with someone publicly a little while ago. I was fighting the concept that the entire educational system was a complete failure, and should be replaced with Michelle-Rhee-style charter schools.</p>
+
+<blockquote><p><em>Jeff I’m sorry, I don’t care what is going on outside the school.</em></p></blockquote>
+
+<p>That’s pretty myopic. Teaching isn’t a daycare, nor is it a panacea — if you have external positive or negative influences outside of school, it’s going to affect their educational outcome.</p>
+
+<blockquote><p><em>If you have a group of 30 kids in your class for say American History and 20 of those kids can’t tell you when the American Revolution took place, then that is a failing teacher. If you think that has anything to do with anything other than a teacher failing to teach the material your fooling yourself.</em></p></blockquote>
+
+<p>You picked a purposefully simplistic data point, which doesn’t really reflect the actual situation. Most kids know that 1776 is the year of the American revolution, just like most kids can identify Mickey Mouse — it’s a cultural thing. It probably would have been more effective for you to present an actual situation, rather than a pretty unrealistic hypothetical one.</p>
+
+<blockquote><p><em>I’ve talked to kids from Uconn who didn’t know where Canada was on a map. Canada Jeff.</em></p></blockquote>
+
+<p>And I know kids who can name the capitals of every country in the world. See, we both can present anecdotal evidence which proves nothing!</p>
+
+<blockquote><p><em>That’s a failure and who ever was supposed to be teaching that failed that student. That teacher should be accountable for that. It’s that simple.</em></p></blockquote>
+
+<p>So, if students misbehave, skip class, or just don’t care, we should fire the teacher? There is no simple accountability method for teachers, bud. If it were that easy, there wouldn’t be gaming of the system — and the NCLB law, which was supposed to grant merit-based benefits, only further disadvantages poor schools and increases class stratification.</p>
+
+<blockquote><p><em>Don’t misunderstand me. I think the majority of teachers are good teachers.</em></p></blockquote>
+
+<p>That doesn’t follow from any of your arguments, nor the arguments of the film. If teachers are largely effectual, we wouldn’t require large systemic changes (as the movie suggests) to alter the educational system. If teachers are *not* largely effectual, we would require large system changes (as the movie suggests), which would put your position in line with supporting the movie.</p>
+
+<p>There’s a standard distribution of teaching skills and aptitude, much like with everything else. You’re going to have a large number of “average” teachers (by definition), with diminishing levels of less and more competent teachers as you move away from the average. The movie tries to imply that public schools maintain largely ineffectual and incompetent teachers, which isn’t supported by the data.</p>
+
+<blockquote><p><em>I believe they like kids and want to do right by them. They shouldn’t have a problem with accountability. The ones that aren’t teaching I’m sure do.</em></p></blockquote>
+
+<p>This smacks of surveillance and diminishing civil liberties under the guise of “they don’t have anything to worry about if they’re not doing anything wrong”.</p>
+
+<blockquote><p><em>It only takes one or two bad teachers to ruin a kids education.</em></p></blockquote>
+
+<p>Anecdotal, at best. As a counter-example, I had several lousy teachers during my school career, and still did just fine. I would argue that educational outcome is a combination of learning potential, curriculum, teaching skill, and class size / attention per student.</p>
+
+<blockquote><p><em>As I said earlier. I didn’t do well in school, because I was never challenged. I can’t be the only person who thinks that.</em></p></blockquote>
+
+<p>Define “didn’t do well in school”. My grades were fine, though I was also never challenged in school. I’m a white-collar, decently successful, fairly well-rounded adult. If that’s not the purpose of an educational system, what is?</p>
+
+<blockquote><p><em>When my son did poorly in class I talked to his teachers. I told them he is bored give him something more challenging. I was fortunate enough to know many of my sons teachers, because many of them where my teachers and so most where on board with that plan. The ones that didn’t soon got the message as I can be a real bastard especially when dealing with my kid. He did well. Much better than I did.</em></p></blockquote>
+
+<p>Are you defining success by scoring well on standardized tests, or by turning out to be a well rounded individual? I would argue that, if your son is not “challenged”, he would be able to easily breeze through the curriculum, with extra time for other activities. Getting bad grades in that case is rather an attention issue.</p>
+
+<blockquote><p><em>I think when we classify someone as a slow or average learner we are doing that kid an injustice. We are saying your not as good as these other kids.</em></p></blockquote>
+
+<p>No, you’re saying that they learn at a slower rate. Believe it or not, children do not all learn at the same rate. There’s rather a “bell curve” type distribution of learning aptitude and speed. You can’t molly-coddle children and tell them that they all possess equal learning abilities any more than you can tell them that they can all be ballerinas or rock stars.</p>
+
+<blockquote><p><em>What’s worse is that the ones that really want to learn are slowed by classes that cater to that attitude.</em></p></blockquote>
+
+<p>We have skill level classes in high school (basic, advanced, honors, AP, etc) in most school systems, which separate mostly by learning abilities. It has been that way for a while.</p>
+
+<blockquote><p>*So what do we do. Instead of elevating those kids to the level we expect we lower the standards to make sure they pass.
+And if nothing else your statement above proves my point that if things like money where regulated that would only help to improve the system. that way they wouldn’t be “robbed” of funding. And regulating the testing to make it uniform is required. Are you telling me that it’s ok for us to test a kid from Ohio differently than a kid from Alabama. There needs to be a standard to which all schools nation wide apply themselves.</p>
+
+<p>We aren’t allowed to set nationwide curriculum, due to the “states rights” wonks, otherwise we might actually allow the Department of Education to set a nationwide curriculum. I don’t think we can blame that on the public school system, but rather anti-Federalism.</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Just a theory]]></title>
+    <link href="http://jbuchbinder.github.com/2012/03/27/just-a-theory/"/>
+    <updated>2012-03-27T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2012/03/27/just-a-theory</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I’ve been trying to keep up with the <a href="http://www.myleftnutmeg.com/diary/14133/pelto-dan-malloy-and-the-national-forces-pushing-for-education-reform">education reform battle in Connecticut</a>, since it’s my home state. The people pushing for reform (along with such “luminaries” as <a href="http://www.dailykos.com/story/2011/08/22/1009422/-Michelle-Rhee-still-refuses-to-answer-questions-about-cheating-scandal">Michelle Rhee</a> and <a href="http://redgreenandblue.org/2011/11/30/the-worst-of-the-1-could-it-be-walmart-chairman-rob-walton/">The Walton Foundation</a>, who incidentally would privatize everything up to and including <a href="http://blogs.alternet.org/danbacher/2011/08/17/wal-mart-gives-36-million-to-ocean-privatization-efforts/">the ocean</a>) are pushing for publicly subsidized yet privatized “<a href="http://en.wikipedia.org/wiki/Charter_school">charter schools</a>” and the breaking of teachers’ union protections.</p>
+
+<p>One of the first things you read in the wikipedia article about charter schools is that:</p>
+
+<blockquote><p>Charter schools are primary or secondary schools that receive public money (and like other schools, may also receive private donations) but are not subject to some of the rules, regulations, and statutes that apply to other public schools in exchange for some type of accountability for producing certain results, which are set forth in each school’s charter.</p></blockquote>
+
+<p>Now, why would such notorious religious privatization and <a href="http://www.eeoc.gov/eeoc/newsroom/release/10-1-10c.cfm">religiously discriminatory</a> asshats such as the Walton family be interested in charter schools? I think the key words are “<strong>but are not subject to some of the rules, regulations, and statutes that apply to other public schools</strong>“. I would venture a guess that <a href="http://www.ncspe.org/publications_files/OP170.pdf">religious charter schools</a>, funded on the public dime, are next up in the “public education debate” — not to mention the ability to perform just about any form of political or ideological indoctrination which they would see fit to offer. Don’t forget, we already have a fair amount of <a href="http://www.youtube.com/watch?v=Arn3lF5XSUg">dogma injected into our children</a>, for the sake of maintaining a steady stream of money and human bodies to feed into the grist mill of our sprawling Military-Industrial Complex.</p>
+
+<p>Let’s break it down: some of the major factors involved in the quality of a child’s education are — you guessed it — <a href="http://www.independent.co.uk/news/education/education-news/quality-of-education-still-determined-by-wealth-says-report-888283.html">money</a> (<a href="http://www.thedefendersonline.com/2011/03/08/spring-2010-wealth-and-access-to-higher-education-the-double-whammy-of-race-and-gender/">some have systemically more than others</a>) and <a href="http://www.medicaldaily.com/news/20111230/8504/key-to-school-improvement-study-reading-writing-arithmetic-character-how-can-my-child-improve.htm">not simply teaching for targeted tests</a>. <a href="http://usliberals.about.com/od/education/i/NCLBProsCons.htm">NCLB</a> had some serious issues, notably with <a href="http://edr.sagepub.com/content/33/1/4.short">ESL students</a>, and tended to have <a href="http://heinonline.org/HOL/LandingPage?collection=journals&amp;handle=hein.journals/nylr79&amp;div=28&amp;id=&amp;page=">incentives which hurt rather than helped</a> students. Sweeping educational reform has been shown, through that particular piece of legislation, to have the capability to hurt our most disadvantaged students, even under the guise of helping them. Unfortunately, in the race to keep school funding, many schools have turned to teaching *for* the NCLB testing guidelines, rather than teaching a well-rounded educational curriculum.</p>
+
+<p>Our education system <a href="http://www.huffingtonpost.com/2010/12/07/us-falls-in-world-education-rankings_n_793185.html">isn’t very good</a>, but dismantling the “great social equalizer” of public education in favor of selling off yet another piece of the country to privatization interests isn’t going to solve anything, at least not for the least fortunate among us. It only drives the wealth divide deeper, as those in poverty are less likely to follow the <a href="http://www.jstor.org/discover/10.2307/2119834?uid=3739696&amp;uid=2129&amp;uid=2&amp;uid=70&amp;uid=4&amp;uid=3739256&amp;sid=55956982713">Horatio Algers myth</a> out of the prison of their socioeconomic class. Besides, charter schools seem to resemble the logical extension of the “<a href="http://www.adl.org/vouchers/vouchers_main.asp">school voucher</a>” programs, designed to funnel public education funds into narrow-minded religious education. (I mean narrow-minded in that religious education is tainted with non-scientific dogma and institutionalized indoctrination in a way that makes the raising of free-thinking adults more and more difficult. <a href="http://www.alternet.org/belief/152349/why_the_anti-science_creationist_movement_is_so_dangerous/?page=entire">“Intelligent design” is a farce</a>, not a valid scientific theory.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
+    <link href="http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files/"/>
+    <updated>2012-03-22T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2012/03/22/expanding-ganglia-rrd-files</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
+
+<p>One-liner to expand RRDs:</p>
+
+<pre><code>/etc/init.d/gmetad stop; /etc/init.d/rrdcached stop ; 
+  find . | grep rrd | while read X; do fix-rrd.sh "$X"; done ; 
+  /etc/init.d/rrdcached start ; /etc/init.d/gmetad restart
+</code></pre>
+
+<p><strong>fix-rrd.sh</strong>:</p>
+
+<pre><code>#!/bin/bash
+# fix-rrds.sh
+NEWRRDS="0:5856 1:20160 2:20160 3:52704 4:3740"
+for RRD in $*; do
+        echo -n "Processing $RRD ... "
+        for RRA in ${NEWRRDS}; do
+                A=$(echo $RRA | cut -d: -f1)
+                B=$(echo $RRA | cut -d: -f2)
+                echo -n "$RRA "
+                rrdtool resize "$RRD" $A GROW $B 
+                        mv resize.rrd "$RRD" &amp;#038;&amp;#038; 
+                        chown nobody "$RRD"
+        done
+        echo "done."
+done
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The myth of moral hazards in health insurance]]></title>
+    <link href="http://jbuchbinder.github.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance/"/>
+    <updated>2011-12-30T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>The entire “managed health” component of the privatized healthcare system which we now “enjoy” in the United States descended from the <a href="http://www.presidency.ucsb.edu/ws/index.php?pid=4092">HMO Act of 1973</a>, signed into law by the President whom Hunter S Thompson had famously claimed “could shake your hand and stab you in the back at the same time”. The insurance system we have today, primarily built on the foundation of the profit-inducing-but-patient-screwing HMO system, has built in something called a “moral hazard”, which ostensibly provides the conservatives’ requisite “<a href="http://fdlaction.firedoglake.com/2011/09/27/skin-in-the-game-is-failure-as-a-health-care-cost-control-idea/">skin in the game</a>“. For those unfamiliar with this concept, a simplified version of the basic premise is that forcing a patient to cover a certain amount of a medical procedure will decrease the “risk” than an insurance company will have to pay for a procedure.</p>
+
+<p>Let’s stop right here, for a brief moment. The idea that an insurance company, being a for-profit entity with a primary obligation to their shareholders, rather than their clients, has an *incentive* not to pay for a procedure — well, it seems pretty awful. It’s one of the primary deficits in a for-profit health insurance scheme that the three primary parties involved (doctor, patient, insurance company) all have different objectives, which jive with each other (doctor wants to receive pay for care given, patient wants to receive care, and insurance company wants to pay as little as possible, if anything). You can see that the insurance company seems to be the party whose goals seem to disagree with the rest, and it’s the reason why I believe that a private insurer system is doomed to ever-rising costs, risk of medical bankruptcy, loss of accountability, pure graft and corruption, higher mortality rates, loss of quality care, as well as an inevitable collapse. But I digress from my primary point.</p>
+
+<p>We can examine the idea of a moral hazard in health insurance by looking at the general purpose it supposedly serves: reducing the demand for profit-draining healthcare payments. The problem with that argument is that patients do not voluntarily seek unnecessary care in quantities which would cause a system of requiring patient payment to be necessary to reduce risk. Patients seek care when they require it, which means that the only care for which it would decrease the demand would be <a href="http://www.nejm.org/doi/full/10.1056/NEJMp0708558">preventative care</a>. If you follow the aforementioned link, you’ll see that the entire focus of most studies is the efficacy of preventative care in <em>decreasing costs to insurers</em> rather than decreasing mortality rates or improving quality of life. That follows a pretty common trend of insurers to perform cost/benefit analyses without the benefit of measuring the *benefits* of treatment options on patients.</p>
+
+<p>So, we have private insurers, attempting to gain a greater profit margin by either denying care to patients for arbitrary reasons, or attempting to bolster profit margins by requiring deductibles and/or co-payments to dissuade patients from seeking care, encourage patients to seek less expensive/less effective methods of treatment, and/or decrease the amount of payout for which they are responsible. It seems as though parties with those motivations would be less-than-ideal candidates for effectively making healthcare and treatment decisions for the public at large, although they do that at the moment, by deciding which treatments to cover, which patients to insure, and how much of a patients’ own money must be spent for healthcare treatment for conditions which may or may not have anything to do with their own action. Not much of a “moral hazard” to avoid there, is there? If a factory worker gets cancer from working in a factory — who pays? Certainly not the factory. Whose fault is the condition? Not the patient. If unsafe drinking water produces parasitic infections or a more hazardous condition — who pays? Not the people responsible. Whose fault is the condition? Not the patient.</p>
+
+<p>I would posit that your opinion of the for-profit healthcare system depends largely on your relationship to it; those who believe that profit is more important than the efficacy of patient care would most likely side with the current system (as well as the unconditional free market leghumpers), whereas those who see healthcare as more of a basic human right or regard the efficacy of care as being the paramount point of importance over the profit of a company would most likely favor a single-payer or socialized healthcare system. (I leave out the uninformed, teabaggers (who also fit in the prior category), and full-on anti-Federalists. There’s no reasoning about human dignity or health with people who believe that some people have the right to do whatever they want to other people due to the size of their wallets — but that’s for another post.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Xela Redux 2011]]></title>
+    <link href="http://jbuchbinder.github.com/2011/12/28/xela-redux-2011/"/>
+    <updated>2011-12-28T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2011/12/28/xela-redux-2011</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>Better late than never, these are the blog entries I had put together from the Xela trip this year, which I had never gotten around to posting.</p>
+
+<p><strong>Day One: Sunday November 6, 2011</strong></p>
+
+<p>I’m going to try to chronicle my time this year working with the POP-WUJ Clinic in Xela (Quetzeltenanga), Guatemala, as I did last year. Work circumstances, over-zealous customs officials, and simple bad luck contributed to some of the issues we experienced with the installation last year, so I have traveled back down to attempt to make this work better.</p>
+
+<p>I left home at around 11:30pm the night before, and drove down to meet Irv. We had somewhat over 90 lbs of medical supplies which had to be re-packed and distributed over two body-sized duffel bags so that we could bring them through Guatemalan customs. At some time after 2am, we headed out for Laguardia Airport. The trip was relatively uneventful, and we made the two flights down to Guatemala City without incident.</p>
+
+<p>I was relatively surprised that we didn’t encounter any issues with customs upon entering Guatemala with the two “sea bags” full of medications, equipment, and miscellaneous tools. During the last medical brigade, a fair amount of our donated meds were confiscated, and one of the two servers was held at customs for a week, but they just waived us through this time — and without the benefit of a note from Rotary International this time.</p>
+
+<p>The bus ride across CA-1 to Xela actually took less time than last year, owing to the bus driver skipping the usual dinner stop and a lack of rainy-season mudslides. He was a bit of a cowboy, however, as we were tossed around like rag dolls. We had taken the local bus company, Alamo, rather than a chartered bus, which let us ride with the locals (as well as avoid tourist traps). A little girl, who reminded me of my niece when she was younger, made rollercoaster noises every time we went around a hairpin turn on the road, and was very proud to work up the english to ask me my name. I was surprised that, as we rolled into Xela, I actually had missed seeing some of the sights and people down here. As with any time that I travel, I miss being home with my wife and the dogs, but it’s nice to see that there is a different familiarity here.</p>
+
+<p>We took a cab over to Casa Manen, as there was no reasonable way to transport the two sea bags full of medications and our personal belongings the full mile and a half on foot. I could barely fit in the back seat of the cab, which was a converted Escort wagon (from what I could gather). After arriving at Casa Manen, I ended up having to mess around with their wifi access point, as a combination of terrible reception in the room (the laptop lives next to the door at the moment) and wacky Netgear-sucks-with-WPA-support issues had caused a lack of connectivity issue.</p>
+
+<p>After that, we walked to Park Central, grabbed some Xelapan goodies, a quick bite of “food” at Pollo Comperos, and an expresso-laden hot chocolate at “&amp;” Cafe. Clinic work tomorrow!</p>
+
+<p><strong>Day Two: Monday November 7, 2011</strong></p>
+
+<p>First day waking up in a new timezone, and as our CDMA-network phones don’t work down here, it was interesting getting up a full hour before everyone else. Casa Manen provided us with a delicious breakfast, replete with high-test coffee, my usual egg and black bean dish, fresh fruit and waffles.</p>
+
+<p>We sat in the central park for a while after breakfast, waiting for Banco International to open (which it wouldn’t have done until 10am, so I’m glad we gave up on that), and watched some of the street vendors, taxi drivers and local residents. It was pretty obvious that there is quite an underclass, composed primarily of the people of Mayan ancestry. Those with darker skin and/or traditional Mayan garb seem destined for menial labor, street vending, begging, or other “lower class” occupations. Although, as most are very short, I feel as if I’m a giant in a land of Lilliputians.</p>
+
+<p>While waiting to get into the clinic, I watched a Mayan woman tie her child on her back with two square pieces of cloth. It looked pretty safe and stable — I had always wondered how they did that.</p>
+
+<p>I got the Linksys NSLU2 we brought down with us set up as a terminal server, and it’s now monitoring every step of the boot and execution cycles of the Rackable Systems server we brought down, as well as giving us full power management using Ctrl-6 (thanks, Roamer Port!), although I’m a little less excited about that last part.</p>
+
+<p>The one disheartening part is that I feel as though I’m fighting the technology down here far more than I should. Between some of the people messing with the work I did last year (including resetting admin passwords, then being unavailable when I need them, as well as installing XP on Linux workstations) and virtually every wifi access point giving me trouble (usually due to some obscure setting that was enabled for reasons that are unclear), I’m getting to the point where going the extra mile of effort to be online or get things working feels like it’s not going to pay the dividends that it should.</p>
+
+<p>An aside to the Xela-LUG group: there’s no Debian or Ubuntu mirrors in Guatemala. The nearest one seems to be in Costa Rica or Mexico (or Nicaragua), and the speeds out of Xela aren’t fantastic.</p>
+
+<p><strong>Day Three: Tuesday November 8, 2011</strong></p>
+
+<p>We got a somewhat late start heading out from Casa Manen, and the higher altitudes and pollution were taking a toll on Irv when we were walking to the clinic.</p>
+
+<p>When we got to the Pop-Wuj clinic, it turned out that no one had arrived to perform pharmacy duties, so Irv and I ended up running the pharmacy and filling prescriptions for the majority of the day. Irv also saw a number of feet, and I got a little bit of work done with the NSLU2 before I left, but the majority of the day was spent working in the clinic — so much so, in fact, that we forgot to grab lunch, drinks, or anything else, until we left for afternoon siesta.</p>
+
+<p>We “overslept” for the afternoon siesta — which was actually more like Irv oversleeping as I was messing with code and photos while he was sleeping and lost track of time. We headed back to the clinic, and talked to Isabelle (the clinic manager) and Oscar (from the school). Isabelle got ahold of Freddy, who had contact information for the technician who had changed the router configuration. Things are looking up, in that respect. In another vein, Oscar mentioned that his son is an accomplished trumpeter, and seemed interested in me taking a few portrait shots of him with his instrument.</p>
+
+<p>Irv and I sent a Facebook message to our Xela LUG contact (as he hadn’t responded to our emails), and waited at Albabar at Parque Central to see if he’d show. Unfortunately, he didn’t. I also took the opportunity to start posting our walking and bus tracks, which I have been religiously tracking using “MyTracks” on the Android-based HTC handset I usually use. It’s useless down here otherwise, as there are no CDMA networks.</p>
+
+<p><strong>Day Four: Wednesday November 9, 2011</strong></p>
+
+<p>Another very, very tiring day.</p>
+
+<p>After breakfast, one of the ladies who runs Casa Manen had gotten into a discussion about knitting, and was quite impressed with the hoodie that my wife had made me last year.</p>
+
+<p>While at the clinic, I had the chance to reformat one of the donated Thinkpads which were originally destined to be used as workstations. They had been loaded with a copy of XP, replete with a metric ton of crapware. I doubt anyone is going to miss any of that.</p>
+
+<p>We finally got to meet up with Dhaby from the Xela LUG (Linux Users Group). He’s in the process of setting up a meeting with some local doctors who are interested in using FreeMED, and he thinks that some of the people in Xela LUG would be interested in providing local support. This is just the “feet on the ground” sort of thing that we need going here. He also mentioned that local stringed instruments are not easy to come by in Xela, and Chichicastenango or Panajachel would be the closest places to look. So, there’s a possibility that we’ll head down there on one of our “off days”.</p>
+
+<p>The clinic closed early, as it was an “off day”, so we headed back to Casa Manen, and after siesta, we perused the Central Market. I’m still a little disappointed at the lack of local music shops in Zone 1. We were able to find a few small things, but put off buying a substantial quantity of anything until we can visit one of the outlying markets.</p>
+
+<p>We skipped dinner in lieu of Xelapan, and were able to keep a fire going for a little while. Quick tip for anyone doing a network-less install of Ubuntu: use the normal installer. The “alternate installer”, where it might be a little easier not to use a mouse or touchpad, has the downside of making it very difficult to use the local install media as an apt source. (Unetbootin is your friend when blank CDs aren’t handy….)</p>
+
+<p><strong>Day Five: Thursday November 10, 2011</strong></p>
+
+<p>Serendipity is a really strange thing. Dhaby (Daniel), our contact from Xela LUG, turned out to be the same person who had helped Freddy with the clinic and school networking. When he stopped in yesterday, we had assumed that he had gotten our contact information and messages and had come to meet us — whereas he had come because Isabel had contacted him per Freddy’s instructions.</p>
+
+<p>We went to the clinic today, forgetting that the clinic is closed. I’m in the process up upgrading and maintaining the existing laptops, so that there’s a stable platform for the clinic people to use when I’m not here.</p>
+
+<p>Another issue we’ve run into at the clinic is the issue of volunteers, which I will admit, doesn’t sound like much of an issue. However, when you’re dealing with IT work, there isn’t really much “handoff” between volunteers — which means you could be on a Skype call to Germany to get a router password, or relying on someone who is on vacation to find someone else who handled some equipment maintenance.</p>
+
+<p>I finished setting up the workstations, although we found out that the first numbered one seemed to be dead, so the clinic is down to three working stations. Irv had an extension cord fabricated at the electric supply shop down the street (as well as grabbing a replacement box of florescent tubes to replace the ones in the clinic that had gone out), and we moved the electrical supply for the server, etc, to be run from behind the pharmacy area. This allowed the connection to be out of the way of general foot traffic. We ended up electrical taping the remaining connection together to avoid accidental disconnection.</p>
+
+<p>For lunch, we ate at Cafe Arabe, near Parque Central, which had pretty decent food. As we were finishing up our meal, we noticed the time (which was pushing 3:00 pm), so I left for the clinic to train Isabel on using the system, and Irv left for Casa Manen to pick up supplies. I ended up getting about an hour of training in, using the 1/3 completed Spanish translation we have. Thankfully, I was able to use Google Translate to explain more difficult concepts properly. (I understand more Spanish than I can speak at this point — at least enough to get the gist across.)</p>
+
+<p>Oscar (from the Pop-Wuj school) had wanted some pictures taken of his son, but due to a miscommunication, his son hadn’t brought his trumpet, and hadn’t realized that we had been waiting there, so we put it off for tomorrow.</p>
+
+<p>We walked back, stopping at Albamar for dinner. Most of the restaurant was reserved for a single family’s graduation party, but we still were able to be seated on the side, and had a good meal. As we were heading back to Casa Manen, we saw that Parque Central was filled with a film crew and a crowd of onlookers. We hung around for a while to observe, and found out that it was a crane shot for a music video. Irv was delighted to see that their primary and secondary cameras were 7D bodies, although they were outboarding the video to an external monitor and control system on their crane.</p>
+
+<p><strong>Day Six: Friday November 11, 2011</strong></p>
+
+<p>The last of our clinic days was today. I got a little bit of time to take some photos of the locals while we were heading to the clinic, as we didn’t get a late start this morning. I didn’t manage to get a shot of any of the Mayan women riding “side saddle” on the scooters and motorcycles, which I’ve been told is done to “preserve their virtue” by not straddling the bikes.</p>
+
+<p>We saw a pretty decent number of patients today, and Irv got to do three foot surgeries on two patients (one plantar wart removal and two ingrown toenails), of which I got a few pictures. I filled prescriptions for the majority of the morning, in between setting up an autossh reverse ssh tunnel so that I would have access to the servers, since Dhaby didn’t get back to us concerning access to the router at Pop-Wuj. It was pretty easy to do, since I’m using OpenWRT-Kamikaze on the NSLU2, and installing autossh was as simple as correcting the ipkg source and using the ipkg tool to install the package.</p>
+
+<p>We ate at the “chinese” restaurant across the street from Pop-Wuj for lunch. Their lo mein had a particularly Guatemalan flavor to it, but was quite good. We headed down to Banco Agromercantil at the edge of Zona 1 to change a few more American ducats into Guatemalan quetzals, dodging traffic and stopping to observe the Movistar-sponsored bouncy castle at the edge of the Democracia market. We headed back for 3:00pm to start training the clinic staff on using FreeMED. We started a little late, but after two hours of intensive training, it seems as though there’s a pretty good “buy-in” from the clinic staff, although I already have a laundry list of customizations which I’m going to have to put in place for the clinic. They do things a little differently than FreeMED’s usual target audience, so we’re going to have to make it easy to switch back and forth.</p>
+
+<p>I feel as though we’ve gotten a fair amount of what we’ve set out to accomplish, and the clinic staff seems to think that we can adapt what we have to suit their workflow. I’ve seen a number of places for improvement, but the only way to see these things is to try them in a real-life scenario, so I’m glad that I got the chance to watch them work.</p>
+
+<p><strong>Day Seven: Saturday November 12, 2011</strong></p>
+
+<p>It was our “day off” today, so we went shopping for goods to bring back to the states. We took a minibus, belching clouds of black smoke, to the Terminal Minerva market in the west of Xela. I’ve never been in a more overcrowded place. I almost tripped over a few people while we were walking through there, and I got a few decent pictures. We spent two or three hours walking through the market, which was necessary, as there was no way to move through it any quicker than we did.</p>
+
+<p>After we got out of the Minerva market, we took another minibus back to Parque Central, where Coca-Cola was sponsoring a very large christmas parade (along with whatever Powerade promotion they were doing) from Parque Central to Terminal Minerva, complete with a guy dressed as Santa Claus, the Coca-Cola polar bear, and three marching bands. The entire scene was utter insanity, but Irv got some shots of the whole thing going down. We went through the Parque Central market to find a few last-minute items, then took a cab up to the Alamo bus terminal in the north of the city to purchase tickets to get home. We walked back through the Democracia market down to the back end of Parque Central, and ran into one of the local clinic doctors on the west side of the Theatre Municipal on the way there.</p>
+
+<p>There was a pretty widespread power failure today, and although I’m confident that the server came back online at the clinic, the tunnel which allows me access to update the system did not come back online (as one issue with the NSLU2 is that by default it needs to be manually powered on), so I sent a note to Dr Sullivan asking that it be turned on the next time someone is in the clinic. I do, after all, have a large number of fixes and adjustments for them which I have to push to their server.</p>
+
+<p>Irv bought a tart cake for the nice people running Casa Manen, and we set to packing all of our stuff up for the trip. Long day tomorrow…</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Project Review 2011]]></title>
+    <link href="http://jbuchbinder.github.com/2011/12/28/project-review-2011/"/>
+    <updated>2011-12-28T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2011/12/28/project-review-2011</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I’ve been a bit lax in posting about my work here, mainly because Twitter makes you lazy. (Why write complete sentences when you can summarize in 140 characters or less?)</p>
+
+<p>Here are some of the projects I’ve been working on over 2011, with some links. I’m sure I have left some out.</p>
+
+<ul>
+<li><a href="http://freemedsoftware.org">FreeMED</a> – opensource electronic medical record/practice management system. Did a fair amount of retooling, including i18n, for the installation in Xela.</li>
+<li><a href="https://github.com/ganglia/monitor-core">ganglia</a> – opensource metrics aggregation system. <a href="http://vuksan.com">Vlad</a> and I managed to get a 3.2.0 release out the door, and are working on 3.3.0</li>
+<li><a href="https://github.com/jbuchbinder/ganglia-misc">ganglia web 2.x</a> – updated web interface for ganglia</li>
+<li><a href="https://github.com/jbuchbinder/haproxy">haproxy</a> – API work, to allow programmatic manipulation and querying</li>
+<li><a href="https://github.com/jbuchbinder/nagios/tree/nagios-3.x-api">nagios</a>/<a href="https://github.com/jbuchbinder/icinga-core">icinga</a> – API patches to allow programmatic manipulation of Nagios/Icinga</li>
+<li><a href="https://github.com/jbuchbinder/nagios-dash">nagios-dash</a> – a jquery-based Nagios replacement dashboard for NOCs. Requires the aforementioned nagios/icinga API patch.</li>
+<li><a href="https://github.com/jbuchbinder/node-soap">node-soap</a> – SOAP bindings for node.js. My work mostly involved fixing and expanding authentication methods.</li>
+<li><a href="https://github.com/freemed/remitt">REMITT</a> – my medical billing engine. Modernized for 5010 transactions.</li>
+<li><a href="https://github.com/jbuchbinder/statsd-c">statsd-c</a> – C port of etsy’s “statsd” server. Written in C primarily for speed.</li>
+<li><a href="https://github.com/jbuchbinder/sugarsync-linux">sugarsync-linux</a> – sugarsync linux API client. As Sugarsync isn’t too hot on providing a native Linux client, I took it upon myself to write one in Vala.</li>
+<li><a href="https://github.com/jbuchbinder/vded">vded</a> – “vector delta engine daemon”. Meant to allow metric collection for ever increasing values over time. (My first foray into “Vala”)</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Wall Street, Occupied]]></title>
+    <link href="http://jbuchbinder.github.com/2011/10/05/wall-street-occupied/"/>
+    <updated>2011-10-05T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2011/10/05/wall-street-occupied</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>Finally, there’s some sort of <a href="http://occupywallst.com">populist anger</a> against the bastards who tanked the economy in 2008 to pad their pockets. It’s just too bad that there isn’t a cohesive set of demands to go along with all of that rage.</p>
+
+<p>For too long, media-created “populists” like the <a href="http://www.mediaite.com/tv/is-teabagger-an-epithet-rachel-maddow-teaches-a-tea-party-history-lesson/">teabaggers</a> have railed against liberal policies, diversity, and government in general to attempt to explain the uncontrolled collapse of the United States’ economy. I’ve heard explainations (discredited, of course), ranging from the <a href="http://www.businessweek.com/investing/insights/blog/archives/2008/09/community_reinv.html">Community Reinvestment Act</a> to <a href="http://www.citizenvox.org/2011/09/14/public-citizen-david-arkush-sets-congress-straight-on-the-benefits-of-regulations-job-crisis-creation/">“too much regulation”</a>, but I find it rather difficult to understand why the Occupy Wall Street protesters seem myopically obsessed with the Bush Tax Cuts and the Citizens United decisions — as if they caused this clusterfuck. Make no mistake, both are odious; one for draining our reserves and forcing us into “emergency” austerity measures for the sake of bolstering the top 1% of Americans (<a href="http://en.wikipedia.org/wiki/Bush_tax_cuts">Bush Tax Cuts</a>), and the other for removing the common man’s political power by allowing money, disproportionately held by the top 1% of Americans, to unduly influence the political process (<a href="http://en.wikipedia.org/wiki/Citizens_United_v._Federal_Election_Commission">Citizens United</a>).</p>
+
+<p>The root causes of the economic downturn are far, far simpler. We can explain some of it through the greed of multinational corporations, who choose to outsource labor, decrease benefits, and shunt money away from their labor pool to benefit investors and the parasite investor class to an onerous degree. We can explain it through a systematic dismantling of financial system regulations which have been in place since the aftermath of the Great Depression, including, but not limited to: the <a href="http://en.wikipedia.org/wiki/Depository_Institutions_Deregulation_and_Monetary_Control_Act">Depository Institutions Deregulation and Monetary Control Act of 1980</a> (Carter), the <a href="http://www.nytimes.com/2009/06/01/opinion/01krugman.html">Garn-St. Germain Depository Institutions Act of 1982</a> (Reagan), the <a href="http://en.wikipedia.org/wiki/Gramm%E2%80%93Leach%E2%80%93Bliley_Act">Gramm-Leach-Bliley Financial Services Modernization Act of 1999</a> (Clinton) and the <a href="http://en.wikipedia.org/wiki/Commodity_Futures_Modernization_Act_of_2000">Commodity Futures Modernization Act of 2000</a> (Clinton). Let’s not forget our ol’ pal Dubya, with his <a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/02/13/AR2008021302783.html">OCC tricks</a> and gutting the regulatory system. Make no mistake, the primary causes of this clusterfuck are the greed of the banks and the fact that our leadership has been making it much easier for banks to have their way with you, virtually regulation-free. And they’ve been working at it for at least thirty years.</p>
+
+<p>Putting aside greed and deregulation — banks (being considered the hypothetical sociopathic “persons”) — are bastards. Real bastards. Let’s take the example of Bank of America, which is (at the moment) one of the most hated financial institutions in the United States, with the possible exception of Goldman Sachs. I was listening to the radio this morning, and a spokesman for some shill PR group for the consumer banking industry was railing on about “regulations from Washington” and “that Dick Durbin” forcing the poor, helpless banks to institute five dollar a month ATM/debit card usage fees. I think that my rage culminated in his line about how he thought government regulations were hurting banks, evidenced by the mass layoffs at Bank of America. Let’s remember that those layoffs aren’t going to touch the parasite investor class’s ROI, and definitely not the CEO-level compensation or bonus package structure. Nope, not at all. Also, the shills for the banking industry don’t want us to remember that they don’t really make their money off of ATM or usage fees — they’re just a byproduct of suckering you into giving them your money.</p>
+
+<p>Banks make money off of “<a href="http://www.globalresearch.ca/index.php?context=va&amp;aid=11600">fractional reserve lending/banking</a>“. They essentially loan money into existence, but it requires a certain fraction of the money they’re loaning out to be “on hand”. This is where *your* money comes into play. You give them your paycheck, and see a nice dollar amount show up on your ATM screen or bank statement — but that money was just fed into the grist mill of short term, long term and mortgage loans. And if you have a home loan through BofA as well, they’re basically charging you to loan your own money back to you. (And they wonder why they’re some of the most hated institutions on the planet.)</p>
+
+<p>That complete disconnection from reality is what, I believe, is fueling public anger — and their insistence in blaming “the gub’mint” for regulating them <em>too much</em> (I know, I know, it’s insane to even try to digest that, only a few years after deregulating their derivative trading, commodity trading, and general shaft-up-the-backside to the consumer, that they would consider blaming <em>too much</em> government intervention for them sucking, but I digress…) isn’t going to fly.</p>
+
+<p>I hope the protests stay peacefully and spread. The protesters may not be unified (or completely informed), but they have the right idea — and their anger is finally directed at the right group of people.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Unemployment Benefits and the Masters of the Universe]]></title>
+    <link href="http://jbuchbinder.github.com/2010/12/07/unemployment-benefits-and-the-masters-of-the-universe/"/>
+    <updated>2010-12-07T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2010/12/07/unemployment-benefits-and-the-masters-of-the-universe</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>The <a href="http://www.guardian.co.uk/world/2007/dec/16/books.usa">Masters of the Universe</a> seem to have a vested interest in the <a href="http://www.examiner.com/unemployment-benefits-in-new-york/obama-s-deal-on-unemployment-extensions-does-not-include-tier-5-for-99ers">death of 99 week unemployment benefits</a>, which I’m just starting to realize.</p>
+
+<p>There is a pretty substantial <a href="http://www.forecast-chart.com/dow-jones-unemployment.html">inverse relationship between the DJIA and unemployment rates</a>. By “unemployment rates”, we’re not talking about the <a href="http://www.bls.gov/news.release/empsit.t15.htm">Bureau of Labor Statistics</a> U-6 numbers, indicating our entire workforce, but rather the more limited U-3 numbers, which indicate “Total unemployed, as a percent of the civilian labor force”. Let’s face it, it’s in the best interest of the ruling parties to <a href="http://www.thinkandask.com/news/jobs.html">keep the official unemployment rate low</a>, to boost perception.</p>
+
+<p>Shit, if I were to take a quick look at <a href="http://www.dol.gov/opa/media/press/eta/ui/current.htm">the DOL page</a> on unemployment, it paints a bleaker picture than the <a href="http://www.bloomberg.com/news/2010-12-07/job-openings-in-u-s-increased-to-two-year-high-of-3-36-million-in-october.html">rally in the DJIA</a> which Bloomberg reports is tied to an “increase in job openings”. (Their “live ticker” for official unemployment numbers is <a href="http://www.bloomberg.com/apps/quote?ticker=INJCJC4:IND">here</a>.)</p>
+
+<p>What does this have to do with the “Masters of the Universe”? They’re going to be making a *killing* in the order of billions of dollars as stock prices predictably rise, of course. Doesn’t matter that we <a href="http://www.forbes.com/2009/05/28/robert-reich-manufacturing-business-economy.html">are losing manufacturing jobs</a> due to globalization efforts and increased mechanization, or that <a href="http://www.monthlyreview.org/0607wkt.htm">stagnant wages</a> and <a href="http://www.slate.com/id/2266025/entry/2266026">rising income disparity</a> means you’ll die poorer and your upward mobility in terms of income is, for all intents and purposes, stalled. Even Ben Bernanke, money printer extraordinaire, says that we’re <a href="http://www.huffingtonpost.com/2010/12/06/ben-bernanke-income-inequality-_n_792581.html">creating two separate societies</a> this way.</p>
+
+<p>So, why cut off extended unemployment benefits? I mean, unless you’re a <a href="http://voices.washingtonpost.com/ezra-klein/2010/07/unemployment_benefits_are_not.html">brain-dead deficit hawk</a> or a “I’ve got mine so fuck the rest of you” Libertarian, they actually have a pretty <a href="http://washingtonindependent.com/86006/unemployment-benefits-are-stimulus">positive economic stimulus effect</a>. More so than the <a href="http://agonist.org/forgiven/20101204/why_we_must_allow_the_bush_tax_cuts_to_expire">pointless tax “cuts”</a> that we’re going to extend until we’re ass-broke, at any rate. The only reason I can think of involves pumping up the stock market, which currently <a href="http://www.gpoaccess.gov/eop/tables07.html">out-earns our manufacturing industry</a> as a percentage of GDP.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Xela Day Seven: Huevos revuelto con queso sin carne y adios]]></title>
+    <link href="http://jbuchbinder.github.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios/"/>
+    <updated>2010-09-25T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>It was my last day in Xela, with all of the basic setup, wiring, and other on-site work having been completed on Friday. As I’m lousy at negotiating prices even in English, Jorge was kind enough to go from shop to shop with me looking for some gifts for my wife and keepsakes to take home with me, after I went out with Irv to find a whiteboard for the clinic. The title of this refers to my normal breakfast order in the hotel, which I was finally able to order myself — “scrambled eggs with cheese, no meat”. When it comes to breakfast, I’m a bit more than mildly predictable.</p>
+
+<p>Jonathan had decided to take us to Antigua a day before we had to fly out of Guatemala City because he was concerned about the long ride, potential delays from mudslides on CA-1, and to treat the team with a relaxing day off. I’m still surprised that we made it to Antigua in one piece — the bus driver we had this time treated CA-1 like a racetrack. I lost track of the number of times we passed chicken buses on two lane stretches with visible oncoming traffic, but we still somehow made it to Antigua in one piece.</p>
+
+<p>For those people who want to see Guatemala, avoid Antigua like the plague. Antigua is to Guatemala like naugahyde is to leather. It’s like a really bad European version of the rest of the country, to somewhat haphazardly quote on of the other people on the bus. Everything is overpriced compared to the rest of the country, and the same goods are sold at a huge markup although the same amount probably goes to the poor people who actually manufacture the goods. I bought a few small things, as I had to burn the majority of my remaining quetzals before returning home, but the whole experience of shopping there with the memory of the poverty in Xela and the outlying regions left me a bit sick to the stomach.</p>
+
+<p>Disregarding the income disparity and kitchy nature of some of the shops, along with most of the prices of the European-owned shops and hotels being represented in United States dollars rather than quetzals, Antigua is a beautiful city. People, especially street vendors, are marginally less friendly than they had been in Xela. I think I’d liken their disposition to that of street vendors in New York City, who generally frown upon taking their picture if I haven’t made a purchase from them.</p>
+
+<p>A little later on in the evening, we went out for a trip-closing dinner at a little hole-in-the-wall restaurant hidden off of the central park, to which we had been directed by a somewhat questionable man in a cigar and liquor shop. The food was very good, but the portions were far larger than any of us had expected, and we left there very overstuffed but happy. We headed back to the sketchy cigar and liquor shop, at which point we decided not to frequent his establishment. Jorge suggested we go out to a salsa club, since, as he put it, “when are you going to be in Guatemala at a salsa club again?” We stayed for about a half hour, as it was noisy and overcrowded. Before we left, Jorge pointed out a few obnoxious American tourists as an example of the worst of us. I’d like to think that because Antigua was more of a pit-stop along the way home, we’re not in quite the same bracket as the American tourists who come down here for the sole purpose of partying and making general fools of themselves.</p>
+
+<p>Tomorrow we fly home, and I’ll be spending another day of being on planes, trains and automobiles (all apologies to Del Griffith). I’m going to be relieved to be home, but I’d like to believe that I’m better off after coming down here. If I ever forget how lucky and privileged I am, I just have to think back to some of the places here.</p>
+
+<p><em>(To anyone following this, sorry for the delay in posting.)</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Xela Day Six: Implementation]]></title>
+    <link href="http://jbuchbinder.github.com/2010/09/24/xela-day-six-implementation/"/>
+    <updated>2010-09-24T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2010/09/24/xela-day-six-implementation</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>More than half our our crew parted ways to do a mobile clinic today, whereas Irv, Shelley and I stayed behind with Dr Christian and a few med students to attempt to get the EMR functional in a way which would jive with the clinic’s workflow. I hit quite a few snags in some of the UI implementation, since I have been pretty hands-off in the development of the UI over the last few months. Even with that, we managed to get the registration and triage components up and operational, while at the same time stringing category 5 cable around the clinic.</p>
+
+<p>(Again, my job called me for another favor — this time a load balancer reconfiguration. I wonder if I get comp’d vacation time for this?)</p>
+
+<p>So, after a day of implementation and clinic beautification, the POP-WUJ Clinic looks much better than it did before we arrived. The staff doctors thanked us all profusely for our help in making the clinic a nicer place — however, there was one moment which Jonathan referred to as the “pay it forward” moment. A local carpenter’s wife had been seen in the clinic, and he noticed that one of the doors seemed ill-fitted in regards to the frame in which it sat. He came back down later that day and refitted the door by shaving it down properly as a sort of thanks for the clinic having attended to his wife.</p>
+
+<p>As an end of week “send off”, Dr Sullivan and her husband invited us over to their house for some wine and cheese. The whole thing would probably have been a little bit better if the sky hadn’t opened up with a monsoon on our way over, but thankfully most of us were wearing suitable rain gear. On the way back, we got lost trying to drop Shelley off at her host family’s house, so Irv and I ended up taking a cab back to Casa Mañen, more or less completely drenched.</p>
+
+<p>It has been a fantastic week, and we have accomplished a great deal — but I’m getting to the point where I really miss being home. One more day of picking up stuff for the wife at the local market, driving to Antigua for Saturday evening, and I’m on a series of planes back to New England. Maybe we didn’t save the world this week, but at least we did our best to make some improvement, somewhere.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Xela Day Four: Aldea Pujujil]]></title>
+    <link href="http://jbuchbinder.github.com/2010/09/23/xela-day-four-aldea-pujujil/"/>
+    <updated>2010-09-23T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2010/09/23/xela-day-four-aldea-pujujil</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>Today we left early in the morning, around 7am, to head out to the village of “Aldea Pujujil” in Solola, Guatemala to do a travelling clinic. We took two “micro buses” with ten to thirteen people in each with equipment tied down to the top, and left Xela heading back towards Guatemala City on the Pan American Highway.</p>
+
+<p>The local town had set up their central meeting building, which was a stone edifice with a grooved tin roof, as a sort of makeshift clinic. There were individual treatment “rooms” created by hanging wire with plastic garbage bags and painter’s tarps, and a large tarp separating the main registration and triage area from the rest of the “rooms”. Five separate treatment areas were available, in addition to an area for the dentist who came with us. More than half of the prospective patients spoke qui’che instead of spanish, so there were a few local translators to help the doctors, registration and triage crew.</p>
+
+<p>The children there seemed very shy at first, but were enamored by the doctors, having their pictures taken, and having balloons made for them by the nurses and me out of spare latex gloves. In the afternoon, the local school emptied out at the same time as the daily rain, so the “clinic” area was flooded with refugees from the water. They quickly joined in playing with the inflated gloves and posing for pictures with the clinic crew. It was interesting to see that two of the boys were using old Corn Flakes boxes as protection from the rain.</p>
+
+<p>Even though I had the job of documenting the clinic visit with photos for POP-WUJ fundraising to get more supplies to do this sort of thing in the future, I couldn’t help but feel a little helpless. The people who came needed medical help, some more than others, and the most I could do was try to make the children laugh a little and stand out of the way as a silent observer of the doctors trying to help this village, which, if lucky, would see these doctors a few times a year. Unfortunately, as the paper process used to see patients is pretty inefficient at best, we probably could have helped more people if we had a way to organize this better. The “distance workstation” project I’m looking at starting should help out with that, if I can clear some minor technical hurdles in the implementation department.</p>
+
+<p>After a few hours in the bus, we came back to the clinic. Irv, Shelley and I stayed at the clinic and kept the door open so I could work a bit more there, and we headed back to the hotel around 7 or 8pm local time. Irv, Jorge and I went to a little restaurant called “Cafe Shalom” (alternately spelled “Cafe Shalon” on half of the posters) near Parque Central, and had a brief dinner, then walked back.</p>
+
+<p>Back to the medical record… The server is stuck in customs in Guatemala City somewhere, so I had to get the secondary server up and running. It had been slightly damaged in transit, which jostled the RAID card loose and knocked a few connectors off of the backplane. Regardless, after my father made a quick trip to the local bookstore to pick up a blank CDR (as the BIOS in that model didn’t properly boot off of my Debian USB install key due to its particular vintage), I got Debian running on that machine with little trouble. The uplink here isn’t fantastic, so it’s a matter of starting the upgrades and downloads then walking away for a while. There are also some electrical system issues. The single outlet available to us is ungrounded, which may cause some issues, so we’re arranging a UPS to be purchased locally to act as a bit of a safeguard between the fairly unstable electrical grid in Xela and the servers and switching hub. We may have to drill a post to ground the system to the earth properly in addition to all of that.</p>
+
+<p>I’m making pretty good headway with FreeMED modifications for the clinic, and have started on the triage screen, with some input from Jorge. I’m hoping that it can act as a “junction” in the flow of data around the clinic, but that remains to be seen. After I finish up the screen tomorrow, I’ll do some limited implementation testing to see how well it works or doesn’t work.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Xela Day Five: FreeMED, Finally]]></title>
+    <link href="http://jbuchbinder.github.com/2010/09/23/xela-day-five-freemed-finally/"/>
+    <updated>2010-09-23T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2010/09/23/xela-day-five-freemed-finally</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>It’s day five of our trip to Xela, and we’ve come to the realization that the damn server isn’t going to clear Customs before I leave the country. That being understood, I got FreeMED up and running on the machine which was originally designated to be the secondary / failover server. The guy who set up the router which is being used by POP-WUJ is unfortunately in Spain, and has left no information on access, so I’m unable to appropriately set up port forwards for the server. In lieu of that, autossh tunnels are now running back to Connecticut, so I can still access the server. It’s just not very conducive to anyone *else* trying to access the server from beyond the walls of the POP-WUJ building.</p>
+
+<p>All of this was done despite efforts from my day job to occupy as much of my vacation as possible with fixing firewalls and failing over between colocation centers. That ate up the middle of my day, for the most part. While I was busy doing this, Jonathan and the part of the crew that hadn’t gone out hiking at 4am started work on beautifying and improving the clinic. By 5 or 6pm (as everyone else got back around 2pm), the pediatric exam room had been repainted and decorated, the main room had been decorated, and much had been improved in the pharmacy and in the electrical system areas. Thanks to my sister Shelley, there are nice printed signs which are to hang on the exam room and pharmacy doors, and a large tapestry hangs where a few photos had been haphazardly taped to the walls. Jorge painted the walls in the pediatric exam room with a roller, adorned with a plastic ziplock bag over his head and a surgical mask, and some of the nurses attached a semi-permanent measuring tape to the wall for height measurements, decorated with cutouts of popular childrens’ characters. With any luck, the kids who are seen in the clinic will feel much more at ease when they visit the doctor.</p>
+
+<p>All of us went out for Tex-Mex food at a local eatery with Meg and her husband. I broke from my tradition of only eating local food to help myself to a grilled burrito “de res con queso” with beans and flavored rice, with a helping of the local beer. It was offered in light, dark, and “medium”, which we surmised was made by mixing equal parts of the light and dark brews. Regardless, it was a good tasting meal. I grabbed a chocolate flavored coffee, and Irv grabbed a regular, to help keep me up for a stint of finishing up the triage UI logic. I ended up going with a system event bus approach, in that new registrations are pushed out via “systemnotifications”, forcing the UI to update itself whenever new patients are registered at the registration stage. This should allow the triage person to see all registrations as they come in from a single screen which does not require any sort of manual refreshing to function properly.</p>
+
+<p>The crew is splitting in half tomorrow. One half is visiting a daycare in the pueblos outside of town, and the remainder, including Irv and myself, are staying behind with Dr Christian to man the clinic in Xela. I’m staying behind so that I can help push adoption of the EMR for demographics and vitals collection, and Irv will be assisting Dr Christian in seeing as many patients as they can. The hope is that we can break for a while to visit the marketplace, as I promised my wife I’d buy her some local fiber, yarn and other knitting supplies. If I’m lucky, I can find a local artisan who makes instruments — but I’m not holding my breath.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Xela Day Three: Clinic]]></title>
+    <link href="http://jbuchbinder.github.com/2010/09/21/xela-day-three-clinic/"/>
+    <updated>2010-09-21T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2010/09/21/xela-day-three-clinic</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>The clinic was open for the first of the two days it will be open during my stay in Xela. It was a pretty crazy scene — a line going to the end, if not around the end, of the block.</p>
+
+<p>We had Isabel, the local intake/registration person, working with my sister Shelley to do registrations, after which the patients were sent to Jorge, who war running triage. Dr Meg Sullivan treated the pediatric patients, while Irv and one of the local doctors handled the adult patients. Within a half hour or so, the makeshift waiting rooms upstairs and downstairs in the clinic were packed with waiting patients. One thing I did notice was that the children were remarkably well behaved — much more so than children their ages in the United States.</p>
+
+<p>American Airlines, never striving to be the speediest in baggage recovery, still hasn’t delivered the bag containing the primary server. As I haven’t had any actually setup or installation work to do, I spent my time alternately documenting methods, coding some pieces for FreeMED which would handle some of clinic’s various registration and triage functions, taking pictures for fundraising use, and doing basic gopher tasks for the doctors and nurses. It’s a little disconcerting that we aren’t able to get people trained up on the system yet, but it’s just going to have to wait until their server comes in.</p>
+
+<p>Another hurdle is the wiring. There isn’t really any “modern” electrical wiring, in that most of the circuits aren’t grounded at all. Most look like they barely have any sort of insulation over their conductors. The clinic has a little bit of money for supplies and such things, so we may end up having a UPS purchased to attempt to shield the servers from the somewhat inconsistent wiring and power grid there. The laptops can probably function with simple surge protectors, since they have their own sort of “UPS” through the use of their batteries.</p>
+
+<p>Well, apart from an emergency colo flip for work (which I’ve been up until a little after midnight local time performing), I’m looking to get some shut-eye, as we’re heading out to the pueblos early tomorrow morning. I think that I’m going to be a little less useful than I have been in the clinic, but hopefully I can glean some further “best practices” and workflow in such a way that I can make it easier for the docs to do their jobs.</p>
+
+<p><em>Update for those who were waiting for pictures: I’m in the process of uploading some pictures from the POP-WUJ clinic to a Flickr set, so check my Flickr account early Wednesday morning or so to see the first batch.</em></p>
+]]></content>
+  </entry>
+  
+</feed>

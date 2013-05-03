@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Remember, No One Cares | /home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.github.com/categories/remember-no-one-cares/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.github.com/"/>
+  <updated>2013-05-03T18:28:35-04:00</updated>
+  <id>http://jbuchbinder.github.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Gear vs Skill]]></title>
+    <link href="http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill/"/>
+    <updated>2013-05-03T18:10:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/blog/2013/05/03/gear-vs-skill</id>
+    <content type="html"><![CDATA[<p>I remember a conversation I had with my brother, a few years back. He was
+talking about the amount of photographic equipment which he had been dumping
+money into purchasing, in the hopes of improving the output from his camera.
+After months, if not years, of ordering and collecting equipment, he thought
+that <em>one more thing</em> would make some difference. He then had an epiphany,
+after viewing a photo of a sunset taken with a $12 disposable camera. The
+full comment was:</p>
+
+<p><blockquote><p>It's even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, "ah, yes. Right."</p></blockquote></p>
+
+<p>I've been thinking about this, as I acquire more cinematography gear. At
+which point does it become less about the gear, and more about the wetware?
+(Wetware, for those who are unaware, refers to your biological "meat
+equipment".)</p>
+
+<p>I'm divided on this point. I do feel that there are certain limitations
+inherent in not possessing the proper tool for the job. To put a concrete
+example together: if you're using a Canon EOS T2i, your image quality isn't
+going to be the same as using a much higher quality camera and sensor
+(sticking to the DSLR for this point), but it's theoretically possible to
+clean up footage in post-production to <em>approach</em> the type of output which
+you could acchieve with a higher-grade sensor and optics. However, if you're
+using a standard kit lens on that camera (which probably tops out at an f/3.5
+if you're really, really lucky), you're not going to be able to get the
+narrow depth-of-field which is associated with most "cinematic" shots. A
+<a href="http://www.usa.canon.com/cusa/consumer/products/cameras/ef_lens_lineup/ef_50mm_f_1_8_ii">Canon 50mm f/1.8 "plastic fantasic"</a> lens (on which I've seen far too many
+budding cinematographers rely exclusively) is an interesting start, but can't
+completely replace a series of really wide open glass primes (sub-f/2.0).</p>
+
+<p>The flip side of the coin is the point which my brother had made; if your
+eye sucks, your footage sucks. A lot of the cinematographers (and just plain
+old camera operators) with which I've come in contact have bemoaned not
+owning a RED ONE, or even a higher grade DSLR camera body -- and assuming
+that any decent footage I can pull has everything to do with the equipment
+I'm using and nothing to do with my ability to use said equipment.</p>
+
+<p>Years ago, I remember a gig I had, as a bass player. At the time, I had
+brought a <a href="http://www.vintagewashburn.com/Bass/Mercurybass.html">Washburn MB-6</a> (a strange Mercury series instrument with
+fantastic action, scored on eBay for very little money), and had finished
+a really heart-felt set. Some jackass came up to me and complimented the
+instrument.  I figured, from that point on, I would just assume that if
+someone commented my instrument, they were implicitly insulting me, by
+implying that the instrument provided the quality which they admired, and
+that anyone would have been able to do the same, given the chance to play
+that instrument.</p>
+
+<p>To sum up, you need a good eye -- more than anything else -- but it's also
+important to have the right equipment for the right purpose.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Migrating to Octopress]]></title>
+    <link href="http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress/"/>
+    <updated>2013-04-02T08:58:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/blog/2013/04/02/migrating-to-octopress</id>
+    <content type="html"><![CDATA[<p>After much hemming, hawing, and gnashing of teeth, I'm migrating my years of sporadic blogging from <a href="http://wordpress.org/">Wordpress</a> to <a href="http://octopress.org/">Octopress</a>. It seems to integrate a little bit better with both my "command line ethos" and my workflow. I'm sure (for anyone keeping track) that there are probably going to be some weird formatting issues, potentially broken pages, and other incidences of oddness in some places. Please excuse the mess, we're remodeling.</p>
+
+<p>In addition to the move, I'm trying to move away from blog entries regarding political events -- not because I should be worried about potential ramifications for my professional/public life -- but rather because there's only a certain amount of pissing into the wind that a man can do before he gets tired of having a mouthful of piss. That's not to say that there won't be <em>any</em> political stuff here, but there's going to be far less.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Election 2012 Summary]]></title>
+    <link href="http://jbuchbinder.github.com/2012/11/06/election-2012-summary/"/>
+    <updated>2012-11-06T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2012/11/06/election-2012-summary</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>It’s the day before the 2012 Presidental Election. I’m disappointed, as usual, by the choice of <a href="http://en.wikipedia.org/wiki/Mitt_Romney">far right</a> and <a href="http://en.wikipedia.org/wiki/Barack_Obama">center right</a> “choices” that we have. I again am forced into the decision of either voting for the preferable third party candidate, with whom I share views on the vast majority of issues (<a href="http://www.jillstein.org/">Dr. Jill Stein</a>, for anyone wondering — I still think Ron Paul is a complete crankcase, and Gary Johnson is way too “fuck Federalism” for my taste) and effectively helping to elect an out-of-touch sociopathic plutocrat butt-munch, or vote the “lesser of two evils” and probably end up with a Democrat who is going to “<a href="http://www.washingtonpost.com/business/economy/obama-says-hell-renew-pursuit-of-grand-bargain-offering-specifics-on-agenda/2012/10/24/0e2b843c-1e0e-11e2-9cd5-b55c38388962_story.html">Grand Bargain</a>” away the Great Society programs. All of that being said, I have a few serious issues with this election cycle.</p>
+
+<p><em>Throwing bullshit at the wall to see what sticks / low information idiots destroy America.</em> Don’t bother reading Politifact. Their attempt to be “non partisan” by rating the attempt to replace Medicare with a privatized program (effectively ending the program as we know it) as “half true” (and then upgrading to “<a href="http://www.politifact.com/truth-o-meter/statements/2012/oct/03/barack-obama/obama-says-romney-wants-turn-medicare-voucher-prog/">mostly true</a>“, after rounds of pounding), simply because the word “voucher” was used to describe the festering husk of Medicare after it had been dessicated by years of crap like “Medicare Advantage” and Governor Rick Scott’s <a href="http://www.wusf.usf.edu/news/2010/06/18/whistleblowers_say_rick_scott_knew_about_medicare_fraud">side ventures into fraud</a>, then given out as coupons/vouchers to purchase overpriced and underregulated private insurance. You know, after “Obamacare is repealed” and the jackholes in the insurance industry can go back to fucking people in any way they see fit — government regulation and oversight is apparently for places like Europe, Canada — hell, anywhere but here. But I digress.</p>
+
+<p>The whole idea that Romney had been running a campaign which has profited greatly by effectively lying about the other guy — wholesale, mind you, not the usual half-truths we see from Presidental campaigns in the United States — is pretty sickening. A friend who works in the Connecticut prison system recently mentioned that he was going to vote for Romney because “Obamacare is going to make me pay more for my health insurance; and I have to look out for myself”. Some jackasses at work told him this, and he believed it — even though it’s patently and demonstrably false. As I saw somewhere on the interwebs “Obama isn’t a brown skinned guy who gives out free healthcare and hates rich people — you’re thinking of Jesus.” People apparently will follow their rampant self-interest, Grover-Norquist-style, even if it means screwing the shit out of everyone else. Not cool, America, not cool.</p>
+
+<p><em>Voting for a third party candidate isn’t going to change squat, even if they won.</em> I can’t stress this enough. Enough of the country lives in some weird mix of medieval England and the 1950s, and votes as a bloc for the <a href="http://en.wikipedia.org/wiki/Rick_Santorum">loudest, crassest bible-thumper</a> in any election cycle (think of Dubya, who shouldn’t have been able to win an election cycle against a warm jar of Russian piss, had the contest been set up that way). Look, we’re going to have tea-hadist, teanderthals, whatever you want to call them, in the House of Representatives and the Senate. Low information, Dunning-Kruger-Effect proving, “self made” government haters, who don’t believe in science, and sure as hell don’t believe in the government to which they have been elected. Nothing is going to go well that way — and it’s a pretty good indictment of why both direct and representative democracy do not function well in a country full of ill informed voters. Voters, to which “intellectualism” is an anathema to their way of life. I don’t want a President or Representative with whom I can drink a can of local alcoholic swill — I want someone who is smarter than I am; someone who is intellectually invested in leading. I want someone who actually gives a half a fuck about *everyone*, not just the guys with money or the guys who are the loudest at the moment. A Green Party president, however nice, is only one leg of the trifecta of United States government. They might be able to stop some wars, and perhaps appoint less awful corporatists to the Supreme Court — but they don’t make the laws around here. Educate, educate, educate — that’s the only way out of this shit-hole. (Also, don’t even think about “Charter Schools”. They’re not only *not* a panacea, but by effectively removing the top tier of students and privatizing education, we’re removing the only trappings of equality which the lower end of the socioeconomic chain has…)</p>
+
+<p><em>Voter disenfranchisement under the guise of “voter fraud”.</em> I don’t even need to really go into this, since so many other people have done it so well. I’ll lazy link to <a href="http://bobcesca.com/blog-archives/2012/11/six-hour-lines-and-voter-suppression-in-florida-and-ohio.html">Bob Cesca</a>, the <a href="http://www.aclu.org/voter-suppression-america">ACLU</a>, <a href="http://www.salon.com/2012/10/25/how_gop_voter_suppression_could_win_florida_and_the_white_house_for_romney/">Salon</a>, and <a href="http://www.motherjones.com/politics/2012/11/timeline-history-voter-suppression">Mother Jones</a>. I would find something a bit more right-leaning, but they’re still bitching about a statistically irrelevant excuse for disenfranchising <a href="http://www.cbsnews.com/8301-250_162-57511312/study-voter-id-law-would-exclude-up-to-700000-young-minorities/">primarily minority voters</a> — which apparently <a href="http://www.examiner.com/article/video-republicans-caught-committing-voter-fraud-only-registering-romney-voters">those same asshats have been perpetrating</a>. Stay classy, conservatives.</p>
+
+<p><em>Military industrial complex leg-humping time.</em> We need to find out who is going to <a href="http://www.iraqbodycount.org/">bomb more dark people into pits in the sand</a>, and fast! Candidates are now trying to <a href="http://www.tonysrants.com/military/breaking-five-hundred-generals-and-admirals-endorse-mitt-romney/">rack up military endorsements</a> as fast as they can. This does not bode well for not killing people unnecessarily, as you can probably guess. I mean, when you frame the “debate” (which there really isn’t, at this point) as “keeping us safe”, you already know what the outcome is going to be, since both major political parties are completely in the tank for <a href="http://articles.latimes.com/2010/mar/28/opinion/la-oe-hayden28-2010mar28">The Long War</a>. We haven’t been attacked by another country since Pearl Harbor, guys. And, in case you didn’t notice, the terrorists who flew planes into our buildings did so primarily because <a href="http://en.wikipedia.org/wiki/Motives_for_the_September_11_attacks">we’ve been dicking with their countries for years</a>. Noam Chomsky got his <a href="http://www.slate.com/articles/news_and_politics/fighting_words/2011/05/chomskys_follies.html">ass chewed out by Chris Hitchens</a> for saying just that (not that I agree with Chris Hitchens’s views on the Iraq War, it’s just interesting that he thought it worthy of a piece in Slate). Honestly, I think Chomsky is a bit more knowledgeable and trustworthy on the subject than Hitchens — but again, I digress.</p>
+
+<p><em>Trying to discredit math.</em> I wish I were kidding about this, since it is vaguely reminiscent of the same anti-intellectualism sentiment portrayed by Dick Nixon, and shows that the vast majority of people like to live in some sort of weird bubble. You know, the kind where “you’re for us, or you’re a fucking idiot”. Nate Silver, who has been <a href="http://www.advocate.com/politics/media/2012/10/28/nate-silver-laughs-accusation-he-too-effeminate-analyze-polls">vilified by Romney bootlickers for giving the answers straight from the math</a> demonstrates the bizarre “bubble world” that the GOP candidate has around him, reminiscent of the same “information bubble” of the less-than-venerable George W Bush.</p>
+
+<p><em>Redefining what it means to be a “businessman”.</em> Have you ever seen the movie “<a href="http://www.imdb.com/title/tt0102609/">Other People’s Money</a>“? Take away the empathy and life lessons learned, and you’ve got Willard Romney. “Leveraged buyouts”, especially when accomplished with a few million dollars of seed capital from your old man, have squat to do with the Conservative ideal of the job creator wunderkind. Seriously. Leveraged buyouts involve using other people’s money to purchase a controlling instance in a functional company, and saddle it with the burden of paying not only the original capital for its own takeover back, but also sucking the marrow of the company out to pay yourself a hefty sum for the pleasure of having downsized and screwed the hell out of that same company. It may be business (vulture capitalism at its very “best”), but it’s certainly not “business experience” in any relevant context to a nation’s economy, assuming that you were willing to accept the framing that a government should be run like a business, which it shouldn’t. (Quick rundown of that logic: Business’s primary motive is profit, whereas governments have to serve the populace without regard to financial status or profit. Governments also print their own money. It’s not the same thing, guys. It’s like saying that you can be the best train conductor *evar* because you have a driver’s license or learner’s permit.)</p>
+
+<p><em>Rampant self-interest trumping rational societal decisions.</em> Norquist proved this years ago in California; people simply will not vote for things that cost them money, even if it makes society better and enriches the country. I’m not sure if this is a “Boomer generation” thing, or if we’re just turning into selfish, ignorant, navel-gazing fuckwads through cultural inundation. I’ve seen people use the specter of “tax increases” as a reason for voting the GOP party line, even when those supposed “tax increases” aren’t born out by reality. Jeez, if you get your news from a crazy idiot like Glenn Beck (theblaze.com, anyone?), do you really think it’s going to somehow shape your decisions in some sort of informed and non-navel-gazing context?</p>
+
+<p>I’ll end this with a <a href="http://www.youtube.com/watch?v=efKguI0NFek">George Carlin quote</a>: “If you’ve got selfish, ignorant citizens, you’re going to get selfish ignorant leaders.” I don’t think I could have said it better, George.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Imaginary Horserace, 2012 Edition]]></title>
+    <link href="http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition/"/>
+    <updated>2012-11-05T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.github.com/2012/11/05/imaginary-horserace-2012-edition</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>So, the 2012 United States Presidental Election is effectively between Barack Obama and Willard “Mitt” Romney. I don’t think I can stress how little this registers on my “give-a-fuck-o-meter”, although I have been inundated by dire prognostications regarding the end of our “American Way of Life ™” (whatever that is) and a lot of scare-tactic advertising campaigns unleashed by the virtually unlimited flow of corporate money (or as Constitutional Originalist fuckwads like Antonin Scalia would say, “free speech”) into the current election cycle.</p>
+
+<p>The problem is, there <a href="http://fivethirtyeight.blogs.nytimes.com/">isn’t really a horse race to be had</a>. When FiveThirtyEight is pushing a 70 percent chance of a fairly popular incumbent president retaining a seat, one could wonder how the news media cycle could possibly make anything of it. As of this weekend, the Budgetary Wunderkind Paul Ryan has joined Mitt Romney’s unexciting ticket — and it doesn’t make any damn difference. Mittens ain’t winning this election, folks. We can show as many “real ‘muricans” as we can cram on the television, spitting opinions out of both sides of their figurative asses, but it’s not going to affect the outcome of this election. Well, unless the entire point of this chest-beating is going to be making a Mitt Romney victory seem plausible enough so that, if the need arises, disenfranchising voters can be made to seem to more naturally produce a victory for a statistical underdog. You know, if I were into conspiracy theories.</p>
+
+<p>As far as policies go, I don’t agree with any of the Republican candidates’ policies. That’s my general disclosure: I don’t believe dry humping stacks of Atlas Shrugged is going to magically cure the economy, and I don’t believe that dropping government involvement in economics and allowing self regulation will somehow stimulate anything other than the same massive greed and theft we’ve seen already. However, for the most part, both parties are pretty closely aligned on most of the substantial issues.</p>
+
+<p><em>Both parties are going to continue stacking bodies in other countries in wars we don’t belong in, and are going to continue funding the military at bank-busting levels.</em></p>
+
+<p><em>Both parties are going to eschew any audit of the Federal Reserve</em> (yeah, yeah, I know, Ron Paul and I coincide on something — even a broken crackpot is right once a day) <em>or any prosecution of the fuckers who blew up the global economy for their own person gain.</em> (If you don’t believe me on that one, check out Bill Black’s take on it. They’ve done bad, criminally prosecutable things. Obama won’t prosecute because he’s scared that he’ll appear to be discouraging “business”, and Mittens won’t touch them because his business ethics and interests are pretty closely aligned with those jackals.)</p>
+
+<p><em>Both parties are going to continue pushing “tax cuts” as economic stimulus.</em> They aren’t, at least not *lasting* economic stimulus. If we gave a shit about decreasing unemployment or “job creation”, we would be pushing another WPA, not giving handjobs to banksters.</p>
+
+<p><em>Both parties will get rid of Medicare and Social Security.</em> They may not talk about it, but both are going to do it, eventually. Simpson-Bowles was commissioned by the *Obama* administration, and Mittens has made the Paul Ryan budgetary plan of voucher-izing (read: privatizing) Social Security and Medicare a major plank of his campaign. Apparently, “very serious” people want you to fucking do everything on your own, because they don’t believe you’re anything but a Randian moocher….</p>
+
+<p>All they have for differences, at least in the running of their campaigns, are wedge issues. One supports abortion rights, another doesn’t. One is into allowing religious exemptions to health coverage, another isn’t. One is into the DREAM Act, one has a “nuanced” position (or whatever he’s decided his position is today — I don’t think the polls from “real ‘muricans” have come in yet today).</p>
+
+<p>We’re getting the Status Quo, folks. We never had a damn chance, either; both establishment parties are owned by the same basic money sources, and you’d better believe that they’re getting their money’s worth.</p>
+
+<p>Before anyone accuses me of leaving out Senator Ron Paul: <a href="http://dissentingjustice.blogspot.com/2011/08/five-reasons-why-ron-paul-should-never.html">he’s a fucking crank</a>. <a href="http://world.std.com/~mhuben/libindex.html">Libertarianism is a fucking crank “philosophy”</a>, and his bullshit disregard for other people, in the guise of individualism, is going to hurt more people than it helps. <a href="http://www.nakedcapitalism.com/2011/05/earth-to-libertarians-private-parties-have-coercive-power-too.html">Government isn’t the only coercive force</a>, people. More importantly, if you’re fine with state government but hate the federal government — we tried that “exceptionally limited Federal Government” thing with the Articles of Confederation. It failed pretty spectacularly, so stop asking for a do-over, please.</p>
+
+<p>The current paradigm, being pushed by the so-called “right” and “centrist right”, is that people don’t deserve anything other than what they “earn”. It’s an interesting wet-dream, which pays homage to the fraudulent concept of the meritocracy. If you’ve been paying attention for the last 20 years, we don’t have a meritocracy. Those who do well by others and play by the rules do *not* finish first, but those willing to loot, pillage, and burn — they are our new *Gods*. We deify CEOs, in the vain hope that we, too, may ascend to the Olympian summits with them, to enjoy the fruits of our Job Creator mojo. Honestly, I’m not sure whether the people pushing this fanticrap (a mixture of fantasy and crap, for the uninitiated) believe it, making them fools, or are using it to get ahead, making them scoundrels; regardless, if you hear someone trying to spread this particular Gospel of Supply Side Economics, try to make sure they end up on the outer side of your front door.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Dangers of Over-Simplification]]></title>
+    <link href="http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification/"/>
+    <updated>2012-05-18T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.github.com/2012/05/18/the-dangers-of-over-simplification</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I was listening to an FM talk-radio host (I know, I know, when will I ever learn…) this afternoon, and caught a peculiar rant. He was complaining about how terrible the public sector (and government in general) was compared to the private sector, based on two events.</p>
+
+<p>The first was that he had bought a large amount of classical music using Amazon’s “one click” service, which he had “downloaded to a cloud driver [sic]“. He was able to listen to this music almost immediately following his purchase.</p>
+
+<p>The second was that he had received a call from a local town tax collector, saying that he owed excise tax on a car. He had told the woman that he had sold it already, and she told him that he would have to bring paperwork from the RMV (in Massachusetts they tend to call the “Department of Motor Vehicles” the “Registrar of Motor Vehicles”) indicating that he had, indeed, sold the car. When he questioned why she couldn’t do it herself because “you have a computer in front of you”, the woman told him that it “isn’t my job to help you.”</p>
+
+<p>At face value, these stories seem to confirm the free-market world viewpoint that private enterprise is more efficient than public institutions. However, there are a few problems with this story — namely that we’re really not comparing apples to apples, unless you’re living in the world of <a href="http://www.imdb.com/title/tt0133093/">The Matrix</a> or (ugh) <a href="http://www.imdb.com/title/tt0113243/">Hackers</a>, which have about as much to do with modern computing technology as a rock tends to resemble a Star Trek phaser, or a phone booth has the same abilities as the TARDIS (if you prefer a Doctor Who reference instead of a Star Trek reference).</p>
+
+<p>Amazon is a commercial company. They own every part of what they’re doing, and the only “standards” to which they conform (in this instance) is using HTTPS and MPEG Layer 3 audio encoding to deliver content. Everything else is part of their infrastructure. They own the entire thing — and more importantly, they’re just a reseller. They essentially produce nothing — just tack a profit on top for delivering something in an accessible way.</p>
+
+<p>The RMV is a public institution, which means that they most likely have purchased a suite of software to manage their data (and it’s probably ten or twenty years old). If it resembles the software used in other states, it’s pretty useless for anything other than its primary functions, because it was designed by a lowest-bid contractor to conform to a particular set of RFP standards. It probably does what it’s supposed to do pretty well. Interfacing with other software suites, particularly those not written by the same software vendor — not so much. I cut my teeth in the IT industry writing conversion software (back when I was 11 or 12 years old), and believe me, *nothing* speaks to anything easily without a particular set of standards to do so. Most town tax collectors receive a data dump from their motor vehicle registry/department (and vice versa), which is imported into their local software. There isn’t some Hackers-like ability for the two systems to talk to each other. Leave that crap for bad movies and bad TV shows (Horatio from CSI, anyone?) — computers simply don’t work that way.</p>
+
+<p>I’m sure most people with little or no interest in the intricacies of data import/export probably tuned out half-way through that last paragraph. It’s not particularly exciting stuff — yet it’s very important to understand in the context of the initial narrative.</p>
+
+<p>This vaguely resembles the traditional right-wing meme that “poor people caused the economic collapse” which occurred in 2008. It has been <a href="http://www.ritholtz.com/blog/2011/11/examining-the-big-lie-how-the-facts-of-the-economic-crisis-stack-up/">debunked repeatedly</a> — and yet the meme lives on. In a recent poll, <a href="http://politicalticker.blogs.cnn.com/2011/04/12/civil-war-still-divides-americans/">42% of Southerners</a> still cling to the notion that the “Civil War” was fought to preserve “States’ Rights” rather than simply being a way to exploit human labor, even though it’s very easy to demonstrably show that the primary motivation, both <a href="http://en.wikipedia.org/wiki/Origins_of_the_American_Civil_War">economic and social/political</a>, was maintaining the status quo of a slave-owning set of states. You can’t simplify a complicated argument, unless you want to lose the meaning which is meant to be present in that argument.</p>
+
+<p>Or, you could argue that this is all the end-result of cognitive bias. Maybe people see the government as broken because they *expect* to see it that way, and ignore evidence which is contradictory to their preconceived notions.</p>
+]]></content>
+  </entry>
+  
+</feed>
