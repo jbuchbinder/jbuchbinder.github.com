@@ -8,6 +8,7 @@ layout: page
 My studio is an anomaly, in that it does not use "Pro Tools" or any other commercial software. In fact, 100% of the software used (down to the low-level hardware drivers) is open-source software. This allows unprecedented freedom in the creative process, as you aren’t tied down to any proprietary products with proprietary vendors. Of course, free software does not mean that the software is of lesser quality; in fact, many of the pieces of software used in this studio are far superior to their commercial counterparts (ardour is IMHO, far superior to Pro Tools).
 
 **Hardware** 
+
 *   *Computer* – AMD Athlon64/X2 4000 
 *   *Multitrack Audio Card* – [RME Hammerfall 9652][1]
 *   *A/D D/A Converter* -[Behringer Ultragain Pro-8 Digital ADA8000][2] x 2 = 16 channels in, 16 channels out
@@ -21,6 +22,7 @@ My studio is an anomaly, in that it does not use "Pro Tools" or any other commer
 
 
 **Software** 
+
 *   *Operating System* – [Ubuntu Studio][4] 8.04 (Hardy Heron). *(Linux with a patched realtime kernel)*
 *   *Multitrack DAW* – [ardour][5] v2.3.1
 *   *Mastering* – [jamin][6] v0.95.0
@@ -37,6 +39,7 @@ My studio is an anomaly, in that it does not use "Pro Tools" or any other commer
 
 
 **Mics and Accessories** 
+
 *   [Rane MH-4][9] Mojo series headphone distributor
 *   Behringer [HA-8000][10] 8 port headphone distributor 
 *   Trace Elliot GP12 Series 6 instrument preamp
@@ -74,6 +77,7 @@ In addition to everything listed above, all press materials are prepared with op
  [24]: http://inkscape.org/
 
 **Prospective Equipment** 
+
 *   Cables – More XLR cables would be nice, since we always seem to be running low. There’s already a bunch of nice 2 foot XLR cables for patches, but another snake and some quality 15-25′ XLR cables would be nice.
 *   Memory – When does more RAM ever hurt?
 *   Sound-proofing materials – You can never have enough of this stuff … 
