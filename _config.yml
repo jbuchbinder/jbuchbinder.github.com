@@ -7,7 +7,7 @@ title: /home/jeff/blog
 subtitle: Sucking away valuable moments of your life ...
 author: jeff
 simple_search: http://google.com/search
-description: This is mine. There are many like it, but this is my own.
+description: This is my blog. There are many like it, but this is my own.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -73,7 +73,7 @@ google_plus_one_size: medium
 
 # Google Plus Profile
 # Hidden: No visible button, just add author information to search results
-googleplus_user:
+googleplus_user: 102632982740363465802
 googleplus_hidden: false
 
 # Pinboard
