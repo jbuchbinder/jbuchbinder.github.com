@@ -80,4 +80,4 @@ Hope this has been informative and helpful.
 
 **UPDATE**: *Jan, one of the webtide guys, was nice enough to send me an ant build file which does much the same type of thing I was attempting to do here. It is attached [here][3], for anyone else who would like a copy.*
 
- [3]: http://jeff.ourexchange.net/wp-content/uploads/2008/03/build.xml
+ [3]: http://jbuchbinder.com/wp-content/uploads/2008/03/build.xml
