@@ -5,7 +5,6 @@ layout: post
 permalink: /2007/07/27/nokia-770-makes-appearance-in-hollywood/
 categories:
   - Maemo (N800)
-  - Uncategorized
 ---
 # 
 

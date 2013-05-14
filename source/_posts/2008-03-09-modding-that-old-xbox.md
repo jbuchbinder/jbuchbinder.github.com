@@ -6,8 +6,6 @@ permalink: /2008/03/09/modding-that-old-xbox/
 categories:
   - Development
   - Hacks
-  - Remember, No One Cares
-  - Uncategorized
 ---
 # 
 

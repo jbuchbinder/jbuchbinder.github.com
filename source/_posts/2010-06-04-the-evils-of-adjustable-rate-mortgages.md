@@ -4,7 +4,8 @@ author: jeff
 layout: post
 permalink: /2010/06/04/the-evils-of-adjustable-rate-mortgages/
 categories:
-  - Uncategorized
+  - Remember, No One Cares
+  - Opinion
 tags:
   - financial corruption mortgage tarp bailout bastards
 ---
