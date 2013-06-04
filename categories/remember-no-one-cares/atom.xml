@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Remember, No One Cares | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/remember-no-one-cares/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-06-04T12:53:15-04:00</updated>
+  <updated>2013-06-04T12:54:59-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Gear vs Skill]]></title>
-    <link href="http://jbuchbinder.com/blog/2013/05/03/gear-vs-skill/"/>
+    <link href="http://jbuchbinder.com/2013/05/03/gear-vs-skill/"/>
     <updated>2013-05-03T18:10:00-04:00</updated>
-    <id>http://jbuchbinder.com/blog/2013/05/03/gear-vs-skill</id>
+    <id>http://jbuchbinder.com/2013/05/03/gear-vs-skill</id>
     <content type="html"><![CDATA[<p>I remember a conversation I had with my brother, a few years back. He was
 talking about the amount of photographic equipment which he had been dumping
 money into purchasing, in the hopes of improving the output from his camera.
@@ -72,9 +72,9 @@ forget to stablize your shots ...</p>
   
   <entry>
     <title type="html"><![CDATA[Migrating to Octopress]]></title>
-    <link href="http://jbuchbinder.com/blog/2013/04/02/migrating-to-octopress/"/>
+    <link href="http://jbuchbinder.com/2013/04/02/migrating-to-octopress/"/>
     <updated>2013-04-02T08:58:00-04:00</updated>
-    <id>http://jbuchbinder.com/blog/2013/04/02/migrating-to-octopress</id>
+    <id>http://jbuchbinder.com/2013/04/02/migrating-to-octopress</id>
     <content type="html"><![CDATA[<p>After much hemming, hawing, and gnashing of teeth, I'm migrating my years of sporadic blogging from <a href="http://wordpress.org/">Wordpress</a> to <a href="http://octopress.org/">Octopress</a>. It seems to integrate a little bit better with both my "command line ethos" and my workflow. I'm sure (for anyone keeping track) that there are probably going to be some weird formatting issues, potentially broken pages, and other incidences of oddness in some places. Please excuse the mess, we're remodeling.</p>
 
 <p>In addition to the move, I'm trying to move away from blog entries regarding political events -- not because I should be worried about potential ramifications for my professional/public life -- but rather because there's only a certain amount of pissing into the wind that a man can do before he gets tired of having a mouthful of piss. That's not to say that there won't be <em>any</em> political stuff here, but there's going to be far less.</p>
