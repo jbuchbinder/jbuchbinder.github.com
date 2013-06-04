@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I think one of the biggest things that keeps America from moving forward is the intellecually bankrupt notion that people exist independently of one &hellip;">
+  <meta name="description" content="As I have been delving deeper into the J2EE Servlet specification during the rewrite of REMITT, I have been learning some very interesting, and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/09/11/j2ee-and-sane-application-deployment/">J2EE and &#8220;sane&#8221; Application Deployment</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-09-11T00:00:00-04:00" pubdate data-updated="true">Sep 11<span>th</span>, 2009</time>
+        
+         | <a href="/2009/09/11/j2ee-and-sane-application-deployment/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>As I have been delving deeper into the J2EE Servlet specification during the rewrite of <a href="http://remitt.org/">REMITT</a>, I have been learning some very interesting, and sometimes very painful, lessons about trying to package something without requiring complicated installations.</p>
+
+<p>To get authentication working in Tomcat, the normal way is to define a Context and Realm in TOMCAT_HOME/conf/server.xml. A relatively undocumented file called META-INF/context.xml allows fragments to be distributed with war files. This would be a great solution if it didn’t mean that authentication was now deeply dependent on editing a file in the web archive, which kind of takes the advantage completely out of having one. D’oh!</p>
+
+<p>Next up was the idea of using JAAS, which is a way of setting all of the security information in a single configuration file, and using a custom security module. Which would work very well, if I wanted to pre-extract the war file and pass an archaic system property file through JAVA_OPTS. This seems, again, too difficult to make any sort of sense.</p>
+
+<p>I eventually found a solution by creating my own <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/SecurityFilter.java">Filter</a> and <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/HttpLoginModule.java">LoginModule</a>, then setting the system property for the <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/login.conf">JAAS configuration</a> manually in the init() portion of the Filter. A little filter and realm information in <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/web.xml">WEB-INF/web.xml</a>, and everything seems to work somehow. I understand that the Servlet guys wanted to make sure that the J2EE server context and app context were at two different levels (hence the reason a DataSource in META-INF/context.xml or tomcat’s conf/server.xml isn’t writeable at all), but it makes it a mess for clean deployment.</p>
+
+<p>As it stands now, I can run the server with an override file like like:<br/>
+<code>JAVA_OPTS="-Dproperties=/my/remitt.properties" ./bin/catalina.sh start</code></p>
+
+<p>And I think that’s worth the hassle to set up, since it makes deployment a breeze.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -662,64 +713,6 @@ if ($ID) {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/03/23/who-is-getting-bailed-out-anyway/">Who Is Getting Bailed Out, Anyway?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-03-23T00:00:00-04:00" pubdate data-updated="true">Mar 23<span>rd</span>, 2009</time>
-        
-         | <a href="/2009/03/23/who-is-getting-bailed-out-anyway/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>I’ve been asking who we’re attempting to save with this bailout idea, and I’m not liking the answers I’m getting.</p>
-
-<p><a href="http://krugman.blogs.nytimes.com/">Paul Krugman</a> has some good insight into why <a href="http://krugman.blogs.nytimes.com/2008/11/30/the-greatness-of-keynes/">Keynesian economics</a> are the best way of attempting an economic recovery. I’m not disagreeing with him, I think he’s right on the money, so to speak, saying that pumping money into project work will circulate money in such a way that the economy is allowed to recover. That’s my two cent translation of the information regarding that particular school of thought, but it gets the basic point across.</p>
-
-<p>What I don’t understand is banks. The primary economic purpose of banks is theoretically to lend money (and to a lesser extent to store it, though that really is just a way to the end goal of lending it). For many years after our last major economic disaster, banks <a href="http://www.counterpunch.org/kaufman09192008.html">weren’t allowed to double as investment firms</a>, since saving and risking aren’t exactly two concepts that go hand in hand, no matter what <a href="http://www.aiginvestments.com/aig/default.htm">some weaselly fuckers tell you</a>. Retirement and pension funds have been dumping money into “safe” investments for years in an attempt to beat out our fiat currency system’s built in inflation — but at some point, the backing financial institutions moved to solely using a rating system which couldn’t identify so called “toxic” mortgages and other nasty non-earners. And so we watch everything take a nose dive.</p>
-
-<p>But the banks simply <a href="http://www.nytimes.com/2009/01/18/business/18bank.html?em">aren’t loaning money</a> fast enough to satisfy an economy which had made the transition from cash and carry to the so-called “ownership society.” We’ve been pumped so full of the get-rich-quick mentality along with the <a href="http://www.wired.com/entertainment/hollywood/magazine/15-12/ff_futurama_original">Futurama mentality</a> that mortgaging your life for a house and a few cars used to actually make some sort of twisted sense.</p>
-
-<p>I just don’t see where this is going. Most retirement funds are mostly gone, and it’s been shown pretty well that asshats like AIG are going to <a href="http://slate.com/id/2213942">pay back the important people first</a>. So, we’re going to dump incredible, unbelievable loads of money into paying off brokerage firms that bent us all over to <a href="http://tpmcafe.talkingpointsmemo.com/talk/blogs/therap/2008/10/widening-gap-between-rich-and.php">accelerate the upward motion of wealth</a>, moving money from retirement accounts and house payments to the hands of a small group of uber-elites. The same people who are going to profit from this are the same people who <em>aren’t going to loan money</em> to anyone. And banks are <a href="http://www.nytimes.com/2009/03/21/business/21bank.html?pagewanted=all">in a state of denial</a>, assuming that *anyone* is going to pony up 1:1 assets for their garbage. What was deal about attempting to keep people in their current mortgages by working out repayment plans instead of renegotiating them down to a *sane* value?</p>
-
-<p>If we’re going to have the Federal Government bail out individual accounts through the FDIC, why not simply fund the FDIC at a greater rate instead of <a href="http://seekingalpha.com/article/93052-the-potential-funding-shortfall-at-the-fdic">starving it</a> as we’ve <a href="http://www.fdic.gov/bank/individual/failed/banklist.html">racked up 20 bank failures before the third month of 2009 has finished</a>? Companies are hoarding money, people are hoarding money, no one is going to *spend* said money. As near as I can figure the main beneficiaries of the current banking system are the very, very rich, and at the current FDIC cap of $250,000, we’d be more or less resetting the game. Incredibly rich people might lose out, but I don’t see everyone else doing so badly.</p>
-
-<p>What about businesses? They need credit to function, don’t they?</p>
-
-<p>I’m starting to think not. Most business start with investor funds and grow to pay them back, so we might have to clamp down on executive level pay, but maybe, just maybe, we might see more equality for workers.</p>
-
-<p>Do I think this has a chance in hell of happening? Hell emphatically no. Everyone from the President on down to the dregs of Congress has their pecker firmly lodged in the great behemoth that is the banking system, and I don’t think they really want to see their money go down in flames. I mean, why would you slave away at a forty hour work week, when an MBA and puckering for a few buttcheeks will have you making “real” money that lets you get “real rich.”</p>
-
-<p>I’m thinking that the only thing that keeps the American machine working is that the cogs of the machine have dreams of being at the helm. We promulgate the fiction that everyone can be rich, yet the reality is that most will spend their sweat equity making a very few incredibly wealthy. The dream of America used to be living without opression, now it’s attempting to use the spectre of Naked Capitalism to step on everyone else to get ahead. Remember, every time you get richer, someone else gets poorer.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/6/">&larr; Older</a>
@@ -737,6 +730,10 @@ if ($ID) {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/03/stabilization/">Stabilization</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
       </li>
     
@@ -752,27 +749,22 @@ if ($ID) {
         <a href="/2012/11/06/election-2012-summary/">Election 2012 Summary</a>
       </li>
     
-      <li class="post">
-        <a href="/2012/11/05/imaginary-horserace-2012-edition/">Imaginary Horserace, 2012 Edition</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (2)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (3)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>Hacks (26)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>Opinion (10)</a></li>
+<li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
 <li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (82)</a></li>
-<li class='category'><a href='/categories/uncategorized/'>Uncategorized (3)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
   </ul>
@@ -825,6 +817,15 @@ if ($ID) {
   <p><a href="http://delicious.com/whatsyourmeme">My Delicious Bookmarks &raquo;</a></p>
 </section>
 
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/102632982740363465802?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 

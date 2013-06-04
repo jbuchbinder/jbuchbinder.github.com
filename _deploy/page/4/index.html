@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I hate it. IMAP Synchronization, that is. In an effort to migrate users from one *shudder* Exchange provider to another (after getting shot down for &hellip;">
+  <meta name="description" content="I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me. Why someone would design a system to expose every &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/">Backing Up MAPI Contacts and Calendar From Exchange Server</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-22T00:00:00-05:00" pubdate data-updated="true">Jan 22<span>nd</span>, 2010</time>
+        
+         | <a href="/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.</p>
+
+<p>Why someone would design a system to expose every bit of data for a system through a nice standard protocol like IMAP, then only allow certain things to be viewed through a piece of crap proprietary protocol like MAPI just boggles the mind. I’m sure it’s part of their “vendor lock-in” thing, but it just pisses me off.</p>
+
+<p>Anyway, I found out that to completely backup an Exchange account (as I have been doing over the last week or so for different accounts), you also have to backup the non-mail portions. I ended up using a deprecated library called <a href="http://jakarta.apache.org/slide/clientjavadoc/overview-summary.html">Jakarta Slide</a> for WebDAV client support, which helpfully came with a <strong>SearchMethod</strong> call which was capable of running the specialized XML query required to backup the data.</p>
+
+<p>The XML I ended up using was:</p>
+
+<pre><code>SELECT * FROM "URL"
+</code></pre>
+
+<p>in case anyone is interested. Again, I have a fatjar of this utility, but I have to check with work to make sure they’re okay with me releasing it before I can post it anywhere.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -563,57 +614,6 @@ String country = mTelephonyMgr.getNetworkCountryISO();
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/09/11/j2ee-and-sane-application-deployment/">J2EE and &#8220;sane&#8221; Application Deployment</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-09-11T00:00:00-04:00" pubdate data-updated="true">Sep 11<span>th</span>, 2009</time>
-        
-         | <a href="/2009/09/11/j2ee-and-sane-application-deployment/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>As I have been delving deeper into the J2EE Servlet specification during the rewrite of <a href="http://remitt.org/">REMITT</a>, I have been learning some very interesting, and sometimes very painful, lessons about trying to package something without requiring complicated installations.</p>
-
-<p>To get authentication working in Tomcat, the normal way is to define a Context and Realm in TOMCAT_HOME/conf/server.xml. A relatively undocumented file called META-INF/context.xml allows fragments to be distributed with war files. This would be a great solution if it didn’t mean that authentication was now deeply dependent on editing a file in the web archive, which kind of takes the advantage completely out of having one. D’oh!</p>
-
-<p>Next up was the idea of using JAAS, which is a way of setting all of the security information in a single configuration file, and using a custom security module. Which would work very well, if I wanted to pre-extract the war file and pass an archaic system property file through JAVA_OPTS. This seems, again, too difficult to make any sort of sense.</p>
-
-<p>I eventually found a solution by creating my own <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/SecurityFilter.java">Filter</a> and <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/HttpLoginModule.java">LoginModule</a>, then setting the system property for the <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/login.conf">JAAS configuration</a> manually in the init() portion of the Filter. A little filter and realm information in <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/web.xml">WEB-INF/web.xml</a>, and everything seems to work somehow. I understand that the Servlet guys wanted to make sure that the J2EE server context and app context were at two different levels (hence the reason a DataSource in META-INF/context.xml or tomcat’s conf/server.xml isn’t writeable at all), but it makes it a mess for clean deployment.</p>
-
-<p>As it stands now, I can run the server with an override file like like:<br/>
-<code>JAVA_OPTS="-Dproperties=/my/remitt.properties" ./bin/catalina.sh start</code></p>
-
-<p>And I think that’s worth the hassle to set up, since it makes deployment a breeze.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/5/">&larr; Older</a>
@@ -631,6 +631,10 @@ String country = mTelephonyMgr.getNetworkCountryISO();
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/03/stabilization/">Stabilization</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
       </li>
     
@@ -646,27 +650,22 @@ String country = mTelephonyMgr.getNetworkCountryISO();
         <a href="/2012/11/06/election-2012-summary/">Election 2012 Summary</a>
       </li>
     
-      <li class="post">
-        <a href="/2012/11/05/imaginary-horserace-2012-edition/">Imaginary Horserace, 2012 Edition</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (2)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (3)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>Hacks (26)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>Opinion (10)</a></li>
+<li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
 <li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (82)</a></li>
-<li class='category'><a href='/categories/uncategorized/'>Uncategorized (3)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
   </ul>
@@ -719,6 +718,15 @@ String country = mTelephonyMgr.getNetworkCountryISO();
   <p><a href="http://delicious.com/whatsyourmeme">My Delicious Bookmarks &raquo;</a></p>
 </section>
 
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/102632982740363465802?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 

@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="The entire “managed health” component of the privatized healthcare system which we now “enjoy” in the United States descended from the HMO Act of &hellip;">
+  <meta name="description" content="I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,72 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2012/03/22/expanding-ganglia-rrd-files/">Expanding Ganglia RRD Files</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-22T00:00:00-04:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2012</time>
+        
+         | <a href="/2012/03/22/expanding-ganglia-rrd-files/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
+
+<p>One-liner to expand RRDs:</p>
+
+<pre><code>/etc/init.d/gmetad stop; /etc/init.d/rrdcached stop ; 
+  find . | grep rrd | while read X; do fix-rrd.sh "$X"; done ; 
+  /etc/init.d/rrdcached start ; /etc/init.d/gmetad restart
+</code></pre>
+
+<p><strong>fix-rrd.sh</strong>:</p>
+
+<pre><code>#!/bin/bash
+# fix-rrds.sh
+NEWRRDS="0:5856 1:20160 2:20160 3:52704 4:3740"
+for RRD in $*; do
+        echo -n "Processing $RRD ... "
+        for RRA in ${NEWRRDS}; do
+                A=$(echo $RRA | cut -d: -f1)
+                B=$(echo $RRA | cut -d: -f2)
+                echo -n "$RRA "
+                rrdtool resize "$RRD" $A GROW $B 
+                        mv resize.rrd "$RRD" &amp;#038;&amp;#038; 
+                        chown nobody "$RRD"
+        done
+        echo "done."
+done
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -615,56 +681,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/09/21/xela-day-three-clinic/">Xela Day Three: Clinic</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-09-21T00:00:00-04:00" pubdate data-updated="true">Sep 21<span>st</span>, 2010</time>
-        
-         | <a href="/2010/09/21/xela-day-three-clinic/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>The clinic was open for the first of the two days it will be open during my stay in Xela. It was a pretty crazy scene — a line going to the end, if not around the end, of the block.</p>
-
-<p>We had Isabel, the local intake/registration person, working with my sister Shelley to do registrations, after which the patients were sent to Jorge, who war running triage. Dr Meg Sullivan treated the pediatric patients, while Irv and one of the local doctors handled the adult patients. Within a half hour or so, the makeshift waiting rooms upstairs and downstairs in the clinic were packed with waiting patients. One thing I did notice was that the children were remarkably well behaved — much more so than children their ages in the United States.</p>
-
-<p>American Airlines, never striving to be the speediest in baggage recovery, still hasn’t delivered the bag containing the primary server. As I haven’t had any actually setup or installation work to do, I spent my time alternately documenting methods, coding some pieces for FreeMED which would handle some of clinic’s various registration and triage functions, taking pictures for fundraising use, and doing basic gopher tasks for the doctors and nurses. It’s a little disconcerting that we aren’t able to get people trained up on the system yet, but it’s just going to have to wait until their server comes in.</p>
-
-<p>Another hurdle is the wiring. There isn’t really any “modern” electrical wiring, in that most of the circuits aren’t grounded at all. Most look like they barely have any sort of insulation over their conductors. The clinic has a little bit of money for supplies and such things, so we may end up having a UPS purchased to attempt to shield the servers from the somewhat inconsistent wiring and power grid there. The laptops can probably function with simple surge protectors, since they have their own sort of “UPS” through the use of their batteries.</p>
-
-<p>Well, apart from an emergency colo flip for work (which I’ve been up until a little after midnight local time performing), I’m looking to get some shut-eye, as we’re heading out to the pueblos early tomorrow morning. I think that I’m going to be a little less useful than I have been in the clinic, but hopefully I can glean some further “best practices” and workflow in such a way that I can make it easier for the docs to do their jobs.</p>
-
-<p><em>Update for those who were waiting for pictures: I’m in the process of uploading some pictures from the POP-WUJ clinic to a Flickr set, so check my Flickr account early Wednesday morning or so to see the first batch.</em></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/3/">&larr; Older</a>
@@ -682,6 +698,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/03/stabilization/">Stabilization</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
       </li>
     
@@ -697,27 +717,22 @@
         <a href="/2012/11/06/election-2012-summary/">Election 2012 Summary</a>
       </li>
     
-      <li class="post">
-        <a href="/2012/11/05/imaginary-horserace-2012-edition/">Imaginary Horserace, 2012 Edition</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (2)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (3)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>Hacks (26)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>Opinion (10)</a></li>
+<li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
 <li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (82)</a></li>
-<li class='category'><a href='/categories/uncategorized/'>Uncategorized (3)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
   </ul>
@@ -770,6 +785,15 @@
   <p><a href="http://delicious.com/whatsyourmeme">My Delicious Bookmarks &raquo;</a></p>
 </section>
 
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/102632982740363465802?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 

@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="Well, after many years of living in podunk cowville, I’ve moved back into a slightly more suburban area, complete with ridiculous historic figures. &hellip;">
+  <meta name="description" content="After more than six months of dealing with the Synaptics touchpad driver interpreting my hand brushing against the pad as a “click”, I found a small &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/06/29/ubuntu-touchpad-annoyance/">Ubuntu Touchpad Annoyance</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-06-29T00:00:00-04:00" pubdate data-updated="true">Jun 29<span>th</span>, 2006</time>
+        
+         | <a href="/2006/06/29/ubuntu-touchpad-annoyance/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>After more than six months of dealing with the Synaptics touchpad driver interpreting my hand brushing against the pad as a “click”, I <a href="http://ubuntu.wordpress.com/2006/03/24/disable-synaptics-touchpad/">found a small change</a> to xorg.conf which will take away the sting of using a touchpad with <a href="http://www.ubuntu.com">Ubuntu</a>/<a href="http://www.kubuntu.org/">Kubuntu</a>.</p>
+
+<p>Simply add the following lines in <strong>/etc/X11/xorg.conf</strong> in the InputDevice clause for the touchpad, and restart X:<br/>
+`</p>
+
+<pre><code>    Option          "SHMConfig"             "on"
+    Option          "MaxTapTime"            "0"
+</code></pre>
+
+<p>`</p>
+
+<p>Just had to share that, it took me so long to get up the resolve to actually *look* for a solution …</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -453,47 +504,7 @@ Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of picture
 
   <div class="entry-content"><h1></h1>
 
-<p>I’m slacking in keeping up this weblog-thing, but in my defense, I have been a bit busy. <a href="http://freemedsoftware.org/">FreeMED</a> released <a href="http://www.freemedsoftware.org/content/view/16/2/">version 0.8.1</a> to the world, and I have been working in the <a href="http://jeff.ourexchange.net/studio/artists_and_projects/">studio</a> a lot lately as well, working on both the Heirs of Centack audiobook and musical projects. Hopefully the <a href="http://www.behringer.com/BCF2000/index.cfm?lang=ENG">BCF-2000</a> that has been ordered will get here soon, to make mixing less of a pain. I’m also halfway through a platform change to use <a href="http://ccrma.stanford.edu/planetccrma/software/">PlanetCCRMA</a> as the new studio platform, since the latencies appear good with the 2.6 patched kernel they’re using. More updates as I have them…</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2005/10/19/pluggable-authentication-for-freemed/">Pluggable Authentication for FreeMED</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-10-19T00:00:00-04:00" pubdate data-updated="true">Oct 19<span>th</span>, 2005</time>
-        
-         | <a href="/2005/10/19/pluggable-authentication-for-freemed/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>I finally mustered up the spare time to move from the old system of <a href="http://freemedsoftware.org/">FreeMED</a> authentication to a pluggable system. I have only coded up two plugins for now: a “Password” plugin, which uses the old system of authentication and password checking, and a “Basic” plugin, supporting HTTP Basic Authentication. I’m also currently considering writing an LDAP plugin to allow FreeMED credentials and basic ACL information to be stored on an LDAP server, to really allow for enterprise deployments. On top of all this, I have been doing some “house cleaning” in the code so that FreeMED is more autonomous on startup.</p>
+<p>I’m slacking in keeping up this weblog-thing, but in my defense, I have been a bit busy. <a href="http://freemedsoftware.org/">FreeMED</a> released <a href="http://www.freemedsoftware.org/content/view/16/2/">version 0.8.1</a> to the world, and I have been working in the <a href="http://jbuchbinder.com/studio/artists_and_projects/">studio</a> a lot lately as well, working on both the Heirs of Centack audiobook and musical projects. Hopefully the <a href="http://www.behringer.com/BCF2000/index.cfm?lang=ENG">BCF-2000</a> that has been ordered will get here soon, to make mixing less of a pain. I’m also halfway through a platform change to use <a href="http://ccrma.stanford.edu/planetccrma/software/">PlanetCCRMA</a> as the new studio platform, since the latencies appear good with the 2.6 patched kernel they’re using. More updates as I have them…</p>
 </div>
   
   
@@ -518,6 +529,10 @@ Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of picture
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/03/stabilization/">Stabilization</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
       </li>
     
@@ -533,27 +548,22 @@ Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of picture
         <a href="/2012/11/06/election-2012-summary/">Election 2012 Summary</a>
       </li>
     
-      <li class="post">
-        <a href="/2012/11/05/imaginary-horserace-2012-edition/">Imaginary Horserace, 2012 Edition</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (2)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (3)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>Hacks (26)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>Opinion (10)</a></li>
+<li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
 <li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (82)</a></li>
-<li class='category'><a href='/categories/uncategorized/'>Uncategorized (3)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
   </ul>
@@ -606,6 +616,15 @@ Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of picture
   <p><a href="http://delicious.com/whatsyourmeme">My Delicious Bookmarks &raquo;</a></p>
 </section>
 
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/102632982740363465802?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 
