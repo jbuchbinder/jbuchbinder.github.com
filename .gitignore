@@ -6,6 +6,7 @@
 public
 sass.old
 source.old
+_deploy
 source/_stash
 source/stylesheets/screen.css
 vendor
