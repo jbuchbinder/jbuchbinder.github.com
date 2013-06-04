@@ -26,7 +26,7 @@ able to use their technology with some skill/proficiency, or b) they were
 extremely lucky. However, I digress.
 
 One of the most consistently over-used (and misused, incidentally) is
-"[cinéma_vérité][1]". In modern cinematographer parlance, it has come to mean
+"[cinéma vérité][1]". In modern cinematographer parlance, it has come to mean
 any footage which resembles that of an unskilled operator, which theoretically
 lends an air of realism and observationalism (see any first year film school
 book on observational cinema if you're unfamiliar with the concept) to a
