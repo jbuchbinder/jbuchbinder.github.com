@@ -1,0 +1,896 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>/home/jeff/blog</title>
+  <meta name="author" content="jeff">
+
+  
+  <meta name="description" content="As I have been delving deeper into the J2EE Servlet specification during the rewrite of REMITT, I have been learning some very interesting, and &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jbuchbinder.com/page/5">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="/home/jeff/blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-11867051-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">/home/jeff/blog</a></h1>
+  
+    <h2>Sucking away valuable moments of your life ...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jbuchbinder.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/music">Music</a></li>
+  <li><a href="/pets">Pets</a></li>
+  <li><a href="/quotes">Quotes</a></li>
+  <li><a href="/studio">Studio</a></li>
+  <li><a href="/wishlist">Wishlist</a></li>
+  <li><a href="/in-memoriam">In Memoriam</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/09/11/j2ee-and-sane-application-deployment/">J2EE and &#8220;sane&#8221; Application Deployment</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-09-11T00:00:00-04:00" pubdate data-updated="true">Sep 11<span>th</span>, 2009</time>
+        
+         | <a href="/2009/09/11/j2ee-and-sane-application-deployment/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>As I have been delving deeper into the J2EE Servlet specification during the rewrite of <a href="http://remitt.org/">REMITT</a>, I have been learning some very interesting, and sometimes very painful, lessons about trying to package something without requiring complicated installations.</p>
+
+<p>To get authentication working in Tomcat, the normal way is to define a Context and Realm in TOMCAT_HOME/conf/server.xml. A relatively undocumented file called META-INF/context.xml allows fragments to be distributed with war files. This would be a great solution if it didn’t mean that authentication was now deeply dependent on editing a file in the web archive, which kind of takes the advantage completely out of having one. D’oh!</p>
+
+<p>Next up was the idea of using JAAS, which is a way of setting all of the security information in a single configuration file, and using a custom security module. Which would work very well, if I wanted to pre-extract the war file and pass an archaic system property file through JAVA_OPTS. This seems, again, too difficult to make any sort of sense.</p>
+
+<p>I eventually found a solution by creating my own <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/SecurityFilter.java">Filter</a> and <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/HttpLoginModule.java">LoginModule</a>, then setting the system property for the <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/login.conf">JAAS configuration</a> manually in the init() portion of the Filter. A little filter and realm information in <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/web.xml">WEB-INF/web.xml</a>, and everything seems to work somehow. I understand that the Servlet guys wanted to make sure that the J2EE server context and app context were at two different levels (hence the reason a DataSource in META-INF/context.xml or tomcat’s conf/server.xml isn’t writeable at all), but it makes it a mess for clean deployment.</p>
+
+<p>As it stands now, I can run the server with an override file like like:<br/>
+<code>JAVA_OPTS="-Dproperties=/my/remitt.properties" ./bin/catalina.sh start</code></p>
+
+<p>And I think that’s worth the hassle to set up, since it makes deployment a breeze.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/08/14/rich-people/">Rich People</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-08-14T00:00:00-04:00" pubdate data-updated="true">Aug 14<span>th</span>, 2009</time>
+        
+         | <a href="/2009/08/14/rich-people/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I think one of the biggest things that keeps America from moving forward is the intellecually bankrupt notion that people exist independently of one another, and that each person is independently financially responsible for their entire life. It’s a horrible concept, which was promulgated, at least in part, by Ayn Rand and her followers. I quote:</p>
+
+<blockquote><ul>
+<li><p>In answer to the question: “If a morality is not based on the common good, what is it then based on?”: on a definition of the moral individual and on that which is good for him. The moral individual is the best and highest possible to man. By what standard? By the essence of man’s nature. The man living in accordance with his nature is the moral man and the “surviving” man — he carries the life force, the life principle, he is the self-renewing “energy” and the fountainhead. What is man’s nature? Man is a reasoning being.</p></li>
+</ul>
+
+
+<p>And since morality is a matter of free will, open to all but the insane — the good of the moral man is good for all, i.e., for all those who wish to be moral.</p>
+
+<p>What is good? That which is in accordance with the life principle of man. The independent, the self-reverent, the self-sufficient.</p>
+
+<p>Do I set myself up as an arbitrary elite and formulate a morality for my own kind of elite, at the expense of others? No, because it is not to be enforced upon “others” or anyone. “Others” are free not to accept it and not to subscribe to it; they may have their own kind of collectivism, altruism or whatever they wish. But they are not free to enforce it upon me and my “elite” — they are not free to arrange their collectivism at our expense. The objective dividing line is: no man exists for the sake of another man. [&#8230;]</p>
+
+<p>This point — no man exists for the sake of another man — must be established very early in my system. It is one of the main cornerstones — and perhaps even the basic axiom.</p>
+
+<p>Quoted from the Journals of Ayn Rand</p>
+
+<p>Where do I start with where this goes wrong? I guess I could start with “What is good? That which is in accordance with the life principal of man. The independent, the self-reverent, the self-sufficient.” It’s a very narcissistic point of view, assuming that people exist solely for themselves. Wikipedia refers to a community as a “group that is organized around common values and social cohesion within a shared geographical location, generally in social units larger than a household”. Common values and social cohesion infer interdependencies between the persons involved, ostensibly in the aspiration toward a higher common good. Whereas no person exists solely for the sake of another person, a web of interdependency links all of us, and what is good for one person in particlar is rarely good for society in general.</p>
+
+<p>Now we can move on to the rich, or the “parasite class”. I tend to think of money as <a href="http://www.chrismartenson.com/crashcourse/chapter-6-what-money">a claim on human labor</a>, as per Chris Martenson. The issue with the incredible wage disparity that we see in our system of “pure capitalism” (which is quite debatable, as we have been <a href="http://www.calculatedriskblog.com/2009/01/cbo-64-billion-subsidy-cost-for-tarp.html">injecting public funds for private gain as of late</a>), is that the labors of the highest paid echelon of society could not possibly be justified over the laborers of the lowest.</p>
+
+<p>Lawyers, for example, have no cap on the amount of money they can charge (I prefer to use the more fitting word “extort”) their clients, mainly because they not only control rich and powerful lobbys, but also because the <a href="http://www.senate.gov/CRSReports/crs-publish.cfm?pid='0DP%2BP,[;#">majority of lawmakers are lawyers</a>. You not only can’t trust rich people to regulate crookery, you really can’t trust people to regulate themselves. I swear, it really doesn’t work. I’m sure that for the lawyer involved in a case, charging 500 dollars an hour seems like it makes a great deal of sense from a personal standpoint, as he or she can advance their lifestyle through the acquisition of enormous piles of cash-money, but society as a whole does not benefit from this behavior. For example, people filing for bankruptcy generally don’t have a few thousand dollars laying around to hand to some lawyer who is just going to have his lowly paralegal do the majority of the work, then bill it at his normal rate. Did I forget to mention that profit-sharing of legal fees with non-bar certified professionals (non-lawyers) isn’t legal, as the lawyers in Congress have written laws to ensure that? Must be nice to make your own rules…</p>
+
+<p>Back to individualism, and why it’s such a crock. The majority of the services that an average American uses during the day are in some way, shape or form at least somewhat community owned or controlled. Roads and sewers are owned and operated by the communities in which they are located. Police, fire and ambulance servers are, in all but the most far-fetched cases, owned and operated by municipalities. Public power infrastructure is maintained by states and to a lesser degree municipalities. Healthcare over a certain age, at least in theory, is spread out over the community as a whole, as a way of supporting our elderly citizens.</p>
+
+<p>Calling all of this “socialism” is probably right. The greater issue is “what is wrong with socialism?” The answer lies in the inability for a small percentage (which would otherwise be a statistical anomaly) of people to claw their way into an utterly lavish lifestyle by using the labor of less fortunate (or most likely, more scrupulous) people to get there.</p>
+
+<p>Then there is the moral premise of the entire Randian argument — whatever is good for you, is obviously better than what is good for everyone, because you’re more important than everyone else. People who are rich generally get that way by making profit on some sort of labor or time investment (discounting the <a href="http://existentialistcowboy.blogspot.com/2009/08/why-us-investor-class-are-blood-sucking.html">parasite “investor class”</a>, which makes money solely by leveraging existing money in a corrupt system which leans towards investment over labor). The issue with that is that draining an inordinate amount of money out of the economy as a whole, for the sole purpose of greed and self-aggrandizement, is detrimental to the people who are actually performing the labor and consuming the services in question. A healthy income can still be derived from personal labors without the upward motion of wealth from the actual laborers working underneath the person or people in question. Therefore, being rich implies being greedy.</p>
+
+<p>When I say “rich”, I don’t mean those people who have gone to school for ten years to get a degree and earn 100,000 dollars a year or more. I mean the people who are dragging in 200,000 or even 500,000 dollars a year. I can’t conscionably see how anyone can produce labor that is worth that kind of money (at least in 2009 dollars).</p>
+
+<p>The bottom line is that rich people are different from pretty much everyone else. Hoping you’re going to be the asshole on top raining golden showers of delight on the happy plebes below is a terrible reason to push destructive policies and strip back social measures designed to keep people safe and healthy. Taxing the rich at a higher percentage isn’t unfair, it’s just evening the playing field, restoring community “wealth” back to the community and the people who actually produced the wealth. Go socialism?</p></blockquote>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/08/07/rewriting-remitt-the-j2ee-way/">Rewriting REMITT, the J2EE Way</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-08-07T00:00:00-04:00" pubdate data-updated="true">Aug 7<span>th</span>, 2009</time>
+        
+         | <a href="/2009/08/07/rewriting-remitt-the-j2ee-way/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>For those people who are unfamiliar with my programming ventures, I had written a three stage extensible billing system a few years back called <a href="http://remitt.org/">REMITT</a> (which stands for REMITT Electronic Medical Information Translation and Transmission). I had created the majority of the code in about a week and the XSL transforms required for it to function in another two weeks or so.</p>
+
+<p>Since then, the project has been somewhat languishing, due to it being written in Perl, which is a minor pain to get running for most people on a good day, compounded with it using XML-RPC with sessions as a remote procedural call dialect.</p>
+
+<p>I decided to embark on a complete rewrite of the core of REMITT to make it more portable, more extensible, better designed and far more stable than it had been in past. I have gotten about 3/4 of the way through rewriting the core of REMITT as a J2EE application using MySQL as a database backend. There are a number of improvements I have been working on, including:</p>
+
+<ol>
+<li>True crossplatform nature. – Being J2EE, you can even run it on *shudder* Windows if you felt the need to. I wouldn’t recommend it, but you could do it.</li>
+<li>Better threading model. – Instead of a single executor thread pool, each stage of transformation gets its own pool, maintained and reaped by a single control thread. As Java has a very nice threading model, this was much easier than I had anticipated.</li>
+<li>Transport scripting. – Instead of requiring heavy-duty programming expertise to write transport plugins, I moved to using Rhino do do embedded Javascript scripting for them, as well as allowing SFTP transport.</li>
+<li>Namespaced configuration. – Each user can have their own configuration *per* plugin, which is a lot easier than before. It also has the ability for each plugin to present its configuration options to a frontend, so there’s no more worrying about configuration variable names.</li>
+<li>SOAP. – I’m using CXF for web services, and it took me all of a second to generate a proxy class using wsdl2php which worked perfectly the first time around.</li>
+<li>Web Interface. – Through the magic of JSP, the REMITT server has its own set of administration pages and monitoring functions, so it’s not quite as much of a black box as before.</li>
+<li>IDE Support. – Eclipse is a beautiful IDE, and with Javadoc completion support, makes anything I could have used with Perl look like crap. ‘Nuff said.</li>
+<li>OO Model. – Perl OO is to Java OO as a Pinto is to a Tesla Roadster. This thing actually has some architecture behind it. It’s about time.</li>
+</ol>
+
+
+<p>I’ll be posting the code into REMITT’s SVN trunk shortly, as soon as I’m positive that it does *something* in case anyone else feels the need to work on it. In the meantime, I’ll continue to play with it until I get something useful out of it.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/07/15/sharecropping/">Sharecropping</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-15T00:00:00-04:00" pubdate data-updated="true">Jul 15<span>th</span>, 2009</time>
+        
+         | <a href="/2009/07/15/sharecropping/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I was flipping through radio stations on my way to one of the colocation centers I have to visit for work, and chanced upon a Worcester-area right wing talk radio station. I got fed up about 60 seconds into the broadcast, listening to a man with very poor English asking why the government wants to take small business’s hard earned money away from them and give it to people who don’t deserve it.</p>
+
+<p>Randian masturbation aside, it made me a little angry to hear. I think some of it has to do with the notion that some people “deserve” well paying jobs (and the intellectually bankrupt notion that everyone could have well paying jobs if only they weren’t so not white and lazy). “Why does the government want to force me to pay for poor people to see the doctor,” these people ask, “when it costs us so much money?”</p>
+
+<p>Then I remember that Americans pay the people who do the actual work very little. Minimum wage in the United States is <a href="http://www.dol.gov/esa/whd/flsa/">being raised to 7.25 this month</a>. This effectively means that a day laborer earning minimum wage can look forward to a fat paycheck of 290 dollars a week before taxes, and about 15,000 dollars a year, also before taxes. That’s a monthly gross income of 1,160 dollars. How exactly are these people, who are the “cogs” who push production in this country, supposed to afford anything? Our <a href="http://firedoglake.com/2008/10/23/mind-the-gap-us-wage-disparity-worst-among-30-nations/">growing wage disparity</a> isn’t exactly helping, as the money which would be going to allow equitable pay and healthcare for workers is padding executive level bonuses.</p>
+
+<p>Again, we see the spectre of forced capitalism rising above the common sense of single payer (or at least somewhat publically funded and run) healthcare. The same small business owners who are kvetching and crying about how they will have to fund healthcare, would effectively be paying the same or more likely *less* money, as government run healthcare would have substantially lower administrative costs. The crusty top of the US income earners, who suck in millions (if not billions) without actually *producing* anything would have to pay a greater share, to compensate for the gigantic overabundance of money they have siphoned out of our financial system over the last thirty or forty years or so of reduced regulation and non-existant watchdogging.</p>
+
+<p>Then I thought of <a href="http://en.wikipedia.org/wiki/Sharecropping">sharecropping</a>. You get the ability to eek out a living from someone who actually *owns* things, but you never own anything. You rent your house, you lease a car (if your credit is any good), and you never really are able to afford much. If you are lucky enough to get married, your kids are either looked after by family or grow up as latch-key kids so that you can afford to buy them food and clothes. Which part of this sounds like the America espoused in all of those flag-waving campaign-time commercials? If we actually treated our people well and paid them an actual living wage, socialized the healthcare and benefits systems, and put some (oh noes! not teh capitalism!) caps on executive pay, we’d probably be better off.</p>
+
+<p>But I know how this goes — we’ll hem and haw about everything, Congress will pass a meaningless law giving subsidies to insurance companies, and we’ll all get sicker and die poorer. Yay pure capitalism!</p>
+
+<p>(<em>Upon a bit more reading, I think that <a href="http://en.wikipedia.org/wiki/Tenant_farmer">tenant farming</a> might be a little more apropos for a comparison, since it involves forced evictions.</em>)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/06/01/mortgaging-our-lives-for-money/">Mortgaging Our Lives for Money</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-01T00:00:00-04:00" pubdate data-updated="true">Jun 1<span>st</span>, 2009</time>
+        
+         | <a href="/2009/06/01/mortgaging-our-lives-for-money/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<blockquote><p><em>“Everybody here sells his time for money. It’s like taking a mortgage against your life.” – Dr Dick Solomon (3rd Rock from the Sun, “I Enjoy Being A Dick”)</em></p></blockquote>
+
+<p>Although the quote “the love of money is the root of all kinds of evil” is an oft-malighed, often quoted Biblical “New Testament” passage which is used by quite a few bible-thumping born-agains, I started thinking about the reason why money would be such a powerful motivating force.</p>
+
+<p>A quick search on “money” comes up with a history on how money is to be exchanged for goods and services. Chris Martenson’s “Crash Course” says that <a href="http://www.chrismartenson.com/crashcourse/chapter-6-what-money">money is a claim on human labor</a>. We can then infer that human labor is indirectly exchanged for goods and services, but know from experience that the value of peoples’ labor <a href="http://www.cbpp.org/cms/index.cfm?fa=archivePage&amp;id=4-9-08sfp.htm">varies greatly</a>, even among the people in a single country. It can then be deduced that the value of all peoples’ labor, and therefore time, is not equal.</p>
+
+<p>Is it not exceedingly possible that money is an indicator that your time is more valuable than your neighbor’s time? Is it not also possible that it implies that your *life* is more valuable?</p>
+
+<p>This is the prevailing sentiment in our Capitalist society, which places a greater emphasis on the acquisition of money than <a href="http://enlightenedrepublix.blogspot.com/2009/03/just-few-arguments-against-socialized.html">the health and welfare of its own people</a>, usually by arguing that the government *they* elected can’t work properly because it’s full of the incompetant people *they* elected, and that in the face of every feasability and critical analysis, that the “free market will solve everything”. And I quote: “Just because Americans are uninsured doesn’t mean they can’t receive health care; nonprofits and government-run hospitals provide services to those who don’t have insurance, and it is illegal to refuse emergency medical service because of a lack of insurance.” (from the previous link) Apparently people who have less money than you are perfectly entitled … to clog up emergency services rather than being able to seek preventative medicine, which <a href="http://content.nejm.org/cgi/content/full/358/7/661">is far more of a solution</a> than creating clusterfucks in emergency rooms, not strictly for saving money, but for keeping people off gurneys.</p>
+
+<p>Getting back to the point… is one person more valuable than another based solely on their earning potential? I seriously doubt that the CEO of Bear Stearns, who destroyed the equivalent of millions of hours of human labor, is somehow a more valuable human being than a bricklayer who works for an hourly paycheck, yet we place far more importance on the CEO by compensating his time with more equivalent labor.</p>
+
+<p>And <a href="http://www.sadlyno.com/archives/8415.html">“European Socialism”</a> is *so* horrible…</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/05/25/performance-bonuses/">Performance Bonuses</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-25T00:00:00-04:00" pubdate data-updated="true">May 25<span>th</span>, 2009</time>
+        
+         | <a href="/2009/05/25/performance-bonuses/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I think that after reading things like <a href="http://www.guardian.co.uk/business/2009/may/24/rbs-banking-bonus-scheme-criticism">this</a> about taxpayer outrage at executive level bankers raking in performance bonuses for apparently <a href="http://theglitteringeye.com/?p=4399">tanking the world financial system</a>, I’m starting to think that we’re wrong about the outrage.</p>
+
+<p>Not that we shouldn’t be outraged about funnelling money to jackholes who buy and sell people like me during lunch … more that they really should get performance bonuses if it’s based on *performance*.</p>
+
+<p>Look at what they’ve done: the <a href="http://tpmcafe.talkingpointsmemo.com/talk/blogs/therap/2008/10/widening-gap-between-rich-and.php">upward motion of wealth</a> from <a href="http://www.usatoday.com/money/perfi/retirement/2008-10-07-retirement-accounts-losses_N.htm">retirement funds</a> and other <a href="http://www.washingtonpost.com/wp-dyn/content/article/2009/01/28/AR2009012800900.html">previously untouchable funding sources</a>, along with the <a href="http://www.thenation.com/doc/20080218/klein">end of the ownership society</a>, yet their stockholders are still seeing money thanks to <a href="http://www.marketoracle.co.uk/Article7578.html">wheelbarrow loads of cash money straight from your grandkids’ future earnings</a>. They’re raiding the *federal* coffers, eating tax money previously only available for bombing dark people and educating children, and moving that money into their vaults. I mean, if that isn’t an amazing performance, what is?</p>
+
+<p>They tank the system, then get our money. Take a bow, you fat greedy pig fuckers. Hopefully a few more of you get <a href="http://www.businessandmedia.org/articles/2008/20081006150152.aspx">cold-cocked</a> before this thing blows over.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/05/19/private-health-insurace-will-damn-us-all/">Private Health Insurace Will Damn Us All</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-19T00:00:00-04:00" pubdate data-updated="true">May 19<span>th</span>, 2009</time>
+        
+         | <a href="/2009/05/19/private-health-insurace-will-damn-us-all/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>There has been, for some time, debate in the United States regarding healthcare “reform”, as our current system does not serve a fair percent of the population, and out of those served, <a href="http://www.everybodyinnobodyout.org/FAQ/fqUnderins.htm">many are “underinsured”</a>. From Michael Moore’s <em>Sicko</em> to Howard Dean’s offer to present the issue in front of Congress, there is no doubt that the system is horribly, horribly broken.</p>
+
+<p>I believe the issue is a systemic one, hinging on the broken premise that “private insurance”, that is, pay-for-play insurance funded by either direct periodic payments or employer contributions, is a far superior method of providing healthcare. A publically traded company has a primary obligation to its shareholders and their dividends. This is a bit of an issue with health insurance, as the “proven way” of increasing margins is <a href="http://firedoglake.com/2007/12/23/death-by-profit-margin/">denying coverage</a> to people.</p>
+
+<p>Health insurance (otherwise known as “coverage”) is meant to provide healthcare without substantial out of pocket expenses, in an effort to keep your average worker from going bankrupt in the case of a medical emergency. Unfortunately, ever since <a href="http://www.capmag.com/article.asp?ID=2819">Dick Nixon handed us over to the HMOs</a> with the “HMO Act”, we as a people have been at the mercy of an industry whose sole purpose is to <a href="http://www.ct.gov/ag/cwp/view.asp?A=1775&amp;Q=283006">deny the majority of claims for coverage</a>. There have even been <a href="http://www.msnbc.msn.com/id/22357873/">deaths reported</a> when insurers have failed to cover life-saving procedures. Many, many more slip through the cracks in the form of people who cannot received preventative maintenance through regular checkups, instead <a href="http://www.msnbc.msn.com/id/7995137/">using emergency rooms</a> and clogging that part of the healthcare system when their problems have reached a critical point.</p>
+
+<p>Unlike other civilized countries, the United States says that it supports the “free market”… <a href="http://en.wikipedia.org/wiki/TARP">except when it doesn’t</a>. Supports fiscal responsibility … <a href="http://www.infoplease.com/ipa/A0904490.html">except when it doesn’t</a>. The “free market” and government administered health care are not mutually excusive — just that <a href="http://thomas.loc.gov/medicare/robinstest.html">private insurance has much higher cost due to its profit margins</a>. Of course, the jackholes at <a href="http://www.cato-at-liberty.org/2007/12/03/the-high-price-of-too-low-administrative-costs/">the CATO institute</a> would like you to believe that it’s oh-so-much-more-expensive … because <em>“Private insurers incur administrative costs to make sure they (and their customers) aren’t getting ripped off.”</em>. Sure does sound like you’re going to get *way* more false positives, as if you weren’t dealing with a “throwing the baby out with the bathwater” situation to begin with.</p>
+
+<p>The fact of the matter is that as long as private insurance companies have to make a profit, their best interests are simply not to make you healthy or pay for anything to help you get healthier. Anything to that effect is purely coincidental. Their primary motivation is to juice you for money to feed their shareholders, not to make you healthier. Don’t listen to them, they’ll do their best to speak in reassuring tones and tell you about the “social good” and the “free market”. But trust me, they’ll step over your rotting corpse on the way to the bank, and won’t even give it a second thought.</p>
+
+<p>Single payer insurance. Say it with me …</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/05/14/trixbox-directory-with-cisco-phones/">Trixbox Directory With Cisco Phones</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-14T00:00:00-04:00" pubdate data-updated="true">May 14<span>th</span>, 2009</time>
+        
+         | <a href="/2009/05/14/trixbox-directory-with-cisco-phones/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>In case anyone may want to use Trixbox with Cisco 79xx phones and wants to use a directory with it, I have put together a hack to deal with the directory services, which nominally require SugarCRM, so that they report simple extensions back in the appropriate format.</p>
+
+<p>1) In the Endpoint manager, make sure that the services URL and directory URL are in the default configuration for Cisco phones, and restart any phones which are running to activate the configuration.</p>
+
+<p>2) In <code>/var/www/html/cisco/services</code>, make sure that index_cisco.php is symlinked to index.php</p>
+
+<p>3) In <code>/var/www/html/cisco/services/DBConnect.inc</code>, change the default username and password to something with access to the asterisk database, and change the database name to <code>asterisk</code>.</p>
+
+<p>4) Make <code>PhoneDirectory.php</code> in that directory contain:</p>
+
+<pre><code>&lt; ?php
+
+##########################################
+# Config section
+
+$Server = "http://$SERVER_ADDR/cisco/services";   # don't add a trailing slash!
+$LongDistanceExtension = ""; # change this to match your config
+
+##########################################
+#
+# Set content type
+header("Content-Type: text/xml");
+
+# This is the include file that establishes the connection to the MySQL database
+require ("DBConnect.inc"); 
+
+# This sets the offset for the LIMIT portion of the query
+$NextStartingRow = $NextSet*30;
+
+# Connect to the database
+$ConnectionSuccess = db_connect();
+if (!$ConnectionSuccess) exit;
+
+# If the variable "ID" is passed in through the GET string, then display 
+# extension, phone number and cell phone number for that record with the dial
+# key functionality
+if ($ID) {
+        $PersonDirectoryListing = "n";
+
+        //$Query  = "SELECT id, first_name, last_name, phone_home, phone_work, phone_mobile, phone_other ";
+        //$Query .= "FROM contacts WHERE id = '$ID' ";
+        //$Query .= "ORDER BY last_name "; 
+        $Query  = "SELECT id,description FROM devices WHERE ( tech = 'sip' OR tech = 'iax' ) AND id = '".addslashes($ID)."' ";
+
+        $SelectPersonInfo = mysql_query($Query,$ConnectionSuccess);
+
+        while ($row = mysql_fetch_array($SelectPersonInfo)) {
+                $WorkPhone = ereg_replace("[ ()-] ", "", $row['id']);
+
+                $PersonDirectoryListing .= "n";
+                $PersonDirectoryListing .= "Extension:n";
+                //$PersonDirectoryListing .= "$LongDistanceExtension$WorkPhonen";
+                $PersonDirectoryListing .= "$WorkPhonen";
+                $PersonDirectoryListing .= "n";
+        }
+
+        $PersonDirectoryListing .= "n";
+
+        echo "$PersonDirectoryListing";
+
+# If the variable ID is not passed in on the GET string, then do the 
+# entire company directory, unless last is passed in. If so then we
+# will be using a LIKE filter in our SQL query
+} else {
+        $PersonNameList = "n";
+        $PersonNameList .= "n";
+        $PersonNameList .= "Please select onen";
+
+        $Query  = "SELECT id,description FROM devices WHERE ( tech = 'sip' OR tech = 'iax' ) ";
+        //$Query  = "SELECT id, first_name, last_name, phone_home, phone_work, phone_mobile, phone_other ";
+        //$Query .= "FROM contacts WHERE deleted = 0 ";
+
+        # If we are searching by last name the add this filter to the query
+        if ($LastName) { $Query .= "and description like '%$LastName%' ";  }
+        $Query .= "ORDER BY id ASC";
+
+        # If this is the first page of the company directory then we will display the first 30
+        if (!$NextSet) {
+                $Query .= " Limit 0,30";
+        # Now for each subsiquent call we get the next 30 records.
+        } else {
+                $Query .= " Limit $NextStartingRow,30";
+        }
+
+        # Execute the query
+        //echo $Query;
+        $SelectNameList = mysql_query($Query,$ConnectionSuccess);
+
+        # Count the number of rows returned. This is important because if a full 30 are returned
+        # we will display a more option
+
+        $NumberOfRows = mysql_num_rows($SelectNameList);
+
+        if ($NumberOfRows &gt;= 30) {
+                $NextSetValue = $NextSet 1;
+        }
+
+        # Parse through the query and set up the menu items.
+        while ($row = mysql_fetch_array($SelectNameList)) {
+                $PersonNameList .= "n";
+                        $PersonNameList .= "";
+                                $PersonNameList .= $row["description"];
+                                if ($row["first_name"]) $PersonNameList .= ", " . $row["first_name"];
+                        $PersonNameList .= "n";
+                        $PersonNameList .= "";
+                                $PersonNameList .= "$Server/PhoneDirectory.php?";
+                                $PersonNameList .= "ID=";
+                                $PersonNameList .= $row["id"];
+                                $PersonNameList .= "n";
+                $PersonNameList .= "n";
+        }
+
+        # If we set NextSetValue above then we will display the more option. Which sets NextSet
+        if ($NextSetValue) {
+                $PersonNameList .= "n";
+                        $PersonNameList .= "MOREn";
+                        $PersonNameList .= "$Server/PhoneDirectory.php?NextSet=$NextSetValuen";
+                $PersonNameList .= "n";
+        }
+        $PersonNameList .= "";
+        echo "$PersonNameList";
+}
+?&gt;
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/04/17/congratulations-were-finally-an-adult-nation/">Congratulations! We&#8217;re Finally an Adult Nation!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-04-17T00:00:00-04:00" pubdate data-updated="true">Apr 17<span>th</span>, 2009</time>
+        
+         | <a href="/2009/04/17/congratulations-were-finally-an-adult-nation/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>After an actor, a CIA spook, a Republican in Democrat’s clothing and a moron, we finally have a President willing to let us become an *adult* nation. President Obama just announced that he wanted to create <a href="http://news.bbc.co.uk/2/hi/americas/8003077.stm">a high speed rail system</a> in the United States. Hell, even the cheese-eating surrender monkeys in France have had one of those for *years* … I’m sure that the trucking lobby, oil lobby, or some other lobby I haven’t though of, will stymie this and kill it somehow, but at least we’re trying, finally.</p>
+
+<p>All we need now is a distributed energy generation system and electric vehicles for short transport, and we’ll finally be ready to kick the greasy black dragon.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/03/28/dichotomy-of-the-human-condition/">Dichotomy of the Human Condition</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-03-28T00:00:00-04:00" pubdate data-updated="true">Mar 28<span>th</span>, 2009</time>
+        
+         | <a href="/2009/03/28/dichotomy-of-the-human-condition/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>Why is it that we have such a strong built-in need to survive when we’re miserable most of the time?</p>
+
+<p>I guess that’s the biological imperative making sure that we perpetuate the species, in the same way that our genes fighting for dominance is most likely the root cause for our Randian inability to coexist with others without eventually trying to climb to new heights by stepping on them. I’m not really an Ayn Rand fan, if you haven’t gotten that from reading the last few sentences …</p>
+
+<p>In another aspect, our need to succeed is a good part of what seems to make us miserable, in that we’re mostly taught to either (a) be happy with everything because this is what you have and God’ll give you a cookie when you’re wormfood or (b) nothing is *ever* enough. Neither of those mentalities really does much good for us as a collective of people, and I really wish that there were some easy solution that I could pull out to make everything all better. Unfortunately, people are beholden to their ingrained beliefs, and people rarely change. Anyone who says otherwise is probably selling something.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/page/6/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/page/4/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/06/03/stabilization/">Stabilization</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival/">Heading to the 2013 Boston International Film Festival</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/02/migrating-to-octopress/">Migrating to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/11/06/election-2012-summary/">Election 2012 Summary</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (3)</a></li>
+<li class='category'><a href='/categories/development/'>Development (32)</a></li>
+<li class='category'><a href='/categories/film/'>Film (1)</a></li>
+<li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
+<li class='category'><a href='/categories/hacks/'>Hacks (26)</a></li>
+<li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
+<li class='category'><a href='/categories/music/'>Music (14)</a></li>
+<li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
+<li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
+<li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (82)</a></li>
+<li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Links</h1>
+  <ul>
+    <li><a href="http://www.flickr.com/photos/whatsyourmeme/">Photos @ Flickr</a></li>
+    <li><a href="http://irv.ourexchange.net/">Redline Doc</a></li>
+<!--
+    <li><a href=""></a></li>
+&#8211;>
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/jbuchbinder">@jbuchbinder</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jbuchbinder',
+            count: 10,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/whatsyourmeme?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/whatsyourmeme">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/102632982740363465802?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - jeff -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jbuchbinder';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

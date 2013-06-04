@@ -1,0 +1,712 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>/home/jeff/blog</title>
+  <meta name="author" content="jeff">
+
+  
+  <meta name="description" content=" I worked out a simple patch to get the Cisco VPN client working with Ubuntu Feisty, which I’m attaching here.
+">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jbuchbinder.com/page/12">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="/home/jeff/blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-11867051-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">/home/jeff/blog</a></h1>
+  
+    <h2>Sucking away valuable moments of your life ...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jbuchbinder.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/music">Music</a></li>
+  <li><a href="/pets">Pets</a></li>
+  <li><a href="/quotes">Quotes</a></li>
+  <li><a href="/studio">Studio</a></li>
+  <li><a href="/wishlist">Wishlist</a></li>
+  <li><a href="/in-memoriam">In Memoriam</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/03/cisco-vpn-client-with-ubuntu-feisty/">Cisco VPN Client With Ubuntu Feisty</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-03T00:00:00-05:00" pubdate data-updated="true">Mar 3<span>rd</span>, 2007</time>
+        
+         | <a href="/2007/03/03/cisco-vpn-client-with-ubuntu-feisty/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I worked out a simple patch to get the <a href="http://www.cisco.com/en/US/products/sw/secursw/ps2308/index.html">Cisco VPN client</a> working with <a href="https://wiki.ubuntu.com/FeistyFawn">Ubuntu Feisty</a>, which I’m attaching <a href="/files/vpnclient-4.8-feisty.patch">here</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/03/01/slowly-but-surely/">Slowly but Surely</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-01T00:00:00-05:00" pubdate data-updated="true">Mar 1<span>st</span>, 2007</time>
+        
+         | <a href="/2007/03/01/slowly-but-surely/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I’m still hard at work on <a href="http://www.freemedsoftware.org/">FreeMED</a> 0.9.0 ; it is turning out to be a very long and involved process. A ton of new functionality is making its way in, along with architectural improvements and porting old functionality. The majority of the codebase has been torn out and rewritten, mostly to allow for complete separation between UI and the data model.</p>
+
+<p>This entire process has been very educational, and I think I have learned more than I ever *wanted* to learn about UI programming. Hopefully this will be worth the wait for everyone … it’s looking like the majority of the framework is in place, and porting old modules to the new framework is what is left to be done.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2007/01/02/birthdays-as-mile-markers/">Birthdays as Mile Markers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-01-02T00:00:00-05:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2007</time>
+        
+         | <a href="/2007/01/02/birthdays-as-mile-markers/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>Not only is it a brand new year, but it’s also someone special’s birthday today. I’m not a big fan of birthdays, especially my own, for their tendency to appear as “mile markers” in the road trip we call life. I’m not going to say how old she is, mainly because there’s some awful stigma in our society regarding growing older. No longer is it treated as a source of venerable knowledge and experience, but instead a somber, inescapable conclusion — a dark, dismal fate.</p>
+
+<p>Yesterday, I was thinking in a completely unrelated vein about the artificially imposed divisions between years, and even days. Why do we always focus so much on birthdays, anniversaries, year ends and beginnings? I started pondering the old adage that the “journey is half the fun” and I found myself disagreeing with it. I think the journey is almost *all* of the enjoyment. Take success ; it’s never as sweet or wonderful as the years of hardship and striving towards seemingly unattainable goals. The constant human need for improvement seems to be what drives us forward out of our comfortable stagnation, but also provides us the hope and determination to make our years here exciting. Nothing is more exciting than to break from the humdrum monotony of minutia to plan and dream, hope and aspire.</p>
+
+<p>To return to my earlier metaphor, the mile markers on the side of the road just aren’t important ; it’s the songs you sing and sights you see on the way to wherever it is that you’re going.</p>
+
+<p>Happy birthday, Tash.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/12/31/yet-another-end-of-year-thought/">Yet Another End-of-year Thought</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-12-31T00:00:00-05:00" pubdate data-updated="true">Dec 31<span>st</span>, 2006</time>
+        
+         | <a href="/2006/12/31/yet-another-end-of-year-thought/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>Every year I end up writing some glib piece of trash about how much or little the last year meant to me, and how much better I hope/hoped to do the next year. Inexorably, I’m drawn towards the cliche of trying to constantly explain away my foibles and missteps, as though some imaginary jury is critiquing my performance. Perhaps I have been looking at the entire *concept* of the year in the wrong way.</p>
+
+<p>Depending on the year, the cyclic nature of things can be clear or so opaque as to be completely ignored. It’s too easy to forget that between December 31st and January 1st, nothing actually changes ; an arbitrary break between two days, which is almost as meaningless as the arbitrary division into “days”. I personally find that my “day” varies depending on when I’m awake – such is my point of view. If there is no measurable difference between one day and the next, or even the division between the two, why is there such a tradition of resolutions and celebration?</p>
+
+<p>I think it satisfies a desire for some kind of artificial closure to a period of time. It’s much easier to try to change behavior or forget the past if it’s clearly delineated as being “last year” than to have to face the basic repetitive nature of the hour, day, week, month, season and year. I just don’t feel as though there’s a noticeable difference for me between this day, this year, and the day and year to come. It somehow comes back to the random, thoughtless and seemingly chaotic series of repetitive events and causality which defines my waking moments and differentiates them from my dreams. There isn’t any sense or order to the events of the past year, just as there won’t be any sense or order in the events of the year to come.</p>
+
+<p>Almost makes me wish that I was one of those end-of-days whackjobs, thinking selfishly that the world would come to an end within my lifetime, and that all of this would have just been practice (apologies to the source of that particular wording) or some unfathomable test. How easy it must be, knowing that your entire life is leading up to something, whether that something ever takes place or whether it is attributed to the world not being ready … Taking the road less traveled (apologies to Mr Frost this time) may reveal wonders and majesty previously hidden, ignored or marginalized, but it doesn’t appear to be a happy one. Happy are they who can pop a qualude or a prozac and let the world go by without them, letting a few more precious moments become part of the past.</p>
+
+<p>It’s happening again, just like it happened before. No world event, no tyrant, no savior will change that seemingly endless cacophony of time and events in which we are all inexorably intertwined. Hopefully I’ll just be better at understanding and coping with it, since that’s pretty much the most any of us can ask for.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/12/29/three-down-in-a-week/">Three Down in a Week</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-12-29T00:00:00-05:00" pubdate data-updated="true">Dec 29<span>th</span>, 2006</time>
+        
+         | <a href="/2006/12/29/three-down-in-a-week/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I’ve had three laptops bite the big one in the last week or so. Not software related at all. One stopped working entirely and won’t even turn on, another has a completely non-functional display, and a third ate a hard drive … completely (and has a shot power supply to boot). I’m finally back online on a fourth machine, as evidenced by this posting.</p>
+
+<p>The time away from a machine gave me a little time to reflect exactly how dependent I am on such incredibly fragile machines to be able to function in certain important ways. I can’t work unless I have a working machine, but I also use it for some socialization functions (email mostly) and creative things (music and design). If I had been born fifty years earlier, would I even remotely resemble the person I am today, who is so intrinsically linked to these machines?</p>
+
+<p>I found it very interesting to see how I instinctively went over to look at the machines, though they were dark and cold, as though I was programmed to look at them. Somewhere in the distance, a bell is ringing, and I’m drooling. Makes me glad I don’t watch more television …</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/11/27/potential-and-perception/">Potential and Perception</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-11-27T00:00:00-05:00" pubdate data-updated="true">Nov 27<span>th</span>, 2006</time>
+        
+         | <a href="/2006/11/27/potential-and-perception/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I’ve never been one to take risks in any part of my life. Somehow, I’ve always taken the safe road, and unlike the Frost poem, I’m not the better off for having done it. Even small things, I seem unwilling to extend past a limited view of what is safe and comfortable — and now I can’t help but feel that I’m not living up to whatever potential I’m supposed to have. Surrounded by barriers of my own design, it feels like no matter how much is accomplished, how much is gained, how much is experienced, everything is somehow limited, muted, dulled. Barring any transcendence to another form or other transference of consciousness, we all have a limited number of minutes and seconds.</p>
+
+<p>Infinite possibilities collapse every moment to form the existence we live, and every moment we have the ability to shape what we are to become, and in a limited way, affect everything else in the universe. The question of perception in all of this is whether or not everything we’re supposed to be is being lived out by taking the safe, well trodden path, or if we’re cheating ourselves. Is there such a thing as potential, or is it just an idea to help feed the drive to keep away from complacency? Is the way to happiness some form of success, or is that just taking away from the time we have to enjoy ourselves?</p>
+
+<p>Maybe it’s just that some part of me wants to think how I’ll be remembered or thought about when I’m not around to say anything. Maybe everyone thinks that they’re more complex or have more inside, or something that is worth remembering which doesn’t always bubble to the surface. Maybe immortality is having children, maybe your works, maybe nothing.</p>
+
+<p>No answers, only questions … The easiest way to describe it was the glib “half the fun is the journey.” So long and thanks for the existentialism?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/11/08/rumsfeld-is-gone-six-years-too-late/">Rumsfeld Is Gone, Six Years Too Late</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-11-08T00:00:00-05:00" pubdate data-updated="true">Nov 8<span>th</span>, 2006</time>
+        
+         | <a href="/2006/11/08/rumsfeld-is-gone-six-years-too-late/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>President Bush (god, it still sounds so awful to say it) just gave the traditional sixth-year “we lost our majority” speech to the nation, with the addition of the announcement of Donald Rumsfeld’s resignation as Secretary of Defense. Many people will remember Rumsfeld as the jackass who condoned torture (or sought to redefine it), pushed the notion of “weapons of mass destruction” in Iraq, and sought to push forward ideas like the “PATRIOT Act”. He couldn’t be gone soon enough for me. I wonder if this keeps him away from prosecution for war crimes, unless we’ve somehow outlawed that.</p>
+
+<p>Bush used the phrase “we cannot accept defeat in Iraq.” I think it’s incredibly indicative of his views on reality, and even more insightful on the state of his entire presidency. He said that we couldn’t <strong>accept</strong> defeat, not that we would not avoid it. Many could argue that the campaign in Iraq has been plagued by <a href="http://www.halliburtonwatch.org/">corruption</a> and <a href="http://www.iraqbodycount.org/">failure</a>, and that by any measure of “success”, the United States wasn’t really achieving it, whatever it is or was.</p>
+
+<p>Hopefully this will force bills which will be difficult to attack to be brought up for either the now traditional presidential signing statement, or more hopefully, a veto. I mean, if a law were to be passed which repealed the reprehensible pieces of things like the “PATRIOT Act” and the “Military Commissions Act of 2006″. Of course, we still could see defense of torturing human beings, spying on American citizens who have done nothing wrong, profiling of muslims, and other things which the often-referenced “founding fathers” would denounce with every last breath.</p>
+
+<p>Not to bring comparisons to <a href="http://home.earthlink.net/~h5jukebox/george3.mp3">another historical character with the same name</a>, but President Bush seems to be making strides towards becoming <a href="http://uniorb.com/RCHECK/kingbush.htm">King Bush</a>. Before this is denounced as paranoid conspiracy-oriented rambling, consider the evidence… When the United States was founded, it was founded mainly due to landowners having issues with a King who seemed removed from reality being able to override rule of legislature, being able to declare military rule at any point, and being able to imprison and/or hurt them in some way <a href="http://en.wikipedia.org/wiki/Admiralty_court">without the benefit</a> of a <a href="http://en.wikipedia.org/wiki/Habeus_corpus">trial by peers</a>. As of now, the President has all of those powers, under the guise of fighting “<a href="http://en.wikipedia.org/wiki/War_on_Terrorism">international terrorism</a>.” When we started invading other countries to push our own domestic agenda, I think <a href="http://www.guardian.co.uk/usa/story/0,,1938434,00.html">we started becoming the “international terrorists.”</a> Our populace has remained terrorized; most people voting for Bush in 2004 cited his handling of “the War on Terror” as their reason for reelecting him to the Presidency (any <a href="http://en.wikipedia.org/wiki/2004_U.S._presidential_election_controversy_and_irregularities">allegations of impropriety</a> aside). Usually I’m pretty disappointed in things like that ; today, I’ll take the changes we’re getting at face value. I’m just happy that a single party doesn’t have control over all three branches of the United States Government, especially not one with such cavalier disregard for the Constitution.</p>
+
+<p>As someone on <a href="http://slashdot.org/">slashdot</a> pointed out, not living in the United States doesn’t exempt you from its influence, just in your ability to influence it by your vote. Let’s hope that the United States leadership takes their new positions of responsibility with a bit more seriousness than their previous counterparts had.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/11/07/exercise-your-rights-as-a-citizen/">Exercise Your Rights as a Citizen</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-11-07T00:00:00-05:00" pubdate data-updated="true">Nov 7<span>th</span>, 2006</time>
+        
+         | <a href="/2006/11/07/exercise-your-rights-as-a-citizen/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I’ve just done the one thing which I feel sets me apart from many more unfortunate people in other countries: voted. I got to go to a polling location and cast my single vote for whomever I feel would be the best person, or at least not the <a href="http://www.joe2006.com/">worst person</a>, for the job. I mean, government can <a href="http://en.wikipedia.org/wiki/Military_Commissions_Act_of_2006">strip my rights to a fair trial or any civil rights</a> and <a href="http://en.wikipedia.org/wiki/John_Warner_National_Defense_Authorization_Act_for_Fiscal_Year_2007">declare martial law</a> at will, so I think voting to oust the bastards who passed this kind of constitution-screwing garbage is the least of my rights, no, *responsibilities* as a citizen of this country.</p>
+
+<p>Since everyone else likes to quote the venerable “founding fathers”, I’ll quote Benjamin Franklin: “<em>Those who would give up Essential Liberty to purchase a little Temporary Safety deserve neither Liberty nor Safety</em>“. We’ve obviously given up essential liberties, and perhaps purchased a little temporary safety. Perhaps. (Not for anyone actually getting shot at, but I guess we’ve bought some time for the rest of us couch jockeys.) Do we really deserve the freedoms with which we have been blessed by men with far more foresight than we?</p>
+
+<p>Election day isn’t just a great day because it’s the day when the stupid attack ads and <a href="http://www.crooksandliars.com/2006/11/06/cnn-gives-coverage-to-the-robocall-scam/">robodialing</a> stops, it’s the day when my point of view becomes a part of the public, and when I have the chance to finally allow my actions to speak louder than my words. I won’t advocate that anyone vote for a particular candidate, but I won’t tell people not to vote or <a href="http://www.msnbc.msn.com/id/15603344/">that they can’t vote</a>. Depriving people of their constitutional rights is one of the worst things apart from physical harm which can be afflicted in a working representative democracy.</p>
+
+<p>For crying out loud, get up off your couch or chair, get to the polls. If you don’t make yourself heard, someone else with a louder voice will take that away from you. And if you’re planning on having children, don’t “<a href="http://www.usatoday.com/tech/columnist/andrewkantor/2004-07-08-kantor_x.htm">think of the children</a>” only when some politician <a href="http://news.bbc.co.uk/1/hi/world/americas/6072326.stm">scares you</a> enough to believe that voting for them will keep the kiddie-philes away; think of them when you consider the legacy that you will leave them. Our constitution is a living, breathing document, which is effected by every law passed, every judgment made, every breath taken. We need to make sure that what we and our forefathers have had, ever since they immigrated to this country (since we all are immigrants, to one degree or another): liberty. Don’t try to <a href="http://www.khilafah.com/home/category.php?DocumentID=9720&amp;TagID=24">export</a> what we can’t keep for ourselves.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/19/time-to-start-kissing-babies-and-kissing-asses/">Time to Start Kissing Babies and Kissing Asses</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-19T00:00:00-04:00" pubdate data-updated="true">Oct 19<span>th</span>, 2006</time>
+        
+         | <a href="/2006/10/19/time-to-start-kissing-babies-and-kissing-asses/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>With less than a month remaining before the midterm congressional elections, one could argue that not much has actually changed in the United States. I mean, we still are passing awful legislation (Military Appropriations Act of 2006, stripping habeus corpus at will) and still <a href="http://www.bls.gov/news.release/archives/empsit_10062006.pdf">not making people any less poor</a>.</p>
+
+<p>What has changed, as it does before every election, is the amount of rampant sucking up to the regular plebes of this country. Driving to drop my niece and nephew off today, I saw an incredible plethora of signs for political candidates, both on the state level and the federal level. I mean, the sheer amount of cardboard and metal used to put up these ridiculous political signs, festooned in red, white and blue, must be incredible. Then it struck me: there wasn’t a difference between the signs. No one was espousing political gold, telling of their stances against tyranny and oppression or trying to defend their past record ; this was pure name recognition. I would be remiss in thinking that the majority of Americans care about their political process at all. For the most part, <a href="http://en.wikipedia.org/wiki/Lamarckism">children tend to inherit their parents’ viewpoints on a lot of things, including politics</a>. So we get the dog and pony show, with candidates going through the old, tired routine of trying to convince Joe and Marie Six-pack that they are a thousand times better than the guy they voted for last time.</p>
+
+<p>The only piece of sanity and reason that I saw was a <a href="http://www.ct.gov/dot/site/default.asp">DOT</a> truck, with a worker picking signs up off the road and throwing them in the back of a large orange truck. In the end, all the <a href="http://www.washingtonpost.com/wp-dyn/content/article/2006/10/14/AR2006101401051_pf.html">campaigning</a>, <a href="http://lamontblog.blogspot.com/2006/08/lieberman-running-out-of-spite-for.html">sloganing</a>, <a href="http://www.boston.com/news/nation/articles/2004/03/21/the_anatomy_of_a_smear_campaign?mode=PF">mudslinging</a>, <a href="http://www.dhs.gov/index.shtm">fearmongering</a> and <a href="http://www.commondreams.org/cgi-bin/print.cgi?file=/views05/0519-24.htm">gerrymandering</a> comes down to <a href="http://www.tray.com/cgi-win/x_candidate.exe?DoFn=&amp;sYR=2006">how much money you have in your coffers</a> or <a href="http://www.chicagotribune.com/news/custom/redeye/red-081106-greenfield,1,6734440,print.column?coll=chi-news-hed&amp;ctrack=1&amp;cset=true">how scared your voters are</a>. (Really, why in the world is our Homeland Security alert status at “elevated”? We’re “<a href="http://www.libertypost.org/cgi-bin/readart.cgi?ArtNum=160408">fighting them over there</a>” after all…) But in the end, it’s not about that. Your candidate, my candidate, everyone’s candidate — their posters will end up in the trash bin, along with most of their last minute promises.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/10/18/acoustic-album-and-site-for-evoke/">Acoustic Album and Site for Evoke</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-10-18T00:00:00-04:00" pubdate data-updated="true">Oct 18<span>th</span>, 2006</time>
+        
+         | <a href="/2006/10/18/acoustic-album-and-site-for-evoke/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p><a href="/studio"><img src="/studio" alt="evoke_Acoustic_Autumn_Insert_page1_1.jpeg" /></a>We’ve been working hard in the <a href="/studio">studio</a> again, and there’s more to see. Besides the initial launch of the new <a href="http://www.evokeband.com/">evoke site (evokeband.com)</a>, there’s a new acoustic EP, entitled “<em>Acoustic Autumn</em>“, which has just been finished. Keep an eye out on the <strong>evoke</strong> site, there’s a good chance the entire album will be put online for listening …</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/page/13/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/page/11/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/06/03/stabilization/">Stabilization</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/12/heading-to-the-2013-boston-international-film-festival/">Heading to the 2013 Boston International Film Festival</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/02/migrating-to-octopress/">Migrating to Octopress</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2012/11/06/election-2012-summary/">Election 2012 Summary</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (3)</a></li>
+<li class='category'><a href='/categories/development/'>Development (32)</a></li>
+<li class='category'><a href='/categories/film/'>Film (1)</a></li>
+<li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
+<li class='category'><a href='/categories/hacks/'>Hacks (26)</a></li>
+<li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
+<li class='category'><a href='/categories/music/'>Music (14)</a></li>
+<li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
+<li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
+<li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (82)</a></li>
+<li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Links</h1>
+  <ul>
+    <li><a href="http://www.flickr.com/photos/whatsyourmeme/">Photos @ Flickr</a></li>
+    <li><a href="http://irv.ourexchange.net/">Redline Doc</a></li>
+<!--
+    <li><a href=""></a></li>
+&#8211;>
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/jbuchbinder">@jbuchbinder</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jbuchbinder',
+            count: 10,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/whatsyourmeme?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/whatsyourmeme">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/102632982740363465802?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - jeff -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jbuchbinder';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

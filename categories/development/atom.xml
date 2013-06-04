@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Development | /home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.com/categories/development/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-06-04T12:53:15-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
+    <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
+    <updated>2012-03-22T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
+
+<p>One-liner to expand RRDs:</p>
+
+<pre><code>/etc/init.d/gmetad stop; /etc/init.d/rrdcached stop ; 
+  find . | grep rrd | while read X; do fix-rrd.sh "$X"; done ; 
+  /etc/init.d/rrdcached start ; /etc/init.d/gmetad restart
+</code></pre>
+
+<p><strong>fix-rrd.sh</strong>:</p>
+
+<pre><code>#!/bin/bash
+# fix-rrds.sh
+NEWRRDS="0:5856 1:20160 2:20160 3:52704 4:3740"
+for RRD in $*; do
+        echo -n "Processing $RRD ... "
+        for RRA in ${NEWRRDS}; do
+                A=$(echo $RRA | cut -d: -f1)
+                B=$(echo $RRA | cut -d: -f2)
+                echo -n "$RRA "
+                rrdtool resize "$RRD" $A GROW $B 
+                        mv resize.rrd "$RRD" &amp;#038;&amp;#038; 
+                        chown nobody "$RRD"
+        done
+        echo "done."
+done
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Xela Redux 2011]]></title>
+    <link href="http://jbuchbinder.com/2011/12/28/xela-redux-2011/"/>
+    <updated>2011-12-28T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2011/12/28/xela-redux-2011</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>Better late than never, these are the blog entries I had put together from the Xela trip this year, which I had never gotten around to posting.</p>
+
+<p><strong>Day One: Sunday November 6, 2011</strong></p>
+
+<p>I’m going to try to chronicle my time this year working with the POP-WUJ Clinic in Xela (Quetzeltenanga), Guatemala, as I did last year. Work circumstances, over-zealous customs officials, and simple bad luck contributed to some of the issues we experienced with the installation last year, so I have traveled back down to attempt to make this work better.</p>
+
+<p>I left home at around 11:30pm the night before, and drove down to meet Irv. We had somewhat over 90 lbs of medical supplies which had to be re-packed and distributed over two body-sized duffel bags so that we could bring them through Guatemalan customs. At some time after 2am, we headed out for Laguardia Airport. The trip was relatively uneventful, and we made the two flights down to Guatemala City without incident.</p>
+
+<p>I was relatively surprised that we didn’t encounter any issues with customs upon entering Guatemala with the two “sea bags” full of medications, equipment, and miscellaneous tools. During the last medical brigade, a fair amount of our donated meds were confiscated, and one of the two servers was held at customs for a week, but they just waived us through this time — and without the benefit of a note from Rotary International this time.</p>
+
+<p>The bus ride across CA-1 to Xela actually took less time than last year, owing to the bus driver skipping the usual dinner stop and a lack of rainy-season mudslides. He was a bit of a cowboy, however, as we were tossed around like rag dolls. We had taken the local bus company, Alamo, rather than a chartered bus, which let us ride with the locals (as well as avoid tourist traps). A little girl, who reminded me of my niece when she was younger, made rollercoaster noises every time we went around a hairpin turn on the road, and was very proud to work up the english to ask me my name. I was surprised that, as we rolled into Xela, I actually had missed seeing some of the sights and people down here. As with any time that I travel, I miss being home with my wife and the dogs, but it’s nice to see that there is a different familiarity here.</p>
+
+<p>We took a cab over to Casa Manen, as there was no reasonable way to transport the two sea bags full of medications and our personal belongings the full mile and a half on foot. I could barely fit in the back seat of the cab, which was a converted Escort wagon (from what I could gather). After arriving at Casa Manen, I ended up having to mess around with their wifi access point, as a combination of terrible reception in the room (the laptop lives next to the door at the moment) and wacky Netgear-sucks-with-WPA-support issues had caused a lack of connectivity issue.</p>
+
+<p>After that, we walked to Park Central, grabbed some Xelapan goodies, a quick bite of “food” at Pollo Comperos, and an expresso-laden hot chocolate at “&amp;” Cafe. Clinic work tomorrow!</p>
+
+<p><strong>Day Two: Monday November 7, 2011</strong></p>
+
+<p>First day waking up in a new timezone, and as our CDMA-network phones don’t work down here, it was interesting getting up a full hour before everyone else. Casa Manen provided us with a delicious breakfast, replete with high-test coffee, my usual egg and black bean dish, fresh fruit and waffles.</p>
+
+<p>We sat in the central park for a while after breakfast, waiting for Banco International to open (which it wouldn’t have done until 10am, so I’m glad we gave up on that), and watched some of the street vendors, taxi drivers and local residents. It was pretty obvious that there is quite an underclass, composed primarily of the people of Mayan ancestry. Those with darker skin and/or traditional Mayan garb seem destined for menial labor, street vending, begging, or other “lower class” occupations. Although, as most are very short, I feel as if I’m a giant in a land of Lilliputians.</p>
+
+<p>While waiting to get into the clinic, I watched a Mayan woman tie her child on her back with two square pieces of cloth. It looked pretty safe and stable — I had always wondered how they did that.</p>
+
+<p>I got the Linksys NSLU2 we brought down with us set up as a terminal server, and it’s now monitoring every step of the boot and execution cycles of the Rackable Systems server we brought down, as well as giving us full power management using Ctrl-6 (thanks, Roamer Port!), although I’m a little less excited about that last part.</p>
+
+<p>The one disheartening part is that I feel as though I’m fighting the technology down here far more than I should. Between some of the people messing with the work I did last year (including resetting admin passwords, then being unavailable when I need them, as well as installing XP on Linux workstations) and virtually every wifi access point giving me trouble (usually due to some obscure setting that was enabled for reasons that are unclear), I’m getting to the point where going the extra mile of effort to be online or get things working feels like it’s not going to pay the dividends that it should.</p>
+
+<p>An aside to the Xela-LUG group: there’s no Debian or Ubuntu mirrors in Guatemala. The nearest one seems to be in Costa Rica or Mexico (or Nicaragua), and the speeds out of Xela aren’t fantastic.</p>
+
+<p><strong>Day Three: Tuesday November 8, 2011</strong></p>
+
+<p>We got a somewhat late start heading out from Casa Manen, and the higher altitudes and pollution were taking a toll on Irv when we were walking to the clinic.</p>
+
+<p>When we got to the Pop-Wuj clinic, it turned out that no one had arrived to perform pharmacy duties, so Irv and I ended up running the pharmacy and filling prescriptions for the majority of the day. Irv also saw a number of feet, and I got a little bit of work done with the NSLU2 before I left, but the majority of the day was spent working in the clinic — so much so, in fact, that we forgot to grab lunch, drinks, or anything else, until we left for afternoon siesta.</p>
+
+<p>We “overslept” for the afternoon siesta — which was actually more like Irv oversleeping as I was messing with code and photos while he was sleeping and lost track of time. We headed back to the clinic, and talked to Isabelle (the clinic manager) and Oscar (from the school). Isabelle got ahold of Freddy, who had contact information for the technician who had changed the router configuration. Things are looking up, in that respect. In another vein, Oscar mentioned that his son is an accomplished trumpeter, and seemed interested in me taking a few portrait shots of him with his instrument.</p>
+
+<p>Irv and I sent a Facebook message to our Xela LUG contact (as he hadn’t responded to our emails), and waited at Albabar at Parque Central to see if he’d show. Unfortunately, he didn’t. I also took the opportunity to start posting our walking and bus tracks, which I have been religiously tracking using “MyTracks” on the Android-based HTC handset I usually use. It’s useless down here otherwise, as there are no CDMA networks.</p>
+
+<p><strong>Day Four: Wednesday November 9, 2011</strong></p>
+
+<p>Another very, very tiring day.</p>
+
+<p>After breakfast, one of the ladies who runs Casa Manen had gotten into a discussion about knitting, and was quite impressed with the hoodie that my wife had made me last year.</p>
+
+<p>While at the clinic, I had the chance to reformat one of the donated Thinkpads which were originally destined to be used as workstations. They had been loaded with a copy of XP, replete with a metric ton of crapware. I doubt anyone is going to miss any of that.</p>
+
+<p>We finally got to meet up with Dhaby from the Xela LUG (Linux Users Group). He’s in the process of setting up a meeting with some local doctors who are interested in using FreeMED, and he thinks that some of the people in Xela LUG would be interested in providing local support. This is just the “feet on the ground” sort of thing that we need going here. He also mentioned that local stringed instruments are not easy to come by in Xela, and Chichicastenango or Panajachel would be the closest places to look. So, there’s a possibility that we’ll head down there on one of our “off days”.</p>
+
+<p>The clinic closed early, as it was an “off day”, so we headed back to Casa Manen, and after siesta, we perused the Central Market. I’m still a little disappointed at the lack of local music shops in Zone 1. We were able to find a few small things, but put off buying a substantial quantity of anything until we can visit one of the outlying markets.</p>
+
+<p>We skipped dinner in lieu of Xelapan, and were able to keep a fire going for a little while. Quick tip for anyone doing a network-less install of Ubuntu: use the normal installer. The “alternate installer”, where it might be a little easier not to use a mouse or touchpad, has the downside of making it very difficult to use the local install media as an apt source. (Unetbootin is your friend when blank CDs aren’t handy….)</p>
+
+<p><strong>Day Five: Thursday November 10, 2011</strong></p>
+
+<p>Serendipity is a really strange thing. Dhaby (Daniel), our contact from Xela LUG, turned out to be the same person who had helped Freddy with the clinic and school networking. When he stopped in yesterday, we had assumed that he had gotten our contact information and messages and had come to meet us — whereas he had come because Isabel had contacted him per Freddy’s instructions.</p>
+
+<p>We went to the clinic today, forgetting that the clinic is closed. I’m in the process up upgrading and maintaining the existing laptops, so that there’s a stable platform for the clinic people to use when I’m not here.</p>
+
+<p>Another issue we’ve run into at the clinic is the issue of volunteers, which I will admit, doesn’t sound like much of an issue. However, when you’re dealing with IT work, there isn’t really much “handoff” between volunteers — which means you could be on a Skype call to Germany to get a router password, or relying on someone who is on vacation to find someone else who handled some equipment maintenance.</p>
+
+<p>I finished setting up the workstations, although we found out that the first numbered one seemed to be dead, so the clinic is down to three working stations. Irv had an extension cord fabricated at the electric supply shop down the street (as well as grabbing a replacement box of florescent tubes to replace the ones in the clinic that had gone out), and we moved the electrical supply for the server, etc, to be run from behind the pharmacy area. This allowed the connection to be out of the way of general foot traffic. We ended up electrical taping the remaining connection together to avoid accidental disconnection.</p>
+
+<p>For lunch, we ate at Cafe Arabe, near Parque Central, which had pretty decent food. As we were finishing up our meal, we noticed the time (which was pushing 3:00 pm), so I left for the clinic to train Isabel on using the system, and Irv left for Casa Manen to pick up supplies. I ended up getting about an hour of training in, using the 1/3 completed Spanish translation we have. Thankfully, I was able to use Google Translate to explain more difficult concepts properly. (I understand more Spanish than I can speak at this point — at least enough to get the gist across.)</p>
+
+<p>Oscar (from the Pop-Wuj school) had wanted some pictures taken of his son, but due to a miscommunication, his son hadn’t brought his trumpet, and hadn’t realized that we had been waiting there, so we put it off for tomorrow.</p>
+
+<p>We walked back, stopping at Albamar for dinner. Most of the restaurant was reserved for a single family’s graduation party, but we still were able to be seated on the side, and had a good meal. As we were heading back to Casa Manen, we saw that Parque Central was filled with a film crew and a crowd of onlookers. We hung around for a while to observe, and found out that it was a crane shot for a music video. Irv was delighted to see that their primary and secondary cameras were 7D bodies, although they were outboarding the video to an external monitor and control system on their crane.</p>
+
+<p><strong>Day Six: Friday November 11, 2011</strong></p>
+
+<p>The last of our clinic days was today. I got a little bit of time to take some photos of the locals while we were heading to the clinic, as we didn’t get a late start this morning. I didn’t manage to get a shot of any of the Mayan women riding “side saddle” on the scooters and motorcycles, which I’ve been told is done to “preserve their virtue” by not straddling the bikes.</p>
+
+<p>We saw a pretty decent number of patients today, and Irv got to do three foot surgeries on two patients (one plantar wart removal and two ingrown toenails), of which I got a few pictures. I filled prescriptions for the majority of the morning, in between setting up an autossh reverse ssh tunnel so that I would have access to the servers, since Dhaby didn’t get back to us concerning access to the router at Pop-Wuj. It was pretty easy to do, since I’m using OpenWRT-Kamikaze on the NSLU2, and installing autossh was as simple as correcting the ipkg source and using the ipkg tool to install the package.</p>
+
+<p>We ate at the “chinese” restaurant across the street from Pop-Wuj for lunch. Their lo mein had a particularly Guatemalan flavor to it, but was quite good. We headed down to Banco Agromercantil at the edge of Zona 1 to change a few more American ducats into Guatemalan quetzals, dodging traffic and stopping to observe the Movistar-sponsored bouncy castle at the edge of the Democracia market. We headed back for 3:00pm to start training the clinic staff on using FreeMED. We started a little late, but after two hours of intensive training, it seems as though there’s a pretty good “buy-in” from the clinic staff, although I already have a laundry list of customizations which I’m going to have to put in place for the clinic. They do things a little differently than FreeMED’s usual target audience, so we’re going to have to make it easy to switch back and forth.</p>
+
+<p>I feel as though we’ve gotten a fair amount of what we’ve set out to accomplish, and the clinic staff seems to think that we can adapt what we have to suit their workflow. I’ve seen a number of places for improvement, but the only way to see these things is to try them in a real-life scenario, so I’m glad that I got the chance to watch them work.</p>
+
+<p><strong>Day Seven: Saturday November 12, 2011</strong></p>
+
+<p>It was our “day off” today, so we went shopping for goods to bring back to the states. We took a minibus, belching clouds of black smoke, to the Terminal Minerva market in the west of Xela. I’ve never been in a more overcrowded place. I almost tripped over a few people while we were walking through there, and I got a few decent pictures. We spent two or three hours walking through the market, which was necessary, as there was no way to move through it any quicker than we did.</p>
+
+<p>After we got out of the Minerva market, we took another minibus back to Parque Central, where Coca-Cola was sponsoring a very large christmas parade (along with whatever Powerade promotion they were doing) from Parque Central to Terminal Minerva, complete with a guy dressed as Santa Claus, the Coca-Cola polar bear, and three marching bands. The entire scene was utter insanity, but Irv got some shots of the whole thing going down. We went through the Parque Central market to find a few last-minute items, then took a cab up to the Alamo bus terminal in the north of the city to purchase tickets to get home. We walked back through the Democracia market down to the back end of Parque Central, and ran into one of the local clinic doctors on the west side of the Theatre Municipal on the way there.</p>
+
+<p>There was a pretty widespread power failure today, and although I’m confident that the server came back online at the clinic, the tunnel which allows me access to update the system did not come back online (as one issue with the NSLU2 is that by default it needs to be manually powered on), so I sent a note to Dr Sullivan asking that it be turned on the next time someone is in the clinic. I do, after all, have a large number of fixes and adjustments for them which I have to push to their server.</p>
+
+<p>Irv bought a tart cake for the nice people running Casa Manen, and we set to packing all of our stuff up for the trip. Long day tomorrow…</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Project Review 2011]]></title>
+    <link href="http://jbuchbinder.com/2011/12/28/project-review-2011/"/>
+    <updated>2011-12-28T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2011/12/28/project-review-2011</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I’ve been a bit lax in posting about my work here, mainly because Twitter makes you lazy. (Why write complete sentences when you can summarize in 140 characters or less?)</p>
+
+<p>Here are some of the projects I’ve been working on over 2011, with some links. I’m sure I have left some out.</p>
+
+<ul>
+<li><a href="http://freemedsoftware.org">FreeMED</a> – opensource electronic medical record/practice management system. Did a fair amount of retooling, including i18n, for the installation in Xela.</li>
+<li><a href="https://github.com/ganglia/monitor-core">ganglia</a> – opensource metrics aggregation system. <a href="http://vuksan.com">Vlad</a> and I managed to get a 3.2.0 release out the door, and are working on 3.3.0</li>
+<li><a href="https://github.com/jbuchbinder/ganglia-misc">ganglia web 2.x</a> – updated web interface for ganglia</li>
+<li><a href="https://github.com/jbuchbinder/haproxy">haproxy</a> – API work, to allow programmatic manipulation and querying</li>
+<li><a href="https://github.com/jbuchbinder/nagios/tree/nagios-3.x-api">nagios</a>/<a href="https://github.com/jbuchbinder/icinga-core">icinga</a> – API patches to allow programmatic manipulation of Nagios/Icinga</li>
+<li><a href="https://github.com/jbuchbinder/nagios-dash">nagios-dash</a> – a jquery-based Nagios replacement dashboard for NOCs. Requires the aforementioned nagios/icinga API patch.</li>
+<li><a href="https://github.com/jbuchbinder/node-soap">node-soap</a> – SOAP bindings for node.js. My work mostly involved fixing and expanding authentication methods.</li>
+<li><a href="https://github.com/freemed/remitt">REMITT</a> – my medical billing engine. Modernized for 5010 transactions.</li>
+<li><a href="https://github.com/jbuchbinder/statsd-c">statsd-c</a> – C port of etsy’s “statsd” server. Written in C primarily for speed.</li>
+<li><a href="https://github.com/jbuchbinder/sugarsync-linux">sugarsync-linux</a> – sugarsync linux API client. As Sugarsync isn’t too hot on providing a native Linux client, I took it upon myself to write one in Vala.</li>
+<li><a href="https://github.com/jbuchbinder/vded">vded</a> – “vector delta engine daemon”. Meant to allow metric collection for ever increasing values over time. (My first foray into “Vala”)</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Designing applications for clustering]]></title>
+    <link href="http://jbuchbinder.com/2010/05/21/designing-applications-for-clustering/"/>
+    <updated>2010-05-21T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2010/05/21/designing-applications-for-clustering</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
+
+<ul>
+<li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS …</li>
+<li><strong>API abstraction</strong> – Don’t write this one off too quickly. A good API layer means that whenever you have to make these sweeping changes, you’re only playing with a few files of source code, as opposed to completely rewriting a good chunk of your codebase. Without the few layers of API which I had been using, I would not have been able to implement the database backed information store which I just completed.</li>
+<li><strong>Database backed file store</strong> – This was the part I had just finished up. Storing files locally and relying on filesystem-based replication from some of the new clustering filesystems may *seem* like a good idea, but it’s not. Database gives you a single authoritative source, and unless we’re looking at multi-gigabyte files, there should not be an appreciable toll. Besides, you indexed your tables properly, right … ?</li>
+<li><strong>Design for concurrency</strong> – That record locking may seem like a pain, but two people working on the same object can be catastrophic. Take the time to add a locking field if you have to.</li>
+<li><strong>Singletons</strong> – Take “singleton” processes into account, so you’re only running a single iteration of something which can only be run once.</li>
+</ul>
+
+
+<p>Those are the major bullet points, although I’m sure that upon review of this, I’ll think of some other design paradigms I had to play with to get this to function properly. Off to enjoy the weekend …</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Updated: Linux support for ADS DVD Xpress DX2]]></title>
+    <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
+    <updated>2010-03-25T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
+
+<p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
+
+<p>Original driver : <br/>
+Patch :</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="Tidal" default="compile.server" basedir=".">
+  <description>
+    Tidal webapp build file.
+  </description>
+
+  <!-- ================================================== -->
+  <!-- Properties                                         -->
+  <!-- ================================================== -->
+  <property file="build.properties"/>
+  <property name="jetty.tmp.dir" value="${basedir}/tmp"/>
+  <property name="jetty.version" value="6.1.7"/>
+  <property name="repo" value="${basedir}/repository"/>
+  <property name="web.dir" value="${basedir}/www"/>
+  <property name="web.inf.dir" value="${web.dir}/WEB-INF"/>
+  <property name="web.inf.lib" value="${web.dir}/WEB-INF/lib"/>
+  <property name="class.dir" value="${web.inf.dir}/classes"/>
+  <property name="src.dir" value="${basedir}/src"/>
+  <property name="test.dir" value="${basedir}/test"/>
+
+  <!-- ================================================== -->
+  <!-- Main class path                                    -->
+  <!-- ================================================== -->
+  <path id="project.class.path">
+    <pathelement path="${java.class.path}/"/>
+    <fileset dir="${repo}">
+        <include name="**/*.jar"/>
+    </fileset>
+    <fileset dir="${web.inf.lib}">
+        <include name="**/*.jar"/>
+    </fileset>
+  </path>
+
+  <path id="test.class.path">
+    <pathelement path="${java.class.path}/"/>
+    <fileset dir="${repo}">
+        <include name="**/*.jar"/>
+        <exclude name="services.jar"/>
+    </fileset>
+    <fileset dir="${web.inf.lib}">
+        <include name="**/*.jar"/>
+    </fileset>
+  </path>
+
+  <!-- ================================================== -->
+  <!-- Classpath for jetty ant plugin                     -->
+  <!-- ================================================== -->
+  <path id="jetty.plugin.classpath">
+    <fileset dir="${test.dir}">
+      <include name="test.jar"/>
+    </fileset>
+    <fileset dir="${repo}">
+      <include name="jetty-ant-${jetty.version}.jar"/>
+      <include name="jetty-sslengine-${jetty.version}.jar"/>
+      <include name="jetty-${jetty.version}.jar"/>
+      <include name="jetty-util-${jetty.version}.jar"/>
+      <include name="jetty-plus-${jetty.version}.jar"/>
+      <include name="jetty-naming-${jetty.version}.jar"/>
+      <include name="servlet-api-2.5-${jetty.version}.jar"/>
+      <include name="jsp-api-2.1.jar"/>
+      <include name="jsp-2.1.jar"/>
+      <include name="core-3.1.1.jar"/>
+      <include name="ant-6.1.5.jar"/>
+      <include name="common.jar"/>
+      <include name="log4j-1.2.13.jar"/>
+    </fileset>
+
+  </path>
+
+
+
+  <!-- ================================================== -->
+  <!-- Target: compile.server                             -->
+  <!-- ================================================== -->
+  <target name="compile.server" description="Compile src to server classes">
+    <mkdir dir="www/WEB-INF/classes"/>
+    <javac srcdir="src" destdir="${class.dir}" includes="**/server/**/*.java" debug="on" debuglevel="lines,vars,source" source="1.4">
+      <classpath refid="project.class.path"/>
+    </javac>
+  </target>
+
+  <!-- ================================================== -->
+  <!-- Target: compile.client                             -->
+  <!-- ================================================== -->
+  <target name="compile.client" >
+    <java fork="yes" classname="com.google.gwt.dev.GWTCompiler">
+      <arg value="-out"/>
+      <arg value="www"/>
+      <arg value="com.tidal.webui.TidalWebUI"/>
+      <classpath>
+        <pathelement location="${src.dir}"/>
+        <pathelement location="${gwt.home}/gwt-user.jar"/>
+        <pathelement location="${gwt.home}/gwt-dev-${gwt.platform}.jar"/>
+	<pathelement location="${repo}/images.jar"/>
+        <pathelement location="${repo}/tidal-gwt-base.jar"/>
+	<pathelement location="${repo}/gwt-diagrams-0.1.jar"/>
+	<pathelement location="${repo}/gwt-dragdrop-1.2.6.jar"/>
+      </classpath>
+    </java>
+  </target>
+
+  <!-- ================================================== -->
+  <!-- Target: clean                                      -->
+  <!-- ================================================== -->
+  <target name="clean">
+    <defaultexcludes remove="**/.svn/**"/>
+    <delete includeemptydirs="true" failonerror="false"  defaultexcludes="no">
+      <fileset dir="${class.dir}"  includes="**/**"/>
+    </delete>
+    <delete includeemptydirs="true" failonerror="false"  defaultexcludes="no">
+      <fileset dir="${jetty.tmp.dir}"  includes="**/*"/>
+      <fileset dir="${basedir}/bin" includes="**/**"/>
+    </delete>
+    <defaultexcludes default="true"/>
+  </target>
+
+  <!-- ================================================== -->
+  <!-- Target: war                                        -->
+  <!-- ================================================== -->
+  <target name="war" depends="compile.server, compile.client">
+    <delete failonerror="false" file="webui.war"/>
+    <war destfile="webui.war" >
+      <fileset dir="www">
+        <include name="**/**"/>
+        <exclude name="**/.svn/**"/>
+      </fileset>
+    </war>
+  </target>
+ 
+
+  <!-- ================================================== -->
+  <!-- Test targets                                       -->
+  <!-- ================================================== -->
+  <target name="test.jar" depends="clean.test, compile.test" >
+    <delete file="${test.dir}/test.jar" failonerror="false"/>
+    <jar destfile="${test.dir}/test.jar" basedir="${test.dir}/classes" update="true"/>
+  </target>
+
+  <target name="compile.test" depends="clean.test">
+    <mkdir dir="${test.dir}/classes"/>
+    <javac srcdir="${test.dir}/src" destdir="${test.dir}/classes" includes="**/*.java" debug="on" debuglevel="lines,vars,source" source="1.4">
+      <classpath refid="test.class.path"/>
+    </javac>
+  </target>
+
+  <target name="clean.test">
+    <delete failonerror="false" includeemptydirs="true" defaultExcludes="false">
+      <fileset dir="${test.dir}/classes" includes="**/**"/>
+      <fileset dir="${test.dir}" includes="test.jar"/>
+    </delete>
+  </target>
+
+  <target name="test.war" depends="compile.server, test.jar">
+    <war destfile="webui-test.war">
+      <fileset dir="www">
+        <include name="**/**"/>
+        <exclude name="**/.svn/**"/>
+        <exclude name="WEB-INF/classes/com/tidal/webui/server/AlertManager.class"/>
+        <exclude name="WEB-INF/classes/com/tidal/webui/server/DataModelManager.class"/>
+        <exclude name="WEB-INF/classes/com/tidal/webui/server/ServerHealthManager.class"/>
+        <exclude name="WEB-INF/classes/com/tidal/webui/server/ServerHealthManager.class"/>
+        <exclude name="WEB-INF/classes/com/tidal/webui/server/EventManager.class"/>
+        <exclude name="WEB-INF/classes/com/tidal/webui/server/WorkspaceManager.class"/>
+        <exclude name="WEB-INF/classes/com/tidal/webui/server/ServerInfoManager.class"/>
+      </fileset>
+      <lib dir="${repo}">
+        <include name="log4j-1.2.13.jar"/>
+        <include name="common.jar"/>
+      </lib>
+      <lib dir="${test.dir}">
+        <include name="test.jar"/>
+      </lib>
+    </war>
+  </target>
+
+
+  <!-- ================================================== -->
+  <!-- Target: jetty.run                                  -->
+  <!-- ================================================== -->
+ <target name="jetty.run" depends="compile.server, test.jar" description="Run jetty ant plugin">
+ <taskdef classpathref="jetty.plugin.classpath" resource="tasks.properties" loaderref="jetty.loader" />
+    <delete failonerror="false" includeemptydirs="true" defaultExcludes="false">
+        <fileset dir="${class.dir}">
+          <include name="com/tidal/webui/server/AlertManager.class"/>
+          <include name="com/tidal/webui/server/DataModelManager.class"/>
+          <include name="com/tidal/webui/server/ServerHealthManager.class"/>
+          <include name="com/tidal/webui/server/EventManager.class"/>
+          <include name="com/tidal/webui/server/UserManager.class"/>
+          <include name="com/tidal/webui/server/WorkspaceManager.class"/>
+          <include name="com/tidal/webui/server/ServerInfoManager.class"/>
+        </fileset>
+    </delete>
+
+   <typedef name="sslSelectChannelConnector" classname="org.mortbay.jetty.security.SslSelectChannelConnector"
+                           classpathref="jetty.plugin.classpath" loaderref="jetty.loader" />
+   <typedef name="selectChannelConnector" classname="org.mortbay.jetty.nio.SelectChannelConnector"
+                           classpathref="jetty.plugin.classpath" loaderref="jetty.loader" />
+  <jetty tempDirectory="${jetty.tmp.dir}">
+    <connectors>
+    <selectChannelConnector
+        port="8080"
+        confidentialPort="8444"
+    />
+    <sslSelectChannelConnector
+        port="8444"
+        maxIdleTime="30000"
+        acceptors="2"
+        acceptQueueSize="100"
+        keystore="${basedir}/etc/keystore"
+        password="OBF:1vny1zlo1x8e1vnw1vn61x8g1zlu1vn4"
+        keyPassword="OBF:1u2u1wml1z7s1z7a1wnl1u2g"
+    />
+    </connectors>
+    <webApp name="WebUI" warfile="${basedir}/www" webXmlFile="${basedir}/test/web.xml" contextpath="/" scanIntervalSeconds="0"/>
+  </jetty>
+ </target>
+
+</project>

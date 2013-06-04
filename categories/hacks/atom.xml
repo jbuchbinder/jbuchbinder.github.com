@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2013-06-04T12:53:15-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
+    <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
+    <updated>2012-03-22T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
+
+<p>One-liner to expand RRDs:</p>
+
+<pre><code>/etc/init.d/gmetad stop; /etc/init.d/rrdcached stop ; 
+  find . | grep rrd | while read X; do fix-rrd.sh "$X"; done ; 
+  /etc/init.d/rrdcached start ; /etc/init.d/gmetad restart
+</code></pre>
+
+<p><strong>fix-rrd.sh</strong>:</p>
+
+<pre><code>#!/bin/bash
+# fix-rrds.sh
+NEWRRDS="0:5856 1:20160 2:20160 3:52704 4:3740"
+for RRD in $*; do
+        echo -n "Processing $RRD ... "
+        for RRA in ${NEWRRDS}; do
+                A=$(echo $RRA | cut -d: -f1)
+                B=$(echo $RRA | cut -d: -f2)
+                echo -n "$RRA "
+                rrdtool resize "$RRD" $A GROW $B 
+                        mv resize.rrd "$RRD" &amp;#038;&amp;#038; 
+                        chown nobody "$RRD"
+        done
+        echo "done."
+done
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Updated: Linux support for ADS DVD Xpress DX2]]></title>
+    <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
+    <updated>2010-03-25T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
+
+<p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
+
+<p>Original driver : <br/>
+Patch :</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[OpenBSD pf states monitoring]]></title>
+    <link href="http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring/"/>
+    <updated>2010-01-29T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>The simple recipe is to add this to root’s cron:</p>
+
+<p><code>
+* * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep pfTop | cut -d/ -f2 | cut -d, -f1) -t int32 -d 120 2&gt;&amp;#038;1 | logger -t pf_states
+</code></p>
+
+<p>and install the <strong>pftop</strong> package along with a gmetric binary and a working <strong>/etc/gmond.conf</strong> configuration file. It might be advantageous to check for the maximum number of states as well.</p>
+
+<p>In addition, you might want to know which pf rules are passing how much traffic. A nice easy way of doing this is to create this file as <strong>./pfstates</strong> (make it executable, of course):</p>
+
+<pre><code>#!/usr/bin/perl
+# pfstates
+# jeff@ourexchange.net
+my $limit = shift  || 0;
+
+my $seg = 0;
+my @s = [];
+
+while (chomp( my $line = )) {
+        $s[$seg] = $line;               
+        if ($seg == 2) {
+                $seg = 0;
+                if ($s[1] !~ /States: 0/) {
+                        my $states = 0;
+                        if ($s[1] =~ m/States: (d )/) {
+                                $states = $1;
+                        }
+                        if ($states &gt;= $limit) {
+                                print "[$states] $s[0]n";
+                        }
+                }
+        } else {
+                $seg  ;
+        }
+}
+</code></pre>
+
+<p>…. then you would pipe pfctl’s state output to it:</p>
+
+<pre><code>pfctl -v -s rules | ./pfstates
+</code></pre>
+
+<p>Optionally you could add a “minimum level” of connections you want to see:</p>
+
+<pre><code>pfctl -v -s rules | ./pfstates 100
+</code></pre>
+
+<p>for example to see only rules passing 100 or more active connections.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Backing up MAPI contacts and calendar from Exchange Server]]></title>
+    <link href="http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/"/>
+    <updated>2010-01-22T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.</p>
+
+<p>Why someone would design a system to expose every bit of data for a system through a nice standard protocol like IMAP, then only allow certain things to be viewed through a piece of crap proprietary protocol like MAPI just boggles the mind. I’m sure it’s part of their “vendor lock-in” thing, but it just pisses me off.</p>
+
+<p>Anyway, I found out that to completely backup an Exchange account (as I have been doing over the last week or so for different accounts), you also have to backup the non-mail portions. I ended up using a deprecated library called <a href="http://jakarta.apache.org/slide/clientjavadoc/overview-summary.html">Jakarta Slide</a> for WebDAV client support, which helpfully came with a <strong>SearchMethod</strong> call which was capable of running the specialized XML query required to backup the data.</p>
+
+<p>The XML I ended up using was:</p>
+
+<pre><code>SELECT * FROM "URL"
+</code></pre>
+
+<p>in case anyone is interested. Again, I have a fatjar of this utility, but I have to check with work to make sure they’re okay with me releasing it before I can post it anywhere.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[IMAP Synchronization]]></title>
+    <link href="http://jbuchbinder.com/2010/01/17/imap-synchronization/"/>
+    <updated>2010-01-17T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2010/01/17/imap-synchronization</id>
+    <content type="html"><![CDATA[<h1></h1>
+
+<p>I hate it. IMAP Synchronization, that is.</p>
+
+<p>In an effort to migrate users from one *shudder* Exchange provider to another (after getting shot down for proposing first Zimbra, then standard mail server stuff, then <a href="http://www.openchange.org/">Openchange</a>), I have been going through all of the available IMAP sync software that I could find.</p>
+
+<p><strong>mbsync</strong> () – We use this for IMAP backup, so I figured it would be a good idea to try it for syncing between two IMAP servers. *Crash*. *Segfault*. This is one of the reasons I’m not a big fan of really low-level apps written in C.</p>
+
+<p><strong>imapsync</strong> () – Written using a Perl library, this offered the promise of fast syncing, and appeared to work in test runs. That is, until it encountered folders with spaces in them, and threw up all over the terminal. Really, it wasn’t a use-case for *anyone* to have spaces in folder names? I could have put some effort into fixing the library and/or script, but I figured that if something that basic wasn’t working for a fairly mature library, this wasn’t going to be pretty.</p>
+
+<p><strong>The Imap Migration Tool</strong> () – Written in PHP, with a two or three step process. Was meant for moving stuff, not keeping them in sync, so running multiple times would cause additional copies of messages to be created. Also, it seems to have been written in some prehistoric form of PHP, which required hacking to get it even marginally functional. Even then, it spat tons of warnings and nasties, which made me a little nervous to use it on any important mailboxes.</p>
+
+<p><strong>mailsync</strong> () – I don’t even remember why this one didn’t work, only that I wasted a fair amount of time playing with it to get it to try to migrate using the scheme we were working with to no avail. Scratch another one.</p>
+
+<p>Solution … I had to roll my own. This is *stupid* to the highest degree, but I rolled something using <a href="http://java.sun.com/products/javamail/">javamail</a> into a self-contained “fat jar” using <a href="http://fjep.sourceforge.net/">fatjar</a>. It works sickeningly well, and actually respects existing messages by message id, so that if for any reason I have to break the sync process, it’ll skip past anything it has already done. I made it non-destructive because it seemed like seriously bad juju to have a sync tool purge out email…. If I get permission from work, I’ll post the jar for anyone with Java 1.6 to use.</p>
+
+<p>As an aside, it took a little bit of hackery to get fatjar running outside eclipse. The relevant section of build.xml was:</p>
+]]></content>
+  </entry>
+  
+</feed>
