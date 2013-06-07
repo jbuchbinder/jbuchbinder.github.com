@@ -1,5 +1,7 @@
 body > header {
-  background: $header-bg;
+  //background: $header-bg;
+  background-image: url(/images/CanonLensLineup.jpg);
+  background-position: -100px -400px !important;
   h1 {
     display: inline-block;
     margin: 0;
@@ -7,6 +9,7 @@ body > header {
       color: $title_color;
       text-decoration: none;
     }
+    text-shadow: 2px 2px #000000;
   }
   h2 {
     margin: .2em 0 0;
@@ -14,5 +17,6 @@ body > header {
     font-size: 1em;
     color: $subtitle-color;
     font-weight: normal;
+    text-shadow: 2px 2px #000000;
   }
 }
