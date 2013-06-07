@@ -1,5 +1,6 @@
 .bundle
 .DS_Store
+.flickr-cache
 .sass-cache
 .gist-cache
 .pygments-cache
