@@ -38,7 +38,7 @@ the camera.
 
 This concept has been expanded, partially through the over-saturation of
 "[reality television][2]" and "[found footage][3]" genre pieces. Far from
-being necessitated by the artistic content of those genres, it is rather a
+being necessitated by the artistic content of those genres, it is rather
 [much more profitable][4], and can be executed with far crummier equipment
 and with a lower technical skill (and ostensibly artistic skill) element. I'm
 not going to argue that there is *no* artistic or technical skill involved

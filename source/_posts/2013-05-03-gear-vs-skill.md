@@ -52,7 +52,7 @@ brought a [Washburn MB-6][3] (a strange Mercury series instrument with
 fantastic action, scored on eBay for very little money), and had finished
 a really heart-felt set. Some jackass came up to me and complimented the
 instrument.  I figured, from that point on, I would just assume that if
-someone commented my instrument, they were implicitly insulting me, by
+someone commented on my instrument, they were implicitly insulting me, by
 implying that the instrument provided the quality which they admired, and
 that anyone would have been able to do the same, given the chance to play
 that instrument.
