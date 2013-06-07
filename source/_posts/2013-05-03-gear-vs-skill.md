@@ -61,5 +61,5 @@ that instrument.
 
 To sum up, you need a good eye -- more than anything else -- but it's also
 important to have the right equipment for the right purpose. Oh, and don't
-forget to stablize your shots ...
+forget to stabilize your shots ...
 
