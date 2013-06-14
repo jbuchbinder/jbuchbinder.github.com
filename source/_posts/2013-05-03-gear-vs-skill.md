@@ -34,7 +34,7 @@ you could acchieve with a higher-grade sensor and optics. However, if you're
 using a standard kit lens on that camera (which probably tops out at an f/3.5
 if you're really, really lucky), you're not going to be able to get the
 narrow depth-of-field which is associated with most "cinematic" shots. A
-[Canon 50mm f/1.8 "plastic fantasic"][2] lens (on which I've seen far too many
+[Canon 50mm f/1.8 "plastic fantastic"][2] lens (on which I've seen far too many
 budding cinematographers rely exclusively) is an interesting start, but can't
 completely replace a series of really wide open glass primes (sub-f/2.0).
 
