@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-06-14T17:33:11-04:00</updated>
+  <updated>2013-06-20T16:01:48-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -112,7 +112,9 @@ that <em>one more thing</em> would make some difference. He then had an epiphany
 after viewing a photo of a sunset taken with a $12 disposable camera. The
 full comment was:</p>
 
-<p><blockquote><p>It's even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, "ah, yes. Right."</p></blockquote></p>
+<p>{% blockquote %}
+It's even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, "ah, yes. Right."
+{% endblockquote %}</p>
 
 <p>I've been thinking about this, as I acquire more cinematography gear. At
 which point does it become less about the gear, and more about the wetware?

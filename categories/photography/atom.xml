@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Photography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/photography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-06-14T17:33:11-04:00</updated>
+  <updated>2013-06-20T16:01:48-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -69,9 +69,9 @@
     <id>http://jbuchbinder.com/2006/08/03/stan-at-the-lake</id>
     <content type="html"><![CDATA[<p>I took <a href="http://www.flickr.com/photos/whatsyourmeme/tags/stan/">Stan</a> up to Crystal Lake, where he had a great time swimming and doing whatever it is that dogs do. Some pictures:</p>
 
-<p><figure class="flickr-thumbnail left" style="display: inline-block;"><a href="http://farm1.staticflickr.com/65/203911721_7f0819232c_z.jpg?zz=1" class="fancybox" data-title-id="flickr-photo-203911721" data-media="photo"><img src="http://farm1.staticflickr.com/65/203911721_7f0819232c_o.jpg" title="Stan swimming with ball" style=""/></a><figcaption id="flickr-photo-203911721"><h1><a class="flickr-link" href="http://www.flickr.com/photos/90594090@N00/203911721">Stan swimming with ball</a> by What's Your Meme</h1><div class="description">Stan swimming with ball</div></figcaption></figure>
-<figure class="flickr-thumbnail left" style="display: inline-block;"><a href="http://farm1.staticflickr.com/76/203911608_ea13ad3eda_z.jpg?zz=1" class="fancybox" data-title-id="flickr-photo-203911608" data-media="photo"><img src="http://farm1.staticflickr.com/76/203911608_ea13ad3eda_o.jpg" title="Stan jumping into water" style=""/></a><figcaption id="flickr-photo-203911608"><h1><a class="flickr-link" href="http://www.flickr.com/photos/90594090@N00/203911608">Stan jumping into water</a> by What's Your Meme</h1><div class="description">Stan jumping into water</div></figcaption></figure>
-<figure class="flickr-thumbnail left" style="display: inline-block;"><a href="http://farm1.staticflickr.com/66/203911532_e20447915e_z.jpg?zz=1" class="fancybox" data-title-id="flickr-photo-203911532" data-media="photo"><img src="http://farm1.staticflickr.com/66/203911532_e20447915e_o.jpg" title="He's actually a very good swimmer" style=""/></a><figcaption id="flickr-photo-203911532"><h1><a class="flickr-link" href="http://www.flickr.com/photos/90594090@N00/203911532">He's actually a very good swimmer</a> by What's Your Meme</h1><div class="description">He's actually a very good swimmer</div></figcaption></figure></p>
+<p>{% flickr_image 203911721 n left "Stan swimming with ball" %}
+{% flickr_image 203911608 n left "Stan jumping into water" %}
+{% flickr_image 203911532 n left "He's actually a very good swimmer" %}</p>
 ]]></content>
   </entry>
   
@@ -82,7 +82,7 @@
     <id>http://jbuchbinder.com/2006/04/10/straight-from-the-horses-eyes</id>
     <content type="html"><![CDATA[<h1></h1>
 
-<p><figure class="flickr-thumbnail left" style="display: inline-block;"><a href="http://farm1.staticflickr.com/53/126283790_963a140c2a_z.jpg?zz=1" class="fancybox" data-title-id="flickr-photo-126283790" data-media="photo"><img src="http://farm1.staticflickr.com/53/126283790_963a140c2a_o.jpg" title="Horse eyes" style=""/></a><figcaption id="flickr-photo-126283790"><h1><a class="flickr-link" href="http://www.flickr.com/photos/90594090@N00/126283790">Horse eyes</a> by What's Your Meme</h1><div class="description">Horse eyes</div></figcaption></figure></p>
+<p>{% flickr_image 126283790 n left "Horse eyes" %}</p>
 
 <p>Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of pictures. I’m trying to get her to open her own flickr account... It was a good day, all in all, even though a few of the horse riders there got a little antsy with us taking their pictures.</p>
 ]]></content>
