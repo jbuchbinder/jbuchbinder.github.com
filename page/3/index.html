@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="The clinic was open for the first of the two days it will be open during my stay in Xela. It was a pretty crazy scene — a line going to the end, if &hellip;">
+  <meta name="description" content="It’s day five of our trip to Xela, and we’ve come to the realization that the damn server isn’t going to clear Customs before I leave the country. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,52 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/09/23/xela-day-five-freemed-finally/">Xela Day Five: FreeMED, Finally</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-23T00:00:00-04:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2010</time>
+        
+         | <a href="/2010/09/23/xela-day-five-freemed-finally/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>It’s day five of our trip to Xela, and we’ve come to the realization that the damn server isn’t going to clear Customs before I leave the country. That being understood, I got FreeMED up and running on the machine which was originally designated to be the secondary / failover server. The guy who set up the router which is being used by POP-WUJ is unfortunately in Spain, and has left no information on access, so I’m unable to appropriately set up port forwards for the server. In lieu of that, autossh tunnels are now running back to Connecticut, so I can still access the server. It’s just not very conducive to anyone *else* trying to access the server from beyond the walls of the POP-WUJ building.</p>
+
+<p>All of this was done despite efforts from my day job to occupy as much of my vacation as possible with fixing firewalls and failing over between colocation centers. That ate up the middle of my day, for the most part. While I was busy doing this, Jonathan and the part of the crew that hadn’t gone out hiking at 4am started work on beautifying and improving the clinic. By 5 or 6pm (as everyone else got back around 2pm), the pediatric exam room had been repainted and decorated, the main room had been decorated, and much had been improved in the pharmacy and in the electrical system areas. Thanks to my sister Shelley, there are nice printed signs which are to hang on the exam room and pharmacy doors, and a large tapestry hangs where a few photos had been haphazardly taped to the walls. Jorge painted the walls in the pediatric exam room with a roller, adorned with a plastic ziplock bag over his head and a surgical mask, and some of the nurses attached a semi-permanent measuring tape to the wall for height measurements, decorated with cutouts of popular childrens’ characters. With any luck, the kids who are seen in the clinic will feel much more at ease when they visit the doctor.</p>
+
+<p>All of us went out for Tex-Mex food at a local eatery with Meg and her husband. I broke from my tradition of only eating local food to help myself to a grilled burrito “de res con queso” with beans and flavored rice, with a helping of the local beer. It was offered in light, dark, and “medium”, which we surmised was made by mixing equal parts of the light and dark brews. Regardless, it was a good tasting meal. I grabbed a chocolate flavored coffee, and Irv grabbed a regular, to help keep me up for a stint of finishing up the triage UI logic. I ended up going with a system event bus approach, in that new registrations are pushed out via “systemnotifications”, forcing the UI to update itself whenever new patients are registered at the registration stage. This should allow the triage person to see all registrations as they come in from a single screen which does not require any sort of manual refreshing to function properly.</p>
+
+<p>The crew is splitting in half tomorrow. One half is visiting a daycare in the pueblos outside of town, and the remainder, including Irv and myself, are staying behind with Dr Christian to man the clinic in Xela. I’m staying behind so that I can help push adoption of the EMR for demographics and vitals collection, and Irv will be assisting Dr Christian in seeing as many patients as they can. The hope is that we can break for a while to visit the marketplace, as I promised my wife I’d buy her some local fiber, yarn and other knitting supplies. If I’m lucky, I can find a local artisan who makes instruments — but I’m not holding my breath.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -523,93 +569,6 @@ Patch :</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/01/29/openbsd-pf-states-monitoring/">OpenBSD Pf States Monitoring</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-29T00:00:00-05:00" pubdate data-updated="true">Jan 29<span>th</span>, 2010</time>
-        
-         | <a href="/2010/01/29/openbsd-pf-states-monitoring/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>The simple recipe is to add this to root’s cron:</p>
-
-<p><code>
-* * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep pfTop | cut -d/ -f2 | cut -d, -f1) -t int32 -d 120 2&gt;&amp;#038;1 | logger -t pf_states
-</code></p>
-
-<p>and install the <strong>pftop</strong> package along with a gmetric binary and a working <strong>/etc/gmond.conf</strong> configuration file. It might be advantageous to check for the maximum number of states as well.</p>
-
-<p>In addition, you might want to know which pf rules are passing how much traffic. A nice easy way of doing this is to create this file as <strong>./pfstates</strong> (make it executable, of course):</p>
-
-<pre><code>#!/usr/bin/perl
-# pfstates
-# jeff@ourexchange.net
-my $limit = shift  || 0;
-
-my $seg = 0;
-my @s = [];
-
-while (chomp( my $line = )) {
-        $s[$seg] = $line;               
-        if ($seg == 2) {
-                $seg = 0;
-                if ($s[1] !~ /States: 0/) {
-                        my $states = 0;
-                        if ($s[1] =~ m/States: (d )/) {
-                                $states = $1;
-                        }
-                        if ($states &gt;= $limit) {
-                                print "[$states] $s[0]n";
-                        }
-                }
-        } else {
-                $seg  ;
-        }
-}
-</code></pre>
-
-<p>…. then you would pipe pfctl’s state output to it:</p>
-
-<pre><code>pfctl -v -s rules | ./pfstates
-</code></pre>
-
-<p>Optionally you could add a “minimum level” of connections you want to see:</p>
-
-<pre><code>pfctl -v -s rules | ./pfstates 100
-</code></pre>
-
-<p>for example to see only rules passing 100 or more active connections.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/4/">&larr; Older</a>
@@ -627,6 +586,10 @@ while (chomp( my $line = )) {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/06/20/the-age-of-dslr-cinematography/">The Age of DSLR Cinematography</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/06/03/stabilization/">Stabilization</a>
       </li>
     
@@ -642,17 +605,13 @@ while (chomp( my $line = )) {
         <a href="/2013/04/02/migrating-to-octopress/">Migrating to Octopress</a>
       </li>
     
-      <li class="post">
-        <a href="/2012/11/06/election-2012-summary/">Election 2012 Summary</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (3)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (4)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>

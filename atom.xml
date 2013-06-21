@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-06-20T16:01:28-04:00</updated>
+  <updated>2013-06-21T08:23:38-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Age of DSLR Cinematography]]></title>
+    <link href="http://jbuchbinder.com/2013/06/20/the-age-of-dslr-cinematography/"/>
+    <updated>2013-06-20T16:57:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/06/20/the-age-of-dslr-cinematography</id>
+    <content type="html"><![CDATA[<p>DSLR cinematography (the practice of cinematography using relatively inexpensive DSLR camera bodies, which were originally purposed for still photography) has been enjoying a sort of minature renaissance over the last few years.</p>
+
+<p>I was pleasantly surprised to find out that Shane Carruth&#8217;s new movie, <a href="http://www.imdb.com/title/tt2084989/">Upstream Color</a>, was shot entirely on a DSLR body. The information I&#8217;ve been reading indicates that he used a Panasonic GH2 DSLR body, with a few lenses, including the <a href="http://slrgear.com/reviews/showproduct.php/product/1577/cat/110">Rokinon 85mm f/1.4</a> (which I highly recommend). It scored at Sundance, and if it hadn&#8217;t been for a few &#8220;behind the scenes&#8221; photos, it might not have been quite that apparent.</p>
+
+<p>Of course, Carruth also ended up using some <a href="http://www.kenrockwell.com/voigtlander/">Voigtlander</a> glass, which is by no stretch of the imagination cheap/affordable for cash-strapped indie filmmakers. There&#8217;s an interesting write-up on the whole thing <a href="http://www.eoshd.com/content/10309/gh2-shot-sci-fi-upstream-color-breaks-300000-mark-at-the-us-box-office">at EOSHD</a>.</p>
+
+<p>There&#8217;s a reason why I bring up &#8220;Upstream Color&#8221; &#8211; and it&#8217;s a point that I&#8217;ve been trying to make, off and on, for the past year or so. That film grossed over 300k dollars at the box office, and was shot on a small, inexpensive camera body. Still, it produced stunning visuals and did not seem to suffer from most of the &#8220;fatal flaws&#8221; that most seem to ascribe to DSLR cinematography, in general. The point, boiled down to its most essential component, is that the most important piece of equipment you&#8217;ve got is between your forehead and your nose. You can&#8217;t buy your way into it, and you can&#8217;t just assume that if you own it, you can shoot as well as cinematographer X who has the current successful movie on the big screen.</p>
+
+<p>Whether or not you&#8217;re a big fan of &#8220;Act of Valor&#8221; or the &#8220;Fast and Furious&#8221; franchise, you can still appreciate Shane Hurlbut&#8217;s <a href="http://blog.planet5d.com/2012/02/act-of-valor-leap-of-faith/">extensive use of Canon EOS 5D mk III bodies</a>. He has had a series of posts on his blog praising not only the relative inexpensive nature of the 5D bodies, but also their versatility.</p>
+
+<p>For every person who says &#8220;I shoot on the RED ONE&#8221; and produces sub-standard output, or bemoans not being able to afford an ARRI which would &#8220;really make a beautiful movie&#8221; &#8211; I call foul on that entire argument. Even contending with a more limited dynamic range (a common DSLR problem), a top resolution of 1080p for shooting, and mostly commodity lenses, Carruth managed to produce something beautiful. It&#8217;s not down to the equipment you buy, folks, it&#8217;s how you use it.</p>
+
+<p>Good luck.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Stabilization]]></title>
@@ -664,23 +685,6 @@ done
 <p>Back to the medical record… The server is stuck in customs in Guatemala City somewhere, so I had to get the secondary server up and running. It had been slightly damaged in transit, which jostled the RAID card loose and knocked a few connectors off of the backplane. Regardless, after my father made a quick trip to the local bookstore to pick up a blank CDR (as the BIOS in that model didn’t properly boot off of my Debian USB install key due to its particular vintage), I got Debian running on that machine with little trouble. The uplink here isn’t fantastic, so it’s a matter of starting the upgrades and downloads then walking away for a while. There are also some electrical system issues. The single outlet available to us is ungrounded, which may cause some issues, so we’re arranging a UPS to be purchased locally to act as a bit of a safeguard between the fairly unstable electrical grid in Xela and the servers and switching hub. We may have to drill a post to ground the system to the earth properly in addition to all of that.</p>
 
 <p>I’m making pretty good headway with FreeMED modifications for the clinic, and have started on the triage screen, with some input from Jorge. I’m hoping that it can act as a “junction” in the flow of data around the clinic, but that remains to be seen. After I finish up the screen tomorrow, I’ll do some limited implementation testing to see how well it works or doesn’t work.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Xela Day Five: FreeMED, Finally]]></title>
-    <link href="http://jbuchbinder.com/2010/09/23/xela-day-five-freemed-finally/"/>
-    <updated>2010-09-23T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.com/2010/09/23/xela-day-five-freemed-finally</id>
-    <content type="html"><![CDATA[<h1></h1>
-
-<p>It’s day five of our trip to Xela, and we’ve come to the realization that the damn server isn’t going to clear Customs before I leave the country. That being understood, I got FreeMED up and running on the machine which was originally designated to be the secondary / failover server. The guy who set up the router which is being used by POP-WUJ is unfortunately in Spain, and has left no information on access, so I’m unable to appropriately set up port forwards for the server. In lieu of that, autossh tunnels are now running back to Connecticut, so I can still access the server. It’s just not very conducive to anyone *else* trying to access the server from beyond the walls of the POP-WUJ building.</p>
-
-<p>All of this was done despite efforts from my day job to occupy as much of my vacation as possible with fixing firewalls and failing over between colocation centers. That ate up the middle of my day, for the most part. While I was busy doing this, Jonathan and the part of the crew that hadn’t gone out hiking at 4am started work on beautifying and improving the clinic. By 5 or 6pm (as everyone else got back around 2pm), the pediatric exam room had been repainted and decorated, the main room had been decorated, and much had been improved in the pharmacy and in the electrical system areas. Thanks to my sister Shelley, there are nice printed signs which are to hang on the exam room and pharmacy doors, and a large tapestry hangs where a few photos had been haphazardly taped to the walls. Jorge painted the walls in the pediatric exam room with a roller, adorned with a plastic ziplock bag over his head and a surgical mask, and some of the nurses attached a semi-permanent measuring tape to the wall for height measurements, decorated with cutouts of popular childrens’ characters. With any luck, the kids who are seen in the clinic will feel much more at ease when they visit the doctor.</p>
-
-<p>All of us went out for Tex-Mex food at a local eatery with Meg and her husband. I broke from my tradition of only eating local food to help myself to a grilled burrito “de res con queso” with beans and flavored rice, with a helping of the local beer. It was offered in light, dark, and “medium”, which we surmised was made by mixing equal parts of the light and dark brews. Regardless, it was a good tasting meal. I grabbed a chocolate flavored coffee, and Irv grabbed a regular, to help keep me up for a stint of finishing up the triage UI logic. I ended up going with a system event bus approach, in that new registrations are pushed out via “systemnotifications”, forcing the UI to update itself whenever new patients are registered at the registration stage. This should allow the triage person to see all registrations as they come in from a single screen which does not require any sort of manual refreshing to function properly.</p>
-
-<p>The crew is splitting in half tomorrow. One half is visiting a daycare in the pueblos outside of town, and the remainder, including Irv and myself, are staying behind with Dr Christian to man the clinic in Xela. I’m staying behind so that I can help push adoption of the EMR for demographics and vitals collection, and Irv will be assisting Dr Christian in seeing as many patients as they can. The hope is that we can break for a while to visit the marketplace, as I promised my wife I’d buy her some local fiber, yarn and other knitting supplies. If I’m lucky, I can find a local artisan who makes instruments — but I’m not holding my breath.</p>
 ]]></content>
   </entry>
   
