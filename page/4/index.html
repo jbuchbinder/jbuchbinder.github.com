@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="The simple recipe is to add this to root’s cron: * * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep &hellip;">
+  <meta name="description" content="I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension/">The Adventures of Buckaroo Banzai Across the Eighth Dimension</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-30T00:00:00-05:00" pubdate data-updated="true">Jan 30<span>th</span>, 2010</time>
+        
+         | <a href="/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the 1980s called <a href="http://www.imdb.com/title/tt0086856/">The Adventures of Buckaroo Banzai Across the Eighth Dimension</a>.</p>
+
+<p>It’s a pretty funny send-up of scifi movies which take themselves too seriously. I think that after watching it, it’s pretty apparent that none of the actors were told that it was supposed to be a comedy. Peter Weller plays the entire movie completely straight, which makes his lines all the funnier. John Lithgow was very funny, in his strange and quirky way.</p>
+
+<p>It was apparently very difficult for the studio that owned it to release “Buckaroo Banzai” because of some legal issues, but it finally made it to DVD in the last few years.</p>
+
+<ul>
+<li><a href="http://www.imdb.com/title/tt0086856/">iMDB Link</a></li>
+<li><a href="http://www.netflix.com/Movie/The_Adventures_of_Buckaroo_Banzai/60021712">Netflix Link</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -600,64 +650,6 @@ $sc = new SoapClient( file_get_contents($url), array(
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/09/29/a-few-observations-about-android/">A Few Observations About Android</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-09-29T00:00:00-04:00" pubdate data-updated="true">Sep 29<span>th</span>, 2009</time>
-        
-         | <a href="/2009/09/29/a-few-observations-about-android/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>I’ve been in the process of teaching myself the Google Android platform over the last few weeks, as my work has had a contest devoted to creating a mobile phone app, with a prize attached. I’m the only entrant who doesn’t work in the Engineering department, so this is a bit of a professional stretch for me as far as my job is concerned.</p>
-
-<p>I have found quite a few caveats in the development process which are worth noting, as I have spent a fair amount of time researching them to figure them out. (I should also note at this point that this is in no way downplaying the important role Android plays in the future of mobile phone platforms, and is definitely *not* advocating either WinMo, which is a horrible abortion of a platform, or iPhone, which is not only locked to a single vendor, but *requires* purchasing a Crapitosh for development as well as a minimum 99$ development license to get going …)</p>
-
-<p>1) <strong>Camera Access</strong> – It took some digging to find that you have to allow permission android.permission.CAMERA, or else it’ll throw out of memory errors and crash the app. I think it’s a running bug that in Android 1.6 it isn’t throwing a proper “PermissionDeniedException” or whatever else they feel like calling it. Otherwise the Camera API is pretty powerful.</p>
-
-<p>2) <strong>Getting your own phone number</strong> – This is very interesting, as Android just moved to using something called “TelephonyManager” to deal with all of this. Unfortunately documentation hasn’t quite caught up to it. An example:</p>
-
-<pre><code>TelephonyManager mTelephonyMgr = (TelephonyManager)context.getSystemService(Context.TELEPHONY_SERVICE); 
-String imei = mTelephonyMgr.getDeviceId(); 
-String phoneNumber=mTelephonyMgr.getLine1Number(); 
-String country = mTelephonyMgr.getNetworkCountryISO(); 
-</code></pre>
-
-<p>3) <strong>Saving state</strong> – If you want to save state for your app, it makes no sense to go any further than SharedPreferences. It keeps you from having to create a content provider to deal with keeping that information stored somewhere else …</p>
-
-<p>4) <strong>AppWidgets are awesome</strong> — The idea of a “home screen” applet is really easy to implement simply by extending AppWidgetProvider and add a  XML element to the AndroidManifest.xml file corresponding with the class.</p>
-
-<p>5) <strong>Opening an intent from a menu item</strong> – The documentation says to use *a* Context, but doesn’t mention that you should be passing the Activity subclass that you’re coding to use as the Context.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/5/">&larr; Older</a>
@@ -675,6 +667,10 @@ String country = mTelephonyMgr.getNetworkCountryISO();
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/06/28/skill-in-the-age-of-instagram/">Skill in the Age of Instagram</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/06/20/the-age-of-dslr-cinematography/">The Age of DSLR Cinematography</a>
       </li>
     
@@ -690,17 +686,13 @@ String country = mTelephonyMgr.getNetworkCountryISO();
         <a href="/2013/04/12/heading-to-the-2013-boston-international-film-festival/">Heading to the 2013 Boston International Film Festival</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/04/02/migrating-to-octopress/">Migrating to Octopress</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (4)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (5)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
