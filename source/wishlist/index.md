@@ -43,23 +43,14 @@ This is a list of things that I’d like to have at some point or other, split u
 
 ## Photography/Cinematography Related
 
-*   ~~[Canon Speedlite 580EX][10] flash~~ - Purchased this in 2012. Then the 600EX came out, proving that Canon hates me.
-*   [Canon EF 200mm f/2.8L II USM][11] lens
-*   ~~[Canon EF 135mm f/2.8 soft focus lens][12]~~ - Grabbed this one from a grey market distributor in Korea. They have some really odd air-freight packaging there.
-*   ~~[Canon EF 70-200mm f/2.8L IS USM][13]~~
-*   ~~[Two lighting umbrellas, stands, bulbs][14]~~
-*   [Three backdrops and stand][15]
-*   [Wireless flash trigger][16]
-*   [Amazon Photography/Cinematography Wishlist][24]: Externally maintained wishlist for my photography/cinematography gear. If you owe me one (or just like me a lot), I always appreciate gift purchases from there.
-
- [10]: http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&fcategoryid=141&modelid=10514
- [11]: http://www.lensplay.com/lenses/lens_data.php?lensID=26
- [12]: http://www.google.com/products/catalog?q=canon soft focus&um=1&ie=UTF-8&cid=4589938083088539947#ps-sellers
- [13]: http://photo.net/equipment/canon/70-200
- [14]: http://cgi.ebay.com/Photo-Studio-Light-Umbrella-Lighting-Essentials-FBB57_W0QQitemZ390165706188QQihZ026QQcategoryZ79009QQssPageNameZWDVWQQrdZ1QQcmdZViewItem
- [15]: http://cgi.ebay.com/Portrait-Backdrop-Background-Stand-3-Muslins-MS03-/260614029943
- [16]: http://cgi.ebay.com/PT-04-Wireless-Flash-Trigger-CANON-EOS-DSLR-SPEEDLIGHT-/280565851558
- [24]: http://www.amazon.com/registry/wishlist/24PJBXIODO1IK/
+*   ~~[Canon Speedlite 580EX](http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&fcategoryid=141&modelid=10514) flash~~ - Purchased this in 2012. Then the 600EX came out, proving that Canon hates me.
+*   ~~[Canon EF 135mm f/2.8 soft focus lens](http://www.google.com/products/catalog?q=canon soft focus&um=1&ie=UTF-8&cid=4589938083088539947#ps-sellers)~~ - Grabbed this one from a grey market distributor in Korea. They have some really odd air-freight packaging there.
+*   ~~[Canon EF 70-200mm f/2.8L IS USM](http://photo.net/equipment/canon/70-200)~~
+*   [Canon EF 24-70mm f/2.8L II USM](http://www.amazon.com/Canon-24-70mm-2-8L-Standard-Zoom/dp/B0076BNK30/)
+*   ~~[Two lighting umbrellas, stands, bulbs](http://cgi.ebay.com/Photo-Studio-Light-Umbrella-Lighting-Essentials-FBB57_W0QQitemZ390165706188QQihZ026QQcategoryZ79009QQssPageNameZWDVWQQrdZ1QQcmdZViewItem)~~
+*   [Three backdrops and stand](http://cgi.ebay.com/Portrait-Backdrop-Background-Stand-3-Muslins-MS03-/260614029943)
+*   [Wireless flash trigger](http://cgi.ebay.com/PT-04-Wireless-Flash-Trigger-CANON-EOS-DSLR-SPEEDLIGHT-/280565851558)
+*   [Amazon Photography/Cinematography Wishlist](http://www.amazon.com/registry/wishlist/24PJBXIODO1IK/): Externally maintained wishlist for my photography/cinematography gear. If you owe me one (or just like me a lot), I always appreciate gift purchases from there.
 
 ## Computer/Gadget Related
 
