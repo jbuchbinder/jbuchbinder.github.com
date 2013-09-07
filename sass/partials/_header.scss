@@ -1,6 +1,6 @@
 body > header {
   //background: $header-bg;
-  background-image: url(/images/CanonLensLineup.jpg);
+  background-image: url(/images/CanonLensLineup.jpg) !important;
   background-position: -100px -400px !important;
   background: $header-bg;
   h1 {
