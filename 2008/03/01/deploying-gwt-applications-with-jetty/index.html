@@ -133,7 +133,7 @@ APPDIR=<code>dirname $0</code>;
 CPGWT=$APPDIR/src
 CPGWT=$CPGWT:$GWT_HOME/gwt-user.jar
 CPGWT=$CPGWT:$GWT_HOME/gwt-dev-linux.jar
-java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 &#8220;$@&#8221; $ENTRY_POINT/$HOST_PAGE
+java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 &ldquo;$@&rdquo; $ENTRY_POINT/$HOST_PAGE
 &#8220;</p>
 
 <p>3) Change your (appname)-compile script to look like:<br/>
@@ -143,11 +143,11 @@ java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080
 <h1>!/bin/sh</h1>
 
 <p>APPDIR=<code>dirname $0</code>;
-echo &#8220;Compiling GWT portion of application &#8230; &#8221;
-java  -cp &#8220;$APPDIR/src:$APPDIR/bin:/usr/lib/gwt/gwt-user.jar:/usr/lib/gwt/gwt-dev-linux.jar&#8221; com.google.gwt.dev.GWTCompiler -out &#8220;$APPDIR/webapps&#8221; &#8220;$@&#8221; net.cognitiveconsulting.gwt.JettyTest;
-echo &#8220;Compiling native Java part of application &#8230; &#8221;
+echo &ldquo;Compiling GWT portion of application &hellip; &rdquo;
+java  -cp &ldquo;$APPDIR/src:$APPDIR/bin:/usr/lib/gwt/gwt-user.jar:/usr/lib/gwt/gwt-dev-linux.jar&rdquo; com.google.gwt.dev.GWTCompiler -out &ldquo;$APPDIR/webapps&rdquo; &ldquo;$@&rdquo; net.cognitiveconsulting.gwt.JettyTest;
+echo &ldquo;Compiling native Java part of application &hellip; &rdquo;
 ant -f net.cognitiveconsulting.gwt.JettyTest.ant.xml
-echo &#8220;Moving pieces into Jetty library path &#8230; &#8221;
+echo &ldquo;Moving pieces into Jetty library path &hellip; &rdquo;
 ( cd bin ; jar cf ../lib/net.cognitiveconsulting.gwt.JettyTest.jar * )
 &#8220;</p>
 
@@ -220,7 +220,7 @@ echo &#8220;Moving pieces into Jetty library path &#8230; &#8221;
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty/" data-via="jbuchbinder" data-counturl="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty/" data-via="jbuchbinder" data-counturl="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -242,7 +242,6 @@ echo &#8220;Moving pieces into Jetty library path &#8230; &#8221;
   </footer>
 </article>
 
-
 </div>
 
 <aside class="sidebar">
@@ -250,6 +249,10 @@ echo &#8220;Moving pieces into Jetty library path &#8230; &#8221;
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2013/09/07/to-post-or-not-to-post/">To Post or Not to Post</a>
+      </li>
     
       <li class="post">
         <a href="/2013/06/28/skill-in-the-age-of-instagram/">Skill in the Age of Instagram</a>
@@ -267,17 +270,13 @@ echo &#8220;Moving pieces into Jetty library path &#8230; &#8221;
         <a href="/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/04/12/heading-to-the-2013-boston-international-film-festival/">Heading to the 2013 Boston International Film Festival</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (5)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (6)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
@@ -285,7 +284,7 @@ echo &#8220;Moving pieces into Jetty library path &#8230; &#8221;
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
-<li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
+<li class='category'><a href='/categories/photography/'>Photography (7)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (81)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
@@ -407,7 +406,7 @@ echo &#8220;Moving pieces into Jetty library path &#8230; &#8221;
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

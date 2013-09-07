@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I have created a wordpress “diff” which can be applied to easily upgrade WordPress 2.0.1 to WordPress 2.0.3 instead of going through the long and &hellip;">
+  <meta name="description" content="To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the rc_firewal nvram variable (non-volatile ram &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,56 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/07/31/wrt54g-multiple-external-ip-trick/">WRT54G Multiple External IP Trick</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-07-31T00:00:00-04:00" pubdate data-updated="true">Jul 31<span>st</span>, 2006</time>
+        
+         | <a href="/2006/07/31/wrt54g-multiple-external-ip-trick/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the rc_firewal nvram variable (non-volatile ram):</p>
+
+<p><code>
+ nvram set rc_firewal="
+ iptables -t nat -I PREROUTING -d x.y.z.1 -j DNAT --to-destination 192.168.1.x
+ iptables -t nat -I PREROUTING -d x.y.z.2 -j DNAT --to-destination 192.168.1.x
+ "
+ nvram commit
+</code></p>
+
+<p>This will protect the changes against being lost when the router is reset.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -346,9 +396,9 @@ cat text.au | toast -c -s &gt; text.gsm
 
   <div class="entry-content"><h1></h1>
 
-<p><figure class="flickr-thumbnail left" style="display: inline-block;"><a href="http://farm1.staticflickr.com/53/126283790_963a140c2a_z.jpg?zz=1" class="fancybox" data-title-id="flickr-photo-126283790" data-media="photo"><img src="http://farm1.staticflickr.com/53/126283790_963a140c2a_o.jpg" title="Horse eyes" style=""/></a><figcaption id="flickr-photo-126283790"><h1><a class="flickr-link" href="http://www.flickr.com/photos/90594090@N00/126283790">Horse eyes</a> by What&#8217;s Your Meme</h1><div class="description">Horse eyes</div></figcaption></figure></p>
+<p><figure class="flickr-thumbnail left" style="display: inline-block;"><a href="http://farm1.staticflickr.com/53/126283790_963a140c2a_z.jpg?zz=1" class="fancybox" data-title-id="flickr-photo-126283790" data-media="photo"><img src="http://farm1.staticflickr.com/53/126283790_963a140c2a_o.jpg" title="Horse eyes" style=""/></a><figcaption id="flickr-photo-126283790"><h1><a class="flickr-link" href="http://www.flickr.com/photos/90594090@N00/126283790">Horse eyes</a> by What&rsquo;s Your Meme</h1><div class="description">Horse eyes</div></figcaption></figure></p>
 
-<p>Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of pictures. I’m trying to get her to open her own flickr account&#8230; It was a good day, all in all, even though a few of the horse riders there got a little antsy with us taking their pictures.</p>
+<p>Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of pictures. I’m trying to get her to open her own flickr account&hellip; It was a good day, all in all, even though a few of the horse riders there got a little antsy with us taking their pictures.</p>
 </div>
   
   
@@ -476,46 +526,6 @@ cat text.au | toast -c -s &gt; text.gsm
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2006/01/01/new-year-caching-etc/">New Year, Caching, Etc</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-01T00:00:00-05:00" pubdate data-updated="true">Jan 1<span>st</span>, 2006</time>
-        
-         | <a href="/2006/01/01/new-year-caching-etc/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>Happy New Year, as well as happy <a href="http://ancienthistory.about.com/od/winterholidays/p/WinterHolidays.htm">whatever solstice holiday you choose to celebrate</a>! Once again, I’m <a href="http://www.subgenius.com/">slacking</a> in the <a href="http://mama.indstate.edu/users/bones/WhyIHateWebLogs.html">“blogging”</a> department. I recently made a few changes to the server, the most important of which will speed this up by fixing the <a href="http://turck-mmcache.sourceforge.net/">memory map cache</a> used to render pages, thereby removing the molasses from the page loading process. There are also a few new tracks under <strong>Artists and Projects</strong> on the site, so please feel free to take a listen. More development news coming soon, as I’m planning on a new <a href="http://freemedsoftware.org/">FreeMED</a> release (0.8.2), as soon as we’re done with <a href="http://www.shitthrowingmonkeys.com/">QA testing</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/15/">&larr; Older</a>
@@ -533,6 +543,10 @@ cat text.au | toast -c -s &gt; text.gsm
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/09/07/to-post-or-not-to-post/">To Post or Not to Post</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/06/28/skill-in-the-age-of-instagram/">Skill in the Age of Instagram</a>
       </li>
     
@@ -548,17 +562,13 @@ cat text.au | toast -c -s &gt; text.gsm
         <a href="/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/04/12/heading-to-the-2013-boston-international-film-festival/">Heading to the 2013 Boston International Film Festival</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (5)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (6)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
@@ -566,7 +576,7 @@ cat text.au | toast -c -s &gt; text.gsm
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
-<li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
+<li class='category'><a href='/categories/photography/'>Photography (7)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (81)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
@@ -687,7 +697,7 @@ cat text.au | toast -c -s &gt; text.gsm
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

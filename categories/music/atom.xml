@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Music | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/music/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-06-28T15:55:16-04:00</updated>
+  <updated>2013-09-07T15:41:37-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -57,7 +57,7 @@
     <id>http://jbuchbinder.com/2008/07/01/open-mic-at-the-stonewall-tavern</id>
     <content type="html"><![CDATA[<h1></h1>
 
-<p>As a kind of public service of some sort, I’ve been recording the Open Mic night at the <a href="http://www.myspace.com/thestonewalltavern">Stonewall Tavern</a> in <a href="http://en.wikipedia.org/wiki/Mansfield,_Connecticut">Eagleville, CT</a>, which has been hosted by the terrific <a href="http://www.myspace.com/blaneybrothers">Blaney Brothers</a> for the past few years. I have been putting the recordings up for anyone who wants them, arranged by date and artist on MediaFire, at . Enjoy… (But don’t complain too much about it. It’s all straight board-out to mp3 using this little gem: arecord -f cd -t raw -D hw:1,0 | lame --verbose -x -s 44.1 - "${OUTPUTFILE}")</p>
+<p>As a kind of public service of some sort, I’ve been recording the Open Mic night at the <a href="http://www.myspace.com/thestonewalltavern">Stonewall Tavern</a> in <a href="http://en.wikipedia.org/wiki/Mansfield,_Connecticut">Eagleville, CT</a>, which has been hosted by the terrific <a href="http://www.myspace.com/blaneybrothers">Blaney Brothers</a> for the past few years. I have been putting the recordings up for anyone who wants them, arranged by date and artist on MediaFire, at . Enjoy… (But don’t complain too much about it. It’s all straight board-out to mp3 using this little gem: arecord -f cd -t raw -D hw:1,0 | lame &mdash;verbose -x -s 44.1 &ndash; &ldquo;${OUTPUTFILE}&rdquo;)</p>
 
 <p>(Also, I’ve been fortunate enough to do an actual studio session with the Blaneys. I’ll probably release it at some point, with their permission, of course.)</p>
 ]]></content>

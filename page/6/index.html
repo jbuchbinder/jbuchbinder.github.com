@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="After an actor, a CIA spook, a Republican in Democrat’s clothing and a moron, we finally have a President willing to let us become an *adult* nation &hellip;">
+  <meta name="description" content="In case anyone may want to use Trixbox with Cisco 79xx phones and wants to use a directory with it, I have put together a hack to deal with the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,169 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/05/14/trixbox-directory-with-cisco-phones/">Trixbox Directory With Cisco Phones</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-05-14T00:00:00-04:00" pubdate data-updated="true">May 14<span>th</span>, 2009</time>
+        
+         | <a href="/2009/05/14/trixbox-directory-with-cisco-phones/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>In case anyone may want to use Trixbox with Cisco 79xx phones and wants to use a directory with it, I have put together a hack to deal with the directory services, which nominally require SugarCRM, so that they report simple extensions back in the appropriate format.</p>
+
+<p>1) In the Endpoint manager, make sure that the services URL and directory URL are in the default configuration for Cisco phones, and restart any phones which are running to activate the configuration.</p>
+
+<p>2) In <code>/var/www/html/cisco/services</code>, make sure that index_cisco.php is symlinked to index.php</p>
+
+<p>3) In <code>/var/www/html/cisco/services/DBConnect.inc</code>, change the default username and password to something with access to the asterisk database, and change the database name to <code>asterisk</code>.</p>
+
+<p>4) Make <code>PhoneDirectory.php</code> in that directory contain:</p>
+
+<pre><code>&lt; ?php
+
+##########################################
+# Config section
+
+$Server = "http://$SERVER_ADDR/cisco/services";   # don't add a trailing slash!
+$LongDistanceExtension = ""; # change this to match your config
+
+##########################################
+#
+# Set content type
+header("Content-Type: text/xml");
+
+# This is the include file that establishes the connection to the MySQL database
+require ("DBConnect.inc"); 
+
+# This sets the offset for the LIMIT portion of the query
+$NextStartingRow = $NextSet*30;
+
+# Connect to the database
+$ConnectionSuccess = db_connect();
+if (!$ConnectionSuccess) exit;
+
+# If the variable "ID" is passed in through the GET string, then display 
+# extension, phone number and cell phone number for that record with the dial
+# key functionality
+if ($ID) {
+        $PersonDirectoryListing = "n";
+
+        //$Query  = "SELECT id, first_name, last_name, phone_home, phone_work, phone_mobile, phone_other ";
+        //$Query .= "FROM contacts WHERE id = '$ID' ";
+        //$Query .= "ORDER BY last_name "; 
+        $Query  = "SELECT id,description FROM devices WHERE ( tech = 'sip' OR tech = 'iax' ) AND id = '".addslashes($ID)."' ";
+
+        $SelectPersonInfo = mysql_query($Query,$ConnectionSuccess);
+
+        while ($row = mysql_fetch_array($SelectPersonInfo)) {
+                $WorkPhone = ereg_replace("[ ()-] ", "", $row['id']);
+
+                $PersonDirectoryListing .= "n";
+                $PersonDirectoryListing .= "Extension:n";
+                //$PersonDirectoryListing .= "$LongDistanceExtension$WorkPhonen";
+                $PersonDirectoryListing .= "$WorkPhonen";
+                $PersonDirectoryListing .= "n";
+        }
+
+        $PersonDirectoryListing .= "n";
+
+        echo "$PersonDirectoryListing";
+
+# If the variable ID is not passed in on the GET string, then do the 
+# entire company directory, unless last is passed in. If so then we
+# will be using a LIKE filter in our SQL query
+} else {
+        $PersonNameList = "n";
+        $PersonNameList .= "n";
+        $PersonNameList .= "Please select onen";
+
+        $Query  = "SELECT id,description FROM devices WHERE ( tech = 'sip' OR tech = 'iax' ) ";
+        //$Query  = "SELECT id, first_name, last_name, phone_home, phone_work, phone_mobile, phone_other ";
+        //$Query .= "FROM contacts WHERE deleted = 0 ";
+
+        # If we are searching by last name the add this filter to the query
+        if ($LastName) { $Query .= "and description like '%$LastName%' ";  }
+        $Query .= "ORDER BY id ASC";
+
+        # If this is the first page of the company directory then we will display the first 30
+        if (!$NextSet) {
+                $Query .= " Limit 0,30";
+        # Now for each subsiquent call we get the next 30 records.
+        } else {
+                $Query .= " Limit $NextStartingRow,30";
+        }
+
+        # Execute the query
+        //echo $Query;
+        $SelectNameList = mysql_query($Query,$ConnectionSuccess);
+
+        # Count the number of rows returned. This is important because if a full 30 are returned
+        # we will display a more option
+
+        $NumberOfRows = mysql_num_rows($SelectNameList);
+
+        if ($NumberOfRows &gt;= 30) {
+                $NextSetValue = $NextSet 1;
+        }
+
+        # Parse through the query and set up the menu items.
+        while ($row = mysql_fetch_array($SelectNameList)) {
+                $PersonNameList .= "n";
+                        $PersonNameList .= "";
+                                $PersonNameList .= $row["description"];
+                                if ($row["first_name"]) $PersonNameList .= ", " . $row["first_name"];
+                        $PersonNameList .= "n";
+                        $PersonNameList .= "";
+                                $PersonNameList .= "$Server/PhoneDirectory.php?";
+                                $PersonNameList .= "ID=";
+                                $PersonNameList .= $row["id"];
+                                $PersonNameList .= "n";
+                $PersonNameList .= "n";
+        }
+
+        # If we set NextSetValue above then we will display the more option. Which sets NextSet
+        if ($NextSetValue) {
+                $PersonNameList .= "n";
+                        $PersonNameList .= "MOREn";
+                        $PersonNameList .= "$Server/PhoneDirectory.php?NextSet=$NextSetValuen";
+                $PersonNameList .= "n";
+        }
+        $PersonNameList .= "";
+        echo "$PersonNameList";
+}
+?&gt;
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -355,7 +518,7 @@
 
 <p>My Blackberry started exhibiting very odd behavior and disconnecting from the mobile network about every 30-45 seconds, so I flashed the firmware and shouted some incantations of the dockworker variety before giving up and pronouncing it dead. My job was nice enough to furnish me with a replacement, which unfortunately runs WinMo.</p>
 
-<p>I think I’m going to send a map and flashlight to Dan Hesse so that <a href="http://phandroid.com/2009/02/20/sprint-android-coming-ceo-reassures/">Sprint can have some help finding and removing its head from its rectum</a>. After some initial <a href="http://phandroid.com/2008/10/25/sprint-ceo-android-not-good-enough-for-us/">idiotic comments</a> from Hesse regarding how Android “[isn&#8217;t] good enough to put the Sprint brand on…” (which interestingly makes me wonder <a href="http://articles.marco.org/248">what kind of dog food they do put their brand on</a>), I’ve been cursing about the lack of <a href="http://code.google.com/android/">Android</a> on the Sprint network. I’ve used the T-Mobile G1, and that phone, despite any of the “it’s not an iPhone” mooks’ commenting, is a very nice phone with a nice open platform.</p>
+<p>I think I’m going to send a map and flashlight to Dan Hesse so that <a href="http://phandroid.com/2009/02/20/sprint-android-coming-ceo-reassures/">Sprint can have some help finding and removing its head from its rectum</a>. After some initial <a href="http://phandroid.com/2008/10/25/sprint-ceo-android-not-good-enough-for-us/">idiotic comments</a> from Hesse regarding how Android “[isn&rsquo;t] good enough to put the Sprint brand on…” (which interestingly makes me wonder <a href="http://articles.marco.org/248">what kind of dog food they do put their brand on</a>), I’ve been cursing about the lack of <a href="http://code.google.com/android/">Android</a> on the Sprint network. I’ve used the T-Mobile G1, and that phone, despite any of the “it’s not an iPhone” mooks’ commenting, is a very nice phone with a nice open platform.</p>
 
 <p>Can you hear me, Sprint? I don’t know why you’re dawdling, but you might as well bury WinMo. It’s a horrible, horrible platform coupled with awful phones. Also, ditch HTC if you can. I’d rather see Motorola or Nokia (or even … ugh… Samsung or LG) try their hand at an Android phone. You’re not making any friends by making us wait for a decent phone technology.</p>
 
@@ -502,52 +665,6 @@ RC: <a href="http://www.mediafire.com/file/dmdynmtdjdm/haproxy_1.3.16-rc1-1_arme
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/03/02/why-i-hate-banks/">Why I Hate Banks</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-03-02T00:00:00-05:00" pubdate data-updated="true">Mar 2<span>nd</span>, 2009</time>
-        
-         | <a href="/2009/03/02/why-i-hate-banks/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>Another <a href="http://www.reuters.com/article/newsOne/idUSN0134457520090302">30 billion ducats</a> down the toilet. I’m not sure exactly what banks are supposed to do anymore, but I could swear it <a href="http://www.nytimes.com/2008/10/25/business/25nocera.html">used to have something to do with loaning money</a> to allow economic movement. Banks won’t lend money to anyone <a href="http://www.bloomberg.com/apps/news?pid=20601103&amp;sid=a8ta_MEhUZ9E&amp;refer=us">without sparkling credit</a>, which means most people couldn’t get a loan.</p>
-
-<p>Why the hell are we giving these weasels money? Their primary job is to lend money, and they can’t do that, instead favoring the primary job of funnelling money to CEOs and wealthy investors. I think AIG should probably have considered that it’s making a serious case for nationalization in that the company is proving a complete lack of responsibility in the fiscal responsibility department, while lecturing “irresponsible borrowers” about the same fiscal responsibility at the same time.</p>
-
-<p>Well, we’re <a href="http://www.msnbc.msn.com/id/29671145/">going down in flames</a>. I hope you bastards had fun while it lasted.</p>
-
-<p>(As a side note, I hate anything referring to “bailout” in a positive light. It’s not a positive thing. It’s slinging shit into an enormous chasm, and saying otherwise is wishful thinking of the highest degree. These people never cared about anything other than themselves, and nothing is going to change that. Talk about limits on investment banker salaries (for producing gornicht) and they’re up in arms, but everyone is hot on cutting autoworkers’ salaries… )</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/7/">&larr; Older</a>
@@ -565,6 +682,10 @@ RC: <a href="http://www.mediafire.com/file/dmdynmtdjdm/haproxy_1.3.16-rc1-1_arme
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/09/07/to-post-or-not-to-post/">To Post or Not to Post</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/06/28/skill-in-the-age-of-instagram/">Skill in the Age of Instagram</a>
       </li>
     
@@ -580,17 +701,13 @@ RC: <a href="http://www.mediafire.com/file/dmdynmtdjdm/haproxy_1.3.16-rc1-1_arme
         <a href="/2013/05/03/gear-vs-skill/">Gear vs Skill</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/04/12/heading-to-the-2013-boston-international-film-festival/">Heading to the 2013 Boston International Film Festival</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (5)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (6)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
@@ -598,7 +715,7 @@ RC: <a href="http://www.mediafire.com/file/dmdynmtdjdm/haproxy_1.3.16-rc1-1_arme
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
-<li class='category'><a href='/categories/photography/'>Photography (6)</a></li>
+<li class='category'><a href='/categories/photography/'>Photography (7)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (81)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
@@ -719,7 +836,7 @@ RC: <a href="http://www.mediafire.com/file/dmdynmtdjdm/haproxy_1.3.16-rc1-1_arme
       var twitterWidgets = document.createElement('script');
       twitterWidgets.type = 'text/javascript';
       twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>

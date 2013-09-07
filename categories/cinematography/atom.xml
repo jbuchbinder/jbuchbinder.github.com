@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-06-28T15:55:16-04:00</updated>
+  <updated>2013-09-07T15:41:37-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -14,27 +14,238 @@
 
   
   <entry>
+    <title type="html"><![CDATA[To post or not to post]]></title>
+    <link href="http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post/"/>
+    <updated>2013-09-07T13:18:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post</id>
+    <content type="html"><![CDATA[<p>Even though a good portion of the work has been completed when you press the
+shutter button, or stop rolling, since all of your planning and execution has
+been completed, there&rsquo;s still a final step (or series of steps) to bring that
+artistic effort to a presentable format.</p>
+
+<p>Many people shoot with default (or very close to default) settings on their
+camera or videocamera, and do simple &ldquo;post production&rdquo; by simply cropping or
+cutting whatever comes out of their camera body. This is a very &ldquo;purist&rdquo; way
+of going about shooting, but can also rob your end product of some of the
+polish and slight adjustments which can take good pictures or footage and
+make them into something extraordinary.</p>
+
+<p>All of that being said, there&rsquo;s a limit to the types and amounts of post
+production which can and should be used, much in the way that overproducing
+a musical album can result in a homogenous and lifeless product, robbed of
+the &ldquo;soul&rdquo; and variances which make it unique. You are the only person who
+can decide how much, if any, post processing is right for your project or
+other artistic endeavor.</p>
+
+<p><strong>RAW versus JPEG/H.264</strong></p>
+
+<p>With DSLR cameras being used for both photography and cinematography, there
+are places where the &ldquo;processing&rdquo; aspect can be pushed off into the post
+production process.</p>
+
+<p>For photography, RAW format pictures can allow recovery past some of the
+previously accepted limits of what would normally be considered lost or
+unusable. Effectively, it allows you to make the decisions which are
+normally pushed off on your camera&rsquo;s processor (the DIGIC processor(s),
+for all of you Canon users). It adds an additional step to the
+post-processing workflow, in that you&rsquo;ll need a piece of software like
+<a href="http://www.adobe.com/products/photoshop-lightroom.html">Adobe Lightroom</a> for Windows/Mac users, or if you&rsquo;re a Linux user like me,
+<a href="http://rawstudio.org/">Raw Studio</a>. It also adds a significant amount of time to the
+photographic post-processing workflow, in that there are a number of
+additional parameters which can be adjusted, which would normally result
+in image degradation, but can be adjusted in RAW images with little or no
+deleterious effect. If you&rsquo;re a <a href="http://www.magiclantern.fm/">Magic Lantern</a> user, you can also
+experiment with &ldquo;dual ISO&rdquo; images, which can create images with enormous
+dynamic range through sensor tricks &mdash; but which adds an another step
+before RAW processing, that of running a CR2HDR binary. (If you&rsquo;re
+interested in trying this out, but don&rsquo;t want to compile a CR2HDR binary
+for Windows or Linux, I have binaries available <a href="https://bitbucket.org/rufustfirefly/magic-lantern/downloads">here</a>)</p>
+
+<p>For cinematography, there&rsquo;s a lot more to think about. Magic Lantern users
+of Canon 5Dmk3 models (and some others, as well) have the option of being
+able to shoot RAW video with some very fast CF cards. This adds a pretty
+substantial amount of post-processing steps <em>before</em> your NLE (non-linear
+editor) of choice enters the picture. There are a pretty wide swath of
+applications which now support the Magic Lantern RAW format, including
+<a href="http://www.magiclantern.fm/forum/index.php?action=printpage;topic=5557.0">RAWanizer</a>, but your best bet is to get involved with the Magic
+Lantern forum if you want to begin working with a RAW workflow. The other
+serious disadvantage is storage space. Standard H.264 video, which is
+shot by most DSLR camera bodies, has issues with some digital artifacts in
+certain scenarios, as well as some dynamic range issues (some of which can
+be made better by use of flat color profiles like <a href="https://www.technicolorcinestyle.com/download/">Cinestyle</a>, but I&rsquo;ll
+leave that for later) &mdash; but it produces fairly compact files, even at
+1080p/24p (1920x1080 24fps progressive) resolution. RAW data can take
+upwards of a gigabyte of space every 15-20 seconds. Your storage media
+and backup solutions have to be able to deal with that, so it&rsquo;s something
+to seriously consider before deciding to move a project to work with that
+format.</p>
+
+<p><strong>White Balance</strong></p>
+
+<p>It used to be accepted that white balancing (determining where &ldquo;true white&rdquo;
+lies in an image, compensating for varying light color temperatures) had to
+be done &ldquo;in camera&rdquo;, before shots were taken. There are a number of tools
+which allow this to be done in post-processing.</p>
+
+<p>Photographers can do this when shooting with RAW camera images very
+simply, as most RAW image processors have a simple white balancing tool. It&rsquo;s
+still possible to do this with processed JPEG images, but with the
+potential for losing some image data. Depending on how comfortable you are
+with straying from the &ldquo;truest possible image&rdquo;, you can decide where you
+feel comfortable dealing with white balancing.</p>
+
+<p>Cinematographers have a pretty vast array of white balancing and color
+correction plugins available for their NLE of choice. I&rsquo;m most familiar with
+Adobe Premiere, so I&rsquo;d mention <a href="http://blogs.adobe.com/VideoRoad/2010/05/using_the_fast_color_corrector.html">Fast Color Corrector</a> and
+<a href="http://philipbloom.net/forum/threads/tutorial-color-grading-and-styling-with-colorista-ii.2528/">Red Giant Colorista II</a>, both of which offer pretty decent white
+balancing capabilities, among other things. If you&rsquo;re concerned about
+render speed, Fast Color Corrector seems to win out against Colorista II,
+but Colorista II has some additional parameters and capabilities which
+far outstrip what FCC has to offer. There&rsquo;s also software like
+<a href="http://tv.adobe.com/watch/learn-premiere-pro-cc/color-grading-premiere-pro-sequences-in-speedgrade/">Adobe Speedgrade</a> and <a href="http://digitalfilms.wordpress.com/2013/02/02/davinci-resolve-workflows/">Blackmagic Design Davinci Resolve</a>, both
+of which offer white balancing, color correction, and color grading
+capabilities. There are a few threads <a href="http://forums.planet5d.com/threads/123505-Adobe-Speedgrade-vs-DaVinci-Resolve">comparing the two of them</a>.</p>
+
+<p>The important distinction is whether or not you want to spend the time
+to properly white balance your images or footage before you take pictures.
+It&rsquo;s not always condusive to your shooting workflow to do so, and if this
+is a factor, you should seriously consider some of the post-processing
+options. It&rsquo;s obviously to your greatest advantage to have the most
+accurate input images/footage to bring into your post-processing
+workflow, but sometimes it&rsquo;s not pragmatic to take a completely purist
+attitude in this regard.</p>
+
+<p><strong>Exposure</strong></p>
+
+<p>We&rsquo;ve all been bitten by changing light conditions, unexpected events, or
+incorrect metering producing images or footage which has exposure problems.
+If you&rsquo;re shooting RAW (or using Magic Lantern&rsquo;s Dual ISO hack), this is
+an ideal place to examine using post-processing to correct these issues.</p>
+
+<p>We would all like to properly expose everything (unless we have a
+particular artistic reason for doing otherwise, since in the art of
+photography or cinematography, there are generally exceptions to every
+rule, rules were made to be broken, etc), but taking a post-processing
+detour to correct such things is generally preferable to re-arranging a
+shoot.</p>
+
+<p><strong>Special Effects</strong></p>
+
+<p>I&rsquo;m not a big fan of post-processing special effects, mainly because I
+am a proponent of the idea that it takes some of the artistry out of
+pulling off those same effects &ldquo;in camera&rdquo;. I do understand that there
+are certain effects which would be either very difficult or downright
+impossible to achieve without the use of computer generated effects &mdash;
+but there&rsquo;s a lot of things which can be accomplished <em>without</em> that.</p>
+
+<p>Lighting is something which I&rsquo;ve seen done in post, which generally
+baffles me. It&rsquo;s something which is pretty simple to execute properly,
+given a little time and effort. Saving images or footage with issues
+might be a good use for that, but it&rsquo;s probably not something I would
+recommend doing for everyday editing and processing.</p>
+
+<p>For example, having someone &ldquo;eaten&rdquo; by light can be accomplished for
+a cinematographer, simply by adjusting the fill light to blow out the
+whites, then opening the iris of the lens (using a focus pulling kit,
+or just a spare hand, for the less equipment-heavy among us) to allow
+the fill light to &ldquo;eat&rdquo; the remainder of the image. That can be done
+without any specific post-processing.</p>
+
+<p><strong>Flat Color Profiles</strong></p>
+
+<p>This is pretty much for cinematographers, since photographers could
+simply take RAW photos &mdash; and cinematographers shooting RAW should
+probably ignore this section, as well.</p>
+
+<p>There are quite a few &ldquo;flat color profiles&rdquo; available for DSLR
+(and other) bodies, such as the aforementioned Technicolor Cinestyle
+profile and the <a href="http://www.similaar.com/foto/flaat-picture-styles/long-1.html">Flaat Picture Style</a>. These work by effectively
+increasing the dynamic range being captured by the camera by storing
+the values differently than the stock picture profile.</p>
+
+<p>I highly recommend shooting with one, if you&rsquo;re not going to make the
+leap to shoot RAW. It does add the additional step in post-processing
+of having to adjust the blacks/whites and/or applying a corrective
+LUT (look up table) to adjust the end product to look less &ldquo;washed
+out&rdquo;. There are LUTs and plugins available for virtually every NLE
+out there right now &mdash; and I suggest learning how to do this. The
+improvement in the end product is substantial for relatively little
+time investment.</p>
+
+<p><strong>Audio Post</strong></p>
+
+<p>This is another section just for cinematographers.</p>
+
+<p>The audio which is recorded with footage is generally &ldquo;reference
+audio&rdquo;, which is meant to be replaced by actual audio, generally
+recorded with something like a <a href="http://tascam.com/product/dr-40/">Tascam DR-40</a> or <a href="http://www.zoom.co.jp/english/products/h4n/">Zoom H4n</a>
+external recorder and a shotgun microphone. It&rsquo;s far outside the
+scope of this to explain the majority of these technologies and
+techniques, but sufficed to say that they produce far cleaner and
+usable recordings than on-camera audio (even when using augmented
+on-camera microphones, etc). If you can afford it, use external
+audio, and have an experienced audio engineer perform some basic
+post-production on your audio.</p>
+
+<p>If you can&rsquo;t afford it, or don&rsquo;t have an audio engineer, there are
+a few basic steps to get cleaner audio.</p>
+
+<p>1) <em>Don&rsquo;t use the microphone built into the camera</em>. It sounds pretty
+awful, and is noisy. Get a lav microphone for interviews, or a
+directional hot-shoe mounted external microphone for anything else.</p>
+
+<p>2) <em>Adjust the audio levels manually</em>. Automatic level adjustment is
+going to be terrible. It&rsquo;s meant to avoid clipping, but it tends to
+make the noise floor (the level of background noise) jump around as
+the camera readjusts the audio recording level, so it may make your
+life significantly more difficult when it comes time to adjust the
+footage later. Adjust it to the loudest sound you&rsquo;re going to be
+recording &mdash; then perhaps a click lower, for safety.</p>
+
+<p>3) <em>Respect the inverse square law</em>. For those unfamiliar, sounds
+drop at a logarithmic rate as you move away from the sound source,
+following the same inverse square law which is used to figure light
+source brightness. The closer you are to a recorded sounds, the
+cleaner and better the source audio will be. Every object which a
+sound hits will produce a &ldquo;reflection&rdquo; (much as light does). If that
+reflection is equal or louder than the volume of the source sound,
+you&rsquo;re going to get a pretty terrible sounding audio recording.</p>
+
+<p>4) <em>Get the cleanest audio possible</em>. Try to cut down on external
+noise sources. Never assume that you can clean something later on;
+you should be trying to get clean audio. If something has to be
+re-taken to avoid a lawnmower being run in the background, then you
+should seriously consider doing it. It&rsquo;ll save you from pulling out
+your hair.</p>
+
+<p>I&rsquo;m sure that this isn&rsquo;t a <em>comprehensive</em> list, but hopefully this
+will help everyone get started with deciding what, if anything, to
+relegate to their post-processing workflow. Good luck!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Skill in the Age of Instagram]]></title>
     <link href="http://jbuchbinder.com/2013/06/28/skill-in-the-age-of-instagram/"/>
     <updated>2013-06-28T15:40:00-04:00</updated>
     <id>http://jbuchbinder.com/2013/06/28/skill-in-the-age-of-instagram</id>
-    <content type="html"><![CDATA[<p>I had started a post a few months ago, which I had tentatively titled "Approximating Skill". It was a fairly scathing indictment of what I had refered to as the "Instagram generation".</p>
+    <content type="html"><![CDATA[<p>I had started a post a few months ago, which I had tentatively titled &ldquo;Approximating Skill&rdquo;. It was a fairly scathing indictment of what I had refered to as the &ldquo;Instagram generation&rdquo;.</p>
 
-<p>As anyone who has been following my recent posts here knows, I attach a lot of importance to the notion of "skill", especially in relation to art forms where there are popular misconceptions regarding the ability to "buy" your way into a particular skill-set.</p>
+<p>As anyone who has been following my recent posts here knows, I attach a lot of importance to the notion of &ldquo;skill&rdquo;, especially in relation to art forms where there are popular misconceptions regarding the ability to &ldquo;buy&rdquo; your way into a particular skill-set.</p>
 
-<p>In "<a href="/2013/05/03/gear-vs-skill/">Skill vs Gear</a>", I had tried to explain that, no matter how many toys or additional pieces were added into any mix, the most important variable is the skill of the operator/artist in control of the production. It seems like a fairly simple thing to understand, but in the muddied world of extensive post-production and devalued skill-sets, that common understanding is constantly called into question.</p>
+<p>In &ldquo;<a href="/2013/05/03/gear-vs-skill/">Skill vs Gear</a>&rdquo;, I had tried to explain that, no matter how many toys or additional pieces were added into any mix, the most important variable is the skill of the operator/artist in control of the production. It seems like a fairly simple thing to understand, but in the muddied world of extensive post-production and devalued skill-sets, that common understanding is constantly called into question.</p>
 
-<p>Take <a href="http://instagram.com/">Instagram</a>, for example. It's a fairly simple concept, being a marriage between Twitter-style <a href="http://en.wikipedia.org/wiki/Number_sign">hashtags</a> (don't get me started on that -- we should just call it U+0023 and get it over with), social networking, and cameraphone photography. (I happen to particularly loathe cameraphone photography, except for the ubiquitous and universally available nature of cameraphones.) The issues, as far as I'm concerned, begin to arise in the dual areas of devaluation and lack of appreciation.</p>
+<p>Take <a href="http://instagram.com/">Instagram</a>, for example. It&rsquo;s a fairly simple concept, being a marriage between Twitter-style <a href="http://en.wikipedia.org/wiki/Number_sign">hashtags</a> (don&rsquo;t get me started on that &mdash; we should just call it U+0023 and get it over with), social networking, and cameraphone photography. (I happen to particularly loathe cameraphone photography, except for the ubiquitous and universally available nature of cameraphones.) The issues, as far as I&rsquo;m concerned, begin to arise in the dual areas of devaluation and lack of appreciation.</p>
 
-<p><strong>Devaluation</strong>. This comes into play when every Instagram (or insert other type of skill-sapping or replacing app here) user begins to assume that they, yes they, are capable of producing professional results. Malcolm Gladwell famously claimed that it took <a href="http://en.wikipedia.org/wiki/Outliers_(book)">10,000 hours</a> of time to amass enough skill to master a certain skill-set. I prefer to refer to <a href="http://enticingthelight.com/wp-content/uploads/2010/01/Stages-of-a-Photographer.png">this chart</a> (ignore some of the strange and inappropriate labels -- the sentiment is the important part). As perceived self-skill increases, valuation of others' skill-sets decreases. This explains much of the reluctance to hire professional photographers and cinematographers/videographers, or to value their skills so little that an insulting amount of compensation is considered "reasonable" for their time and effort.</p>
+<p><strong>Devaluation</strong>. This comes into play when every Instagram (or insert other type of skill-sapping or replacing app here) user begins to assume that they, yes they, are capable of producing professional results. Malcolm Gladwell famously claimed that it took <a href="http://en.wikipedia.org/wiki/Outliers_(book)">10,000 hours</a> of time to amass enough skill to master a certain skill-set. I prefer to refer to <a href="http://enticingthelight.com/wp-content/uploads/2010/01/Stages-of-a-Photographer.png">this chart</a> (ignore some of the strange and inappropriate labels &mdash; the sentiment is the important part). As perceived self-skill increases, valuation of others' skill-sets decreases. This explains much of the reluctance to hire professional photographers and cinematographers/videographers, or to value their skills so little that an insulting amount of compensation is considered &ldquo;reasonable&rdquo; for their time and effort.</p>
 
-<p><strong>Lack of appreciation</strong>. Autotune and Instagram are both partially to blame for this -- but it seems as though actual skill is barely recognizable anymore, to a vast swath of the population, for any given skill-set. I do understand that the <a href="http://rationalwiki.org/wiki/Dunning-Kruger_effect">Dunning-Kruger Effect</a> means that any person is going to assess their own skill-set incorrectly. This, however, reaches far beyond that conclusion. After having been subjected to hundreds, if not thousands, of hours of blown out and ill-colored photos, and subjected to far too many songs which have been pitch corrected beyond human recognition, the latest generation has mostly lost the ability to differentiate between "faked" output and true skill. I recently had an entire photoshoot (which I dutifully handed over to the photographed party) blown out, miscolored, and made to look like a bunch of terrible Instagram photos -- all, supposedly, in the name of appealing to the younger generation, as they "appreciate" things that look like that. As far as faked output goes, it's not limited to amateurs; big budget Hollywood studios have been <a href="http://www.cracked.com/article_18664_5-annoying-trends-that-make-every-movie-look-same.html">exploiting basic digital correction</a> to make everything look the same -- the Instagramification of movies (that article also points out the annoying "shaky cam" stuff that I had been discussing in my <a href="/2013/06/03/stabilization/">earlier post</a>). In the end, skills fall along the <a href="http://en.wikipedia.org/wiki/Normal_distribution">standard/normal distribution curve</a>, even if the skills represented by the vertical axis may be logarithmic in scale.</p>
+<p><strong>Lack of appreciation</strong>. Autotune and Instagram are both partially to blame for this &mdash; but it seems as though actual skill is barely recognizable anymore, to a vast swath of the population, for any given skill-set. I do understand that the <a href="http://rationalwiki.org/wiki/Dunning-Kruger_effect">Dunning-Kruger Effect</a> means that any person is going to assess their own skill-set incorrectly. This, however, reaches far beyond that conclusion. After having been subjected to hundreds, if not thousands, of hours of blown out and ill-colored photos, and subjected to far too many songs which have been pitch corrected beyond human recognition, the latest generation has mostly lost the ability to differentiate between &ldquo;faked&rdquo; output and true skill. I recently had an entire photoshoot (which I dutifully handed over to the photographed party) blown out, miscolored, and made to look like a bunch of terrible Instagram photos &mdash; all, supposedly, in the name of appealing to the younger generation, as they &ldquo;appreciate&rdquo; things that look like that. As far as faked output goes, it&rsquo;s not limited to amateurs; big budget Hollywood studios have been <a href="http://www.cracked.com/article_18664_5-annoying-trends-that-make-every-movie-look-same.html">exploiting basic digital correction</a> to make everything look the same &mdash; the Instagramification of movies (that article also points out the annoying &ldquo;shaky cam&rdquo; stuff that I had been discussing in my <a href="/2013/06/03/stabilization/">earlier post</a>). In the end, skills fall along the <a href="http://en.wikipedia.org/wiki/Normal_distribution">standard/normal distribution curve</a>, even if the skills represented by the vertical axis may be logarithmic in scale.</p>
 
-<p><strong>The Hipster Effect</strong>. I realize that I only counted two areas earlier in this post, but this would lack something if I didn't mention the effect that the "Hipster" culture has had on perceived skills. Rather than reiterate every terrible think about Hipster culture, <a href="http://www.wolfgnards.com/index.php/2010/08/27/the-irony-of-the-ironic-hipsters-don-t-understand-irony">I'll let this guy do it for me</a>. I don't know if I can explain this better than <strong>there is no such thing as ironically bad music or photography</strong>. The misconception that there is has very deeply damaged the ability for the average hipster to properly appreciate music and photography, assuming that they are searching for ironically bad things, rather than attempting to appreciate skill. Crummy audio recordings, "vintage looks", and other gimmicks serve to hide, rather than accentuate, the skills involved in the production of the underlying art.</p>
+<p><strong>The Hipster Effect</strong>. I realize that I only counted two areas earlier in this post, but this would lack something if I didn&rsquo;t mention the effect that the &ldquo;Hipster&rdquo; culture has had on perceived skills. Rather than reiterate every terrible think about Hipster culture, <a href="http://www.wolfgnards.com/index.php/2010/08/27/the-irony-of-the-ironic-hipsters-don-t-understand-irony">I&rsquo;ll let this guy do it for me</a>. I don&rsquo;t know if I can explain this better than <strong>there is no such thing as ironically bad music or photography</strong>. The misconception that there is has very deeply damaged the ability for the average hipster to properly appreciate music and photography, assuming that they are searching for ironically bad things, rather than attempting to appreciate skill. Crummy audio recordings, &ldquo;vintage looks&rdquo;, and other gimmicks serve to hide, rather than accentuate, the skills involved in the production of the underlying art.</p>
 
-<p><strong>Processing/Post-Production</strong>. When you do not require initial skill to create something, but can merely "<a href="http://knowyourmeme.com/memes/this-looks-shopped">shop</a>" your way out of any situation, the underlying skill is devalued, and sometimes forgotten. I've been trying to emphasize the value of learning to create effects and the vast majority of the cinematic treatment of the mise-en-scène, rather than simply using a series of post-production tools to bend the footage to my will. This has more to do with the propensity for forgetting basic cinematic technique which comes with foregoing the steps involved with figuring out how to do this work on set. The real damnation seems to come when there is <em>no actual knowledge</em> of the underpinnings and workings of the art, and a novice decides to use post-processing <em>exclusive of skill</em>. This is the disease which is Instagram, Autotune, and Photoshop, in a nutshell.</p>
+<p><strong>Processing/Post-Production</strong>. When you do not require initial skill to create something, but can merely &ldquo;<a href="http://knowyourmeme.com/memes/this-looks-shopped">shop</a>&rdquo; your way out of any situation, the underlying skill is devalued, and sometimes forgotten. I&rsquo;ve been trying to emphasize the value of learning to create effects and the vast majority of the cinematic treatment of the mise-en-scène, rather than simply using a series of post-production tools to bend the footage to my will. This has more to do with the propensity for forgetting basic cinematic technique which comes with foregoing the steps involved with figuring out how to do this work on set. The real damnation seems to come when there is <em>no actual knowledge</em> of the underpinnings and workings of the art, and a novice decides to use post-processing <em>exclusive of skill</em>. This is the disease which is Instagram, Autotune, and Photoshop, in a nutshell.</p>
 
-<p>The only way to fight this is to not concede defeat. If we are actually artists instead of simple camera jockeys, why shouldn't we be pushing for our craft and skill-set to receive the recognition which it deserves? I understand that some of the lost ground, in terms of general appreciation, has been lost -- but hopefully we can keep the situation from getting much worse through education and perserverence.</p>
+<p>The only way to fight this is to not concede defeat. If we are actually artists instead of simple camera jockeys, why shouldn&rsquo;t we be pushing for our craft and skill-set to receive the recognition which it deserves? I understand that some of the lost ground, in terms of general appreciation, has been lost &mdash; but hopefully we can keep the situation from getting much worse through education and perserverence.</p>
 ]]></content>
   </entry>
   
@@ -45,15 +256,15 @@
     <id>http://jbuchbinder.com/2013/06/20/the-age-of-dslr-cinematography</id>
     <content type="html"><![CDATA[<p>DSLR cinematography (the practice of cinematography using relatively inexpensive DSLR camera bodies, which were originally purposed for still photography) has been enjoying a sort of minature renaissance over the last few years.</p>
 
-<p>I was pleasantly surprised to find out that Shane Carruth's new movie, <a href="http://www.imdb.com/title/tt2084989/">Upstream Color</a>, was shot entirely on a DSLR body. The information I've been reading indicates that he used a Panasonic GH2 DSLR body, with a few lenses, including the <a href="http://slrgear.com/reviews/showproduct.php/product/1577/cat/110">Rokinon 85mm f/1.4</a> (which I highly recommend). It scored at Sundance, and if it hadn't been for a few "behind the scenes" photos, it might not have been quite that apparent.</p>
+<p>I was pleasantly surprised to find out that Shane Carruth&rsquo;s new movie, <a href="http://www.imdb.com/title/tt2084989/">Upstream Color</a>, was shot entirely on a DSLR body. The information I&rsquo;ve been reading indicates that he used a Panasonic GH2 DSLR body, with a few lenses, including the <a href="http://slrgear.com/reviews/showproduct.php/product/1577/cat/110">Rokinon 85mm f/1.4</a> (which I highly recommend). It scored at Sundance, and if it hadn&rsquo;t been for a few &ldquo;behind the scenes&rdquo; photos, it might not have been quite that apparent.</p>
 
-<p>Of course, Carruth also ended up using some <a href="http://www.kenrockwell.com/voigtlander/">Voigtlander</a> glass, which is by no stretch of the imagination cheap/affordable for cash-strapped indie filmmakers. There's an interesting write-up on the whole thing <a href="http://www.eoshd.com/content/10309/gh2-shot-sci-fi-upstream-color-breaks-300000-mark-at-the-us-box-office">at EOSHD</a>.</p>
+<p>Of course, Carruth also ended up using some <a href="http://www.kenrockwell.com/voigtlander/">Voigtlander</a> glass, which is by no stretch of the imagination cheap/affordable for cash-strapped indie filmmakers. There&rsquo;s an interesting write-up on the whole thing <a href="http://www.eoshd.com/content/10309/gh2-shot-sci-fi-upstream-color-breaks-300000-mark-at-the-us-box-office">at EOSHD</a>.</p>
 
-<p>There's a reason why I bring up "Upstream Color" -- and it's a point that I've been trying to make, off and on, for the past year or so. That film grossed over 300k dollars at the box office, and was shot on a small, inexpensive camera body. Still, it produced stunning visuals and did not seem to suffer from most of the "fatal flaws" that most seem to ascribe to DSLR cinematography, in general. The point, boiled down to its most essential component, is that the most important piece of equipment you've got is between your forehead and your nose. You can't buy your way into it, and you can't just assume that if you own it, you can shoot as well as cinematographer X who has the current successful movie on the big screen.</p>
+<p>There&rsquo;s a reason why I bring up &ldquo;Upstream Color&rdquo; &mdash; and it&rsquo;s a point that I&rsquo;ve been trying to make, off and on, for the past year or so. That film grossed over 300k dollars at the box office, and was shot on a small, inexpensive camera body. Still, it produced stunning visuals and did not seem to suffer from most of the &ldquo;fatal flaws&rdquo; that most seem to ascribe to DSLR cinematography, in general. The point, boiled down to its most essential component, is that the most important piece of equipment you&rsquo;ve got is between your forehead and your nose. You can&rsquo;t buy your way into it, and you can&rsquo;t just assume that if you own it, you can shoot as well as cinematographer X who has the current successful movie on the big screen.</p>
 
-<p>Whether or not you're a big fan of "Act of Valor" or the "Fast and Furious" franchise, you can still appreciate Shane Hurlbut's <a href="http://blog.planet5d.com/2012/02/act-of-valor-leap-of-faith/">extensive use of Canon EOS 5D mk III bodies</a>. He has had a series of posts on his blog praising not only the relative inexpensive nature of the 5D bodies, but also their versatility.</p>
+<p>Whether or not you&rsquo;re a big fan of &ldquo;Act of Valor&rdquo; or the &ldquo;Fast and Furious&rdquo; franchise, you can still appreciate Shane Hurlbut&rsquo;s <a href="http://blog.planet5d.com/2012/02/act-of-valor-leap-of-faith/">extensive use of Canon EOS 5D mk III bodies</a>. He has had a series of posts on his blog praising not only the relative inexpensive nature of the 5D bodies, but also their versatility.</p>
 
-<p>For every person who says "I shoot on the RED ONE" and produces sub-standard output, or bemoans not being able to afford an ARRI which would "really make a beautiful movie" -- I call foul on that entire argument. Even contending with a more limited dynamic range (a common DSLR problem), a top resolution of 1080p for shooting, and mostly commodity lenses, Carruth managed to produce something beautiful. It's not down to the equipment you buy, folks, it's how you use it.</p>
+<p>For every person who says &ldquo;I shoot on the RED ONE&rdquo; and produces sub-standard output, or bemoans not being able to afford an ARRI which would &ldquo;really make a beautiful movie&rdquo; &mdash; I call foul on that entire argument. Even contending with a more limited dynamic range (a common DSLR problem), a top resolution of 1080p for shooting, and mostly commodity lenses, Carruth managed to produce something beautiful. It&rsquo;s not down to the equipment you buy, folks, it&rsquo;s how you use it.</p>
 
 <p>Good luck.</p>
 ]]></content>
@@ -64,16 +275,16 @@
     <link href="http://jbuchbinder.com/2013/06/03/stabilization/"/>
     <updated>2013-06-03T14:03:00-04:00</updated>
     <id>http://jbuchbinder.com/2013/06/03/stabilization</id>
-    <content type="html"><![CDATA[<p>Cinematography is, first and foremost, an artform. That being said, I'd like to
+    <content type="html"><![CDATA[<p>Cinematography is, first and foremost, an artform. That being said, I&rsquo;d like to
 also emphasize the caveat that it is a <em>technical</em> artform, and requires a
 certain degree of skill and/or technical proficiency to be able to consistently
 create artful work.</p>
 
-<p>It could be argued that no, this isn't the case, based solely on the
+<p>It could be argued that no, this isn&rsquo;t the case, based solely on the
 promulgation of iDevice and consumer-grade video device footage. This type of
 footage does not require a modicum of skill, or even practice. In the same way
 that it is possible to take a fantastic picture with an Android or iOS device,
-it is <em>possible</em> to film usable content with a consumer grade device -- but
+it is <em>possible</em> to film usable content with a consumer grade device &mdash; but
 not only is it technically limiting (based on the sensors, alone), but it
 offers virtually no control over the footage, other than some basic focus and
 exposure controls. I would argue that the resulting footage could result in
@@ -82,31 +293,31 @@ able to use their technology with some skill/proficiency, or b) they were
 extremely lucky. However, I digress.</p>
 
 <p>One of the most consistently over-used (and misused, incidentally) is
-"<a href="https://en.wikipedia.org/wiki/Cin%C3%A9ma_v%C3%A9rit%C3%A9">cinéma vérité</a>". In modern cinematographer parlance, it has come to mean
+&ldquo;<a href="https://en.wikipedia.org/wiki/Cin%C3%A9ma_v%C3%A9rit%C3%A9">cinéma vérité</a>&rdquo;. In modern cinematographer parlance, it has come to mean
 any footage which resembles that of an unskilled operator, which theoretically
 lends an air of realism and observationalism (see any first year film school
-book on observational cinema if you're unfamiliar with the concept) to a
-piece. It's easier, for example, to immerse a viewer in the world of a
+book on observational cinema if you&rsquo;re unfamiliar with the concept) to a
+piece. It&rsquo;s easier, for example, to immerse a viewer in the world of a
 Zombie Apocalypse if they feel as though they could be the one sitting behind
 the camera.</p>
 
 <p>This concept has been expanded, partially through the over-saturation of
-"<a href="http://en.wikipedia.org/wiki/Reality_television">reality television</a>" and "<a href="http://en.wikipedia.org/wiki/Found_footage_(genre)">found footage</a>" genre pieces. Far from
+&ldquo;<a href="http://en.wikipedia.org/wiki/Reality_television">reality television</a>&rdquo; and &ldquo;<a href="http://en.wikipedia.org/wiki/Found_footage_(genre)">found footage</a>&rdquo; genre pieces. Far from
 being necessitated by the artistic content of those genres, it is rather
 <a href="http://alifetimeindarkrooms.blogspot.com/2012/02/okay-for-pitys-sake-enough-with-found.html">much more profitable</a>, and can be executed with far crummier equipment
-and with a lower technical skill (and ostensibly artistic skill) element. I'm
+and with a lower technical skill (and ostensibly artistic skill) element. I&rsquo;m
 not going to argue that there is <em>no</em> artistic or technical skill involved
 in making either of those genres of television or film, as that would be
-foolhardy -- and there are always exceptions to the general rule.</p>
+foolhardy &mdash; and there are always exceptions to the general rule.</p>
 
 <p>Cinéma vérité is a bit more troubling when used as an excuse for technical
 incompetence, lack of technique, or lack of foresight and caring. Most
-recently, I've heard shaky and unstabilized footage "explained away" as
-being necessitated by the genre of cinéma vérité -- and I'm not buying that
+recently, I&rsquo;ve heard shaky and unstabilized footage &ldquo;explained away&rdquo; as
+being necessitated by the genre of cinéma vérité &mdash; and I&rsquo;m not buying that
 excuse. The majority of footage in film can and should be stabilized, as
-well as planned out and executed in a thoughtful manner. That's where the
-"art" of cinematography lies; otherwise, you're just a camera jockey, no
-matter how fancy your equipment may be. As I've said before, the most
+well as planned out and executed in a thoughtful manner. That&rsquo;s where the
+&ldquo;art&rdquo; of cinematography lies; otherwise, you&rsquo;re just a camera jockey, no
+matter how fancy your equipment may be. As I&rsquo;ve said before, the most
 important piece of equipment you own is your eye; everything else just helps
 your execution.</p>
 
@@ -114,29 +325,29 @@ your execution.</p>
 <a href="http://www.usa.canon.com/cusa/consumer/standard_display/Lens_Advantage_IS">image stabilization systems</a> and <a href="http://littlegreatideas.com/stabilizer/diy/">inexpensive stabilizers</a> which you
 can build for a few dollars worth of parts from your local home improvement
 store. It adds a lot of cinematographic value and apparent production value
-to have more stable shots. I'd prefer not to experience vertigo when watching
-a simple walking tracking shot, when possible. One of my favorite "why the
-hell did that guy do that" moments was in <a href="http://www.imdb.com/title/tt0119173/">G.I. Jane</a> (of which I'm not
+to have more stable shots. I&rsquo;d prefer not to experience vertigo when watching
+a simple walking tracking shot, when possible. One of my favorite &ldquo;why the
+hell did that guy do that&rdquo; moments was in <a href="http://www.imdb.com/title/tt0119173/">G.I. Jane</a> (of which I&rsquo;m not
 a fan), where the combat scenes are filmed with what appears to be
 <em>intentional</em> camera shake. Far from transporting the viewer into the middle
 of the morass, it only conveys confusion and vertigo. Used in more moderate
 amounts, it could have proved much more effective, in my opinion.</p>
 
-<p>Even if you're dead-set on the idea of making your next film project using
-the "cinéma vérité" genre, there are a few things you should consider before
+<p>Even if you&rsquo;re dead-set on the idea of making your next film project using
+the &ldquo;cinéma vérité&rdquo; genre, there are a few things you should consider before
 proceeding unstabilized:</p>
 
 <ol>
 <li><em>Does this somehow add to the feel of the film?</em> If you are introducing
 camera shake into your cinematography, it should be adding something
 tangible, like a certain feeling, to a scene.</li>
-<li><em>Am I overusing this?</em> If you're shooting every shot this way, you might
-want to reconsider your methodology, unless you're shooting a guerilla
+<li><em>Am I overusing this?</em> If you&rsquo;re shooting every shot this way, you might
+want to reconsider your methodology, unless you&rsquo;re shooting a guerilla
 documentary.</li>
 <li><em>Am I doing this due to a technical limitation?</em> If you are using
-"cinéma vérité" as an excuse for being unable to stabilize your footage,
+&ldquo;cinéma vérité&rdquo; as an excuse for being unable to stabilize your footage,
 invest in a cheap stabilization system, IS lenses, a tripod, or any of
-the other ways of creating less shaky footage. They're too inexpensive
+the other ways of creating less shaky footage. They&rsquo;re too inexpensive
 to let shake stand in the way of otherwise great footage.</li>
 </ol>
 
@@ -158,33 +369,33 @@ that <em>one more thing</em> would make some difference. He then had an epiphany
 after viewing a photo of a sunset taken with a $12 disposable camera. The
 full comment was:</p>
 
-<p><blockquote><p>It's even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, "ah, yes. Right."</p></blockquote></p>
+<p><blockquote><p>It&rsquo;s even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, &ldquo;ah, yes. Right.&rdquo;</p></blockquote></p>
 
-<p>I've been thinking about this, as I acquire more cinematography gear. At
+<p>I&rsquo;ve been thinking about this, as I acquire more cinematography gear. At
 which point does it become less about the gear, and more about the wetware?
-(Wetware, for those who are unaware, refers to your biological "meat
-equipment".)</p>
+(Wetware, for those who are unaware, refers to your biological &ldquo;meat
+equipment&rdquo;.)</p>
 
-<p>I'm divided on this point. I do feel that there are certain limitations
+<p>I&rsquo;m divided on this point. I do feel that there are certain limitations
 inherent in not possessing the proper tool for the job. To put a concrete
-example together: if you're using a Canon EOS T2i, your image quality isn't
+example together: if you&rsquo;re using a Canon EOS T2i, your image quality isn&rsquo;t
 going to be the same as using a much higher quality camera and sensor
-(sticking to the DSLR for this point), but it's theoretically possible to
+(sticking to the DSLR for this point), but it&rsquo;s theoretically possible to
 clean up footage in post-production to <em>approach</em> the type of output which
-you could acchieve with a higher-grade sensor and optics. However, if you're
+you could acchieve with a higher-grade sensor and optics. However, if you&rsquo;re
 using a standard kit lens on that camera (which probably tops out at an f/3.5
-if you're really, really lucky), you're not going to be able to get the
-narrow depth-of-field which is associated with most "cinematic" shots. A
-<a href="http://www.usa.canon.com/cusa/consumer/products/cameras/ef_lens_lineup/ef_50mm_f_1_8_ii">Canon 50mm f/1.8 "plastic fantastic"</a> lens (on which I've seen far too many
-budding cinematographers rely exclusively) is an interesting start, but can't
+if you&rsquo;re really, really lucky), you&rsquo;re not going to be able to get the
+narrow depth-of-field which is associated with most &ldquo;cinematic&rdquo; shots. A
+<a href="http://www.usa.canon.com/cusa/consumer/products/cameras/ef_lens_lineup/ef_50mm_f_1_8_ii">Canon 50mm f/1.8 &ldquo;plastic fantastic&rdquo;</a> lens (on which I&rsquo;ve seen far too many
+budding cinematographers rely exclusively) is an interesting start, but can&rsquo;t
 completely replace a series of really wide open glass primes (sub-f/2.0).</p>
 
 <p>The flip side of the coin is the point which my brother had made; if your
 eye sucks, your footage sucks. A lot of the cinematographers (and just plain
-old camera operators) with which I've come in contact have bemoaned not
-owning a RED ONE, or even a higher grade DSLR camera body -- and assuming
+old camera operators) with which I&rsquo;ve come in contact have bemoaned not
+owning a RED ONE, or even a higher grade DSLR camera body &mdash; and assuming
 that any decent footage I can pull has everything to do with the equipment
-I'm using, and nothing to do with my ability to use said equipment.</p>
+I&rsquo;m using, and nothing to do with my ability to use said equipment.</p>
 
 <p>Years ago, I remember a gig I had, as a bass player. At the time, I had
 brought a <a href="http://www.vintagewashburn.com/Bass/Mercurybass.html">Washburn MB-6</a> (a strange Mercury series instrument with
@@ -196,31 +407,9 @@ implying that the instrument provided the quality which they admired, and
 that anyone would have been able to do the same, given the chance to play
 that instrument.</p>
 
-<p>To sum up, you need a good eye -- more than anything else -- but it's also
-important to have the right equipment for the right purpose. Oh, and don't
-forget to stabilize your shots ...</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Heading to the 2013 Boston International Film Festival]]></title>
-    <link href="http://jbuchbinder.com/2013/04/12/heading-to-the-2013-boston-international-film-festival/"/>
-    <updated>2013-04-12T13:38:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/04/12/heading-to-the-2013-boston-international-film-festival</id>
-    <content type="html"><![CDATA[<p>I'm heading off to the 2013 <a href="http://www.bifilmfestival.com/">Boston International Film Festival</a>
-opening ceremonies this evening, where the first short film which I
-directed, edited, and shot is being screened/premiered. It's called
-"<a href="http://www.imdb.com/title/tt2538194/">Heroin; A Love Story</a>", and centers around a friendship in the
-midst of addiction in South Boston, and was written by my partner in
-filmmaking/crime, <a href="http://www.imdb.com/name/nm4492303/">Brian Farmer</a>.</p>
-
-<p>I'm planning on posting some photos and information about the
-opening night and film screening as soon as I have them available.</p>
-
-<p><em>I hope to focus some of my upcoming entries on cinematography and
-filmmaking topics, rather than my usual fare of semi-coherent
-rants about miscellaneous topics, punctuated by obscure technical
-postings.</em></p>
+<p>To sum up, you need a good eye &mdash; more than anything else &mdash; but it&rsquo;s also
+important to have the right equipment for the right purpose. Oh, and don&rsquo;t
+forget to stabilize your shots &hellip;</p>
 ]]></content>
   </entry>
   
