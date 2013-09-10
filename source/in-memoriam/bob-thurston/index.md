@@ -28,7 +28,7 @@ From [this online obit][1]:
 * [Smugmug - Bobby's Tribute][6]
 
  [3]: http://www.reynolds-jonkhoff.com/obituaries/Robert-Thurston/
- [4]: http://www.amazon.com/Merlins-Mischief-Bob-Thurston/dp/B0027UR0R2
+ [4]: http://amzn.to/1anP1Vw
  [5]: https://www.flickr.com/photos/tacitpixel/6060193882/in/set-72157627471698370
  [6]: http://hayowenthacamps.smugmug.com/HWHSummer2012/Staff-Training/Bobbys-Tribute/23564074_rcJsJf
 

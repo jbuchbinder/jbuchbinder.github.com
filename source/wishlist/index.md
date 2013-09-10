@@ -46,7 +46,7 @@ This is a list of things that I’d like to have at some point or other, split u
 *   ~~[Canon Speedlite 580EX](http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&fcategoryid=141&modelid=10514) flash~~ - Purchased this in 2012. Then the 600EX came out, proving that Canon hates me.
 *   ~~[Canon EF 135mm f/2.8 soft focus lens](http://www.google.com/products/catalog?q=canon soft focus&um=1&ie=UTF-8&cid=4589938083088539947#ps-sellers)~~ - Grabbed this one from a grey market distributor in Korea. They have some really odd air-freight packaging there.
 *   ~~[Canon EF 70-200mm f/2.8L IS USM](http://photo.net/equipment/canon/70-200)~~
-*   [Canon EF 24-70mm f/2.8L II USM](http://www.amazon.com/Canon-24-70mm-2-8L-Standard-Zoom/dp/B0076BNK30/)
+*   [Canon EF 24-70mm f/2.8L II USM](http://amzn.to/189gQmi)
 *   ~~[Two lighting umbrellas, stands, bulbs](http://cgi.ebay.com/Photo-Studio-Light-Umbrella-Lighting-Essentials-FBB57_W0QQitemZ390165706188QQihZ026QQcategoryZ79009QQssPageNameZWDVWQQrdZ1QQcmdZViewItem)~~
 *   [Three backdrops and stand](http://cgi.ebay.com/Portrait-Backdrop-Background-Stand-3-Muslins-MS03-/260614029943)
 *   [Wireless flash trigger](http://cgi.ebay.com/PT-04-Wireless-Flash-Trigger-CANON-EOS-DSLR-SPEEDLIGHT-/280565851558)
@@ -61,7 +61,7 @@ This is a list of things that I’d like to have at some point or other, split u
 *   [22-24" LCD monitor][21] (alternate buy [here][22])
 *   ~~[Legend of Zelda: Twilight Princess (Wii game)][23]~~ – need this for a Nintendo Wii hack to work properly … ended up soft-modding the Wii, no game requried.
 
- [17]: http://www.amazon.com/gp/product/B000BTL0OA
+ [17]: http://amzn.to/1dZ1mnf
  [18]: http://www.geeks.com/details.asp?invtid=E325-R&cat=SYS
  [19]: http://gp2xwiz.com/
  [20]: http://www.archos.com/?country=global&lang=en
