@@ -18,3 +18,4 @@ Music is an integral part of my life. Here’s some information on things that I
  [2]: /music/johnfest
  [3]: /music/open-mic-at-the-stonewall-tavern
  [4]: /studio
+
