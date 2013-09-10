@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-09-07T17:04:03-04:00</updated>
+  <updated>2013-09-10T13:57:31-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,79 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Prime Lenses and Proper Depth of Field]]></title>
+    <link href="http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field/"/>
+    <updated>2013-09-10T13:24:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field</id>
+    <content type="html"><![CDATA[<p>Depth of field is a massively misunderstood &ldquo;side effect&rdquo; of iris size, and
+an ultimately useful storytelling tool (when used properly).</p>
+
+<p>DSLR photography has spawned a large group of cinematographers who are
+dealing with largely light-insensitive camera sensors (usually producing
+fairly unacceptable noise when used at greater sensitivies than ISO 800).
+This has created a need for &ldquo;fast&rdquo; lenses, which are lenses which have very
+large maximum apertures, featuring maximum f-stop ratings like f/2.0, f/1.8,
+and even f/1.4 (there are even some <a href="http://www.dpreview.com/news/2013/08/06/kubrick-s-f-0-7-lenses-now-available-for-rent-but-start-saving-up">f/0.7 lenses</a> out there, but I&rsquo;m
+sticking to the realm of affordable DSLR cinematography, at the moment).
+Using firmware like <a href="http://magiclantern.fm/">Magic Lantern</a> allows us to use
+focus peaking to exploit manual-focus and non-EF mount lenses (for those
+Canon-philes among us), to bring down the effective cost of shooting &ldquo;fast&rdquo;
+lenses. I have some M42 &ldquo;Pentax screw-mount&rdquo; lenses which open to f/2.8 &mdash;
+acquired for less than 10 USD each, plus a 7 USD <a href="http://amzn.to/1fVPGyf">M42-to-EF adapter ring</a>.
+If you&rsquo;re interested in more information on how to use focus peaking, check
+out <a href="http://fstoppers.com/using-magic-lantern-with-focus-peaking-for-free-lensing">how it works</a>.</p>
+
+<p>So, you&rsquo;ve beaten high-cost DSLR and cinema camera body manufacturers by
+using &ldquo;fast&rdquo; lenses, right? Well, not so fast, there&hellip; You have to consider
+the <em>side effect</em> of fast lenses and wide apertures: the shallow depth of
+field. It&rsquo;s both a blessing and a curse; we tend to associate shallow depth
+of field images and video with expensive equipment (rightfully so, in most
+cases) and a more personal type of image, but those lenses are not
+universally usable &ldquo;wide open&rdquo;. Many shots come off looking amateurish and
+ill-composed, when half of the subjects are out of focus, because they&rsquo;ve
+exceeded the edges of the &ldquo;sharp&rdquo; area in the focus range.</p>
+
+<p>(There&rsquo;s also lack of lens sharpness and chromatic abberation to consider,
+which are generally present, to some degree, in the widest aperture settings
+available on most lenses. That&rsquo;s a very intensely technical discussion,
+however, and will probably be reserved for a future posting.)</p>
+
+<p>When considering the depth of field you want, consider the subject (or
+literal <em>focus</em>) of the shot, and figure out how much of the shot needs to
+be in focus to properly tell your story. The depth of field is very
+important for exposing the mise-en-scène in the way which best represents
+both the explicit visuals and external representation of internal
+character development and exposition. If your character needs to &ldquo;pop&rdquo;
+out of the scenery, a narrow DOF would be perfect &mdash; but if they are to
+appear as a figurative cog in the machinery of the world, you&rsquo;re probably
+going to be looking for the widest DOF (approaching infinity) as you can
+get. When widening the DOF like this, you&rsquo;ll most likely have to compensate
+by boosting the ambient lighting, or adding additional lighting, to
+adjust for the decreased light hitting your camera sensor.</p>
+
+<p>There are a number of tools for figuring out the proper DOF for a certain
+shot, based on the camera/sensor, lens focal length, and distance to
+primary focal point.</p>
+
+<ul>
+<li><a href="http://www.dofmaster.com/dofjs.html">Web-based DOF calculator</a></li>
+<li><a href="http://www.dofmaster.com/android.html">Android calculator</a></li>
+<li><a href="http://www.dofmaster.com/iphone.html">iOS calculator</a></li>
+</ul>
+
+
+<p>There are more of them, but if you specify the variables, you can adjust
+the aperture f-stop to the widest setting which properly fits the scene
+and visuals which you&rsquo;re attempting to achieve.</p>
+
+<p>Like anything else, this isn&rsquo;t strictly an instructional A-to-B guide on
+how to achieve stunning visuals; it&rsquo;s simply an attempt to share some of
+what I&rsquo;ve learned, and to help share the knowledge and tools to exploit
+your own inner artistic vision. Good luck shooting!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[To post or not to post]]></title>
@@ -353,63 +426,6 @@ to let shake stand in the way of otherwise great footage.</li>
 
 
 <p>Good luck!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Gear vs Skill]]></title>
-    <link href="http://jbuchbinder.com/2013/05/03/gear-vs-skill/"/>
-    <updated>2013-05-03T18:10:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/05/03/gear-vs-skill</id>
-    <content type="html"><![CDATA[<p>I remember a conversation I had with my brother, a few years back. He was
-talking about the amount of photographic equipment which he had been dumping
-money into purchasing, in the hopes of improving the output from his camera.
-After months, if not years, of ordering and collecting equipment, he thought
-that <em>one more thing</em> would make some difference. He then had an epiphany,
-after viewing a photo of a sunset taken with a $12 disposable camera. The
-full comment was:</p>
-
-<p><blockquote><p>It&rsquo;s even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, &ldquo;ah, yes. Right.&rdquo;</p></blockquote></p>
-
-<p>I&rsquo;ve been thinking about this, as I acquire more cinematography gear. At
-which point does it become less about the gear, and more about the wetware?
-(Wetware, for those who are unaware, refers to your biological &ldquo;meat
-equipment&rdquo;.)</p>
-
-<p>I&rsquo;m divided on this point. I do feel that there are certain limitations
-inherent in not possessing the proper tool for the job. To put a concrete
-example together: if you&rsquo;re using a Canon EOS T2i, your image quality isn&rsquo;t
-going to be the same as using a much higher quality camera and sensor
-(sticking to the DSLR for this point), but it&rsquo;s theoretically possible to
-clean up footage in post-production to <em>approach</em> the type of output which
-you could acchieve with a higher-grade sensor and optics. However, if you&rsquo;re
-using a standard kit lens on that camera (which probably tops out at an f/3.5
-if you&rsquo;re really, really lucky), you&rsquo;re not going to be able to get the
-narrow depth-of-field which is associated with most &ldquo;cinematic&rdquo; shots. A
-<a href="http://www.usa.canon.com/cusa/consumer/products/cameras/ef_lens_lineup/ef_50mm_f_1_8_ii">Canon 50mm f/1.8 &ldquo;plastic fantastic&rdquo;</a> lens (on which I&rsquo;ve seen far too many
-budding cinematographers rely exclusively) is an interesting start, but can&rsquo;t
-completely replace a series of really wide open glass primes (sub-f/2.0).</p>
-
-<p>The flip side of the coin is the point which my brother had made; if your
-eye sucks, your footage sucks. A lot of the cinematographers (and just plain
-old camera operators) with which I&rsquo;ve come in contact have bemoaned not
-owning a RED ONE, or even a higher grade DSLR camera body &mdash; and assuming
-that any decent footage I can pull has everything to do with the equipment
-I&rsquo;m using, and nothing to do with my ability to use said equipment.</p>
-
-<p>Years ago, I remember a gig I had, as a bass player. At the time, I had
-brought a <a href="http://www.vintagewashburn.com/Bass/Mercurybass.html">Washburn MB-6</a> (a strange Mercury series instrument with
-fantastic action, scored on eBay for very little money), and had finished
-a really heart-felt set. Some jackass came up to me and complimented the
-instrument.  I figured, from that point on, I would just assume that if
-someone commented on my instrument, they were implicitly insulting me, by
-implying that the instrument provided the quality which they admired, and
-that anyone would have been able to do the same, given the chance to play
-that instrument.</p>
-
-<p>To sum up, you need a good eye &mdash; more than anything else &mdash; but it&rsquo;s also
-important to have the right equipment for the right purpose. Oh, and don&rsquo;t
-forget to stabilize your shots &hellip;</p>
 ]]></content>
   </entry>
   
