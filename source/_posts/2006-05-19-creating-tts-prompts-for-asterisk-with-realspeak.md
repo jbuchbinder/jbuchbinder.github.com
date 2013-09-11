@@ -6,13 +6,13 @@ permalink: /2006/05/19/creating-tts-prompts-for-asterisk-with-realspeak/
 categories:
   - Hacks
 ---
-# 
 
 I was playing around with using ScanSoft Realspeak for Linux, and finally found the “magic sequence” to generate the appropriate GSM prompts for Asterisk.
 
 Requires: 
-*   Standard installation of Scansoft Realspeak 4 with American English Jill voice
-*   Debian’s libgsm-tools and sox
+
+- Standard installation of Scansoft Realspeak 4 with American English Jill voice
+- Debian’s libgsm-tools and sox
 
 `
 cd /usr/local/ScanSoft/RealSpeak_4.0
