@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the rc_firewal nvram variable (non-volatile ram &hellip;">
+  <meta name="description" content="To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the rc_firewall nvram variable (non-volatile ram &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,17 +114,19 @@
   </header>
 
 
-<div class="entry-content"><h1></h1>
+<div class="entry-content"><p>To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the <code>rc_firewall</code> nvram variable (non-volatile ram):</p>
 
-<p>To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the rc_firewal nvram variable (non-volatile ram):</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> nvram set rc_firewall="
+</span><span class='line'> iptables -t nat -I PREROUTING -d x.y.z.1 -j DNAT --to-destination 192.168.1.x
+</span><span class='line'> iptables -t nat -I PREROUTING -d x.y.z.2 -j DNAT --to-destination 192.168.1.x
+</span><span class='line'> "
+</span><span class='line'> nvram commit</span></code></pre></td></tr></table></div></figure>
 
-<p><code>
- nvram set rc_firewal="
- iptables -t nat -I PREROUTING -d x.y.z.1 -j DNAT --to-destination 192.168.1.x
- iptables -t nat -I PREROUTING -d x.y.z.2 -j DNAT --to-destination 192.168.1.x
- "
- nvram commit
-</code></p>
 
 <p>This will protect the changes against being lost when the router is reset.</p>
 </div>
