@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="In 2007, I had posted a patch for the ADS DVD Xpress DX2 device to work on Linux, but it had been based on an antiquated kernel version, etc. Since &hellip;">
+  <meta name="description" content="I have been recently been trying to redesign FreeMED (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -86,6 +86,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/05/21/designing-applications-for-clustering/">Designing Applications for Clustering</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-21T00:00:00-04:00" pubdate data-updated="true">May 21<span>st</span>, 2010</time>
+        
+         | <a href="/2010/05/21/designing-applications-for-clustering/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
+
+<ul>
+<li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS …</li>
+<li><strong>API abstraction</strong> – Don’t write this one off too quickly. A good API layer means that whenever you have to make these sweeping changes, you’re only playing with a few files of source code, as opposed to completely rewriting a good chunk of your codebase. Without the few layers of API which I had been using, I would not have been able to implement the database backed information store which I just completed.</li>
+<li><strong>Database backed file store</strong> – This was the part I had just finished up. Storing files locally and relying on filesystem-based replication from some of the new clustering filesystems may *seem* like a good idea, but it’s not. Database gives you a single authoritative source, and unless we’re looking at multi-gigabyte files, there should not be an appreciable toll. Besides, you indexed your tables properly, right … ?</li>
+<li><strong>Design for concurrency</strong> – That record locking may seem like a pain, but two people working on the same object can be catastrophic. Take the time to add a locking field if you have to.</li>
+<li><strong>Singletons</strong> – Take “singleton” processes into account, so you’re only running a single iteration of something which can only be run once.</li>
+</ul>
+
+
+<p>Those are the major bullet points, although I’m sure that upon review of this, I’ll think of some other design paradigms I had to play with to get this to function properly. Off to enjoy the weekend …</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -573,66 +624,6 @@ $sc = new SoapClient( file_get_contents($url), array(
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/12/21/kill-bill/">Kill Bill</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-12-21T00:00:00-05:00" pubdate data-updated="true">Dec 21<span>st</span>, 2009</time>
-        
-         | <a href="/2009/12/21/kill-bill/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>Kill that damn “healthcare” bill. Kill it dead.</p>
-
-<p>I’m as shocked as anyone else that I’m agreeing with morons who wear teabags on their hats and think that universal healthcare is some bizarre form of fascism, and that everyone is a Nazi. Not to fear, I’m not agreeing with them on *everything*, just on one thing: this “healthcare” bill sucks.</p>
-
-<p>We saw a <a href="http://online.wsj.com/article/BT-CO-20091221-708724.html">100 </a> <a href="http://online.wsj.com/article/BT-CO-20091221-708472.html">bump</a> in the DJIA this morning after the Senate passed their bastardization of a health insurance industry subsidy bill. Of course, it had to do with the excise tax being delayed, supposedly. Not anything having to do with 25 million new customers being forced into an industry with little or no regulation. Nope, not that.</p>
-
-<p>Progressives are counting on the bill to be improved on its way back from the House, claiming that it will be better than the version that the Senate watered down. Y’know, because it makes so much sense that these cretins who tear every good measure out of a bill with the mere threat of a tantrum (without having to do the “Mr Smith Goes to Washington” thing) are just going to smile and say “I know we didn’t do this before, but of *course* we’ll do it, now that the House of Representatives said it was okay!” I can’t figure out who are the bigger morons, the Senate democratic leadership or the guys in the Progressive movement eating this up like Frosted Shit Flakes.</p>
-
-<p>All our lame duck president had to do was push single payer, really. It might have been the end of his political career, but would have, much as the civil rights movement revolutionized America, drastically changed the way we live our lives in this country. No more would medical bankruptcy be something with which many families are familiar, and no longer would people fear financial ruin from attempting to seek medical care. I can’t condone mandated private insurance with no real caps on what they can charge or what horrible things they can do to you when you don’t play by their rules.</p>
-
-<p>What happened to <a href="http://www.youtube.com/watch?v=fpAyan1fXCE">this guy</a>? Who traded him out for <a href="http://www.pnhp.org/news/2009/march/obama_to_single_paye.php">this dud</a>? With what? Oh yeah. <a href="http://www.huffingtonpost.com/2009/08/13/internal-memo-confirms-bi_n_258285.html">Money. Power.</a></p>
-
-<p>Give up the idea that you as a person can do anything. We’re peons, slaves to a country bought and paid for by large industries.</p>
-
-<p>If you don’t believe single payer is not only superior in every imaginable way to the nightmare we have now and would also save us *billions* of dollars, please visit <a href="http://pnhp.org/facts/single-payer-resources">Physicians for a National Healthcare Plan</a>. The huge list of studies, including CBO ones, are eye-opening.</p>
-
-<p>Is it the best possible thing? No. I’m sure there are better systems, somewhere. It’s not socialized healthcare, just socializing the payment structure for it. And that’s not a dirty word, morons. We socialize a lot of things for the common good. Haven’t heard too many fiscal conservatives griping about that <a href="http://www.salem-news.com/articles/december192009/defense_bill.php">636 *billion* dollar spending bill</a>. Oh yeah. ‘Cause it helps us kill the Al-Qaedas that aren’t in Afghanistan and continue blowing holes in the sand to fill them with bundles of freshly printed dollars. Like that ever helped anything. Would you like a <a href="http://www.criticalthinking.org.uk/tigerrepellantrock/">terrorist-repellent rock</a>?</p>
-
-<p>But we’re going to mouse and complain that the government wants to take away our liberty and little American flags. I’d be more concerned with ceding government power to corporations. Privatization doesn’t make things better, it just tacks on a profit “tax” to a social venture. Look at <a href="http://www.wired.com/beyond_the_beyond/2009/12/california-in-ruins-i-blame-the-dominant-ideology-of-the-whole-earth-catalog/">California</a>… that shit is falling apart.</p>
-
-<p>Not to worry. Your healthcare system will be following suit. Please try not to die on the sidewalk.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/5/">&larr; Older</a>
@@ -650,6 +641,10 @@ $sc = new SoapClient( file_get_contents($url), array(
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/09/19/on-documentary-filming/">On Documentary Filming</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/09/10/are-you-a-cinematographer-or-a-camera-operator/">Are You a Cinematographer or a Camera Operator?</a>
       </li>
     
@@ -665,17 +660,13 @@ $sc = new SoapClient( file_get_contents($url), array(
         <a href="/2013/06/28/skill-in-the-age-of-instagram/">Skill in the Age of Instagram</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/06/20/the-age-of-dslr-cinematography/">The Age of DSLR Cinematography</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (8)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (9)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
