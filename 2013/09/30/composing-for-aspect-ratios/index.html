@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Xela Day Six: Implementation - /home/jeff/blog</title>
+  <title>Composing for Aspect Ratios - /home/jeff/blog</title>
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="More than half our our crew parted ways to do a mobile clinic today, whereas Irv, Shelley and I stayed behind with Dr Christian and a few med &hellip;">
+  <meta name="description" content="Making decisions about aspect ratios in cinematography">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jbuchbinder.com/2010/09/24/xela-day-six-implementation">
+  <link rel="canonical" href="http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="/home/jeff/blog" type="application/atom+xml">
@@ -47,11 +47,11 @@
   </script>
 
 
-  <meta property="og:url" content="http://jbuchbinder.com/2010/09/24/xela-day-six-implementation/">
+  <meta property="og:url" content="http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios/">
 <meta property="og:type" content="website" />
 
-<meta property="og:title" content="Xela Day Six: Implementation">
-<meta property="og:description" content="">
+<meta property="og:title" content="Composing for Aspect Ratios">
+<meta property="og:description" content="Making decisions about aspect ratios in cinematography">
  
 
 
@@ -97,7 +97,7 @@
   
   <header>
     
-      <h1 class="entry-title">Xela Day Six: Implementation</h1>
+      <h1 class="entry-title">Composing for Aspect Ratios</h1>
     
     
       <p class="meta">
@@ -113,7 +113,7 @@
   
 
 
-<time datetime="2010-09-24T00:00:00-04:00" pubdate data-updated="true">Sep 24<span>th</span>, 2010</time>
+<time datetime="2013-09-30T20:13:00-04:00" pubdate data-updated="true">Sep 30<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -122,17 +122,90 @@
   </header>
 
 
-<div class="entry-content"><h1></h1>
+<div class="entry-content"><p>Aspect ratios, simply put (for those who are unaware), are the ratios between
+the width and height of a single frame of video. Television has had a 4:3
+ratio (4 units of width to 3 units of height), until the popularization of
+&ldquo;HD&rdquo; television, using a &ldquo;widescreen&rdquo; ratio of 16:9. I&rsquo;m not going to go
+through the entire history of aspect ratios in cinema, as there is a
+<a href="http://vimeo.com/68830569">great retrospective available on vimeo</a>.</p>
 
-<p>More than half our our crew parted ways to do a mobile clinic today, whereas Irv, Shelley and I stayed behind with Dr Christian and a few med students to attempt to get the EMR functional in a way which would jive with the clinic’s workflow. I hit quite a few snags in some of the UI implementation, since I have been pretty hands-off in the development of the UI over the last few months. Even with that, we managed to get the registration and triage components up and operational, while at the same time stringing category 5 cable around the clinic.</p>
+<div class="embed-video-container"><iframe src="http://player.vimeo.com/video/68830569 "></iframe></div>
 
-<p>(Again, my job called me for another favor — this time a load balancer reconfiguration. I wonder if I get comp’d vacation time for this?)</p>
 
-<p>So, after a day of implementation and clinic beautification, the POP-WUJ Clinic looks much better than it did before we arrived. The staff doctors thanked us all profusely for our help in making the clinic a nicer place — however, there was one moment which Jonathan referred to as the “pay it forward” moment. A local carpenter’s wife had been seen in the clinic, and he noticed that one of the doors seemed ill-fitted in regards to the frame in which it sat. He came back down later that day and refitted the door by shaving it down properly as a sort of thanks for the clinic having attended to his wife.</p>
+<p>Most DSLR cinematography is done, by default, with a 16:9 ratio, as the
+maximum capture size for their video is generally 1920x1080, abbreviated as
+1080p (to additionally indicate progressive, rather than interlaced, scan).
+It is relatively easy to enforce a &ldquo;wider&rdquo; aspect ratio by dropping lines at
+the top and bottom of the frame, which most watch-at-home film viewers will
+identify as &ldquo;black bars&rdquo; at the top and bottom of the frame. This does,
+however, introduce an interesting issue &mdash; that of composing inside that
+frame. That ends up looking something like this:</p>
 
-<p>As an end of week “send off”, Dr Sullivan and her husband invited us over to their house for some wine and cheese. The whole thing would probably have been a little bit better if the sky hadn’t opened up with a monsoon on our way over, but thankfully most of us were wearing suitable rain gear. On the way back, we got lost trying to drop Shelley off at her host family’s house, so Irv and I ended up taking a cab back to Casa Mañen, more or less completely drenched.</p>
+<p><img src="/images/black-bars-aspect-ratio-16-9-21-9-4-3-cinemawide.png" title="Black bars for different aspect ratios" alt="Black bars for different aspect ratios" /></p>
 
-<p>It has been a fantastic week, and we have accomplished a great deal — but I’m getting to the point where I really miss being home. One more day of picking up stuff for the wife at the local market, driving to Antigua for Saturday evening, and I’m on a series of planes back to New England. Maybe we didn’t save the world this week, but at least we did our best to make some improvement, somewhere.</p>
+<p>Standard compositional rules generally make use of the two frame diagonals
+(top left to bottom right, and bottom left to top right) and both horizontal
+and vertical thirds. Most compositional choices for &ldquo;balanced&rdquo; frames have
+tended to rely on these invisible divisions to create a pleasing image, even
+though the rules are really <em>guidelines</em>, and are not absolute. If you, as
+a cinematographer, decide that you&rsquo;re going to use an alternate aspect ratio,
+you cannot properly compose by using the thirds or diagonals indicated by any
+common guide or viewfinder in 16:9 ratio, as they will result in a vastly
+skewed product, compared to the original on-camera image. I&rsquo;ve seen a number
+of forums on DSLR cinematography which had suggested everything from
+using a black marker to denote the frame to using black tape to cover the
+segments outside of the final crop. A more &ldquo;modern&rdquo; solution for Canon
+DSLR owners is using <a href="http://magiclantern.wikia.com/wiki/Cropmarks">Magic Lantern cropmarks</a>.
+If you&rsquo;re shooting with another DSLR brand, you may be at the mercy of the
+firmware, or any of the aforementioned hacks.</p>
+
+<p><em>NOTE: I&rsquo;d like to mention, at this point in this article, that there are
+other compositional rules, including <a href="http://photoinf.com/Golden_Mean/Eugene_Ilchenko/GoldenSection.html">golden ratio/mean/spiral/rectangle</a>,
+so please don&rsquo;t take the rule of thirds and diagonals to be the only important
+and pleasing ways to frame an image&hellip;.</em></p>
+
+<p>Besides attempting to find a way to follow common compositional rules, there
+is another side to aspect ratio: selecting the appropriate one for the story
+you are attempting to tell. Apart from the 16:9 ratio being the &ldquo;standard
+format&rdquo; for HDTV broadcasts and web-based series, it is much taller (i.e.,
+it offers more headroom for shots) than Cinemascope (2.35:1) or some of the
+other aspect ratios. Depending on the types of shots which you are using to
+compose your film, it may be advantageous to have a wider, yet thinner,
+view of the world which comes with &ldquo;shorter&rdquo; aspect ratios. Again there is
+no &ldquo;one size fits all&rdquo; for aspect ratios, and it should be a conscious
+decision for the material which you are filming.</p>
+
+<p>An added advantage to using a shorter aspect ratio is that, due to the
+camera bodies recording the entire frame, regardless of target aspect
+ratio, additional editing and recomposition &ldquo;wiggle room&rdquo; is available in
+the editing and post-production process. If something isn&rsquo;t framed in the
+exact way it should be, this can be corrected later by adjusting the vertical
+positioning of the frame within the crop. Most (if not all) NLE software
+has vertical positioning, including
+<a href="http://help.adobe.com/en_US/premierepro/cs/using/WSC7A162B6-6EF1-49e1-8622-8127366710BB.html">Adobe Premiere</a>,
+<a href="http://vegasaur.com/pan-crop-assistant">Sony Vegas</a>,
+and <a href="http://www.peachpit.com/articles/article.aspx?p=1677950&amp;seqNum=8">Final Cut Pro</a>,
+so you shouldn&rsquo;t have any issues doing this. I&rsquo;m aware that the ideal
+cinematographer does everything in-camera (as I have vociferously
+advocated in past), and does not rely on post-production to fix mistakes,
+this does allow for that possibility.</p>
+
+<p>Aspect ratios additionally carry some subconscious baggage with them, due
+to the associations we have made with previous material filmed using them,
+much in the same way we associate film grain with high-end Hollywood
+pictures, even when, in many cases, that film grain was added back to
+the digital footage in post-production.</p>
+
+<p>The quick takeaway is that you shouldn&rsquo;t embark on a project without having
+made a conscious decision regarding the aspect ratio which you are using for
+that project, considered the ramifications and technical concerns associated
+with that decision (including making sure that you can properly frame and
+compose shots in that aspect ratio), and storyboarded and/or prepared your
+material considering your chosen aspect ratio. It is yet another variable
+which can be tweaked to help make an already good project that much better,
+and like all power, it comes with responsibility. So, choose &mdash;
+<a href="http://www.youtube.com/watch?v=oF2UrYSDb3k">but choose wisely</a>, and as
+always, good luck!</p>
 </div>
 
 
@@ -155,12 +228,12 @@
   
 
 
-<time datetime="2010-09-24T00:00:00-04:00" pubdate data-updated="true">Sep 24<span>th</span>, 2010</time>
+<time datetime="2013-09-30T20:13:00-04:00" pubdate data-updated="true">Sep 30<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/categories/freemed/'>FreeMED</a>, <a class='category' href='/categories/remember-no-one-cares/'>Remember, No One Cares</a>
+    <a class='category' href='/categories/cinematography/'>Cinematography</a>
   
 </span>
 
@@ -169,7 +242,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jbuchbinder.com/2010/09/24/xela-day-six-implementation/" data-via="jbuchbinder" data-counturl="http://jbuchbinder.com/2010/09/24/xela-day-six-implementation/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios/" data-via="jbuchbinder" data-counturl="http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -182,14 +255,18 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2010/09/23/xela-day-four-aldea-pujujil/" title="Previous Post: Xela Day Four: Aldea Pujujil">&laquo; Xela Day Four: Aldea Pujujil</a>
+        <a class="basic-alignment left" href="/2013/09/19/on-documentary-filming/" title="Previous Post: On Documentary Filming">&laquo; On Documentary Filming</a>
       
-      
-        <a class="basic-alignment right" href="/2010/09/25/xela-day-seven-huevos-revuelto-con-queso-sin-carne-y-adios/" title="Next Post: Xela Day Seven: Huevos revuelto con queso sin carne y adios">Xela Day Seven: Huevos revuelto con queso sin carne y adios &raquo;</a>
       
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -317,7 +394,10 @@
       var disqus_shortname = 'jbuchbinder';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios/';
+        var disqus_url = 'http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
