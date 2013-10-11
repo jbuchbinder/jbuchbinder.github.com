@@ -242,7 +242,7 @@ wpbook_message:
 
 “The test of a civilization is in the way that it cares for its helpless members.” – Pearl Buck
 
-“?I think we risk becoming the best informed society that has ever died of ignorance.” – Reuben Blades
+“I think we risk becoming the best informed society that has ever died of ignorance.” – Reuben Blades
 
 ## Stupidity
 
