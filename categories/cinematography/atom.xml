@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-11T17:00:12-04:00</updated>
+  <updated>2013-10-13T21:23:53-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,133 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Preparing for and recovering from disaster]]></title>
+    <link href="http://jbuchbinder.com/2013/10/13/preparing-for-and-recovering-from-disaster/"/>
+    <updated>2013-10-13T20:01:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/13/preparing-for-and-recovering-from-disaster</id>
+    <content type="html"><![CDATA[<p>One of the greatest nightmares associated with digital cinematography and
+photography is that of the specter of data loss. The very notion that your
+carefully planned shots or footage could disappear in a single instant can
+be Earth-shattering, since it may not be possible to reshoot (or may be
+prohibitively expensive). The best defense is to be prepared, not only for
+the possibility that you may lose data, but also to safeguard against that
+possibility through preventitive measures.</p>
+
+<h2>Preparation</h2>
+
+<p>There are a number of things you can do to try to protect against data loss,
+both before and after shooting has taken place. Here are a few of them:</p>
+
+<p><strong>Don&rsquo;t use dodgy or off-brand memory cards.</strong> This may seem pretty obvious
+to those who have been down this road, but really crappy cards tend to have
+dodgy QA processes involved in their manufacture, so although you may get a
+good card, you&rsquo;re just as likely to get a dud &mdash; which could end up with your
+data. I&rsquo;ve found that &ldquo;Amazon Basics&rdquo; and &ldquo;KomputerBay&rdquo; cards have failed me
+pretty regularly. Even &ldquo;Transcend&rdquo; cards have been pretty dodgy for me, on
+occasion. I tend to stick with &ldquo;SanDisk&rdquo; branded cards, when I use SD media,
+and there are a few decent manufacturers of CF media (Lexar, SanDisk, etc),
+which tend to produce quality cards, in my experience.</p>
+
+<p><strong>Storage media doesn&rsquo;t last forever.</strong> Every piece of flash media has a
+certain number of R/W cycles before it becomes unstable and/or unusable.
+After a period of time, you might want to start regularly replacing your
+media cards to avoid the possibility that errors will begin to occur. It&rsquo;s
+also a good idea to low-level format the cards in between uses, which
+supposedly increases their lifespan.</p>
+
+<p><strong>A single physical copy of your product is a bad idea.</strong> If you just move
+files off to your laptop harddrive, you&rsquo;re practically expecting something
+to destroy your media. A single SSD or spinning platter in a laptop is a
+prime target for an accident to wipe out your data. Ideally, a RAID
+(<em>R</em>edundant <em>A</em>rray of <em>I</em>nexpensive <em>D</em>isks) array would provide a
+good tradeoff between inexpensive media and redundant storage. I built a
+pretty inexpensive one with the following components:</p>
+
+<ul>
+<li><a href="http://amzn.to/19EmtYA">Sans Digital MR2UT+ MobileRAID</a>: A two-disk
+enclosure, which, when set to RAID-1, gives you a set of mirrored
+hard disks, accessible by USB 3.0 or an eSATA interface.</li>
+<li><a href="http://amzn.to/19IlAdp">Seagate Barracuda 2 TB HDD</a>: Two of these
+disks will provide you with a total of 2 TB of redundant storage.</li>
+</ul>
+
+
+<p><strong>A single physical location is a bad idea.</strong> Consider off-site backup. If
+you don&rsquo;t have the money to store your data in <a href="http://aws.amazon.com/s3/">S3</a>
+or a similar service, consider using something like
+<a href="http://labs.bittorrent.com/experiments/sync.html">Bittorrent Sync</a>, with a
+friend or two providing remote backup locations. If this isn&rsquo;t feasible,
+periodically backing up to <a href="http://en.wikipedia.org/wiki/Digital_Linear_Tape">DLT</a>
+or another backup tape, then storing that offsite, may be useful. If you
+are questioning &ldquo;why do I need off-site backup&rdquo;, just remember that a single
+fire or natural disaster can destroy all of your hard work&hellip;</p>
+
+<p><strong>Camera-based writing solutions.</strong> Certain cameras (the Canon EOS 5D
+Mark III, for example) have multiple media card slots, and have the ability
+to write multiple copies of the same media. This can help circumvent the
+tragic circumstance (to which I have fallen victim) of a completed shoot
+with the inability to read any of the captured data later on. To understand
+this, <a href="http://protogtech.com/cameras/canon-5d-mark-iii-record-separately-vs-record-to-multiple-performance-comparison/">read more here</a>.
+It should be noted that there are some performance limitations to this,
+but if you&rsquo;re not shooting RAW video and your camera body can handle this,
+you might want to seriously consider it.</p>
+
+<h2>Recovery</h2>
+
+<p>There is a pantheon of free and open-source software suites which provide
+recovery of lost files, deleted files, destroyed partitions, etc. The true
+nightmare scenario would involve a piece of damaged media, from which the
+data cannot be extracted &mdash; but never assume this unless you have exhausted
+all other avenues of recovery.</p>
+
+<ul>
+<li><a href="www.cgsecurity.org/wiki/PhotoRec">PhotoRec/Testdisk</a> (Open source,
+Linux/Windows/Mac/DOS/etc). This is one of my favorites, although it
+may potentially require some fairly in-depth technical expertise to
+fully exploit its potential.</li>
+<li><a href="http://www.piriform.com/recuva">Recuva</a> (Freeware, Windows). Recovers
+deleted files.</li>
+<li><a href="http://www.hirensbootcd.org">Hiren&rsquo;s Boot CD</a> (Freeware, Boot Disc).
+Hiren&rsquo;s is a classic recovery and utility boot disk, which can be
+booted on any Intel-based computer. The download is free, and it has
+a very comprehensive suite of recovery tools. If you don&rsquo;t have a copy
+of this disc hanging around your studio or house &mdash; why not?</li>
+<li><a href="http://www.wondershare.com/disk-utility/cr2-photo-recovery.html">Wondershare Photo Recovery</a> (Freeware, Windows/Mac).
+A semi-commercial digital media file recovery suite.</li>
+<li><a href="http://www.icare-recovery.com/free/camera-raw-photo-recovery-free.html">iCare Recovery Free</a> (Trialware, Windows).
+This has a 2GB maximum data file recovery limit with the trial, otherwise
+a license has to be purchased.</li>
+<li><a href="https://homes.cs.washington.edu/~oskin/saveimg.html">saveimg</a> (Opensource, Linux/Mac).
+Extracts JPEG images from raw disk devices. Requires some expert
+knowledge to use properly.</li>
+<li><a href="http://foremost.sourceforge.net/">Foremost</a> (Opensource, Linux/Mac).
+Digital forensic tool to recover files based on headers, footers, and
+internal data structures.</li>
+<li><a href="http://www.lc-tech.com/pc/sandisk-rescuepro-and-rescuepro-deluxe/">SanDisk RescuePRO</a> (Trialware, Windows).
+SanDisk&rsquo;s recommended recovery software.</li>
+<li><a href="http://www.gnu.org/software/ddrescue/ddrescue.html">ddrescue</a> (Opensource, Linux/Mac).
+A data recovery tool. It copies data from one file or block device
+(hard disc, cdrom, etc) to another, trying hard to rescue data in case
+of read errors.</li>
+<li><a href="http://www.stellarphotorecoverysoftware.com/camera-recovery/">Stellar Photo Recovery</a> (Trialware, Windows/Mac).
+Another digital photo recovery suite. The trialware shows what can be
+recovered, with previews.</li>
+<li><a href="http://www.pcinspector.de/default.htm?language=1">PC Inspector</a> (Freeware, Windows).</li>
+<li><a href="http://www.prosofteng.com/products/data_rescue.php">DataRescue</a> (Mac).</li>
+<li><a href="http://subrosasoft.com/OSXSoftware/index.php?main_page=product_info&amp;cPath=1&amp;products_id=3">Camera Salvage</a> (Freeware, Windows).</li>
+<li><a href="http://datarescue.com/">PhotoRescue</a> (Windows/Mac).</li>
+<li><a href="http://www.cfcardrecovery.com/">CF Card Recovery</a> (Trialware, Windows/Mac).</li>
+</ul>
+
+
+<p>Hopefully, this will either make it easier to avoid potential data loss, or
+at least help to minimize the impact, if and when you end up losing data.</p>
+
+<p>As always, good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Composing for Aspect Ratios]]></title>
@@ -390,217 +517,6 @@ and visuals which you&rsquo;re attempting to achieve.</p>
 how to achieve stunning visuals; it&rsquo;s simply an attempt to share some of
 what I&rsquo;ve learned, and to help share the knowledge and tools to exploit
 your own inner artistic vision. Good luck shooting!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[To post or not to post]]></title>
-    <link href="http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post/"/>
-    <updated>2013-09-07T13:18:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post</id>
-    <content type="html"><![CDATA[<p>Even though a good portion of the work has been completed when you press the
-shutter button, or stop rolling, since all of your planning and execution has
-been completed, there&rsquo;s still a final step (or series of steps) to bring that
-artistic effort to a presentable format.</p>
-
-<p>Many people shoot with default (or very close to default) settings on their
-camera or videocamera, and do simple &ldquo;post production&rdquo; by simply cropping or
-cutting whatever comes out of their camera body. This is a very &ldquo;purist&rdquo; way
-of going about shooting, but can also rob your end product of some of the
-polish and slight adjustments which can take good pictures or footage and
-make them into something extraordinary.</p>
-
-<p>All of that being said, there&rsquo;s a limit to the types and amounts of post
-production which can and should be used, much in the way that overproducing
-a musical album can result in a homogenous and lifeless product, robbed of
-the &ldquo;soul&rdquo; and variances which make it unique. You are the only person who
-can decide how much, if any, post processing is right for your project or
-other artistic endeavor.</p>
-
-<p><strong>RAW versus JPEG/H.264</strong></p>
-
-<p>With DSLR cameras being used for both photography and cinematography, there
-are places where the &ldquo;processing&rdquo; aspect can be pushed off into the post
-production process.</p>
-
-<p>For photography, RAW format pictures can allow recovery past some of the
-previously accepted limits of what would normally be considered lost or
-unusable. Effectively, it allows you to make the decisions which are
-normally pushed off on your camera&rsquo;s processor (the DIGIC processor(s),
-for all of you Canon users). It adds an additional step to the
-post-processing workflow, in that you&rsquo;ll need a piece of software like
-<a href="http://www.adobe.com/products/photoshop-lightroom.html">Adobe Lightroom</a> for Windows/Mac users, or if you&rsquo;re a Linux user like me,
-<a href="http://rawstudio.org/">Raw Studio</a>. It also adds a significant amount of time to the
-photographic post-processing workflow, in that there are a number of
-additional parameters which can be adjusted, which would normally result
-in image degradation, but can be adjusted in RAW images with little or no
-deleterious effect. If you&rsquo;re a <a href="http://www.magiclantern.fm/">Magic Lantern</a> user, you can also
-experiment with &ldquo;dual ISO&rdquo; images, which can create images with enormous
-dynamic range through sensor tricks &mdash; but which adds an another step
-before RAW processing, that of running a CR2HDR binary. (If you&rsquo;re
-interested in trying this out, but don&rsquo;t want to compile a CR2HDR binary
-for Windows or Linux, I have binaries available <a href="https://bitbucket.org/rufustfirefly/magic-lantern/downloads">here</a>)</p>
-
-<p>For cinematography, there&rsquo;s a lot more to think about. Magic Lantern users
-of Canon 5Dmk3 models (and some others, as well) have the option of being
-able to shoot RAW video with some very fast CF cards. This adds a pretty
-substantial amount of post-processing steps <em>before</em> your NLE (non-linear
-editor) of choice enters the picture. There are a pretty wide swath of
-applications which now support the Magic Lantern RAW format, including
-<a href="http://www.magiclantern.fm/forum/index.php?action=printpage;topic=5557.0">RAWanizer</a>, but your best bet is to get involved with the Magic
-Lantern forum if you want to begin working with a RAW workflow. The other
-serious disadvantage is storage space. Standard H.264 video, which is
-shot by most DSLR camera bodies, has issues with some digital artifacts in
-certain scenarios, as well as some dynamic range issues (some of which can
-be made better by use of flat color profiles like <a href="https://www.technicolorcinestyle.com/download/">Cinestyle</a>, but I&rsquo;ll
-leave that for later) &mdash; but it produces fairly compact files, even at
-1080p/24p (1920x1080 24fps progressive) resolution. RAW data can take
-upwards of a gigabyte of space every 15-20 seconds. Your storage media
-and backup solutions have to be able to deal with that, so it&rsquo;s something
-to seriously consider before deciding to move a project to work with that
-format.</p>
-
-<p><strong>White Balance</strong></p>
-
-<p>It used to be accepted that white balancing (determining where &ldquo;true white&rdquo;
-lies in an image, compensating for varying light color temperatures) had to
-be done &ldquo;in camera&rdquo;, before shots were taken. There are a number of tools
-which allow this to be done in post-processing.</p>
-
-<p>Photographers can do this when shooting with RAW camera images very
-simply, as most RAW image processors have a simple white balancing tool. It&rsquo;s
-still possible to do this with processed JPEG images, but with the
-potential for losing some image data. Depending on how comfortable you are
-with straying from the &ldquo;truest possible image&rdquo;, you can decide where you
-feel comfortable dealing with white balancing.</p>
-
-<p>Cinematographers have a pretty vast array of white balancing and color
-correction plugins available for their NLE of choice. I&rsquo;m most familiar with
-Adobe Premiere, so I&rsquo;d mention <a href="http://blogs.adobe.com/VideoRoad/2010/05/using_the_fast_color_corrector.html">Fast Color Corrector</a> and
-<a href="http://philipbloom.net/forum/threads/tutorial-color-grading-and-styling-with-colorista-ii.2528/">Red Giant Colorista II</a>, both of which offer pretty decent white
-balancing capabilities, among other things. If you&rsquo;re concerned about
-render speed, Fast Color Corrector seems to win out against Colorista II,
-but Colorista II has some additional parameters and capabilities which
-far outstrip what FCC has to offer. There&rsquo;s also software like
-<a href="http://tv.adobe.com/watch/learn-premiere-pro-cc/color-grading-premiere-pro-sequences-in-speedgrade/">Adobe Speedgrade</a> and <a href="http://digitalfilms.wordpress.com/2013/02/02/davinci-resolve-workflows/">Blackmagic Design Davinci Resolve</a>, both
-of which offer white balancing, color correction, and color grading
-capabilities. There are a few threads <a href="http://forums.planet5d.com/threads/123505-Adobe-Speedgrade-vs-DaVinci-Resolve">comparing the two of them</a>.</p>
-
-<p>The important distinction is whether or not you want to spend the time
-to properly white balance your images or footage before you take pictures.
-It&rsquo;s not always condusive to your shooting workflow to do so, and if this
-is a factor, you should seriously consider some of the post-processing
-options. It&rsquo;s obviously to your greatest advantage to have the most
-accurate input images/footage to bring into your post-processing
-workflow, but sometimes it&rsquo;s not pragmatic to take a completely purist
-attitude in this regard.</p>
-
-<p><strong>Exposure</strong></p>
-
-<p>We&rsquo;ve all been bitten by changing light conditions, unexpected events, or
-incorrect metering producing images or footage which has exposure problems.
-If you&rsquo;re shooting RAW (or using Magic Lantern&rsquo;s Dual ISO hack), this is
-an ideal place to examine using post-processing to correct these issues.</p>
-
-<p>We would all like to properly expose everything (unless we have a
-particular artistic reason for doing otherwise, since in the art of
-photography or cinematography, there are generally exceptions to every
-rule, rules were made to be broken, etc), but taking a post-processing
-detour to correct such things is generally preferable to re-arranging a
-shoot.</p>
-
-<p><strong>Special Effects</strong></p>
-
-<p>I&rsquo;m not a big fan of post-processing special effects, mainly because I
-am a proponent of the idea that it takes some of the artistry out of
-pulling off those same effects &ldquo;in camera&rdquo;. I do understand that there
-are certain effects which would be either very difficult or downright
-impossible to achieve without the use of computer generated effects &mdash;
-but there&rsquo;s a lot of things which can be accomplished <em>without</em> that.</p>
-
-<p>Lighting is something which I&rsquo;ve seen done in post, which generally
-baffles me. It&rsquo;s something which is pretty simple to execute properly,
-given a little time and effort. Saving images or footage with issues
-might be a good use for that, but it&rsquo;s probably not something I would
-recommend doing for everyday editing and processing.</p>
-
-<p>For example, having someone &ldquo;eaten&rdquo; by light can be accomplished for
-a cinematographer, simply by adjusting the fill light to blow out the
-whites, then opening the iris of the lens (using a focus pulling kit,
-or just a spare hand, for the less equipment-heavy among us) to allow
-the fill light to &ldquo;eat&rdquo; the remainder of the image. That can be done
-without any specific post-processing.</p>
-
-<p><strong>Flat Color Profiles</strong></p>
-
-<p>This is pretty much for cinematographers, since photographers could
-simply take RAW photos &mdash; and cinematographers shooting RAW should
-probably ignore this section, as well.</p>
-
-<p>There are quite a few &ldquo;flat color profiles&rdquo; available for DSLR
-(and other) bodies, such as the aforementioned Technicolor Cinestyle
-profile and the <a href="http://www.similaar.com/foto/flaat-picture-styles/long-1.html">Flaat Picture Style</a>. These work by effectively
-increasing the dynamic range being captured by the camera by storing
-the values differently than the stock picture profile.</p>
-
-<p>I highly recommend shooting with one, if you&rsquo;re not going to make the
-leap to shoot RAW. It does add the additional step in post-processing
-of having to adjust the blacks/whites and/or applying a corrective
-LUT (look up table) to adjust the end product to look less &ldquo;washed
-out&rdquo;. There are LUTs and plugins available for virtually every NLE
-out there right now &mdash; and I suggest learning how to do this. The
-improvement in the end product is substantial for relatively little
-time investment.</p>
-
-<p><strong>Audio Post</strong></p>
-
-<p>This is another section just for cinematographers.</p>
-
-<p>The audio which is recorded with footage is generally &ldquo;reference
-audio&rdquo;, which is meant to be replaced by actual audio, generally
-recorded with something like a <a href="http://tascam.com/product/dr-40/">Tascam DR-40</a> or <a href="http://www.zoom.co.jp/english/products/h4n/">Zoom H4n</a>
-external recorder and a shotgun microphone. It&rsquo;s far outside the
-scope of this to explain the majority of these technologies and
-techniques, but sufficed to say that they produce far cleaner and
-usable recordings than on-camera audio (even when using augmented
-on-camera microphones, etc). If you can afford it, use external
-audio, and have an experienced audio engineer perform some basic
-post-production on your audio.</p>
-
-<p>If you can&rsquo;t afford it, or don&rsquo;t have an audio engineer, there are
-a few basic steps to get cleaner audio.</p>
-
-<p>1) <em>Don&rsquo;t use the microphone built into the camera</em>. It sounds pretty
-awful, and is noisy. Get a lav microphone for interviews, or a
-directional hot-shoe mounted external microphone for anything else.</p>
-
-<p>2) <em>Adjust the audio levels manually</em>. Automatic level adjustment is
-going to be terrible. It&rsquo;s meant to avoid clipping, but it tends to
-make the noise floor (the level of background noise) jump around as
-the camera readjusts the audio recording level, so it may make your
-life significantly more difficult when it comes time to adjust the
-footage later. Adjust it to the loudest sound you&rsquo;re going to be
-recording &mdash; then perhaps a click lower, for safety.</p>
-
-<p>3) <em>Respect the inverse square law</em>. For those unfamiliar, sounds
-drop at a logarithmic rate as you move away from the sound source,
-following the same inverse square law which is used to figure light
-source brightness. The closer you are to a recorded sounds, the
-cleaner and better the source audio will be. Every object which a
-sound hits will produce a &ldquo;reflection&rdquo; (much as light does). If that
-reflection is equal or louder than the volume of the source sound,
-you&rsquo;re going to get a pretty terrible sounding audio recording.</p>
-
-<p>4) <em>Get the cleanest audio possible</em>. Try to cut down on external
-noise sources. Never assume that you can clean something later on;
-you should be trying to get clean audio. If something has to be
-re-taken to avoid a lawnmower being run in the background, then you
-should seriously consider doing it. It&rsquo;ll save you from pulling out
-your hair.</p>
-
-<p>I&rsquo;m sure that this isn&rsquo;t a <em>comprehensive</em> list, but hopefully this
-will help everyone get started with deciding what, if anything, to
-relegate to their post-processing workflow. Good luck!</p>
 ]]></content>
   </entry>
   

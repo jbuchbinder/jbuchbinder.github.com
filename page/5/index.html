@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I really like Ubuntu — I use it for all of my workstations/laptops, and have for the last several years. I do not, however, like it when people tell &hellip;">
+  <meta name="description" content="I have recently had cause to proxy a J2EE CXF service through an apache 2.2 instance, and thought it would be nice to share my findings. (This was &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -94,6 +94,71 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/12/exposing-soap-services-with-apaches-proxypass/">Exposing SOAP Services With Apache&#8217;s ProxyPass</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-12T00:00:00-05:00" pubdate data-updated="true">Jan 12<span>th</span>, 2010</time>
+        
+         | <a href="/2010/01/12/exposing-soap-services-with-apaches-proxypass/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1></h1>
+
+<p>I have recently had cause to proxy a J2EE CXF service through an apache 2.2 instance, and thought it would be nice to share my findings. (This was all done on a Debian system.)</p>
+
+<p>First of all, the mod_proxy pieces have to be enabled using <strong>a2enmod proxy</strong>.</p>
+
+<p>A fragment has to be added with the proxying bits and some limitation:</p>
+
+<pre><code>     Order allow,deny
+     Allow from all
+
+
+ProxyPass /EXPOSEDURL http://SERVER:PORT/URL
+ProxyPassReverse /EXPOSEDURL http://SERVER:PORT/URL
+</code></pre>
+
+<p>Reloading apache configuration should enable the proxy properly. The only other possible issue is that in addition to the WSDL URL, you’re going to have to specify a “proxy” URL, which is just the service URL without ?wsdl at the end of it. A fragment of PHP’s SoapClient would look like this:</p>
+
+<pre><code>$url = "http://server.domain:8180/services/MySoapService?wsdl";
+$sc = new SoapClient( file_get_contents($url), array(
+          'login' =&gt; $my_username // optional for basic auth
+        , 'password' =&gt; $my_password // optional for basic auth
+        , 'compression' =&gt; SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP
+        , 'location' =&gt; str_replace('?wsdl', '', $url) // force this to work through proxies
+));
+</code></pre>
+
+<p>The magic in that last segment was the “location” parameter, as it specifies the proxy. Good luck!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -577,64 +642,6 @@ String country = mTelephonyMgr.getNetworkCountryISO();
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/08/07/rewriting-remitt-the-j2ee-way/">Rewriting REMITT, the J2EE Way</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-08-07T00:00:00-04:00" pubdate data-updated="true">Aug 7<span>th</span>, 2009</time>
-        
-         | <a href="/2009/08/07/rewriting-remitt-the-j2ee-way/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1></h1>
-
-<p>For those people who are unfamiliar with my programming ventures, I had written a three stage extensible billing system a few years back called <a href="http://remitt.org/">REMITT</a> (which stands for REMITT Electronic Medical Information Translation and Transmission). I had created the majority of the code in about a week and the XSL transforms required for it to function in another two weeks or so.</p>
-
-<p>Since then, the project has been somewhat languishing, due to it being written in Perl, which is a minor pain to get running for most people on a good day, compounded with it using XML-RPC with sessions as a remote procedural call dialect.</p>
-
-<p>I decided to embark on a complete rewrite of the core of REMITT to make it more portable, more extensible, better designed and far more stable than it had been in past. I have gotten about &frac34; of the way through rewriting the core of REMITT as a J2EE application using MySQL as a database backend. There are a number of improvements I have been working on, including:</p>
-
-<ol>
-<li>True crossplatform nature. – Being J2EE, you can even run it on *shudder* Windows if you felt the need to. I wouldn’t recommend it, but you could do it.</li>
-<li>Better threading model. – Instead of a single executor thread pool, each stage of transformation gets its own pool, maintained and reaped by a single control thread. As Java has a very nice threading model, this was much easier than I had anticipated.</li>
-<li>Transport scripting. – Instead of requiring heavy-duty programming expertise to write transport plugins, I moved to using Rhino do do embedded Javascript scripting for them, as well as allowing SFTP transport.</li>
-<li>Namespaced configuration. – Each user can have their own configuration *per* plugin, which is a lot easier than before. It also has the ability for each plugin to present its configuration options to a frontend, so there’s no more worrying about configuration variable names.</li>
-<li>SOAP. – I’m using CXF for web services, and it took me all of a second to generate a proxy class using wsdl2php which worked perfectly the first time around.</li>
-<li>Web Interface. – Through the magic of JSP, the REMITT server has its own set of administration pages and monitoring functions, so it’s not quite as much of a black box as before.</li>
-<li>IDE Support. – Eclipse is a beautiful IDE, and with Javadoc completion support, makes anything I could have used with Perl look like crap. ‘Nuff said.</li>
-<li>OO Model. – Perl OO is to Java OO as a Pinto is to a Tesla Roadster. This thing actually has some architecture behind it. It’s about time.</li>
-</ol>
-
-
-<p>I’ll be posting the code into REMITT’s SVN trunk shortly, as soon as I’m positive that it does *something* in case anyone else feels the need to work on it. In the meantime, I’ll continue to play with it until I get something useful out of it.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/6/">&larr; Older</a>
@@ -652,6 +659,10 @@ String country = mTelephonyMgr.getNetworkCountryISO();
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/10/13/preparing-for-and-recovering-from-disaster/">Preparing for and Recovering From Disaster</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/09/30/composing-for-aspect-ratios/">Composing for Aspect Ratios</a>
       </li>
     
@@ -667,17 +678,13 @@ String country = mTelephonyMgr.getNetworkCountryISO();
         <a href="/2013/09/10/prime-lenses-and-proper-depth-of-field/">Prime Lenses and Proper Depth of Field</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/09/07/to-post-or-not-to-post/">To Post or Not to Post</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (10)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (11)</a></li>
 <li class='category'><a href='/categories/development/'>Development (32)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
@@ -685,7 +692,7 @@ String country = mTelephonyMgr.getNetworkCountryISO();
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>
-<li class='category'><a href='/categories/photography/'>Photography (7)</a></li>
+<li class='category'><a href='/categories/photography/'>Photography (8)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (81)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
