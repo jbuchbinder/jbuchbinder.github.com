@@ -82,7 +82,7 @@ nightmare scenario would involve a piece of damaged media, from which the
 data cannot be extracted -- but never assume this unless you have exhausted
 all other avenues of recovery.
 
- * [PhotoRec/Testdisk](www.cgsecurity.org/wiki/PhotoRec) (Open source,
+ * [PhotoRec/Testdisk](http://www.cgsecurity.org/wiki/PhotoRec) (Open source,
    Linux/Windows/Mac/DOS/etc). This is one of my favorites, although it
    may potentially require some fairly in-depth technical expertise to
    fully exploit its potential.
