@@ -122,15 +122,15 @@
   </header>
 
 
-<div class="entry-content"><h1></h1>
+<div class="entry-content"><h1 id="section"></h1>
 
-<p>Our first few stopmotion animation tests were successful. As per everything else we do, everything was done with Linux and freely available opensource software. In this case, <a href="http://gphoto.org">gphoto2</a>, imagemagick and mplayer (with ffmpeg thrown in for the .flv conversion for <a href="http://www.youtube.com/">Gootube</a>.</p>
+<p>Our first few stopmotion animation tests were successful. As per everything else we do, everything was done with Linux and freely available opensource software. In this case, <a href="http://gphoto.org">gphoto2</a>, imagemagick and mplayer (with ffmpeg thrown in for the .flv conversion for <a href="http://www.youtube.com/">Gootube</a>. </p>
 
 <p>We used my Canon 350D mounted on a tripod with <a href="http://www.flickr.com/photos/grendelkhan/">Adam’s</a> fixed focal length 135mm lens, with fixed lighting and a green background for eventual <a href="http://en.wikipedia.org/wiki/Chroma_key">chromakeying</a>. There was a quick hack involved getting gphoto2 to immediately spit out a photo, instead of trying to logically process it, which was solved with:</p>
 
 <p><code>gphoto2 --set-config "Capture size class"="Full Image" --capture-preview --filename "${OUTPUTFILE}" --force-overwrite</code></p>
 
-<p>(If you choose to try this, remember that whatever format you set your camera to will be the format that it comes out in, so don’t set it to RAW unless you really don’t value your time and want to have to convert it using dcraw.)</p>
+<p>(If you choose to try this, remember that whatever format you set your camera to will be the format that it comes out in, so don’t set it to RAW unless you really don’t value your time and want to have to convert it using dcraw.) </p>
 
 <p>The first video can be viewed at .</p>
 </div>

@@ -124,15 +124,13 @@
 
 <div class="entry-content"><p>After more than six months of dealing with the Synaptics touchpad driver interpreting my hand brushing against the pad as a “click”, I <a href="http://ubuntu.wordpress.com/2006/03/24/disable-synaptics-touchpad/">found a small change</a> to xorg.conf which will take away the sting of using a touchpad with <a href="http://www.ubuntu.com">Ubuntu</a>/<a href="http://www.kubuntu.org/">Kubuntu</a>.</p>
 
-<p>Simply add the following lines in <strong>/etc/X11/xorg.conf</strong> in the InputDevice clause for the touchpad, and restart X:</p>
+<p>Simply add the following lines in <strong>/etc/X11/xorg.conf</strong> in the InputDevice clause for the touchpad, and restart X:
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">    Option          "SHMConfig"             "on"
+</span><span class="line">    Option          "MaxTapTime"            "0"</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>    Option          "SHMConfig"             "on"
-</span><span class='line'>    Option          "MaxTapTime"            "0"</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Just had to share that, it took me so long to get up the resolve to actually <em>look</em> for a solution &hellip;</p>
+<p>Just had to share that, it took me so long to get up the resolve to actually <em>look</em> for a solution …</p>
 </div>
 
 

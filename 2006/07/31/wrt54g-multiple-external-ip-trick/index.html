@@ -124,19 +124,19 @@
 
 <div class="entry-content"><p>To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the <code>rc_firewall</code> nvram variable (non-volatile ram):</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'> nvram set rc_firewall="
-</span><span class='line'> iptables -t nat -I PREROUTING -d x.y.z.1 -j DNAT --to-destination 192.168.1.x
-</span><span class='line'> iptables -t nat -I PREROUTING -d x.y.z.2 -j DNAT --to-destination 192.168.1.x
-</span><span class='line'> "
-</span><span class='line'> nvram commit</span></code></pre></td></tr></table></div></figure>
-
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"> nvram set rc_firewall="
+</span><span class="line"> iptables -t nat -I PREROUTING -d x.y.z.1 -j DNAT --to-destination 192.168.1.x
+</span><span class="line"> iptables -t nat -I PREROUTING -d x.y.z.2 -j DNAT --to-destination 192.168.1.x
+</span><span class="line"> "
+</span><span class="line"> nvram commit</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>This will protect the changes against being lost when the router is reset.</p>
+
 </div>
 
 

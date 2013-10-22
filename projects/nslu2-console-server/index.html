@@ -11,7 +11,7 @@
   
   <meta name="description" content="NSLU2 Console Server Server Setup Install SlugOS/BE with:
 • USB hub
-• USB/serial adapter attached to F-F 9 port RS232 cable Install serial support: &hellip;">
+• USB/serial adapter attached to F-F 9 port RS232 cable Install serial support &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -102,16 +102,16 @@
     
   </header>
   
-  <h1></h1>
+  <h1 id="section"></h1>
 
-<h3>Server Setup</h3>
+<h3 id="server-setup">Server Setup</h3>
 
-<p>Install <a href="http://www.nslu2-linux.org/wiki/SlugOS/SlugOSBE">SlugOS/BE</a> with:<br/>
-• USB hub<br/>
+<p>Install <a href="http://www.nslu2-linux.org/wiki/SlugOS/SlugOSBE">SlugOS/BE</a> with:<br />
+• USB hub<br />
 • USB/serial adapter attached to F-F 9 port RS232 cable</p>
 
-<p>Install serial support:<br/>
-<code>
+<p>Install serial support:<br />
+`
 root@BOS-ts1:/$ ipkg update
 Downloading http://ipkg.nslu2-linux.org/feeds/slugosbe/cross/4.8-beta/Packages.gz
 Inflating http://ipkg.nslu2-linux.org/feeds/slugosbe/cross/4.8-beta/Packages.gz
@@ -120,45 +120,45 @@ Downloading http://ipkg.nslu2-linux.org/feeds/slugosbe/native/4.8-beta/Packages.
 Inflating http://ipkg.nslu2-linux.org/feeds/slugosbe/native/4.8-beta/Packages.gz
 Updated list of available packages in /var/lib/ipkg/native
 root@BOS-ts1:/$ ipkg install kernel-module-pl2303
-Installing kernel-module-pl2303 (2.6.21.7 svnr927-r0) to root...
-Downloading http://ipkg.nslu2-linux.org/feeds/slugosbe/cross/4.8-beta/kernel-module-pl2303_2.6.21.7 svnr927-r0_nslu2be.ipk
-Installing kernel-module-usbserial (2.6.21.7 svnr927-r0) to root...
-Downloading http://ipkg.nslu2-linux.org/feeds/slugosbe/cross/4.8-beta/kernel-module-usbserial_2.6.21.7 svnr927-r0_nslu2be.ipk
+Installing kernel-module-pl2303 (2.6.21.7 svnr927-r0) to root…
+Downloading http://ipkg.nslu2-linux.org/feeds/slugosbe/cross/4.8-beta/kernel-module-pl2303<em>2.6.21.7 svnr927-r0_nslu2be.ipk
+Installing kernel-module-usbserial (2.6.21.7 svnr927-r0) to root…
+Downloading http://ipkg.nslu2-linux.org/feeds/slugosbe/cross/4.8-beta/kernel-module-usbserial</em>2.6.21.7 svnr927-r0_nslu2be.ipk
 Configuring kernel-module-pl2303
 Configuring kernel-module-usbserial
 root@BOS-ts1:/$
-</code></p>
+`</p>
 
-<p>Install picocom:<br/>
-<code>
+<p>Install picocom:<br />
+`
 root@BOS-ts1:/$ ipkg install picocom
-Installing picocom (1.4-r2) to root...
+Installing picocom (1.4-r2) to root…
 Downloading http://ipkg.nslu2-linux.org/feeds/slugosbe/cross/4.8-beta/picocom_1.4-r2_armv5teb.ipk
 Configuring picocom
 root@BOS-ts1:/$
-</code></p>
+`</p>
 
-<p>picocom syntax:<br/>
-<code>
-root@BOS-ts1:/$ picocom --help
+<p>picocom syntax:<br />
+`
+root@BOS-ts1:/$ picocom –help
 picocom v1.4
-Usage is: picocom [options]
+Usage is: picocom [options] 
 Options are:
-  --aud
-  --low s (=soft) | h (=hard) | n (=none)
-  --arity o (=odd) | e (=even) | n (=none)
-  --atabits 5 | 6 | 7 | 8
-  --scape
-  --nonit
-  --noeset
-  --noock
-  --end-cmd
-  --receie-cmd
-  --elp
+  –aud 
+  –low s (=soft) | h (=hard) | n (=none)
+  –arity o (=odd) | e (=even) | n (=none)
+  –atabits 5 | 6 | 7 | 8
+  –scape 
+  –nonit
+  –noeset
+  –noock
+  –end-cmd 
+  –receie-cmd 
+  –elp
 &lt; ?&gt; indicates the equivalent short option.
-Short options are prefixed by "-" instead of by "--".
+Short options are prefixed by “-“ instead of by “–”.
 root@BOS-ts1:/$
-</code></p>
+`</p>
 
 <p>Console server scripts:</p>
 
@@ -197,7 +197,7 @@ while [ $done -eq 0 ]; do
         else
                 SPEED=$( cat /etc/port.config | grep -E "^${PORT}:" | cut -d: -f3 )
                 /usr/bin/serial.sh $PORT $SPEED
-    fi
+	fi
 done
 
 exit
@@ -205,8 +205,8 @@ exit
 root@BOS-ts1:~$ cat /usr/bin/serial.sh 
 #!/bin/sh
 if [ $# -ne 2 ]; then
-    echo "syntax: $0 portnumber speed"
-    exit
+	echo "syntax: $0 portnumber speed"
+	exit
 fi
 PORT=$(( $1 - 1 ))
 echo "Escape sequence is Ctrl-A Ctrl-X"
@@ -214,12 +214,12 @@ picocom -b $2 -f h -p n -d 8 -r /dev/ttyUSB${PORT}
 root@BOS-ts1:~$
 </code></pre>
 
-<p>Final setup:<br/>
+<p>Final setup:<br />
 After you’ve copied your keys over, set root’s shell to be /usr/bin/consolesh</p>
 
-<h3>Client Setup</h3>
+<h3 id="client-setup">Client Setup</h3>
 
-<h4>BIOS</h4>
+<h4 id="bios">BIOS</h4>
 
 <pre><code>---------------------------------------------------- 
 |               Console Redirection                  |
@@ -235,7 +235,7 @@ After you’ve copied your keys over, set root’s shell to be /usr/bin/consoles
  ---------------------------------------------------- 
 </code></pre>
 
-<h4>OpenBSD</h4>
+<h4 id="openbsd">OpenBSD</h4>
 
 <p>/etc/ttys:</p>
 
@@ -259,7 +259,7 @@ After you’ve copied your keys over, set root’s shell to be /usr/bin/consoles
 
 <p>Note: Only the first serial port (com0) is supported for console on amd64 and i386.</p>
 
-<h4>CentOS/Linux</h4>
+<h4 id="centoslinux">CentOS/Linux</h4>
 
 <p>The console needs to be redirected: Grub, Xen, Linux &amp; Getty.</p>
 
@@ -296,10 +296,11 @@ title...
 <pre><code>co:2345:respawn:/sbin/agetty -L 9600 ttyS0 vt100-nav
 </code></pre>
 
-<h2>Alternate Method</h2>
+<h2 id="alternate-method">Alternate Method</h2>
 
-<p>You can also use <a href="">conman</a> (Console Manager) to do the same thing. I have an NSLU2 package available here:<br/>
+<p>You can also use <a href="">conman</a> (Console Manager) to do the same thing. I have an NSLU2 package available here:<br />
 <a href="http://www.mediafire.com/file/tzkmt9jnnyx/conman_0.2.3-1_armeb.ipk">http://www.mediafire.com/file/tzkmt9jnnyx/conman_0.2.3-1_armeb.ipk</a>.</p>
+
 
   
     <footer>

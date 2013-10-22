@@ -122,7 +122,7 @@
   </header>
 
 
-<div class="entry-content"><h1></h1>
+<div class="entry-content"><h1 id="section"></h1>
 
 <p>I hate it. IMAP Synchronization, that is.</p>
 
@@ -139,6 +139,7 @@
 <p>Solution … I had to roll my own. This is *stupid* to the highest degree, but I rolled something using <a href="http://java.sun.com/products/javamail/">javamail</a> into a self-contained “fat jar” using <a href="http://fjep.sourceforge.net/">fatjar</a>. It works sickeningly well, and actually respects existing messages by message id, so that if for any reason I have to break the sync process, it’ll skip past anything it has already done. I made it non-destructive because it seemed like seriously bad juju to have a sync tool purge out email…. If I get permission from work, I’ll post the jar for anyone with Java 1.6 to use.</p>
 
 <p>As an aside, it took a little bit of hackery to get fatjar running outside eclipse. The relevant section of build.xml was:</p>
+
 </div>
 
 

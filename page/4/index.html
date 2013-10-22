@@ -125,7 +125,7 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>As part of setting up the <a href="http://www.popwujclinic.org/">POP-WUJ Clinic</a> in Xela, Guatemala with an electronic medical record, I have headed down with a team of ten other volunteers to the city of <a href="http://en.wikipedia.org/wiki/Quetzaltenango">Xela</a> in western Guatemala. I’m going to document the trip and the work we’re doing down here by a series of daily blog entries chronicling our trials and tribulations setting up and installing <a href="http://freemedsoftware.org">FreeMED</a> there. I’ll post pictures as soon as I get the chance to upload them to Flickr.</p>
 
@@ -177,7 +177,7 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I was talking with someone this morning about ARMs and the sort of financial havoc they have been wreaking upon a population who was assured that they would be able to refinance before the “adjustable” portion of the mortgage kicked in. During that conversation, I realized the reason why banks were so interested in getting people into ARMs, and it didn’t really have anything to do with trying to weasel houses away from people.</p>
 
@@ -225,18 +225,17 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
 
 <ul>
-<li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS …</li>
-<li><strong>API abstraction</strong> – Don’t write this one off too quickly. A good API layer means that whenever you have to make these sweeping changes, you’re only playing with a few files of source code, as opposed to completely rewriting a good chunk of your codebase. Without the few layers of API which I had been using, I would not have been able to implement the database backed information store which I just completed.</li>
-<li><strong>Database backed file store</strong> – This was the part I had just finished up. Storing files locally and relying on filesystem-based replication from some of the new clustering filesystems may *seem* like a good idea, but it’s not. Database gives you a single authoritative source, and unless we’re looking at multi-gigabyte files, there should not be an appreciable toll. Besides, you indexed your tables properly, right … ?</li>
-<li><strong>Design for concurrency</strong> – That record locking may seem like a pain, but two people working on the same object can be catastrophic. Take the time to add a locking field if you have to.</li>
-<li><strong>Singletons</strong> – Take “singleton” processes into account, so you’re only running a single iteration of something which can only be run once.</li>
+  <li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS … </li>
+  <li><strong>API abstraction</strong> – Don’t write this one off too quickly. A good API layer means that whenever you have to make these sweeping changes, you’re only playing with a few files of source code, as opposed to completely rewriting a good chunk of your codebase. Without the few layers of API which I had been using, I would not have been able to implement the database backed information store which I just completed.</li>
+  <li><strong>Database backed file store</strong> – This was the part I had just finished up. Storing files locally and relying on filesystem-based replication from some of the new clustering filesystems may *seem* like a good idea, but it’s not. Database gives you a single authoritative source, and unless we’re looking at multi-gigabyte files, there should not be an appreciable toll. Besides, you indexed your tables properly, right … ?</li>
+  <li><strong>Design for concurrency</strong> – That record locking may seem like a pain, but two people working on the same object can be catastrophic. Take the time to add a locking field if you have to.</li>
+  <li><strong>Singletons</strong> – Take “singleton” processes into account, so you’re only running a single iteration of something which can only be run once.</li>
 </ul>
-
 
 <p>Those are the major bullet points, although I’m sure that upon review of this, I’ll think of some other design paradigms I had to play with to get this to function properly. Off to enjoy the weekend …</p>
 </div>
@@ -276,14 +275,14 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
 
 <p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
 
-<p>Original driver : <br/>
-Patch :</p>
+<p>Original driver : <br />
+Patch : </p>
 </div>
   
   
@@ -321,13 +320,14 @@ Patch :</p>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I do not like camera phones in the same way that I don’t particularly care for flash photography; you can produce good results (or at least passable results) with either, but the majority of stuff that comes out of it is just pure crap.</p>
 
 <p>I recently moved to one of Sprint’s CDMA Android offerings, the HTC Hero. I just finished the <a href="http://geekfor.me/">flashing/rooting process</a>, since I don’t particularly care for devices that try to lock me out of their own functionality. (The key to doing this with the “newer” Sprint CDMA Hero phones is apparently using an older version of the recovery image and making sure you have enough available memory to run the image flash, but that’s beside the point.) This particular device came with a 5 megapixel built-in camera, and though I know that <a href="http://forum.digitalcamerareview.com/showthread.php?p=5354">resolution != quality</a>, it does seem to produce *passable* images. Not great, but passable. I’m hoping to see an improvement when the CDMA Hero sees “official” <a href="http://phandroid.com/2010/02/16/sprint-hero-moment-getting-android-2-1-early-2q10/">Android 2.1 support</a>. This OS version fragmentation is bunk, but at least I can upgrade as soon as the pieces are available for another model. <a href="http://www.engadget.com/2009/02/18/editorial-ten-reasons-why-windows-mobile-6-5-misses-the-mark/">Suck that, closed source technology</a>.</p>
 
 <p>Am I giving up the <a href="http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&amp;fcategoryid=139&amp;modelid=17779">40D</a>? Hell emphatically *no*. But I can capture a few things I might miss fumbling for the camera bag. At least, I hope I can.</p>
+
 </div>
   
   
@@ -365,7 +365,7 @@ Patch :</p>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I have just wrapped up (no pun intended) work on an initial version of a CLI <a href="http://jasperforge.org/projects/jasperreports">JasperReports</a> wrapper, based heavily off the work of <a href="http://jasperforge.org/plugins/project/project_home.php?group_id=97">jasperCall</a>. It’s also quite similar to the work being done on <a href="http://code.google.com/p/runjasperreports/">RunJasperReports</a>, although it was specifically designed to be integrated into <a href="http://freemedsoftware.org/">FreeMED’s</a> reporting engine, as it is put together as a fatjar. It currently supports PDF, XML, XLS and HTML output, and should theoretically support parameter passing, though I haven’t tried it out yet. It has a newer version of <a href="http://www.mysql.com/products/connector/">MySQL Connector/J</a> baked in as well, so it shouldn’t require any external libraries outside a standard JRE install to function properly.</p>
 
@@ -407,7 +407,7 @@ Patch :</p>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the 1980s called <a href="http://www.imdb.com/title/tt0086856/">The Adventures of Buckaroo Banzai Across the Eighth Dimension</a>.</p>
 
@@ -416,8 +416,8 @@ Patch :</p>
 <p>It was apparently very difficult for the studio that owned it to release “Buckaroo Banzai” because of some legal issues, but it finally made it to DVD in the last few years.</p>
 
 <ul>
-<li><a href="http://www.imdb.com/title/tt0086856/">iMDB Link</a></li>
-<li><a href="http://www.netflix.com/Movie/The_Adventures_of_Buckaroo_Banzai/60021712">Netflix Link</a></li>
+  <li><a href="http://www.imdb.com/title/tt0086856/">iMDB Link</a></li>
+  <li><a href="http://www.netflix.com/Movie/The_Adventures_of_Buckaroo_Banzai/60021712">Netflix Link</a></li>
 </ul>
 
 </div>
@@ -457,7 +457,7 @@ Patch :</p>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>The simple recipe is to add this to root’s cron:</p>
 
@@ -473,7 +473,7 @@ Patch :</p>
 # pfstates
 # jeff@ourexchange.net
 my $limit = shift  || 0;
-
+ 
 my $seg = 0;
 my @s = [];
 
@@ -544,7 +544,7 @@ while (chomp( my $line = )) {
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.</p>
 
@@ -595,7 +595,7 @@ while (chomp( my $line = )) {
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I hate it. IMAP Synchronization, that is.</p>
 
@@ -612,6 +612,7 @@ while (chomp( my $line = )) {
 <p>Solution … I had to roll my own. This is *stupid* to the highest degree, but I rolled something using <a href="http://java.sun.com/products/javamail/">javamail</a> into a self-contained “fat jar” using <a href="http://fjep.sourceforge.net/">fatjar</a>. It works sickeningly well, and actually respects existing messages by message id, so that if for any reason I have to break the sync process, it’ll skip past anything it has already done. I made it non-destructive because it seemed like seriously bad juju to have a sync tool purge out email…. If I get permission from work, I’ll post the jar for anyone with Java 1.6 to use.</p>
 
 <p>As an aside, it took a little bit of hackery to get fatjar running outside eclipse. The relevant section of build.xml was:</p>
+
 </div>
   
   

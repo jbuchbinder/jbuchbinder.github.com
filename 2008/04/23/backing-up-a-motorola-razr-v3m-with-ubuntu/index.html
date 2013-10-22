@@ -122,33 +122,33 @@
   </header>
 
 
-<div class="entry-content"><h1></h1>
+<div class="entry-content"><h1 id="section"></h1>
 
 <p>I’ve had a Sprint Motorola RAZR v3m for a while, and when the time came to move to a Blackberry (for work), getting the information off of it would have been a horrendous process.</p>
 
 <p>Instead, I present a pretty simple way of doing this using the Subversion version of opensync’s sync-moto script. Note that I did this under Ubuntu 7.10 (Gutsy Gibbon):</p>
 
-<p>• Get the id by using lsusb:<br/>
-$ <strong>lsusb</strong><br/>
-Bus 005 Device 001: ID 0000:0000<br/>
-Bus 003 Device 001: ID 0000:0000<br/>
-Bus 002 Device 001: ID 0000:0000<br/>
-Bus 004 Device 003: ID 0483:2016 SGS Thomson Microelectronics Fingerprint Reader<br/>
-Bus 004 Device 002: ID 0a5c:2110 Broadcom Corp.<br/>
-Bus 004 Device 001: ID 0000:0000<br/>
-Bus 001 Device 003: ID 22b8:2a64 Motorola PCS<br/>
-Bus 001 Device 002: ID 046d:0a02 Logitech, Inc.<br/>
-Bus 001 Device 001: ID 0000:0000<br/>
-• Add the following definition under /etc/modprobe.d/somethingorother :<br/>
-<strong>alias cdc_acm usbserial<br/>
-options vendor=0x22b8 product=0x2a64</strong><br/>
-• Plug in the phone and issue a:<br/>
-<strong> sudo /sbin/modprobe cdc_acm vendor=0x22b8 product=0x2a64</strong><br/>
+<p>• Get the id by using lsusb:<br />
+$ <strong>lsusb</strong><br />
+Bus 005 Device 001: ID 0000:0000<br />
+Bus 003 Device 001: ID 0000:0000<br />
+Bus 002 Device 001: ID 0000:0000<br />
+Bus 004 Device 003: ID 0483:2016 SGS Thomson Microelectronics Fingerprint Reader<br />
+Bus 004 Device 002: ID 0a5c:2110 Broadcom Corp.<br />
+Bus 004 Device 001: ID 0000:0000<br />
+Bus 001 Device 003: ID 22b8:2a64 Motorola PCS<br />
+Bus 001 Device 002: ID 046d:0a02 Logitech, Inc.<br />
+Bus 001 Device 001: ID 0000:0000<br />
+• Add the following definition under /etc/modprobe.d/somethingorother :<br />
+<strong>alias cdc_acm usbserial<br />
+options vendor=0x22b8 product=0x2a64</strong><br />
+• Plug in the phone and issue a:<br />
+** sudo /sbin/modprobe cdc_acm vendor=0x22b8 product=0x2a64**<br />
 • Download the Subversion copy of the opensync moto-sync plugin from:</p>
 
-<p><a href="https://svn.opensync.org/plugins/moto-sync/">https://svn.opensync.org/plugins/moto-sync/</a></p>
+<p>https://svn.opensync.org/plugins/moto-sync/</p>
 
-<p>• Issue the following sync command:<br/>
+<p>• Issue the following sync command:<br />
 <strong>./mototool -d /dev/ttyUSB0 –backup –file mybackupfile.csv</strong></p>
 </div>
 

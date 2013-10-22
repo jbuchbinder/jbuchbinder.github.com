@@ -125,7 +125,7 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I just had a fascinating phone conversation with one of my more conservative friends. He proceeded to tell me how <a href="http://www.cnn.com/2007/POLITICS/01/22/obama.madrassa/">Obama is a muslim</a>, <a href="http://query.nytimes.com/gst/fullpage.html?res=9F0CEEDC123CF936A25753C1A965958260">Clinton let terrorists into the country</a>, <a href="http://www.theleftcoaster.com/archives/010087.php">Clinton abandoned our valiant troops in Somalia</a> (I think they call this “cut and run” now), and how <a href="http://www.thebostonchannel.com/helenthomas/8512055/detail.html">McCain is a true compromiser</a> with <a href="http://www.pej.org/html/modules.php?op=modload&amp;name=News&amp;file=article&amp;sid=5606&amp;mode=thread&amp;order=0&amp;thold=0">integrity in his beliefs</a>. The best part was how he told me that he formulated these opinions himself, since five minutes and <a href="http://thinkprogress.org/2006/10/23/bush-says-he-uses-the-google/">The Google</a> will tell you otherwise. You should note that if you didn’t know that Clinton/Somalia piece was about the Somalia conflict, it would almost read like a certain <a href="http://www.bushorchimp.com/">chimpy president</a> and his Middle Eastern policy.</p>
 
@@ -171,7 +171,7 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I finally got around to getting a 12VDC power supply for the car (15 USD, cheap!), so my <a href="http://www.linksys.com/servlet/Satellite?c=L_Product_C2&amp;childpagename=US/Layout&amp;pagename=Linksys/Common/VisitorWrapper&amp;cid=1160093298732">WRT54G3G-ST</a> is mobile, and I got to enjoy trying out <a href="http://www.skype.com/">Skype</a> while doing 65mph on the Mass Pike.</p>
 
@@ -213,7 +213,7 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>Another day, another project …</p>
 
@@ -261,7 +261,8 @@
 
   <div class="entry-content"><p>If you’ve ever been stuck booting an old machine with a bad CD drive, or worse yet, <em>no</em> CD drive and an old enough BIOS not to properly boot a USB drive, you’ve experienced the wallbanger I have today. (and no, PXE boot wasn’t an option)</p>
 
-<p>Fortunately, it appears that there is a nice boot floppy which allows booting via network or USB, which is available at &hellip; Direct link to the zipped floppy disk image is at <a href="http://etherboot.org/wiki/index.php">etherboot.org</a>.</p>
+<p>Fortunately, it appears that there is a nice boot floppy which allows booting via network or USB, which is available at … Direct link to the zipped floppy disk image is at <a href="http://etherboot.org/wiki/index.php">etherboot.org</a>.</p>
+
 </div>
   
   
@@ -299,33 +300,33 @@
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I’ve had a Sprint Motorola RAZR v3m for a while, and when the time came to move to a Blackberry (for work), getting the information off of it would have been a horrendous process.</p>
 
 <p>Instead, I present a pretty simple way of doing this using the Subversion version of opensync’s sync-moto script. Note that I did this under Ubuntu 7.10 (Gutsy Gibbon):</p>
 
-<p>• Get the id by using lsusb:<br/>
-$ <strong>lsusb</strong><br/>
-Bus 005 Device 001: ID 0000:0000<br/>
-Bus 003 Device 001: ID 0000:0000<br/>
-Bus 002 Device 001: ID 0000:0000<br/>
-Bus 004 Device 003: ID 0483:2016 SGS Thomson Microelectronics Fingerprint Reader<br/>
-Bus 004 Device 002: ID 0a5c:2110 Broadcom Corp.<br/>
-Bus 004 Device 001: ID 0000:0000<br/>
-Bus 001 Device 003: ID 22b8:2a64 Motorola PCS<br/>
-Bus 001 Device 002: ID 046d:0a02 Logitech, Inc.<br/>
-Bus 001 Device 001: ID 0000:0000<br/>
-• Add the following definition under /etc/modprobe.d/somethingorother :<br/>
-<strong>alias cdc_acm usbserial<br/>
-options vendor=0x22b8 product=0x2a64</strong><br/>
-• Plug in the phone and issue a:<br/>
-<strong> sudo /sbin/modprobe cdc_acm vendor=0x22b8 product=0x2a64</strong><br/>
+<p>• Get the id by using lsusb:<br />
+$ <strong>lsusb</strong><br />
+Bus 005 Device 001: ID 0000:0000<br />
+Bus 003 Device 001: ID 0000:0000<br />
+Bus 002 Device 001: ID 0000:0000<br />
+Bus 004 Device 003: ID 0483:2016 SGS Thomson Microelectronics Fingerprint Reader<br />
+Bus 004 Device 002: ID 0a5c:2110 Broadcom Corp.<br />
+Bus 004 Device 001: ID 0000:0000<br />
+Bus 001 Device 003: ID 22b8:2a64 Motorola PCS<br />
+Bus 001 Device 002: ID 046d:0a02 Logitech, Inc.<br />
+Bus 001 Device 001: ID 0000:0000<br />
+• Add the following definition under /etc/modprobe.d/somethingorother :<br />
+<strong>alias cdc_acm usbserial<br />
+options vendor=0x22b8 product=0x2a64</strong><br />
+• Plug in the phone and issue a:<br />
+** sudo /sbin/modprobe cdc_acm vendor=0x22b8 product=0x2a64**<br />
 • Download the Subversion copy of the opensync moto-sync plugin from:</p>
 
-<p><a href="https://svn.opensync.org/plugins/moto-sync/">https://svn.opensync.org/plugins/moto-sync/</a></p>
+<p>https://svn.opensync.org/plugins/moto-sync/</p>
 
-<p>• Issue the following sync command:<br/>
+<p>• Issue the following sync command:<br />
 <strong>./mototool -d /dev/ttyUSB0 –backup –file mybackupfile.csv</strong></p>
 </div>
   
@@ -364,7 +365,7 @@ options vendor=0x22b8 product=0x2a64</strong><br/>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>I had a bit of a revelation the other day. Natasha and I had gone to pick up food to bring to a small dinner party, although it wasn’t a very formal occasion. She, on a lark, decided to grab one of those ridiculous celebrity tabloid-type magazines to read in the car on the way over.</p>
 
@@ -412,7 +413,7 @@ options vendor=0x22b8 product=0x2a64</strong><br/>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>If you’ve got an old junky XBox around, and would like to put something, well, *useful* on it, like XBMC, then I’ve got a great link for you which allows soft modding without having a copy of any of the exploitable games.</p>
 
@@ -461,82 +462,75 @@ options vendor=0x22b8 product=0x2a64</strong><br/>
 <p>1) Pull the start.jar, bin/jetty.sh script (which will be moved to the base of your distribution), lib and etc directories from your Jetty distribution, and put them in $DIST (your distribution directory)</p>
 
 <p>2) Change your (appname)-shell script to be like the following:
-<strong>JettyTest-shell</strong></p>
+<strong>JettyTest-shell</strong>
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</span><span class="line">GWT_HOME=/usr/lib/gwt
+</span><span class="line">ENTRY_POINT=net.cognitiveconsulting.gwt.JettyTest
+</span><span class="line">HOST_PAGE=JettyTest.html
+</span><span class="line">APPDIR=`dirname $0`;
+</span><span class="line">CPGWT=$APPDIR/src
+</span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-user.jar
+</span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-dev-linux.jar
+</span><span class="line">java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 "$@" $ENTRY_POINT/$HOST_PAGE</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
-</span><span class='line'>GWT_HOME=/usr/lib/gwt
-</span><span class='line'>ENTRY_POINT=net.cognitiveconsulting.gwt.JettyTest
-</span><span class='line'>HOST_PAGE=JettyTest.html
-</span><span class='line'>APPDIR=`dirname $0`;
-</span><span class='line'>CPGWT=$APPDIR/src
-</span><span class='line'>CPGWT=$CPGWT:$GWT_HOME/gwt-user.jar
-</span><span class='line'>CPGWT=$CPGWT:$GWT_HOME/gwt-dev-linux.jar
-</span><span class='line'>java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 "$@" $ENTRY_POINT/$HOST_PAGE</span></code></pre></td></tr></table></div></figure>
-
-
-<p>3) Change your (appname)-compile script to look like:<br/>
-<strong>JettyTest-compile</strong></p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/sh
-</span><span class='line'>APPDIR=`dirname $0`;
-</span><span class='line'>echo "Compiling GWT portion of application ... "
-</span><span class='line'>java  -cp "$APPDIR/src:$APPDIR/bin:/usr/lib/gwt/gwt-user.jar:/usr/lib/gwt/gwt-dev-linux.jar" com.google.gwt.dev.GWTCompiler -out "$APPDIR/webapps" "$@" net.cognitiveconsulting.gwt.JettyTest;
-</span><span class='line'>echo "Compiling native Java part of application ... "
-</span><span class='line'>ant -f net.cognitiveconsulting.gwt.JettyTest.ant.xml
-</span><span class='line'>echo "Moving pieces into Jetty library path ... "
-</span><span class='line'>( cd bin ; jar cf ../lib/net.cognitiveconsulting.gwt.JettyTest.jar * )</span></code></pre></td></tr></table></div></figure>
-
+<p>3) Change your (appname)-compile script to look like:<br />
+<strong>JettyTest-compile</strong><br />
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</span><span class="line">APPDIR=`dirname $0`;
+</span><span class="line">echo "Compiling GWT portion of application ... "
+</span><span class="line">java  -cp "$APPDIR/src:$APPDIR/bin:/usr/lib/gwt/gwt-user.jar:/usr/lib/gwt/gwt-dev-linux.jar" com.google.gwt.dev.GWTCompiler -out "$APPDIR/webapps" "$@" net.cognitiveconsulting.gwt.JettyTest;
+</span><span class="line">echo "Compiling native Java part of application ... "
+</span><span class="line">ant -f net.cognitiveconsulting.gwt.JettyTest.ant.xml
+</span><span class="line">echo "Moving pieces into Jetty library path ... "
+</span><span class="line">( cd bin ; jar cf ../lib/net.cognitiveconsulting.gwt.JettyTest.jar * )</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
 
 <p>Remember, after this, your output directory is no longer www, it’s now “webapps”.</p>
 
-<p>4) Create the directory $DIST/webapps/(appname)/WEB-INF, and create a web.xml file like this, with the definitions for your remote services:<br/>
+<p>4) Create the directory $DIST/webapps/(appname)/WEB-INF, and create a web.xml file like this, with the definitions for your remote services:<br />
 <strong>webapps/net.cognitiveconsulting.gwt.JettyTest/WEB-INF/web.xml</strong></p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>[servlet]
-</span><span class='line'>    [servlet-name]Test[/servlet-name]
-</span><span class='line'>    [servlet-class]net.cognitiveconsulting.gwt.server.TestImpl[/servlet-class]
-</span><span class='line'>  [/servlet]
-</span><span class='line'>
-</span><span class='line'>  [servlet-mapping]
-</span><span class='line'>    [servlet-name]Test[/servlet-name]
-</span><span class='line'>    [url-pattern]/rpc/net.cognitiveconsulting.gwt.client.Test[/url-pattern]
-</span><span class='line'>  [/servlet-mapping]</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">[servlet]
+</span><span class="line">    [servlet-name]Test[/servlet-name]
+</span><span class="line">    [servlet-class]net.cognitiveconsulting.gwt.server.TestImpl[/servlet-class]
+</span><span class="line">  [/servlet]
+</span><span class="line">
+</span><span class="line">  [servlet-mapping]
+</span><span class="line">    [servlet-name]Test[/servlet-name]
+</span><span class="line">    [url-pattern]/rpc/net.cognitiveconsulting.gwt.client.Test[/url-pattern]
+</span><span class="line">  [/servlet-mapping]</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p><em>(Please note that because wordpress ate my XML, I used a different kind of brackets, please substitute as required.)</em></p>
 
-<p>5) Create the ant build file:<br/>
+<p>5) Create the ant build file:<br />
 <code>/usr/lib/gwt/projectCreator -ant net.cognitiveconsulting.gwt.JettyTest</code></p>
 
-<p>6) Make sure you have created working servlets under the internal tomcat implementation before you proceed, making sure that the servlet information is in the .gwt.xml file in your source directory like this:<br/>
+<p>6) Make sure you have created working servlets under the internal tomcat implementation before you proceed, making sure that the servlet information is in the .gwt.xml file in your source directory like this:<br />
 &#8220;</p>
 
 <p>7) Make sure that a copy of $GWTDIR/gwt-servlet.jar and any other libraries you are using are installed in $DIST/lib — forget this and nothing is going to work.</p>
@@ -548,6 +542,7 @@ options vendor=0x22b8 product=0x2a64</strong><br/>
 <p>Hope this has been informative and helpful.</p>
 
 <p><strong>UPDATE</strong>: <em>Jan, one of the webtide guys, was nice enough to send me an ant build file which does much the same type of thing I was attempting to do here. It is attached <a href="http://jbuchbinder.com/wp-content/uploads/2008/03/build.xml">here</a>, for anyone else who would like a copy.</em></p>
+
 </div>
   
   
@@ -585,7 +580,7 @@ options vendor=0x22b8 product=0x2a64</strong><br/>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>There seems to be an almost delectable thread of irony heading through my life as I head into Thanksgiving Day. Strangely enough, a few days ago I could have spouted for what would have seemed hours at all of the wonderful things to be thankful for, but somehow enough things have happened to come to a head that the same time that it’s a bit more difficult to extract the wheat from the chaff.</p>
 
@@ -637,11 +632,12 @@ options vendor=0x22b8 product=0x2a64</strong><br/>
   </header>
 
 
-  <div class="entry-content"><h1></h1>
+  <div class="entry-content"><h1 id="section"></h1>
 
 <p>Thanks to my brother, who is much better with <a href="http://www.goof.com/pcg/marc/gimp.html">gimp-perl</a> than I am, there’s a vastly improved version of the original <strong>RenderFilmNoir.pl</strong> script, available <a href="http://jbuchbinder.com/wp-content/uploads/2007/08/renderfilmnoirpl.gz">here</a>.</p>
 
 <p><em>If you get a chance (shameless plug), please patronize his <a href="http://www.flickr.com/photos/grendelkhan/">Flickr page</a>, as we does work very hard at being a great photographer …</em></p>
+
 </div>
   
   

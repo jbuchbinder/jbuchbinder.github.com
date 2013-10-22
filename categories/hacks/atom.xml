@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-17T14:29:25-04:00</updated>
+  <updated>2013-10-22T16:20:42-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -18,7 +18,7 @@
     <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
     <updated>2012-03-22T00:00:00-04:00</updated>
     <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
-    <content type="html"><![CDATA[<h1></h1>
+    <content type="html"><![CDATA[<h1 id="section"></h1>
 
 <p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
 
@@ -55,14 +55,14 @@ done
     <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
     <updated>2010-03-25T00:00:00-04:00</updated>
     <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
-    <content type="html"><![CDATA[<h1></h1>
+    <content type="html"><![CDATA[<h1 id="section"></h1>
 
 <p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
 
 <p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
 
-<p>Original driver : <br/>
-Patch :</p>
+<p>Original driver : <br />
+Patch : </p>
 ]]></content>
   </entry>
   
@@ -71,7 +71,7 @@ Patch :</p>
     <link href="http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring/"/>
     <updated>2010-01-29T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring</id>
-    <content type="html"><![CDATA[<h1></h1>
+    <content type="html"><![CDATA[<h1 id="section"></h1>
 
 <p>The simple recipe is to add this to root’s cron:</p>
 
@@ -87,7 +87,7 @@ Patch :</p>
 # pfstates
 # jeff@ourexchange.net
 my $limit = shift  || 0;
-
+ 
 my $seg = 0;
 my @s = [];
 
@@ -129,7 +129,7 @@ while (chomp( my $line = )) {
     <link href="http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/"/>
     <updated>2010-01-22T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server</id>
-    <content type="html"><![CDATA[<h1></h1>
+    <content type="html"><![CDATA[<h1 id="section"></h1>
 
 <p>I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.</p>
 
@@ -151,7 +151,7 @@ while (chomp( my $line = )) {
     <link href="http://jbuchbinder.com/2010/01/17/imap-synchronization/"/>
     <updated>2010-01-17T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2010/01/17/imap-synchronization</id>
-    <content type="html"><![CDATA[<h1></h1>
+    <content type="html"><![CDATA[<h1 id="section"></h1>
 
 <p>I hate it. IMAP Synchronization, that is.</p>
 
@@ -168,6 +168,7 @@ while (chomp( my $line = )) {
 <p>Solution … I had to roll my own. This is *stupid* to the highest degree, but I rolled something using <a href="http://java.sun.com/products/javamail/">javamail</a> into a self-contained “fat jar” using <a href="http://fjep.sourceforge.net/">fatjar</a>. It works sickeningly well, and actually respects existing messages by message id, so that if for any reason I have to break the sync process, it’ll skip past anything it has already done. I made it non-destructive because it seemed like seriously bad juju to have a sync tool purge out email…. If I get permission from work, I’ll post the jar for anyone with Java 1.6 to use.</p>
 
 <p>As an aside, it took a little bit of hackery to get fatjar running outside eclipse. The relevant section of build.xml was:</p>
+
 ]]></content>
   </entry>
   

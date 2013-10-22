@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-17T14:29:25-04:00</updated>
+  <updated>2013-10-22T16:20:42-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -26,30 +26,30 @@ prohibitively expensive). The best defense is to be prepared, not only for
 the possibility that you may lose data, but also to safeguard against that
 possibility through preventitive measures.</p>
 
-<h2>Preparation</h2>
+<h2 id="preparation">Preparation</h2>
 
 <p>There are a number of things you can do to try to protect against data loss,
 both before and after shooting has taken place. Here are a few of them:</p>
 
-<p><strong>Don&rsquo;t use dodgy or off-brand memory cards.</strong> This may seem pretty obvious
+<p><strong>Don’t use dodgy or off-brand memory cards.</strong> This may seem pretty obvious
 to those who have been down this road, but really crappy cards tend to have
 dodgy QA processes involved in their manufacture, so although you may get a
-good card, you&rsquo;re just as likely to get a dud &mdash; which could end up with your
-data. I&rsquo;ve found that &ldquo;Amazon Basics&rdquo; and &ldquo;KomputerBay&rdquo; cards have failed me
-pretty regularly. Even &ldquo;Transcend&rdquo; cards have been pretty dodgy for me, on
-occasion. I tend to stick with &ldquo;SanDisk&rdquo; branded cards, when I use SD media,
+good card, you’re just as likely to get a dud – which could end up with your
+data. I’ve found that “Amazon Basics” and “KomputerBay” cards have failed me
+pretty regularly. Even “Transcend” cards have been pretty dodgy for me, on
+occasion. I tend to stick with “SanDisk” branded cards, when I use SD media,
 and there are a few decent manufacturers of CF media (Lexar, SanDisk, etc),
 which tend to produce quality cards, in my experience.</p>
 
-<p><strong>Storage media doesn&rsquo;t last forever.</strong> Every piece of flash media has a
+<p><strong>Storage media doesn’t last forever.</strong> Every piece of flash media has a
 certain number of R/W cycles before it becomes unstable and/or unusable.
 After a period of time, you might want to start regularly replacing your
-media cards to avoid the possibility that errors will begin to occur. It&rsquo;s
+media cards to avoid the possibility that errors will begin to occur. It’s
 also a good idea to low-level format the cards in between uses, which
 supposedly increases their lifespan.</p>
 
 <p><strong>A single physical copy of your product is a bad idea.</strong> If you just move
-files off to your laptop harddrive, you&rsquo;re practically expecting something
+files off to your laptop harddrive, you’re practically expecting something
 to destroy your media. A single SSD or spinning platter in a laptop is a
 prime target for an accident to wipe out your data. Ideally, a RAID
 (<em>R</em>edundant <em>A</em>rray of <em>I</em>nexpensive <em>D</em>isks) array would provide a
@@ -57,23 +57,22 @@ good tradeoff between inexpensive media and redundant storage. I built a
 pretty inexpensive one with the following components:</p>
 
 <ul>
-<li><a href="http://amzn.to/19EmtYA">Sans Digital MR2UT+ MobileRAID</a>: A two-disk
+  <li><a href="http://amzn.to/19EmtYA">Sans Digital MR2UT+ MobileRAID</a>: A two-disk
 enclosure, which, when set to RAID-1, gives you a set of mirrored
 hard disks, accessible by USB 3.0 or an eSATA interface.</li>
-<li><a href="http://amzn.to/19IlAdp">Seagate Barracuda 2 TB HDD</a>: Two of these
+  <li><a href="http://amzn.to/19IlAdp">Seagate Barracuda 2 TB HDD</a>: Two of these
 disks will provide you with a total of 2 TB of redundant storage.</li>
 </ul>
 
-
 <p><strong>A single physical location is a bad idea.</strong> Consider off-site backup. If
-you don&rsquo;t have the money to store your data in <a href="http://aws.amazon.com/s3/">S3</a>
+you don’t have the money to store your data in <a href="http://aws.amazon.com/s3/">S3</a>
 or a similar service, consider using something like
 <a href="http://labs.bittorrent.com/experiments/sync.html">Bittorrent Sync</a>, with a
-friend or two providing remote backup locations. If this isn&rsquo;t feasible,
+friend or two providing remote backup locations. If this isn’t feasible,
 periodically backing up to <a href="http://en.wikipedia.org/wiki/Digital_Linear_Tape">DLT</a>
 or another backup tape, then storing that offsite, may be useful. If you
-are questioning &ldquo;why do I need off-site backup&rdquo;, just remember that a single
-fire or natural disaster can destroy all of your hard work&hellip;</p>
+are questioning “why do I need off-site backup”, just remember that a single
+fire or natural disaster can destroy all of your hard work…</p>
 
 <p><strong>Camera-based writing solutions.</strong> Certain cameras (the Canon EOS 5D
 Mark III, for example) have multiple media card slots, and have the ability
@@ -82,61 +81,61 @@ tragic circumstance (to which I have fallen victim) of a completed shoot
 with the inability to read any of the captured data later on. To understand
 this, <a href="http://protogtech.com/cameras/canon-5d-mark-iii-record-separately-vs-record-to-multiple-performance-comparison/">read more here</a>.
 It should be noted that there are some performance limitations to this,
-but if you&rsquo;re not shooting RAW video and your camera body can handle this,
+but if you’re not shooting RAW video and your camera body can handle this,
 you might want to seriously consider it.</p>
 
-<h2>Recovery</h2>
+<h2 id="recovery">Recovery</h2>
 
 <p>There is a pantheon of free and open-source software suites which provide
 recovery of lost files, deleted files, destroyed partitions, etc. The true
 nightmare scenario would involve a piece of damaged media, from which the
-data cannot be extracted &mdash; but never assume this unless you have exhausted
+data cannot be extracted – but never assume this unless you have exhausted
 all other avenues of recovery.</p>
 
 <ul>
-<li><a href="http://www.cgsecurity.org/wiki/PhotoRec">PhotoRec/Testdisk</a> (Open source,
+  <li><a href="http://www.cgsecurity.org/wiki/PhotoRec">PhotoRec/Testdisk</a> (Open source,
 Linux/Windows/Mac/DOS/etc). This is one of my favorites, although it
 may potentially require some fairly in-depth technical expertise to
 fully exploit its potential.</li>
-<li><a href="http://www.piriform.com/recuva">Recuva</a> (Freeware, Windows). Recovers
+  <li><a href="http://www.piriform.com/recuva">Recuva</a> (Freeware, Windows). Recovers
 deleted files.</li>
-<li><a href="http://www.hirensbootcd.org">Hiren&rsquo;s Boot CD</a> (Freeware, Boot Disc).
-Hiren&rsquo;s is a classic recovery and utility boot disk, which can be
+  <li><a href="http://www.hirensbootcd.org">Hiren’s Boot CD</a> (Freeware, Boot Disc).
+Hiren’s is a classic recovery and utility boot disk, which can be
 booted on any Intel-based computer. The download is free, and it has
-a very comprehensive suite of recovery tools. If you don&rsquo;t have a copy
-of this disc hanging around your studio or house &mdash; why not?</li>
-<li><a href="http://www.wondershare.com/disk-utility/cr2-photo-recovery.html">Wondershare Photo Recovery</a> (Freeware, Windows/Mac).
+a very comprehensive suite of recovery tools. If you don’t have a copy
+of this disc hanging around your studio or house – why not?</li>
+  <li><a href="http://www.wondershare.com/disk-utility/cr2-photo-recovery.html">Wondershare Photo Recovery</a> (Freeware, Windows/Mac).
 A semi-commercial digital media file recovery suite.</li>
-<li><a href="http://www.icare-recovery.com/free/camera-raw-photo-recovery-free.html">iCare Recovery Free</a> (Trialware, Windows).
+  <li><a href="http://www.icare-recovery.com/free/camera-raw-photo-recovery-free.html">iCare Recovery Free</a> (Trialware, Windows).
 This has a 2GB maximum data file recovery limit with the trial, otherwise
 a license has to be purchased.</li>
-<li><a href="https://homes.cs.washington.edu/~oskin/saveimg.html">saveimg</a> (Opensource, Linux/Mac).
+  <li><a href="https://homes.cs.washington.edu/~oskin/saveimg.html">saveimg</a> (Opensource, Linux/Mac).
 Extracts JPEG images from raw disk devices. Requires some expert
 knowledge to use properly.</li>
-<li><a href="http://foremost.sourceforge.net/">Foremost</a> (Opensource, Linux/Mac).
+  <li><a href="http://foremost.sourceforge.net/">Foremost</a> (Opensource, Linux/Mac).
 Digital forensic tool to recover files based on headers, footers, and
 internal data structures.</li>
-<li><a href="http://www.lc-tech.com/pc/sandisk-rescuepro-and-rescuepro-deluxe/">SanDisk RescuePRO</a> (Trialware, Windows).
-SanDisk&rsquo;s recommended recovery software.</li>
-<li><a href="http://www.gnu.org/software/ddrescue/ddrescue.html">ddrescue</a> (Opensource, Linux/Mac).
+  <li><a href="http://www.lc-tech.com/pc/sandisk-rescuepro-and-rescuepro-deluxe/">SanDisk RescuePRO</a> (Trialware, Windows).
+SanDisk’s recommended recovery software.</li>
+  <li><a href="http://www.gnu.org/software/ddrescue/ddrescue.html">ddrescue</a> (Opensource, Linux/Mac).
 A data recovery tool. It copies data from one file or block device
 (hard disc, cdrom, etc) to another, trying hard to rescue data in case
 of read errors.</li>
-<li><a href="http://www.stellarphotorecoverysoftware.com/camera-recovery/">Stellar Photo Recovery</a> (Trialware, Windows/Mac).
+  <li><a href="http://www.stellarphotorecoverysoftware.com/camera-recovery/">Stellar Photo Recovery</a> (Trialware, Windows/Mac).
 Another digital photo recovery suite. The trialware shows what can be
 recovered, with previews.</li>
-<li><a href="http://www.pcinspector.de/default.htm?language=1">PC Inspector</a> (Freeware, Windows).</li>
-<li><a href="http://www.prosofteng.com/products/data_rescue.php">DataRescue</a> (Mac).</li>
-<li><a href="http://subrosasoft.com/OSXSoftware/index.php?main_page=product_info&amp;cPath=1&amp;products_id=3">Camera Salvage</a> (Freeware, Windows).</li>
-<li><a href="http://datarescue.com/">PhotoRescue</a> (Windows/Mac).</li>
-<li><a href="http://www.cfcardrecovery.com/">CF Card Recovery</a> (Trialware, Windows/Mac).</li>
+  <li><a href="http://www.pcinspector.de/default.htm?language=1">PC Inspector</a> (Freeware, Windows).</li>
+  <li><a href="http://www.prosofteng.com/products/data_rescue.php">DataRescue</a> (Mac).</li>
+  <li><a href="http://subrosasoft.com/OSXSoftware/index.php?main_page=product_info&amp;cPath=1&amp;products_id=3">Camera Salvage</a> (Freeware, Windows).</li>
+  <li><a href="http://datarescue.com/">PhotoRescue</a> (Windows/Mac).</li>
+  <li><a href="http://www.cfcardrecovery.com/">CF Card Recovery</a> (Trialware, Windows/Mac).</li>
 </ul>
-
 
 <p>Hopefully, this will either make it easier to avoid potential data loss, or
 at least help to minimize the impact, if and when you end up losing data.</p>
 
 <p>As always, good luck!</p>
+
 ]]></content>
   </entry>
   
@@ -148,66 +147,66 @@ at least help to minimize the impact, if and when you end up losing data.</p>
     <content type="html"><![CDATA[<p>Aspect ratios, simply put (for those who are unaware), are the ratios between
 the width and height of a single frame of video. Television has had a 4:3
 ratio (4 units of width to 3 units of height), until the popularization of
-&ldquo;HD&rdquo; television, using a &ldquo;widescreen&rdquo; ratio of 16:9. I&rsquo;m not going to go
+“HD” television, using a “widescreen” ratio of 16:9. I’m not going to go
 through the entire history of aspect ratios in cinema, as there is a
 <a href="http://vimeo.com/68830569">great retrospective available on vimeo</a>.</p>
 
-<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/68830569 "></iframe></div></p>
+<p>{% vimeo 68830569 %}</p>
 
 <p>Most DSLR cinematography is done, by default, with a 16:9 ratio, as the
 maximum capture size for their video is generally 1920x1080, abbreviated as
 1080p (to additionally indicate progressive, rather than interlaced, scan).
-It is relatively easy to enforce a &ldquo;wider&rdquo; aspect ratio by dropping lines at
+It is relatively easy to enforce a “wider” aspect ratio by dropping lines at
 the top and bottom of the frame, which most watch-at-home film viewers will
-identify as &ldquo;black bars&rdquo; at the top and bottom of the frame. This does,
-however, introduce an interesting issue &mdash; that of composing inside that
+identify as “black bars” at the top and bottom of the frame. This does,
+however, introduce an interesting issue – that of composing inside that
 frame. That ends up looking something like this:</p>
 
-<p><img src="/images/black-bars-aspect-ratio-16-9-21-9-4-3-cinemawide.png" title="Black bars for different aspect ratios" alt="Black bars for different aspect ratios" /></p>
+<p><img src="/images/black-bars-aspect-ratio-16-9-21-9-4-3-cinemawide.png" alt="Black bars for different aspect ratios" title="Black bars for different aspect ratios" /></p>
 
 <p>Standard compositional rules generally make use of the two frame diagonals
 (top left to bottom right, and bottom left to top right) and both horizontal
-and vertical thirds. Most compositional choices for &ldquo;balanced&rdquo; frames have
+and vertical thirds. Most compositional choices for “balanced” frames have
 tended to rely on these invisible divisions to create a pleasing image, even
 though the rules are really <em>guidelines</em>, and are not absolute. If you, as
-a cinematographer, decide that you&rsquo;re going to use an alternate aspect ratio,
+a cinematographer, decide that you’re going to use an alternate aspect ratio,
 you cannot properly compose by using the thirds or diagonals indicated by any
 common guide or viewfinder in 16:9 ratio, as they will result in a vastly
-skewed product, compared to the original on-camera image. I&rsquo;ve seen a number
+skewed product, compared to the original on-camera image. I’ve seen a number
 of forums on DSLR cinematography which had suggested everything from
 using a black marker to denote the frame to using black tape to cover the
-segments outside of the final crop. A more &ldquo;modern&rdquo; solution for Canon
+segments outside of the final crop. A more “modern” solution for Canon
 DSLR owners is using <a href="http://magiclantern.wikia.com/wiki/Cropmarks">Magic Lantern cropmarks</a>.
-If you&rsquo;re shooting with another DSLR brand, you may be at the mercy of the
+If you’re shooting with another DSLR brand, you may be at the mercy of the
 firmware, or any of the aforementioned hacks.</p>
 
-<p><em>NOTE: I&rsquo;d like to mention, at this point in this article, that there are
+<p><em>NOTE: I’d like to mention, at this point in this article, that there are
 other compositional rules, including <a href="http://photoinf.com/Golden_Mean/Eugene_Ilchenko/GoldenSection.html">golden ratio/mean/spiral/rectangle</a>,
-so please don&rsquo;t take the rule of thirds and diagonals to be the only important
-and pleasing ways to frame an image&hellip;.</em></p>
+so please don’t take the rule of thirds and diagonals to be the only important
+and pleasing ways to frame an image….</em></p>
 
 <p>Besides attempting to find a way to follow common compositional rules, there
 is another side to aspect ratio: selecting the appropriate one for the story
-you are attempting to tell. Apart from the 16:9 ratio being the &ldquo;standard
-format&rdquo; for HDTV broadcasts and web-based series, it is much taller (i.e.,
+you are attempting to tell. Apart from the 16:9 ratio being the “standard
+format” for HDTV broadcasts and web-based series, it is much taller (i.e.,
 it offers more headroom for shots) than Cinemascope (2.35:1) or some of the
 other aspect ratios. Depending on the types of shots which you are using to
 compose your film, it may be advantageous to have a wider, yet thinner,
-view of the world which comes with &ldquo;shorter&rdquo; aspect ratios. Again there is
-no &ldquo;one size fits all&rdquo; for aspect ratios, and it should be a conscious
+view of the world which comes with “shorter” aspect ratios. Again there is
+no “one size fits all” for aspect ratios, and it should be a conscious
 decision for the material which you are filming.</p>
 
 <p>An added advantage to using a shorter aspect ratio is that, due to the
 camera bodies recording the entire frame, regardless of target aspect
-ratio, additional editing and recomposition &ldquo;wiggle room&rdquo; is available in
-the editing and post-production process. If something isn&rsquo;t framed in the
+ratio, additional editing and recomposition “wiggle room” is available in
+the editing and post-production process. If something isn’t framed in the
 exact way it should be, this can be corrected later by adjusting the vertical
 positioning of the frame within the crop. Most (if not all) NLE software
 has vertical positioning, including
 <a href="http://help.adobe.com/en_US/premierepro/cs/using/WSC7A162B6-6EF1-49e1-8622-8127366710BB.html">Adobe Premiere</a>,
 <a href="http://vegasaur.com/pan-crop-assistant">Sony Vegas</a>,
 and <a href="http://www.peachpit.com/articles/article.aspx?p=1677950&amp;seqNum=8">Final Cut Pro</a>,
-so you shouldn&rsquo;t have any issues doing this. I&rsquo;m aware that the ideal
+so you shouldn’t have any issues doing this. I’m aware that the ideal
 cinematographer does everything in-camera (as I have vociferously
 advocated in past), and does not rely on post-production to fix mistakes,
 this does allow for that possibility.</p>
@@ -218,16 +217,17 @@ much in the same way we associate film grain with high-end Hollywood
 pictures, even when, in many cases, that film grain was added back to
 the digital footage in post-production.</p>
 
-<p>The quick takeaway is that you shouldn&rsquo;t embark on a project without having
+<p>The quick takeaway is that you shouldn’t embark on a project without having
 made a conscious decision regarding the aspect ratio which you are using for
 that project, considered the ramifications and technical concerns associated
 with that decision (including making sure that you can properly frame and
 compose shots in that aspect ratio), and storyboarded and/or prepared your
 material considering your chosen aspect ratio. It is yet another variable
 which can be tweaked to help make an already good project that much better,
-and like all power, it comes with responsibility. So, choose &mdash;
+and like all power, it comes with responsibility. So, choose –
 <a href="http://www.youtube.com/watch?v=oF2UrYSDb3k">but choose wisely</a>, and as
 always, good luck!</p>
+
 ]]></content>
   </entry>
   
@@ -237,9 +237,9 @@ always, good luck!</p>
     <updated>2013-09-19T16:58:00-04:00</updated>
     <id>http://jbuchbinder.com/2013/09/19/on-documentary-filming</id>
     <content type="html"><![CDATA[<p>I recently had the pleasure of shooting for a documentary down in
-Birmingham, AL, about one of the people involved in the
+Birmingham, AL, about one of the people involved in the 
 <a href="http://www.nps.gov/nr/travel/civilrights/al11.htm">16th Street Baptist Church Bombing</a>
-in 1963. For those who don&rsquo;t know, that event was one of the most
+in 1963. For those who don’t know, that event was one of the most
 important parts of the Civil Rights movement in the 1960s. The
 50th anniversary of the bombing was this September (2013), so I had
 gone with a small film crew to cover the event, and interview some of
@@ -247,16 +247,16 @@ the people involved.</p>
 
 <p>I had never shot documentary footage, apart from some small controlled
 one-on-one interviews, so this was an interesting learning experience for
-me. I&rsquo;d like to share some of the more important things which I learned
+me. I’d like to share some of the more important things which I learned
 over the course of my experience down there.</p>
 
-<p><strong>Batteries</strong>. You&rsquo;re going to run out of them. I ran through four batteries
-over the course of a filming day &mdash; which I thought would be enough, but
-weren&rsquo;t. If you have one thing which requires a strange and unique battery,
-you should have at least one spare, even if it&rsquo;s new. Someone is invariably
+<p><strong>Batteries</strong>. You’re going to run out of them. I ran through four batteries
+over the course of a filming day – which I thought would be enough, but
+weren’t. If you have one thing which requires a strange and unique battery,
+you should have at least one spare, even if it’s new. Someone is invariably
 going to leave something on, chew up the battery, and leave you short a
-vital piece of equipment. If you&rsquo;re shooting with a DSLR, try to get a
-multi-battery grip, so that you don&rsquo;t have to change batteries as often.</p>
+vital piece of equipment. If you’re shooting with a DSLR, try to get a
+multi-battery grip, so that you don’t have to change batteries as often.</p>
 
 <p><strong>One Shot</strong>. You only have <em>one shot</em> to get event coverage correctly,
 which means that, ideally, you should be covering from more than one angle,
@@ -265,17 +265,17 @@ Otherwise, you can easily be left with a serious dearth of footage for
 what could be a vital part.</p>
 
 <p><strong>Focus and Calibration</strong>. Get there early, get set up, get everything
-metered and working properly <em>before</em> things start moving. You really can&rsquo;t
+metered and working properly <em>before</em> things start moving. You really can’t
 easily recalibrate during taping without potentially ruining footage. Did
 I forget to mention that you only get <em>one shot</em> with event footage?</p>
 
-<p><strong>Depth of Field: More is Better</strong>. You&rsquo;re not shooting an art piece, you&rsquo;re
-trying to cover something which probably only happens once, so you shouldn&rsquo;t
+<p><strong>Depth of Field: More is Better</strong>. You’re not shooting an art piece, you’re
+trying to cover something which probably only happens once, so you shouldn’t
 be shooting at f/2.8 or something ridiculous like that. Yes, you can sometimes
 take advantage of the <a href="http://en.wikipedia.org/wiki/Hyperfocal_distance">hyperfocal distance</a>
-of a lens to keep far-away objects in focus &mdash; but you should, most likely,
+of a lens to keep far-away objects in focus – but you should, most likely,
 find a fairly closed aperture to work with. This can be challenging in low
-light scenarios, where you&rsquo;ll be fighting the specter of sensor noise at
+light scenarios, where you’ll be fighting the specter of sensor noise at
 extremely high ISO levels when you close the iris more than a little.</p>
 
 <p><strong>Positivity</strong>. You need to be happy and in a good place when shooting people
@@ -284,66 +284,66 @@ cues from your body language and demeanor, and hostility will produce
 hostility. If at all possible, try to work on documentary projects which you
 like, or identify with.</p>
 
-<p><strong>Lens Changes</strong>. If you can avoid it, don&rsquo;t. Wear cargo pants or a vest with
+<p><strong>Lens Changes</strong>. If you can avoid it, don’t. Wear cargo pants or a vest with
 lens pockets, much like most photographers, if you absolutely <em>must</em> change
-lenses. If you&rsquo;re shooting a long distance, go with something like the
+lenses. If you’re shooting a long distance, go with something like the
 <a href="http://amzn.to/14nI8Cm">Canon EF 70-200mm f/2.8L IS II USM</a> lens, or if you
 are dealing with shorter distances, the
 <a href="http://amzn.to/189gQmi">Canon EF 24-70mm f/2.8L II USM</a> lens. Carrying a few
-primes around will work well for static interview shots, but they&rsquo;re going to
-be a real pain when you&rsquo;re dealing with moving targets, no matter how quick
-you are with focus peaking assistance. If you&rsquo;re shooting with a shoulder rig,
-you&rsquo;re going to want an IS/VR lens, if you have one available &mdash; it cuts down
+primes around will work well for static interview shots, but they’re going to
+be a real pain when you’re dealing with moving targets, no matter how quick
+you are with focus peaking assistance. If you’re shooting with a shoulder rig,
+you’re going to want an IS/VR lens, if you have one available – it cuts down
 on a lot of shudder and shake.</p>
 
 <p><strong>Bring a Spare</strong>. Got one lav mic? You might want to bring a second one.
-If there&rsquo;s a small piece of equipment or accessory which, if missing, could
-screw you, it&rsquo;s going to go missing. Especially when you&rsquo;re far from home
+If there’s a small piece of equipment or accessory which, if missing, could
+screw you, it’s going to go missing. Especially when you’re far from home
 base and without the benefit of an equipment store.</p>
 
-<p><strong>You&rsquo;re Going To Mess Up</strong>. This is pretty obvious &mdash; no matter how careful
+<p><strong>You’re Going To Mess Up</strong>. This is pretty obvious – no matter how careful
 you are, something is going to get messed up. The trick is to try to make
-everything redundant enough that it doesn&rsquo;t matter.</p>
+everything redundant enough that it doesn’t matter.</p>
 
-<p><strong>It&rsquo;s Not About Your Equipment</strong>. Someone there is going to have a better
+<p><strong>It’s Not About Your Equipment</strong>. Someone there is going to have a better
 camera, better lenses, and better <em>everything</em> than you have. Go far enough,
-and your rig is going to look bad to someone. Just remember, you&rsquo;re there for
+and your rig is going to look bad to someone. Just remember, you’re there for
 a reason, so know your equipment, and use it as well as you can.</p>
 
-<p><strong>Rocking Out</strong>. If you&rsquo;re interviewing someone who is rocking back and forth,
+<p><strong>Rocking Out</strong>. If you’re interviewing someone who is rocking back and forth,
 bring it to their attention. It creates massive focusing, framing, and
-perspective issues. Don&rsquo;t be intimidated; they can rock as much as they&rsquo;d
-like, just as soon as you&rsquo;re done filming.</p>
+perspective issues. Don’t be intimidated; they can rock as much as they’d
+like, just as soon as you’re done filming.</p>
 
-<p><strong>Network</strong>. If you&rsquo;re looking for an interview with someone, talking to
+<p><strong>Network</strong>. If you’re looking for an interview with someone, talking to
 some of the people around them may lead you to another interviewee who may
-produce even better results. There&rsquo;s no cost associated with being polite.</p>
+produce even better results. There’s no cost associated with being polite.</p>
 
-<p><strong>Respect the Eyeline</strong>. For static interviews, don&rsquo;t shoot up or down on
-someone&rsquo;s eye-line unless you are trying to indicate something about that
+<p><strong>Respect the Eyeline</strong>. For static interviews, don’t shoot up or down on
+someone’s eye-line unless you are trying to indicate something about that
 person. You should be even with their eye-line on initial shot setup. This
 is also a good idea when doing non-static interviews, when possible.</p>
 
 <p><strong>Make Two Copies</strong>. When you transfer the data off of your memory cards,
-make two copies, and if possible, don&rsquo;t transport them together. Redundancy
+make two copies, and if possible, don’t transport them together. Redundancy
 is the name of the game here, since even the best footage means diddly/squat
 if no one ever gets to see it.</p>
 
-<p><strong>Bring a Sound Guy</strong>. I know, you don&rsquo;t think you need one &mdash; you&rsquo;ve got a
-lav mic, right? A sound engineer is half of your production, since you&rsquo;re in
+<p><strong>Bring a Sound Guy</strong>. I know, you don’t think you need one – you’ve got a
+lav mic, right? A sound engineer is half of your production, since you’re in
 charge of the visuals. Also, boom mic operators generally should be fairly
 competent sound engineers, to avoid issues later on in the post-production
-process &mdash; when possible.</p>
+process – when possible.</p>
 
-<p><strong>Don&rsquo;t Go For The Cheaper Chicken</strong>. When booking accommodations, don&rsquo;t go
-for the least expensive hotel &mdash; there&rsquo;s a good chance that it&rsquo;s in a dodgy
+<p><strong>Don’t Go For The Cheaper Chicken</strong>. When booking accommodations, don’t go
+for the least expensive hotel – there’s a good chance that it’s in a dodgy
 part of town, and that extra 10 dollars a night might buy you not only a
-bit of security, but might buy you a better night&rsquo;s sleep. Protip: the
+bit of security, but might buy you a better night’s sleep. Protip: the
 cheapest hotel is generally right next to a) train tracks with 24-hour train
 service, b) an open-air coal mine, c) a condemned house with mysterious
-block parties at all hours of the night, or d) all of the above&hellip;</p>
+block parties at all hours of the night, or d) all of the above…</p>
 
-<p><strong>Get Stills</strong>. If you&rsquo;re doing a documentary with a bunch of
+<p><strong>Get Stills</strong>. If you’re doing a documentary with a bunch of
 <a href="http://en.wikipedia.org/wiki/Ken_Burns_effect">Ken Burns effect</a> style
 picture montages, you should try to either take stills yourself, or have
 another camera operator capture some for you. If you can, attempt to take
@@ -351,9 +351,10 @@ pictures of landmarks or buildings when they are not occupied, unless it
 specifically works in your storytelling to have them occupied or surrounded.</p>
 
 <p>There are many, many more things to think about when it comes to filming
-documentaries and documentary footage &mdash; but hopefully, these bullet points
+documentaries and documentary footage – but hopefully, these bullet points
 will help someone else avoid some of the pitfalls I experienced on my first
 documentary shoot. Good luck!</p>
+
 ]]></content>
   </entry>
   
@@ -362,7 +363,7 @@ documentary shoot. Good luck!</p>
     <link href="http://jbuchbinder.com/2013/09/10/are-you-a-cinematographer-or-a-camera-operator/"/>
     <updated>2013-09-10T21:55:00-04:00</updated>
     <id>http://jbuchbinder.com/2013/09/10/are-you-a-cinematographer-or-a-camera-operator</id>
-    <content type="html"><![CDATA[<p>There&rsquo;s only a slight difference in the textbook definition between a
+    <content type="html"><![CDATA[<p>There’s only a slight difference in the textbook definition between a
 <a href="http://en.wikipedia.org/wiki/Cinematographer">cinematographer</a> and a
 <a href="http://en.wikipedia.org/wiki/Camera_operator">camera operator</a>. Besides the
 slight variance in responsibilities (a cinematographer/DP can be responsible
@@ -373,19 +374,19 @@ aptitudes which play into the decision to try to be a cinematographer.</p>
 great camera operator. Knowing your equipment, being able to choose the
 proper lenses and camera settings, being able to operate that equipment,
 being able to interpret the direction of both the director and the
-cinematographer, and being able to hold together a cohesive shot &mdash;
+cinematographer, and being able to hold together a cohesive shot –
 these are all the hallmarks of a great camera operator.</p>
 
-<p>At a much, much more basic level, there&rsquo;s an <em>art</em> to cinematography, which
+<p>At a much, much more basic level, there’s an <em>art</em> to cinematography, which
 transcends the physical manipulations of the equipment involved, and becomes
 more about creating a sort of separate reality; that of capturing a little
 slice of time and space, motion and stillness, light and dark, vibrant
-colors and subtle undertones. That&rsquo;s the part of this that, to me, offers
+colors and subtle undertones. That’s the part of this that, to me, offers
 the most promising creativity and the most fulfilling, yet burdening, tasks.</p>
 
-<p>It&rsquo;s very easy to get lost in the minutiae of camera settings adjustments,
+<p>It’s very easy to get lost in the minutiae of camera settings adjustments,
 equipment acquisition, troubleshooting and stabilization, among other
-demons &mdash; but the <em>art</em> is the derivative of those functions.</p>
+demons – but the <em>art</em> is the derivative of those functions.</p>
 
 <p>To properly illustrate this, I think of a concert I attended, quite a few
 years ago. The guitarist, <a href="https://www.facebook.com/VernonReid">Vernon Reid</a>,
@@ -396,54 +397,54 @@ as astounding. We are all, in some way, capable of recognizing genius and
 immense skill, even if we cannot reproduce it, or explain it in purely
 quantifiable terms. In that way, the body of his technical skills simply
 became a foundation for the <em>art</em> which was made by way of them. I wish I
-could explain it better &mdash; I only know that I could recognize it when I saw
+could explain it better – I only know that I could recognize it when I saw
 it. The man himself, whom I had the pleasure of speaking with for a few
-brief moments, was very humble and very &ldquo;zen&rdquo; about his skill and his art.</p>
+brief moments, was very humble and very “zen” about his skill and his art.</p>
 
-<p>Due to my particular circumstances, I&rsquo;ve been able to pick and choose projects,
+<p>Due to my particular circumstances, I’ve been able to pick and choose projects,
 more of late, specifically based on their relative merits to me. As such, I
-haven&rsquo;t had much experience acting strictly as a &ldquo;camera operator&rdquo;. There
+haven’t had much experience acting strictly as a “camera operator”. There
 may be some hubris, on my part, which would have come out of getting to
 perform the artistic duties of a cinematographer on the vast majority of the
-projects on which I&rsquo;ve been involved. It has given me an affinity for the
-creative aspects of the job. For as long as I&rsquo;ve been involved with
-cinematography, I have always assumed that being a &ldquo;camera operator&rdquo; has been
+projects on which I’ve been involved. It has given me an affinity for the
+creative aspects of the job. For as long as I’ve been involved with
+cinematography, I have always assumed that being a “camera operator” has been
 a step towards being a cinematographer; a way of honing the technical
 foundation of the craft, so that the art can come later. It seemed like an
-&ldquo;apprenticeship&rdquo;, much as the old focus pullers became second unit
+“apprenticeship”, much as the old focus pullers became second unit
 cameramen, to eventually move up to first units, then perhaps aspire to
-become a cinematographer one day&hellip;</p>
+become a cinematographer one day…</p>
 
 <p>The landscape, mostly due to the explosion of low-cost cinematography
 (fueled primarily by DSLR cinematography), has been shifting away from that
-old model. Most projects have one, perhaps two camera operators &mdash; and the
+old model. Most projects have one, perhaps two camera operators – and the
 primary camera operator is usually the cinematographer/DP. Many projects
-don&rsquo;t even <em>have</em> a second camera operator &mdash; it simply isn&rsquo;t required.</p>
+don’t even <em>have</em> a second camera operator – it simply isn’t required.</p>
 
 <p>Ultimately, it depends what your plans and/or revenue model is.</p>
 
 <ul>
-<li>If you want to learn more about how to get your equipment to perform
+  <li>If you want to learn more about how to get your equipment to perform
 the way you want it to perform, you may do well working as a camera
 operator with a seasoned cinematographer, rather than holding out for
 a DP position on a project.</li>
-<li>If you want to make a living behind a camera, you can&rsquo;t really differentiate
-between cinematography and camera operator work &mdash; at least as long as
+  <li>If you want to make a living behind a camera, you can’t really differentiate
+between cinematography and camera operator work – at least as long as
 you want to keep a steady revenue stream up. Even the best cinematographers
-can moonlight as strict &ldquo;camera operators&rdquo; when the pay is right.</li>
-<li>If you want to work in a lower pressure environment, you might want to
+can moonlight as strict “camera operators” when the pay is right.</li>
+  <li>If you want to work in a lower pressure environment, you might want to
 be a camera operator. Cinematographers are responsible for everything
 visual which goes on in a project, and it can be a lot of stress.</li>
-<li>If you feel passionate enough about a project to want to be involved at
+  <li>If you feel passionate enough about a project to want to be involved at
 any cost, you might sign on as a camera operator.</li>
 </ul>
 
-
-<p>Even though there&rsquo;s a lot of competition for certain spots on certain
-projects, we&rsquo;re all on the same team; we all (for the most part) are
+<p>Even though there’s a lot of competition for certain spots on certain
+projects, we’re all on the same team; we all (for the most part) are
 interested in shooting great footage, and many of us are concerned about
 creating enduring works of art, wherever possible. We all have great
 potential for growth, so whatever your career and job choice, good luck!</p>
+
 ]]></content>
   </entry>
   
@@ -452,37 +453,37 @@ potential for growth, so whatever your career and job choice, good luck!</p>
     <link href="http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field/"/>
     <updated>2013-09-10T13:24:00-04:00</updated>
     <id>http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field</id>
-    <content type="html"><![CDATA[<p>Depth of field is a massively misunderstood &ldquo;side effect&rdquo; of iris size, and
+    <content type="html"><![CDATA[<p>Depth of field is a massively misunderstood “side effect” of iris size, and
 an ultimately useful storytelling tool (when used properly).</p>
 
 <p>DSLR photography has spawned a large group of cinematographers who are
 dealing with largely light-insensitive camera sensors (usually producing
 fairly unacceptable noise when used at greater sensitivies than ISO 800).
-This has created a need for &ldquo;fast&rdquo; lenses, which are lenses which have very
+This has created a need for “fast” lenses, which are lenses which have very
 large maximum apertures, featuring maximum f-stop ratings like f/2.0, f/1.8,
-and even f/1.4 (there are even some <a href="http://www.dpreview.com/news/2013/08/06/kubrick-s-f-0-7-lenses-now-available-for-rent-but-start-saving-up">f/0.7 lenses</a> out there, but I&rsquo;m
+and even f/1.4 (there are even some <a href="http://www.dpreview.com/news/2013/08/06/kubrick-s-f-0-7-lenses-now-available-for-rent-but-start-saving-up">f/0.7 lenses</a> out there, but I’m
 sticking to the realm of affordable DSLR cinematography, at the moment).
 Using firmware like <a href="http://magiclantern.fm/">Magic Lantern</a> allows us to use
 focus peaking to exploit manual-focus and non-EF mount lenses (for those
-Canon-philes among us), to bring down the effective cost of shooting &ldquo;fast&rdquo;
-lenses. I have some M42 &ldquo;Pentax screw-mount&rdquo; lenses which open to f/2.8 &mdash;
+Canon-philes among us), to bring down the effective cost of shooting “fast”
+lenses. I have some M42 “Pentax screw-mount” lenses which open to f/2.8 –
 acquired for less than 10 USD each, plus a 7 USD <a href="http://amzn.to/1fVPGyf">M42-to-EF adapter ring</a>.
-If you&rsquo;re interested in more information on how to use focus peaking, check
+If you’re interested in more information on how to use focus peaking, check
 out <a href="http://fstoppers.com/using-magic-lantern-with-focus-peaking-for-free-lensing">how it works</a>.</p>
 
-<p>So, you&rsquo;ve beaten high-cost DSLR and cinema camera body manufacturers by
-using &ldquo;fast&rdquo; lenses, right? Well, not so fast, there&hellip; You have to consider
+<p>So, you’ve beaten high-cost DSLR and cinema camera body manufacturers by
+using “fast” lenses, right? Well, not so fast, there… You have to consider
 the <em>side effect</em> of fast lenses and wide apertures: the shallow depth of
-field. It&rsquo;s both a blessing and a curse; we tend to associate shallow depth
+field. It’s both a blessing and a curse; we tend to associate shallow depth
 of field images and video with expensive equipment (rightfully so, in most
 cases) and a more personal type of image, but those lenses are not
-universally usable &ldquo;wide open&rdquo;. Many shots come off looking amateurish and
-ill-composed, when half of the subjects are out of focus, because they&rsquo;ve
-exceeded the edges of the &ldquo;sharp&rdquo; area in the focus range.</p>
+universally usable “wide open”. Many shots come off looking amateurish and
+ill-composed, when half of the subjects are out of focus, because they’ve
+exceeded the edges of the “sharp” area in the focus range.</p>
 
-<p>(There&rsquo;s also lack of lens sharpness and chromatic abberation to consider,
+<p>(There’s also lack of lens sharpness and chromatic abberation to consider,
 which are generally present, to some degree, in the widest aperture settings
-available on most lenses. That&rsquo;s a very intensely technical discussion,
+available on most lenses. That’s a very intensely technical discussion,
 however, and will probably be reserved for a future posting.)</p>
 
 <p>When considering the depth of field you want, consider the subject (or
@@ -490,11 +491,11 @@ literal <em>focus</em>) of the shot, and figure out how much of the shot needs t
 be in focus to properly tell your story. The depth of field is very
 important for exposing the mise-en-scène in the way which best represents
 both the explicit visuals and external representation of internal
-character development and exposition. If your character needs to &ldquo;pop&rdquo;
-out of the scenery, a narrow DOF would be perfect &mdash; but if they are to
-appear as a figurative cog in the machinery of the world, you&rsquo;re probably
+character development and exposition. If your character needs to “pop”
+out of the scenery, a narrow DOF would be perfect – but if they are to
+appear as a figurative cog in the machinery of the world, you’re probably
 going to be looking for the widest DOF (approaching infinity) as you can
-get. When widening the DOF like this, you&rsquo;ll most likely have to compensate
+get. When widening the DOF like this, you’ll most likely have to compensate
 by boosting the ambient lighting, or adding additional lighting, to
 adjust for the decreased light hitting your camera sensor.</p>
 
@@ -503,20 +504,20 @@ shot, based on the camera/sensor, lens focal length, and distance to
 primary focal point.</p>
 
 <ul>
-<li><a href="http://www.dofmaster.com/dofjs.html">Web-based DOF calculator</a></li>
-<li><a href="http://www.dofmaster.com/android.html">Android calculator</a></li>
-<li><a href="http://www.dofmaster.com/iphone.html">iOS calculator</a></li>
+  <li><a href="http://www.dofmaster.com/dofjs.html">Web-based DOF calculator</a></li>
+  <li><a href="http://www.dofmaster.com/android.html">Android calculator</a></li>
+  <li><a href="http://www.dofmaster.com/iphone.html">iOS calculator</a></li>
 </ul>
-
 
 <p>There are more of them, but if you specify the variables, you can adjust
 the aperture f-stop to the widest setting which properly fits the scene
-and visuals which you&rsquo;re attempting to achieve.</p>
+and visuals which you’re attempting to achieve.</p>
 
-<p>Like anything else, this isn&rsquo;t strictly an instructional A-to-B guide on
-how to achieve stunning visuals; it&rsquo;s simply an attempt to share some of
-what I&rsquo;ve learned, and to help share the knowledge and tools to exploit
+<p>Like anything else, this isn’t strictly an instructional A-to-B guide on
+how to achieve stunning visuals; it’s simply an attempt to share some of
+what I’ve learned, and to help share the knowledge and tools to exploit
 your own inner artistic vision. Good luck shooting!</p>
+
 ]]></content>
   </entry>
   

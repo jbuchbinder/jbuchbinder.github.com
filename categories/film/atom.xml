@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Film | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/film/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-17T14:29:25-04:00</updated>
+  <updated>2013-10-22T16:20:42-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -18,7 +18,7 @@
     <link href="http://jbuchbinder.com/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension/"/>
     <updated>2010-01-30T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimension</id>
-    <content type="html"><![CDATA[<h1></h1>
+    <content type="html"><![CDATA[<h1 id="section"></h1>
 
 <p>I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the 1980s called <a href="http://www.imdb.com/title/tt0086856/">The Adventures of Buckaroo Banzai Across the Eighth Dimension</a>.</p>
 
@@ -27,8 +27,8 @@
 <p>It was apparently very difficult for the studio that owned it to release “Buckaroo Banzai” because of some legal issues, but it finally made it to DVD in the last few years.</p>
 
 <ul>
-<li><a href="http://www.imdb.com/title/tt0086856/">iMDB Link</a></li>
-<li><a href="http://www.netflix.com/Movie/The_Adventures_of_Buckaroo_Banzai/60021712">Netflix Link</a></li>
+  <li><a href="http://www.imdb.com/title/tt0086856/">iMDB Link</a></li>
+  <li><a href="http://www.netflix.com/Movie/The_Adventures_of_Buckaroo_Banzai/60021712">Netflix Link</a></li>
 </ul>
 
 ]]></content>

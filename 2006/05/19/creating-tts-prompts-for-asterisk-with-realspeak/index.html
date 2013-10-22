@@ -124,34 +124,31 @@
 
 <div class="entry-content"><p>I was playing around with using ScanSoft Realspeak for Linux, and finally found the “magic sequence” to generate the appropriate GSM prompts for Asterisk.</p>
 
-<p>Requires:</p>
+<p>Requires: </p>
 
 <ul>
-<li>Standard installation of Scansoft Realspeak 4 with American English Jill voice</li>
-<li>Debian’s libgsm-tools and sox</li>
+  <li>Standard installation of Scansoft Realspeak 4 with American English Jill voice</li>
+  <li>Debian’s libgsm-tools and sox</li>
 </ul>
 
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cd /usr/local/ScanSoft/RealSpeak_4.0
-</span><span class='line'>echo " - TTS being performed on $1 ... "
-</span><span class='line'>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ScanSoft/RealSpeak_4.0/api/lib
-</span><span class='line'>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ScanSoft/RealSpeak_4.0/speech/components/common/
-</span><span class='line'>./standard "American English" Jill ./speech text.txt
-</span><span class='line'>echo " - Converting to 8000Hz WAV ... "
-</span><span class='line'>sox -r 8000 -t raw -w -s /usr/local/ScanSoft/RealSpeak_4.0/standard.pcm text.wav
-</span><span class='line'>sox text.wav text.au
-</span><span class='line'>cat text.au | toast -c -s &gt; text.gsm</span></code></pre></td></tr></table></div></figure>
-
-
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd /usr/local/ScanSoft/RealSpeak_4.0
+</span><span class="line">echo " - TTS being performed on $1 ... "
+</span><span class="line">export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ScanSoft/RealSpeak_4.0/api/lib
+</span><span class="line">export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ScanSoft/RealSpeak_4.0/speech/components/common/
+</span><span class="line">./standard "American English" Jill ./speech text.txt
+</span><span class="line">echo " - Converting to 8000Hz WAV ... "
+</span><span class="line">sox -r 8000 -t raw -w -s /usr/local/ScanSoft/RealSpeak_4.0/standard.pcm text.wav
+</span><span class="line">sox text.wav text.au
+</span><span class="line">cat text.au | toast -c -s &gt; text.gsm</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 </div>
 

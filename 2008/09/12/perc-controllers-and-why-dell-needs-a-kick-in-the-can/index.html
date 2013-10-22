@@ -122,7 +122,7 @@
   </header>
 
 
-<div class="entry-content"><h1></h1>
+<div class="entry-content"><h1 id="section"></h1>
 
 <p>This past week, I stumbled on a strange problem with Dell “PERC” RAID controllers in certain rackmount servers, where they would suddenly just stop working for no apparent reason. The nice people at Dell did actually have firmware available for the PERC 3 and 4 controllers to fix this problem, which was pretty nice.</p>
 
@@ -133,13 +133,12 @@
 <p>I ended up doing the following:</p>
 
 <ul>
-<li>Create a <a href="http://www.virtualbox.org/">VirtualBox</a> VM</li>
-<li>Use <code>dd if=/dev/zero of=floppy.img bs=1k count=1440</code> to create a floppy image, which I mounted in the VirtualBox</li>
-<li>“Format” the floppy image in the VM, because apparently Dell’s fuqtard utility can’t write an image to an unformatted disk.</li>
-<li>Use the stupid utility to write the floppy image.</li>
-<li>Use <code>mkisofs -pad -b floppy.img -R -o cd.iso floppy.img</code> to create a CD image</li>
+  <li>Create a <a href="http://www.virtualbox.org/">VirtualBox</a> VM</li>
+  <li>Use <code>dd if=/dev/zero of=floppy.img bs=1k count=1440</code> to create a floppy image, which I mounted in the VirtualBox</li>
+  <li>“Format” the floppy image in the VM, because apparently Dell’s fuqtard utility can’t write an image to an unformatted disk.</li>
+  <li>Use the stupid utility to write the floppy image.</li>
+  <li>Use <code>mkisofs -pad -b floppy.img -R -o cd.iso floppy.img</code> to create a CD image</li>
 </ul>
-
 
 <p>Dell, I hate you. Your laptops overheat and suck out loud, and your stupid Windows-only disks and defective RAID controllers bother me. I’m not buying any more of your hardware. You can subsidize Microsoft some other way.</p>
 </div>

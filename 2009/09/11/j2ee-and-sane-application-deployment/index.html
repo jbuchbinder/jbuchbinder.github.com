@@ -122,7 +122,7 @@
   </header>
 
 
-<div class="entry-content"><h1></h1>
+<div class="entry-content"><h1 id="section"></h1>
 
 <p>As I have been delving deeper into the J2EE Servlet specification during the rewrite of <a href="http://remitt.org/">REMITT</a>, I have been learning some very interesting, and sometimes very painful, lessons about trying to package something without requiring complicated installations.</p>
 
@@ -132,7 +132,7 @@
 
 <p>I eventually found a solution by creating my own <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/SecurityFilter.java">Filter</a> and <a href="http://svn.freemedsoftware.org/remitt/trunk/src/org/remitt/server/jaas/HttpLoginModule.java">LoginModule</a>, then setting the system property for the <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/login.conf">JAAS configuration</a> manually in the init() portion of the Filter. A little filter and realm information in <a href="http://svn.freemedsoftware.org/remitt/trunk/war/WEB-INF/web.xml">WEB-INF/web.xml</a>, and everything seems to work somehow. I understand that the Servlet guys wanted to make sure that the J2EE server context and app context were at two different levels (hence the reason a DataSource in META-INF/context.xml or tomcat’s conf/server.xml isn’t writeable at all), but it makes it a mess for clean deployment.</p>
 
-<p>As it stands now, I can run the server with an override file like like:<br/>
+<p>As it stands now, I can run the server with an override file like like:<br />
 <code>JAVA_OPTS="-Dproperties=/my/remitt.properties" ./bin/catalina.sh start</code></p>
 
 <p>And I think that’s worth the hassle to set up, since it makes deployment a breeze.</p>
