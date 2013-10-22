@@ -1,2 +1,24 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+table.zebra {
+	margin: auto;
+	font-size: 70%;
+	border: 1px solid black;
+
+	th {
+		font-weight: bold;
+		background-color: steelblue;
+		border-bottom: 2px solid black;
+	}
+	th,td {
+		padding: 4px 5px;
+	}
+	tr:nth-of-type(odd) {
+		background-color: lightsteelblue;
+	}
+	tr:nth-of-type(even) {
+		background-color: cornflowerblue;
+	}
+}
+
