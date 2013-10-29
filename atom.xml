@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-22T16:18:42-04:00</updated>
+  <updated>2013-10-29T12:37:35-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
+    <link href="http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3/"/>
+    <updated>2013-10-29T12:32:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3</id>
+    <content type="html"><![CDATA[<p>I recently had to build a modern version of the <a href="http://ganglia.info">Ganglia</a>
+monitoring system for an <a href="http://www.openbsd.org/">OpenBSD</a> 4.3 firewall, which
+hadn’t been upgraded to a modern version of OpenBSD in quite some time. I
+documented the process, which I’m sharing here.</p>
+
+<div><script src="https://gist.github.com/7217488.js"></script>
+<noscript><pre><code># Build and install gmond on OpenBSD 4.3
+
+# Install prerequisites
+pkg add automake-1.9.6p2 autoconf-2.61p1 libtool libconfuse unzip wget
+
+# Compile and install apr-1.4
+wget -c http://mirrors.gigenet.com/apache/apr/apr-1.4.8.tar.gz
+tar zxvf apr-1.4.8.tar.gz
+cd apr-1.4.8
+./configure &amp;&amp; make &amp;&amp; make install
+cd ..
+
+# Download and install monitor-core
+wget -c https://github.com/ganglia/monitor-core/archive/master.zip -O master.zip --no-check-certificate
+unzip master.zip
+cd monitor-core-master
+export AUTOMAKE_VERSION=1.9
+export AUTOCONF_VERSION=2.61
+./bootstrap
+./configure --sysconfdir=/etc --without-gmetad --with-libapr=/usr/local/apr/bin/apr-1-config --with-libconfuse=/usr/local 
+
+# Need to patch some minor stuff...
+# libmetrics/openbsd/metrics.c:
+#   line 446:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 466:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 468 should be commented out.
+
+make all &amp;&amp; make install
+cd ..</code></pre></noscript></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Preparing for and recovering from disaster]]></title>
@@ -1210,25 +1262,6 @@ for RRD in $*; do
         echo "done."
 done
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The myth of moral hazards in health insurance]]></title>
-    <link href="http://jbuchbinder.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance/"/>
-    <updated>2011-12-30T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.com/2011/12/30/the-myth-of-moral-hazards-in-health-insurance</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>The entire “managed health” component of the privatized healthcare system which we now “enjoy” in the United States descended from the <a href="http://www.presidency.ucsb.edu/ws/index.php?pid=4092">HMO Act of 1973</a>, signed into law by the President whom Hunter S Thompson had famously claimed “could shake your hand and stab you in the back at the same time”. The insurance system we have today, primarily built on the foundation of the profit-inducing-but-patient-screwing HMO system, has built in something called a “moral hazard”, which ostensibly provides the conservatives’ requisite “<a href="http://fdlaction.firedoglake.com/2011/09/27/skin-in-the-game-is-failure-as-a-health-care-cost-control-idea/">skin in the game</a>“. For those unfamiliar with this concept, a simplified version of the basic premise is that forcing a patient to cover a certain amount of a medical procedure will decrease the “risk” than an insurance company will have to pay for a procedure.</p>
-
-<p>Let’s stop right here, for a brief moment. The idea that an insurance company, being a for-profit entity with a primary obligation to their shareholders, rather than their clients, has an *incentive* not to pay for a procedure — well, it seems pretty awful. It’s one of the primary deficits in a for-profit health insurance scheme that the three primary parties involved (doctor, patient, insurance company) all have different objectives, which jive with each other (doctor wants to receive pay for care given, patient wants to receive care, and insurance company wants to pay as little as possible, if anything). You can see that the insurance company seems to be the party whose goals seem to disagree with the rest, and it’s the reason why I believe that a private insurer system is doomed to ever-rising costs, risk of medical bankruptcy, loss of accountability, pure graft and corruption, higher mortality rates, loss of quality care, as well as an inevitable collapse. But I digress from my primary point.</p>
-
-<p>We can examine the idea of a moral hazard in health insurance by looking at the general purpose it supposedly serves: reducing the demand for profit-draining healthcare payments. The problem with that argument is that patients do not voluntarily seek unnecessary care in quantities which would cause a system of requiring patient payment to be necessary to reduce risk. Patients seek care when they require it, which means that the only care for which it would decrease the demand would be <a href="http://www.nejm.org/doi/full/10.1056/NEJMp0708558">preventative care</a>. If you follow the aforementioned link, you’ll see that the entire focus of most studies is the efficacy of preventative care in <em>decreasing costs to insurers</em> rather than decreasing mortality rates or improving quality of life. That follows a pretty common trend of insurers to perform cost/benefit analyses without the benefit of measuring the *benefits* of treatment options on patients.</p>
-
-<p>So, we have private insurers, attempting to gain a greater profit margin by either denying care to patients for arbitrary reasons, or attempting to bolster profit margins by requiring deductibles and/or co-payments to dissuade patients from seeking care, encourage patients to seek less expensive/less effective methods of treatment, and/or decrease the amount of payout for which they are responsible. It seems as though parties with those motivations would be less-than-ideal candidates for effectively making healthcare and treatment decisions for the public at large, although they do that at the moment, by deciding which treatments to cover, which patients to insure, and how much of a patients’ own money must be spent for healthcare treatment for conditions which may or may not have anything to do with their own action. Not much of a “moral hazard” to avoid there, is there? If a factory worker gets cancer from working in a factory — who pays? Certainly not the factory. Whose fault is the condition? Not the patient. If unsafe drinking water produces parasitic infections or a more hazardous condition — who pays? Not the people responsible. Whose fault is the condition? Not the patient. </p>
-
-<p>I would posit that your opinion of the for-profit healthcare system depends largely on your relationship to it; those who believe that profit is more important than the efficacy of patient care would most likely side with the current system (as well as the unconditional free market leghumpers), whereas those who see healthcare as more of a basic human right or regard the efficacy of care as being the paramount point of importance over the profit of a company would most likely favor a single-payer or socialized healthcare system. (I leave out the uninformed, teabaggers (who also fit in the prior category), and full-on anti-Federalists. There’s no reasoning about human dignity or health with people who believe that some people have the right to do whatever they want to other people due to the size of their wallets — but that’s for another post.)</p>
 ]]></content>
   </entry>
   

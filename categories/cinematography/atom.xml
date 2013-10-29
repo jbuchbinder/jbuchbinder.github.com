@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-22T16:20:42-04:00</updated>
+  <updated>2013-10-29T12:37:35-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -151,7 +151,7 @@ ratio (4 units of width to 3 units of height), until the popularization of
 through the entire history of aspect ratios in cinema, as there is a
 <a href="http://vimeo.com/68830569">great retrospective available on vimeo</a>.</p>
 
-<p>{% vimeo 68830569 %}</p>
+<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/68830569 "></iframe></div></p>
 
 <p>Most DSLR cinematography is done, by default, with a 16:9 ratio, as the
 maximum capture size for their video is generally 1920x1080, abbreviated as

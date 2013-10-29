@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I have recently had cause to proxy a J2EE CXF service through an apache 2.2 instance, and thought it would be nice to share my findings. (This was &hellip;">
+  <meta name="description" content="I hate it. IMAP Synchronization, that is. In an effort to migrate users from one *shudder* Exchange provider to another (after getting shot down for &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -94,6 +94,61 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/17/imap-synchronization/">IMAP Synchronization</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-17T00:00:00-05:00" pubdate data-updated="true">Jan 17<span>th</span>, 2010</time>
+        
+         | <a href="/2010/01/17/imap-synchronization/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1 id="section"></h1>
+
+<p>I hate it. IMAP Synchronization, that is.</p>
+
+<p>In an effort to migrate users from one *shudder* Exchange provider to another (after getting shot down for proposing first Zimbra, then standard mail server stuff, then <a href="http://www.openchange.org/">Openchange</a>), I have been going through all of the available IMAP sync software that I could find.</p>
+
+<p><strong>mbsync</strong> () – We use this for IMAP backup, so I figured it would be a good idea to try it for syncing between two IMAP servers. *Crash*. *Segfault*. This is one of the reasons I’m not a big fan of really low-level apps written in C.</p>
+
+<p><strong>imapsync</strong> () – Written using a Perl library, this offered the promise of fast syncing, and appeared to work in test runs. That is, until it encountered folders with spaces in them, and threw up all over the terminal. Really, it wasn’t a use-case for *anyone* to have spaces in folder names? I could have put some effort into fixing the library and/or script, but I figured that if something that basic wasn’t working for a fairly mature library, this wasn’t going to be pretty.</p>
+
+<p><strong>The Imap Migration Tool</strong> () – Written in PHP, with a two or three step process. Was meant for moving stuff, not keeping them in sync, so running multiple times would cause additional copies of messages to be created. Also, it seems to have been written in some prehistoric form of PHP, which required hacking to get it even marginally functional. Even then, it spat tons of warnings and nasties, which made me a little nervous to use it on any important mailboxes.</p>
+
+<p><strong>mailsync</strong> () – I don’t even remember why this one didn’t work, only that I wasted a fair amount of time playing with it to get it to try to migrate using the scheme we were working with to no avail. Scratch another one.</p>
+
+<p>Solution … I had to roll my own. This is *stupid* to the highest degree, but I rolled something using <a href="http://java.sun.com/products/javamail/">javamail</a> into a self-contained “fat jar” using <a href="http://fjep.sourceforge.net/">fatjar</a>. It works sickeningly well, and actually respects existing messages by message id, so that if for any reason I have to break the sync process, it’ll skip past anything it has already done. I made it non-destructive because it seemed like seriously bad juju to have a sync tool purge out email…. If I get permission from work, I’ll post the jar for anyone with Java 1.6 to use.</p>
+
+<p>As an aside, it took a little bit of hackery to get fatjar running outside eclipse. The relevant section of build.xml was:</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -575,79 +630,6 @@ String country = mTelephonyMgr.getNetworkCountryISO();
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/08/14/rich-people/">Rich People</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-08-14T00:00:00-04:00" pubdate data-updated="true">Aug 14<span>th</span>, 2009</time>
-        
-         | <a href="/2009/08/14/rich-people/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1 id="section"></h1>
-
-<p>I think one of the biggest things that keeps America from moving forward is the intellecually bankrupt notion that people exist independently of one another, and that each person is independently financially responsible for their entire life. It’s a horrible concept, which was promulgated, at least in part, by Ayn Rand and her followers. I quote:</p>
-
-<blockquote>
-  <ul>
-    <li>In answer to the question: “If a morality is not based on the common good, what is it then based on?”: on a definition of the moral individual and on that which is good for him. The moral individual is the best and highest possible to man. By what standard? By the essence of man’s nature. The man living in accordance with his nature is the moral man and the “surviving” man — he carries the life force, the life principle, he is the self-renewing “energy” and the fountainhead. What is man’s nature? Man is a reasoning being.</li>
-  </ul>
-
-  <p>And since morality is a matter of free will, open to all but the insane — the good of the moral man is good for all, i.e., for all those who wish to be moral.</p>
-
-  <p>What is good? That which is in accordance with the life principle of man. The independent, the self-reverent, the self-sufficient.</p>
-
-  <p>Do I set myself up as an arbitrary elite and formulate a morality for my own kind of elite, at the expense of others? No, because it is not to be enforced upon “others” or anyone. “Others” are free not to accept it and not to subscribe to it; they may have their own kind of collectivism, altruism or whatever they wish. But they are not free to enforce it upon me and my “elite” — they are not free to arrange their collectivism at our expense. The objective dividing line is: no man exists for the sake of another man. […]</p>
-
-  <p>This point — no man exists for the sake of another man — must be established very early in my system. It is one of the main cornerstones — and perhaps even the basic axiom.</p>
-
-  <p>Quoted from the Journals of Ayn Rand </p>
-
-  <p>Where do I start with where this goes wrong? I guess I could start with “What is good? That which is in accordance with the life principal of man. The independent, the self-reverent, the self-sufficient.” It’s a very narcissistic point of view, assuming that people exist solely for themselves. Wikipedia refers to a community as a “group that is organized around common values and social cohesion within a shared geographical location, generally in social units larger than a household”. Common values and social cohesion infer interdependencies between the persons involved, ostensibly in the aspiration toward a higher common good. Whereas no person exists solely for the sake of another person, a web of interdependency links all of us, and what is good for one person in particlar is rarely good for society in general.</p>
-
-  <p>Now we can move on to the rich, or the “parasite class”. I tend to think of money as <a href="http://www.chrismartenson.com/crashcourse/chapter-6-what-money">a claim on human labor</a>, as per Chris Martenson. The issue with the incredible wage disparity that we see in our system of “pure capitalism” (which is quite debatable, as we have been <a href="http://www.calculatedriskblog.com/2009/01/cbo-64-billion-subsidy-cost-for-tarp.html">injecting public funds for private gain as of late</a>), is that the labors of the highest paid echelon of society could not possibly be justified over the laborers of the lowest.</p>
-
-  <p>Lawyers, for example, have no cap on the amount of money they can charge (I prefer to use the more fitting word “extort”) their clients, mainly because they not only control rich and powerful lobbys, but also because the <a href="http://www.senate.gov/CRSReports/crs-publish.cfm?pid='0DP%2BP,[;#">majority of lawmakers are lawyers</a>. You not only can’t trust rich people to regulate crookery, you really can’t trust people to regulate themselves. I swear, it really doesn’t work. I’m sure that for the lawyer involved in a case, charging 500 dollars an hour seems like it makes a great deal of sense from a personal standpoint, as he or she can advance their lifestyle through the acquisition of enormous piles of cash-money, but society as a whole does not benefit from this behavior. For example, people filing for bankruptcy generally don’t have a few thousand dollars laying around to hand to some lawyer who is just going to have his lowly paralegal do the majority of the work, then bill it at his normal rate. Did I forget to mention that profit-sharing of legal fees with non-bar certified professionals (non-lawyers) isn’t legal, as the lawyers in Congress have written laws to ensure that? Must be nice to make your own rules…</p>
-
-  <p>Back to individualism, and why it’s such a crock. The majority of the services that an average American uses during the day are in some way, shape or form at least somewhat community owned or controlled. Roads and sewers are owned and operated by the communities in which they are located. Police, fire and ambulance servers are, in all but the most far-fetched cases, owned and operated by municipalities. Public power infrastructure is maintained by states and to a lesser degree municipalities. Healthcare over a certain age, at least in theory, is spread out over the community as a whole, as a way of supporting our elderly citizens.</p>
-
-  <p>Calling all of this “socialism” is probably right. The greater issue is “what is wrong with socialism?” The answer lies in the inability for a small percentage (which would otherwise be a statistical anomaly) of people to claw their way into an utterly lavish lifestyle by using the labor of less fortunate (or most likely, more scrupulous) people to get there.</p>
-
-  <p>Then there is the moral premise of the entire Randian argument — whatever is good for you, is obviously better than what is good for everyone, because you’re more important than everyone else. People who are rich generally get that way by making profit on some sort of labor or time investment (discounting the <a href="http://existentialistcowboy.blogspot.com/2009/08/why-us-investor-class-are-blood-sucking.html">parasite “investor class”</a>, which makes money solely by leveraging existing money in a corrupt system which leans towards investment over labor). The issue with that is that draining an inordinate amount of money out of the economy as a whole, for the sole purpose of greed and self-aggrandizement, is detrimental to the people who are actually performing the labor and consuming the services in question. A healthy income can still be derived from personal labors without the upward motion of wealth from the actual laborers working underneath the person or people in question. Therefore, being rich implies being greedy.</p>
-
-  <p>When I say “rich”, I don’t mean those people who have gone to school for ten years to get a degree and earn 100,000 dollars a year or more. I mean the people who are dragging in 200,000 or even 500,000 dollars a year. I can’t conscionably see how anyone can produce labor that is worth that kind of money (at least in 2009 dollars).</p>
-
-  <p>The bottom line is that rich people are different from pretty much everyone else. Hoping you’re going to be the asshole on top raining golden showers of delight on the happy plebes below is a terrible reason to push destructive policies and strip back social measures designed to keep people safe and healthy. Taxing the rich at a higher percentage isn’t unfair, it’s just evening the playing field, restoring community “wealth” back to the community and the people who actually produced the wealth. Go socialism?</p>
-</blockquote>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/6/">&larr; Older</a>
@@ -665,6 +647,10 @@ String country = mTelephonyMgr.getNetworkCountryISO();
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/10/29/building-ganglia-for-openbsd-4-dot-3/">Building Ganglia for OpenBSD 4.3</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/10/13/preparing-for-and-recovering-from-disaster/">Preparing for and Recovering From Disaster</a>
       </li>
     
@@ -680,10 +666,6 @@ String country = mTelephonyMgr.getNetworkCountryISO();
         <a href="/2013/09/10/are-you-a-cinematographer-or-a-camera-operator/">Are You a Cinematographer or a Camera Operator?</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/09/10/prime-lenses-and-proper-depth-of-field/">Prime Lenses and Proper Depth of Field</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -691,10 +673,10 @@ String country = mTelephonyMgr.getNetworkCountryISO();
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>Cinematography (11)</a></li>
-<li class='category'><a href='/categories/development/'>Development (32)</a></li>
+<li class='category'><a href='/categories/development/'>Development (33)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
-<li class='category'><a href='/categories/hacks/'>Hacks (26)</a></li>
+<li class='category'><a href='/categories/hacks/'>Hacks (27)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>Opinion (11)</a></li>

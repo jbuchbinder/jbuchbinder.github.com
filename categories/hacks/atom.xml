@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-22T16:20:42-04:00</updated>
+  <updated>2013-10-29T12:37:35-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
+    <link href="http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3/"/>
+    <updated>2013-10-29T12:32:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3</id>
+    <content type="html"><![CDATA[<p>I recently had to build a modern version of the <a href="http://ganglia.info">Ganglia</a>
+monitoring system for an <a href="http://www.openbsd.org/">OpenBSD</a> 4.3 firewall, which
+hadn’t been upgraded to a modern version of OpenBSD in quite some time. I
+documented the process, which I’m sharing here.</p>
+
+<p><div><script src='https://gist.github.com/7217488.js'></script>
+<noscript><pre><code># Build and install gmond on OpenBSD 4.3
+
+# Install prerequisites
+pkg add automake-1.9.6p2 autoconf-2.61p1 libtool libconfuse unzip wget
+
+# Compile and install apr-1.4
+wget -c http://mirrors.gigenet.com/apache/apr/apr-1.4.8.tar.gz
+tar zxvf apr-1.4.8.tar.gz
+cd apr-1.4.8
+./configure &amp;&amp; make &amp;&amp; make install
+cd ..
+
+# Download and install monitor-core
+wget -c https://github.com/ganglia/monitor-core/archive/master.zip -O master.zip --no-check-certificate
+unzip master.zip
+cd monitor-core-master
+export AUTOMAKE_VERSION=1.9
+export AUTOCONF_VERSION=2.61
+./bootstrap
+./configure --sysconfdir=/etc --without-gmetad --with-libapr=/usr/local/apr/bin/apr-1-config --with-libconfuse=/usr/local 
+
+# Need to patch some minor stuff...
+# libmetrics/openbsd/metrics.c:
+#   line 446:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 466:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 468 should be commented out.
+
+make all &amp;&amp; make install
+cd ..</code></pre></noscript></div>
+</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
@@ -143,32 +196,6 @@ while (chomp( my $line = )) {
 </code></pre>
 
 <p>in case anyone is interested. Again, I have a fatjar of this utility, but I have to check with work to make sure they’re okay with me releasing it before I can post it anywhere.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[IMAP Synchronization]]></title>
-    <link href="http://jbuchbinder.com/2010/01/17/imap-synchronization/"/>
-    <updated>2010-01-17T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.com/2010/01/17/imap-synchronization</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>I hate it. IMAP Synchronization, that is.</p>
-
-<p>In an effort to migrate users from one *shudder* Exchange provider to another (after getting shot down for proposing first Zimbra, then standard mail server stuff, then <a href="http://www.openchange.org/">Openchange</a>), I have been going through all of the available IMAP sync software that I could find.</p>
-
-<p><strong>mbsync</strong> () – We use this for IMAP backup, so I figured it would be a good idea to try it for syncing between two IMAP servers. *Crash*. *Segfault*. This is one of the reasons I’m not a big fan of really low-level apps written in C.</p>
-
-<p><strong>imapsync</strong> () – Written using a Perl library, this offered the promise of fast syncing, and appeared to work in test runs. That is, until it encountered folders with spaces in them, and threw up all over the terminal. Really, it wasn’t a use-case for *anyone* to have spaces in folder names? I could have put some effort into fixing the library and/or script, but I figured that if something that basic wasn’t working for a fairly mature library, this wasn’t going to be pretty.</p>
-
-<p><strong>The Imap Migration Tool</strong> () – Written in PHP, with a two or three step process. Was meant for moving stuff, not keeping them in sync, so running multiple times would cause additional copies of messages to be created. Also, it seems to have been written in some prehistoric form of PHP, which required hacking to get it even marginally functional. Even then, it spat tons of warnings and nasties, which made me a little nervous to use it on any important mailboxes.</p>
-
-<p><strong>mailsync</strong> () – I don’t even remember why this one didn’t work, only that I wasted a fair amount of time playing with it to get it to try to migrate using the scheme we were working with to no avail. Scratch another one.</p>
-
-<p>Solution … I had to roll my own. This is *stupid* to the highest degree, but I rolled something using <a href="http://java.sun.com/products/javamail/">javamail</a> into a self-contained “fat jar” using <a href="http://fjep.sourceforge.net/">fatjar</a>. It works sickeningly well, and actually respects existing messages by message id, so that if for any reason I have to break the sync process, it’ll skip past anything it has already done. I made it non-destructive because it seemed like seriously bad juju to have a sync tool purge out email…. If I get permission from work, I’ll post the jar for anyone with Java 1.6 to use.</p>
-
-<p>As an aside, it took a little bit of hackery to get fatjar running outside eclipse. The relevant section of build.xml was:</p>
-
 ]]></content>
   </entry>
   

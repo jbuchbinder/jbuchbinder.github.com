@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/development/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-22T16:20:42-04:00</updated>
+  <updated>2013-10-29T12:37:35-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
+    <link href="http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3/"/>
+    <updated>2013-10-29T12:32:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3</id>
+    <content type="html"><![CDATA[<p>I recently had to build a modern version of the <a href="http://ganglia.info">Ganglia</a>
+monitoring system for an <a href="http://www.openbsd.org/">OpenBSD</a> 4.3 firewall, which
+hadn’t been upgraded to a modern version of OpenBSD in quite some time. I
+documented the process, which I’m sharing here.</p>
+
+<p><div><script src='https://gist.github.com/7217488.js'></script>
+<noscript><pre><code># Build and install gmond on OpenBSD 4.3
+
+# Install prerequisites
+pkg add automake-1.9.6p2 autoconf-2.61p1 libtool libconfuse unzip wget
+
+# Compile and install apr-1.4
+wget -c http://mirrors.gigenet.com/apache/apr/apr-1.4.8.tar.gz
+tar zxvf apr-1.4.8.tar.gz
+cd apr-1.4.8
+./configure &amp;&amp; make &amp;&amp; make install
+cd ..
+
+# Download and install monitor-core
+wget -c https://github.com/ganglia/monitor-core/archive/master.zip -O master.zip --no-check-certificate
+unzip master.zip
+cd monitor-core-master
+export AUTOMAKE_VERSION=1.9
+export AUTOCONF_VERSION=2.61
+./bootstrap
+./configure --sysconfdir=/etc --without-gmetad --with-libapr=/usr/local/apr/bin/apr-1-config --with-libconfuse=/usr/local 
+
+# Need to patch some minor stuff...
+# libmetrics/openbsd/metrics.c:
+#   line 446:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 466:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 468 should be commented out.
+
+make all &amp;&amp; make install
+cd ..</code></pre></noscript></div>
+</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
@@ -195,22 +248,6 @@ done
 </ul>
 
 <p>Those are the major bullet points, although I’m sure that upon review of this, I’ll think of some other design paradigms I had to play with to get this to function properly. Off to enjoy the weekend …</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Updated: Linux support for ADS DVD Xpress DX2]]></title>
-    <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
-    <updated>2010-03-25T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
-
-<p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
-
-<p>Original driver : <br />
-Patch : </p>
 ]]></content>
   </entry>
   
