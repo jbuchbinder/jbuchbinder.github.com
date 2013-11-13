@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/development/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-29T12:37:35-04:00</updated>
+  <updated>2013-11-13T15:33:31-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Checking for deprecated Wordpress functions]]></title>
+    <link href="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/"/>
+    <updated>2013-11-13T15:29:00-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions</id>
+    <content type="html"><![CDATA[<p>One of the major pains involved in Wordpress development and work (and one
+of the reasons why this isn’t hosted on Wordpress anymore) is that of their
+quickly changing API.</p>
+
+<p>I’ve encountered issues where plugins have suddenly (and quietly) stopped
+functioning, due to a deprecated function call being removed from the
+Wordpress API. I’m sharing my “solution” to this issue, which is a script
+(which can be integrated into a CI system), which scans your plugin and/or
+theme code and gives you a list of the deprecated functions you’re using,
+as well as where they exist in your code.</p>
+
+<p><div><script src='https://gist.github.com/7419000.js'></script>
+<noscript><pre><code>#!/bin/bash
+#
+# Wordpress Deprecated function checker
+#
+# Version: 0.2
+#
+# Author: Michiel Roos &lt;michiel@donationbasedhosting.org&gt;
+#         github.com/jbuchbinder
+# 
+# www.php.net/manual/en/migration53.deprecated.php
+# 
+# Please note that there will be some false positives. Some PHP code is mixed
+# with JS code. In JS 'split' is still a valid function.
+#
+# Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
+#
+# This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
+# functions are found, which should allow easy integration into CI systems.
+
+tag=$1
+
+if [ &quot;$tag&quot; == &quot;&quot; ]; then
+    echo &quot;Wordpress version must be specified.&quot;
+    exit 1
+fi
+
+whereami=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot;; pwd )&quot;
+
+function dfunctions() {
+    tag=$1
+    
+    # Derived from the list at http://codex.wordpress.org/Category:Deprecated_Functions
+    # (Use Coral Cache to cut down on Wordpress TRAC load.)
+    deprecated_sources=(
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/pluggable-deprecated.ph?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/ms-deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/ms-deprecated.php?format=txt
+    )
+    
+    for s in ${deprecated_sources}; do
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+    done
+}
+deprecatedFunctions=(
+    $( dfunctions ${tag} )
+)
+
+len=${#deprecatedFunctions[*]}
+i=0
+
+echo &quot;Checking for deprectated functions ______________________________________&quot;
+echo &quot;&quot;
+
+found=0
+
+while [ $i -lt $len ]; do
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
+    if [ $? -ne 0 ]; then
+        found=1
+    fi
+    echo &quot;&quot;
+    let i++
+done
+
+exit $found
+</code></pre></noscript></div>
+</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
@@ -227,27 +318,6 @@ done
   <li><a href="https://github.com/jbuchbinder/vded">vded</a> – “vector delta engine daemon”. Meant to allow metric collection for ever increasing values over time. (My first foray into “Vala”)</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Designing applications for clustering]]></title>
-    <link href="http://jbuchbinder.com/2010/05/21/designing-applications-for-clustering/"/>
-    <updated>2010-05-21T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.com/2010/05/21/designing-applications-for-clustering</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
-
-<ul>
-  <li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS … </li>
-  <li><strong>API abstraction</strong> – Don’t write this one off too quickly. A good API layer means that whenever you have to make these sweeping changes, you’re only playing with a few files of source code, as opposed to completely rewriting a good chunk of your codebase. Without the few layers of API which I had been using, I would not have been able to implement the database backed information store which I just completed.</li>
-  <li><strong>Database backed file store</strong> – This was the part I had just finished up. Storing files locally and relying on filesystem-based replication from some of the new clustering filesystems may *seem* like a good idea, but it’s not. Database gives you a single authoritative source, and unless we’re looking at multi-gigabyte files, there should not be an appreciable toll. Besides, you indexed your tables properly, right … ?</li>
-  <li><strong>Design for concurrency</strong> – That record locking may seem like a pain, but two people working on the same object can be catastrophic. Take the time to add a locking field if you have to.</li>
-  <li><strong>Singletons</strong> – Take “singleton” processes into account, so you’re only running a single iteration of something which can only be run once.</li>
-</ul>
-
-<p>Those are the major bullet points, although I’m sure that upon review of this, I’ll think of some other design paradigms I had to play with to get this to function properly. Off to enjoy the weekend …</p>
 ]]></content>
   </entry>
   

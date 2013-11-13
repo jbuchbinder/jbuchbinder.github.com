@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Moving on, moving on up? - /home/jeff/blog</title>
+  <title>Checking for deprecated Wordpress functions - /home/jeff/blog</title>
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="Well, after many years of living in podunk cowville, I’ve moved back into a slightly more suburban area, complete with ridiculous historic figures. &hellip;">
+  <meta name="description" content="A script to help make Wordpress development a little less painful.">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://jbuchbinder.com/2006/06/13/moving-on-moving-on-up">
+  <link rel="canonical" href="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="/home/jeff/blog" type="application/atom+xml">
@@ -47,11 +47,11 @@
   </script>
 
 
-  <meta property="og:url" content="http://jbuchbinder.com/2006/06/13/moving-on-moving-on-up/">
+  <meta property="og:url" content="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/">
 <meta property="og:type" content="website" />
 
-<meta property="og:title" content="Moving on, moving on up?">
-<meta property="og:description" content="">
+<meta property="og:title" content="Checking for deprecated Wordpress functions">
+<meta property="og:description" content="A script to help make Wordpress development a little less painful.">
  
 
 
@@ -97,7 +97,7 @@
   
   <header>
     
-      <h1 class="entry-title">Moving on, Moving on Up?</h1>
+      <h1 class="entry-title">Checking for Deprecated Wordpress Functions</h1>
     
     
       <p class="meta">
@@ -113,7 +113,7 @@
   
 
 
-<time datetime="2006-06-13T00:00:00-04:00" pubdate data-updated="true">Jun 13<span>th</span>, 2006</time>
+<time datetime="2013-11-13T15:29:00-05:00" pubdate data-updated="true">Nov 13<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -122,9 +122,87 @@
   </header>
 
 
-<div class="entry-content"><h1 id="section"></h1>
+<div class="entry-content"><p>One of the major pains involved in Wordpress development and work (and one
+of the reasons why this isn’t hosted on Wordpress anymore) is that of their
+quickly changing API.</p>
 
-<p>Well, after many years of living in podunk cowville, I’ve moved back into a <a href="http://en.wikipedia.org/wiki/Willimantic,_Connecticut">slightly more suburban area</a>, complete with <a href="http://www.curbstone.org/index.cfm?webpage=102">ridiculous historic figures</a>. It’s a bit easier not having to deal with <a href="http://en.wikipedia.org/wiki/Northeast_Blackout_of_1965">annoying power outages</a> and other awful <a href="http://en.wikipedia.org/wiki/Kkk">inconveniences</a>. And now I don’t have to worry about my mailbox getting nailed by that plow driver who always seems to target it. Hooray for the benefits of modern civilization!</p>
+<p>I’ve encountered issues where plugins have suddenly (and quietly) stopped
+functioning, due to a deprecated function call being removed from the
+Wordpress API. I’m sharing my “solution” to this issue, which is a script
+(which can be integrated into a CI system), which scans your plugin and/or
+theme code and gives you a list of the deprecated functions you’re using,
+as well as where they exist in your code.</p>
+
+<div><script src="https://gist.github.com/7419000.js"></script>
+<noscript><pre><code>#!/bin/bash
+#
+# Wordpress Deprecated function checker
+#
+# Version: 0.2
+#
+# Author: Michiel Roos &lt;michiel@donationbasedhosting.org&gt;
+#         github.com/jbuchbinder
+# 
+# www.php.net/manual/en/migration53.deprecated.php
+# 
+# Please note that there will be some false positives. Some PHP code is mixed
+# with JS code. In JS 'split' is still a valid function.
+#
+# Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
+#
+# This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
+# functions are found, which should allow easy integration into CI systems.
+
+tag=$1
+
+if [ &quot;$tag&quot; == &quot;&quot; ]; then
+    echo &quot;Wordpress version must be specified.&quot;
+    exit 1
+fi
+
+whereami=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot;; pwd )&quot;
+
+function dfunctions() {
+    tag=$1
+    
+    # Derived from the list at http://codex.wordpress.org/Category:Deprecated_Functions
+    # (Use Coral Cache to cut down on Wordpress TRAC load.)
+    deprecated_sources=(
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/pluggable-deprecated.ph?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/ms-deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/ms-deprecated.php?format=txt
+    )
+    
+    for s in ${deprecated_sources}; do
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+    done
+}
+deprecatedFunctions=(
+    $( dfunctions ${tag} )
+)
+
+len=${#deprecatedFunctions[*]}
+i=0
+
+echo &quot;Checking for deprectated functions ______________________________________&quot;
+echo &quot;&quot;
+
+found=0
+
+while [ $i -lt $len ]; do
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
+    if [ $? -ne 0 ]; then
+        found=1
+    fi
+    echo &quot;&quot;
+    let i++
+done
+
+exit $found
+</code></pre></noscript></div>
 
 </div>
 
@@ -148,12 +226,12 @@
   
 
 
-<time datetime="2006-06-13T00:00:00-04:00" pubdate data-updated="true">Jun 13<span>th</span>, 2006</time>
+<time datetime="2013-11-13T15:29:00-05:00" pubdate data-updated="true">Nov 13<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/categories/remember-no-one-cares/'>Remember, No One Cares</a>
+    <a class='category' href='/categories/development/'>Development</a>
   
 </span>
 
@@ -162,7 +240,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jbuchbinder.com/2006/06/13/moving-on-moving-on-up/" data-via="jbuchbinder" data-counturl="http://jbuchbinder.com/2006/06/13/moving-on-moving-on-up/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/" data-via="jbuchbinder" data-counturl="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -175,14 +253,18 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/2006/05/19/creating-tts-prompts-for-asterisk-with-realspeak/" title="Previous Post: Creating TTS Prompts for Asterisk with Realspeak">&laquo; Creating TTS Prompts for Asterisk with Realspeak</a>
+        <a class="basic-alignment left" href="/2013/10/29/building-ganglia-for-openbsd-4-dot-3/" title="Previous Post: Building Ganglia for OpenBSD 4.3">&laquo; Building Ganglia for OpenBSD 4.3</a>
       
-      
-        <a class="basic-alignment right" href="/2006/06/29/ubuntu-touchpad-annoyance/" title="Next Post: Ubuntu touchpad annoyance">Ubuntu touchpad annoyance &raquo;</a>
       
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -310,7 +392,10 @@
       var disqus_shortname = 'jbuchbinder';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/';
+        var disqus_url = 'http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

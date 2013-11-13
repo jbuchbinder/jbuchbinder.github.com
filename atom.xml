@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-10-29T12:37:35-04:00</updated>
+  <updated>2013-11-13T15:33:31-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Checking for deprecated Wordpress functions]]></title>
+    <link href="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/"/>
+    <updated>2013-11-13T15:29:00-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions</id>
+    <content type="html"><![CDATA[<p>One of the major pains involved in Wordpress development and work (and one
+of the reasons why this isn’t hosted on Wordpress anymore) is that of their
+quickly changing API.</p>
+
+<p>I’ve encountered issues where plugins have suddenly (and quietly) stopped
+functioning, due to a deprecated function call being removed from the
+Wordpress API. I’m sharing my “solution” to this issue, which is a script
+(which can be integrated into a CI system), which scans your plugin and/or
+theme code and gives you a list of the deprecated functions you’re using,
+as well as where they exist in your code.</p>
+
+<div><script src="https://gist.github.com/7419000.js"></script>
+<noscript><pre><code>#!/bin/bash
+#
+# Wordpress Deprecated function checker
+#
+# Version: 0.2
+#
+# Author: Michiel Roos &lt;michiel@donationbasedhosting.org&gt;
+#         github.com/jbuchbinder
+# 
+# www.php.net/manual/en/migration53.deprecated.php
+# 
+# Please note that there will be some false positives. Some PHP code is mixed
+# with JS code. In JS 'split' is still a valid function.
+#
+# Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
+#
+# This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
+# functions are found, which should allow easy integration into CI systems.
+
+tag=$1
+
+if [ &quot;$tag&quot; == &quot;&quot; ]; then
+    echo &quot;Wordpress version must be specified.&quot;
+    exit 1
+fi
+
+whereami=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot;; pwd )&quot;
+
+function dfunctions() {
+    tag=$1
+    
+    # Derived from the list at http://codex.wordpress.org/Category:Deprecated_Functions
+    # (Use Coral Cache to cut down on Wordpress TRAC load.)
+    deprecated_sources=(
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/pluggable-deprecated.ph?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/ms-deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/ms-deprecated.php?format=txt
+    )
+    
+    for s in ${deprecated_sources}; do
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+    done
+}
+deprecatedFunctions=(
+    $( dfunctions ${tag} )
+)
+
+len=${#deprecatedFunctions[*]}
+i=0
+
+echo &quot;Checking for deprectated functions ______________________________________&quot;
+echo &quot;&quot;
+
+found=0
+
+while [ $i -lt $len ]; do
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
+    if [ $? -ne 0 ]; then
+        found=1
+    fi
+    echo &quot;&quot;
+    let i++
+done
+
+exit $found
+</code></pre></noscript></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
@@ -1225,43 +1315,6 @@ And if nothing else your statement above proves my point that if things like mon
 
 <p>Our education system <a href="http://www.huffingtonpost.com/2010/12/07/us-falls-in-world-education-rankings_n_793185.html">isn’t very good</a>, but dismantling the “great social equalizer” of public education in favor of selling off yet another piece of the country to privatization interests isn’t going to solve anything, at least not for the least fortunate among us. It only drives the wealth divide deeper, as those in poverty are less likely to follow the <a href="http://www.jstor.org/discover/10.2307/2119834?uid=3739696&amp;uid=2129&amp;uid=2&amp;uid=70&amp;uid=4&amp;uid=3739256&amp;sid=55956982713">Horatio Algers myth</a> out of the prison of their socioeconomic class. Besides, charter schools seem to resemble the logical extension of the “<a href="http://www.adl.org/vouchers/vouchers_main.asp">school voucher</a>” programs, designed to funnel public education funds into narrow-minded religious education. (I mean narrow-minded in that religious education is tainted with non-scientific dogma and institutionalized indoctrination in a way that makes the raising of free-thinking adults more and more difficult. <a href="http://www.alternet.org/belief/152349/why_the_anti-science_creationist_movement_is_so_dangerous/?page=entire">“Intelligent design” is a farce</a>, not a valid scientific theory.)</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
-    <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
-    <updated>2012-03-22T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
-
-<p>One-liner to expand RRDs:</p>
-
-<pre><code>/etc/init.d/gmetad stop; /etc/init.d/rrdcached stop ; 
-  find . | grep rrd | while read X; do fix-rrd.sh "$X"; done ; 
-  /etc/init.d/rrdcached start ; /etc/init.d/gmetad restart
-</code></pre>
-
-<p><strong>fix-rrd.sh</strong>:</p>
-
-<pre><code>#!/bin/bash
-# fix-rrds.sh
-NEWRRDS="0:5856 1:20160 2:20160 3:52704 4:3740"
-for RRD in $*; do
-        echo -n "Processing $RRD ... "
-        for RRA in ${NEWRRDS}; do
-                A=$(echo $RRA | cut -d: -f1)
-                B=$(echo $RRA | cut -d: -f2)
-                echo -n "$RRA "
-                rrdtool resize "$RRD" $A GROW $B 
-                        mv resize.rrd "$RRD" &amp;#038;&amp;#038; 
-                        chown nobody "$RRD"
-        done
-        echo "done."
-done
-</code></pre>
 ]]></content>
   </entry>
   
