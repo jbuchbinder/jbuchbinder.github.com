@@ -7,6 +7,7 @@ description: A script to help make Wordpress development a little less painful.
 cover: 
 categories: 
  - Development
+ - Hacks
 ---
 
 One of the major pains involved in Wordpress development and work (and one
