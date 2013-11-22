@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-11-13T15:33:31-05:00</updated>
+  <updated>2013-11-22T14:24:08-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,97 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Checking for deprecated Wordpress functions]]></title>
+    <link href="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/"/>
+    <updated>2013-11-13T15:29:00-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions</id>
+    <content type="html"><![CDATA[<p>One of the major pains involved in Wordpress development and work (and one
+of the reasons why this isn’t hosted on Wordpress anymore) is that of their
+quickly changing API.</p>
+
+<p>I’ve encountered issues where plugins have suddenly (and quietly) stopped
+functioning, due to a deprecated function call being removed from the
+Wordpress API. I’m sharing my “solution” to this issue, which is a script
+(which can be integrated into a CI system), which scans your plugin and/or
+theme code and gives you a list of the deprecated functions you’re using,
+as well as where they exist in your code.</p>
+
+<p><div><script src='https://gist.github.com/7419000.js'></script>
+<noscript><pre><code>#!/bin/bash
+#
+# Wordpress Deprecated function checker
+#
+# Version: 0.2
+#
+# Author: Michiel Roos &lt;michiel@donationbasedhosting.org&gt;
+#         github.com/jbuchbinder
+# 
+# www.php.net/manual/en/migration53.deprecated.php
+# 
+# Please note that there will be some false positives. Some PHP code is mixed
+# with JS code. In JS 'split' is still a valid function.
+#
+# Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
+#
+# This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
+# functions are found, which should allow easy integration into CI systems.
+
+tag=$1
+
+if [ &quot;$tag&quot; == &quot;&quot; ]; then
+    echo &quot;Wordpress version must be specified.&quot;
+    exit 1
+fi
+
+whereami=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot;; pwd )&quot;
+
+function dfunctions() {
+    tag=$1
+    
+    # Derived from the list at http://codex.wordpress.org/Category:Deprecated_Functions
+    # (Use Coral Cache to cut down on Wordpress TRAC load.)
+    deprecated_sources=(
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/pluggable-deprecated.ph?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/ms-deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/ms-deprecated.php?format=txt
+    )
+    
+    for s in ${deprecated_sources}; do
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+    done
+}
+deprecatedFunctions=(
+    $( dfunctions ${tag} )
+)
+
+len=${#deprecatedFunctions[*]}
+i=0
+
+echo &quot;Checking for deprectated functions ______________________________________&quot;
+echo &quot;&quot;
+
+found=0
+
+while [ $i -lt $len ]; do
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
+    if [ $? -ne 0 ]; then
+        found=1
+    fi
+    echo &quot;&quot;
+    let i++
+done
+
+exit $found
+</code></pre></noscript></div>
+</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
@@ -174,28 +265,6 @@ while (chomp( my $line = )) {
 </code></pre>
 
 <p>for example to see only rules passing 100 or more active connections.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Backing up MAPI contacts and calendar from Exchange Server]]></title>
-    <link href="http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/"/>
-    <updated>2010-01-22T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.com/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.</p>
-
-<p>Why someone would design a system to expose every bit of data for a system through a nice standard protocol like IMAP, then only allow certain things to be viewed through a piece of crap proprietary protocol like MAPI just boggles the mind. I’m sure it’s part of their “vendor lock-in” thing, but it just pisses me off.</p>
-
-<p>Anyway, I found out that to completely backup an Exchange account (as I have been doing over the last week or so for different accounts), you also have to backup the non-mail portions. I ended up using a deprecated library called <a href="http://jakarta.apache.org/slide/clientjavadoc/overview-summary.html">Jakarta Slide</a> for WebDAV client support, which helpfully came with a <strong>SearchMethod</strong> call which was capable of running the specialized XML query required to backup the data.</p>
-
-<p>The XML I ended up using was:</p>
-
-<pre><code>SELECT * FROM "URL"
-</code></pre>
-
-<p>in case anyone is interested. Again, I have a fatjar of this utility, but I have to check with work to make sure they’re okay with me releasing it before I can post it anywhere.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-11-13T15:33:31-05:00</updated>
+  <updated>2013-11-22T14:24:08-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Signal to noise ratio]]></title>
+    <link href="http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio/"/>
+    <updated>2013-11-19T15:06:51-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio</id>
+    <content type="html"><![CDATA[<p>To quote the venerable Wikipedia:</p>
+
+<blockquote>
+  <p>Signal-to-noise ratio (often abbreviated SNR or S/N) is a measure used in science and engineering that compares the level of a desired signal to the level of background noise.</p>
+</blockquote>
+
+<p>This has a number of applications in engineering, but it also nicely
+encapsulates a basic truth of dealing with equipment, people, and works –
+there is always a certain amount of background noise. (For more information
+on the concept, check out <a href="http://en.wikipedia.org/wiki/Signal-to-noise_ratio">this article</a>.)</p>
+
+<p>In an ideal world, all equipment would be flawless and noiseless, everyone
+would be wonderful at what they do, and all works would be exceptional 
+<em>(don’t mind the inherent logical issue in the statement “all works would be
+exceptional”; I was trying to make a point, so please forgive me my
+linguistic foibles)</em>. As it so happens, due to a fun little thing called the
+<a href="http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Krueger Effect</a>,
+we tend to assume that our works are better than they actual are, until we
+reach a particular skill level, at which point we start underestimating our
+own skill levels. Succinctly put, we’re all terrible at figuring out how good
+or bad we are at any particular skill.</p>
+
+<p>This is a real pickle, especially when dealing with other people. With very
+few exceptions, we’re going to end up working with other people. This is more
+applicable in cinematography than in photography, since there are usually more
+people involved with a film production than with a still photo shoot (although
+I’m sure there are plenty of instances which would prove me wrong in that
+aspect). </p>
+
+<p><em>I’m going to restrict my examples to cinematography projects, to keep
+this a bit more manageable and readable.</em></p>
+
+<p>First, look at your potential crew. If you’re dealing with a low-budget indie
+shoot, which most of us are, you are either not paying your crew or are paying
+them very little money. You’ve already eliminated the possibility of a great
+number of highly experienced, educated, and trained people being involved,
+simply by eliminating the carrot of a serious payday. It could be additionally
+argued that those who do work for a living are not necessarily <em>great</em> at
+what they do, but that’s a little tangential to the core of the argument.
+Out of those people, you’re generally going to tend to see the talent curve
+follow the infamous <a href="http://mathworld.wolfram.com/NormalDistribution.html">standard/normal distribution curve</a>.
+This means some will be utterly atrocious, some will be genius, and the
+vast majority will lie somewhere between those two points. The outliers and
+bounds will depend on the sample size, but the general concept tends to be
+the same, which is that most people are not going to possess genius-level
+skills in the vast majority of a sample set.</p>
+
+<p>Second, look at your potential actors/on-screen talent. You’re in the same
+boat as you were with the crew – except that a single truly terrible actor
+will destroy the illusion you’re trying to create, so you have to hope that
+your lower bound is pretty high, otherwise your end product will most likely
+suffer. (It should also be said that a really great director has been known
+to coax amazing performances out of lackluster talent, but we can’t all be
+Stanley Kubrick, Darren Aronofsky, or P.T. Anderson…)</p>
+
+<p>So, what are we to do? We need to start acknowledging that not everything
+we’re going to make is going to be the best thing <strong>ever</strong>. It’s an anathema
+to the general self-aggrandizing L.A. film culture, but we have to respect
+the normal distribution curve – most films will be mediocre, some will be
+agonizingly bad, and some will be amazing. The DKE means we’ll always think
+that they’re all amazingly wonderful, but we need to be far more critical of
+our own works ; at least, if we want to try to produce high-quality output.</p>
+
+<p>We also need to understand that there’s a place for our hubris, as well as
+our humility. We cannot grow as filmmakers, photographers, artists, or as
+people, until we both appreciate the skill-set we have, while at the same
+time understanding the limits of what we have accomplished right now, and
+always striving to produce better, become better, and encourage better. We
+can’t all be the <strong>best</strong>, but we can all become <strong>better</strong>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Checking for deprecated Wordpress functions]]></title>
@@ -1291,30 +1369,6 @@ And if nothing else your statement above proves my point that if things like mon
 
   <p>We aren’t allowed to set nationwide curriculum, due to the “states rights” wonks, otherwise we might actually allow the Department of Education to set a nationwide curriculum. I don’t think we can blame that on the public school system, but rather anti-Federalism.</p>
 </blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Just a theory]]></title>
-    <link href="http://jbuchbinder.com/2012/03/27/just-a-theory/"/>
-    <updated>2012-03-27T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.com/2012/03/27/just-a-theory</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>I’ve been trying to keep up with the <a href="http://www.myleftnutmeg.com/diary/14133/pelto-dan-malloy-and-the-national-forces-pushing-for-education-reform">education reform battle in Connecticut</a>, since it’s my home state. The people pushing for reform (along with such “luminaries” as <a href="http://www.dailykos.com/story/2011/08/22/1009422/-Michelle-Rhee-still-refuses-to-answer-questions-about-cheating-scandal">Michelle Rhee</a> and <a href="http://redgreenandblue.org/2011/11/30/the-worst-of-the-1-could-it-be-walmart-chairman-rob-walton/">The Walton Foundation</a>, who incidentally would privatize everything up to and including <a href="http://blogs.alternet.org/danbacher/2011/08/17/wal-mart-gives-36-million-to-ocean-privatization-efforts/">the ocean</a>) are pushing for publicly subsidized yet privatized “<a href="http://en.wikipedia.org/wiki/Charter_school">charter schools</a>” and the breaking of teachers’ union protections.</p>
-
-<p>One of the first things you read in the wikipedia article about charter schools is that:</p>
-
-<blockquote>
-  <p>Charter schools are primary or secondary schools that receive public money (and like other schools, may also receive private donations) but are not subject to some of the rules, regulations, and statutes that apply to other public schools in exchange for some type of accountability for producing certain results, which are set forth in each school’s charter.</p>
-</blockquote>
-
-<p>Now, why would such notorious religious privatization and <a href="http://www.eeoc.gov/eeoc/newsroom/release/10-1-10c.cfm">religiously discriminatory</a> asshats such as the Walton family be interested in charter schools? I think the key words are “<strong>but are not subject to some of the rules, regulations, and statutes that apply to other public schools</strong>“. I would venture a guess that <a href="http://www.ncspe.org/publications_files/OP170.pdf">religious charter schools</a>, funded on the public dime, are next up in the “public education debate” — not to mention the ability to perform just about any form of political or ideological indoctrination which they would see fit to offer. Don’t forget, we already have a fair amount of <a href="http://www.youtube.com/watch?v=Arn3lF5XSUg">dogma injected into our children</a>, for the sake of maintaining a steady stream of money and human bodies to feed into the grist mill of our sprawling Military-Industrial Complex.</p>
-
-<p>Let’s break it down: some of the major factors involved in the quality of a child’s education are — you guessed it — <a href="http://www.independent.co.uk/news/education/education-news/quality-of-education-still-determined-by-wealth-says-report-888283.html">money</a> (<a href="http://www.thedefendersonline.com/2011/03/08/spring-2010-wealth-and-access-to-higher-education-the-double-whammy-of-race-and-gender/">some have systemically more than others</a>) and <a href="http://www.medicaldaily.com/news/20111230/8504/key-to-school-improvement-study-reading-writing-arithmetic-character-how-can-my-child-improve.htm">not simply teaching for targeted tests</a>. <a href="http://usliberals.about.com/od/education/i/NCLBProsCons.htm">NCLB</a> had some serious issues, notably with <a href="http://edr.sagepub.com/content/33/1/4.short">ESL students</a>, and tended to have <a href="http://heinonline.org/HOL/LandingPage?collection=journals&amp;handle=hein.journals/nylr79&amp;div=28&amp;id=&amp;page=">incentives which hurt rather than helped</a> students. Sweeping educational reform has been shown, through that particular piece of legislation, to have the capability to hurt our most disadvantaged students, even under the guise of helping them. Unfortunately, in the race to keep school funding, many schools have turned to teaching *for* the NCLB testing guidelines, rather than teaching a well-rounded educational curriculum.</p>
-
-<p>Our education system <a href="http://www.huffingtonpost.com/2010/12/07/us-falls-in-world-education-rankings_n_793185.html">isn’t very good</a>, but dismantling the “great social equalizer” of public education in favor of selling off yet another piece of the country to privatization interests isn’t going to solve anything, at least not for the least fortunate among us. It only drives the wealth divide deeper, as those in poverty are less likely to follow the <a href="http://www.jstor.org/discover/10.2307/2119834?uid=3739696&amp;uid=2129&amp;uid=2&amp;uid=70&amp;uid=4&amp;uid=3739256&amp;sid=55956982713">Horatio Algers myth</a> out of the prison of their socioeconomic class. Besides, charter schools seem to resemble the logical extension of the “<a href="http://www.adl.org/vouchers/vouchers_main.asp">school voucher</a>” programs, designed to funnel public education funds into narrow-minded religious education. (I mean narrow-minded in that religious education is tainted with non-scientific dogma and institutionalized indoctrination in a way that makes the raising of free-thinking adults more and more difficult. <a href="http://www.alternet.org/belief/152349/why_the_anti-science_creationist_movement_is_so_dangerous/?page=entire">“Intelligent design” is a farce</a>, not a valid scientific theory.)</p>
-
 ]]></content>
   </entry>
   

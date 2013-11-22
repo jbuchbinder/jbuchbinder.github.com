@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-11-13T15:33:31-05:00</updated>
+  <updated>2013-11-22T14:24:08-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Signal to noise ratio]]></title>
+    <link href="http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio/"/>
+    <updated>2013-11-19T15:06:51-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio</id>
+    <content type="html"><![CDATA[<p>To quote the venerable Wikipedia:</p>
+
+<blockquote>
+  <p>Signal-to-noise ratio (often abbreviated SNR or S/N) is a measure used in science and engineering that compares the level of a desired signal to the level of background noise.</p>
+</blockquote>
+
+<p>This has a number of applications in engineering, but it also nicely
+encapsulates a basic truth of dealing with equipment, people, and works –
+there is always a certain amount of background noise. (For more information
+on the concept, check out <a href="http://en.wikipedia.org/wiki/Signal-to-noise_ratio">this article</a>.)</p>
+
+<p>In an ideal world, all equipment would be flawless and noiseless, everyone
+would be wonderful at what they do, and all works would be exceptional 
+<em>(don’t mind the inherent logical issue in the statement “all works would be
+exceptional”; I was trying to make a point, so please forgive me my
+linguistic foibles)</em>. As it so happens, due to a fun little thing called the
+<a href="http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Krueger Effect</a>,
+we tend to assume that our works are better than they actual are, until we
+reach a particular skill level, at which point we start underestimating our
+own skill levels. Succinctly put, we’re all terrible at figuring out how good
+or bad we are at any particular skill.</p>
+
+<p>This is a real pickle, especially when dealing with other people. With very
+few exceptions, we’re going to end up working with other people. This is more
+applicable in cinematography than in photography, since there are usually more
+people involved with a film production than with a still photo shoot (although
+I’m sure there are plenty of instances which would prove me wrong in that
+aspect). </p>
+
+<p><em>I’m going to restrict my examples to cinematography projects, to keep
+this a bit more manageable and readable.</em></p>
+
+<p>First, look at your potential crew. If you’re dealing with a low-budget indie
+shoot, which most of us are, you are either not paying your crew or are paying
+them very little money. You’ve already eliminated the possibility of a great
+number of highly experienced, educated, and trained people being involved,
+simply by eliminating the carrot of a serious payday. It could be additionally
+argued that those who do work for a living are not necessarily <em>great</em> at
+what they do, but that’s a little tangential to the core of the argument.
+Out of those people, you’re generally going to tend to see the talent curve
+follow the infamous <a href="http://mathworld.wolfram.com/NormalDistribution.html">standard/normal distribution curve</a>.
+This means some will be utterly atrocious, some will be genius, and the
+vast majority will lie somewhere between those two points. The outliers and
+bounds will depend on the sample size, but the general concept tends to be
+the same, which is that most people are not going to possess genius-level
+skills in the vast majority of a sample set.</p>
+
+<p>Second, look at your potential actors/on-screen talent. You’re in the same
+boat as you were with the crew – except that a single truly terrible actor
+will destroy the illusion you’re trying to create, so you have to hope that
+your lower bound is pretty high, otherwise your end product will most likely
+suffer. (It should also be said that a really great director has been known
+to coax amazing performances out of lackluster talent, but we can’t all be
+Stanley Kubrick, Darren Aronofsky, or P.T. Anderson…)</p>
+
+<p>So, what are we to do? We need to start acknowledging that not everything
+we’re going to make is going to be the best thing <strong>ever</strong>. It’s an anathema
+to the general self-aggrandizing L.A. film culture, but we have to respect
+the normal distribution curve – most films will be mediocre, some will be
+agonizingly bad, and some will be amazing. The DKE means we’ll always think
+that they’re all amazingly wonderful, but we need to be far more critical of
+our own works ; at least, if we want to try to produce high-quality output.</p>
+
+<p>We also need to understand that there’s a place for our hubris, as well as
+our humility. We cannot grow as filmmakers, photographers, artists, or as
+people, until we both appreciate the skill-set we have, while at the same
+time understanding the limits of what we have accomplished right now, and
+always striving to produce better, become better, and encourage better. We
+can’t all be the <strong>best</strong>, but we can all become <strong>better</strong>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Preparing for and recovering from disaster]]></title>
@@ -444,79 +522,6 @@ projects, we’re all on the same team; we all (for the most part) are
 interested in shooting great footage, and many of us are concerned about
 creating enduring works of art, wherever possible. We all have great
 potential for growth, so whatever your career and job choice, good luck!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prime Lenses and Proper Depth of Field]]></title>
-    <link href="http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field/"/>
-    <updated>2013-09-10T13:24:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field</id>
-    <content type="html"><![CDATA[<p>Depth of field is a massively misunderstood “side effect” of iris size, and
-an ultimately useful storytelling tool (when used properly).</p>
-
-<p>DSLR photography has spawned a large group of cinematographers who are
-dealing with largely light-insensitive camera sensors (usually producing
-fairly unacceptable noise when used at greater sensitivies than ISO 800).
-This has created a need for “fast” lenses, which are lenses which have very
-large maximum apertures, featuring maximum f-stop ratings like f/2.0, f/1.8,
-and even f/1.4 (there are even some <a href="http://www.dpreview.com/news/2013/08/06/kubrick-s-f-0-7-lenses-now-available-for-rent-but-start-saving-up">f/0.7 lenses</a> out there, but I’m
-sticking to the realm of affordable DSLR cinematography, at the moment).
-Using firmware like <a href="http://magiclantern.fm/">Magic Lantern</a> allows us to use
-focus peaking to exploit manual-focus and non-EF mount lenses (for those
-Canon-philes among us), to bring down the effective cost of shooting “fast”
-lenses. I have some M42 “Pentax screw-mount” lenses which open to f/2.8 –
-acquired for less than 10 USD each, plus a 7 USD <a href="http://amzn.to/1fVPGyf">M42-to-EF adapter ring</a>.
-If you’re interested in more information on how to use focus peaking, check
-out <a href="http://fstoppers.com/using-magic-lantern-with-focus-peaking-for-free-lensing">how it works</a>.</p>
-
-<p>So, you’ve beaten high-cost DSLR and cinema camera body manufacturers by
-using “fast” lenses, right? Well, not so fast, there… You have to consider
-the <em>side effect</em> of fast lenses and wide apertures: the shallow depth of
-field. It’s both a blessing and a curse; we tend to associate shallow depth
-of field images and video with expensive equipment (rightfully so, in most
-cases) and a more personal type of image, but those lenses are not
-universally usable “wide open”. Many shots come off looking amateurish and
-ill-composed, when half of the subjects are out of focus, because they’ve
-exceeded the edges of the “sharp” area in the focus range.</p>
-
-<p>(There’s also lack of lens sharpness and chromatic abberation to consider,
-which are generally present, to some degree, in the widest aperture settings
-available on most lenses. That’s a very intensely technical discussion,
-however, and will probably be reserved for a future posting.)</p>
-
-<p>When considering the depth of field you want, consider the subject (or
-literal <em>focus</em>) of the shot, and figure out how much of the shot needs to
-be in focus to properly tell your story. The depth of field is very
-important for exposing the mise-en-scène in the way which best represents
-both the explicit visuals and external representation of internal
-character development and exposition. If your character needs to “pop”
-out of the scenery, a narrow DOF would be perfect – but if they are to
-appear as a figurative cog in the machinery of the world, you’re probably
-going to be looking for the widest DOF (approaching infinity) as you can
-get. When widening the DOF like this, you’ll most likely have to compensate
-by boosting the ambient lighting, or adding additional lighting, to
-adjust for the decreased light hitting your camera sensor.</p>
-
-<p>There are a number of tools for figuring out the proper DOF for a certain
-shot, based on the camera/sensor, lens focal length, and distance to
-primary focal point.</p>
-
-<ul>
-  <li><a href="http://www.dofmaster.com/dofjs.html">Web-based DOF calculator</a></li>
-  <li><a href="http://www.dofmaster.com/android.html">Android calculator</a></li>
-  <li><a href="http://www.dofmaster.com/iphone.html">iOS calculator</a></li>
-</ul>
-
-<p>There are more of them, but if you specify the variables, you can adjust
-the aperture f-stop to the widest setting which properly fits the scene
-and visuals which you’re attempting to achieve.</p>
-
-<p>Like anything else, this isn’t strictly an instructional A-to-B guide on
-how to achieve stunning visuals; it’s simply an attempt to share some of
-what I’ve learned, and to help share the knowledge and tools to exploit
-your own inner artistic vision. Good luck shooting!</p>
 
 ]]></content>
   </entry>

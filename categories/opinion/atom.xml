@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Opinion | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/opinion/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-11-13T15:33:31-05:00</updated>
+  <updated>2013-11-22T14:24:08-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Signal to noise ratio]]></title>
+    <link href="http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio/"/>
+    <updated>2013-11-19T15:06:51-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio</id>
+    <content type="html"><![CDATA[<p>To quote the venerable Wikipedia:</p>
+
+<blockquote>
+  <p>Signal-to-noise ratio (often abbreviated SNR or S/N) is a measure used in science and engineering that compares the level of a desired signal to the level of background noise.</p>
+</blockquote>
+
+<p>This has a number of applications in engineering, but it also nicely
+encapsulates a basic truth of dealing with equipment, people, and works –
+there is always a certain amount of background noise. (For more information
+on the concept, check out <a href="http://en.wikipedia.org/wiki/Signal-to-noise_ratio">this article</a>.)</p>
+
+<p>In an ideal world, all equipment would be flawless and noiseless, everyone
+would be wonderful at what they do, and all works would be exceptional 
+<em>(don’t mind the inherent logical issue in the statement “all works would be
+exceptional”; I was trying to make a point, so please forgive me my
+linguistic foibles)</em>. As it so happens, due to a fun little thing called the
+<a href="http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Krueger Effect</a>,
+we tend to assume that our works are better than they actual are, until we
+reach a particular skill level, at which point we start underestimating our
+own skill levels. Succinctly put, we’re all terrible at figuring out how good
+or bad we are at any particular skill.</p>
+
+<p>This is a real pickle, especially when dealing with other people. With very
+few exceptions, we’re going to end up working with other people. This is more
+applicable in cinematography than in photography, since there are usually more
+people involved with a film production than with a still photo shoot (although
+I’m sure there are plenty of instances which would prove me wrong in that
+aspect). </p>
+
+<p><em>I’m going to restrict my examples to cinematography projects, to keep
+this a bit more manageable and readable.</em></p>
+
+<p>First, look at your potential crew. If you’re dealing with a low-budget indie
+shoot, which most of us are, you are either not paying your crew or are paying
+them very little money. You’ve already eliminated the possibility of a great
+number of highly experienced, educated, and trained people being involved,
+simply by eliminating the carrot of a serious payday. It could be additionally
+argued that those who do work for a living are not necessarily <em>great</em> at
+what they do, but that’s a little tangential to the core of the argument.
+Out of those people, you’re generally going to tend to see the talent curve
+follow the infamous <a href="http://mathworld.wolfram.com/NormalDistribution.html">standard/normal distribution curve</a>.
+This means some will be utterly atrocious, some will be genius, and the
+vast majority will lie somewhere between those two points. The outliers and
+bounds will depend on the sample size, but the general concept tends to be
+the same, which is that most people are not going to possess genius-level
+skills in the vast majority of a sample set.</p>
+
+<p>Second, look at your potential actors/on-screen talent. You’re in the same
+boat as you were with the crew – except that a single truly terrible actor
+will destroy the illusion you’re trying to create, so you have to hope that
+your lower bound is pretty high, otherwise your end product will most likely
+suffer. (It should also be said that a really great director has been known
+to coax amazing performances out of lackluster talent, but we can’t all be
+Stanley Kubrick, Darren Aronofsky, or P.T. Anderson…)</p>
+
+<p>So, what are we to do? We need to start acknowledging that not everything
+we’re going to make is going to be the best thing <strong>ever</strong>. It’s an anathema
+to the general self-aggrandizing L.A. film culture, but we have to respect
+the normal distribution curve – most films will be mediocre, some will be
+agonizingly bad, and some will be amazing. The DKE means we’ll always think
+that they’re all amazingly wonderful, but we need to be far more critical of
+our own works ; at least, if we want to try to produce high-quality output.</p>
+
+<p>We also need to understand that there’s a place for our hubris, as well as
+our humility. We cannot grow as filmmakers, photographers, artists, or as
+people, until we both appreciate the skill-set we have, while at the same
+time understanding the limits of what we have accomplished right now, and
+always striving to produce better, become better, and encourage better. We
+can’t all be the <strong>best</strong>, but we can all become <strong>better</strong>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Election 2012 Summary]]></title>
@@ -116,92 +194,6 @@
 
 <p><em>(Note: Please don’t read this as an endorsement of Governor Malloy. After the <a href="http://jonathanpelto.com/2012/03/21/steven-adamowski-governor-malloy-and-perfecting-the-art-of-inflating-test-scores/">Adamowski debacle</a>, I don’t think I’m going to be liking him very much, thank you.)</em></p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[FJM Treatment of Charter School Argument]]></title>
-    <link href="http://jbuchbinder.com/2012/05/18/fjm-treatment-of-charter-school-argument/"/>
-    <updated>2012-05-18T00:00:00-04:00</updated>
-    <id>http://jbuchbinder.com/2012/05/18/fjm-treatment-of-charter-school-argument</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>This is an argument I had with someone publicly a little while ago. I was fighting the concept that the entire educational system was a complete failure, and should be replaced with Michelle-Rhee-style charter schools.</p>
-
-<blockquote>
-  <p><em>Jeff I’m sorry, I don’t care what is going on outside the school.</em></p>
-</blockquote>
-
-<p>That’s pretty myopic. Teaching isn’t a daycare, nor is it a panacea — if you have external positive or negative influences outside of school, it’s going to affect their educational outcome.</p>
-
-<blockquote>
-  <p><em>If you have a group of 30 kids in your class for say American History and 20 of those kids can’t tell you when the American Revolution took place, then that is a failing teacher. If you think that has anything to do with anything other than a teacher failing to teach the material your fooling yourself.</em></p>
-</blockquote>
-
-<p>You picked a purposefully simplistic data point, which doesn’t really reflect the actual situation. Most kids know that 1776 is the year of the American revolution, just like most kids can identify Mickey Mouse — it’s a cultural thing. It probably would have been more effective for you to present an actual situation, rather than a pretty unrealistic hypothetical one.</p>
-
-<blockquote>
-  <p><em>I’ve talked to kids from Uconn who didn’t know where Canada was on a map. Canada Jeff.</em></p>
-</blockquote>
-
-<p>And I know kids who can name the capitals of every country in the world. See, we both can present anecdotal evidence which proves nothing!</p>
-
-<blockquote>
-  <p><em>That’s a failure and who ever was supposed to be teaching that failed that student. That teacher should be accountable for that. It’s that simple.</em></p>
-</blockquote>
-
-<p>So, if students misbehave, skip class, or just don’t care, we should fire the teacher? There is no simple accountability method for teachers, bud. If it were that easy, there wouldn’t be gaming of the system — and the NCLB law, which was supposed to grant merit-based benefits, only further disadvantages poor schools and increases class stratification.</p>
-
-<blockquote>
-  <p><em>Don’t misunderstand me. I think the majority of teachers are good teachers.</em></p>
-</blockquote>
-
-<p>That doesn’t follow from any of your arguments, nor the arguments of the film. If teachers are largely effectual, we wouldn’t require large systemic changes (as the movie suggests) to alter the educational system. If teachers are *not* largely effectual, we would require large system changes (as the movie suggests), which would put your position in line with supporting the movie.</p>
-
-<p>There’s a standard distribution of teaching skills and aptitude, much like with everything else. You’re going to have a large number of “average” teachers (by definition), with diminishing levels of less and more competent teachers as you move away from the average. The movie tries to imply that public schools maintain largely ineffectual and incompetent teachers, which isn’t supported by the data.</p>
-
-<blockquote>
-  <p><em>I believe they like kids and want to do right by them. They shouldn’t have a problem with accountability. The ones that aren’t teaching I’m sure do.</em></p>
-</blockquote>
-
-<p>This smacks of surveillance and diminishing civil liberties under the guise of “they don’t have anything to worry about if they’re not doing anything wrong”.</p>
-
-<blockquote>
-  <p><em>It only takes one or two bad teachers to ruin a kids education.</em></p>
-</blockquote>
-
-<p>Anecdotal, at best. As a counter-example, I had several lousy teachers during my school career, and still did just fine. I would argue that educational outcome is a combination of learning potential, curriculum, teaching skill, and class size / attention per student.</p>
-
-<blockquote>
-  <p><em>As I said earlier. I didn’t do well in school, because I was never challenged. I can’t be the only person who thinks that.</em></p>
-</blockquote>
-
-<p>Define “didn’t do well in school”. My grades were fine, though I was also never challenged in school. I’m a white-collar, decently successful, fairly well-rounded adult. If that’s not the purpose of an educational system, what is?</p>
-
-<blockquote>
-  <p><em>When my son did poorly in class I talked to his teachers. I told them he is bored give him something more challenging. I was fortunate enough to know many of my sons teachers, because many of them where my teachers and so most where on board with that plan. The ones that didn’t soon got the message as I can be a real bastard especially when dealing with my kid. He did well. Much better than I did.</em></p>
-</blockquote>
-
-<p>Are you defining success by scoring well on standardized tests, or by turning out to be a well rounded individual? I would argue that, if your son is not “challenged”, he would be able to easily breeze through the curriculum, with extra time for other activities. Getting bad grades in that case is rather an attention issue.</p>
-
-<blockquote>
-  <p><em>I think when we classify someone as a slow or average learner we are doing that kid an injustice. We are saying your not as good as these other kids.</em></p>
-</blockquote>
-
-<p>No, you’re saying that they learn at a slower rate. Believe it or not, children do not all learn at the same rate. There’s rather a “bell curve” type distribution of learning aptitude and speed. You can’t molly-coddle children and tell them that they all possess equal learning abilities any more than you can tell them that they can all be ballerinas or rock stars.</p>
-
-<blockquote>
-  <p><em>What’s worse is that the ones that really want to learn are slowed by classes that cater to that attitude.</em></p>
-</blockquote>
-
-<p>We have skill level classes in high school (basic, advanced, honors, AP, etc) in most school systems, which separate mostly by learning abilities. It has been that way for a while.</p>
-
-<blockquote>
-  <p>*So what do we do. Instead of elevating those kids to the level we expect we lower the standards to make sure they pass. 
-And if nothing else your statement above proves my point that if things like money where regulated that would only help to improve the system. that way they wouldn’t be “robbed” of funding. And regulating the testing to make it uniform is required. Are you telling me that it’s ok for us to test a kid from Ohio differently than a kid from Alabama. There needs to be a standard to which all schools nation wide apply themselves. </p>
-
-  <p>We aren’t allowed to set nationwide curriculum, due to the “states rights” wonks, otherwise we might actually allow the Department of Education to set a nationwide curriculum. I don’t think we can blame that on the public school system, but rather anti-Federalism.</p>
-</blockquote>
 ]]></content>
   </entry>
   
