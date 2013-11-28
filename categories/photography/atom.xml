@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Photography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/photography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-11-22T16:28:29-05:00</updated>
+  <updated>2013-11-28T13:00:28-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,101 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Dynamic range]]></title>
+    <link href="http://jbuchbinder.com/2013/11/28/dynamic-range/"/>
+    <updated>2013-11-28T11:08:17-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/28/dynamic-range</id>
+    <content type="html"><![CDATA[<p>As a photographer or cinematographer, I’m sure you’ve come into contact with
+limitations in <a href="http://en.wikipedia.org/wiki/Dynamic_range">dynamic range</a>.
+I have run into limitations with dynamic range in both the visual and audio
+field, since anything that involves “real world” signals is going to 
+potentially run up against the ability of the digital mediums on which we
+rely to properly store the entire gamut of available analog data that we are
+able to perceive with our eyes and ears. To combat the loss of data, computer
+scientists and electrical engineers developed the process of dynamic range
+compression, which is usually referred to as simple “compression”. This
+reduces the gamut of presented information to a digitally representable
+format. There is, however, something which is lost – and that is the
+original dynamic range ; the amount of variance between the strongest and
+weakest signal. In small doses, or when done with finesse, this provides the
+ability to produce better sounding and better looking content in the digital
+realm. When overused, we see results like the <a href="http://en.wikipedia.org/wiki/Loudness_war">loudness war</a>.</p>
+
+<p>I like to explore the more figurative aspects of many technical concepts, to 
+which most avid readers of my work would attest. In that vein of ideas, consider
+the derivative concept of dynamics as a function of cinematic tension/resolution
+and feeling.</p>
+
+<p>Much like a written work, cinematic works generally tend to follow a
+“<a href="http://www.dailywritingtips.com/how-to-structure-a-story-the-eight-point-arc/">plot/story arc</a>”,
+which have a number of basic stages, even if the presentation, order, and
+presence will vary between works. As cinematographers, one of our jobs is to
+attempt to portray the basic plot elements, character interactions, and other
+potentially metaphysical aspects of the story through the lensing, lighting,
+focal points, composition, and method of stabilization and capture we use.
+<em>(I’m aware that there are other control points, but forgive me my omissions
+for the sake of some semblence of brevity.)</em> For example, for a more
+“cinéma vérité” style for a combat or heavy action sequence, a filmmaker could
+choose to shoot with less stabilization, looser composition, and less staged
+lighting, which would present the audience with the perception that the scene
+is far closer to the work of a documentarian than a staged film scene. In
+<a href="http://www.imdb.com/title/tt0120815/">Saving Private Ryan</a>, for example, the
+battle scenes have a decreased exposure time, resulting in action appearing
+far more caustic and (what we believe is) more realistic. This allows the
+relative dynamics of the scenes in question to be raised to allow far more
+tension and action to be shown, through simple camera work.</p>
+
+<p>The issue with techniques like this begin to manifest themselves when they
+begin to flatten the dynamic of a film work through rampant and flagrant
+overuse. At some point, cinematographers realized that they could shoot
+<em>entire films</em> with these techniques, ostensibly to raise those tension and
+action levels to that same high. By doing this, they have effectively
+flattened the dynamic range of their works, producing an effectively and
+uniformly “loud” work. The questions that you might be asking are “why is this
+a bad thing, and why should I care?”</p>
+
+<p>We view things as deltas, or differences. We understand happiness because we
+understand sadness, heat because we experience cold, and comfort and
+companionship because we can contrast it with loneliness. If the range we are
+give to deal with is only the “best parts”, we begin to lose our ability to
+appreciate it, and all of those things which should have made it special and
+artistic become mere convention. Think about it – if everyone screamed
+everything at the same volume, rather than having varying levels of emphasis
+and volume, wouldn’t that screaming have lost its impact and importance?</p>
+
+<p>Every technique that you have as a cinematographer or photographer is another
+potential tool in your figurative tool box; but just because you have them
+doesn’t mean that you have to use one particular one <em>all the time</em>. Handheld
+camerawork has its place, and even though modern technology has provided many
+methods of stabilizing camera and lens motion, from the steadicam to image
+stabilization/vibration reduction lens to three point shoulder rigs, we still
+find many cinematographers intentionally introducing shake into their
+footage. I wrote an <a href="http://jbuchbinder.com/2013/06/03/stabilization/">entire essay</a> 
+on the importance of stabilization, so I won’t reiterate my grievances here.</p>
+
+<p>It’s important to understand why you’re doing something rather than
+simply doing it for convenience or convention. If you’re using a wide open
+aperture, are you doing it because you’re having lighting issues, or simply
+because you think that everything should be shot with the thinnest DOF
+possible? Is there some sort of artistic reason why you chose to shoot with
+a 24mm vs a 35mm lens for a particular shot? Are you using a tripod-based
+shot rather than a steadicam for a reason? Asking questions and analyzing
+your own work, as well as the work of others, is key to artistic growth, as
+well as understanding how to use your skillset as a photographer or
+cinematographer.</p>
+
+<p>I am, by no means, at the top of the skill grouping for photography <em>or</em>
+cinematography. Many of the entries I have authored here are products of
+making mistakes, and they are the attempt I am making to keep others from
+having to make some of the very same mistakes I have made. Even films and
+other work which we don’t particularly like as a whole may have a few 
+setups or shots which provide food for thought. So, watch those films with
+a critical eye, and hopefully we can all expand our “toolboxes”, as well
+as learn how to use them in a more effective manner. Good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Signal to noise ratio]]></title>
@@ -441,22 +536,6 @@ relegate to their post-processing workflow. Good luck!</p>
 <p>I recently moved to one of Sprint’s CDMA Android offerings, the HTC Hero. I just finished the <a href="http://geekfor.me/">flashing/rooting process</a>, since I don’t particularly care for devices that try to lock me out of their own functionality. (The key to doing this with the “newer” Sprint CDMA Hero phones is apparently using an older version of the recovery image and making sure you have enough available memory to run the image flash, but that’s beside the point.) This particular device came with a 5 megapixel built-in camera, and though I know that <a href="http://forum.digitalcamerareview.com/showthread.php?p=5354">resolution != quality</a>, it does seem to produce *passable* images. Not great, but passable. I’m hoping to see an improvement when the CDMA Hero sees “official” <a href="http://phandroid.com/2010/02/16/sprint-hero-moment-getting-android-2-1-early-2q10/">Android 2.1 support</a>. This OS version fragmentation is bunk, but at least I can upgrade as soon as the pieces are available for another model. <a href="http://www.engadget.com/2009/02/18/editorial-ten-reasons-why-windows-mobile-6-5-misses-the-mark/">Suck that, closed source technology</a>.</p>
 
 <p>Am I giving up the <a href="http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&amp;fcategoryid=139&amp;modelid=17779">40D</a>? Hell emphatically *no*. But I can capture a few things I might miss fumbling for the camera bag. At least, I hope I can.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Front page fail]]></title>
-    <link href="http://jbuchbinder.com/2009/01/20/front-page-fail/"/>
-    <updated>2009-01-20T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.com/2009/01/20/front-page-fail</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
-
-<p>One of my pictures made it to the front page of the infamous “<a href="http://failblog.org/">failblog</a>“, consisting of <a href="http://failblog.org/2009/01/20/reputable-kids-program-fail/">a picture of a very disreputable looking van</a> with “Little Angels Program” spraypainted on the side. I had caught that image earlier in 2008 in Willimantic, CT while I was walking through the hill section.</p>
-
-<p>It’s not Life or the New York Times or anything, but I’ll take what I can get. Probably should have color corrected that one before I sent it in …</p>
-
-<p><img src="http://failblog.files.wordpress.com/2009/01/fail-owned-kids-program-van-fail.jpg" alt="" /></p>
 
 ]]></content>
   </entry>
