@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I’ve been in the process of teaching myself the Google Android platform over the last few weeks, as my work has had a contest devoted to creating a &hellip;">
+  <meta name="description" content="To sum up before I even begin: they *suck*. One of Java’s exceptionally weak points is serial and parallel interfaces, since it’s not within the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -94,6 +94,59 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2009/11/13/serial-and-parallel-interfaces-in-java/">Serial and Parallel Interfaces in Java</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-11-13T00:00:00-05:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2009/11/13/serial-and-parallel-interfaces-in-java/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1 id="section"></h1>
+
+<p>To sum up before I even begin: they *suck*.</p>
+
+<p>One of Java’s exceptionally weak points is serial and parallel interfaces, since it’s not within the normal bundled class library specification. In developing for Linux systems, I found that there are two basic routes you can take, being <a href="http://java.sun.com/products/javacomm/">Java Communications API</a> and <a href="http://users.frii.com/jarvi/rxtx/">RXTX</a>, with the latter being a reimplementation/extension of the former. To say that these are painful to work with doesn’t adequately state the gravity of the situation.</p>
+
+<p>For example, the <em>javax.comm.properties</em> file needed by both libraries has to exist in the classpath or buried deep in the JRE. This is an offshoot of the issue that they require JNI libraries to function, which debian handles nicely in the form of a librxtx-java package which does most of the heavy lifting with the exception of that nasty properties file. In dealing with a J2EE app, this becomes a pain if you want to stick with the “single file” WAR deployment. Eventually I baked an additional instruction into my build.xml file to relocate the properties file on execution.</p>
+
+<p>The documentation for rxtx, at least in terms of practical examples, is horrid. The wiki server isn’t up and running (at least when I went to look) and the only evidence that anyone had ever tried to use this library for the purposes I was looking to use it for were a few old javadocs and a handful of mailing list entries.</p>
+
+<p>This really should *not* be this painful. Virtually every system targeted by the JRE has I/O devices which should be covered by the scope of the basic class libraries. I should not have to practically reinvent the wheel simply to push data out to a peripheral.</p>
+
+<p>By the look of the documentation, this wouldn’t have been any easier doing it with Windows, and I believe I managed to kill its ability to be cross-platform in any meaningful sense when I decided to use RXTX. This is just as bad as those asshats who make completely crossplatform applications then tie them intrinsically to Windows in some completely brain-dead way for no apparent reason.</p>
+
+<p>Hey Sun, when you made this specification, could you have possibly thought to include support for devices which have been around since <a href="http://en.wikipedia.org/wiki/RS-232">1969</a> … </p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -585,169 +638,6 @@ String country = mTelephonyMgr.getNetworkCountryISO();
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/05/14/trixbox-directory-with-cisco-phones/">Trixbox Directory With Cisco Phones</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-05-14T00:00:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2009/05/14/trixbox-directory-with-cisco-phones/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1 id="section"></h1>
-
-<p>In case anyone may want to use Trixbox with Cisco 79xx phones and wants to use a directory with it, I have put together a hack to deal with the directory services, which nominally require SugarCRM, so that they report simple extensions back in the appropriate format.</p>
-
-<p>1) In the Endpoint manager, make sure that the services URL and directory URL are in the default configuration for Cisco phones, and restart any phones which are running to activate the configuration.</p>
-
-<p>2) In <code>/var/www/html/cisco/services</code>, make sure that index_cisco.php is symlinked to index.php</p>
-
-<p>3) In <code>/var/www/html/cisco/services/DBConnect.inc</code>, change the default username and password to something with access to the asterisk database, and change the database name to <code>asterisk</code>.</p>
-
-<p>4) Make <code>PhoneDirectory.php</code> in that directory contain:</p>
-
-<pre><code>&lt; ?php
-
-##########################################
-# Config section
-
-$Server = "http://$SERVER_ADDR/cisco/services";   # don't add a trailing slash!
-$LongDistanceExtension = ""; # change this to match your config
-
-##########################################
-#
-# Set content type
-header("Content-Type: text/xml");
-
-# This is the include file that establishes the connection to the MySQL database
-require ("DBConnect.inc"); 
-
-# This sets the offset for the LIMIT portion of the query
-$NextStartingRow = $NextSet*30;
-
-# Connect to the database
-$ConnectionSuccess = db_connect();
-if (!$ConnectionSuccess) exit;
-
-# If the variable "ID" is passed in through the GET string, then display 
-# extension, phone number and cell phone number for that record with the dial
-# key functionality
-if ($ID) {
-        $PersonDirectoryListing = "n";
-
-        //$Query  = "SELECT id, first_name, last_name, phone_home, phone_work, phone_mobile, phone_other ";
-        //$Query .= "FROM contacts WHERE id = '$ID' ";
-        //$Query .= "ORDER BY last_name "; 
-        $Query  = "SELECT id,description FROM devices WHERE ( tech = 'sip' OR tech = 'iax' ) AND id = '".addslashes($ID)."' ";
-
-        $SelectPersonInfo = mysql_query($Query,$ConnectionSuccess);
-
-        while ($row = mysql_fetch_array($SelectPersonInfo)) {
-                $WorkPhone = ereg_replace("[ ()-] ", "", $row['id']);
-
-                $PersonDirectoryListing .= "n";
-                $PersonDirectoryListing .= "Extension:n";
-                //$PersonDirectoryListing .= "$LongDistanceExtension$WorkPhonen";
-                $PersonDirectoryListing .= "$WorkPhonen";
-                $PersonDirectoryListing .= "n";
-        }
-
-        $PersonDirectoryListing .= "n";
-
-        echo "$PersonDirectoryListing";
-
-# If the variable ID is not passed in on the GET string, then do the 
-# entire company directory, unless last is passed in. If so then we
-# will be using a LIKE filter in our SQL query
-} else {
-        $PersonNameList = "n";
-        $PersonNameList .= "n";
-        $PersonNameList .= "Please select onen";
-
-        $Query  = "SELECT id,description FROM devices WHERE ( tech = 'sip' OR tech = 'iax' ) ";
-        //$Query  = "SELECT id, first_name, last_name, phone_home, phone_work, phone_mobile, phone_other ";
-        //$Query .= "FROM contacts WHERE deleted = 0 ";
-
-        # If we are searching by last name the add this filter to the query
-        if ($LastName) { $Query .= "and description like '%$LastName%' ";  }
-        $Query .= "ORDER BY id ASC";
-
-        # If this is the first page of the company directory then we will display the first 30
-        if (!$NextSet) {
-                $Query .= " Limit 0,30";
-        # Now for each subsiquent call we get the next 30 records.
-        } else {
-                $Query .= " Limit $NextStartingRow,30";
-        }
-
-        # Execute the query
-        //echo $Query;
-        $SelectNameList = mysql_query($Query,$ConnectionSuccess);
-
-        # Count the number of rows returned. This is important because if a full 30 are returned
-        # we will display a more option
-
-        $NumberOfRows = mysql_num_rows($SelectNameList);
-
-        if ($NumberOfRows &gt;= 30) {
-                $NextSetValue = $NextSet 1;
-        }
-
-        # Parse through the query and set up the menu items.
-        while ($row = mysql_fetch_array($SelectNameList)) {
-                $PersonNameList .= "n";
-                        $PersonNameList .= "";
-                                $PersonNameList .= $row["description"];
-                                if ($row["first_name"]) $PersonNameList .= ", " . $row["first_name"];
-                        $PersonNameList .= "n";
-                        $PersonNameList .= "";
-                                $PersonNameList .= "$Server/PhoneDirectory.php?";
-                                $PersonNameList .= "ID=";
-                                $PersonNameList .= $row["id"];
-                                $PersonNameList .= "n";
-                $PersonNameList .= "n";
-        }
-
-        # If we set NextSetValue above then we will display the more option. Which sets NextSet
-        if ($NextSetValue) {
-                $PersonNameList .= "n";
-                        $PersonNameList .= "MOREn";
-                        $PersonNameList .= "$Server/PhoneDirectory.php?NextSet=$NextSetValuen";
-                $PersonNameList .= "n";
-        }
-        $PersonNameList .= "";
-        echo "$PersonNameList";
-}
-?&gt;
-</code></pre>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/7/">&larr; Older</a>
@@ -765,6 +655,10 @@ if ($ID) {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2013/12/21/lens-selection-for-cinematography/">Lens Selection for Cinematography</a>
+      </li>
+    
+      <li class="post">
         <a href="/2013/11/28/dynamic-range/">Dynamic Range</a>
       </li>
     
@@ -780,17 +674,13 @@ if ($ID) {
         <a href="/2013/10/29/building-ganglia-for-openbsd-4-dot-3/">Building Ganglia for OpenBSD 4.3</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/10/13/preparing-for-and-recovering-from-disaster/">Preparing for and Recovering From Disaster</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (13)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (14)</a></li>
 <li class='category'><a href='/categories/development/'>Development (34)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
@@ -809,9 +699,12 @@ if ($ID) {
   <ul>
     <li><a href="http://www.flickr.com/photos/whatsyourmeme/">Photos @ Flickr</a></li>
     <li><a href="http://irv.ourexchange.net/">Redline Doc</a></li>
-<!--
-    <li><a href=""></a></li>
-&#8211;>
+    <li>
+        <a href="http://shootthemoonfilms.com/">Shoot the Moon Films</a>
+        <a href="http://www.facebook.com/ShootTheMoonFilms"><img src="/images/facebook-icon.png" height="16" width="16" alt="[Facebook]" /></a>
+        <a href="http://www.twitter.com/STM_Films"><img src="/images/twitter-icon.png" height="16" width="16" alt="[Twitter]" /></a>
+    </li>
+    <li><a href="http://www.facebook.com/JeffreyBuchbinderFilm">Facebook Fan Page</a></li>
   </ul>
 </section>
 

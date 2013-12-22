@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2013-11-29T13:38:55-05:00</updated>
+  <updated>2013-12-21T22:09:48-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,214 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Lens Selection for Cinematography]]></title>
+    <link href="http://jbuchbinder.com/2013/12/21/lens-selection-for-cinematography/"/>
+    <updated>2013-12-21T19:48:18-05:00</updated>
+    <id>http://jbuchbinder.com/2013/12/21/lens-selection-for-cinematography</id>
+    <content type="html"><![CDATA[<p>The lens of your camera is arguably one of the most important parts of the
+camera ; it has the job of controlling light, adjusting focus (and focal
+length in variable focal length lenses), controlling depth-of-field
+through the aperture, and adding character to the shots you have lovingly
+framed. <em>(It should be noted that the sensor of a digital video camera
+body is also very important, in terms of sensitivity, resolution, size,
+and other factors, but it is out of the scope of this article.)</em></p>
+
+<p>There are quite a few factors to consider when choosing the lens you will
+use for a shot, as well as the lenses you will pack for a shoot. Do you
+pack one or two variable focal-length lenses, or do you pack a series of
+strategic length prime lenses? Do you stay with your native lense mount?
+Do you use vintage lenses? Do you need super-fast lenses?</p>
+
+<p>As of the writing of this, I’ve been known to primarily use three or four
+prime lenses (24mm, 35mm, 50mm, and 85mm), while packing a 105mm or 135mm
+with a set of extension tubes for extreme macro usage. This setup will
+<strong>not</strong> work for everyone, as I will explain.</p>
+
+<h2 id="lens-mount">Lens Mount</h2>
+
+<p>There are several types of lens mounts, and depending on the type of camera
+body you use, one (or two) will be a “native” mount. For example, if you
+shoot using a Canon EOS camera (T3i, 7D, 5D mk3, C100, etc), you will most
+likely be using primarily EF mount lenses (and/or EF-S lenses if you aren’t
+shooting with a full-frame sensor). These native lenses have the advantage
+of having auto-focus / focus-confirmation electronics, as well as being able
+to mount with no additional hardware required. Auto-focus isn’t really an
+issue with cinematography, and focus-confirmation isn’t a <em>huge</em> advantage,
+especially if your camera has focus peaking – but these lenses were
+<em>designed</em> to work with your camera body.</p>
+
+<p>Other lens mounts can be accommodated with adapter rings, which can usually
+be purchased for varying amounts from online retailers. I have a few
+M42 adapter rings for using old Pentax screw-mount lenses with the EF mount
+on my camera, and they work flawlessly for me. Some of the more expensive
+ones even have focus confirmation capabilities.</p>
+
+<p>Photographers might give some pause to the idea of not having focus
+confirmation or auto focus, but cinematographers should be fine with it.
+Lens mount should only factor into your decision to use a lens by whether
+or not you have the appropriate adapter ring configuration to use that
+lens, in my opinion.</p>
+
+<h2 id="prime-or-variable-focal-length-zoom">Prime or Variable Focal Length (Zoom)</h2>
+
+<p>A great deal of the answer to this question depends on the primary type
+of cinematography in which you tend to engage. A variable focal length
+lens is essentially a single lens which offers an “infinite number of
+focal lengths between its two bounds”, but there are other factors to be
+considered when using one. For example, many lower-cost variable focal
+length lenses will tend to have variable maximum apertures, depending on
+the target focal length.</p>
+
+<p>If you’re engaged in documentary cinematography or non-planned shoots
+(such as many modern “web series” shoots), you may want to stick with
+the widest range of variable focal length lens you can accommodate. A
+24-70mm lens will usually handle most shots which would be required by
+those mediums, and will mostly eliminate the hassle of changing lenses
+during critical (and possibly situationally-limited) shoot times.</p>
+
+<p>A serious trade-off is that most variable focal length lenses are not
+“fast” (i.e. do not have a very low f-stop number for their maximum
+aperture size), and therefore tend to require more light. The faster
+lenses among that class tend to increase in cost greatly.</p>
+
+<p>Prime lenses usually do one thing, and try to do it very well. They
+range down (and below) f/1.2, and are far more cost effective for a
+single focal length. If you have the time to change lenses in between
+shots, and tend away from smash zooms (which I tend to find are a bit
+over-used) and dolly/zoom combination shots, you might want to tend
+towards a collection of primes.</p>
+
+<h2 id="how-fast-is-fast">How fast is fast?</h2>
+
+<p>The majority of consumer-grade lenses tend to have smaller maximum aperture
+sizes than f/2.8, but there are a fair number of inexpensive primes which
+can be had with an f/2.8 maximum aperture size, and relatively inexpensive
+(compared to some) lenses can be had down to f/1.4 or so, depending on the
+relative concessions you’re willing to make regarding the lens quality,
+mount, manufacturer, et cetera.</p>
+
+<p>As the aperture size increases, the depth of field decreases in size, but
+the amount of light hitting the sensor increases. Low light cinematography
+has historically relied on “fast” lenses rather than increased sensor
+sensitivity, primarily due to the increasing role that sensor “noise” 
+plays at high ISO levels. This tradeoff means that you may have to decide
+whether depth of field or light sensitivity will be the primary determining
+factor in the maximum aperture rating of the lenses you’re using.</p>
+
+<p><em>NOTE: Another thing to note is that lenses tend not to be their sharpest
+or best when fully open, so you may have to shoot slightly further shut
+than the maximum aperture rating.</em></p>
+
+<h2 id="vintage-lenses">Vintage Lenses</h2>
+
+<p>Some cinematographers (and photographers) will <em>swear</em> by vintage glass.
+Optics from lenses like old Carl Zeiss lenses are still amazing, and some
+of these lenses are sold for less than the comparable modern lenses for
+them. It can be a potentially <em>expensive</em> habit, however, since
+cinematographers have been driving up the cost of purchasing these lenses,
+as their lack of focus controls is far less bothersome than it would be
+to photographers.</p>
+
+<p>If you can purchase vintage lenses (or happen upon a cache of them), it’s
+something to seriously consider. They have their own character, and when
+used thoughtfully, can add much to your footage.</p>
+
+<h2 id="focal-length">Focal length</h2>
+
+<p><em>NOTE: If you’re going with variable focal length lenses exclusively, 
+you may be able to safely skip this section. It deals mostly with the
+reasoning behind using certain focal length lenses.</em></p>
+
+<p>Selection of focal length depends on a number of factors. Entire chapters,
+and even whole <em>books</em> have been written about selecting focal lengths
+for cinematography and photography. A great deal of it has to do with
+the type of shot you are working with, as well as the framing, etc. I’m
+going to hit some of the considerations, but I suggest further reading.</p>
+
+<p>When considering focal lengths on cameras, I tend to consider them using
+the standard of a “full frame” sensor, since my camera has one. This means
+that the written focal length of a lens corresponds directly to the
+<em>effective</em> focal length of that lens. A larger “crop factor” (which is
+the case for smaller sensor sizes, like the Canon APS-C sensor and the
+Micro 4/3 sensors) means that a lens’s effective focal length is longer
+for those sensors. You can figure out the effective focal length by
+multiplying the stated focal length by the crop factor. For example,
+an APS-C crop factor is 1.5x, so a 35mm lens would have an effective
+focal length of 52.5mm, and a 50mm lens would have an effective focal
+length of 75mm.</p>
+
+<p>“Wide angle” shots, which are usually used for establishing shots in
+cinema, generally tend to rely on very “wide” lenses, which are lenses
+with short focal lengths. As you move further away from 35mm effective
+focal length, the field of view present in your frame increases, which
+increases geometric distortion towards the edges of the frame. This has
+been referred to as a “fish eye” effect, when present in more than
+moderate amounts.</p>
+
+<p>As an aside, I have seen cinematographers use extremely wide lenses
+(18mm and shorter) to shoot closeup shots of actors and actresses in
+tight quarters – and I must warn against it, unless you are 
+<strong>acutely aware</strong> of the geometric distortion which you are introducing
+into the frame. This has very unpleasant effects on the faces of actors
+when used for close shots, and I know few actors who take kindly to being
+represented in a grossly distorted manner.</p>
+
+<p>A 50mm effective focal length is essentially what your eye sees; at least,
+that’s the way I’ve come to think of it. It’s a very neutral lens to use
+for most shots. I recommend that this length be a standard part of any
+lens kit you’re putting together.</p>
+
+<p>50mm lenses have been popular with the Canon DSLR cinematography crowd,
+primarily due to the inexpensive nature of the “nifty fifty”, a 50mm
+f/1.8 prime which clocks in at a little over 100 USD new. Its optics aren’t
+that fantastic, but its point of entry is so low in the cost department
+that many people will own one. If you do, consider buying an f/1.4 version
+of the same lens (or the f/1.2 L, if you’re successful, or have some sort
+of trust fund laying around), as the optical and build quality is far
+superior to the 50mm f/1.8 lens. It’s a “midway” focal length, but very
+usable for a variety of shots.</p>
+
+<p>Greater than 50mm effective focal lengh lenses are considered “long”
+lenses. They tend to “compress” the space they capture, much as wide angle
+lenses tend to expand and distort it. One must be careful with using long
+lenses for handheld and steadicam work, as camera shake tends to be
+magnified with longer lenses. </p>
+
+<p>Long lenses can also be used for closeup and extreme closeup shots by using
+“extension tubes” – what my brother used to refer to as “expensive air”.
+They increase the amount of light required, and are not as easy or compact
+as most macro lenses, but they’re relatively cheap, and cut down on the
+number of lenses you have to carry.</p>
+
+<h2 id="what-the-hell-is-a-bokeh">What the hell is a “bokeh”?</h2>
+
+<p>The term “bokeh” is a recent addition to the vocabulary of the photographer
+and cinematographer ; it simply refers to the blur produced by out of
+focus objects, particularly lights, by a lens. It is determined largely by
+the quality of the optics of the lens, as well as the number of blades in
+the lens’s aperture. Higher blade counts generally produce more “pleasing”
+bokeh, approaching the cinematic standard of almost circular light blur.</p>
+
+<h2 id="you-havent-told-me-which-lenses">You haven’t told me which lenses!</h2>
+
+<p>This isn’t intended to dictate which lenses a cinematographer <em>must</em> carry,
+nor push certain choices over others, but merely to attempt to educate
+about sensible lens selection.</p>
+
+<p>Consider buying a Pelican case, or other shock resistant case, for travelling
+to shoots. If you’re carrying a lot of glass, you can’t afford to deal
+with the downtime of a broken lens.</p>
+
+<p>There are a huge number of lenses, both modern and “ancient”, and you can
+equip yourself with any variety of lenses, depending on your particular
+idiom and shooting style. Don’t fall into the trap of assuming that lens
+selection is unnecessary, or that everything should be shot with a single
+lens ; it’s just another aspect of cinematic creativity. Good luck!</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Dynamic range]]></title>
@@ -400,133 +608,6 @@ which can be tweaked to help make an already good project that much better,
 and like all power, it comes with responsibility. So, choose –
 <a href="http://www.youtube.com/watch?v=oF2UrYSDb3k">but choose wisely</a>, and as
 always, good luck!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[On Documentary Filming]]></title>
-    <link href="http://jbuchbinder.com/2013/09/19/on-documentary-filming/"/>
-    <updated>2013-09-19T16:58:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/09/19/on-documentary-filming</id>
-    <content type="html"><![CDATA[<p>I recently had the pleasure of shooting for a documentary down in
-Birmingham, AL, about one of the people involved in the 
-<a href="http://www.nps.gov/nr/travel/civilrights/al11.htm">16th Street Baptist Church Bombing</a>
-in 1963. For those who don’t know, that event was one of the most
-important parts of the Civil Rights movement in the 1960s. The
-50th anniversary of the bombing was this September (2013), so I had
-gone with a small film crew to cover the event, and interview some of
-the people involved.</p>
-
-<p>I had never shot documentary footage, apart from some small controlled
-one-on-one interviews, so this was an interesting learning experience for
-me. I’d like to share some of the more important things which I learned
-over the course of my experience down there.</p>
-
-<p><strong>Batteries</strong>. You’re going to run out of them. I ran through four batteries
-over the course of a filming day – which I thought would be enough, but
-weren’t. If you have one thing which requires a strange and unique battery,
-you should have at least one spare, even if it’s new. Someone is invariably
-going to leave something on, chew up the battery, and leave you short a
-vital piece of equipment. If you’re shooting with a DSLR, try to get a
-multi-battery grip, so that you don’t have to change batteries as often.</p>
-
-<p><strong>One Shot</strong>. You only have <em>one shot</em> to get event coverage correctly,
-which means that, ideally, you should be covering from more than one angle,
-to provide not only options in editing, but some sort of redundancy.
-Otherwise, you can easily be left with a serious dearth of footage for
-what could be a vital part.</p>
-
-<p><strong>Focus and Calibration</strong>. Get there early, get set up, get everything
-metered and working properly <em>before</em> things start moving. You really can’t
-easily recalibrate during taping without potentially ruining footage. Did
-I forget to mention that you only get <em>one shot</em> with event footage?</p>
-
-<p><strong>Depth of Field: More is Better</strong>. You’re not shooting an art piece, you’re
-trying to cover something which probably only happens once, so you shouldn’t
-be shooting at f/2.8 or something ridiculous like that. Yes, you can sometimes
-take advantage of the <a href="http://en.wikipedia.org/wiki/Hyperfocal_distance">hyperfocal distance</a>
-of a lens to keep far-away objects in focus – but you should, most likely,
-find a fairly closed aperture to work with. This can be challenging in low
-light scenarios, where you’ll be fighting the specter of sensor noise at
-extremely high ISO levels when you close the iris more than a little.</p>
-
-<p><strong>Positivity</strong>. You need to be happy and in a good place when shooting people
-and interviews, especially in a one-on-one setting. Other people take certain
-cues from your body language and demeanor, and hostility will produce
-hostility. If at all possible, try to work on documentary projects which you
-like, or identify with.</p>
-
-<p><strong>Lens Changes</strong>. If you can avoid it, don’t. Wear cargo pants or a vest with
-lens pockets, much like most photographers, if you absolutely <em>must</em> change
-lenses. If you’re shooting a long distance, go with something like the
-<a href="http://amzn.to/14nI8Cm">Canon EF 70-200mm f/2.8L IS II USM</a> lens, or if you
-are dealing with shorter distances, the
-<a href="http://amzn.to/189gQmi">Canon EF 24-70mm f/2.8L II USM</a> lens. Carrying a few
-primes around will work well for static interview shots, but they’re going to
-be a real pain when you’re dealing with moving targets, no matter how quick
-you are with focus peaking assistance. If you’re shooting with a shoulder rig,
-you’re going to want an IS/VR lens, if you have one available – it cuts down
-on a lot of shudder and shake.</p>
-
-<p><strong>Bring a Spare</strong>. Got one lav mic? You might want to bring a second one.
-If there’s a small piece of equipment or accessory which, if missing, could
-screw you, it’s going to go missing. Especially when you’re far from home
-base and without the benefit of an equipment store.</p>
-
-<p><strong>You’re Going To Mess Up</strong>. This is pretty obvious – no matter how careful
-you are, something is going to get messed up. The trick is to try to make
-everything redundant enough that it doesn’t matter.</p>
-
-<p><strong>It’s Not About Your Equipment</strong>. Someone there is going to have a better
-camera, better lenses, and better <em>everything</em> than you have. Go far enough,
-and your rig is going to look bad to someone. Just remember, you’re there for
-a reason, so know your equipment, and use it as well as you can.</p>
-
-<p><strong>Rocking Out</strong>. If you’re interviewing someone who is rocking back and forth,
-bring it to their attention. It creates massive focusing, framing, and
-perspective issues. Don’t be intimidated; they can rock as much as they’d
-like, just as soon as you’re done filming.</p>
-
-<p><strong>Network</strong>. If you’re looking for an interview with someone, talking to
-some of the people around them may lead you to another interviewee who may
-produce even better results. There’s no cost associated with being polite.</p>
-
-<p><strong>Respect the Eyeline</strong>. For static interviews, don’t shoot up or down on
-someone’s eye-line unless you are trying to indicate something about that
-person. You should be even with their eye-line on initial shot setup. This
-is also a good idea when doing non-static interviews, when possible.</p>
-
-<p><strong>Make Two Copies</strong>. When you transfer the data off of your memory cards,
-make two copies, and if possible, don’t transport them together. Redundancy
-is the name of the game here, since even the best footage means diddly/squat
-if no one ever gets to see it.</p>
-
-<p><strong>Bring a Sound Guy</strong>. I know, you don’t think you need one – you’ve got a
-lav mic, right? A sound engineer is half of your production, since you’re in
-charge of the visuals. Also, boom mic operators generally should be fairly
-competent sound engineers, to avoid issues later on in the post-production
-process – when possible.</p>
-
-<p><strong>Don’t Go For The Cheaper Chicken</strong>. When booking accommodations, don’t go
-for the least expensive hotel – there’s a good chance that it’s in a dodgy
-part of town, and that extra 10 dollars a night might buy you not only a
-bit of security, but might buy you a better night’s sleep. Protip: the
-cheapest hotel is generally right next to a) train tracks with 24-hour train
-service, b) an open-air coal mine, c) a condemned house with mysterious
-block parties at all hours of the night, or d) all of the above…</p>
-
-<p><strong>Get Stills</strong>. If you’re doing a documentary with a bunch of
-<a href="http://en.wikipedia.org/wiki/Ken_Burns_effect">Ken Burns effect</a> style
-picture montages, you should try to either take stills yourself, or have
-another camera operator capture some for you. If you can, attempt to take
-pictures of landmarks or buildings when they are not occupied, unless it
-specifically works in your storytelling to have them occupied or surrounded.</p>
-
-<p>There are many, many more things to think about when it comes to filming
-documentaries and documentary footage – but hopefully, these bullet points
-will help someone else avoid some of the pitfalls I experienced on my first
-documentary shoot. Good luck!</p>
 
 ]]></content>
   </entry>
