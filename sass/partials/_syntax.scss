@@ -231,6 +231,17 @@ figure.code {
     margin-bottom: 0;
   }
 }
+figure.flickr-thumbnail {
+  figcaption {
+    h1 {
+      display: none;
+    }
+    div.description {
+      font-style: italic !important;	
+      font-size: 8pt;
+    }
+  }
+}
 
 .code-title {
   text-align: center;
