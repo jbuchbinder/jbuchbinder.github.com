@@ -321,9 +321,9 @@ function setLocationGeneration(num) {
 // Solids are spawned a little bit before characters
 function spawnMap() {
   var area = map.area,
-      rightdiff = quads.rightdiff,
+      rightdiff = QuadsKeeper.getOutDifference(),
       screenright = gamescreen.right + rightdiff,
-      quadswidtht2 = quads.width * 2 + rightdiff,
+      quadswidtht2 = QuadsKeeper.getQuadWidth() * 2 + rightdiff,
       screenrightpq = screenright + quadswidtht2,
       arr, arrlen, prething, thing, current;
   
@@ -506,7 +506,7 @@ function walkToPipe() {
     if(player.piping) {
       // We have started piping
       AudioPlayer.pauseTheme();
-      nokeys = player.keys.run = notime = false;
+      // nokeys = player.keys.run = notime = false;
       clearInterval(move);
       player.maxspeed = player.maxspeedsave;
     }
@@ -617,7 +617,7 @@ function pushPreThing(type, xloc, yloc, extras, more) {
   if((object.solid || object.character) && !object.nostretch)
     map.area.width = max(map.area.width, prething.xloc + object.width);
   // Otherwise put it in solids or chars (scenery has its own pushPre*)
-  if(object.solid) map.area.presolids.push(prething);
+  if(object.solid && !object.spawn_as_char) map.area.presolids.push(prething);
   else map.area.precharacters.push(prething);
   return prething;
 }
@@ -811,12 +811,12 @@ function startCastleInside() {
   pushPreThing(Stone, 32, 32, 1, DtB(32, 8));
 }
 
-function endCastleInside(xloc, last) {
+function endCastleInside(xloc, last, hard) {
   var collider = pushPreThing(FuncCollider, xloc + 104, 48, CastleAxeFalls, [16, 24]).object,
       axe = collider.axe = pushPreThing(CastleAxe, xloc + 104, 40).object;
   axe.bridge = pushPreThing(CastleBridge, xloc, 24, 13).object;
   axe.chain = pushPreThing(CastleChain, xloc + 96.5, 32).object;
-  axe.bowser = pushPreThing(Bowser, xloc + 69, 42).object;
+  axe.bowser = pushPreThing(Bowser, xloc + 69, 42, hard).object;
   pushPreThing(ScrollBlocker, xloc + 112, ceilmax); // 104 + 16
   
   pushPreThing(Stone, xloc, 88, 32);
@@ -1236,7 +1236,7 @@ function World11(map) {
       pushPreThing(Stone, 1488, 48, 1, 6);
       pushPreThing(Stone, 1496, 56, 1, 7);
       pushPreThing(Stone, 1504, 64, 2, 8);
-      endCastleOutside(1580);
+      endCastleOutside(1580, 0, 1);
       
     }),
     new Area("Underworld", function() {
@@ -1463,6 +1463,7 @@ function World12(map) {
       fillPreThing(Goomba, 768, 8, 3, 1, 12, 8);
       pushPrePipe(800, 0, 24, true, 2);
       pushPrePipe(848, 0, 32, true);
+      pushPreThing(Goomba, 872, 8);
       pushPrePipe(896, 0, 16, true, false, 3);
       
       pushPreFloor(952, 0, 2);
@@ -1472,7 +1473,9 @@ function World12(map) {
       pushPreThing(Stone, 1040, 8);
       pushPreThing(Stone, 1048, 16, 1, 2);
       pushPreThing(Stone, 1056, 24, 1, 3);
+      pushPreThing(Goomba, 1056, 32);
       pushPreThing(Stone, 1064, 32, 1, 4);
+      pushPreThing(Goomba, 1064, 48);
       pushPreThing(Stone, 1072, 32, 1, 4);
       pushPrePlatformGenerator(1096, 6, 1);
       // pushPreThing(PlatformGenerator, 1096, ceilmax, 6, 1);
@@ -1514,7 +1517,7 @@ function World12(map) {
       
       pushPrePattern("backreg", 104, 0, 1);
       pushPreFloor(0, 0, 58);
-      pushPrePipe(0, 0, 16, false, false, 4);
+      pushPrePipe(0, 0, 16, true, false, 4);
       pushPreThing(Stone, 16, 8);
       pushPreThing(Stone, 24, 16, 1, 2);
       pushPreThing(Stone, 32, 24, 1, 3);
@@ -1878,7 +1881,7 @@ function World22(map) {
     
       pushPrePattern("backreg", 104, 0, 1);
       pushPreFloor(0, 0, 42);
-      pushPrePipe(0, 0, 16, false, false, 2);
+      pushPrePipe(0, 0, 16, true, false, 2);
       pushPreThing(Stone, 16, 8, 1, 1);
       pushPreThing(Stone, 24, 16, 1, 2);
       pushPreThing(Stone, 32, 24, 1, 3);
@@ -2840,6 +2843,7 @@ function World51(map) {
       pushPreFloor(0, 0, 49);
       pushPreThing(Koopa, 128, 12);
       fillPreThing(Goomba, 152, 8, 3, 1, 12);
+      fillPreThing(Goomba, 240, 8, 3, 1, 12);
       fillPreThing(Koopa, 328, 12, 2, 1, 12);
       pushPrePipe(352, 0, 24, true);
       
@@ -3606,7 +3610,7 @@ function World64(map) {
       pushPreThing(Stone, 984, 24, 5, 3);
       pushPreThing(Stone, 984, 80, 5, 2);
       
-      endCastleInside(1024);
+      endCastleInside(1024, 0, 1);
     })
   ];
 }
@@ -4031,7 +4035,7 @@ function World74(map) {
           pushPreFloor(xloc + 176, 24, 2);
           pushPreFloor(xloc + 192, 0, 2);
           pushPreFloor(xloc + 208, 24, 6);
-          endCastleInside(xloc + 256);
+          endCastleInside(xloc + 256, 0, 1);
         }
       }
     })
@@ -4515,7 +4519,7 @@ function World84(map) {
       pushPreThing(Podoboo, 160, -32);
       pushPreFloor(184, 24, 6);
       pushPreThing(Stone, 184, 80, 6, 2);
-      endCastleInside(232, 0)
+      endCastleInside(232, 1, 1);
     }),
   ];
 }

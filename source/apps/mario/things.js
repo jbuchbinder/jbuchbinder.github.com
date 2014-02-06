@@ -5,6 +5,7 @@
 // There is a lot of information stored in each of these.
 // Variable amounts of arguments are passed to the constructor:
 // * var mything = new Thing(ConstructionFunc[, arg1[, arg2[, ...]]]);
+// Examples:
 // * var mygoomb = new Thing(Goomba);
 // * var mykoopa = new Thing(Koopa, true);
 function Thing(type) {
@@ -24,16 +25,18 @@ function Thing(type) {
   if(self.tolx == null) self.tolx = 0;
   if(self.toly == null) self.toly = unitsized8;
   
-  self.movement = self.movement; // why..?
   self.collide = self.collide || function() {}; // To do: why does taking this out mess things up?
   self.death = self.death || killNormal;
   self.animate = self.animate || emergeUp;
   
-  if(self.width * unitsize < quads.width && self.height * unitsize < quads.height)
-    self.maxquads = 4; // self could be done with modular stuff... beh
-  else self.maxquads = quads.length;
+  var maxquads = 4, num;
+  if((num = floor(self.width * unitsize / QuadsKeeper.getQuadWidth())) > 0)
+    maxquads += ((num + 1) * maxquads / 2);
+  if((num = floor(self.height * unitsize / QuadsKeeper.getQuadHeight())) > 0)
+    maxquads += ((num + 1) * maxquads / 2);
+  self.maxquads = maxquads;
   
-  self.quads = new Array(self.maxquads)
+  self.quadrants = new Array(self.maxquads)
   self.overlaps = [];
   
   self.title = self.title || type.name;
@@ -106,7 +109,6 @@ function addThing(me, left, top) {
   placeThing(me, left, top);
   window[me.libtype].push(me);
   me.placed = true;
-  determineThingQuadrants(me);
   if(me.onadding) me.onadding(); // generally just for sprite cycles
   setThingSprite(me);
   window["last_" + (me.title || me.group || "unknown")] = me;
@@ -144,7 +146,7 @@ function spawnText(me, settings) {
 
 // Set at the end of shiftToLocation
 function checkTexts() {
-  var delx = quads.delx,
+  var delx = QuadsKeeper.getDelX(),
       element, me, i;
   for(i = texts.length - 1; i >= 0; --i) {
     me = texts[i]
@@ -222,7 +224,11 @@ function FireBall(me, moveleft) {
   TimeHandler.addSpriteCycle(me, ["one", "two", "three", "four"], 4);
 }
 function fireEnemy(enemy, me) {
-  if(!me.alive || me.emerging || enemy.nofire || enemy.height <= unitsize) return;
+  if(!me.alive || me.emerging || enemy.height <= unitsize) return;
+  if(enemy.nofire) {
+    if(enemy.nofire > 1) return me.death(me);
+    return;
+  }
 
   if(enemy.solid) {
     AudioPlayer.playLocal("Bump", me.right);
@@ -752,7 +758,7 @@ function moveHammerBro(me) {
   me.nocollidesolid = me.yvel < 0 || me.falling;
 }
 function throwHammer(me, count) {
-  if(!characterIsAlive(me) || me.right < -unitsizet32) return;
+  if(!characterIsAlive(me) || me.nothrow || me.right < -unitsizet32) return;
   if(count != 3) {
     switchClass(me, "thrown", "throwing");
   }
@@ -894,7 +900,7 @@ function bowserFires(me) {
     AudioPlayer.play("Bowser Fires");
   }, 14, me);
 }
-// This is for when Fiery Player kills bowser - the normal one is listed under the castle things
+// This is for when Fiery Player kills bowser - the normal one is CastleAxeKillsBowser
 function killBowser(me, big) {
   if(big) {
     me.nofall = false;
@@ -964,6 +970,11 @@ function moveBlooper(me) {
     case 63: squeezeBlooper(me); break;
     default: ++me.counter; break;
   }
+
+  if(me.top < unitsizet16 + 10) {
+    squeezeBlooper(me);
+  }
+
   if(me.squeeze) me.yvel = max(me.yvel + .021, .7); // going down
   else me.yvel = min(me.yvel - .035, -.7); // going up
   shiftVert(me, me.yvel, true);
@@ -1175,7 +1186,8 @@ function Beetle(me) {
   me.width = me.height = 8;
   me.group = "enemy";
   me.speed = me.xvel = unitsize * .21;
-  me.moveleft = me.nofire = true;
+  me.nofire = 2;
+  me.moveleft = true;
   me.smart = false;
   me.collide = collideEnemy;
   me.movement = moveSmart;
@@ -1256,7 +1268,6 @@ function coinEmerge(me, solid) {
   score(me, 200, false);
   gainCoin();
   me.nocollide = me.alive = me.nofall = me.emerging = true;
-  determineThingQuadrants(me);
   
   if(me.blockparent) me.movement = coinEmergeMoveParent;
   else me.movement = coinEmergeMove;
@@ -2221,6 +2232,7 @@ function CastleBlock(me, arg1, arg2) {
     me.movement = castleBlockSpawn;
     me.timer = me.counter = 0;
     me.angle = .25;
+    me.spawn_as_char = true;
   }
 }
 function castleBlockSpawn(me) {
@@ -2311,6 +2323,9 @@ function CastleAxeKillsBridge(bridge, axe) {
 // Step 3 of getting to that jerkface Toad
 function CastleAxeKillsBowser(bowser) {
   bowser.nofall = false;
+  bowser.nothrow = true;
+  // this is a total hack to avoid being hit by hammers after Bowser dies in 6-4, 7-4, 8-4
+  ++player.star;
   TimeHandler.addEvent(CastleAxeContinues, 35, player);
 }
 // Step 4 of getting to that jerkface Toad
@@ -2635,6 +2650,7 @@ function Firework(me, num) {
     TimeHandler.addEvent(function(me) { killNormal(me); }, 21, me);
   }
   setCharacter(me, "firework");
+  score(me, 500);
 }
 
 function Coral(me, height) {
