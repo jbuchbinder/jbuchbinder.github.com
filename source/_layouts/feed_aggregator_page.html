@@ -2,12 +2,15 @@
 layout: default
 ---
 
+
+
 {% assign feed_aggregator = page.feed_aggregator %}
 
-<br>
-<h1 align="center"><u> {{ feed_aggregator.title }} </u></h1>
+<br/>
 
-<div class=\"blog-index\">
+# <u>{{ feed_aggregator.title }}</u>
+
+<div class="blog-index">
 {% for post in feed_aggregator.posts %}
   <article>
     <header>
@@ -24,7 +27,7 @@ layout: default
   <section>
     <h1>{{ feed_aggregator.title }} Members</h1>
     {% for author in feed_aggregator.authors %}
-      <a href="{{ author.url }}"> {{ author.first }} {{ author.last }}</a><br>
+      <a href="{{ author.url }}"> {{ author.first }} {{ author.last }}</a><br />
     {% endfor %}
   </section>
 </aside>
