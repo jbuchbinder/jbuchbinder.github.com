@@ -20,7 +20,7 @@ and other factors, but it is out of the scope of this article.)*
 There are quite a few factors to consider when choosing the lens you will
 use for a shot, as well as the lenses you will pack for a shoot. Do you
 pack one or two variable focal-length lenses, or do you pack a series of
-strategic length prime lenses? Do you stay with your native lense mount?
+strategic length prime lenses? Do you stay with your native lens mount?
 Do you use vintage lenses? Do you need super-fast lenses?
 
 As of the writing of this, I've been known to primarily use three or four
