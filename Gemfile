@@ -18,6 +18,7 @@ group :development do
   gem 'builder', '> 2.0.0'
   gem 'persistent_memoize'
   gem 'directory_watcher', '1.4.1'
+  gem 'feedzirra'
 end
 
 gem 'sinatra', '~> 1.4.2'
