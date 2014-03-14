@@ -46,5 +46,15 @@ coffee at the end of the bet period.
 		<td> - </td>
 	</tr>
 
+	<tr>
+		<td>
+			"Black swan" event precipitating change
+		</td>
+		<td>J: <br/>C: </td>
+		<td>1</td>
+		<td> - </td>
+		<td> - </td>
+	</tr>
+
 </table>
 
