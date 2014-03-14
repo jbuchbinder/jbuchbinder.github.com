@@ -267,6 +267,8 @@ wpbook_message:
 
 "Never argue with a fool, onlookers may not be able to tell the difference." - Samuel Clemens
 
+"There is no shame in not knowing. The problem arises when irrational thought and attendant behavior fill the vacuum left by ignorance." - Neil deGrasse Tyson
+
 ## War / Military / Terrorism
 
 "No bastard ever won a war by dying for his country. He won it by making the other poor dumb bastard die for his country." – General George S. Patton
