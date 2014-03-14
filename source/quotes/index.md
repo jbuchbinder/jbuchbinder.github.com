@@ -41,11 +41,15 @@ wpbook_message:
 
 "Too many young folk have addiction to superficial things and not enough conviction for substantial things like justice, truth and love." – Dr Cornel West
 
+"Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage to move in the opposite direction." - E. F. Schumacher (from *Small is Beautiful: A Study of Economics As If People Mattered*)
+
+"Normal is the average of deviance." - Rita Mae Brown (from *Venus Envy*, 1993)
+
 ## Healthcare
 
 "Even if you don’t have health insurance in America, you get taken care of. That could be defined as universal health care." – Tom Thompson, HHS Secretary, [as quoted by Senator Tom Daschle][1] as an example of politicians being out of touch with the realities of healthcare.
 
- [1]: http://64.38.12.138/News/archive/000662.asp
+ [1]: http://www.indianz.com/News/archive/000662.asp?print=1
 
 "Look, I’ve practiced — I’ve practiced for 10 years. My wife is still practicing. Never once did I have a Medicare bureaucrat tell me what I could or couldn’t do for a patient, but all the time we have bureaucrats from the insurance companies calling up and saying, ‘We’re not going to cover this, and we’re not going to pay for that, and we’re denying coverage of that.’" – Dr Howard Dean, explaining to Newt Gengrich and George Stephanopoulos that the current system of private insurance is more invasive to the doctor-patient relationship than a publically run health initiative on "This Week", Aug 10, 2009
 
