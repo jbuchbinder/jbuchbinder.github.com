@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/development/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-03-14T09:32:32-04:00</updated>
+  <updated>2014-03-16T12:28:30-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -162,7 +162,7 @@ cd ..</code></pre></noscript></div>
     <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
     <updated>2012-03-22T00:00:00-04:00</updated>
     <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
+    <content type="html"><![CDATA[<p># </p>
 
 <p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
 
@@ -199,7 +199,7 @@ done
     <link href="http://jbuchbinder.com/2011/12/28/xela-redux-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2011/12/28/xela-redux-2011</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
+    <content type="html"><![CDATA[<p># </p>
 
 <p>Better late than never, these are the blog entries I had put together from the Xela trip this year, which I had never gotten around to posting.</p>
 
@@ -298,7 +298,7 @@ done
     <link href="http://jbuchbinder.com/2011/12/28/project-review-2011/"/>
     <updated>2011-12-28T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2011/12/28/project-review-2011</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
+    <content type="html"><![CDATA[<p># </p>
 
 <p>I’ve been a bit lax in posting about my work here, mainly because Twitter makes you lazy. (Why write complete sentences when you can summarize in 140 characters or less?)</p>
 

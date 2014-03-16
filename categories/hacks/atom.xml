@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-03-14T09:32:32-04:00</updated>
+  <updated>2014-03-16T12:28:30-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -162,7 +162,7 @@ cd ..</code></pre></noscript></div>
     <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
     <updated>2012-03-22T00:00:00-04:00</updated>
     <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
+    <content type="html"><![CDATA[<p># </p>
 
 <p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
 
@@ -199,7 +199,7 @@ done
     <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
     <updated>2010-03-25T00:00:00-04:00</updated>
     <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
+    <content type="html"><![CDATA[<p># </p>
 
 <p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
 
@@ -215,7 +215,7 @@ Patch : </p>
     <link href="http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring/"/>
     <updated>2010-01-29T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring</id>
-    <content type="html"><![CDATA[<h1 id="section"></h1>
+    <content type="html"><![CDATA[<p># </p>
 
 <p>The simple recipe is to add this to root’s cron:</p>
 
