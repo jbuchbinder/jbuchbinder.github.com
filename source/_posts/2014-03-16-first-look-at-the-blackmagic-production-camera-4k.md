@@ -4,7 +4,7 @@ title: "First look at the Blackmagic Production Camera 4K"
 date: 2014-03-16 11:17:25 -0400
 comments: true
 description: Reviewing the BMPC 4K body
-cover: http://www.abelcine.com/store/image.php?type=P&id=1005979
+cover: /images/bmpc4k.jpg
 categories: 
  - Cinematography
 ---
