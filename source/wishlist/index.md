@@ -7,7 +7,6 @@ wpbook_fb_publish:
 wpbook_message:
   - 
 ---
-# 
 
 This is a list of things that I’d like to have at some point or other, split up into categories. If you want to get me something, chances are that getting me something on this list will result in a greater chance of me liking it.
 
