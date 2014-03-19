@@ -7,9 +7,7 @@ categories:
   - Remember, No One Cares
 ---
 
-The last time I was ranting, it was about [the joke that is the current seperation between church and state][1]. But I think it’s time to take a look at the other part of this mess — us.
-
- [1]: http://jeff.ourexchange.net/2008/08/18/the-god-bullshit/
+The last time I was ranting, it was about [the joke that is the current seperation between church and state](/2008/08/18/the-god-bullshit/). But I think it’s time to take a look at the other part of this mess — us.
 
 “People of faith” seems to be a term which is bandied about an awful lot, which is meant to convey to other people that Jeebus or the Flying Spaghetti Monster, or your multi-armed deity of choice, is watching over them, and is ready to smite at a moment’s notice. Seems to be more Jeebus’s guys, since they’re [the most prevalent in America right now][2], strangely followed by secular people (but not very closely).
 

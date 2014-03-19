@@ -25,10 +25,9 @@ But really, is anyone worried that the financial future of this country is based
  [9]: http://willblogforfood.typepad.com/will_blog_for_food/2008/09/paulsons-bail-out-plan-is-for-the-rich.html
  [10]: http://www.alternet.org/workplace/107340/$2_trillion_handed_out_by_paulson_and_bernanke,_but_who_got_it,_nobody_knows/
 
-We’re probably [going to let the auto industry fail miserably][11]. I’ve [advocated that before][12], but I’m not certain that we wouldn’t benefit from some sort of intervention. Definitely \*not\* bailing out assholes like Rick “[I Deserve All My Millions][13] For [Losing Tons of Money for GM][14]” Wagoner, that’s for sure. Maybe socializing pension and healthcare benefits, maybe something else. Michael Moore had an [interesting take][15], being from that region of the country.
+We’re probably [going to let the auto industry fail miserably][11]. I’ve [advocated that before](/2008/11/12/let-general-motors-die/), but I’m not certain that we wouldn’t benefit from some sort of intervention. Definitely \*not\* bailing out assholes like Rick “[I Deserve All My Millions][13] For [Losing Tons of Money for GM][14]” Wagoner, that’s for sure. Maybe socializing pension and healthcare benefits, maybe something else. Michael Moore had an [interesting take][15], being from that region of the country.
 
  [11]: http://www.marketwatch.com/news/story/car-executives-open-round-two/story.aspx?guid={392D6345-1E64-4E9D-857E-97C2D39C2157}&dist=msr_8
- [12]: http://jeff.ourexchange.net/2008/11/12/let-general-motors-die/
  [13]: http://blog.mlive.com/statewidebusinessstories/2008/03/gm_board_restores_ceo_rick_wag.html
  [14]: http://www.bloggingstocks.com/2008/08/01/how-does-general-motors-ceo-richard-wagoner-still-have-a-job/
  [15]: http://www.michaelmoore.com/words/message/index.php?id=242
