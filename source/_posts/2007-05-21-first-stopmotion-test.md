@@ -7,7 +7,6 @@ categories:
   - Photography
   - Video and Animation
 ---
-# 
 
 Our first few stopmotion animation tests were successful. As per everything else we do, everything was done with Linux and freely available opensource software. In this case, [gphoto2][1], imagemagick and mplayer (with ffmpeg thrown in for the .flv conversion for [Gootube][2]. 
 

@@ -13,7 +13,6 @@ enclosure:
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Recently, you may have heard about certain [alarmist crap][1] being circulated in the guise of educational information to people in so called “swing states” in the upcoming 2008 election. Usually this crap doesn’t get an audience, but some of the kooks have been coming out of the woodwork, bitching at the top of their lungs about “islamic fundamentalism” and terrorist, and “oh! think of the children!”
 

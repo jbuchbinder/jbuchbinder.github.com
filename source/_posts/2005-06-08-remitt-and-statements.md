@@ -7,7 +7,6 @@ categories:
   - Development
   - FreeMED
 ---
-# 
 
 I have been hard at work, getting [our favorite medical billing engine][1] to support generating patient statements, in addition to its current payer billing capabilities. In addition, I have been adding some rich font support for [PDF][2]s, while all font attributes are stripped out or ignored when generating plain text or other formats which do not support it.
 

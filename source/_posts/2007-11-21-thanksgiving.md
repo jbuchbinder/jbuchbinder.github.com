@@ -6,7 +6,6 @@ permalink: /2007/11/21/thanksgiving/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 There seems to be an almost delectable thread of irony heading through my life as I head into Thanksgiving Day. Strangely enough, a few days ago I could have spouted for what would have seemed hours at all of the wonderful things to be thankful for, but somehow enough things have happened to come to a head that the same time that it’s a bit more difficult to extract the wheat from the chaff.
 

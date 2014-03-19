@@ -9,7 +9,6 @@ categories:
 tags:
   - financial corruption mortgage tarp bailout bastards
 ---
-# 
 
 I was talking with someone this morning about ARMs and the sort of financial havoc they have been wreaking upon a population who was assured that they would be able to refinance before the “adjustable” portion of the mortgage kicked in. During that conversation, I realized the reason why banks were so interested in getting people into ARMs, and it didn’t really have anything to do with trying to weasel houses away from people.
 

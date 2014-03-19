@@ -6,7 +6,6 @@ permalink: /2009/09/11/j2ee-and-sane-application-deployment/
 categories:
   - Development
 ---
-# 
 
 As I have been delving deeper into the J2EE Servlet specification during the rewrite of [REMITT][1], I have been learning some very interesting, and sometimes very painful, lessons about trying to package something without requiring complicated installations.
 

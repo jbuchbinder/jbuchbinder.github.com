@@ -6,7 +6,6 @@ permalink: /2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-serve
 categories:
   - Hacks
 ---
-# 
 
 I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.
 

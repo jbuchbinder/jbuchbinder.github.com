@@ -6,7 +6,6 @@ permalink: /2010/01/31/jasperwrapper/
 categories:
   - Development
 ---
-# 
 
 I have just wrapped up (no pun intended) work on an initial version of a CLI [JasperReports][1] wrapper, based heavily off the work of [jasperCall][2]. It’s also quite similar to the work being done on [RunJasperReports][3], although it was specifically designed to be integrated into [FreeMED’s][4] reporting engine, as it is put together as a fatjar. It currently supports PDF, XML, XLS and HTML output, and should theoretically support parameter passing, though I haven’t tried it out yet. It has a newer version of [MySQL Connector/J][5] baked in as well, so it shouldn’t require any external libraries outside a standard JRE install to function properly.
 

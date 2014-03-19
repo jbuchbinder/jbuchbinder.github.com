@@ -6,7 +6,6 @@ permalink: /2006/09/29/partisanship-dooms-us-all/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Apparently, fear of partisan political reprisal trumps constitutional rights, decency, and a host of other important things in the lastest failure of the United States’ legislative branch to keep insanity out of our lawbooks.
 

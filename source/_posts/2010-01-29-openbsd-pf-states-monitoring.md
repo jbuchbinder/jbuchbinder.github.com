@@ -6,7 +6,6 @@ permalink: /2010/01/29/openbsd-pf-states-monitoring/
 categories:
   - Hacks
 ---
-# 
 
 The simple recipe is to add this to root’s cron:
 

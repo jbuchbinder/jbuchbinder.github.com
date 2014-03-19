@@ -6,7 +6,6 @@ permalink: /2006/11/07/exercise-your-rights-as-a-citizen/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I’ve just done the one thing which I feel sets me apart from many more unfortunate people in other countries: voted. I got to go to a polling location and cast my single vote for whomever I feel would be the best person, or at least not the [worst person][1], for the job. I mean, government can [strip my rights to a fair trial or any civil rights][2] and [declare martial law][3] at will, so I think voting to oust the bastards who passed this kind of constitution-screwing garbage is the least of my rights, no, \*responsibilities\* as a citizen of this country.
 

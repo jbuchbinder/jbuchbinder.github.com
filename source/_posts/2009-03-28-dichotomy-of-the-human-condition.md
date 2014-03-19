@@ -6,7 +6,6 @@ permalink: /2009/03/28/dichotomy-of-the-human-condition/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Why is it that we have such a strong built-in need to survive when we’re miserable most of the time?
 

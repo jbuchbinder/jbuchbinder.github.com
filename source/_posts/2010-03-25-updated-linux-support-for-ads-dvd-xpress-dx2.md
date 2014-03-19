@@ -7,7 +7,6 @@ categories:
   - Development
   - Hacks
 ---
-# 
 
 In 2007, I had posted a patch for the [ADS DVD Xpress DX2][1] device to work on Linux, but it had been based on an antiquated kernel version, etc.
 

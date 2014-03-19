@@ -6,7 +6,6 @@ permalink: /2009/05/25/performance-bonuses/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I think that after reading things like [this][1] about taxpayer outrage at executive level bankers raking in performance bonuses for apparently [tanking the world financial system][2], I’m starting to think that we’re wrong about the outrage.
 

@@ -15,7 +15,6 @@ tags:
   - election
   - politics
 ---
-# 
 
 So, the 2012 United States Presidental Election is effectively between Barack Obama and Willard “Mitt” Romney. I don’t think I can stress how little this registers on my “give-a-fuck-o-meter”, although I have been inundated by dire prognostications regarding the end of our “American Way of Life ™” (whatever that is) and a lot of scare-tactic advertising campaigns unleashed by the virtually unlimited flow of corporate money (or as Constitutional Originalist fuckwads like Antonin Scalia would say, “free speech”) into the current election cycle.
 

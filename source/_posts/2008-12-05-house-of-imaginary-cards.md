@@ -6,7 +6,6 @@ permalink: /2008/12/05/house-of-imaginary-cards/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 > *“Don’t forget that most men with nothing would rather protect the possibility of becoming rich than face the reality of being poor.” – John Dickinson*
 

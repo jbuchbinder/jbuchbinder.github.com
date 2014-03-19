@@ -6,7 +6,6 @@ permalink: /2007/05/22/respecting-the-dead/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 It’s almost disturbing that after someone dies, many people seem to come out of the proverbial woodwork to mourn them. I suppose it’s natural that there’s a tinge of regret at not being able to express yourself to someone anymore, not being able to apologize for some real or even imagined transgression.
 

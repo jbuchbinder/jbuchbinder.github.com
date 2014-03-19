@@ -6,7 +6,6 @@ permalink: /2009/06/01/mortgaging-our-lives-for-money/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 > *“Everybody here sells his time for money. It’s like taking a mortgage against your life.” – Dr Dick Solomon (3rd Rock from the Sun, “I Enjoy Being A Dick”)*
 

@@ -7,7 +7,6 @@ categories:
   - Development
   - Hacks
 ---
-# 
 
 If you’ve got an old junky XBox around, and would like to put something, well, \*useful\* on it, like XBMC, then I’ve got a great link for you which allows soft modding without having a copy of any of the exploitable games.
 

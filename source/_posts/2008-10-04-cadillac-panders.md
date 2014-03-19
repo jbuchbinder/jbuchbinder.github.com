@@ -6,7 +6,6 @@ permalink: /2008/10/04/cadillac-panders/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 There have been a number of truly awful and stupid things going on in the world, but I think I’m going to pick on a very particular piece of stupid.
 

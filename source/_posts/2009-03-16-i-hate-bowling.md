@@ -6,7 +6,6 @@ permalink: /2009/03/16/i-hate-bowling/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I really have come to dislike bowling as sport or pastime. I can’t figure out why, but I seem to forget everything I’ve learned at the immediately previous bowling experience. And it’s things like that which make me inclined to believe that it’s a “sport” more of either dumb luck, raw repetition, or some curious combination of the two.
 

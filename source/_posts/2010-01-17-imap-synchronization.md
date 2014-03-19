@@ -13,7 +13,6 @@ tags:
   - synchronization
   - tool
 ---
-# 
 
 I hate it. IMAP Synchronization, that is.
 

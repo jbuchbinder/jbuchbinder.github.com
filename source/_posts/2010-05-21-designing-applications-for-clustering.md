@@ -7,7 +7,6 @@ categories:
   - Development
   - FreeMED
 ---
-# 
 
 I have been recently been trying to redesign [FreeMED][1] (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:
 

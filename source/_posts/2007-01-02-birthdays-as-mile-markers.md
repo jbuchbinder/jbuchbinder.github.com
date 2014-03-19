@@ -6,7 +6,6 @@ permalink: /2007/01/02/birthdays-as-mile-markers/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Not only is it a brand new year, but it’s also someone special’s birthday today. I’m not a big fan of birthdays, especially my own, for their tendency to appear as “mile markers” in the road trip we call life. I’m not going to say how old she is, mainly because there’s some awful stigma in our society regarding growing older. No longer is it treated as a source of venerable knowledge and experience, but instead a somber, inescapable conclusion — a dark, dismal fate.
 

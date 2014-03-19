@@ -6,7 +6,6 @@ permalink: /2009/03/23/who-is-getting-bailed-out-anyway/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I’ve been asking who we’re attempting to save with this bailout idea, and I’m not liking the answers I’m getting.
 

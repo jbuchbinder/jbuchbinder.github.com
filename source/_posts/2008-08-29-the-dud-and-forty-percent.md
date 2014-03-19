@@ -6,7 +6,6 @@ permalink: /2008/08/29/the-dud-and-forty-percent/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 > *“The definition of stupidity is doing the same thing over and over again and expecting different results.” — Albert Einstein*
 

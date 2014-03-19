@@ -8,7 +8,6 @@ categories:
 tags:
   - bailout insurance healthcare
 ---
-# 
 
 Apparently AIG, known mostly for its ability to [go through large amounts of taxpayer money][1] in order to [cover][2] [outrageous][3] [bets][4], is reporting that it [owes another 10 billion dollars that it hadn’t reported before][5], and which is not covered by the 150 billion dollars already allocated to it by the US government.
 

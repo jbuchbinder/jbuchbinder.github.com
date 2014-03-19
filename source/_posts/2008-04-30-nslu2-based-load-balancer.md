@@ -8,7 +8,6 @@ categories:
 tags:
   - nslu2 loadbalancing
 ---
-# 
 
 Another day, another project …
 

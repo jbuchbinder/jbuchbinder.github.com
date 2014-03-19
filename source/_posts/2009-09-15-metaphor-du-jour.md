@@ -6,7 +6,6 @@ permalink: /2009/09/15/metaphor-du-jour/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 For those who don’t know much about my life or daily habits, I have to commute into Framingham, Massachussets most days for work, which is about an hour drive from Northeast Connecticut, where I live. Unfortunately, this means spending a fair amount of time in traffic, as well as on the [Mass Pike][1], which is the sorry excuse for mass transit across Massachussets. Americans think of mass transit as highways instead of rail and its compatriots, for one reason or another.
 

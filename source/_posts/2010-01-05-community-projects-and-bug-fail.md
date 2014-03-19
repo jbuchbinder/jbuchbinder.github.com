@@ -6,7 +6,6 @@ permalink: /2010/01/05/community-projects-and-bug-fail/
 categories:
   - Development
 ---
-# 
 
 I really like Ubuntu — I use it for all of my workstations/laptops, and have for the last several years. I do not, however, like it when people tell me that something that’s clearly and demonstrably a bug in a system [simply isn’t a bug][1]. Fie on your crappy PPA build system, I’m just not going to build more Ubuntu packages for things. I’ll just go back to only packaging Debian server packages.
 

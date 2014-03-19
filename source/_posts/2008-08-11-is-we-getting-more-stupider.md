@@ -6,7 +6,6 @@ permalink: /2008/08/11/is-we-getting-more-stupider/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 *Note: I’m skipping my usual pathos drenched birthday post about mortality, aging, and life still being exactly as awful in favor of the following…*
 

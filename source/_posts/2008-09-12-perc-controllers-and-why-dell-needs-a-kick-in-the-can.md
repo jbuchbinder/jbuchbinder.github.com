@@ -6,7 +6,6 @@ permalink: /2008/09/12/perc-controllers-and-why-dell-needs-a-kick-in-the-can/
 categories:
   - Hacks
 ---
-# 
 
 This past week, I stumbled on a strange problem with Dell “PERC” RAID controllers in certain rackmount servers, where they would suddenly just stop working for no apparent reason. The nice people at Dell did actually have firmware available for the PERC 3 and 4 controllers to fix this problem, which was pretty nice.
 

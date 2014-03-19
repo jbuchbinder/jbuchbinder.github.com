@@ -7,7 +7,6 @@ categories:
   - Hacks
   - Music
 ---
-# 
 
 I have compiled an initial [2.6.17 kernel][1] for [Ubuntu Dapper Drake][2], as described on [ubuntustudio.com][3]. It has the EVMS patch needed by Ubuntu as well as the realtime patch installed. This version is not usplash patched. Files : [kernel-headers-2.6.17-rt7\_1\_i386.deb][4], [kernel-image-2.6.17-rt7\_1\_i386.deb][5]
 

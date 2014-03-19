@@ -6,7 +6,6 @@ permalink: /2009/07/15/sharecropping/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I was flipping through radio stations on my way to one of the colocation centers I have to visit for work, and chanced upon a Worcester-area right wing talk radio station. I got fed up about 60 seconds into the broadcast, listening to a man with very poor English asking why the government wants to take small business’s hard earned money away from them and give it to people who don’t deserve it.
 

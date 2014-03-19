@@ -6,7 +6,6 @@ permalink: /2010/01/12/exposing-soap-services-with-apaches-proxypass/
 categories:
   - Development
 ---
-# 
 
 I have recently had cause to proxy a J2EE CXF service through an apache 2.2 instance, and thought it would be nice to share my findings. (This was all done on a Debian system.)
 

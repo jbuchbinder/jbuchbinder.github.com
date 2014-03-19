@@ -6,7 +6,6 @@ permalink: /2008/06/05/thank-you-metro-north/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I’m writing you, the good people of the [MTA][1], to thank you for the ride on the Metro North train to New Haven yesterday.
 

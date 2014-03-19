@@ -7,7 +7,6 @@ categories:
   - Development
   - FreeMED
 ---
-# 
 
 It’s final; I have moved [FreeMED][1], a six-year old project with a CVS tree that old, to a new [replicated subversion repository][2] system. This should let me spend far less time fighting with [sourceforge’s][3] CVS servers, as well as provide an easier way to maintain the large number of files and directories in FreeMED.
 

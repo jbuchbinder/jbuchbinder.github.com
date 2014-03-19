@@ -10,7 +10,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 Finally, there’s some sort of [populist anger][1] against the bastards who tanked the economy in 2008 to pad their pockets. It’s just too bad that there isn’t a cohesive set of demands to go along with all of that rage.
 

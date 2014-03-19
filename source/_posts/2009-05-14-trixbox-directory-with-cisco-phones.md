@@ -6,7 +6,6 @@ permalink: /2009/05/14/trixbox-directory-with-cisco-phones/
 categories:
   - Hacks
 ---
-# 
 
 In case anyone may want to use Trixbox with Cisco 79xx phones and wants to use a directory with it, I have put together a hack to deal with the directory services, which nominally require SugarCRM, so that they report simple extensions back in the appropriate format.
 

@@ -6,7 +6,6 @@ permalink: /2007/03/23/the-ghost-of-hunter-s-strikes-again/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 It hasn’t been that long since the passing of the great [Hunter S Thompson](), creator of the so-called “Gonzo journalism”, and all-around lunatic. Apart from being eminently [quotable][1], Hunter Thompson was deeply involved in politics; he especially hated Richard Nixon, whom he frequently [wished malfeasance upon.][2]. I’m unsure as to whether Hunter really would have approved of where his “Gonzo” journalism has gone.
 

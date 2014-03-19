@@ -7,7 +7,6 @@ permalink: /2005/05/08/remitt-and-storing-data/
 categories:
   - Development
 ---
-# 
 
 I’m back to work on [REMITT][1], the REMITT Electronic Medical Information Translation and Transmission engine. (Yes, I know it’s a [recursive acronym][2].) There’s a significant portion of development which is going into attempting to be more [elegant][3] in my code. We’re attempting to add trending and other important features to REMITT, as well as some that are probably best kept quiet until they are ready.
 

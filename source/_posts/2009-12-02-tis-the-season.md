@@ -6,7 +6,6 @@ permalink: /2009/12/02/tis-the-season/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 It’s getting closer and closer to the [big holiday][1] of the winter season. Hell, let’s just call it the “Christmas Season” and get it over with; it’s the 900 pound gorilla in the figurative room.
 

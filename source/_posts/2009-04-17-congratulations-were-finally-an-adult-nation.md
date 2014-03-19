@@ -6,7 +6,6 @@ permalink: /2009/04/17/congratulations-were-finally-an-adult-nation/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 After an actor, a CIA spook, a Republican in Democrat’s clothing and a moron, we finally have a President willing to let us become an \*adult\* nation. President Obama just announced that he wanted to create [a high speed rail system][1] in the United States. Hell, even the cheese-eating surrender monkeys in France have had one of those for \*years\* … I’m sure that the trucking lobby, oil lobby, or some other lobby I haven’t though of, will stymie this and kill it somehow, but at least we’re trying, finally.
 

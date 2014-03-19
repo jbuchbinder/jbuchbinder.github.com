@@ -11,7 +11,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 I was listening to an FM talk-radio host (I know, I know, when will I ever learn…) this afternoon, and caught a peculiar rant. He was complaining about how terrible the public sector (and government in general) was compared to the private sector, based on two events.
 

@@ -9,7 +9,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 It’s the day before the 2012 Presidental Election. I’m disappointed, as usual, by the choice of [far right][1] and [center right][2] “choices” that we have. I again am forced into the decision of either voting for the preferable third party candidate, with whom I share views on the vast majority of issues ([Dr. Jill Stein][3], for anyone wondering — I still think Ron Paul is a complete crankcase, and Gary Johnson is way too “fuck Federalism” for my taste) and effectively helping to elect an out-of-touch sociopathic plutocrat butt-munch, or vote the “lesser of two evils” and probably end up with a Democrat who is going to “[Grand Bargain][4]” away the Great Society programs. All of that being said, I have a few serious issues with this election cycle.
 

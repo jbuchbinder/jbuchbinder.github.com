@@ -11,7 +11,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 I’ve been trying to keep up with the [education reform battle in Connecticut][1], since it’s my home state. The people pushing for reform (along with such “luminaries” as [Michelle Rhee][2] and [The Walton Foundation][3], who incidentally would privatize everything up to and including [the ocean][4]) are pushing for publicly subsidized yet privatized “[charter schools][5]” and the breaking of teachers’ union protections.
 

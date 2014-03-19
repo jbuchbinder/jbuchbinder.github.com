@@ -6,7 +6,6 @@ permalink: /2009/02/11/my-grandfather/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I just came back from an impromptu trip to Fort Lauderdale to attend the funeral service for my grandfather, Israel “Irving” Liss. He was born in a small town in Russia on December 20, 1917, and survived a pogram, emmigration to Israel, and eventually moved to Brooklyn. He was a professional soccer player, playing for the New York Americans after coming back from decorated service in the 101st Airborne paratroopers. And I did not know most of this a week ago.
 

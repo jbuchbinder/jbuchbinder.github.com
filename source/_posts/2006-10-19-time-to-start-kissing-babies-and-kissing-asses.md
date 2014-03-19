@@ -6,7 +6,6 @@ permalink: /2006/10/19/time-to-start-kissing-babies-and-kissing-asses/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 With less than a month remaining before the midterm congressional elections, one could argue that not much has actually changed in the United States. I mean, we still are passing awful legislation (Military Appropriations Act of 2006, stripping habeus corpus at will) and still [not making people any less poor][1].
 

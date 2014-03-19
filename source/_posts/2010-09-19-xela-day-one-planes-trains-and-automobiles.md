@@ -7,7 +7,6 @@ categories:
   - FreeMED
   - Remember, No One Cares
 ---
-# 
 
 As part of setting up the [POP-WUJ Clinic][1] in Xela, Guatemala with an electronic medical record, I have headed down with a team of ten other volunteers to the city of [Xela][2] in western Guatemala. I’m going to document the trip and the work we’re doing down here by a series of daily blog entries chronicling our trials and tribulations setting up and installing [FreeMED][3] there. I’ll post pictures as soon as I get the chance to upload them to Flickr.
 

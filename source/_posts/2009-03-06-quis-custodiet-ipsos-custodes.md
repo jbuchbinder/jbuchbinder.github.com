@@ -6,7 +6,6 @@ permalink: /2009/03/06/quis-custodiet-ipsos-custodes/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 The adaptation of my favorite graphic novel “Watchmen” is premiering tonight as a motion picture. I have mixed feelings about it, as the creator has disavowed all film adaptations of his work, and apparently [Snyder changed the ending][1]. You’d think after a travesty like [V for Vendetta][2] that directors would keep it in their pants and learn to respect good writing. Just because you can script Keanu Reeves saying “whoa!” for a few hours doesn’t mean you can out-write Alan Moore.
 

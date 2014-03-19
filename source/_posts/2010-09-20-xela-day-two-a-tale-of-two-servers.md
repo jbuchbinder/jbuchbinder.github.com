@@ -10,7 +10,6 @@ categories:
   - FreeMED
   - Remember, No One Cares
 ---
-# 
 
 I ended up passing out on top of the sheets in the hotel due to the tired state in which I arrived, but today was full of plenty of excitement and activity.
 

@@ -6,7 +6,6 @@ permalink: /2008/04/14/surviving/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I had a bit of a revelation the other day. Natasha and I had gone to pick up food to bring to a small dinner party, although it wasn’t a very formal occasion. She, on a lark, decided to grab one of those ridiculous celebrity tabloid-type magazines to read in the car on the way over.
 

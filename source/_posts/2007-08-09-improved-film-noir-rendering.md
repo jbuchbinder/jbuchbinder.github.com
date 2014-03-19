@@ -8,7 +8,6 @@ categories:
   - Hacks
   - Video and Animation
 ---
-# 
 
 Thanks to my brother, who is much better with [gimp-perl][1] than I am, there’s a vastly improved version of the original **RenderFilmNoir.pl** script, available [here][2].
 

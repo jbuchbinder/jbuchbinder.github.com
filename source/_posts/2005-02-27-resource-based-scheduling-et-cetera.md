@@ -7,7 +7,6 @@ permalink: /2005/02/27/resource-based-scheduling-et-cetera/
 categories:
   - FreeMED
 ---
-# 
 
 This weekend I have been putting in some enormous amount of overtime, working on a rehaul of a few of FreeMED’s features. In particular, I have been pounding away at getting the scheduler completely rewritten, since the current one was only supposed to be a temporary hack. We’re moving to a template-driven resource-based scheduler, which so far seems to out-perform the old one in terms of usability and efficency. We’ll see if it progresses far enough for me to replace the old scheduler in CVS.
 

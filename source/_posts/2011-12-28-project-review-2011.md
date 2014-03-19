@@ -10,7 +10,6 @@ categories:
   - Development
   - FreeMED
 ---
-# 
 
 I’ve been a bit lax in posting about my work here, mainly because Twitter makes you lazy. (Why write complete sentences when you can summarize in 140 characters or less?)
 

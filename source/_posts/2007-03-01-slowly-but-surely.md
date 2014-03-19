@@ -7,7 +7,6 @@ categories:
   - Development
   - FreeMED
 ---
-# 
 
 I’m still hard at work on [FreeMED][1] 0.9.0 ; it is turning out to be a very long and involved process. A ton of new functionality is making its way in, along with architectural improvements and porting old functionality. The majority of the codebase has been torn out and rewritten, mostly to allow for complete separation between UI and the data model.
 

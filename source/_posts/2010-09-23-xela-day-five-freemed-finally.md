@@ -10,7 +10,6 @@ categories:
   - FreeMED
   - Remember, No One Cares
 ---
-# 
 
 It’s day five of our trip to Xela, and we’ve come to the realization that the damn server isn’t going to clear Customs before I leave the country. That being understood, I got FreeMED up and running on the machine which was originally designated to be the secondary / failover server. The guy who set up the router which is being used by POP-WUJ is unfortunately in Spain, and has left no information on access, so I’m unable to appropriately set up port forwards for the server. In lieu of that, autossh tunnels are now running back to Connecticut, so I can still access the server. It’s just not very conducive to anyone \*else\* trying to access the server from beyond the walls of the POP-WUJ building.
 

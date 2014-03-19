@@ -6,7 +6,6 @@ permalink: /2008/11/04/wrt54g-toolchain/
 categories:
   - Development
 ---
-# 
 
 I pulled the mipsel toolkit for the WRT54G from the 180 MB kit from Linksys for easy access.
 

@@ -10,7 +10,6 @@ categories:
   - FreeMED
   - Remember, No One Cares
 ---
-# 
 
 Today we left early in the morning, around 7am, to head out to the village of “Aldea Pujujil” in Solola, Guatemala to do a travelling clinic. We took two “micro buses” with ten to thirteen people in each with equipment tied down to the top, and left Xela heading back towards Guatemala City on the Pan American Highway.
 

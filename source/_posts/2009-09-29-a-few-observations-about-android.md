@@ -6,7 +6,6 @@ permalink: /2009/09/29/a-few-observations-about-android/
 categories:
   - Android Development
 ---
-# 
 
 I’ve been in the process of teaching myself the Google Android platform over the last few weeks, as my work has had a contest devoted to creating a mobile phone app, with a prize attached. I’m the only entrant who doesn’t work in the Engineering department, so this is a bit of a professional stretch for me as far as my job is concerned.
 

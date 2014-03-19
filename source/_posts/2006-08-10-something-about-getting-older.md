@@ -6,7 +6,6 @@ permalink: /2006/08/10/something-about-getting-older/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 There’s something about getting older. Things invariably change, life progresses, and eventually your perceptions begin to shift, ever so slightly. There’s also something of an Easter Bunny effect which happens at some point in your life ; for me, it was my birthday this year.
 

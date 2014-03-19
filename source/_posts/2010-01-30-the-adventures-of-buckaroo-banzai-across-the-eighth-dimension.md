@@ -6,7 +6,6 @@ permalink: /2010/01/30/the-adventures-of-buckaroo-banzai-across-the-eighth-dimen
 categories:
   - Film
 ---
-# 
 
 I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the 1980s called [The Adventures of Buckaroo Banzai Across the Eighth Dimension][1].
 

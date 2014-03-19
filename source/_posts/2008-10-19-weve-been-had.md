@@ -6,7 +6,6 @@ permalink: /2008/10/19/weve-been-had/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 In case anyone was wondering, [we’ve been had][1], in an awful, awful way, to the tune of around 70 \*billion\* dollars. And as pointed out on Cronytopia, [US newspapers aren’t covering it][2].
 

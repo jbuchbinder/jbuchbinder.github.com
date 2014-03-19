@@ -6,7 +6,6 @@ permalink: /2006/03/27/trending-and-graphing/
 categories:
   - FreeMED
 ---
-# 
 
 Latest [FreeMED][1] project has been trying to get graphing and trending working. Unfortunately I haven’t seen any [GPL][2] licensed graphing libraries that really fit the bill for doing this sort of work, so I started working on my [own][3]; pretty much all hand-rolled, with some tricks pulled from the [PHP function guide][4].
 

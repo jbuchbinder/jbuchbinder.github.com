@@ -6,7 +6,6 @@ permalink: /2008/09/16/heads-on-pikes/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 If you’ve been outside of a cave in the last few days, chances are that you’ve heard about [Lehman Brothers][1], the latest of the investment firms to fail miserably due to the incredible sham that has been the American housing market. Early news today is showing that foreign markets are starting to fail, and it looks as though AIG may be the next major dropping point.
 

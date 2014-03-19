@@ -6,7 +6,6 @@ permalink: /2009/01/20/front-page-fail/
 categories:
   - Photography
 ---
-# 
 
 One of my pictures made it to the front page of the infamous “[failblog][1]“, consisting of [a picture of a very disreputable looking van][2] with “Little Angels Program” spraypainted on the side. I had caught that image earlier in 2008 in Willimantic, CT while I was walking through the hill section.
 

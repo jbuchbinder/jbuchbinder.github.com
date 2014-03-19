@@ -7,7 +7,6 @@ categories:
   - Development
   - Hacks
 ---
-# 
 
 I worked out a simple patch to get the [Cisco VPN client][1] working with [Ubuntu Feisty][2], which I’m attaching [here][3].
 

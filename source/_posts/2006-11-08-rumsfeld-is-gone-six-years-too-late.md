@@ -13,7 +13,6 @@ enclosure:
 categories:
   - Remember, No One Cares
 ---
-# 
 
 President Bush (god, it still sounds so awful to say it) just gave the traditional sixth-year “we lost our majority” speech to the nation, with the addition of the announcement of Donald Rumsfeld’s resignation as Secretary of Defense. Many people will remember Rumsfeld as the jackass who condoned torture (or sought to redefine it), pushed the notion of “weapons of mass destruction” in Iraq, and sought to push forward ideas like the “PATRIOT Act”. He couldn’t be gone soon enough for me. I wonder if this keeps him away from prosecution for war crimes, unless we’ve somehow outlawed that.
 

@@ -6,7 +6,6 @@ permalink: /2009/05/19/private-health-insurace-will-damn-us-all/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 There has been, for some time, debate in the United States regarding healthcare “reform”, as our current system does not serve a fair percent of the population, and out of those served, [many are “underinsured”][1]. From Michael Moore’s *Sicko* to Howard Dean’s offer to present the issue in front of Congress, there is no doubt that the system is horribly, horribly broken.
 

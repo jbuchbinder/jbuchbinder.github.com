@@ -6,7 +6,6 @@ permalink: /2008/04/23/backing-up-a-motorola-razr-v3m-with-ubuntu/
 categories:
   - Hacks
 ---
-# 
 
 I’ve had a Sprint Motorola RAZR v3m for a while, and when the time came to move to a Blackberry (for work), getting the information off of it would have been a horrendous process.
 

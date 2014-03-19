@@ -6,7 +6,6 @@ permalink: /2009/03/01/lets-hear-that-dirty-word-socialism/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 It seems to be the fashion for people to hem and haw about how the United States is spiralling downward towards (horrors!) socialism. I’m still trying to figure out what the big deal is.
 

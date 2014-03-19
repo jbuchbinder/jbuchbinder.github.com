@@ -7,7 +7,6 @@ permalink: /2005/02/06/module-loader-improvements/
 categories:
   - FreeMED
 ---
-# 
 
 I just added the ability to span directories in FreeMED’s module discovery routines. (Actually, they’re implemented in phpwebtools, but the idea is the same … ) This makes it much easier to seperately version portions of FreeMED, either for branding purposes or just for non-official modules, by allowing entire directories to be seperately versioned.
 

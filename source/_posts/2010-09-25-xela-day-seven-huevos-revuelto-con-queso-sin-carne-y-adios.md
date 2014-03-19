@@ -9,7 +9,6 @@ categories:
   - FreeMED
   - Remember, No One Cares
 ---
-# 
 
 It was my last day in Xela, with all of the basic setup, wiring, and other on-site work having been completed on Friday. As I’m lousy at negotiating prices even in English, Jorge was kind enough to go from shop to shop with me looking for some gifts for my wife and keepsakes to take home with me, after I went out with Irv to find a whiteboard for the clinic. The title of this refers to my normal breakfast order in the hotel, which I was finally able to order myself — “scrambled eggs with cheese, no meat”. When it comes to breakfast, I’m a bit more than mildly predictable.
 

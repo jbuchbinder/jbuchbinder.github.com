@@ -10,7 +10,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 The entire “managed health” component of the privatized healthcare system which we now “enjoy” in the United States descended from the [HMO Act of 1973][1], signed into law by the President whom Hunter S Thompson had famously claimed “could shake your hand and stab you in the back at the same time”. The insurance system we have today, primarily built on the foundation of the profit-inducing-but-patient-screwing HMO system, has built in something called a “moral hazard”, which ostensibly provides the conservatives’ requisite “[skin in the game][2]“. For those unfamiliar with this concept, a simplified version of the basic premise is that forcing a patient to cover a certain amount of a medical procedure will decrease the “risk” than an insurance company will have to pay for a procedure.
 

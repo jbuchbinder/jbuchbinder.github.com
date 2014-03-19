@@ -6,7 +6,6 @@ permalink: /2008/06/05/hating-people-for-the-wrong-reasons-political-edition/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I just had a fascinating phone conversation with one of my more conservative friends. He proceeded to tell me how [Obama is a muslim][1], [Clinton let terrorists into the country][2], [Clinton abandoned our valiant troops in Somalia][3] (I think they call this “cut and run” now), and how [McCain is a true compromiser][4] with [integrity in his beliefs][5]. The best part was how he told me that he formulated these opinions himself, since five minutes and [The Google][6] will tell you otherwise. You should note that if you didn’t know that Clinton/Somalia piece was about the Somalia conflict, it would almost read like a certain [chimpy president][7] and his Middle Eastern policy.
 

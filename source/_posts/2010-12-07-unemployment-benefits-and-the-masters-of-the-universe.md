@@ -9,7 +9,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 The [Masters of the Universe][1] seem to have a vested interest in the [death of 99 week unemployment benefits][2], which I’m just starting to realize.
 

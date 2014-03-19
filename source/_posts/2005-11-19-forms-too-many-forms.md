@@ -7,7 +7,6 @@ categories:
   - Development
   - FreeMED
 ---
-# 
 
 I’m working on a [new concept/feature][1] in [FreeMED][2] to try to alleviate the persistent problem of providers not being able to create their own forms with custom data, without having an advanced degree in [advanced something][3] (besides being a provider, of course). This, coupled with the new [packaging format][4] for FreeMED modules that I’m working on, will probably be the next big features in the next non-bug release, which is currently scheduled to be version 0.8.2. We’ll see what happens …
 

@@ -6,7 +6,6 @@ permalink: /2006/10/01/why-i-dont-watch-fox-news/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I tuned in Fox News on the old “Radiation King” television on a lark around 4:30 AM Eastern Standard Time, out of some form of morbid curiosity. I’ve heard a lot of ranting and raving from both proponents and opponents of their reporting and the questioned quality of their reporting, but like anything else, it is best to see this sort of thing and make your own decisions.
 

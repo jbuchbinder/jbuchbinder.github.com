@@ -6,7 +6,6 @@ permalink: /2006/09/18/one-missing-thread/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I was sitting by myself a few days ago, and started to wonder about the value of a single person. Not in relation to society, or anything else that tangible, but in relation to the totality of existence.
 

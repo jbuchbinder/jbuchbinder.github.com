@@ -6,7 +6,6 @@ permalink: /2008/11/25/misplaced-priorities/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 In case anyone has been living under a rock for the last few months, the economy is pretty well in the drink, and most respectible economists are predicting at least two to three years of recession.
 

@@ -6,7 +6,6 @@ permalink: /2008/08/09/why-the-olympics-is-a-sham/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Maybe you’ve divined from the title that I’m not exactly a supporter of the Olympics.
 

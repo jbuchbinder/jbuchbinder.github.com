@@ -6,7 +6,6 @@ permalink: /2007/04/09/rest-in-peace-mike/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 ![][1]
 

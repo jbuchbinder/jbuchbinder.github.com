@@ -6,7 +6,6 @@ permalink: /2009/12/03/us-healthcare-reform-is-dead/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Yep, that’s it. It has been dead for quite some time now. Unfortunately, it’s not always apparent \*why\* that has been the case.
 

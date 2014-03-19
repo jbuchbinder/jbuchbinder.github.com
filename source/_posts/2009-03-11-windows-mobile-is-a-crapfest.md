@@ -6,7 +6,6 @@ permalink: /2009/03/11/windows-mobile-is-a-crapfest/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I hate Windows Mobile. It’s a horrible, horrible operating system. Phones and devices based on it are just as awful.
 

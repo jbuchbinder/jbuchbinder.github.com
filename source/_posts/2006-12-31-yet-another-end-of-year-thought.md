@@ -6,7 +6,6 @@ permalink: /2006/12/31/yet-another-end-of-year-thought/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Every year I end up writing some glib piece of trash about how much or little the last year meant to me, and how much better I hope/hoped to do the next year. Inexorably, I’m drawn towards the cliche of trying to constantly explain away my foibles and missteps, as though some imaginary jury is critiquing my performance. Perhaps I have been looking at the entire \*concept\* of the year in the wrong way.
 

@@ -6,7 +6,6 @@ permalink: /2008/09/15/johnfest-2008-recordings/
 categories:
   - Music
 ---
-# 
 
 I have just posted the first set (from the first two hours) of John Mayer’s summer music festival (here affectionately titled “JohnFest”) from 2008 here:
 

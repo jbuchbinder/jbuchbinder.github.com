@@ -7,7 +7,6 @@ categories:
   - Development
   - Music
 ---
-# 
 
 I have been starting to consider changing distributions for the studio machine, lulled away from the [safe confines][1] of the known to something which seems to be much [nicer][2] in terms of user experience.
 

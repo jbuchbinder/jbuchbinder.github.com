@@ -6,7 +6,6 @@ permalink: /2009/08/07/rewriting-remitt-the-j2ee-way/
 categories:
   - Development
 ---
-# 
 
 For those people who are unfamiliar with my programming ventures, I had written a three stage extensible billing system a few years back called [REMITT][1] (which stands for REMITT Electronic Medical Information Translation and Transmission). I had created the majority of the code in about a week and the XSL transforms required for it to function in another two weeks or so.
 

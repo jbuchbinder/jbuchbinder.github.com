@@ -6,7 +6,6 @@ permalink: /2006/04/10/straight-from-the-horses-eyes/
 categories:
   - Photography
 ---
-# 
 
 {% flickr_image 126283790 n left "Horse eyes" %}
 

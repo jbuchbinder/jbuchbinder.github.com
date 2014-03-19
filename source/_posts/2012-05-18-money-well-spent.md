@@ -11,7 +11,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 I caught a piece on NPR this morning, regarding Governor Dannel Malloy’s proposed educational budget for Connecticut. Most of it was the normal policy discussion, but there was a part of it where they discussed increasing funding in some of the neediest municipalities in Connecticut. There, it was revealed that Litchfield had expressed concern with the governor’s plan to deallocate money which was designed to bring their students together with other kids for the purposes of “racial diversity”, citing that it wouldn’t foster “racial understanding”. The total program budget was around 11 million dollars, of which the governor had wanted to deallocate 5 million. (For those who don’t know about [Litchfield County][1], it’s 95 % white, and pretty damn conservative and well off. It was the only county in Southern New England that went to Bush the Younger in the 2004 presidential contest.)
 

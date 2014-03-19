@@ -8,7 +8,6 @@ categories:
 tags:
   - nslu2
 ---
-# 
 
 Before a friend clued me in to the [embedded gmetric][1] project, I had needed to strip out just the gmetric binary for use in monitoring a process on the NSLU2 I was using.
 

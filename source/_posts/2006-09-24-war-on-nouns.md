@@ -6,7 +6,6 @@ permalink: /2006/09/24/war-on-nouns/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I’ve been watching a great deal more television, reading a great deal more papers and “blogs”, and listening to a lot more interviews these days. And though it’s extremely hard to do this without politicizing what I see, I try to look at it as objectively as I can, from as many sources as I can.
 

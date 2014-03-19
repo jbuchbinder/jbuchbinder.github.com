@@ -6,7 +6,6 @@ permalink: /2008/08/22/the-god-bullshit-part-two/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 The last time I was ranting, it was about [the joke that is the current seperation between church and state][1]. But I think it’s time to take a look at the other part of this mess — us.
 

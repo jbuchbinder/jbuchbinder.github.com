@@ -8,7 +8,6 @@ categories:
 tags:
   - nslu2
 ---
-# 
 
 For all those fans of the venerable [NSLU2][1] (or “slug” as we like to call it), I have another package for OpenSlug/BE. This time it’s [remserial][2], a Linux equivalent to the BSD “[netfwd][3]” software, allowing serial ports to be redirected over TCP.
 

@@ -6,7 +6,6 @@ permalink: /2008/05/20/roving-access-point/
 categories:
   - Hacks
 ---
-# 
 
 I finally got around to getting a 12VDC power supply for the car (15 USD, cheap!), so my [WRT54G3G-ST][1] is mobile, and I got to enjoy trying out [Skype][2] while doing 65mph on the Mass Pike.
 

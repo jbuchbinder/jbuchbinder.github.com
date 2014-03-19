@@ -6,7 +6,6 @@ permalink: /2008/08/08/what-happened-to-the-land-of-innovation/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I remember this great, wonderful feeling that America was a nation of innovators. That no matter what the problem is, we would have no trouble solving it with some good ol’ fashioned American “know how”.
 

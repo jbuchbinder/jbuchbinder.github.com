@@ -11,7 +11,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 This is an argument I had with someone publicly a little while ago. I was fighting the concept that the entire educational system was a complete failure, and should be replaced with Michelle-Rhee-style charter schools.
 

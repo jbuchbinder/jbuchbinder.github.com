@@ -6,7 +6,6 @@ permalink: /2009/03/02/why-i-hate-banks/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 Another [30 billion ducats][1] down the toilet. I’m not sure exactly what banks are supposed to do anymore, but I could swear it [used to have something to do with loaning money][2] to allow economic movement. Banks won’t lend money to anyone [without sparkling credit][3], which means most people couldn’t get a loan.
 

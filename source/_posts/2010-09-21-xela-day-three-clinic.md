@@ -10,7 +10,6 @@ categories:
   - FreeMED
   - Remember, No One Cares
 ---
-# 
 
 The clinic was open for the first of the two days it will be open during my stay in Xela. It was a pretty crazy scene — a line going to the end, if not around the end, of the block.
 

@@ -6,7 +6,6 @@ permalink: /2008/11/29/holiday-season-beaten-to-death/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 It finally happened. The spirit of giving and wonder which is supposed to accompany the “Holiday” season has finally given way to the actual [seasonal sentiment of unrequited greed][1]. A worker at a Wal-Mart was trampled to death by consumers who [wanted to bum rush a store for toy greed][2], and two people were shot at a Toys-R-Us.
 

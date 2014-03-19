@@ -10,7 +10,6 @@ categories:
   - Opinion
   - Remember, No One Cares
 ---
-# 
 
 Amid news of the [overcompensated fatcat][1] of General Motors heading over to Capitol Hill to prostrate himself at the feet of House Speaker Pelosi to beg for some of that sweet, sweet bailout money, without admitting that [the pure capitalism he pimped to support his outrageous salary is now effectively dead,][2] I see that Chief Financial Rape Artist Hank Paulson has just thrown another [140 billion dollars][3] into the rabbit hole of non-accountability. This GM thing caught my attention for a reason; after a bit of “persuasion”, Speaker Pelosi is now on the floor of the House begging for her fellow legislators to [throw the fuckers a bone][4].
 

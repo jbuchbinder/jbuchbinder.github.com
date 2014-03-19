@@ -6,7 +6,6 @@ permalink: /2010/03/02/succumbing-to-the-camera-phone/
 categories:
   - Photography
 ---
-# 
 
 I do not like camera phones in the same way that I don’t particularly care for flash photography; you can produce good results (or at least passable results) with either, but the majority of stuff that comes out of it is just pure crap.
 

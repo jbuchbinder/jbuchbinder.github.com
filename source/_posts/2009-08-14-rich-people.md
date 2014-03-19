@@ -6,7 +6,6 @@ permalink: /2009/08/14/rich-people/
 categories:
   - Remember, No One Cares
 ---
-# 
 
 I think one of the biggest things that keeps America from moving forward is the intellecually bankrupt notion that people exist independently of one another, and that each person is independently financially responsible for their entire life. It’s a horrible concept, which was promulgated, at least in part, by Ayn Rand and her followers. I quote:
 

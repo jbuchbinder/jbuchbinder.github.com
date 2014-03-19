@@ -6,7 +6,6 @@ permalink: /2009/11/13/serial-and-parallel-interfaces-in-java/
 categories:
   - Development
 ---
-# 
 
 To sum up before I even begin: they \*suck\*.
 
