@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="# The simple recipe is to add this to root’s cron: * * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep &hellip;">
+  <meta name="description" content="The simple recipe is to add this to root’s cron: * * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -122,9 +122,7 @@
   </header>
 
 
-<div class="entry-content"><p># </p>
-
-<p>The simple recipe is to add this to root’s cron:</p>
+<div class="entry-content"><p>The simple recipe is to add this to root’s cron:</p>
 
 <p><code>
 * * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep pfTop | cut -d/ -f2 | cut -d, -f1) -t int32 -d 120 2&gt;&amp;#038;1 | logger -t pf_states

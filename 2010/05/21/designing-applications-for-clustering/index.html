@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="# I have been recently been trying to redesign FreeMED (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I &hellip;">
+  <meta name="description" content="I have been recently been trying to redesign FreeMED (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -122,9 +122,7 @@
   </header>
 
 
-<div class="entry-content"><p># </p>
-
-<p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
+<div class="entry-content"><p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
 
 <ul>
   <li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS … </li>

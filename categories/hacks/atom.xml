@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-03-19T15:46:06-04:00</updated>
+  <updated>2014-03-19T18:04:02-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -162,9 +162,7 @@ cd ..</code></pre></noscript></div>
     <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
     <updated>2012-03-22T00:00:00-04:00</updated>
     <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
-    <content type="html"><![CDATA[<p># </p>
-
-<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
+    <content type="html"><![CDATA[<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
 
 <p>One-liner to expand RRDs:</p>
 
@@ -199,9 +197,7 @@ done
     <link href="http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/"/>
     <updated>2010-03-25T00:00:00-04:00</updated>
     <id>http://jbuchbinder.com/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2</id>
-    <content type="html"><![CDATA[<p># </p>
-
-<p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
+    <content type="html"><![CDATA[<p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
 
 <p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
 
@@ -215,9 +211,7 @@ Patch : </p>
     <link href="http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring/"/>
     <updated>2010-01-29T00:00:00-05:00</updated>
     <id>http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring</id>
-    <content type="html"><![CDATA[<p># </p>
-
-<p>The simple recipe is to add this to root’s cron:</p>
+    <content type="html"><![CDATA[<p>The simple recipe is to add this to root’s cron:</p>
 
 <p><code>
 * * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep pfTop | cut -d/ -f2 | cut -d, -f1) -t int32 -d 120 2&gt;&amp;#038;1 | logger -t pf_states

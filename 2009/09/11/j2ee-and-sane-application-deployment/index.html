@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="# As I have been delving deeper into the J2EE Servlet specification during the rewrite of REMITT, I have been learning some very interesting, and &hellip;">
+  <meta name="description" content="As I have been delving deeper into the J2EE Servlet specification during the rewrite of REMITT, I have been learning some very interesting, and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -122,9 +122,7 @@
   </header>
 
 
-<div class="entry-content"><p># </p>
-
-<p>As I have been delving deeper into the J2EE Servlet specification during the rewrite of <a href="http://remitt.org/">REMITT</a>, I have been learning some very interesting, and sometimes very painful, lessons about trying to package something without requiring complicated installations.</p>
+<div class="entry-content"><p>As I have been delving deeper into the J2EE Servlet specification during the rewrite of <a href="http://remitt.org/">REMITT</a>, I have been learning some very interesting, and sometimes very painful, lessons about trying to package something without requiring complicated installations.</p>
 
 <p>To get authentication working in Tomcat, the normal way is to define a Context and Realm in TOMCAT_HOME/conf/server.xml. A relatively undocumented file called META-INF/context.xml allows fragments to be distributed with war files. This would be a great solution if it didn’t mean that authentication was now deeply dependent on editing a file in the web archive, which kind of takes the advantage completely out of having one. D’oh!</p>
 
