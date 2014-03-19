@@ -14,9 +14,7 @@ Muffy is about 19 or 20 years old as of late 2009, though we’re not sure exact
 
 *More pictures of Muffy are available at .*
 
-[![Muffy gargoyle][2]][2] 
+{% flickr_image 255194212 n left 'Muffy gargoyle' %}
 
-[![Muff yawning][3]][3]
+{% flickr_image 3686158628 n left 'Muffy yawning' %}
 
- []: http://www.flickr.com/photos/whatsyourmeme/255194212/ "Muffy gargoyle by What's Your Meme, on Flickr"
- []: http://www.flickr.com/photos/whatsyourmeme/3686158628/ "Muff yawning by What's Your Meme, on Flickr"
