@@ -3,7 +3,6 @@ title: evoke
 author: jeff
 layout: page
 ---
-# 
 
 The band I’ve played in since 2000, bass and backing vocals.
 
@@ -13,23 +12,15 @@ Obligatory blurb:
 
 **evoke** also recently was one of four bands nationwide to win the 2007 Ernie Ball Battle of the Bands online competition. 
 
-Pages 
-*   Official band page: 
-*   Myspace page: 
-*   Facebook page: [evoke][1] |   
-    [![][3]][3]
-*   iSound page: 
-*   unsigned.com page: 
-*   garageband.com page: 
-*   reverbnation page: [![][4]][4]
-*   twitter: 
+### Pages 
 
- [1]: http://www.facebook.com/pages/evoke/12327459413 "evoke"
- []: http://www.facebook.com/pages/evoke/12327459413 "evoke"
- []: http://www.reverbnation.com/c./a4/346502/143487/Artist/143487/Artist/link
+ * [Myspace page](https://myspace.com/evokeband)
+ * [Facebook page](http://www.facebook.com/pages/evoke/12327459413)
+ * [unsigned.com page](http://www.unsigned.com/evoke)
+ * [reverbnation page](http://www.reverbnation.com/c./a4/346502/143487/Artist/143487/Artist/link)
+ * [twitter](https://twitter.com/evokeband)
 
+### Photos 
 
+ * on flickr: [courtesy of "grendelkhan"](http://www.flickr.com/photos/whatsyourmeme/tags/evoke)
 
-
-Photos 
-*   grendelkhan on flickr: 

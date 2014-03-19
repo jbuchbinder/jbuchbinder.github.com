@@ -9,7 +9,6 @@ little_people:
 studio_name:
   - MEM Studio
 ---
-# 
 
 ![[Studio]][1]
 
@@ -17,9 +16,9 @@ In the time in between writing code and putting out fires, I also do session and
 
  [1]: /images/mem_logo.png
 
-*   [Artists and Projects][2]: a virtual cornucopia of audio samples and bizarre pictures of the people who have recorded here.
-*   [Equipment][3]: quick view of the nitty-gritty behind the sound… more for gearheads and interested professionals than anything else
-*   [Software and Drumkits][4]: anything that we’ve put together here which might be of interest to the community at large
+ * [Artists and Projects][2]: a virtual cornucopia of audio samples and bizarre pictures of the people who have recorded here.
+ * [Equipment][3]: quick view of the nitty-gritty behind the sound… more for gearheads and interested professionals than anything else
+ * [Software and Drumkits][4]: anything that we’ve put together here which might be of interest to the community at large
 
  [2]: /studio/artists_and_projects/
  [3]: /studio/equipment/
