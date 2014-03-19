@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="# I do not like camera phones in the same way that I don’t particularly care for flash photography; you can produce good results (or at least &hellip;">
+  <meta name="description" content="# In 2007, I had posted a patch for the ADS DVD Xpress DX2 device to work on Linux, but it had been based on an antiquated kernel version, etc. Since &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -94,6 +94,51 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/">Updated: Linux Support for ADS DVD Xpress DX2</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-03-25T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/03/25/updated-linux-support-for-ads-dvd-xpress-dx2/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p># </p>
+
+<p>In 2007, I had posted a patch for the <a href="http://www.adstech.com/products/USBAV-709-EF/intro/USBAV-709_intro.asp?pid=USBAV-709-EF">ADS DVD Xpress DX2</a> device to work on Linux, but it had been based on an antiquated kernel version, etc.</p>
+
+<p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
+
+<p>Original driver : <br />
+Patch : </p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -600,52 +645,6 @@ $sc = new SoapClient( file_get_contents($url), array(
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/12/03/us-healthcare-reform-is-dead/">US Healthcare Reform Is Dead</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-12-03T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2009/12/03/us-healthcare-reform-is-dead/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p># </p>
-
-<p>Yep, that’s it. It has been dead for quite some time now. Unfortunately, it’s not always apparent *why* that has been the case.</p>
-
-<p><strong>Warning:</strong> Political and healthcare-related opinions below, linked to various reputable sources.</p>
-
-<p><strong>Public Option, Single Payer, Medicare for All?</strong> The most contentious part of healthcare reform has been the concept of a government run health care plan. <a href="http://www.govtrack.us/congress/bill.xpd?bill=h111-676">HR 676</a> refers to the idea of “Medicare for All”, extending our Medicare program for seniors to cover all Americans, effectively creating a single payer system in America. As expected, people who <a href="http://www.huffingtonpost.com/byron-williams/republicans-undercut-thei_b_292760.html">didn’t give a crap about running up deficits to blow holes in the sand halfway across the globe</a> were outraged, *outraged* at the idea that we could possibly spend money on healthcare. So much, in fact, that they <a href="http://www.clipsandcomment.com/2009/02/27/idiots-on-camera-clevelands-tea-party-covered-by-blogger-interrupted/">paraded around like morons</a>, complaining about how large and awful government has gotten. (You know, after they didn’t say jack since the *last* Democrat was president.) A simple google search seems to show that the only places that are worried about Medicare deficits are <a href="http://www.google.com/search?q=medicare financial crisis">right-wing thinktanks like the “Heritage Society” and Pravda-like news organizations like “Fox News”</a>. Did I forget to mention that Kaiser and BCBS were up there as well? Trusting insurance companies to control costs in healthcare is like handing over a chicken farm to a drooling fox. No mention whatsoever that <a href="http://www.pnhp.org/facts/what_is_single_payer.php">estimates of savings with single payer are in the hundreds of *billions* of dollars</a>. And those estimates aren’t some cherry-picked thinktank garbage. It’s from the CBO. PNHP has a <a href="http://www.pnhp.org/facts/single_payer_system_cost.php?page=all">substantial list</a> of studies which all seem to conclude that we’re flushing money into private insurance companies. Not to mention that <a href="http://www.annals.org/cgi/reprint/148/7/566">59% of doctors favor it</a>.</p>
-
-<p><strong>Don’t let that fool you. The Insurance companies *love* this new bill.</strong> For all their hemming and hawing, the health insurance complex is almost giddy with this new bill, which would allow them to effectively [dump the lowest income, highest risk people][8] onto a publically subsidized [but privately run][9] healthcare system. All the profits, none of the risk. Sounds like Goldman Sachs 101 to me. In a related vein, one of the major reasons that the banking and financial industry has come out against HR 676 was that part of it </p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/6/">&larr; Older</a>
@@ -663,6 +662,10 @@ $sc = new SoapClient( file_get_contents($url), array(
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/03/18/came-06-blackmagic-cage-review/">CAME-06 Blackmagic Cage Review</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/03/16/first-look-at-the-blackmagic-production-camera-4k/">First Look at the Blackmagic Production Camera 4K</a>
       </li>
     
@@ -678,17 +681,13 @@ $sc = new SoapClient( file_get_contents($url), array(
         <a href="/2013/11/19/signal-to-noise-ratio/">Signal to Noise Ratio</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/11/13/checking-for-deprecated-wordpress-functions/">Checking for Deprecated Wordpress Functions</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (15)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (16)</a></li>
 <li class='category'><a href='/categories/development/'>Development (34)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
@@ -698,6 +697,7 @@ $sc = new SoapClient( file_get_contents($url), array(
 <li class='category'><a href='/categories/opinion/'>Opinion (12)</a></li>
 <li class='category'><a href='/categories/photography/'>Photography (10)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>Remember, No One Cares (81)</a></li>
+<li class='category'><a href='/categories/reviews/'>Reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>Video and Animation (3)</a></li>
 
   </ul>
