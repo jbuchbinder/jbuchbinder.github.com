@@ -3,7 +3,6 @@ title: Stan
 author: jeff
 layout: page
 ---
-# 
 
 {% flickr_image 115274606 n left "Mr Lonely" %}
 

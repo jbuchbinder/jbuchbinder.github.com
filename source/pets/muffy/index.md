@@ -7,7 +7,6 @@ wpbook_fb_publish:
 wpbook_message:
   - 
 ---
-# 
 
 Muffy is about 19 or 20 years old as of late 2009, though we’re not sure exactly how old she is. She used to be very scared of people, but is a very love-y touch-y cat now. Her hobbies include sitting on the deck railing doing impressions of a gargoyle and trying to sit on the face of anyone who sits on my couch.
 

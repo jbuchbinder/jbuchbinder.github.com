@@ -3,22 +3,14 @@ title: Ivory
 author: jeff
 layout: page
 ---
-# 
 
 Half tomcat, half Samoan, Ivory succumbed to what the doctors believed was multi-systemic cancer at 3:00 AM on the morning of November 23rd, 2009, at the Tufts Medical Center. This page is kept as a memorial to her.
 
-*More pictures are available at [Flickr][1]*
+*More pictures are available at [Flickr](http://www.flickr.com/photos/whatsyourmeme/tags/ivory)*
 
-[![Ivory peeking out of dresser][2]][3] 
+{% flickr_image 264372183 n left 'Ivory peeking out of dresser' %}
 
-[![Ivory stare][4]][5] 
+{% flickr_image 143202507 n left 'Ivory stare' %}
 
-[![Ivory in the window][6]][7]
+{% flickr_image 3685348419 n left 'Ivory in the window' %}
 
- [1]: http://www.flickr.com/photos/whatsyourmeme/tags/ivory
- [2]: http://farm1.staticflickr.com/113/264372183_81f0a17107_d.jpg
- [3]: http://www.flickr.com/photos/whatsyourmeme/264372183/
- [4]: http://farm1.staticflickr.com/54/143202507_d635db2c47_d.jpg
- [5]: http://www.flickr.com/photos/whatsyourmeme/143202507/
- [6]: http://farm3.staticflickr.com/2554/3685348419_cffa8ea9ea_d.jpg
- [7]: http://www.flickr.com/photos/whatsyourmeme/3685348419/

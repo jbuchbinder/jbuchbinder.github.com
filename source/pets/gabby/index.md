@@ -3,7 +3,6 @@ title: Gabby
 author: jeff
 layout: page
 ---
-# 
 
 Gabby was a 16 year old calico cat, who disappeared in early November 2009, and is presumed to have died. She was a very loving cat who used to hang from shirts while they were being worn, and was purring no matter how adverse the circumstance.
 
