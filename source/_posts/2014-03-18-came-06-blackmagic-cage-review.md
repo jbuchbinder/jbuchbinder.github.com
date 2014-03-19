@@ -22,6 +22,8 @@ along with the normal mounting options and handles present with
 most cage designs. The cage in question is available for
 [$198, shipping included, from the manufacturer](http://www.came-tv.com/came06-bmcc-cage-for-blackmagic-design-cinema-camera-15mm-rail-p-477.html).
 
+{% img /images/came-06.jpg 289 400 "CAME-06 Cage" %}
+
 My unit arrived today, via DHL, in a box which seemed almost
 Ikea-esque in its packing. First thing to note, which is not
 indicated either on the website or the packaging: "some assembly
