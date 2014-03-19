@@ -72,3 +72,7 @@ CAME-06. It's a good deal for the price, however.
 
 Good luck!
 
+*Postscript: The manufacturer offered to reimburse me for the
+missing screws within a day of me writing to them, so they do
+seem to be relatively responsive whenever there is a mixup.*
+
