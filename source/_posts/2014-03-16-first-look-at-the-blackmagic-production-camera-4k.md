@@ -7,6 +7,7 @@ description: Reviewing the BMPC 4K body
 cover: /images/bmpc4k.jpg
 categories: 
  - Cinematography
+ - Reviews
 ---
 
 I was lucky enough to be one of the early people on the waiting list for
