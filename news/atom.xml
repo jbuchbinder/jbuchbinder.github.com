@@ -3,7 +3,7 @@
   <title>&lt;![CDATA[Blog Feed Aggregator Meta Feed]]&gt;</title>
   <link href="http://jbuchbinder.com/news/atom.xml" rel="self" />
   <link href="http://jbuchbinder.com/" />
-  <updated>2014-03-20T11:19:42-04:00</updated>
+  <updated>2014-03-20T11:30:16-04:00</updated>
   <id>http://jbuchbinder.com/news/atom.xml</id>
   <author>
     <name>&lt;![CDATA[jeff]]&gt;</name>
@@ -11,6 +11,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      <title type="html">&lt;![CDATA[My Favorite Photographer Is…Everyone With A Camera]]&gt;</title>
+      <link href="http://fstoppers.com/my-favorite-photographer-is-everyone-with-a-camera" />
+      <updated>2014-03-20T15:20:27Z</updated>
+      <id>http://fstoppers.com/?p=120320</id>
+      <author>
+        <name>&lt;![CDATA[John Schell]]&gt;</name>
+        <uri>http://fstoppers.com</uri>
+      </author>
+      <content type="html">&lt;![CDATA[<p>Some days, as we plod through our respective news feeds, it seems as though the Internet was invented for one thing and one thing only; to share photos. Although the quality of the photos we have to wade through can sometimes be questionable, and at times our feeds can become overwhelming, the relative ease with which photos are shared is in my opinion, the greatest benefit to our seemingly photo-obsessed and Social Media saturated <del>society</del> planet.<img title="More..." alt="trans My Favorite Photographer Is...Everyone With A Camera" src="http://fstoppers.com/wp-includes/js/tinymce/plugins/wordpress/img/trans.gif" /> <a href="http://fstoppers.com/my-favorite-photographer-is-everyone-with-a-camera" class="more-link">[more]</a></p><p><a href="http://fstoppers.com/my-favorite-photographer-is-everyone-with-a-camera"><img src="http://fstoppers.com/wp-content/uploads/2014/03/90C0818_featured.jpg" /></a></p>]]&gt;</content>
+    </entry>
   
     <entry>
       <title type="html">&lt;![CDATA[Cracow: A Timelapse Spanning Four Seasons]]&gt;</title>
@@ -118,18 +130,6 @@
         <uri>http://fstoppers.com</uri>
       </author>
       <content type="html">&lt;![CDATA[<p>By now, we’ve all seen the gigapixel landscape shots over the years, but I’m pretty sure never seen anything like the 900 gigapixel portrait series Swiss photographer <a href="http://www.robophot.com/" rel="external nofollow">Daniel Borschung</a> has undertaken. I’m not much of a numbers guy, but when you have a robot arm taking 600 pictures of your subject with a macro lens, the results are a tiny bit mind blowing. <a href="http://fstoppers.com/the-insane-detail-of-the-human-face-900-gigapixel-portrait-series" class="more-link">[more]</a></p><p><a href="http://fstoppers.com/the-insane-detail-of-the-human-face-900-gigapixel-portrait-series"><img src="http://fstoppers.com/wp-content/uploads/2014/03/Fstoppers_DanielBoschung_F.jpg" /></a></p>]]&gt;</content>
-    </entry>
-  
-    <entry>
-      <title type="html">&lt;![CDATA[Superman Flies Through Los Angeles With A Gopro]]&gt;</title>
-      <link href="http://fstoppers.com/superman-flies-through-los-angeles-with-a-gopro" />
-      <updated>2014-03-18T04:27:36Z</updated>
-      <id>http://fstoppers.com/?p=120175</id>
-      <author>
-        <name>&lt;![CDATA[Patrick Hall]]&gt;</name>
-        <uri>http://fstoppers.com</uri>
-      </author>
-      <content type="html">&lt;![CDATA[<p>What happens when you combine a <a href="http://www.bhphotovideo.com/c/product/1003301-REG/gopro_chdhx_302_hero3_black_edition_adventure.html/BI/6857/KBID/7410" target="_blank" rel="external nofollow">GoPro Hero +3</a>, a <a href="http://www.bhphotovideo.com/c/product/1018650-REG/dji_cp_pt_000083_h32d_phantom_2_with_h3_2d.html/BI/6857/KBID/7410" target="_blank" rel="external nofollow">DJI Phantom II</a>, an actor dressed as Superman, and some clever video editing?  How about one awesome simulation of what it must be like to be Superman as he flies through Los Angeles.  If you were upset with our recent <a href="http://fstoppers.com/why-we-pulled-the-dji-phantom-post">Phantom 2 Gopro height test</a> last week, you are definitely not going to want to watch this video.  Be sure to check out Sam and Niko&#8217;s behind the scenes video <a href="http://fstoppers.com/superman-flies-through-los-angeles-with-a-gopro" class="more-link">[more]</a></p><p><a href="http://fstoppers.com/superman-flies-through-los-angeles-with-a-gopro"><img src="http://fstoppers.com/wp-content/uploads/2014/03/superman-with-gopro-dji-phantom-over-los-angeles.jpg" /></a></p>]]&gt;</content>
     </entry>
   
 </feed>
