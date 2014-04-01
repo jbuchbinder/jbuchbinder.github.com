@@ -108,8 +108,14 @@ territory. Because it has SDI outputs, rather than HDMI, it's probably a
 good idea to go with one of the SDI EVFs. Unfortunately, they're not cheap.
 You more or less have the pick of these:
 
- * [Cineroid EVF4MSS](http://www.bhphotovideo.com/c/product/827800-REG/Cineroid_EVF4MSS_EVF_Metal_with_HD_SDI.html) - $699 - 
-   The least expensive of the set.
+ * <del>[Cineroid EVF4MSS](http://www.bhphotovideo.com/c/product/827800-REG/Cineroid_EVF4MSS_EVF_Metal_with_HD_SDI.html) - $699 - 
+   The least expensive of the set.</del>
+ * [Cineroid EVF4CSS](http://www.bhphotovideo.com/c/product/982065-REG/cineroid_evf4css_electronic_viewfinder.html) - $599 -
+   I realized that you can't really use the EVF4MSS, despite its metal
+   materials, because it only supports up to 1080i, whereas the BMPC4k
+   requires 1080p.
+ * [Cineroid EVF4RVW](http://www.bhphotovideo.com/c/product/894123-REG/Cineroid_EVF4RVW_with_Retina_Display.html) - $995 -
+   Retina display version of the EVF4CSS. Higher resolution, higher price.
  * [Alphatron EVF-035W-3G](http://www.bhphotovideo.com/c/product/852192-REG/Alphatron_Broadcast_Electronics_EVF_035W_3G_EVF_035W_3G_Electronic_View_Finder.html) - $1395 -
    The most expensive, but also most highly reviewed SDI EVF. Shane Hurlbut,
    A.S.C., endorsed this particular EVF for use with the BMPC body.
@@ -134,7 +140,9 @@ otherwise it is moderately unweildy. The cheapest mounting solution for
 15mm rods I found was the [Ikan BMC-PBK-1-S](http://amzn.to/1m9YGao) mount,
 which has a small distribution center built into it. It's slightly redundant,
 as the adapter that came with the PB-70 isn't used, but for the money, it's
-a good buy.
+a good buy. It may make sense to buy the slightly more expensive
+[Lanparte plate](http://amzn.to/1hcVO4P), which has a number of additional
+power outputs.
 
 **The Sun**. Besides the glossy screen, the sun tends to blow out the fairly
 sensitive BMPC4k sensor. The solution is to use ND filters to reduce the
