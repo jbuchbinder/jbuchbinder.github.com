@@ -2,18 +2,13 @@
 title: Photography
 author: jeff
 layout: page
-wpbook_fb_publish:
-  - yes
 ---
-# 
 
 Welcome to my digital photography page!
 
-![][1]
+{% img /images/camera_75x81.png 75 81 %}
 
 I have been taking pictures for years, but have been working with digital photography for a subset of that time.
-
- [1]: /wp-content/images/camera_75x81.png
 
 Here are the cameras that I have been using:
 
@@ -32,44 +27,32 @@ As for lenses for the Canon EOS bodies, my current collection includes:
 *   **Vivitar 135mm fixed focal length lens** It’s a Nikon-mount lens attached to a 5$ chinese adapter ring. It takes fantastic black and white shots, and is my favorite piece-of-crap 7$ lens.
 *   **Soliger 135mm lens with 2x teleconverter**. I’m not really that fond of this lens. It’s a Pentax screw-mount lens, also attached to a 5$ chinese adapter ring. The teleconverter is okay, but this lens combination has mostly been phased out in favor of the Tamron. Especially since I think it’s a bit wobbly.
 *   **Canon 50mm f/1.8**. Great portrait lens. Also known as the "plastic fantastic", among cheap lens afficionados.
+*   **Canon 50mm f/1.4**. Nicer version of the 50mm f/1.8. Great for low-light shooting.
 *   **Canon EF 28-135mm f/3.5-5.6 IS USM**. Came with the 40D, and is now my primary lens.
 *   **[Canon EF 70-200mm f/2.8 L IS USM II](http://www.usa.canon.com/cusa/consumer/products/cameras/ef_lens_lineup/ef_70_200mm_f_2_8l_is_ii_usm)**. My long lens, affectionately referred to as my "wedding lens" or "the bazooka".
 *   **Rokinon 85mm f/1.4**. Upon reflection, I would rather have bought the de-clicked f/1.5 cine version of this, but it's a really great, really bright lens.
-*   **Rokinon 14mm T/1.5 Cine**, **Rokinon 24mm T/1.5 Cine**, **Rokinon 35mm T/1.5mm T/1.5 Cine**. These are my set of Rokinon "Cine" lenses. I primarily use them for cinematography, but I have been known to use them for stills on occasion.
-*   **Asahi Super Takumar M42 50mm f/1.4**. One of my M42 / Pentax screw-mount lenses.
+*   **Rokinon 14mm T/3.1 Cine**, **Rokinon 24mm T/1.5 Cine**, **Rokinon 35mm T/1.5mm T/1.5 Cine**. These are my set of Rokinon "Cine" lenses. I primarily use them for cinematography, but I have been known to use them for stills on occasion.
+*   **Asahi Super Takumar M42 50mm f/1.4**. One of my M42 / Pentax screw-mount lenses; a present from my sister-in-law, off of eBay.
 *   **Canon FD 55mm f/1.2**. An old Canon FD mount lens. Very bright, very sharp, but requires a Lens Doctor adapter to work with my EF mount.
 
 I’m sure there are others, but I can’t think of them right now…
 
 Some of the places my photos have appeared include:
 
-*   [This picture of Gordon Bok](http://www.flickr.com/photos/whatsyourmeme/3378255542/) appeared in Maine’s “Village Soup” magazine for a [retrospective on Gordon Bok](http://knox.villagesoup.com/ae/story/shantymen-to-social-club/347403).
-*   [This picture of Isabella]() was chosen for a “dog of the day” website. Can’t remember where.
+* [This picture of Gordon Bok](http://www.flickr.com/photos/whatsyourmeme/3378255542/) appeared in Maine’s "Village Soup" magazine for a [retrospective on Gordon Bok](http://knox.villagesoup.com/ae/story/shantymen-to-social-club/347403).
+* [This picture of Isabella]() was chosen for a "dog of the day" website. Can’t remember where.
 * [These pictures of the 2014 Anti-Love Song Cabaret](http://www.norwichbulletin.com/article/20140212/ENTERTAINMENTLIFE/sthash.ElYVUeVZ.gbpl) were used by the Norwich Bulletin for their Arts section coverage of the event.
 
 If you’re interested in more photos, especially newer ones, check out my **flickr** feed at [http://www.flickr.com/photos/whatsyourmeme](http://www.flickr.com/photos/whatsyourmeme/):  
 
- ![Ebony, my dog, on the couch][8]
+{% img /images/ebonycouch.thumb.jpg 200 150 'Ebony, my dog' %}
 
-![My friend Justin and co fishing][9]
+{% img /images/sunset.thumb.jpg 200 150 'Sunset over Crystal Pond, Woodstock, CT' %}
 
-Ebony, my dog
+{% img /images/field.thumb.jpg 200 150 'Field in Storrs, CT' %}
 
-Crystal Lake, Woodstock, CT
-
-![On the way to work][10]
-
-![Port St Lucie, FL][11]
-
-Field in Storrs, CT
-
-Port St. Lucie, FL
-
+{% img /images/ray.thumb.jpg 200 150 'Port St Lucie, FL' %}
   
 If anyone is interested in a print of any of these pictures, please contact me at [jeff @ ourexchange.net][12]. (You have to remove “REMOVE” from my email address, to ward off spambots.)
 
- [8]: /wp-content/images/ebonycouch.thumb.jpg
- [9]: /wp-content/images/sunset.thumb.jpg
- [10]: /wp-content/images/field.thumb.jpg
- [11]: /wp-content/images/ray.thumb.jpg
  [12]: mailto:jeff@REMOVEourexchange.net
