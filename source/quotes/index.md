@@ -2,12 +2,7 @@
 title: Quotes
 author: jeff
 layout: page
-wpbook_fb_publish:
-  - yes
-wpbook_message:
-  - 
 ---
-# 
 
 *This is my quote file. I update it when it occurs to me. All quotes are the property of the person who wrote them. If they offend you, read no further.*
 
@@ -87,6 +82,10 @@ wpbook_message:
 
  [10]: http://slashdot.org/~phantomfive
  [11]: http://slashdot.org/comments.pl?sid=1135267&cid=26933509
+
+## Optimism
+
+"The optimist proclaims that we live in the best of all possible worlds; and the pessimist fears this is true." - James Branch Cabell, The Silver Stallion (1926)
 
 ## Our Rights
 
