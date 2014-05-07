@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-05-01T16:25:05-04:00</updated>
+  <updated>2014-05-07T14:28:32-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,150 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[48 Hours with the Blackmagic Production Camera 4K]]></title>
+    <link href="http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/"/>
+    <updated>2014-05-07T13:45:23-04:00</updated>
+    <id>http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k</id>
+    <content type="html"><![CDATA[<p>This year, my team (<a href="http://www.shootthemoonfilms.com">Shoot the Moon Films</a>),
+entered the 2014 <a href="http://48hourfilm.com/en/boston/">Boston 48 Hour Film Festival</a>
+for the first time. It’s an interesting experience, going from genre and
+parameters to fully formed script, to planning and preproduction, to
+shooting and execution, to editing, scoring, grading, and full post-production
+in a single weekend. I’ve learned a lot about working with the 
+<a href="http://www.blackmagicdesign.com/products/blackmagicproductioncamera4k">BMPC4K</a>
+camera in that time. I am going to iterate over some of the more important
+things that I learned over the weekend.</p>
+
+<h2 id="overheating">Overheating</h2>
+
+<p>This simply did not happen. I had heard some horror stories about the camera
+body breaking or overheating after long periods of filming, but even in 
+direct sunlight for significant periods of time, I did not find this to be
+the case. My EOS body used to overheat more than this one…</p>
+
+<h2 id="nd-filters">ND filters</h2>
+
+<p>My Tiffen 77VND was indispensible. If I didn’t have that single piece of
+equipment, every exterior shot would have been very, very different. I wanted
+a medium DOF and a standard shutter rate for my exterior shots – which meant
+that the sunlight had to be stopped down. The variable ND filter delivered
+perfectly.</p>
+
+<h2 id="evf">EVF</h2>
+
+<p>The Cineroid was a life-saver. I do not think I would have done as well
+without its superior focus-peaking, crop indications, etc. The only feature
+sorely missing from the EVF4CSS is waveforms/scopes, which would have been
+a bit more useful than eyeballing the full extent of the dynamic range.</p>
+
+<h2 id="v-mount-batteries">V-mount batteries</h2>
+
+<p>If you are not turning your camera off between takes, you are going to need
+more than one battery for a day-long shoot. Do <strong>NOT</strong> skimp on a V-mount
+battery charger. They take a very long time to trickle charge, so make sure
+you have a rapid charger. Also, spares. They may be expensive, but having to
+wait on a battery charging could blow a shoot.</p>
+
+<h2 id="audio">Audio</h2>
+
+<p>This is less a “thing” with the BMPC4K body, and more of a general observation.
+You cannot skimp on sound. You just <em>can’t</em>. You can always rely entirely on
+tight OTS shots and other closeups and use on-camera mics, but it shuts off
+an entire avenue of creative wider shots. A boom operator is <em>not</em> just your
+buddy holding a mic on a pole – they need to know what they are doing,
+otherwise you could be pushing very substandard audio into post-production.
+Especially on a tight time limit, this can make the difference between making
+a deadline, or having truly horrendous sound.</p>
+
+<p>Also, get a really competent audio engineer. Preferably a really anal-retentive
+one with an insane attention to detail. Even if you have perfect video, really
+crappy audio can break the illusion of your film. <strong>DO NOT SKIMP</strong>. SERIOUSLY.</p>
+
+<h2 id="that-pa-or-ad----you-need-them-more-than-you-think">That PA or AD – you need them more than you think</h2>
+
+<p>If someone is not taking copious shot notes, you are going to find yourself
+up at some ungodly hour, digging through footage for that shot that you
+<em>know</em> you got. Save yourself the trouble, and have someone taking care of
+all of that.</p>
+
+<h2 id="proxy-files">Proxy files</h2>
+
+<p>I used a new method of creating intermediate proxy files for editing, since
+Premiere was not very cooperative in directly loading the Prores files from
+the camera. <em>I made my code public in a project called
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>.</em> This
+little trick made sure that, instead of having to render all of my footage
+out at the Davinci Resolve speed of 3-6 fps (on my non-Red-Rocket workstation),
+I was able to render it to proxies at about full speed (which was about 24fps).
+Without this, I wouldn’t have been able to edit the footage without several
+footage drops during the day – if at all – during the limited timeframe I
+had to do so.</p>
+
+<h2 id="premiere-quicktime-support-on-windows-is-dog-food">Premiere Quicktime support on Windows is dog food</h2>
+
+<p>Something is wrong with it. I have no idea why, but the QT decoder decided
+to “give up the ghost” quite a few times during editing. There is supposedly
+a renaming hack, which allows the Premiere internal decoder to handle the
+files, but I was not privvy to this information during editing. I will update
+my documentation and/or author a post on this at some point in the near future,
+as it is <strong>VERY</strong> irritating.</p>
+
+<h2 id="too-many-cooks">Too many cooks</h2>
+
+<p>One person edits. Someone can <em>assist</em> them, but you need to have one editor, 
+who makes the decisions as to what goes into your final product. If you try
+to “edit by committee”, you may end up with a very tired and frustrated primary
+editor, and the possibility of some very incomprehensible footage.</p>
+
+<p>If your editor and director are not the same person, the director sits in
+with the editor to make decisions, where they need to be made. Ideally the
+script notes, etc, provide enough information to the editor to perform his
+job.</p>
+
+<p>Also, do not get caught up in reviewing dailies if you are taking part in a
+time-sensitive competition. This is a recipe for disaster.</p>
+
+<h2 id="coloring">Coloring</h2>
+
+<p>Even shooting with 10-bit ProRes 422 HQ, the advantage over H.264 DSLR
+footage is immediately apparent. There is a lot of latitude for coloring
+and correction, which would simply not be possible with the same level of
+output quality with H.264.</p>
+
+<p>I ended up performing a manual grading (as in, no LUTs or presets) for the
+project we did, and I am very satisfied with the end result.</p>
+
+<h2 id="grain">Grain</h2>
+
+<p>I love the “film grain” that the sensor on this camera produces. I am sure
+that I have mentioned it in earlier posts, but it really does give that
+organic film look to your output.</p>
+
+<h2 id="do-not-use-services-like-google-drive-for-your-deliverables">Do not use services like Google Drive for your deliverables</h2>
+
+<p>They tend to like to really hurt you in upstream speeds – only when you are
+on serious deadline. A better alternative for large media files is to set up
+<a href="http://www.bittorrent.com/sync">btsync</a> on both sides, and transfer with far
+more efficiency. You will be glad that you did it.</p>
+
+<h2 id="too-many-hats--sink-ships">Too many hats … sink ships?</h2>
+
+<p>There is serious temptation to wear more than one hat. Hell, we all wear more
+than one hat on most small sets. The issue comes when you end up wearing
+three or four (director, cinematographer, editor, colorist), and realize that
+you do not get to sleep until everything is “out the door”. Delegate. Find
+people who are good at this stuff, and let them do it. You do not have to be
+good at everything, just find people who are.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I had a good time – but I could have been less stressed out, if I had known
+some of this in advance.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CAME-06 Blackmagic Cage Review]]></title>
@@ -1729,34 +1873,6 @@ postings.</em></p>
     <content type="html"><![CDATA[<p>After much hemming, hawing, and gnashing of teeth, I’m migrating my years of sporadic blogging from <a href="http://wordpress.org/">Wordpress</a> to <a href="http://octopress.org/">Octopress</a>. It seems to integrate a little bit better with both my “command line ethos” and my workflow. I’m sure (for anyone keeping track) that there are probably going to be some weird formatting issues, potentially broken pages, and other incidences of oddness in some places. Please excuse the mess, we’re remodeling.</p>
 
 <p>In addition to the move, I’m trying to move away from blog entries regarding political events – not because I should be worried about potential ramifications for my professional/public life – but rather because there’s only a certain amount of pissing into the wind that a man can do before he gets tired of having a mouthful of piss. That’s not to say that there won’t be <em>any</em> political stuff here, but there’s going to be far less.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Election 2012 Summary]]></title>
-    <link href="http://jbuchbinder.com/2012/11/06/election-2012-summary/"/>
-    <updated>2012-11-06T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.com/2012/11/06/election-2012-summary</id>
-    <content type="html"><![CDATA[<p>It’s the day before the 2012 Presidental Election. I’m disappointed, as usual, by the choice of <a href="http://en.wikipedia.org/wiki/Mitt_Romney">far right</a> and <a href="http://en.wikipedia.org/wiki/Barack_Obama">center right</a> “choices” that we have. I again am forced into the decision of either voting for the preferable third party candidate, with whom I share views on the vast majority of issues (<a href="http://www.jillstein.org/">Dr. Jill Stein</a>, for anyone wondering — I still think Ron Paul is a complete crankcase, and Gary Johnson is way too “fuck Federalism” for my taste) and effectively helping to elect an out-of-touch sociopathic plutocrat butt-munch, or vote the “lesser of two evils” and probably end up with a Democrat who is going to “<a href="http://www.washingtonpost.com/business/economy/obama-says-hell-renew-pursuit-of-grand-bargain-offering-specifics-on-agenda/2012/10/24/0e2b843c-1e0e-11e2-9cd5-b55c38388962_story.html">Grand Bargain</a>” away the Great Society programs. All of that being said, I have a few serious issues with this election cycle.</p>
-
-<p><em>Throwing bullshit at the wall to see what sticks / low information idiots destroy America.</em> Don’t bother reading Politifact. Their attempt to be “non partisan” by rating the attempt to replace Medicare with a privatized program (effectively ending the program as we know it) as “half true” (and then upgrading to “<a href="http://www.politifact.com/truth-o-meter/statements/2012/oct/03/barack-obama/obama-says-romney-wants-turn-medicare-voucher-prog/">mostly true</a>“, after rounds of pounding), simply because the word “voucher” was used to describe the festering husk of Medicare after it had been dessicated by years of crap like “Medicare Advantage” and Governor Rick Scott’s <a href="http://www.wusf.usf.edu/news/2010/06/18/whistleblowers_say_rick_scott_knew_about_medicare_fraud">side ventures into fraud</a>, then given out as coupons/vouchers to purchase overpriced and underregulated private insurance. You know, after “Obamacare is repealed” and the jackholes in the insurance industry can go back to fucking people in any way they see fit — government regulation and oversight is apparently for places like Europe, Canada — hell, anywhere but here. But I digress.</p>
-
-<p>The whole idea that Romney had been running a campaign which has profited greatly by effectively lying about the other guy — wholesale, mind you, not the usual half-truths we see from Presidental campaigns in the United States — is pretty sickening. A friend who works in the Connecticut prison system recently mentioned that he was going to vote for Romney because “Obamacare is going to make me pay more for my health insurance; and I have to look out for myself”. Some jackasses at work told him this, and he believed it — even though it’s patently and demonstrably false. As I saw somewhere on the interwebs “Obama isn’t a brown skinned guy who gives out free healthcare and hates rich people — you’re thinking of Jesus.” People apparently will follow their rampant self-interest, Grover-Norquist-style, even if it means screwing the shit out of everyone else. Not cool, America, not cool.</p>
-
-<p><em>Voting for a third party candidate isn’t going to change squat, even if they won.</em> I can’t stress this enough. Enough of the country lives in some weird mix of medieval England and the 1950s, and votes as a bloc for the <a href="http://en.wikipedia.org/wiki/Rick_Santorum">loudest, crassest bible-thumper</a> in any election cycle (think of Dubya, who shouldn’t have been able to win an election cycle against a warm jar of Russian piss, had the contest been set up that way). Look, we’re going to have tea-hadist, teanderthals, whatever you want to call them, in the House of Representatives and the Senate. Low information, Dunning-Kruger-Effect proving, “self made” government haters, who don’t believe in science, and sure as hell don’t believe in the government to which they have been elected. Nothing is going to go well that way — and it’s a pretty good indictment of why both direct and representative democracy do not function well in a country full of ill informed voters. Voters, to which “intellectualism” is an anathema to their way of life. I don’t want a President or Representative with whom I can drink a can of local alcoholic swill — I want someone who is smarter than I am; someone who is intellectually invested in leading. I want someone who actually gives a half a fuck about *everyone*, not just the guys with money or the guys who are the loudest at the moment. A Green Party president, however nice, is only one leg of the trifecta of United States government. They might be able to stop some wars, and perhaps appoint less awful corporatists to the Supreme Court — but they don’t make the laws around here. Educate, educate, educate — that’s the only way out of this shit-hole. (Also, don’t even think about “Charter Schools”. They’re not only *not* a panacea, but by effectively removing the top tier of students and privatizing education, we’re removing the only trappings of equality which the lower end of the socioeconomic chain has…)</p>
-
-<p><em>Voter disenfranchisement under the guise of “voter fraud”.</em> I don’t even need to really go into this, since so many other people have done it so well. I’ll lazy link to <a href="http://bobcesca.com/blog-archives/2012/11/six-hour-lines-and-voter-suppression-in-florida-and-ohio.html">Bob Cesca</a>, the <a href="http://www.aclu.org/voter-suppression-america">ACLU</a>, <a href="http://www.salon.com/2012/10/25/how_gop_voter_suppression_could_win_florida_and_the_white_house_for_romney/">Salon</a>, and <a href="http://www.motherjones.com/politics/2012/11/timeline-history-voter-suppression">Mother Jones</a>. I would find something a bit more right-leaning, but they’re still bitching about a statistically irrelevant excuse for disenfranchising <a href="http://www.cbsnews.com/8301-250_162-57511312/study-voter-id-law-would-exclude-up-to-700000-young-minorities/">primarily minority voters</a> — which apparently <a href="http://www.examiner.com/article/video-republicans-caught-committing-voter-fraud-only-registering-romney-voters">those same asshats have been perpetrating</a>. Stay classy, conservatives.</p>
-
-<p><em>Military industrial complex leg-humping time.</em> We need to find out who is going to <a href="http://www.iraqbodycount.org/">bomb more dark people into pits in the sand</a>, and fast! Candidates are now trying to <a href="http://www.tonysrants.com/military/breaking-five-hundred-generals-and-admirals-endorse-mitt-romney/">rack up military endorsements</a> as fast as they can. This does not bode well for not killing people unnecessarily, as you can probably guess. I mean, when you frame the “debate” (which there really isn’t, at this point) as “keeping us safe”, you already know what the outcome is going to be, since both major political parties are completely in the tank for <a href="http://articles.latimes.com/2010/mar/28/opinion/la-oe-hayden28-2010mar28">The Long War</a>. We haven’t been attacked by another country since Pearl Harbor, guys. And, in case you didn’t notice, the terrorists who flew planes into our buildings did so primarily because <a href="http://en.wikipedia.org/wiki/Motives_for_the_September_11_attacks">we’ve been dicking with their countries for years</a>. Noam Chomsky got his <a href="http://www.slate.com/articles/news_and_politics/fighting_words/2011/05/chomskys_follies.html">ass chewed out by Chris Hitchens</a> for saying just that (not that I agree with Chris Hitchens’s views on the Iraq War, it’s just interesting that he thought it worthy of a piece in Slate). Honestly, I think Chomsky is a bit more knowledgeable and trustworthy on the subject than Hitchens — but again, I digress.</p>
-
-<p><em>Trying to discredit math.</em> I wish I were kidding about this, since it is vaguely reminiscent of the same anti-intellectualism sentiment portrayed by Dick Nixon, and shows that the vast majority of people like to live in some sort of weird bubble. You know, the kind where “you’re for us, or you’re a fucking idiot”. Nate Silver, who has been <a href="http://www.advocate.com/politics/media/2012/10/28/nate-silver-laughs-accusation-he-too-effeminate-analyze-polls">vilified by Romney bootlickers for giving the answers straight from the math</a> demonstrates the bizarre “bubble world” that the GOP candidate has around him, reminiscent of the same “information bubble” of the less-than-venerable George W Bush.</p>
-
-<p><em>Redefining what it means to be a “businessman”.</em> Have you ever seen the movie “<a href="http://www.imdb.com/title/tt0102609/">Other People’s Money</a>“? Take away the empathy and life lessons learned, and you’ve got Willard Romney. “Leveraged buyouts”, especially when accomplished with a few million dollars of seed capital from your old man, have squat to do with the Conservative ideal of the job creator wunderkind. Seriously. Leveraged buyouts involve using other people’s money to purchase a controlling instance in a functional company, and saddle it with the burden of paying not only the original capital for its own takeover back, but also sucking the marrow of the company out to pay yourself a hefty sum for the pleasure of having downsized and screwed the hell out of that same company. It may be business (vulture capitalism at its very “best”), but it’s certainly not “business experience” in any relevant context to a nation’s economy, assuming that you were willing to accept the framing that a government should be run like a business, which it shouldn’t. (Quick rundown of that logic: Business’s primary motive is profit, whereas governments have to serve the populace without regard to financial status or profit. Governments also print their own money. It’s not the same thing, guys. It’s like saying that you can be the best train conductor *evar* because you have a driver’s license or learner’s permit.)</p>
-
-<p><em>Rampant self-interest trumping rational societal decisions.</em> Norquist proved this years ago in California; people simply will not vote for things that cost them money, even if it makes society better and enriches the country. I’m not sure if this is a “Boomer generation” thing, or if we’re just turning into selfish, ignorant, navel-gazing fuckwads through cultural inundation. I’ve seen people use the specter of “tax increases” as a reason for voting the GOP party line, even when those supposed “tax increases” aren’t born out by reality. Jeez, if you get your news from a crazy idiot like Glenn Beck (theblaze.com, anyone?), do you really think it’s going to somehow shape your decisions in some sort of informed and non-navel-gazing context? </p>
-
-<p>I’ll end this with a <a href="http://www.youtube.com/watch?v=efKguI0NFek">George Carlin quote</a>: “If you’ve got selfish, ignorant citizens, you’re going to get selfish ignorant leaders.” I don’t think I could have said it better, George.</p>
 
 ]]></content>
   </entry>

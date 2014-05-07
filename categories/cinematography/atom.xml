@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-05-01T16:25:05-04:00</updated>
+  <updated>2014-05-07T14:28:32-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,150 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[48 Hours with the Blackmagic Production Camera 4K]]></title>
+    <link href="http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/"/>
+    <updated>2014-05-07T13:45:23-04:00</updated>
+    <id>http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k</id>
+    <content type="html"><![CDATA[<p>This year, my team (<a href="http://www.shootthemoonfilms.com">Shoot the Moon Films</a>),
+entered the 2014 <a href="http://48hourfilm.com/en/boston/">Boston 48 Hour Film Festival</a>
+for the first time. It’s an interesting experience, going from genre and
+parameters to fully formed script, to planning and preproduction, to
+shooting and execution, to editing, scoring, grading, and full post-production
+in a single weekend. I’ve learned a lot about working with the 
+<a href="http://www.blackmagicdesign.com/products/blackmagicproductioncamera4k">BMPC4K</a>
+camera in that time. I am going to iterate over some of the more important
+things that I learned over the weekend.</p>
+
+<h2 id="overheating">Overheating</h2>
+
+<p>This simply did not happen. I had heard some horror stories about the camera
+body breaking or overheating after long periods of filming, but even in 
+direct sunlight for significant periods of time, I did not find this to be
+the case. My EOS body used to overheat more than this one…</p>
+
+<h2 id="nd-filters">ND filters</h2>
+
+<p>My Tiffen 77VND was indispensible. If I didn’t have that single piece of
+equipment, every exterior shot would have been very, very different. I wanted
+a medium DOF and a standard shutter rate for my exterior shots – which meant
+that the sunlight had to be stopped down. The variable ND filter delivered
+perfectly.</p>
+
+<h2 id="evf">EVF</h2>
+
+<p>The Cineroid was a life-saver. I do not think I would have done as well
+without its superior focus-peaking, crop indications, etc. The only feature
+sorely missing from the EVF4CSS is waveforms/scopes, which would have been
+a bit more useful than eyeballing the full extent of the dynamic range.</p>
+
+<h2 id="v-mount-batteries">V-mount batteries</h2>
+
+<p>If you are not turning your camera off between takes, you are going to need
+more than one battery for a day-long shoot. Do <strong>NOT</strong> skimp on a V-mount
+battery charger. They take a very long time to trickle charge, so make sure
+you have a rapid charger. Also, spares. They may be expensive, but having to
+wait on a battery charging could blow a shoot.</p>
+
+<h2 id="audio">Audio</h2>
+
+<p>This is less a “thing” with the BMPC4K body, and more of a general observation.
+You cannot skimp on sound. You just <em>can’t</em>. You can always rely entirely on
+tight OTS shots and other closeups and use on-camera mics, but it shuts off
+an entire avenue of creative wider shots. A boom operator is <em>not</em> just your
+buddy holding a mic on a pole – they need to know what they are doing,
+otherwise you could be pushing very substandard audio into post-production.
+Especially on a tight time limit, this can make the difference between making
+a deadline, or having truly horrendous sound.</p>
+
+<p>Also, get a really competent audio engineer. Preferably a really anal-retentive
+one with an insane attention to detail. Even if you have perfect video, really
+crappy audio can break the illusion of your film. <strong>DO NOT SKIMP</strong>. SERIOUSLY.</p>
+
+<h2 id="that-pa-or-ad----you-need-them-more-than-you-think">That PA or AD – you need them more than you think</h2>
+
+<p>If someone is not taking copious shot notes, you are going to find yourself
+up at some ungodly hour, digging through footage for that shot that you
+<em>know</em> you got. Save yourself the trouble, and have someone taking care of
+all of that.</p>
+
+<h2 id="proxy-files">Proxy files</h2>
+
+<p>I used a new method of creating intermediate proxy files for editing, since
+Premiere was not very cooperative in directly loading the Prores files from
+the camera. <em>I made my code public in a project called
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>.</em> This
+little trick made sure that, instead of having to render all of my footage
+out at the Davinci Resolve speed of 3-6 fps (on my non-Red-Rocket workstation),
+I was able to render it to proxies at about full speed (which was about 24fps).
+Without this, I wouldn’t have been able to edit the footage without several
+footage drops during the day – if at all – during the limited timeframe I
+had to do so.</p>
+
+<h2 id="premiere-quicktime-support-on-windows-is-dog-food">Premiere Quicktime support on Windows is dog food</h2>
+
+<p>Something is wrong with it. I have no idea why, but the QT decoder decided
+to “give up the ghost” quite a few times during editing. There is supposedly
+a renaming hack, which allows the Premiere internal decoder to handle the
+files, but I was not privvy to this information during editing. I will update
+my documentation and/or author a post on this at some point in the near future,
+as it is <strong>VERY</strong> irritating.</p>
+
+<h2 id="too-many-cooks">Too many cooks</h2>
+
+<p>One person edits. Someone can <em>assist</em> them, but you need to have one editor, 
+who makes the decisions as to what goes into your final product. If you try
+to “edit by committee”, you may end up with a very tired and frustrated primary
+editor, and the possibility of some very incomprehensible footage.</p>
+
+<p>If your editor and director are not the same person, the director sits in
+with the editor to make decisions, where they need to be made. Ideally the
+script notes, etc, provide enough information to the editor to perform his
+job.</p>
+
+<p>Also, do not get caught up in reviewing dailies if you are taking part in a
+time-sensitive competition. This is a recipe for disaster.</p>
+
+<h2 id="coloring">Coloring</h2>
+
+<p>Even shooting with 10-bit ProRes 422 HQ, the advantage over H.264 DSLR
+footage is immediately apparent. There is a lot of latitude for coloring
+and correction, which would simply not be possible with the same level of
+output quality with H.264.</p>
+
+<p>I ended up performing a manual grading (as in, no LUTs or presets) for the
+project we did, and I am very satisfied with the end result.</p>
+
+<h2 id="grain">Grain</h2>
+
+<p>I love the “film grain” that the sensor on this camera produces. I am sure
+that I have mentioned it in earlier posts, but it really does give that
+organic film look to your output.</p>
+
+<h2 id="do-not-use-services-like-google-drive-for-your-deliverables">Do not use services like Google Drive for your deliverables</h2>
+
+<p>They tend to like to really hurt you in upstream speeds – only when you are
+on serious deadline. A better alternative for large media files is to set up
+<a href="http://www.bittorrent.com/sync">btsync</a> on both sides, and transfer with far
+more efficiency. You will be glad that you did it.</p>
+
+<h2 id="too-many-hats--sink-ships">Too many hats … sink ships?</h2>
+
+<p>There is serious temptation to wear more than one hat. Hell, we all wear more
+than one hat on most small sets. The issue comes when you end up wearing
+three or four (director, cinematographer, editor, colorist), and realize that
+you do not get to sleep until everything is “out the door”. Delegate. Find
+people who are good at this stuff, and let them do it. You do not have to be
+good at everything, just find people who are.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I had a good time – but I could have been less stressed out, if I had known
+some of this in advance.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CAME-06 Blackmagic Cage Review]]></title>
@@ -563,84 +707,6 @@ other work which we don’t particularly like as a whole may have a few
 setups or shots which provide food for thought. So, watch those films with
 a critical eye, and hopefully we can all expand our “toolboxes”, as well
 as learn how to use them in a more effective manner. Good luck!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Signal to noise ratio]]></title>
-    <link href="http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio/"/>
-    <updated>2013-11-19T15:06:51-05:00</updated>
-    <id>http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio</id>
-    <content type="html"><![CDATA[<p>To quote the venerable Wikipedia:</p>
-
-<blockquote>
-  <p>Signal-to-noise ratio (often abbreviated SNR or S/N) is a measure used in science and engineering that compares the level of a desired signal to the level of background noise.</p>
-</blockquote>
-
-<p>This has a number of applications in engineering, but it also nicely
-encapsulates a basic truth of dealing with equipment, people, and works –
-there is always a certain amount of background noise. (For more information
-on the concept, check out <a href="http://en.wikipedia.org/wiki/Signal-to-noise_ratio">this article</a>.)</p>
-
-<p>In an ideal world, all equipment would be flawless and noiseless, everyone
-would be wonderful at what they do, and all works would be exceptional 
-<em>(don’t mind the inherent logical issue in the statement “all works would be
-exceptional”; I was trying to make a point, so please forgive me my
-linguistic foibles)</em>. As it so happens, due to a fun little thing called the
-<a href="http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Krueger Effect</a>,
-we tend to assume that our works are better than they actual are, until we
-reach a particular skill level, at which point we start underestimating our
-own skill levels. Succinctly put, we’re all terrible at figuring out how good
-or bad we are at any particular skill.</p>
-
-<p>This is a real pickle, especially when dealing with other people. With very
-few exceptions, we’re going to end up working with other people. This is more
-applicable in cinematography than in photography, since there are usually more
-people involved with a film production than with a still photo shoot (although
-I’m sure there are plenty of instances which would prove me wrong in that
-aspect). </p>
-
-<p><em>I’m going to restrict my examples to cinematography projects, to keep
-this a bit more manageable and readable.</em></p>
-
-<p>First, look at your potential crew. If you’re dealing with a low-budget indie
-shoot, which most of us are, you are either not paying your crew or are paying
-them very little money. You’ve already eliminated the possibility of a great
-number of highly experienced, educated, and trained people being involved,
-simply by eliminating the carrot of a serious payday. It could be additionally
-argued that those who do work for a living are not necessarily <em>great</em> at
-what they do, but that’s a little tangential to the core of the argument.
-Out of those people, you’re generally going to tend to see the talent curve
-follow the infamous <a href="http://mathworld.wolfram.com/NormalDistribution.html">standard/normal distribution curve</a>.
-This means some will be utterly atrocious, some will be genius, and the
-vast majority will lie somewhere between those two points. The outliers and
-bounds will depend on the sample size, but the general concept tends to be
-the same, which is that most people are not going to possess genius-level
-skills in the vast majority of a sample set.</p>
-
-<p>Second, look at your potential actors/on-screen talent. You’re in the same
-boat as you were with the crew – except that a single truly terrible actor
-will destroy the illusion you’re trying to create, so you have to hope that
-your lower bound is pretty high, otherwise your end product will most likely
-suffer. (It should also be said that a really great director has been known
-to coax amazing performances out of lackluster talent, but we can’t all be
-Stanley Kubrick, Darren Aronofsky, or P.T. Anderson…)</p>
-
-<p>So, what are we to do? We need to start acknowledging that not everything
-we’re going to make is going to be the best thing <strong>ever</strong>. It’s an anathema
-to the general self-aggrandizing L.A. film culture, but we have to respect
-the normal distribution curve – most films will be mediocre, some will be
-agonizingly bad, and some will be amazing. The DKE means we’ll always think
-that they’re all amazingly wonderful, but we need to be far more critical of
-our own works ; at least, if we want to try to produce high-quality output.</p>
-
-<p>We also need to understand that there’s a place for our hubris, as well as
-our humility. We cannot grow as filmmakers, photographers, artists, or as
-people, until we both appreciate the skill-set we have, while at the same
-time understanding the limits of what we have accomplished right now, and
-always striving to produce better, become better, and encourage better. We
-can’t all be the <strong>best</strong>, but we can all become <strong>better</strong>.</p>
-
 ]]></content>
   </entry>
   
