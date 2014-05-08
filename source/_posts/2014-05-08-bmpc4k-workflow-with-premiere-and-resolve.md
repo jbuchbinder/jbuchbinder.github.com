@@ -4,7 +4,7 @@ title: "BMPC4K Workflow with Premiere and Resolve"
 date: 2014-05-08 07:05:17 -0400
 comments: true
 description: Overview of my basic Premiere/Resolve workflow
-cover: 
+cover: /images/davinci-resolve.jpg
 categories: 
  - Cinematography
 ---
