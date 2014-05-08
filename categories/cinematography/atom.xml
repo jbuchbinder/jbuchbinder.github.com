@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-05-07T14:28:32-04:00</updated>
+  <updated>2014-05-08T10:12:26-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,77 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[BMPC4K Workflow with Premiere and Resolve]]></title>
+    <link href="http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/"/>
+    <updated>2014-05-08T07:05:17-04:00</updated>
+    <id>http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve</id>
+    <content type="html"><![CDATA[<p>There are a number of “accepted” workflows for going between Adobe Premiere
+(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K
+footage. I am going to detail the workflow I have been using, which should
+be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
+
+<ol>
+  <li>
+    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98
+fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same
+thing as the “24P” frame rate we are used to.</p>
+  </li>
+  <li>
+    <p><strong>Load your media onto your workstation</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Create simple proxies</strong>. Using
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>,
+create “cheap” lower quality proxies encoded using the H.264 codec in
+Quicktime files. I have been experimenting with using the “.mpg”
+extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>,
+rather than the relatively dodgy external one, but the basic process
+is the same.</p>
+  </li>
+  <li>
+    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do
+not have to bother with any fancy transitions or effects yet – just
+perform a basic edit.</p>
+  </li>
+  <li>
+    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the
+File &gt; Export menu option.</p>
+  </li>
+  <li>
+    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project.
+Import the original files (not the proxies) into your media pool.</p>
+  </li>
+  <li>
+    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export,
+with “Automatically import source clips into pool” deselected. This last
+part is very important, as it forces Resolve to use the clips you already
+have in the Media Pool.</p>
+  </li>
+  <li>
+    <p><strong>Color Grade</strong>. Perform your color grade in Resolve.</p>
+  </li>
+  <li>
+    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose
+“Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options
+here to your liking.</p>
+  </li>
+  <li>
+    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in
+Premiere. This will bring in all of the graded footage.</p>
+  </li>
+  <li>
+    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or
+create your title cards, etc.</p>
+  </li>
+</ol>
+
+<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere
+workflow right now, and it may change.</em></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[48 Hours with the Blackmagic Production Camera 4K]]></title>
@@ -612,101 +683,6 @@ idiom and shooting style. Don’t fall into the trap of assuming that lens
 selection is unnecessary, or that everything should be shot with a single
 lens ; it’s just another aspect of cinematic creativity. Good luck!</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Dynamic range]]></title>
-    <link href="http://jbuchbinder.com/2013/11/28/dynamic-range/"/>
-    <updated>2013-11-28T11:08:17-05:00</updated>
-    <id>http://jbuchbinder.com/2013/11/28/dynamic-range</id>
-    <content type="html"><![CDATA[<p>As a photographer or cinematographer, I’m sure you’ve come into contact with
-limitations in <a href="http://en.wikipedia.org/wiki/Dynamic_range">dynamic range</a>.
-I have run into limitations with dynamic range in both the visual and audio
-field, since anything that involves “real world” signals is going to 
-potentially run up against the ability of the digital mediums on which we
-rely to properly store the entire gamut of available analog data that we are
-able to perceive with our eyes and ears. To combat the loss of data, computer
-scientists and electrical engineers developed the process of dynamic range
-compression, which is usually referred to as simple “compression”. This
-reduces the gamut of presented information to a digitally representable
-format. There is, however, something which is lost – and that is the
-original dynamic range ; the amount of variance between the strongest and
-weakest signal. In small doses, or when done with finesse, this provides the
-ability to produce better sounding and better looking content in the digital
-realm. When overused, we see results like the <a href="http://en.wikipedia.org/wiki/Loudness_war">loudness war</a>.</p>
-
-<p>I like to explore the more figurative aspects of many technical concepts, to 
-which most avid readers of my work would attest. In that vein of ideas, consider
-the derivative concept of dynamics as a function of cinematic tension/resolution
-and feeling.</p>
-
-<p>Much like a written work, cinematic works generally tend to follow a
-“<a href="http://www.dailywritingtips.com/how-to-structure-a-story-the-eight-point-arc/">plot/story arc</a>”,
-which have a number of basic stages, even if the presentation, order, and
-presence will vary between works. As cinematographers, one of our jobs is to
-attempt to portray the basic plot elements, character interactions, and other
-potentially metaphysical aspects of the story through the lensing, lighting,
-focal points, composition, and method of stabilization and capture we use.
-<em>(I’m aware that there are other control points, but forgive me my omissions
-for the sake of some semblence of brevity.)</em> For example, for a more
-“cinéma vérité” style for a combat or heavy action sequence, a filmmaker could
-choose to shoot with less stabilization, looser composition, and less staged
-lighting, which would present the audience with the perception that the scene
-is far closer to the work of a documentarian than a staged film scene. In
-<a href="http://www.imdb.com/title/tt0120815/">Saving Private Ryan</a>, for example, the
-battle scenes have a decreased exposure time, resulting in action appearing
-far more caustic and (what we believe is) more realistic. This allows the
-relative dynamics of the scenes in question to be raised to allow far more
-tension and action to be shown, through simple camera work.</p>
-
-<p>The issue with techniques like this begin to manifest themselves when they
-begin to flatten the dynamic of a film work through rampant and flagrant
-overuse. At some point, cinematographers realized that they could shoot
-<em>entire films</em> with these techniques, ostensibly to raise those tension and
-action levels to that same high. By doing this, they have effectively
-flattened the dynamic range of their works, producing an effectively and
-uniformly “loud” work. The questions that you might be asking are “why is this
-a bad thing, and why should I care?”</p>
-
-<p>We view things as deltas, or differences. We understand happiness because we
-understand sadness, heat because we experience cold, and comfort and
-companionship because we can contrast it with loneliness. If the range we are
-give to deal with is only the “best parts”, we begin to lose our ability to
-appreciate it, and all of those things which should have made it special and
-artistic become mere convention. Think about it – if everyone screamed
-everything at the same volume, rather than having varying levels of emphasis
-and volume, wouldn’t that screaming have lost its impact and importance?</p>
-
-<p>Every technique that you have as a cinematographer or photographer is another
-potential tool in your figurative tool box; but just because you have them
-doesn’t mean that you have to use one particular one <em>all the time</em>. Handheld
-camerawork has its place, and even though modern technology has provided many
-methods of stabilizing camera and lens motion, from the steadicam to image
-stabilization/vibration reduction lens to three point shoulder rigs, we still
-find many cinematographers intentionally introducing shake into their
-footage. I wrote an <a href="http://jbuchbinder.com/2013/06/03/stabilization/">entire essay</a> 
-on the importance of stabilization, so I won’t reiterate my grievances here.</p>
-
-<p>It’s important to understand why you’re doing something rather than
-simply doing it for convenience or convention. If you’re using a wide open
-aperture, are you doing it because you’re having lighting issues, or simply
-because you think that everything should be shot with the thinnest DOF
-possible? Is there some sort of artistic reason why you chose to shoot with
-a 24mm vs a 35mm lens for a particular shot? Are you using a tripod-based
-shot rather than a steadicam for a reason? Asking questions and analyzing
-your own work, as well as the work of others, is key to artistic growth, as
-well as understanding how to use your skillset as a photographer or
-cinematographer.</p>
-
-<p>I am, by no means, at the top of the skill grouping for photography <em>or</em>
-cinematography. Many of the entries I have authored here are products of
-making mistakes, and they are the attempt I am making to keep others from
-having to make some of the very same mistakes I have made. Even films and
-other work which we don’t particularly like as a whole may have a few 
-setups or shots which provide food for thought. So, watch those films with
-a critical eye, and hopefully we can all expand our “toolboxes”, as well
-as learn how to use them in a more effective manner. Good luck!</p>
 ]]></content>
   </entry>
   
