@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I was talking with someone this morning about ARMs and the sort of financial havoc they have been wreaking upon a population who was assured that &hellip;">
+  <meta name="description" content="As part of setting up the POP-WUJ Clinic in Xela, Guatemala with an electronic medical record, I have headed down with a team of ten other volunteers &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +105,56 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/09/19/xela-day-one-planes-trains-and-automobiles/">Xela Day One: Planes, Trains and Automobiles</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-19T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/09/19/xela-day-one-planes-trains-and-automobiles/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As part of setting up the <a href="http://www.popwujclinic.org/">POP-WUJ Clinic</a> in Xela, Guatemala with an electronic medical record, I have headed down with a team of ten other volunteers to the city of <a href="http://en.wikipedia.org/wiki/Quetzaltenango">Xela</a> in western Guatemala. I’m going to document the trip and the work we’re doing down here by a series of daily blog entries chronicling our trials and tribulations setting up and installing <a href="http://freemedsoftware.org">FreeMED</a> there. I’ll post pictures as soon as I get the chance to upload them to Flickr.</p>
+
+<p><strong>Day One: Planes, Trains, and Automobiles</strong></p>
+
+<p>We left Connecticut last night around 11:00-11:30pm, and picked my sister up in upper Manhattan a few hours later. Along with us were a few Rackable Systems servers, kindly donated by SGI and some laptops donated by my employer, as well as an assortment of donated medications and medical supplies. Shelley flew out on a separate airline from us, but we all ended up arriving in Guatemala City around 12:15 pm local time.</p>
+
+<p>From there on in, we took a chartered bus/van the 170 km from Guatemala City to Xela, through the mountains. It’s pretty poor in a lot of these areas, but what struck me as odd were the armed guards at convenience stores and banks, as well as the razor wire surrounding those same banks. There were also a lot of stray dogs, some in packs, some idly following people around looking for scraps. The “chicken buses” were old US school buses which had received chrome and paint jobs, usually packed with riders, even to the point of having the overflow spilling out the doors. Our driver Pedro was very nice, and took us to a restaurant on the “Intra American Highway”, which served delicious food.</p>
+
+<p>American Airlines lost one of the bags, unfortunately containing the primary server. I’m planning on deploying the workstations we brought with us and doing any additional wiring which may be required. After that, if the bag hasn’t surfaced, I’ll promote what was supposed to be the redundant backup server to the role of being the primary EMR server and will proceed with the remaining steps of our installation. The POP-WUJ crew is able to give me help doing translation work for the EMR, as well as fleshing out the necessary functions of their day-to-day workflow. Hopefully, we can fine-tune the system to work like a well-oiled machine.</p>
+
+<p>It looks as though choosing Rackable Systems is going to pay off, as I’m most likely going to finish up configuring the backup server using the serial console “roamer” port with my handy USB to serial adapter and null modem cable.</p>
+
+<p>Thanks to Google Voice and Google Talk, I’m able to communicate with friends and family back in the states without breaking the bank, and they can contact me. On the downside, I miss my wife, and I’m sure she, along with the dogs and cat, misses me too.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -561,69 +611,6 @@ while (chomp( my $line = )) {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/01/12/exposing-soap-services-with-apaches-proxypass/">Exposing SOAP Services With Apache&#8217;s ProxyPass</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-12T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2010/01/12/exposing-soap-services-with-apaches-proxypass/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have recently had cause to proxy a J2EE CXF service through an apache 2.2 instance, and thought it would be nice to share my findings. (This was all done on a Debian system.)</p>
-
-<p>First of all, the mod_proxy pieces have to be enabled using <strong>a2enmod proxy</strong>.</p>
-
-<p>A fragment has to be added with the proxying bits and some limitation:</p>
-
-<pre><code>     Order allow,deny
-     Allow from all
-
-
-ProxyPass /EXPOSEDURL http://SERVER:PORT/URL
-ProxyPassReverse /EXPOSEDURL http://SERVER:PORT/URL
-</code></pre>
-
-<p>Reloading apache configuration should enable the proxy properly. The only other possible issue is that in addition to the WSDL URL, you’re going to have to specify a “proxy” URL, which is just the service URL without ?wsdl at the end of it. A fragment of PHP’s SoapClient would look like this:</p>
-
-<pre><code>$url = "http://server.domain:8180/services/MySoapService?wsdl";
-$sc = new SoapClient( file_get_contents($url), array(
-          'login' =&gt; $my_username // optional for basic auth
-        , 'password' =&gt; $my_password // optional for basic auth
-        , 'compression' =&gt; SOAP_COMPRESSION_ACCEPT | SOAP_COMPRESSION_GZIP
-        , 'location' =&gt; str_replace('?wsdl', '', $url) // force this to work through proxies
-));
-</code></pre>
-
-<p>The magic in that last segment was the “location” parameter, as it specifies the proxy. Good luck!</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/6/">&larr; Older</a>
@@ -641,6 +628,10 @@ $sc = new SoapClient( file_get_contents($url), array(
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/05/12/boom/">Boom!</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/">BMPC4K Workflow With Premiere and Resolve</a>
       </li>
     
@@ -656,17 +647,13 @@ $sc = new SoapClient( file_get_contents($url), array(
         <a href="/2014/03/16/first-look-at-the-blackmagic-production-camera-4k/">First Look at the Blackmagic Production Camera 4K</a>
       </li>
     
-      <li class="post">
-        <a href="/2013/12/21/lens-selection-for-cinematography/">Lens Selection for Cinematography</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (18)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (19)</a></li>
 <li class='category'><a href='/categories/development/'>Development (34)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>

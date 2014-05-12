@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-05-08T10:12:26-04:00</updated>
+  <updated>2014-05-12T18:52:50-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,174 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Boom!]]></title>
+    <link href="http://jbuchbinder.com/2014/05/12/boom/"/>
+    <updated>2014-05-12T08:44:19-04:00</updated>
+    <id>http://jbuchbinder.com/2014/05/12/boom</id>
+    <content type="html"><![CDATA[<p>There are quite a few guides, tutorials, videos, and other resources on how to
+capture usable boom audio. Most of these have a few usable sections with a
+bunch of fluff or useless information accompanying them. This is my attempt to
+compile a “quick guide” to capturing usable boom audio, assuming you don’t have
+a competent audio engineer in your employ (which I highly recommend). Audio is
+half of your deliverable product, as a cinematographer, so you should make sure
+that you capture the highest quality audio possible.</p>
+
+<h2 id="proximity-reflections-and-the-inverse-square-law">Proximity, Reflections, and the Inverse Square Law</h2>
+
+<p>Much like light, sound decreases exponentially as you move away from the source
+of the sound. One of the first things which you will realize when starting to
+capture audio is that it sounds increasingly awful as you move further away –
+which can be attributed to two things:</p>
+
+<ol>
+  <li>
+    <p><strong>As you move further away, relative volume decreases</strong>. The background
+sounds (“noise floor”, for anyone trying to be technical), consisting of both
+the present background noises and any noises introduced in the recording
+process, increase when you increase the sensitivity of your recording
+equipment. As the source sound becomes quieter, bringing sound up in post
+production will also increase that noise. <em>(If anyone says “just record some
+room tone”, ignore them; it won’t help you if your source recording is
+terrible, since that’s only a solution if you can gate and isolate the
+primary sounds in post.)</em> This is one of the compelling reasons why boom
+operators are utilized; they allow a recording to be made from closer to
+the source.</p>
+  </li>
+  <li>
+    <p><strong>Reflections</strong>. Light bounces off of everything, as we are taught, and we
+have to be careful to deal with those reflections, in terms of color,
+brightness, et cetera. Sound does the same thing. It bounces off of surfaces,
+but because sound travels slower than light, we <em>notice</em> when it takes a
+few milliseconds longer for sound to arrive at our recording device. Even
+more insidious, those reflections (which take on different properties and
+sounds based on the materials on which they are reflecting) can sound
+<em>louder</em> than the original sound – which will make your recording sound
+terrible. The closer you are in proximity to the source, the softer the
+reflections will be, in comparison to the original sound.</p>
+  </li>
+</ol>
+
+<h2 id="polarpickup-patterns">Polar/Pickup Patterns</h2>
+
+<p>Not all microphones, or even microphone <em>types</em> are created equal. They all have
+different “<a href="http://en.wikipedia.org/wiki/Microphone#Microphone_polar_patterns">polar patterns</a>”
+which describe the areas of sensitivity which the microphones use to pick up
+sound. When attempting to capture dialog, for example, an omnidirectional
+microphone would be a poor choice, as it picks up sound equally from all
+directions, taking away the ability to create greater isolation for the primary
+sound source. The most popular boom microphone type is the “shotgun” microphone,
+which has a very directed polar pattern, allowing specific isolation of the
+sound in question.</p>
+
+<h2 id="levels-peaking-and-limiting">Levels, Peaking, and Limiting</h2>
+
+<p>Getting the recording level <em>just right</em> is one of the more tricky parts of
+recording external boom audio. If the audio is too high, “peaking” will occur.
+Peaking is the phenomenon which can be heard when the top part of a sinusoidal
+wave (which naturally recorded sounds have) becomes squared when the top of the
+wave is clipped by hitting the top limit for recording signal. If the audio is
+too low, the signal-to-noise ratio will be too low, and bringing the signal up
+to a usable level will bring the sound floor up to an obscenely loud level –
+making gating nearly impossible to perform.</p>
+
+<p>To properly deal with this, you need to adjust the signal level so that the
+loudest sound comes in under 0 dB, which is where most recorders “peak”. If
+certain sounds surpass 0 dB, some audio recorders have the ability to apply a
+“limiter” effect, which will push the sound level back down to a usable value
+as it is recorded. It’s not a desired effect, but it can save you from
+clipping.</p>
+
+<p>As you’re adjusting audio levels, you’ll see a constantly fluctuating level of
+audio when no primary sound source is active. This is the “sound floor”, and
+should be as far away from the bulk of the primary sound levels as possible.</p>
+
+<h2 id="portable-recording-devices">Portable Recording Devices</h2>
+
+<p>I recommend avoiding the <a href="http://amzn.to/1jyOxm5">Tascam DR-40</a> unit unless
+you’re <em>positive</em> that you are using a balanced microphone. It tends to have a
+weird firmware issue which produces a
+<a href="http://www.dvxuser.com/V6/showthread.php?268124-Tascam-Dr-40-Buzz-Clicking-noise">strange clicking sound</a>
+(almost impossible to remove) every quarter of a second when presented with an
+unbalanced microphone. If you’re worried about this, go for the
+<a href="http://amzn.to/QAUvXD">Zoom H4n</a>. It’s a bit more expensive, but it seems to
+handle less expensive microphones in a more able fashion, as well as having
+signal limiting and a host of other interesting features.</p>
+
+<h2 id="compression-and-formats">Compression and Formats</h2>
+
+<p>Most digital recorder units will record, at a minimum MP3 and WAV formats. WAV
+is an uncompressed audio format, which means that it takes up more storage space
+than a compressed format, but retains all of the information captured (at the
+resolution captured). MP3 is a compressed format, using a psycho-acoustic model,
+which means that it drops pieces of information which it figures we aren’t going
+to be able to hear. MP3 files take up a smaller amount of space compared to
+the same resolution WAV files – but that comes at the cost of throwing some
+of the information out. MP3 @ 192kbps or above tends to have enough information
+for most uses.</p>
+
+<h2 id="equipment">Equipment</h2>
+
+<p>There’s no “correct” equipment which you need to purchase to be able to capture
+boom audio properly. There are, however, a few piece of equipment you’re
+probably going to need.</p>
+
+<ul>
+  <li><strong>Extendable Boom Pole</strong>. It’s tempting to go with a converted painters’
+pole, but trust me – it pays to go with a decent boom pole. This is mainly
+due to the additional noises which can be generated by swinging around a
+makeshift boom pole. I personally recommend the
+<a href="http://amzn.to/1l3TQaQ">On Stage MBP7000</a> boom pole for budget operators. It
+doesn’t have an internal mic cable, but it works very well.</li>
+  <li><strong>Microphone Cable (XLR)</strong>. This is an easy place to skimp for some people,
+but you don’t want to pick up outside noise, so make sure you go with a
+shielded XLR cable which is a few feet longer than the maximum size of your
+boom pole, fully extended.</li>
+  <li><strong>Clip / Shockmount / Zeppelin / Windscreen</strong>. You need something to isolate
+the microphone from the wind, vibration, and other distorting effects of
+the environment, which would distract from otherwise relatively clean
+audio. Shockmounts can be had for relatively little, as can windscreens.
+A zeppelin can cost a bundle, unless you make a DIY one – but they produce
+very clean-sounding results.</li>
+  <li><strong>Wire clips / wraps</strong>. Either some electrical tape (a cinematographer’s
+best friend, after gaffe tape), or some inexpensive bobble hair ties
+(available at most dollar stores) will allow you to keep the XLR cable
+near the pole – otherwise you may find it dropping into frame at the most
+inopportune times.</li>
+  <li><strong>Microphone</strong>. There is a great deal of conjecture over the “best” budget
+microphone to use. The most important things to consider are the polar
+pickup pattern, the signal-to-noise ratio, and the frequency response of
+any microphone you’re testing.</li>
+  <li><strong>Portable digital recorder</strong>. Covered in the portable recorder section.</li>
+  <li><strong>Headphones</strong>. A set of headphones, preferably full cup earphones, are
+essential to monitoring the sound for disturbances and/or interruptions.
+My favorite pair is the <a href="http://amzn.to/1qwuDgi">Sennheiser HD-280 PRO</a>,
+as they’re relatively inexpensive (under 100 USD), and produce a fairly
+accurate reproduction of live audio.</li>
+  <li><strong>Storage media</strong>. Make sure you don’t buy off-brand media cards. Try to
+stick with SanDisk and Lexar media, if you can. The trick is that these
+companies generally tend to QA their products a bit more rigorously than
+most off-brand manufacturers. This can make the difference between
+usable audio and a very upset director.</li>
+</ul>
+
+<h2 id="technique-and-directionality">Technique and Directionality</h2>
+
+<p>Rather than iterate all of the techniques involved in actually operating a
+boom mic rig, and keeping in mind that pictures are worth a thousand words…</p>
+
+<ul>
+  <li><a href="http://www.viddler.com/player/39021abf/0/">Boom Mic 101</a></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Audio is half of your deliverables – so make sure your boom operator knows how
+to deliver the best possible audio to your audio engineer for post production.
+Good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[BMPC4K Workflow with Premiere and Resolve]]></title>
@@ -1909,29 +2077,6 @@ that instrument.</p>
 <p>To sum up, you need a good eye – more than anything else – but it’s also
 important to have the right equipment for the right purpose. Oh, and don’t
 forget to stabilize your shots …</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Heading to the 2013 Boston International Film Festival]]></title>
-    <link href="http://jbuchbinder.com/2013/04/12/heading-to-the-2013-boston-international-film-festival/"/>
-    <updated>2013-04-12T13:38:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/04/12/heading-to-the-2013-boston-international-film-festival</id>
-    <content type="html"><![CDATA[<p>I’m heading off to the 2013 <a href="http://www.bifilmfestival.com/">Boston International Film Festival</a>
-opening ceremonies this evening, where the first short film which I
-directed, edited, and shot is being screened/premiered. It’s called
-“<a href="http://www.imdb.com/title/tt2538194/">Heroin; A Love Story</a>”, and centers around a friendship in the
-midst of addiction in South Boston, and was written by my partner in
-filmmaking/crime, <a href="http://www.imdb.com/name/nm4492303/">Brian Farmer</a>.</p>
-
-<p>I’m planning on posting some photos and information about the
-opening night and film screening as soon as I have them available.</p>
-
-<p><em>I hope to focus some of my upcoming entries on cinematography and
-filmmaking topics, rather than my usual fare of semi-coherent
-rants about miscellaneous topics, punctuated by obscure technical
-postings.</em></p>
 
 ]]></content>
   </entry>
