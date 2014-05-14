@@ -4,7 +4,7 @@ title: "Dynamic range"
 date: 2013-11-28 11:08:17 -0500
 comments: true
 description: Dynamic range, both as a literal and figurative concept.
-cover: 
+cover: /images/dynamic-range.jpg
 categories: 
  - Cinematography
  - Photography
