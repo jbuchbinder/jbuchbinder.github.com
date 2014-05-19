@@ -43,6 +43,7 @@ Some of the places my photos have appeared include:
 * [This picture of Isabella]() was chosen for a "dog of the day" website. Can’t remember where.
 * [These pictures of the 2014 Anti-Love Song Cabaret](http://www.norwichbulletin.com/article/20140212/ENTERTAINMENTLIFE/sthash.ElYVUeVZ.gbpl) were used by the Norwich Bulletin for their Arts section coverage of the event.
 * [The Bradley Playhouse](http://www.thebradleyplayhouse.org/) promo photos for the 2014 production of "Gypsy", as well as the [headshot photos](https://www.flickr.com/photos/whatsyourmeme/sets/72157642824067583/). Some of the promo photos are here: [1](https://www.facebook.com/photo.php?fbid=768841826461255&set=a.209502649061845.59754.181407235204720&type=1&theater), [2](https://www.facebook.com/photo.php?fbid=768658676479570&set=a.209502649061845.59754.181407235204720&type=1&permPage=1), [3](https://www.facebook.com/photo.php?fbid=767261619952609&set=a.209502649061845.59754.181407235204720&type=1&permPage=1), [4](https://www.facebook.com/photo.php?fbid=767260959952675&set=a.209502649061845.59754.181407235204720&type=1&permPage=1), [5](https://www.facebook.com/photo.php?fbid=766144203397684&set=a.209502649061845.59754.181407235204720&type=1&permPage=1), [6](https://www.facebook.com/photo.php?fbid=766143570064414&set=a.209502649061845.59754.181407235204720&type=1&permPage=1)
+* 2014 Plainfield Country Music Talent Show [promotional photos](https://www.facebook.com/CMTS12/posts/827321643963746) and [coverage in the Norwich Bulletin](http://www.norwichbulletin.com/article/20140515/NEWS/140519582).
 
 If you’re interested in more photos, especially newer ones, check out my **flickr** feed at [http://www.flickr.com/photos/whatsyourmeme](http://www.flickr.com/photos/whatsyourmeme/):  
 
@@ -54,6 +55,7 @@ If you’re interested in more photos, especially newer ones, check out my **fli
 
 {% img /images/ray.thumb.jpg 200 150 'Port St Lucie, FL' %}
   
-If anyone is interested in a print of any of these pictures, please contact me at [jeff @ ourexchange.net][12]. (You have to remove “REMOVE” from my email address, to ward off spambots.)
+If anyone is interested in a print of any of these pictures, please contact me at [jeffreymbuchbinder @ gmail.com][12]. (You have to remove “REMOVE” from my email address, to ward off spambots.)
 
- [12]: mailto:jeff@REMOVEourexchange.net
+ [12]: mailto:jeffreymbuchbinder@REMOVEgmail.com
+
