@@ -40,6 +40,8 @@ layout: page
 
 "Normal is the average of deviance." - Rita Mae Brown (from *Venus Envy*, 1993)
 
+"He who controls the past controls the future. He who controls the present controls the past." - George Orwell (from *1984*)
+
 ## Healthcare
 
 "Even if you don’t have health insurance in America, you get taken care of. That could be defined as universal health care." – Tom Thompson, HHS Secretary, [as quoted by Senator Tom Daschle][1] as an example of politicians being out of touch with the realities of healthcare.
