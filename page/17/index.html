@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I have been working on an interface with Quest Diagnostics to be able to automagically import HL7 v2.3 messages into FreeMED. They were nice enough &hellip;">
+  <meta name="description" content="My newest project with FreeMED has been to implement a way to securely warehouse medical data offsite. This relates to Dr Gnu’s article about &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +105,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2005/10/12/secure-data-warehousing/">Secure Data Warehousing</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-10-12T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2005/10/12/secure-data-warehousing/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My newest project with <a href="http://freemedsoftware.org/">FreeMED</a> has been to implement a way to securely warehouse medical data offsite. This relates to <a href="http://drgnu.blogspot.com/2005/10/disaster-planning.html">Dr Gnu’s article</a> about disaster recovery. I have been using SSL <a href="http://www.webdav.org/">WebDAV</a> with a slim C client built on <a href="http://www.webdav.org/neon/">neon</a> to push <a href="http://www.gnupg.org/">gnupg</a>-encrypted SQL dumps (both incremental and full) to the archive server, which is perhaps temporarily residing at <a href="https://archive.freemedsoftware.net/">https://archive.freemedsoftare.net/</a>. In this way, whoever is hosting the archive cannot read the medical data without the gnupg keys held only by the provider who “owns” the medical records. <a href="http://www.aapsonline.org/confiden/survcomm.htm">HIPAA compliance</a>, here we are …</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -466,48 +505,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2005/02/27/resource-based-scheduling-et-cetera/">Resource Based Scheduling, Et Cetera</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-02-27T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2005/02/27/resource-based-scheduling-et-cetera/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This weekend I have been putting in some enormous amount of overtime, working on a rehaul of a few of FreeMED’s features. In particular, I have been pounding away at getting the scheduler completely rewritten, since the current one was only supposed to be a temporary hack. We’re moving to a template-driven resource-based scheduler, which so far seems to out-perform the old one in terms of usability and efficency. We’ll see if it progresses far enough for me to replace the old scheduler in CVS.</p>
-
-<p>I’m also working to try to set up “ticklers”, which allow the system to perform actions at specified times (even when no one is logged in, et cetera) and “notifications”, which can be set to remind providers of impending events, since even the most fastidious would forget to follow up on something that occurred six months ago with no notification. </p>
-
-<p>In summary, development is steamrolling along. Everything is being documented as we’re going, so hopefully other people won’t be so bashful about contributing code …</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/18/">&larr; Older</a>
@@ -525,6 +522,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/06/10/diy-7-dollars-film-slate/">DIY $7 Film Slate</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/05/12/boom/">Boom!</a>
       </li>
     
@@ -540,21 +541,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2014/03/18/came-06-blackmagic-cage-review/">CAME-06 Blackmagic Cage Review</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/03/16/first-look-at-the-blackmagic-production-camera-4k/">First Look at the Blackmagic Production Camera 4K</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (19)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (20)</a></li>
 <li class='category'><a href='/categories/development/'>Development (34)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
-<li class='category'><a href='/categories/hacks/'>Hacks (28)</a></li>
+<li class='category'><a href='/categories/hacks/'>Hacks (29)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>Opinion (12)</a></li>

@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="As part of setting up the POP-WUJ Clinic in Xela, Guatemala with an electronic medical record, I have headed down with a team of ten other volunteers &hellip;">
+  <meta name="description" content="I ended up passing out on top of the sheets in the hotel due to the tired state in which I arrived, but today was full of plenty of excitement and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +105,59 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/09/20/xela-day-two-a-tale-of-two-servers/">Xela Day Two: A Tale of Two Servers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-20T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/09/20/xela-day-two-a-tale-of-two-servers/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I ended up passing out on top of the sheets in the hotel due to the tired state in which I arrived, but today was full of plenty of excitement and activity.</p>
+
+<p>We walked down to the clinic after breakfast from the nice people at <a href="http://www.comeseeit.com/">Casa Mañen</a>. The clinic is, to my knowledge, the only permanent free clinic in Xela, and has a few permanent staff members in addition to the volunteers who come down with the “medical brigades” (as Jonathan calls them). I spent the majority of the morning organizing components and parts for the systems after American Airlines confirmed that they found our primary server and that it would be here Tuesday morning (tomorrow). My sister Shelley went with me, as my Spanish is just about as good as my Greek (which is to say, non-existent). We were able to ride the “micro buses” to take us out to purchase a SIM card for the T-mobile Android phone which my sister-in-law loaned me for the trip, as well as scoring some replacement parts and some webcams.</p>
+
+<p>As a quick aside, if you’re looking for Ubuntu support for the “Manhattan USB Webcam”, don’t. It uses the gspca driver’s pixart_pac7311 driver, from what I can divine, but the USB ids aren’t present in the stock driver, so it’s going to be a fairly painful process to get support worked in, especially since the gspca is in the mainline kernel now …</p>
+
+<p>Getting back to the day’s events — We were lucky to have taken the microbuses, at a bargain rate of 1.25 quetzals a person, since it started raining again. I, of course, had no rain gear, but my backpack is/was waterproof, so the laptop and camera remained safe. Everyone was amazingly friendly, even to the point of walking us to a store when we didn’t understand their directions. I also tried to be friendly with a few of the feral dogs, but they mostly kept their distance, probably because I didn’t give them any food. Better that way, Natasha wouldn’t be very happy with me bringing home another dog.</p>
+
+<p>In the afternoon, we set up the four donated workstations in the clinic, but rearranged them to function as inventory collection workstations for the pharmacy for some short term data collection, mostly due to the clinic being open and overbooked on Tuesday. We used <a href="http://docs.google.com/">Google Docs</a> to create a quick and dirty web form with some simple constraints as a frontend to a shared spreadsheet for drug collection. This was done since we still don’t have the primary server, and I decided on “bulk loading” the drug data into the system later on, to save entry time.</p>
+
+<p>I have learned a great deal from the clinic staff and volunteers about not only clinic and pharmacy work, but also about some of the problems with operating in conditions which are less than optimal, including so-called “distance medicine” work in extremely rural areas. Tuesday, I’m planning on observing the clinic operation to see if I can streamline any parts of the interface to help facilitate ease of workflow and smooth adoption a little. Wednesday, we’re headed to the pueblos outside Xela so that I can watch the distance medicine teams, and attempt to figure out the best way to bring in data (as well as provide access to data) in extremely remote and poorly connected areas.</p>
+
+<p>I’m struck with just how much I have in common with the doctors, nurses and other volunteers here in Xela; they all seem to have a pervading sense of need for social justice and feel that a little effort can make a difference. I wish there were more people willing to staff places like this.</p>
+
+<p>In comparison, there are shops here selling American goods and foods at prices that are on parity, considering the exchange rate to dollars, with what they would cost in America. Then I realize that the average pay here in Xela is something like 35 to 40 quetzals … a week. (That’s something like five American dollars.) Once you start to think about that, the social support systems in America don’t really seem that bad. We spend a lot of our time taking for granted things like <a href="http://en.wikipedia.org/wiki/Americans_with_Disabilities_Act_of_1990">even and well maintained sidewalks</a>, <a href="http://www.epa.gov/air/caa/">relatively clean air through use of emission controls</a>, and even basic animal control… Guess you don’t miss them until you visit a place that doesn’t have them.</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -558,59 +611,6 @@ while (chomp( my $line = )) {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/01/17/imap-synchronization/">IMAP Synchronization</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-17T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2010/01/17/imap-synchronization/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I hate it. IMAP Synchronization, that is.</p>
-
-<p>In an effort to migrate users from one *shudder* Exchange provider to another (after getting shot down for proposing first Zimbra, then standard mail server stuff, then <a href="http://www.openchange.org/">Openchange</a>), I have been going through all of the available IMAP sync software that I could find.</p>
-
-<p><strong>mbsync</strong> () – We use this for IMAP backup, so I figured it would be a good idea to try it for syncing between two IMAP servers. *Crash*. *Segfault*. This is one of the reasons I’m not a big fan of really low-level apps written in C.</p>
-
-<p><strong>imapsync</strong> () – Written using a Perl library, this offered the promise of fast syncing, and appeared to work in test runs. That is, until it encountered folders with spaces in them, and threw up all over the terminal. Really, it wasn’t a use-case for *anyone* to have spaces in folder names? I could have put some effort into fixing the library and/or script, but I figured that if something that basic wasn’t working for a fairly mature library, this wasn’t going to be pretty.</p>
-
-<p><strong>The Imap Migration Tool</strong> () – Written in PHP, with a two or three step process. Was meant for moving stuff, not keeping them in sync, so running multiple times would cause additional copies of messages to be created. Also, it seems to have been written in some prehistoric form of PHP, which required hacking to get it even marginally functional. Even then, it spat tons of warnings and nasties, which made me a little nervous to use it on any important mailboxes.</p>
-
-<p><strong>mailsync</strong> () – I don’t even remember why this one didn’t work, only that I wasted a fair amount of time playing with it to get it to try to migrate using the scheme we were working with to no avail. Scratch another one.</p>
-
-<p>Solution … I had to roll my own. This is *stupid* to the highest degree, but I rolled something using <a href="http://java.sun.com/products/javamail/">javamail</a> into a self-contained “fat jar” using <a href="http://fjep.sourceforge.net/">fatjar</a>. It works sickeningly well, and actually respects existing messages by message id, so that if for any reason I have to break the sync process, it’ll skip past anything it has already done. I made it non-destructive because it seemed like seriously bad juju to have a sync tool purge out email…. If I get permission from work, I’ll post the jar for anyone with Java 1.6 to use.</p>
-
-<p>As an aside, it took a little bit of hackery to get fatjar running outside eclipse. The relevant section of build.xml was:</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/page/6/">&larr; Older</a>
@@ -628,6 +628,10 @@ while (chomp( my $line = )) {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/06/10/diy-7-dollars-film-slate/">DIY $7 Film Slate</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/05/12/boom/">Boom!</a>
       </li>
     
@@ -643,21 +647,17 @@ while (chomp( my $line = )) {
         <a href="/2014/03/18/came-06-blackmagic-cage-review/">CAME-06 Blackmagic Cage Review</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/03/16/first-look-at-the-blackmagic-production-camera-4k/">First Look at the Blackmagic Production Camera 4K</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>Android Development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>Cinematography (19)</a></li>
+<li class='category'><a href='/categories/cinematography/'>Cinematography (20)</a></li>
 <li class='category'><a href='/categories/development/'>Development (34)</a></li>
 <li class='category'><a href='/categories/film/'>Film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>FreeMED (24)</a></li>
-<li class='category'><a href='/categories/hacks/'>Hacks (28)</a></li>
+<li class='category'><a href='/categories/hacks/'>Hacks (29)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>Maemo (N800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>Music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>Opinion (12)</a></li>

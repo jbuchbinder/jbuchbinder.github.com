@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Hacks | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-05-23T15:16:10-04:00</updated>
+  <updated>2014-06-10T16:25:52-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[DIY $7 Film Slate]]></title>
+    <link href="http://jbuchbinder.com/2014/06/10/diy-7-dollars-film-slate/"/>
+    <updated>2014-06-10T15:50:07-04:00</updated>
+    <id>http://jbuchbinder.com/2014/06/10/diy-7-dollars-film-slate</id>
+    <content type="html"><![CDATA[<p>I can’t claim credit for this one – my production designer got the idea to
+use an inexpensive slate “prop” and modify it slightly to allow the use of
+erasable whiteboard markers. These are usually a bit more than seven dollars,
+and we didn’t have the time to wait for one to arrive in the mail for the
+shoot in question.</p>
+
+<p>There are only two pieces of “hardware” which are required to make this,
+along with a few pieces of duct tape, a sharpie, a ruler, and whatever 
+whiteboard markers and erasers you are planning to use on the finished
+slate.</p>
+
+<p>You will need to buy these two items from a <a href="http://www.fivebelow.com/">Five Below</a> discount shop:</p>
+
+<ul>
+  <li>Slate Prop - $5</li>
+  <li><a href="http://www.fivebelow.com/8-5-x-11-neon-dry-erase-boards.html">8.5 x 11 Eraseable Whiteboard</a> - $2</li>
+</ul>
+
+<p><em>Apologies for not giving a product link for the slate prop – I had trouble finding it on the Five Below site. I assure you, it does exist…</em></p>
+
+<h2 id="assembly-instructions">Assembly Instructions</h2>
+
+<ol>
+  <li>
+    <p>Break the frame of the whiteboard, and remove the cardboard backing and
+the broken frame. You should now have a piece of unencumbered whiteboard.</p>
+  </li>
+  <li>
+    <p>Position the whiteboard over the slate prop’s useless slate writing. You
+can’t write on the slate with chalk, so it is pretty useless as-is.
+Center it as best you can, then use strips of duct or gaff tape to attach
+the whiteboard surface to the clapper.</p>
+  </li>
+  <li>
+    <p>Use the ruler as a straight-edge to draw sharpie lines to denote the
+different markable areas on your slate. In the best penmanship you can
+muster, label them with the sharpie.</p>
+  </li>
+</ol>
+
+<p>It is a pretty simple hack, but quite effective for giving your editor a bit
+of A/V sync assistance.</p>
+
+<p><img src="/images/7-dollar-slate.jpg" title="‘My production designer holding the finished slate’" ></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Checking for deprecated Wordpress functions]]></title>
@@ -203,62 +256,6 @@ done
 
 <p>Original driver : <br />
 Patch : </p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[OpenBSD pf states monitoring]]></title>
-    <link href="http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring/"/>
-    <updated>2010-01-29T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.com/2010/01/29/openbsd-pf-states-monitoring</id>
-    <content type="html"><![CDATA[<p>The simple recipe is to add this to root’s cron:</p>
-
-<p><code>
-* * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep pfTop | cut -d/ -f2 | cut -d, -f1) -t int32 -d 120 2&gt;&amp;#038;1 | logger -t pf_states
-</code></p>
-
-<p>and install the <strong>pftop</strong> package along with a gmetric binary and a working <strong>/etc/gmond.conf</strong> configuration file. It might be advantageous to check for the maximum number of states as well.</p>
-
-<p>In addition, you might want to know which pf rules are passing how much traffic. A nice easy way of doing this is to create this file as <strong>./pfstates</strong> (make it executable, of course):</p>
-
-<pre><code>#!/usr/bin/perl
-# pfstates
-# jeff@ourexchange.net
-my $limit = shift  || 0;
- 
-my $seg = 0;
-my @s = [];
-
-while (chomp( my $line = )) {
-        $s[$seg] = $line;               
-        if ($seg == 2) {
-                $seg = 0;
-                if ($s[1] !~ /States: 0/) {
-                        my $states = 0;
-                        if ($s[1] =~ m/States: (d )/) {
-                                $states = $1;
-                        }
-                        if ($states &gt;= $limit) {
-                                print "[$states] $s[0]n";
-                        }
-                }
-        } else {
-                $seg  ;
-        }
-}
-</code></pre>
-
-<p>…. then you would pipe pfctl’s state output to it:</p>
-
-<pre><code>pfctl -v -s rules | ./pfstates
-</code></pre>
-
-<p>Optionally you could add a “minimum level” of connections you want to see:</p>
-
-<pre><code>pfctl -v -s rules | ./pfstates 100
-</code></pre>
-
-<p>for example to see only rules passing 100 or more active connections.</p>
 ]]></content>
   </entry>
   
