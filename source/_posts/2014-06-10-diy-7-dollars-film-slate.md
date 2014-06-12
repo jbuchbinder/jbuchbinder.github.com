@@ -10,7 +10,8 @@ categories:
  - Hacks
 ---
 
-I can't claim credit for this one -- my production designer got the idea to
+I can't claim credit for this one -- my extremely talented and resourceful
+[production designer](http://www.imdb.com/name/nm3895408/) got the idea to
 use an inexpensive slate "prop" and modify it slightly to allow the use of
 erasable whiteboard markers. These are usually a bit more than seven dollars,
 and we didn't have the time to wait for one to arrive in the mail for the
