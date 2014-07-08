@@ -1,26 +1,26 @@
 require 'set'
 require 'jekyll'
-require 'feedzirra'
+require 'feedjira'
 require './plugins/date'
 
-class Feedzirra::Parser::Atom
+class Feedjira::Parser::Atom
   # octopress atom entries don't include author, but I can get it from the feed header,
   # so add another sax parsing rule:
   element :name, :as => :author
 end
 
-class Feedzirra::Parser::AtomEntry
+class Feedjira::Parser::AtomEntry
   # sax parsing rule to skim post-specific author url.
   # useful for meta-feeds, and/or any feed with multiple authors
   element :uri, :as => :author_url
 end
 
-class Feedzirra::Parser::RSS
+class Feedjira::Parser::RSS
   element :link, :as => :url
   element :title, :as => :author  
 end
 
-class Feedzirra::Parser::RSSEntry
+class Feedjira::Parser::RSSEntry
   element :no_such_tag, :as => :author_url
 end
 
@@ -118,7 +118,7 @@ module FeedAggregator
       end
 
       begin
-        feed = Feedzirra::Feed.fetch_and_parse(feed_url)
+        feed = Feedjira::Feed.fetch_and_parse(feed_url)
       rescue
         feed = nil
       end
