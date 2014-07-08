@@ -8,6 +8,10 @@ layout: page
 
  [1]: /images/bill_chapple_thumbnail.jpg
 
+[![Bill at Work][2]][2]
+
+ [2]: /images/chapple04.jpeg
+
 ### Links 
 
  * [UConn Staff Page](http://www.pnb.uconn.edu/PNB_Base/about/staff/chapple.html)
