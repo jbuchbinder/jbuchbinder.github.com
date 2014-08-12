@@ -28,7 +28,7 @@ These pages explain a little more about the studio, and have some samples of the
 
 ### Who the hell are you, and why should your recording sound any better than anyone else’s?
 
-Since this is my site (jeff.ourexchange.net), it’s pretty obvious that it is also my (Jeff’s) studio. As for sound and recording quality; it’s completely arbitrary, but we tend to think that the sound that comes out of our setup is good, and that we are fairly competent regarding mixdown and mastering.
+Since this is my site (jbuchbinder.com), it’s pretty obvious that it is also my (Jeff’s) studio. As for sound and recording quality; it’s completely arbitrary, but we tend to think that the sound that comes out of our setup is good, and that we are fairly competent regarding mixdown and mastering.
 
 ### What is up with the name?
 

@@ -4,41 +4,25 @@ author: jeff
 layout: page
 wpbook_fb_publish:
   - yes
-wpbook_message:
-  - 
 ---
 
 This is a list of things that I’d like to have at some point or other, split up into categories. If you want to get me something, chances are that getting me something on this list will result in a greater chance of me liking it.
 
 ## Sound/Recording
 
-*   [AKG Perception 220][1] or [AKG Perception 420][2] condenser microphone
-*   [ART DPS II][3] digital compressor
-*   [JoeMeek OneQ][4] compressor
-*   <del>[12′ TOSLINK cable][5]</del> – Found these at Ocean State Job Lot for 3$ a piece.
-*   [Carvin CTM100][25]: Someone had brought this model mic into the studio with them, and it seems to be versatile enough that I should be getting one.
-*   [Amazon Studio Wishlist][26]
-
- [1]: http://www.zzounds.com/item--AKGPERCEPTION220
- [2]: http://www.zzounds.com/item--AKGPERCEPTION420
- [3]: http://www.zzounds.com/item--ARTDPSII
- [4]: http://www.zzounds.com/item--JOEONEQ
- [5]: http://www.geekbro.com/index.cfm/hurl/page=product/itemid=699467?source=GoogleBase
- [25]: http://www.carvinguitars.com/products/CTM100
- [26]: http://www.amazon.com/registry/wishlist/2TWP127J38CO1/
+*   [AKG Perception 220](http://www.zzounds.com/item--AKGPERCEPTION220) or [AKG Perception 420](http://www.zzounds.com/item--AKGPERCEPTION420) condenser microphone
+*   [ART DPS II](http://www.zzounds.com/item--ARTDPSII) digital compressor
+*   [JoeMeek OneQ](http://www.zzounds.com/item--JOEONEQ) compressor
+*   <del>[12′ TOSLINK cable](http://www.geekbro.com/index.cfm/hurl/page=product/itemid=699467?source=GoogleBase)</del> – Found these at Ocean State Job Lot for 3$ a piece.
+*   [Carvin CTM100](http://www.carvinguitars.com/products/CTM100): Someone had brought this model mic into the studio with them, and it seems to be versatile enough that I should be getting one.
+*   [Amazon Studio Wishlist](http://www.amazon.com/registry/wishlist/2TWP127J38CO1/)
 
 ## Music Related
 
 *   <del>Double bass bow</del> (thanks to Jere and his parents for buying me one of these)
-*   [Alvarez AV-2][6] baritone guitar (discontinued, needs to be purchased used) or [Alvarez-Yairi YB-1][7] baritone guitar (not discontinued yet) ; or the [Alvarez ABT60][27] (which is probably the best bet of the lot)
-*   <del>[Alesis DM-5 Pro Kit (with Surge Cymbals and mesh heads)][8] electronic drumkit</del> — ended up with a Roland V-Drum set instead, although those Surge cymbals sound nice…
-*   [Ashdown Superfly][9] bass amplifier
-
- [6]: http://www.elderly.com/items/20U-9477.htm
- [7]: http://guitars.musiciansfriend.com/product/Alvarez-Yairi-YB1-Jumbo-Baritone?sku=518851
- [8]: http://www.zzounds.com/item--ALEDM5PROKIT
- [9]: http://www.zzounds.com/item--ASDALSF500
- [27]: http://www.zzounds.com/item--ALVABT60
+*   [Alvarez AV-2](http://www.elderly.com/items/20U-9477.htm) baritone guitar (discontinued, needs to be purchased used) or [Alvarez-Yairi YB-1](http://guitars.musiciansfriend.com/product/Alvarez-Yairi-YB1-Jumbo-Baritone?sku=518851) baritone guitar (not discontinued yet) ; or the [Alvarez ABT60](http://www.zzounds.com/item--ALVABT60) (which is probably the best bet of the lot)
+*   <del>[Alesis DM-5 Pro Kit (with Surge Cymbals and mesh heads)](http://www.zzounds.com/item--ALEDM5PROKIT) electronic drumkit</del> — ended up with a Roland V-Drum set instead, although those Surge cymbals sound nice…
+*   [Ashdown Superfly](http://www.zzounds.com/item--ASDALSF500) bass amplifier
 
 ## Photography/Cinematography Related
 
@@ -53,18 +37,10 @@ This is a list of things that I’d like to have at some point or other, split u
 
 ## Computer/Gadget Related
 
-*   <del>[Linksys WRT54GL][17]</del> – Replacement wireless router for the one I’ve burned out. Needs to be the “L” model, otherwise it won’t work for me. Got my present router working for me.
-*   <del>[IBM eServer 325 Dual Opteron 248][18] rackmount server</del>
-*   <del>[GP2X Wiz][19] gaming unit</del>
-*   <del>[Archos][20] portable media device</del>
-*   [22-24" LCD monitor][21] (alternate buy [here][22])
-*   <del>[Legend of Zelda: Twilight Princess (Wii game)][23]</del> – need this for a Nintendo Wii hack to work properly … ended up soft-modding the Wii, no game requried.
-
- [17]: http://amzn.to/1dZ1mnf
- [18]: http://www.geeks.com/details.asp?invtid=E325-R&cat=SYS
- [19]: http://gp2xwiz.com/
- [20]: http://www.archos.com/?country=global&lang=en
- [21]: http://www.geeks.com/details.asp?invtid=TS-22W7H-R&cat=MON
- [22]: http://www.mwave.com/mwave/SkuSearch_v2.asp?SCriteria=AA75008
- [23]: http://videogamegeeks.com/productcart/pc/viewPrd.asp?idproduct=1956&idcategory=29
+*   <del>[Linksys WRT54GL](http://amzn.to/1dZ1mnf)</del> – Replacement wireless router for the one I’ve burned out. Needs to be the “L” model, otherwise it won’t work for me. Got my present router working for me.
+*   <del>[IBM eServer 325 Dual Opteron 248](http://www.geeks.com/details.asp?invtid=E325-R&cat=SYS) rackmount server</del>
+*   <del>[GP2X Wiz](http://gp2xwiz.com/) gaming unit</del>
+*   <del>[Archos](http://www.archos.com/?country=global&lang=en) portable media device</del>
+*   [22-24" LCD monitor](http://www.geeks.com/details.asp?invtid=TS-22W7H-R&cat=MON) (alternate buy [here](http://www.mwave.com/mwave/SkuSearch_v2.asp?SCriteria=AA75008))
+*   <del>[Legend of Zelda: Twilight Princess (Wii game)](http://videogamegeeks.com/productcart/pc/viewPrd.asp?idproduct=1956&idcategory=29)</del> – need this for a Nintendo Wii hack to work properly … ended up soft-modding the Wii, no game requried.
 
