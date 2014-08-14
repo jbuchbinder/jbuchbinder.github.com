@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-07-15T13:02:22-04:00</updated>
+  <updated>2014-08-14T17:50:41-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Modifying Computar 12.5mm C-mount lens for M4/3]]></title>
+    <link href="http://jbuchbinder.com/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/"/>
+    <updated>2014-08-14T15:21:30-04:00</updated>
+    <id>http://jbuchbinder.com/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3</id>
+    <content type="html"><![CDATA[<p>For whatever reason, there seems to be a serious dearth of information
+regarding lens modification on the C-mount Computar 12.5mm f/1.3 lens. I am
+going to share my experience modifying this lens, in the hope that it will
+prevent other people from having the same issues which I have encountered.</p>
+
+<p>As a quick disclaimer, you really should not blame me if you break your lens,
+or if it eats your children or animals. This either will or will not work for
+you. You have been warned.</p>
+
+<p>You will need:</p>
+
+<ul>
+  <li>File or dremel</li>
+  <li>Very small screwdriver (flathead)</li>
+  <li>C-mount to M4/3 adapter (I used the Fotoasy one)</li>
+</ul>
+
+<p>1) <strong>File down the edges of the back mount a little.</strong> I do not think that I
+   can stress “a little” enough. If you file this down too much, you will run
+   into the same issue I ran into, and will break the back metal piece of
+   your lens. I used a triangular file and edged it down to a nice smooth
+   surface.</p>
+
+<p>2) <strong>Unscrew the three screws at the base.</strong> This will remove the metal
+   back of the lens.</p>
+
+<p>3) <strong>Loosen the center column of the lens.</strong> You will see a small lens
+   assembly protruding from the back of the rest of the lens. Loosen it a
+   few turns. This is a trial-and-error thing, so be patient.</p>
+
+<p>4) <strong>Reattach the backing with the screws.</strong> The lens assembly should be
+   protruding further from the back of the C-mount to M4/3 adapter, when
+   attached.</p>
+
+<p>5) <strong>Attempt infinity focus.</strong> Attach to the camera, attempt focus.</p>
+
+<p>If infinity focus is not attainable by step 5, repeat steps 2-5 until it is.</p>
+
+<p>If you end up breaking or cracking the rear C-mount, you can permanently attach the lens to your C-mount to M4/3 adapter using some solder or hot-glue.</p>
+
+<p>Good luck!</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[DIY $7 Film Slate]]></title>
@@ -446,80 +496,6 @@ good at everything, just find people who are.</p>
 
 <p>I had a good time – but I could have been less stressed out, if I had known
 some of this in advance.</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CAME-06 Blackmagic Cage Review]]></title>
-    <link href="http://jbuchbinder.com/2014/03/18/came-06-blackmagic-cage-review/"/>
-    <updated>2014-03-18T21:52:29-04:00</updated>
-    <id>http://jbuchbinder.com/2014/03/18/came-06-blackmagic-cage-review</id>
-    <content type="html"><![CDATA[<p>As part of setting up the <a href="http://www.blackmagicdesign.com/products/blackmagicproductioncamera4k">Blackmagic Production Camera 4K</a>,
-I have been trying to put together a solid, fairly low-cost set of
-accessories for the camera body.</p>
-
-<p>I became aware of a low-cost Chinese cage for the BMCC/BMPC4K
-bodies manufactured by an outfit called
-“<a href="http://www.came-tv.com/">Xiamen Came Photographic Equipment Co., Ltd.</a>”,
-which are available sporting both top and bottom 15mm rail mounts, 
-along with the normal mounting options and handles present with
-most cage designs. The cage in question is available for
-<a href="http://www.came-tv.com/came06-bmcc-cage-for-blackmagic-design-cinema-camera-15mm-rail-p-477.html">$198, shipping included, from the manufacturer</a>.</p>
-
-<p><img src="/images/came-06.jpg" width="289" height="400" title="“CAME-06 Cage”" ></p>
-
-<p>My unit arrived today, via DHL, in a box which seemed almost
-Ikea-esque in its packing. First thing to note, which is not
-indicated either on the website or the packaging: “some assembly
-required”. Secondly – no instructions. Thankfully, the entire
-assembly procedure seemed pretty obvious with the provided
-Allen wrenches. I noticed that there is a 5/8” mount on the
-bottom of the unit (as well as a 1/4”-20 mount) for attaching to
-the fluid head or quick-release plate of your choosing. This wasn’t
-indicated on the website, but I had my suspicions, which were
-thankfully confirmed.</p>
-
-<p>The first major issue I encountered was the lack of four of the
-required screws for assembly. Undaunted, I took a quick trip to 
-the nearest “home improvement” store, and purchased four
-M4-.70 x 12 bolts with phillips heads (in packs of two), which
-worked like a charm.</p>
-
-<p>The second slightly annoying issue was that one of the included
-30cm 15mm rods was completely unthreaded, so it wouldn’t be
-possible to attach it to any other rods, should it need to be
-extended. The inclusion of the rods was a bit of a plus, so I
-can’t really be too upset about that.</p>
-
-<p>The build quality, once assembled, is quite good. The CAME-06
-cage is machined properly, and does not interfere with the
-operation of the BMPC4K unit at all, and has enough mount points
-to allow me to put handles, arms, and other accessories on it,
-which was the secondary purpose of purchasing the cage, after
-being able to properly mount the camera on a decent QR plate.</p>
-
-<p>Additionally, it has a set of Hirth joints on either side,
-ostensibly for attaching handle mounts. I have no use for them
-at the moment, but they seem to be workable.</p>
-
-<p>As the next step up in price is another 70$, and this unit
-arrived from China in less than four business days from my
-initial order, the annoyance of a $1.00 bolt purchase seems
-miniscule, considering the usability of the cage itself. It
-isn’t a full system, like the Tilta, Lanparte, and others,
-but can be built into a system incrementally.</p>
-
-<p>Verdict: Know what you’re getting yourself into. If you want
-a pre-assembled unit, next day shipping, and would rather pay
-more money for the lack of inconvenience, you should avoid the
-CAME-06. It’s a good deal for the price, however.</p>
-
-<p>Good luck!</p>
-
-<p><em>Postscript: The manufacturer offered to reimburse me for the
-missing screws within a day of me writing to them, so they do
-seem to be relatively responsive whenever there is a mixup.</em></p>
 
 ]]></content>
   </entry>
