@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: photography | /home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.com/categories/photography/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2014-08-25T11:00:08-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dynamic range]]></title>
+    <link href="http://jbuchbinder.com/2013/11/28/dynamic-range/"/>
+    <updated>2013-11-28T11:08:17-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/28/dynamic-range</id>
+    <content type="html"><![CDATA[<p>As a photographer or cinematographer, I’m sure you’ve come into contact with
+limitations in <a href="http://en.wikipedia.org/wiki/Dynamic_range">dynamic range</a>.
+I have run into limitations with dynamic range in both the visual and audio
+field, since anything that involves “real world” signals is going to 
+potentially run up against the ability of the digital mediums on which we
+rely to properly store the entire gamut of available analog data that we are
+able to perceive with our eyes and ears. To combat the loss of data, computer
+scientists and electrical engineers developed the process of dynamic range
+compression, which is usually referred to as simple “compression”. This
+reduces the gamut of presented information to a digitally representable
+format. There is, however, something which is lost – and that is the
+original dynamic range ; the amount of variance between the strongest and
+weakest signal. In small doses, or when done with finesse, this provides the
+ability to produce better sounding and better looking content in the digital
+realm. When overused, we see results like the <a href="http://en.wikipedia.org/wiki/Loudness_war">loudness war</a>.</p>
+
+<p>I like to explore the more figurative aspects of many technical concepts, to 
+which most avid readers of my work would attest. In that vein of ideas, consider
+the derivative concept of dynamics as a function of cinematic tension/resolution
+and feeling.</p>
+
+<p>Much like a written work, cinematic works generally tend to follow a
+“<a href="http://www.dailywritingtips.com/how-to-structure-a-story-the-eight-point-arc/">plot/story arc</a>”,
+which have a number of basic stages, even if the presentation, order, and
+presence will vary between works. As cinematographers, one of our jobs is to
+attempt to portray the basic plot elements, character interactions, and other
+potentially metaphysical aspects of the story through the lensing, lighting,
+focal points, composition, and method of stabilization and capture we use.
+<em>(I’m aware that there are other control points, but forgive me my omissions
+for the sake of some semblence of brevity.)</em> For example, for a more
+“cinéma vérité” style for a combat or heavy action sequence, a filmmaker could
+choose to shoot with less stabilization, looser composition, and less staged
+lighting, which would present the audience with the perception that the scene
+is far closer to the work of a documentarian than a staged film scene. In
+<a href="http://www.imdb.com/title/tt0120815/">Saving Private Ryan</a>, for example, the
+battle scenes have a decreased exposure time, resulting in action appearing
+far more caustic and (what we believe is) more realistic. This allows the
+relative dynamics of the scenes in question to be raised to allow far more
+tension and action to be shown, through simple camera work.</p>
+
+<p>The issue with techniques like this begin to manifest themselves when they
+begin to flatten the dynamic of a film work through rampant and flagrant
+overuse. At some point, cinematographers realized that they could shoot
+<em>entire films</em> with these techniques, ostensibly to raise those tension and
+action levels to that same high. By doing this, they have effectively
+flattened the dynamic range of their works, producing an effectively and
+uniformly “loud” work. The questions that you might be asking are “why is this
+a bad thing, and why should I care?”</p>
+
+<p>We view things as deltas, or differences. We understand happiness because we
+understand sadness, heat because we experience cold, and comfort and
+companionship because we can contrast it with loneliness. If the range we are
+give to deal with is only the “best parts”, we begin to lose our ability to
+appreciate it, and all of those things which should have made it special and
+artistic become mere convention. Think about it – if everyone screamed
+everything at the same volume, rather than having varying levels of emphasis
+and volume, wouldn’t that screaming have lost its impact and importance?</p>
+
+<p>Every technique that you have as a cinematographer or photographer is another
+potential tool in your figurative tool box; but just because you have them
+doesn’t mean that you have to use one particular one <em>all the time</em>. Handheld
+camerawork has its place, and even though modern technology has provided many
+methods of stabilizing camera and lens motion, from the steadicam to image
+stabilization/vibration reduction lens to three point shoulder rigs, we still
+find many cinematographers intentionally introducing shake into their
+footage. I wrote an <a href="http://jbuchbinder.com/2013/06/03/stabilization/">entire essay</a> 
+on the importance of stabilization, so I won’t reiterate my grievances here.</p>
+
+<p>It’s important to understand why you’re doing something rather than
+simply doing it for convenience or convention. If you’re using a wide open
+aperture, are you doing it because you’re having lighting issues, or simply
+because you think that everything should be shot with the thinnest DOF
+possible? Is there some sort of artistic reason why you chose to shoot with
+a 24mm vs a 35mm lens for a particular shot? Are you using a tripod-based
+shot rather than a steadicam for a reason? Asking questions and analyzing
+your own work, as well as the work of others, is key to artistic growth, as
+well as understanding how to use your skillset as a photographer or
+cinematographer.</p>
+
+<p>I am, by no means, at the top of the skill grouping for photography <em>or</em>
+cinematography. Many of the entries I have authored here are products of
+making mistakes, and they are the attempt I am making to keep others from
+having to make some of the very same mistakes I have made. Even films and
+other work which we don’t particularly like as a whole may have a few 
+setups or shots which provide food for thought. So, watch those films with
+a critical eye, and hopefully we can all expand our “toolboxes”, as well
+as learn how to use them in a more effective manner. Good luck!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Signal to noise ratio]]></title>
+    <link href="http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio/"/>
+    <updated>2013-11-19T15:06:51-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio</id>
+    <content type="html"><![CDATA[<p>To quote the venerable Wikipedia:</p>
+
+<blockquote>
+  <p>Signal-to-noise ratio (often abbreviated SNR or S/N) is a measure used in science and engineering that compares the level of a desired signal to the level of background noise.</p>
+</blockquote>
+
+<p>This has a number of applications in engineering, but it also nicely
+encapsulates a basic truth of dealing with equipment, people, and works –
+there is always a certain amount of background noise. (For more information
+on the concept, check out <a href="http://en.wikipedia.org/wiki/Signal-to-noise_ratio">this article</a>.)</p>
+
+<p>In an ideal world, all equipment would be flawless and noiseless, everyone
+would be wonderful at what they do, and all works would be exceptional 
+<em>(don’t mind the inherent logical issue in the statement “all works would be
+exceptional”; I was trying to make a point, so please forgive me my
+linguistic foibles)</em>. As it so happens, due to a fun little thing called the
+<a href="http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Krueger Effect</a>,
+we tend to assume that our works are better than they actual are, until we
+reach a particular skill level, at which point we start underestimating our
+own skill levels. Succinctly put, we’re all terrible at figuring out how good
+or bad we are at any particular skill.</p>
+
+<p>This is a real pickle, especially when dealing with other people. With very
+few exceptions, we’re going to end up working with other people. This is more
+applicable in cinematography than in photography, since there are usually more
+people involved with a film production than with a still photo shoot (although
+I’m sure there are plenty of instances which would prove me wrong in that
+aspect). </p>
+
+<p><em>I’m going to restrict my examples to cinematography projects, to keep
+this a bit more manageable and readable.</em></p>
+
+<p>First, look at your potential crew. If you’re dealing with a low-budget indie
+shoot, which most of us are, you are either not paying your crew or are paying
+them very little money. You’ve already eliminated the possibility of a great
+number of highly experienced, educated, and trained people being involved,
+simply by eliminating the carrot of a serious payday. It could be additionally
+argued that those who do work for a living are not necessarily <em>great</em> at
+what they do, but that’s a little tangential to the core of the argument.
+Out of those people, you’re generally going to tend to see the talent curve
+follow the infamous <a href="http://mathworld.wolfram.com/NormalDistribution.html">standard/normal distribution curve</a>.
+This means some will be utterly atrocious, some will be genius, and the
+vast majority will lie somewhere between those two points. The outliers and
+bounds will depend on the sample size, but the general concept tends to be
+the same, which is that most people are not going to possess genius-level
+skills in the vast majority of a sample set.</p>
+
+<p>Second, look at your potential actors/on-screen talent. You’re in the same
+boat as you were with the crew – except that a single truly terrible actor
+will destroy the illusion you’re trying to create, so you have to hope that
+your lower bound is pretty high, otherwise your end product will most likely
+suffer. (It should also be said that a really great director has been known
+to coax amazing performances out of lackluster talent, but we can’t all be
+Stanley Kubrick, Darren Aronofsky, or P.T. Anderson…)</p>
+
+<p>So, what are we to do? We need to start acknowledging that not everything
+we’re going to make is going to be the best thing <strong>ever</strong>. It’s an anathema
+to the general self-aggrandizing L.A. film culture, but we have to respect
+the normal distribution curve – most films will be mediocre, some will be
+agonizingly bad, and some will be amazing. The DKE means we’ll always think
+that they’re all amazingly wonderful, but we need to be far more critical of
+our own works ; at least, if we want to try to produce high-quality output.</p>
+
+<p>We also need to understand that there’s a place for our hubris, as well as
+our humility. We cannot grow as filmmakers, photographers, artists, or as
+people, until we both appreciate the skill-set we have, while at the same
+time understanding the limits of what we have accomplished right now, and
+always striving to produce better, become better, and encourage better. We
+can’t all be the <strong>best</strong>, but we can all become <strong>better</strong>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Preparing for and recovering from disaster]]></title>
+    <link href="http://jbuchbinder.com/2013/10/13/preparing-for-and-recovering-from-disaster/"/>
+    <updated>2013-10-13T20:01:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/13/preparing-for-and-recovering-from-disaster</id>
+    <content type="html"><![CDATA[<p>One of the greatest nightmares associated with digital cinematography and
+photography is that of the specter of data loss. The very notion that your
+carefully planned shots or footage could disappear in a single instant can
+be Earth-shattering, since it may not be possible to reshoot (or may be
+prohibitively expensive). The best defense is to be prepared, not only for
+the possibility that you may lose data, but also to safeguard against that
+possibility through preventitive measures.</p>
+
+<h2 id="preparation">Preparation</h2>
+
+<p>There are a number of things you can do to try to protect against data loss,
+both before and after shooting has taken place. Here are a few of them:</p>
+
+<p><strong>Don’t use dodgy or off-brand memory cards.</strong> This may seem pretty obvious
+to those who have been down this road, but really crappy cards tend to have
+dodgy QA processes involved in their manufacture, so although you may get a
+good card, you’re just as likely to get a dud – which could end up with your
+data. I’ve found that “Amazon Basics” and “KomputerBay” cards have failed me
+pretty regularly. Even “Transcend” cards have been pretty dodgy for me, on
+occasion. I tend to stick with “SanDisk” branded cards, when I use SD media,
+and there are a few decent manufacturers of CF media (Lexar, SanDisk, etc),
+which tend to produce quality cards, in my experience.</p>
+
+<p><strong>Storage media doesn’t last forever.</strong> Every piece of flash media has a
+certain number of R/W cycles before it becomes unstable and/or unusable.
+After a period of time, you might want to start regularly replacing your
+media cards to avoid the possibility that errors will begin to occur. It’s
+also a good idea to low-level format the cards in between uses, which
+supposedly increases their lifespan.</p>
+
+<p><strong>A single physical copy of your product is a bad idea.</strong> If you just move
+files off to your laptop harddrive, you’re practically expecting something
+to destroy your media. A single SSD or spinning platter in a laptop is a
+prime target for an accident to wipe out your data. Ideally, a RAID
+(<em>R</em>edundant <em>A</em>rray of <em>I</em>nexpensive <em>D</em>isks) array would provide a
+good tradeoff between inexpensive media and redundant storage. I built a
+pretty inexpensive one with the following components:</p>
+
+<ul>
+  <li><a href="http://amzn.to/19EmtYA">Sans Digital MR2UT+ MobileRAID</a>: A two-disk
+enclosure, which, when set to RAID-1, gives you a set of mirrored
+hard disks, accessible by USB 3.0 or an eSATA interface.</li>
+  <li><a href="http://amzn.to/19IlAdp">Seagate Barracuda 2 TB HDD</a>: Two of these
+disks will provide you with a total of 2 TB of redundant storage.</li>
+</ul>
+
+<p><strong>A single physical location is a bad idea.</strong> Consider off-site backup. If
+you don’t have the money to store your data in <a href="http://aws.amazon.com/s3/">S3</a>
+or a similar service, consider using something like
+<a href="http://labs.bittorrent.com/experiments/sync.html">Bittorrent Sync</a>, with a
+friend or two providing remote backup locations. If this isn’t feasible,
+periodically backing up to <a href="http://en.wikipedia.org/wiki/Digital_Linear_Tape">DLT</a>
+or another backup tape, then storing that offsite, may be useful. If you
+are questioning “why do I need off-site backup”, just remember that a single
+fire or natural disaster can destroy all of your hard work…</p>
+
+<p><strong>Camera-based writing solutions.</strong> Certain cameras (the Canon EOS 5D
+Mark III, for example) have multiple media card slots, and have the ability
+to write multiple copies of the same media. This can help circumvent the
+tragic circumstance (to which I have fallen victim) of a completed shoot
+with the inability to read any of the captured data later on. To understand
+this, <a href="http://protogtech.com/cameras/canon-5d-mark-iii-record-separately-vs-record-to-multiple-performance-comparison/">read more here</a>.
+It should be noted that there are some performance limitations to this,
+but if you’re not shooting RAW video and your camera body can handle this,
+you might want to seriously consider it.</p>
+
+<h2 id="recovery">Recovery</h2>
+
+<p>There is a pantheon of free and open-source software suites which provide
+recovery of lost files, deleted files, destroyed partitions, etc. The true
+nightmare scenario would involve a piece of damaged media, from which the
+data cannot be extracted – but never assume this unless you have exhausted
+all other avenues of recovery.</p>
+
+<ul>
+  <li><a href="http://www.cgsecurity.org/wiki/PhotoRec">PhotoRec/Testdisk</a> (Open source,
+Linux/Windows/Mac/DOS/etc). This is one of my favorites, although it
+may potentially require some fairly in-depth technical expertise to
+fully exploit its potential.</li>
+  <li><a href="http://www.piriform.com/recuva">Recuva</a> (Freeware, Windows). Recovers
+deleted files.</li>
+  <li><a href="http://www.hirensbootcd.org">Hiren’s Boot CD</a> (Freeware, Boot Disc).
+Hiren’s is a classic recovery and utility boot disk, which can be
+booted on any Intel-based computer. The download is free, and it has
+a very comprehensive suite of recovery tools. If you don’t have a copy
+of this disc hanging around your studio or house – why not?</li>
+  <li><a href="http://www.wondershare.com/disk-utility/cr2-photo-recovery.html">Wondershare Photo Recovery</a> (Freeware, Windows/Mac).
+A semi-commercial digital media file recovery suite.</li>
+  <li><a href="http://www.icare-recovery.com/free/camera-raw-photo-recovery-free.html">iCare Recovery Free</a> (Trialware, Windows).
+This has a 2GB maximum data file recovery limit with the trial, otherwise
+a license has to be purchased.</li>
+  <li><a href="https://homes.cs.washington.edu/~oskin/saveimg.html">saveimg</a> (Opensource, Linux/Mac).
+Extracts JPEG images from raw disk devices. Requires some expert
+knowledge to use properly.</li>
+  <li><a href="http://foremost.sourceforge.net/">Foremost</a> (Opensource, Linux/Mac).
+Digital forensic tool to recover files based on headers, footers, and
+internal data structures.</li>
+  <li><a href="http://www.lc-tech.com/pc/sandisk-rescuepro-and-rescuepro-deluxe/">SanDisk RescuePRO</a> (Trialware, Windows).
+SanDisk’s recommended recovery software.</li>
+  <li><a href="http://www.gnu.org/software/ddrescue/ddrescue.html">ddrescue</a> (Opensource, Linux/Mac).
+A data recovery tool. It copies data from one file or block device
+(hard disc, cdrom, etc) to another, trying hard to rescue data in case
+of read errors.</li>
+  <li><a href="http://www.stellarphotorecoverysoftware.com/camera-recovery/">Stellar Photo Recovery</a> (Trialware, Windows/Mac).
+Another digital photo recovery suite. The trialware shows what can be
+recovered, with previews.</li>
+  <li><a href="http://www.pcinspector.de/default.htm?language=1">PC Inspector</a> (Freeware, Windows).</li>
+  <li><a href="http://www.prosofteng.com/products/data_rescue.php">DataRescue</a> (Mac).</li>
+  <li><a href="http://subrosasoft.com/OSXSoftware/index.php?main_page=product_info&amp;cPath=1&amp;products_id=3">Camera Salvage</a> (Freeware, Windows).</li>
+  <li><a href="http://datarescue.com/">PhotoRescue</a> (Windows/Mac).</li>
+  <li><a href="http://www.cfcardrecovery.com/">CF Card Recovery</a> (Trialware, Windows/Mac).</li>
+</ul>
+
+<p>Hopefully, this will either make it easier to avoid potential data loss, or
+at least help to minimize the impact, if and when you end up losing data.</p>
+
+<p>As always, good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[To post or not to post]]></title>
+    <link href="http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post/"/>
+    <updated>2013-09-07T13:18:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post</id>
+    <content type="html"><![CDATA[<p>Even though a good portion of the work has been completed when you press the
+shutter button, or stop rolling, since all of your planning and execution has
+been completed, there’s still a final step (or series of steps) to bring that
+artistic effort to a presentable format.</p>
+
+<p>Many people shoot with default (or very close to default) settings on their
+camera or videocamera, and do simple “post production” by simply cropping or
+cutting whatever comes out of their camera body. This is a very “purist” way
+of going about shooting, but can also rob your end product of some of the
+polish and slight adjustments which can take good pictures or footage and
+make them into something extraordinary.</p>
+
+<p>All of that being said, there’s a limit to the types and amounts of post
+production which can and should be used, much in the way that overproducing
+a musical album can result in a homogenous and lifeless product, robbed of
+the “soul” and variances which make it unique. You are the only person who
+can decide how much, if any, post processing is right for your project or
+other artistic endeavor.</p>
+
+<p><strong>RAW versus JPEG/H.264</strong></p>
+
+<p>With DSLR cameras being used for both photography and cinematography, there
+are places where the “processing” aspect can be pushed off into the post
+production process.</p>
+
+<p>For photography, RAW format pictures can allow recovery past some of the
+previously accepted limits of what would normally be considered lost or
+unusable. Effectively, it allows you to make the decisions which are
+normally pushed off on your camera’s processor (the DIGIC processor(s),
+for all of you Canon users). It adds an additional step to the
+post-processing workflow, in that you’ll need a piece of software like
+<a href="http://www.adobe.com/products/photoshop-lightroom.html">Adobe Lightroom</a> for Windows/Mac users, or if you’re a Linux user like me,
+<a href="http://rawstudio.org/">Raw Studio</a>. It also adds a significant amount of time to the
+photographic post-processing workflow, in that there are a number of
+additional parameters which can be adjusted, which would normally result
+in image degradation, but can be adjusted in RAW images with little or no
+deleterious effect. If you’re a <a href="http://www.magiclantern.fm/">Magic Lantern</a> user, you can also
+experiment with “dual ISO” images, which can create images with enormous
+dynamic range through sensor tricks – but which adds an another step
+before RAW processing, that of running a CR2HDR binary. (If you’re
+interested in trying this out, but don’t want to compile a CR2HDR binary
+for Windows or Linux, I have binaries available <a href="https://bitbucket.org/rufustfirefly/magic-lantern/downloads">here</a>)</p>
+
+<p>For cinematography, there’s a lot more to think about. Magic Lantern users
+of Canon 5Dmk3 models (and some others, as well) have the option of being
+able to shoot RAW video with some very fast CF cards. This adds a pretty
+substantial amount of post-processing steps <em>before</em> your NLE (non-linear
+editor) of choice enters the picture. There are a pretty wide swath of
+applications which now support the Magic Lantern RAW format, including
+<a href="http://www.magiclantern.fm/forum/index.php?action=printpage;topic=5557.0">RAWanizer</a>, but your best bet is to get involved with the Magic
+Lantern forum if you want to begin working with a RAW workflow. The other
+serious disadvantage is storage space. Standard H.264 video, which is
+shot by most DSLR camera bodies, has issues with some digital artifacts in
+certain scenarios, as well as some dynamic range issues (some of which can
+be made better by use of flat color profiles like <a href="https://www.technicolorcinestyle.com/download/">Cinestyle</a>, but I’ll
+leave that for later) – but it produces fairly compact files, even at
+1080p/24p (1920x1080 24fps progressive) resolution. RAW data can take
+upwards of a gigabyte of space every 15-20 seconds. Your storage media
+and backup solutions have to be able to deal with that, so it’s something
+to seriously consider before deciding to move a project to work with that
+format.</p>
+
+<p><strong>White Balance</strong></p>
+
+<p>It used to be accepted that white balancing (determining where “true white”
+lies in an image, compensating for varying light color temperatures) had to
+be done “in camera”, before shots were taken. There are a number of tools
+which allow this to be done in post-processing.</p>
+
+<p>Photographers can do this when shooting with RAW camera images very
+simply, as most RAW image processors have a simple white balancing tool. It’s
+still possible to do this with processed JPEG images, but with the
+potential for losing some image data. Depending on how comfortable you are
+with straying from the “truest possible image”, you can decide where you
+feel comfortable dealing with white balancing.</p>
+
+<p>Cinematographers have a pretty vast array of white balancing and color
+correction plugins available for their NLE of choice. I’m most familiar with
+Adobe Premiere, so I’d mention <a href="http://blogs.adobe.com/VideoRoad/2010/05/using_the_fast_color_corrector.html">Fast Color Corrector</a> and
+<a href="http://philipbloom.net/forum/threads/tutorial-color-grading-and-styling-with-colorista-ii.2528/">Red Giant Colorista II</a>, both of which offer pretty decent white
+balancing capabilities, among other things. If you’re concerned about
+render speed, Fast Color Corrector seems to win out against Colorista II,
+but Colorista II has some additional parameters and capabilities which
+far outstrip what FCC has to offer. There’s also software like
+<a href="http://tv.adobe.com/watch/learn-premiere-pro-cc/color-grading-premiere-pro-sequences-in-speedgrade/">Adobe Speedgrade</a> and <a href="http://digitalfilms.wordpress.com/2013/02/02/davinci-resolve-workflows/">Blackmagic Design Davinci Resolve</a>, both
+of which offer white balancing, color correction, and color grading
+capabilities. There are a few threads <a href="http://forums.planet5d.com/threads/123505-Adobe-Speedgrade-vs-DaVinci-Resolve">comparing the two of them</a>.</p>
+
+<p>The important distinction is whether or not you want to spend the time
+to properly white balance your images or footage before you take pictures.
+It’s not always condusive to your shooting workflow to do so, and if this
+is a factor, you should seriously consider some of the post-processing
+options. It’s obviously to your greatest advantage to have the most
+accurate input images/footage to bring into your post-processing
+workflow, but sometimes it’s not pragmatic to take a completely purist
+attitude in this regard.</p>
+
+<p><strong>Exposure</strong></p>
+
+<p>We’ve all been bitten by changing light conditions, unexpected events, or
+incorrect metering producing images or footage which has exposure problems.
+If you’re shooting RAW (or using Magic Lantern’s Dual ISO hack), this is
+an ideal place to examine using post-processing to correct these issues.</p>
+
+<p>We would all like to properly expose everything (unless we have a
+particular artistic reason for doing otherwise, since in the art of
+photography or cinematography, there are generally exceptions to every
+rule, rules were made to be broken, etc), but taking a post-processing
+detour to correct such things is generally preferable to re-arranging a
+shoot.</p>
+
+<p><strong>Special Effects</strong></p>
+
+<p>I’m not a big fan of post-processing special effects, mainly because I 
+am a proponent of the idea that it takes some of the artistry out of
+pulling off those same effects “in camera”. I do understand that there
+are certain effects which would be either very difficult or downright
+impossible to achieve without the use of computer generated effects –
+but there’s a lot of things which can be accomplished <em>without</em> that.</p>
+
+<p>Lighting is something which I’ve seen done in post, which generally
+baffles me. It’s something which is pretty simple to execute properly,
+given a little time and effort. Saving images or footage with issues
+might be a good use for that, but it’s probably not something I would
+recommend doing for everyday editing and processing.</p>
+
+<p>For example, having someone “eaten” by light can be accomplished for
+a cinematographer, simply by adjusting the fill light to blow out the
+whites, then opening the iris of the lens (using a focus pulling kit,
+or just a spare hand, for the less equipment-heavy among us) to allow
+the fill light to “eat” the remainder of the image. That can be done
+without any specific post-processing.</p>
+
+<p><strong>Flat Color Profiles</strong></p>
+
+<p>This is pretty much for cinematographers, since photographers could
+simply take RAW photos – and cinematographers shooting RAW should
+probably ignore this section, as well.</p>
+
+<p>There are quite a few “flat color profiles” available for DSLR
+(and other) bodies, such as the aforementioned Technicolor Cinestyle
+profile and the <a href="http://www.similaar.com/foto/flaat-picture-styles/long-1.html">Flaat Picture Style</a>. These work by effectively
+increasing the dynamic range being captured by the camera by storing
+the values differently than the stock picture profile.</p>
+
+<p>I highly recommend shooting with one, if you’re not going to make the
+leap to shoot RAW. It does add the additional step in post-processing
+of having to adjust the blacks/whites and/or applying a corrective
+LUT (look up table) to adjust the end product to look less “washed
+out”. There are LUTs and plugins available for virtually every NLE
+out there right now – and I suggest learning how to do this. The
+improvement in the end product is substantial for relatively little
+time investment.</p>
+
+<p><strong>Audio Post</strong></p>
+
+<p>This is another section just for cinematographers.</p>
+
+<p>The audio which is recorded with footage is generally “reference
+audio”, which is meant to be replaced by actual audio, generally
+recorded with something like a <a href="http://tascam.com/product/dr-40/">Tascam DR-40</a> or <a href="http://www.zoom.co.jp/english/products/h4n/">Zoom H4n</a>
+external recorder and a shotgun microphone. It’s far outside the
+scope of this to explain the majority of these technologies and
+techniques, but sufficed to say that they produce far cleaner and
+usable recordings than on-camera audio (even when using augmented
+on-camera microphones, etc). If you can afford it, use external
+audio, and have an experienced audio engineer perform some basic
+post-production on your audio.</p>
+
+<p>If you can’t afford it, or don’t have an audio engineer, there are
+a few basic steps to get cleaner audio.</p>
+
+<p>1) <em>Don’t use the microphone built into the camera</em>. It sounds pretty
+awful, and is noisy. Get a lav microphone for interviews, or a
+directional hot-shoe mounted external microphone for anything else.</p>
+
+<p>2) <em>Adjust the audio levels manually</em>. Automatic level adjustment is
+going to be terrible. It’s meant to avoid clipping, but it tends to
+make the noise floor (the level of background noise) jump around as
+the camera readjusts the audio recording level, so it may make your
+life significantly more difficult when it comes time to adjust the
+footage later. Adjust it to the loudest sound you’re going to be
+recording – then perhaps a click lower, for safety.</p>
+
+<p>3) <em>Respect the inverse square law</em>. For those unfamiliar, sounds
+drop at a logarithmic rate as you move away from the sound source,
+following the same inverse square law which is used to figure light
+source brightness. The closer you are to a recorded sounds, the
+cleaner and better the source audio will be. Every object which a
+sound hits will produce a “reflection” (much as light does). If that
+reflection is equal or louder than the volume of the source sound,
+you’re going to get a pretty terrible sounding audio recording.</p>
+
+<p>4) <em>Get the cleanest audio possible</em>. Try to cut down on external
+noise sources. Never assume that you can clean something later on;
+you should be trying to get clean audio. If something has to be
+re-taken to avoid a lawnmower being run in the background, then you
+should seriously consider doing it. It’ll save you from pulling out
+your hair.</p>
+
+<p>I’m sure that this isn’t a <em>comprehensive</em> list, but hopefully this
+will help everyone get started with deciding what, if anything, to
+relegate to their post-processing workflow. Good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Succumbing to the Camera Phone]]></title>
+    <link href="http://jbuchbinder.com/2010/03/02/succumbing-to-the-camera-phone/"/>
+    <updated>2010-03-02T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2010/03/02/succumbing-to-the-camera-phone</id>
+    <content type="html"><![CDATA[<p>I do not like camera phones in the same way that I don’t particularly care for flash photography; you can produce good results (or at least passable results) with either, but the majority of stuff that comes out of it is just pure crap.</p>
+
+<p>I recently moved to one of Sprint’s CDMA Android offerings, the HTC Hero. I just finished the <a href="http://geekfor.me/">flashing/rooting process</a>, since I don’t particularly care for devices that try to lock me out of their own functionality. (The key to doing this with the “newer” Sprint CDMA Hero phones is apparently using an older version of the recovery image and making sure you have enough available memory to run the image flash, but that’s beside the point.) This particular device came with a 5 megapixel built-in camera, and though I know that <a href="http://forum.digitalcamerareview.com/showthread.php?p=5354">resolution != quality</a>, it does seem to produce *passable* images. Not great, but passable. I’m hoping to see an improvement when the CDMA Hero sees “official” <a href="http://phandroid.com/2010/02/16/sprint-hero-moment-getting-android-2-1-early-2q10/">Android 2.1 support</a>. This OS version fragmentation is bunk, but at least I can upgrade as soon as the pieces are available for another model. <a href="http://www.engadget.com/2009/02/18/editorial-ten-reasons-why-windows-mobile-6-5-misses-the-mark/">Suck that, closed source technology</a>.</p>
+
+<p>Am I giving up the <a href="http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&amp;fcategoryid=139&amp;modelid=17779">40D</a>? Hell emphatically *no*. But I can capture a few things I might miss fumbling for the camera bag. At least, I hope I can.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

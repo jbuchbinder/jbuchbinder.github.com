@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hacks | /home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2014-08-25T11:00:08-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Modifying Computar 12.5mm C-mount lens for M4/3]]></title>
+    <link href="http://jbuchbinder.com/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/"/>
+    <updated>2014-08-14T15:21:30-04:00</updated>
+    <id>http://jbuchbinder.com/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3</id>
+    <content type="html"><![CDATA[<p>For whatever reason, there seems to be a serious dearth of information
+regarding lens modification on the C-mount Computar 12.5mm f/1.3 lens. I am
+going to share my experience modifying this lens, in the hope that it will
+prevent other people from having the same issues which I have encountered.</p>
+
+<p>As a quick disclaimer, you really should not blame me if you break your lens,
+or if it eats your children or animals. This either will or will not work for
+you. You have been warned.</p>
+
+<p>You will need:</p>
+
+<ul>
+  <li>File or dremel</li>
+  <li>Very small screwdriver (flathead)</li>
+  <li>C-mount to M4/3 adapter (I used the Fotoasy one)</li>
+</ul>
+
+<p>1) <strong>File down the edges of the back mount a little.</strong> I do not think that I
+   can stress “a little” enough. If you file this down too much, you will run
+   into the same issue I ran into, and will break the back metal piece of
+   your lens. I used a triangular file and edged it down to a nice smooth
+   surface.</p>
+
+<p>2) <strong>Unscrew the three screws at the base.</strong> This will remove the metal
+   back of the lens.</p>
+
+<p>3) <strong>Loosen the center column of the lens.</strong> You will see a small lens
+   assembly protruding from the back of the rest of the lens. Loosen it a
+   few turns. This is a trial-and-error thing, so be patient.</p>
+
+<p>4) <strong>Reattach the backing with the screws.</strong> The lens assembly should be
+   protruding further from the back of the C-mount to M4/3 adapter, when
+   attached.</p>
+
+<p>5) <strong>Attempt infinity focus.</strong> Attach to the camera, attempt focus.</p>
+
+<p>If infinity focus is not attainable by step 5, repeat steps 2-5 until it is.</p>
+
+<p>If you end up breaking or cracking the rear C-mount, you can permanently attach the lens to your C-mount to M4/3 adapter using some solder or hot-glue.</p>
+
+<p>Good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[DIY $7 Film Slate]]></title>
+    <link href="http://jbuchbinder.com/2014/06/10/diy-7-dollars-film-slate/"/>
+    <updated>2014-06-10T15:50:07-04:00</updated>
+    <id>http://jbuchbinder.com/2014/06/10/diy-7-dollars-film-slate</id>
+    <content type="html"><![CDATA[<p>I can’t claim credit for this one – my extremely talented and resourceful
+<a href="http://www.imdb.com/name/nm3895408/">production designer</a> got the idea to
+use an inexpensive slate “prop” and modify it slightly to allow the use of
+erasable whiteboard markers. These are usually a bit more than seven dollars,
+and we didn’t have the time to wait for one to arrive in the mail for the
+shoot in question.</p>
+
+<p>There are only two pieces of “hardware” which are required to make this,
+along with a few pieces of duct tape, a sharpie, a ruler, and whatever 
+whiteboard markers and erasers you are planning to use on the finished
+slate.</p>
+
+<p>You will need to buy these two items from a <a href="http://www.fivebelow.com/">Five Below</a> discount shop:</p>
+
+<ul>
+  <li>Slate Prop - $5</li>
+  <li><a href="http://www.fivebelow.com/8-5-x-11-neon-dry-erase-boards.html">8.5 x 11 Eraseable Whiteboard</a> - $2</li>
+</ul>
+
+<p><em>Apologies for not giving a product link for the slate prop – I had trouble finding it on the Five Below site. I assure you, it does exist…</em></p>
+
+<h2 id="assembly-instructions">Assembly Instructions</h2>
+
+<ol>
+  <li>
+    <p>Break the frame of the whiteboard, and remove the cardboard backing and
+the broken frame. You should now have a piece of unencumbered whiteboard.</p>
+  </li>
+  <li>
+    <p>Position the whiteboard over the slate prop’s useless slate writing. You
+can’t write on the slate with chalk, so it is pretty useless as-is.
+Center it as best you can, then use strips of duct or gaff tape to attach
+the whiteboard surface to the clapper.</p>
+  </li>
+  <li>
+    <p>Use the ruler as a straight-edge to draw sharpie lines to denote the
+different markable areas on your slate. In the best penmanship you can
+muster, label them with the sharpie.</p>
+  </li>
+</ol>
+
+<p>It is a pretty simple hack, but quite effective for giving your editor a bit
+of A/V sync assistance.</p>
+
+<p><img src="/images/7-dollar-slate.jpg" title="‘My production designer holding the finished slate’" ></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Checking for deprecated Wordpress functions]]></title>
+    <link href="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/"/>
+    <updated>2013-11-13T15:29:00-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions</id>
+    <content type="html"><![CDATA[<p>One of the major pains involved in Wordpress development and work (and one
+of the reasons why this isn’t hosted on Wordpress anymore) is that of their
+quickly changing API.</p>
+
+<p>I’ve encountered issues where plugins have suddenly (and quietly) stopped
+functioning, due to a deprecated function call being removed from the
+Wordpress API. I’m sharing my “solution” to this issue, which is a script
+(which can be integrated into a CI system), which scans your plugin and/or
+theme code and gives you a list of the deprecated functions you’re using,
+as well as where they exist in your code.</p>
+
+<p><div><script src='https://gist.github.com/7419000.js'></script>
+<noscript><pre><code>#!/bin/bash
+#
+# Wordpress Deprecated function checker
+#
+# Version: 0.2
+#
+# Author: Michiel Roos &lt;michiel@donationbasedhosting.org&gt;
+#         Jeff Buchbinder (https://github.com/jbuchbinder)
+# 
+# www.php.net/manual/en/migration53.deprecated.php
+#
+# Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
+#
+# Jeff's notes:
+#
+# *) This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
+#    functions are found, which should allow easy integration into CI systems.
+# *) This was adapted from a deprecated function checker to allow Wordpress
+#    specific pre-upgrade checks.
+
+tag=$1
+
+if [ &quot;$tag&quot; == &quot;&quot; ]; then
+    echo &quot;Wordpress version must be specified.&quot;
+    exit 1
+fi
+
+whereami=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot;; pwd )&quot;
+
+function dfunctions() {
+    tag=$1
+    
+    # Derived from the list at http://codex.wordpress.org/Category:Deprecated_Functions
+    # (Use Coral Cache to cut down on Wordpress TRAC load.)
+    deprecated_sources=(
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/pluggable-deprecated.ph?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/ms-deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/ms-deprecated.php?format=txt
+    )
+    
+    for s in ${deprecated_sources}; do
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+    done
+}
+deprecatedFunctions=(
+    $( dfunctions ${tag} )
+)
+
+len=${#deprecatedFunctions[*]}
+i=0
+
+echo &quot;Checking for deprectated functions ______________________________________&quot;
+echo &quot;&quot;
+
+found=0
+
+while [ $i -lt $len ]; do
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
+    if [ $? -ne 0 ]; then
+        found=1
+    fi
+    echo &quot;&quot;
+    let i++
+done
+
+exit $found
+</code></pre></noscript></div>
+</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
+    <link href="http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3/"/>
+    <updated>2013-10-29T12:32:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3</id>
+    <content type="html"><![CDATA[<p>I recently had to build a modern version of the <a href="http://ganglia.info">Ganglia</a>
+monitoring system for an <a href="http://www.openbsd.org/">OpenBSD</a> 4.3 firewall, which
+hadn’t been upgraded to a modern version of OpenBSD in quite some time. I
+documented the process, which I’m sharing here.</p>
+
+<p><div><script src='https://gist.github.com/7217488.js'></script>
+<noscript><pre><code># Build and install gmond on OpenBSD 4.3
+
+# Install prerequisites
+pkg add automake-1.9.6p2 autoconf-2.61p1 libtool libconfuse unzip wget
+
+# Compile and install apr-1.4
+wget -c http://mirrors.gigenet.com/apache/apr/apr-1.4.8.tar.gz
+tar zxvf apr-1.4.8.tar.gz
+cd apr-1.4.8
+./configure &amp;&amp; make &amp;&amp; make install
+cd ..
+
+# Download and install monitor-core
+wget -c https://github.com/ganglia/monitor-core/archive/master.zip -O master.zip --no-check-certificate
+unzip master.zip
+cd monitor-core-master
+export AUTOMAKE_VERSION=1.9
+export AUTOCONF_VERSION=2.61
+./bootstrap
+./configure --sysconfdir=/etc --without-gmetad --with-libapr=/usr/local/apr/bin/apr-1-config --with-libconfuse=/usr/local 
+
+# Need to patch some minor stuff...
+# libmetrics/openbsd/metrics.c:
+#   line 446:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 466:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 468 should be commented out.
+
+make all &amp;&amp; make install
+cd ..</code></pre></noscript></div>
+</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Expanding Ganglia RRD files]]></title>
+    <link href="http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files/"/>
+    <updated>2012-03-22T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2012/03/22/expanding-ganglia-rrd-files</id>
+    <content type="html"><![CDATA[<p>I figured this out trying to resize RRDs for Ganglia in a rrdcached-enabled environment, since expanding initial RRD parameters in gmetad doesn’t affect existing RRD files. Essentially you simply have to declare the RRA index and the expanded size, and this does the rest. rrdtool unfortunately doesn’t make it particularly easy to do this on a large scale, hence the scripting.</p>
+
+<p>One-liner to expand RRDs:</p>
+
+<pre><code>/etc/init.d/gmetad stop; /etc/init.d/rrdcached stop ; 
+  find . | grep rrd | while read X; do fix-rrd.sh "$X"; done ; 
+  /etc/init.d/rrdcached start ; /etc/init.d/gmetad restart
+</code></pre>
+
+<p><strong>fix-rrd.sh</strong>:</p>
+
+<pre><code>#!/bin/bash
+# fix-rrds.sh
+NEWRRDS="0:5856 1:20160 2:20160 3:52704 4:3740"
+for RRD in $*; do
+        echo -n "Processing $RRD ... "
+        for RRA in ${NEWRRDS}; do
+                A=$(echo $RRA | cut -d: -f1)
+                B=$(echo $RRA | cut -d: -f2)
+                echo -n "$RRA "
+                rrdtool resize "$RRD" $A GROW $B 
+                        mv resize.rrd "$RRD" &amp;#038;&amp;#038; 
+                        chown nobody "$RRD"
+        done
+        echo "done."
+done
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,2045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[/home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2014-08-25T11:00:08-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Modifying Computar 12.5mm C-mount lens for M4/3]]></title>
+    <link href="http://jbuchbinder.com/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/"/>
+    <updated>2014-08-14T15:21:30-04:00</updated>
+    <id>http://jbuchbinder.com/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3</id>
+    <content type="html"><![CDATA[<p>For whatever reason, there seems to be a serious dearth of information
+regarding lens modification on the C-mount Computar 12.5mm f/1.3 lens. I am
+going to share my experience modifying this lens, in the hope that it will
+prevent other people from having the same issues which I have encountered.</p>
+
+<p>As a quick disclaimer, you really should not blame me if you break your lens,
+or if it eats your children or animals. This either will or will not work for
+you. You have been warned.</p>
+
+<p>You will need:</p>
+
+<ul>
+  <li>File or dremel</li>
+  <li>Very small screwdriver (flathead)</li>
+  <li>C-mount to M4/3 adapter (I used the Fotoasy one)</li>
+</ul>
+
+<p>1) <strong>File down the edges of the back mount a little.</strong> I do not think that I
+   can stress “a little” enough. If you file this down too much, you will run
+   into the same issue I ran into, and will break the back metal piece of
+   your lens. I used a triangular file and edged it down to a nice smooth
+   surface.</p>
+
+<p>2) <strong>Unscrew the three screws at the base.</strong> This will remove the metal
+   back of the lens.</p>
+
+<p>3) <strong>Loosen the center column of the lens.</strong> You will see a small lens
+   assembly protruding from the back of the rest of the lens. Loosen it a
+   few turns. This is a trial-and-error thing, so be patient.</p>
+
+<p>4) <strong>Reattach the backing with the screws.</strong> The lens assembly should be
+   protruding further from the back of the C-mount to M4/3 adapter, when
+   attached.</p>
+
+<p>5) <strong>Attempt infinity focus.</strong> Attach to the camera, attempt focus.</p>
+
+<p>If infinity focus is not attainable by step 5, repeat steps 2-5 until it is.</p>
+
+<p>If you end up breaking or cracking the rear C-mount, you can permanently attach the lens to your C-mount to M4/3 adapter using some solder or hot-glue.</p>
+
+<p>Good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[DIY $7 Film Slate]]></title>
+    <link href="http://jbuchbinder.com/2014/06/10/diy-7-dollars-film-slate/"/>
+    <updated>2014-06-10T15:50:07-04:00</updated>
+    <id>http://jbuchbinder.com/2014/06/10/diy-7-dollars-film-slate</id>
+    <content type="html"><![CDATA[<p>I can’t claim credit for this one – my extremely talented and resourceful
+<a href="http://www.imdb.com/name/nm3895408/">production designer</a> got the idea to
+use an inexpensive slate “prop” and modify it slightly to allow the use of
+erasable whiteboard markers. These are usually a bit more than seven dollars,
+and we didn’t have the time to wait for one to arrive in the mail for the
+shoot in question.</p>
+
+<p>There are only two pieces of “hardware” which are required to make this,
+along with a few pieces of duct tape, a sharpie, a ruler, and whatever 
+whiteboard markers and erasers you are planning to use on the finished
+slate.</p>
+
+<p>You will need to buy these two items from a <a href="http://www.fivebelow.com/">Five Below</a> discount shop:</p>
+
+<ul>
+  <li>Slate Prop - $5</li>
+  <li><a href="http://www.fivebelow.com/8-5-x-11-neon-dry-erase-boards.html">8.5 x 11 Eraseable Whiteboard</a> - $2</li>
+</ul>
+
+<p><em>Apologies for not giving a product link for the slate prop – I had trouble finding it on the Five Below site. I assure you, it does exist…</em></p>
+
+<h2 id="assembly-instructions">Assembly Instructions</h2>
+
+<ol>
+  <li>
+    <p>Break the frame of the whiteboard, and remove the cardboard backing and
+the broken frame. You should now have a piece of unencumbered whiteboard.</p>
+  </li>
+  <li>
+    <p>Position the whiteboard over the slate prop’s useless slate writing. You
+can’t write on the slate with chalk, so it is pretty useless as-is.
+Center it as best you can, then use strips of duct or gaff tape to attach
+the whiteboard surface to the clapper.</p>
+  </li>
+  <li>
+    <p>Use the ruler as a straight-edge to draw sharpie lines to denote the
+different markable areas on your slate. In the best penmanship you can
+muster, label them with the sharpie.</p>
+  </li>
+</ol>
+
+<p>It is a pretty simple hack, but quite effective for giving your editor a bit
+of A/V sync assistance.</p>
+
+<p><img src="http://jbuchbinder.com/images/7-dollar-slate.jpg" title="'My production designer holding the finished slate'" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Boom!]]></title>
+    <link href="http://jbuchbinder.com/2014/05/12/boom/"/>
+    <updated>2014-05-12T08:44:19-04:00</updated>
+    <id>http://jbuchbinder.com/2014/05/12/boom</id>
+    <content type="html"><![CDATA[<p>There are quite a few guides, tutorials, videos, and other resources on how to
+capture usable boom audio. Most of these have a few usable sections with a
+bunch of fluff or useless information accompanying them. This is my attempt to
+compile a “quick guide” to capturing usable boom audio, assuming you don’t have
+a competent audio engineer in your employ (which I highly recommend). Audio is
+half of your deliverable product, as a cinematographer, so you should make sure
+that you capture the highest quality audio possible.</p>
+
+<h2 id="proximity-reflections-and-the-inverse-square-law">Proximity, Reflections, and the Inverse Square Law</h2>
+
+<p>Much like light, sound decreases exponentially as you move away from the source
+of the sound. One of the first things which you will realize when starting to
+capture audio is that it sounds increasingly awful as you move further away –
+which can be attributed to two things:</p>
+
+<ol>
+  <li>
+    <p><strong>As you move further away, relative volume decreases</strong>. The background
+sounds (“noise floor”, for anyone trying to be technical), consisting of both
+the present background noises and any noises introduced in the recording
+process, increase when you increase the sensitivity of your recording
+equipment. As the source sound becomes quieter, bringing sound up in post
+production will also increase that noise. <em>(If anyone says “just record some
+room tone”, ignore them; it won’t help you if your source recording is
+terrible, since that’s only a solution if you can gate and isolate the
+primary sounds in post.)</em> This is one of the compelling reasons why boom
+operators are utilized; they allow a recording to be made from closer to
+the source.</p>
+  </li>
+  <li>
+    <p><strong>Reflections</strong>. Light bounces off of everything, as we are taught, and we
+have to be careful to deal with those reflections, in terms of color,
+brightness, et cetera. Sound does the same thing. It bounces off of surfaces,
+but because sound travels slower than light, we <em>notice</em> when it takes a
+few milliseconds longer for sound to arrive at our recording device. Even
+more insidious, those reflections (which take on different properties and
+sounds based on the materials on which they are reflecting) can sound
+<em>louder</em> than the original sound – which will make your recording sound
+terrible. The closer you are in proximity to the source, the softer the
+reflections will be, in comparison to the original sound.</p>
+  </li>
+</ol>
+
+<h2 id="polarpickup-patterns">Polar/Pickup Patterns</h2>
+
+<p>Not all microphones, or even microphone <em>types</em> are created equal. They all have
+different “<a href="http://en.wikipedia.org/wiki/Microphone#Microphone_polar_patterns">polar patterns</a>”
+which describe the areas of sensitivity which the microphones use to pick up
+sound. When attempting to capture dialog, for example, an omnidirectional
+microphone would be a poor choice, as it picks up sound equally from all
+directions, taking away the ability to create greater isolation for the primary
+sound source. The most popular boom microphone type is the “shotgun” microphone,
+which has a very directed polar pattern, allowing specific isolation of the
+sound in question.</p>
+
+<h2 id="levels-peaking-and-limiting">Levels, Peaking, and Limiting</h2>
+
+<p>Getting the recording level <em>just right</em> is one of the more tricky parts of
+recording external boom audio. If the audio is too high, “peaking” will occur.
+Peaking is the phenomenon which can be heard when the top part of a sinusoidal
+wave (which naturally recorded sounds have) becomes squared when the top of the
+wave is clipped by hitting the top limit for recording signal. If the audio is
+too low, the signal-to-noise ratio will be too low, and bringing the signal up
+to a usable level will bring the sound floor up to an obscenely loud level –
+making gating nearly impossible to perform.</p>
+
+<p>To properly deal with this, you need to adjust the signal level so that the
+loudest sound comes in under 0 dB, which is where most recorders “peak”. If
+certain sounds surpass 0 dB, some audio recorders have the ability to apply a
+“limiter” effect, which will push the sound level back down to a usable value
+as it is recorded. It’s not a desired effect, but it can save you from
+clipping.</p>
+
+<p>As you’re adjusting audio levels, you’ll see a constantly fluctuating level of
+audio when no primary sound source is active. This is the “sound floor”, and
+should be as far away from the bulk of the primary sound levels as possible.</p>
+
+<h2 id="portable-recording-devices">Portable Recording Devices</h2>
+
+<p>I recommend avoiding the <a href="http://amzn.to/1jyOxm5">Tascam DR-40</a> unit unless
+you’re <em>positive</em> that you are using a balanced microphone. It tends to have a
+weird firmware issue which produces a
+<a href="http://www.dvxuser.com/V6/showthread.php?268124-Tascam-Dr-40-Buzz-Clicking-noise">strange clicking sound</a>
+(almost impossible to remove) every quarter of a second when presented with an
+unbalanced microphone. If you’re worried about this, go for the
+<a href="http://amzn.to/QAUvXD">Zoom H4n</a>. It’s a bit more expensive, but it seems to
+handle less expensive microphones in a more able fashion, as well as having
+signal limiting and a host of other interesting features.</p>
+
+<h2 id="compression-and-formats">Compression and Formats</h2>
+
+<p>Most digital recorder units will record, at a minimum MP3 and WAV formats. WAV
+is an uncompressed audio format, which means that it takes up more storage space
+than a compressed format, but retains all of the information captured (at the
+resolution captured). MP3 is a compressed format, using a psycho-acoustic model,
+which means that it drops pieces of information which it figures we aren’t going
+to be able to hear. MP3 files take up a smaller amount of space compared to
+the same resolution WAV files – but that comes at the cost of throwing some
+of the information out. MP3 @ 192kbps or above tends to have enough information
+for most uses.</p>
+
+<h2 id="equipment">Equipment</h2>
+
+<p>There’s no “correct” equipment which you need to purchase to be able to capture
+boom audio properly. There are, however, a few piece of equipment you’re
+probably going to need.</p>
+
+<ul>
+  <li><strong>Extendable Boom Pole</strong>. It’s tempting to go with a converted painters’
+pole, but trust me – it pays to go with a decent boom pole. This is mainly
+due to the additional noises which can be generated by swinging around a
+makeshift boom pole. I personally recommend the
+<a href="http://amzn.to/1l3TQaQ">On Stage MBP7000</a> boom pole for budget operators. It
+doesn’t have an internal mic cable, but it works very well.</li>
+  <li><strong>Microphone Cable (XLR)</strong>. This is an easy place to skimp for some people,
+but you don’t want to pick up outside noise, so make sure you go with a
+shielded XLR cable which is a few feet longer than the maximum size of your
+boom pole, fully extended.</li>
+  <li><strong>Clip / Shockmount / Zeppelin / Windscreen</strong>. You need something to isolate
+the microphone from the wind, vibration, and other distorting effects of
+the environment, which would distract from otherwise relatively clean
+audio. Shockmounts can be had for relatively little, as can windscreens.
+A zeppelin can cost a bundle, unless you make a DIY one – but they produce
+very clean-sounding results.</li>
+  <li><strong>Wire clips / wraps</strong>. Either some electrical tape (a cinematographer’s
+best friend, after gaffe tape), or some inexpensive bobble hair ties
+(available at most dollar stores) will allow you to keep the XLR cable
+near the pole – otherwise you may find it dropping into frame at the most
+inopportune times.</li>
+  <li><strong>Microphone</strong>. There is a great deal of conjecture over the “best” budget
+microphone to use. The most important things to consider are the polar
+pickup pattern, the signal-to-noise ratio, and the frequency response of
+any microphone you’re testing.</li>
+  <li><strong>Portable digital recorder</strong>. Covered in the portable recorder section.</li>
+  <li><strong>Headphones</strong>. A set of headphones, preferably full cup earphones, are
+essential to monitoring the sound for disturbances and/or interruptions.
+My favorite pair is the <a href="http://amzn.to/1qwuDgi">Sennheiser HD-280 PRO</a>,
+as they’re relatively inexpensive (under 100 USD), and produce a fairly
+accurate reproduction of live audio.</li>
+  <li><strong>Storage media</strong>. Make sure you don’t buy off-brand media cards. Try to
+stick with SanDisk and Lexar media, if you can. The trick is that these
+companies generally tend to QA their products a bit more rigorously than
+most off-brand manufacturers. This can make the difference between
+usable audio and a very upset director.</li>
+</ul>
+
+<h2 id="technique-and-directionality">Technique and Directionality</h2>
+
+<p>Rather than iterate all of the techniques involved in actually operating a
+boom mic rig, and keeping in mind that pictures are worth a thousand words…</p>
+
+<ul>
+  <li><a href="http://www.viddler.com/player/39021abf/0/">Boom Mic 101</a></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Audio is half of your deliverables – so make sure your boom operator knows how
+to deliver the best possible audio to your audio engineer for post production.
+Good luck!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[BMPC4K Workflow with Premiere and Resolve]]></title>
+    <link href="http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/"/>
+    <updated>2014-05-08T07:05:17-04:00</updated>
+    <id>http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve</id>
+    <content type="html"><![CDATA[<p>There are a number of “accepted” workflows for going between Adobe Premiere
+(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K
+footage. I am going to detail the workflow I have been using, which should
+be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
+
+<ol>
+  <li>
+    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98
+fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same
+thing as the “24P” frame rate we are used to.</p>
+  </li>
+  <li>
+    <p><strong>Load your media onto your workstation</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Create simple proxies</strong>. Using
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>,
+create “cheap” lower quality proxies encoded using the H.264 codec in
+Quicktime files. I have been experimenting with using the “.mpg”
+extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>,
+rather than the relatively dodgy external one, but the basic process
+is the same.</p>
+  </li>
+  <li>
+    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do
+not have to bother with any fancy transitions or effects yet – just
+perform a basic edit.</p>
+  </li>
+  <li>
+    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the
+File &gt; Export menu option.</p>
+  </li>
+  <li>
+    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project.
+Import the original files (not the proxies) into your media pool.</p>
+  </li>
+  <li>
+    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export,
+with “Automatically import source clips into pool” deselected. This last
+part is very important, as it forces Resolve to use the clips you already
+have in the Media Pool.</p>
+  </li>
+  <li>
+    <p><strong>Color Grade</strong>. Perform your color grade in Resolve.</p>
+  </li>
+  <li>
+    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose
+“Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options
+here to your liking.</p>
+  </li>
+  <li>
+    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in
+Premiere. This will bring in all of the graded footage.</p>
+  </li>
+  <li>
+    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or
+create your title cards, etc.</p>
+  </li>
+</ol>
+
+<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere
+workflow right now, and it may change.</em></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[48 Hours with the Blackmagic Production Camera 4K]]></title>
+    <link href="http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/"/>
+    <updated>2014-05-07T13:45:23-04:00</updated>
+    <id>http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k</id>
+    <content type="html"><![CDATA[<p>This year, my team (<a href="http://www.shootthemoonfilms.com">Shoot the Moon Films</a>),
+entered the 2014 <a href="http://48hourfilm.com/en/boston/">Boston 48 Hour Film Festival</a>
+for the first time. It’s an interesting experience, going from genre and
+parameters to fully formed script, to planning and preproduction, to
+shooting and execution, to editing, scoring, grading, and full post-production
+in a single weekend. I’ve learned a lot about working with the 
+<a href="http://www.blackmagicdesign.com/products/blackmagicproductioncamera4k">BMPC4K</a>
+camera in that time. I am going to iterate over some of the more important
+things that I learned over the weekend.</p>
+
+<h2 id="overheating">Overheating</h2>
+
+<p>This simply did not happen. I had heard some horror stories about the camera
+body breaking or overheating after long periods of filming, but even in 
+direct sunlight for significant periods of time, I did not find this to be
+the case. My EOS body used to overheat more than this one…</p>
+
+<h2 id="nd-filters">ND filters</h2>
+
+<p>My Tiffen 77VND was indispensible. If I didn’t have that single piece of
+equipment, every exterior shot would have been very, very different. I wanted
+a medium DOF and a standard shutter rate for my exterior shots – which meant
+that the sunlight had to be stopped down. The variable ND filter delivered
+perfectly.</p>
+
+<h2 id="evf">EVF</h2>
+
+<p>The Cineroid was a life-saver. I do not think I would have done as well
+without its superior focus-peaking, crop indications, etc. The only feature
+sorely missing from the EVF4CSS is waveforms/scopes, which would have been
+a bit more useful than eyeballing the full extent of the dynamic range.</p>
+
+<h2 id="v-mount-batteries">V-mount batteries</h2>
+
+<p>If you are not turning your camera off between takes, you are going to need
+more than one battery for a day-long shoot. Do <strong>NOT</strong> skimp on a V-mount
+battery charger. They take a very long time to trickle charge, so make sure
+you have a rapid charger. Also, spares. They may be expensive, but having to
+wait on a battery charging could blow a shoot.</p>
+
+<h2 id="audio">Audio</h2>
+
+<p>This is less a “thing” with the BMPC4K body, and more of a general observation.
+You cannot skimp on sound. You just <em>can’t</em>. You can always rely entirely on
+tight OTS shots and other closeups and use on-camera mics, but it shuts off
+an entire avenue of creative wider shots. A boom operator is <em>not</em> just your
+buddy holding a mic on a pole – they need to know what they are doing,
+otherwise you could be pushing very substandard audio into post-production.
+Especially on a tight time limit, this can make the difference between making
+a deadline, or having truly horrendous sound.</p>
+
+<p>Also, get a really competent audio engineer. Preferably a really anal-retentive
+one with an insane attention to detail. Even if you have perfect video, really
+crappy audio can break the illusion of your film. <strong>DO NOT SKIMP</strong>. SERIOUSLY.</p>
+
+<h2 id="that-pa-or-ad----you-need-them-more-than-you-think">That PA or AD – you need them more than you think</h2>
+
+<p>If someone is not taking copious shot notes, you are going to find yourself
+up at some ungodly hour, digging through footage for that shot that you
+<em>know</em> you got. Save yourself the trouble, and have someone taking care of
+all of that.</p>
+
+<h2 id="proxy-files">Proxy files</h2>
+
+<p>I used a new method of creating intermediate proxy files for editing, since
+Premiere was not very cooperative in directly loading the Prores files from
+the camera. <em>I made my code public in a project called
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>.</em> This
+little trick made sure that, instead of having to render all of my footage
+out at the Davinci Resolve speed of 3-6 fps (on my non-Red-Rocket workstation),
+I was able to render it to proxies at about full speed (which was about 24fps).
+Without this, I wouldn’t have been able to edit the footage without several
+footage drops during the day – if at all – during the limited timeframe I
+had to do so.</p>
+
+<h2 id="premiere-quicktime-support-on-windows-is-dog-food">Premiere Quicktime support on Windows is dog food</h2>
+
+<p>Something is wrong with it. I have no idea why, but the QT decoder decided
+to “give up the ghost” quite a few times during editing. There is supposedly
+a renaming hack, which allows the Premiere internal decoder to handle the
+files, but I was not privvy to this information during editing. I will update
+my documentation and/or author a post on this at some point in the near future,
+as it is <strong>VERY</strong> irritating.</p>
+
+<h2 id="too-many-cooks">Too many cooks</h2>
+
+<p>One person edits. Someone can <em>assist</em> them, but you need to have one editor, 
+who makes the decisions as to what goes into your final product. If you try
+to “edit by committee”, you may end up with a very tired and frustrated primary
+editor, and the possibility of some very incomprehensible footage.</p>
+
+<p>If your editor and director are not the same person, the director sits in
+with the editor to make decisions, where they need to be made. Ideally the
+script notes, etc, provide enough information to the editor to perform his
+job.</p>
+
+<p>Also, do not get caught up in reviewing dailies if you are taking part in a
+time-sensitive competition. This is a recipe for disaster.</p>
+
+<h2 id="coloring">Coloring</h2>
+
+<p>Even shooting with 10-bit ProRes 422 HQ, the advantage over H.264 DSLR
+footage is immediately apparent. There is a lot of latitude for coloring
+and correction, which would simply not be possible with the same level of
+output quality with H.264.</p>
+
+<p>I ended up performing a manual grading (as in, no LUTs or presets) for the
+project we did, and I am very satisfied with the end result.</p>
+
+<h2 id="grain">Grain</h2>
+
+<p>I love the “film grain” that the sensor on this camera produces. I am sure
+that I have mentioned it in earlier posts, but it really does give that
+organic film look to your output.</p>
+
+<h2 id="do-not-use-services-like-google-drive-for-your-deliverables">Do not use services like Google Drive for your deliverables</h2>
+
+<p>They tend to like to really hurt you in upstream speeds – only when you are
+on serious deadline. A better alternative for large media files is to set up
+<a href="http://www.bittorrent.com/sync">btsync</a> on both sides, and transfer with far
+more efficiency. You will be glad that you did it.</p>
+
+<h2 id="too-many-hats--sink-ships">Too many hats … sink ships?</h2>
+
+<p>There is serious temptation to wear more than one hat. Hell, we all wear more
+than one hat on most small sets. The issue comes when you end up wearing
+three or four (director, cinematographer, editor, colorist), and realize that
+you do not get to sleep until everything is “out the door”. Delegate. Find
+people who are good at this stuff, and let them do it. You do not have to be
+good at everything, just find people who are.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I had a good time – but I could have been less stressed out, if I had known
+some of this in advance.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CAME-06 Blackmagic Cage Review]]></title>
+    <link href="http://jbuchbinder.com/2014/03/18/came-06-blackmagic-cage-review/"/>
+    <updated>2014-03-18T21:52:29-04:00</updated>
+    <id>http://jbuchbinder.com/2014/03/18/came-06-blackmagic-cage-review</id>
+    <content type="html"><![CDATA[<p>As part of setting up the <a href="http://www.blackmagicdesign.com/products/blackmagicproductioncamera4k">Blackmagic Production Camera 4K</a>,
+I have been trying to put together a solid, fairly low-cost set of
+accessories for the camera body.</p>
+
+<p>I became aware of a low-cost Chinese cage for the BMCC/BMPC4K
+bodies manufactured by an outfit called
+“<a href="http://www.came-tv.com/">Xiamen Came Photographic Equipment Co., Ltd.</a>”,
+which are available sporting both top and bottom 15mm rail mounts, 
+along with the normal mounting options and handles present with
+most cage designs. The cage in question is available for
+<a href="http://www.came-tv.com/came06-bmcc-cage-for-blackmagic-design-cinema-camera-15mm-rail-p-477.html">$198, shipping included, from the manufacturer</a>.</p>
+
+<p><img src="http://jbuchbinder.com/images/came-06.jpg" width="289" height="400" title="&#34;CAME-06 Cage&#34;" alt="&#34;CAME-06 Cage&#34;" /></p>
+
+<p>My unit arrived today, via DHL, in a box which seemed almost
+Ikea-esque in its packing. First thing to note, which is not
+indicated either on the website or the packaging: “some assembly
+required”. Secondly – no instructions. Thankfully, the entire
+assembly procedure seemed pretty obvious with the provided
+Allen wrenches. I noticed that there is a 5/8” mount on the
+bottom of the unit (as well as a 1/4”-20 mount) for attaching to
+the fluid head or quick-release plate of your choosing. This wasn’t
+indicated on the website, but I had my suspicions, which were
+thankfully confirmed.</p>
+
+<p>The first major issue I encountered was the lack of four of the
+required screws for assembly. Undaunted, I took a quick trip to 
+the nearest “home improvement” store, and purchased four
+M4-.70 x 12 bolts with phillips heads (in packs of two), which
+worked like a charm.</p>
+
+<p>The second slightly annoying issue was that one of the included
+30cm 15mm rods was completely unthreaded, so it wouldn’t be
+possible to attach it to any other rods, should it need to be
+extended. The inclusion of the rods was a bit of a plus, so I
+can’t really be too upset about that.</p>
+
+<p>The build quality, once assembled, is quite good. The CAME-06
+cage is machined properly, and does not interfere with the
+operation of the BMPC4K unit at all, and has enough mount points
+to allow me to put handles, arms, and other accessories on it,
+which was the secondary purpose of purchasing the cage, after
+being able to properly mount the camera on a decent QR plate.</p>
+
+<p>Additionally, it has a set of Hirth joints on either side,
+ostensibly for attaching handle mounts. I have no use for them
+at the moment, but they seem to be workable.</p>
+
+<p>As the next step up in price is another 70$, and this unit
+arrived from China in less than four business days from my
+initial order, the annoyance of a $1.00 bolt purchase seems
+miniscule, considering the usability of the cage itself. It
+isn’t a full system, like the Tilta, Lanparte, and others,
+but can be built into a system incrementally.</p>
+
+<p>Verdict: Know what you’re getting yourself into. If you want
+a pre-assembled unit, next day shipping, and would rather pay
+more money for the lack of inconvenience, you should avoid the
+CAME-06. It’s a good deal for the price, however.</p>
+
+<p>Good luck!</p>
+
+<p><em>Postscript: The manufacturer offered to reimburse me for the
+missing screws within a day of me writing to them, so they do
+seem to be relatively responsive whenever there is a mixup.</em></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[First look at the Blackmagic Production Camera 4K]]></title>
+    <link href="http://jbuchbinder.com/2014/03/16/first-look-at-the-blackmagic-production-camera-4k/"/>
+    <updated>2014-03-16T11:17:25-04:00</updated>
+    <id>http://jbuchbinder.com/2014/03/16/first-look-at-the-blackmagic-production-camera-4k</id>
+    <content type="html"><![CDATA[<p>I was lucky enough to be one of the early people on the waiting list for
+<a href="http://www.blackmagicdesign.com/">Blackmagic Design</a>’s new 4K “Production
+Camera” body, which I received last week. It boasts a global shutter, Ultra
+4K resolution, ProRes/RAW recording at 1080p/4K resolutions, a super 35mm
+sensor, EF mount, and around 12 stops of dynamic range – among other
+features. I took it out for a test spin with a fellow cinematographer, just
+to see how far I could push the image.</p>
+
+<p>After a test run of “horror” shots with both a Canon EF IS lens and a
+manual Rokinon Cine lens, I’ve been learning about the benefits and caveats
+of the BMPC body. I’m going to enumerate some of those here.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<p><strong>Dynamic Range</strong>. This cooks the hell out of the H.264 image that I’ve been
+getting out of the 5D mark III. I can see a full gamut of sky color without losing my subjects – and that’s without additional or reflected light.</p>
+
+<p><strong>Cinematic Quality</strong>. This might have something to do with the depth of the
+image, or the amazing amount of data that the body is storing for each frame,
+but it is definitely capable of breathtaking quality. I haven’t seen any
+artifacts from the footage I’ve taken so far, at either HD or 4K resolution.</p>
+
+<p><strong>Metadata</strong>. The touch screen allows some metadata to be stored for each
+clip, including the name of the project, scene number, etc, and allows it to
+be edited on the camera body afterwards. It also has a numeric unique numbering
+system, with customizable body IDs, which beats the MVI_xxxx.MOV or
+MM1Axxxx.MOV scheme from Canon.</p>
+
+<p><strong>Resolve</strong>. The body comes with a <em>full</em> copy of DaVinci Resolve 10. The
+only way to truly appreciate it is to actually use it. It essentially puts
+Fast Color Corrector and Colorista to shame. The only downside is that it
+does take quite a bit longer to run than most of the plugin-based correction
+and grading tools, unless you’re willing to invest in either a Red Rocket
+card or a bunch of fairly powerful GPU units for your machine. Either way,
+it is well worth the time and effort to learn how to use it.</p>
+
+<p><strong>Baked in Zebras and Focus Peaking</strong>. This is less of a revelation for me,
+coming from using Magic Lantern, but users of stock Canon bodies don’t know
+what they’re missing. You can also acquire these via EVF features – but it
+can’t be a bad thing to have those features in the body, as well.</p>
+
+<p><strong>Crop Factor</strong>. It’s about the same crop factor as an APS-C crop, for you
+7D and Rebel users, so it’s only a big deal to acclimate if you’re coming
+from a full-frame body, like the 5D or 6D. The upshot is that you’re not
+going to have to blow a lot of money on extremely wide glass, as would be
+required by the BMPCC.</p>
+
+<p><strong>Global Shutter</strong>. If you have a lot of fast motion or quick pans, the lack
+of the “jello” effect from rolling shutter is very, very noticeable. This is
+one of the prime reasons I purchased this body – and it works as well as
+promised.</p>
+
+<p><strong>RAW and ProRes</strong>. (Yes, I know “RAW” isn’t an acronym – I just like it enough to shout it…) No firmware hacks, no playing around, you get ProRes
+and RAW footage out of this camera body. As of the time of writing, RAW has
+been disabled in the firmware, but I’m expecting an update “any day now”
+which will re-enable it. This makes me think twice about having usde H.264
+as a codec for so long. And the logarithmic data collection means that all
+of that nice dynamic range is intact through the coloring process, so you’re
+not losing out there.</p>
+
+<p><strong>EF Mount</strong>. This is a big deal for me, as it keeps me from having to rebuy
+all of my glass. All of my M42, EF, and Nikon mount glass will be fine with
+this. And as an added bonus, the FD mount glass I have (using the Lens
+Doctor EF-FD mount adapter) works fine, and without the vignette I have on
+the full-frame sensor.</p>
+
+<h2 id="caveats">Caveats</h2>
+
+<p><strong>Mounting</strong>. The standard 1/4” mount on the bottom of the camera is more
+or less useless; the mount plates either shift or scratch the bottom of the
+camera – so I ended up using the aluminum handles for my tests. They’re not
+particularly useful, considering the weighting of the camera, so I’m waiting
+for a cage to arrive. I only considered cages with upper and lower 15mm
+rod mounts (for options, of course). These are the ones I found to be the
+best choices:</p>
+
+<ul>
+  <li><a href="http://www.came-tv.com/came06-bmcc-cage-for-blackmagic-design-cinema-camera-15mm-rail-p-477.html">CAME-06 BMCC Cage</a> - $198 -
+The cheapest of the non-ePhoto bunch. It’s just a cage with two 30cm
+15mm rods included, so you have to kit the rest of it out, but it’s
+potentially the best deal, considering the price jump to the
+Wooden Camera or Tilta rigs.</li>
+  <li><a href="http://www.ginirigs-usa.com/bmcc-rigs-and-cages/207-the-bmcc-box-cage.html">Gini Box Cage for BMPC</a> - $269 -
+This is a slightly more well-known version of the CAME-06. I don’t know
+the difference in build quality, but you’re getting similar type kitting.</li>
+  <li><a href="http://amzn.to/NkeVCv">Wooden Camera Base Kit</a> - $939 -
+A well designed, modular kit. Expensive, but potentially worth it.</li>
+  <li><a href="http://amzn.to/1lGfAud">Tilta TT-BMC-05</a> - $1570 -
+Not necessarily the most affordable, but very well designed. Expect to
+pay a hefty markup for their branded accessories. Note that this is an
+<em>entire</em> rig, rather than just a base kit, so the extra money is probably
+worth it, if you have it.</li>
+</ul>
+
+<p><strong>Glossy Screen</strong>. The screen is <em>very</em> reflective. I completely understand
+the virtual need for an EVF, otherwise you’re in daguerreotype shade cloth
+territory. Because it has SDI outputs, rather than HDMI, it’s probably a
+good idea to go with one of the SDI EVFs. Unfortunately, they’re not cheap.
+You more or less have the pick of these:</p>
+
+<ul>
+  <li><del><a href="http://www.bhphotovideo.com/c/product/827800-REG/Cineroid_EVF4MSS_EVF_Metal_with_HD_SDI.html">Cineroid EVF4MSS</a> - $699 - 
+The least expensive of the set.</del></li>
+  <li><a href="http://www.bhphotovideo.com/c/product/982065-REG/cineroid_evf4css_electronic_viewfinder.html">Cineroid EVF4CSS</a> - $599 -
+I realized that you can’t really use the EVF4MSS, despite its metal
+materials, because it only supports up to 1080i, whereas the BMPC4k
+requires 1080p.</li>
+  <li><a href="http://www.bhphotovideo.com/c/product/894123-REG/Cineroid_EVF4RVW_with_Retina_Display.html">Cineroid EVF4RVW</a> - $995 -
+Retina display version of the EVF4CSS. Higher resolution, higher price.</li>
+  <li><a href="http://www.bhphotovideo.com/c/product/852192-REG/Alphatron_Broadcast_Electronics_EVF_035W_3G_EVF_035W_3G_Electronic_View_Finder.html">Alphatron EVF-035W-3G</a> - $1395 -
+The most expensive, but also most highly reviewed SDI EVF. Shane Hurlbut,
+A.S.C., endorsed this particular EVF for use with the BMPC body.</li>
+</ul>
+
+<p>Otherwise, you’re in the market for both an EVF and an HDMI-to-SDI converter,
+which will tack on an addition few hundred dollars. The temporary budget
+solution, in my case, is to use a cloth until the EVF arrives …</p>
+
+<p><strong>Battery Life</strong>. The internal battery isn’t supposed to provide much shoot
+time ; virtually everyone using the camera has pointed out that it’s meant
+to be a sort of “buffer” between battery changes with an external battery.
+I bought a <a href="http://amzn.to/1m9XDal">Switronix PB-70</a> for the body, which
+sports a RED-style <a href="http://www.red.com/store/products/accessory-v-mount">V-mount</a>,
+as well as a traditional 1/4”-20 mount. It can power the camera alone for
+at least four hours, and can additionally power other devices, like EVFs,
+HDMI-SDI converters, monitors, follow focus devices, et cetera, by the
+extensible power connectors. I have to buy an extra one, so I can have one
+charging and one plugged in, but it seems to be a decent solution.</p>
+
+<p>Additionally, it helps to have the battery mounted on the camera assembly,
+otherwise it is moderately unweildy. The cheapest mounting solution for
+15mm rods I found was the <a href="http://amzn.to/1m9YGao">Ikan BMC-PBK-1-S</a> mount,
+which has a small distribution center built into it. It’s slightly redundant,
+as the adapter that came with the PB-70 isn’t used, but for the money, it’s
+a good buy. It may make sense to buy the slightly more expensive
+<a href="http://amzn.to/1hcVO4P">Lanparte plate</a>, which has a number of additional
+power outputs.</p>
+
+<p><strong>The Sun</strong>. Besides the glossy screen, the sun tends to blow out the fairly
+sensitive BMPC4k sensor. The solution is to use ND filters to reduce the
+amount of light coming into the sensor. You might be tempted to increase the
+f-stop, but you’ll also be increasing the depth of field to be more
+un-cinematic, so the ND filter is a must-have if you find yourself shooting in 
+the direct sun, and don’t want to start using high shutter speeds. The
+downside is going to come in the “price” category; if you buy cheap ND filters,
+it will destroy the quality of the image, so you’re best off sticking with
+Tiffen or other brand-name high quality filters. They don’t come particularly
+cheap, however.</p>
+
+<p>My recommendation to get started would be the 
+<a href="http://amzn.to/1qINli9">Tiffen 77VND</a> 77mm variable neutral density
+filter. It handles most of the reduction you’ll need, and at about $150, it’s
+far less expensive than a set of 4x4 filter glass.</p>
+
+<h2 id="overall">Overall</h2>
+
+<p>I’m glad I didn’t wait for the Panasonic GH4. I know that’s going to come
+off as a little odd, but for the smaller sensor, M4/3 mount and its relatively
+insane crop factor, expensive add-on cinema kit, even <em>odder</em> form factor,
+H.264 codec, limited dynamic range, and rolling shutter – I feel that the
+BMPC4k body is going to do just fine. After all, no camera body makes you
+film better, or makes you a better cinematographer. All it can do is allow
+you the ability to increase your output quality – if you work for it.</p>
+
+<p><em>NOTE: I haven’t posted any video clips yet due to the stabilization issues
+I had encountered using the handles alone. I may update the post to include
+some stills and short clips with the IS lens.</em></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Lens Selection for Cinematography]]></title>
+    <link href="http://jbuchbinder.com/2013/12/21/lens-selection-for-cinematography/"/>
+    <updated>2013-12-21T19:48:18-05:00</updated>
+    <id>http://jbuchbinder.com/2013/12/21/lens-selection-for-cinematography</id>
+    <content type="html"><![CDATA[<p>The lens of your camera is arguably one of the most important parts of the
+camera ; it has the job of controlling light, adjusting focus (and focal
+length in variable focal length lenses), controlling depth-of-field
+through the aperture, and adding character to the shots you have lovingly
+framed. <em>(It should be noted that the sensor of a digital video camera
+body is also very important, in terms of sensitivity, resolution, size,
+and other factors, but it is out of the scope of this article.)</em></p>
+
+<p>There are quite a few factors to consider when choosing the lens you will
+use for a shot, as well as the lenses you will pack for a shoot. Do you
+pack one or two variable focal-length lenses, or do you pack a series of
+strategic length prime lenses? Do you stay with your native lens mount?
+Do you use vintage lenses? Do you need super-fast lenses?</p>
+
+<p>As of the writing of this, I’ve been known to primarily use three or four
+prime lenses (24mm, 35mm, 50mm, and 85mm), while packing a 105mm or 135mm
+with a set of extension tubes for extreme macro usage. This setup will
+<strong>not</strong> work for everyone, as I will explain.</p>
+
+<h2 id="lens-mount">Lens Mount</h2>
+
+<p>There are several types of lens mounts, and depending on the type of camera
+body you use, one (or two) will be a “native” mount. For example, if you
+shoot using a Canon EOS camera (T3i, 7D, 5D mk3, C100, etc), you will most
+likely be using primarily EF mount lenses (and/or EF-S lenses if you aren’t
+shooting with a full-frame sensor). These native lenses have the advantage
+of having auto-focus / focus-confirmation electronics, as well as being able
+to mount with no additional hardware required. Auto-focus isn’t really an
+issue with cinematography, and focus-confirmation isn’t a <em>huge</em> advantage,
+especially if your camera has focus peaking – but these lenses were
+<em>designed</em> to work with your camera body.</p>
+
+<p>Other lens mounts can be accommodated with adapter rings, which can usually
+be purchased for varying amounts from online retailers. I have a few
+M42 adapter rings for using old Pentax screw-mount lenses with the EF mount
+on my camera, and they work flawlessly for me. Some of the more expensive
+ones even have focus confirmation capabilities.</p>
+
+<p>Photographers might give some pause to the idea of not having focus
+confirmation or auto focus, but cinematographers should be fine with it.
+Lens mount should only factor into your decision to use a lens by whether
+or not you have the appropriate adapter ring configuration to use that
+lens, in my opinion.</p>
+
+<h2 id="prime-or-variable-focal-length-zoom">Prime or Variable Focal Length (Zoom)</h2>
+
+<p>A great deal of the answer to this question depends on the primary type
+of cinematography in which you tend to engage. A variable focal length
+lens is essentially a single lens which offers an “infinite number of
+focal lengths between its two bounds”, but there are other factors to be
+considered when using one. For example, many lower-cost variable focal
+length lenses will tend to have variable maximum apertures, depending on
+the target focal length.</p>
+
+<p>If you’re engaged in documentary cinematography or non-planned shoots
+(such as many modern “web series” shoots), you may want to stick with
+the widest range of variable focal length lens you can accommodate. A
+24-70mm lens will usually handle most shots which would be required by
+those mediums, and will mostly eliminate the hassle of changing lenses
+during critical (and possibly situationally-limited) shoot times.</p>
+
+<p>A serious trade-off is that most variable focal length lenses are not
+“fast” (i.e. do not have a very low f-stop number for their maximum
+aperture size), and therefore tend to require more light. The faster
+lenses among that class tend to increase in cost greatly.</p>
+
+<p>Prime lenses usually do one thing, and try to do it very well. They
+range down (and below) f/1.2, and are far more cost effective for a
+single focal length. If you have the time to change lenses in between
+shots, and tend away from smash zooms (which I tend to find are a bit
+over-used) and dolly/zoom combination shots, you might want to tend
+towards a collection of primes.</p>
+
+<h2 id="how-fast-is-fast">How fast is fast?</h2>
+
+<p>The majority of consumer-grade lenses tend to have smaller maximum aperture
+sizes than f/2.8, but there are a fair number of inexpensive primes which
+can be had with an f/2.8 maximum aperture size, and relatively inexpensive
+(compared to some) lenses can be had down to f/1.4 or so, depending on the
+relative concessions you’re willing to make regarding the lens quality,
+mount, manufacturer, et cetera.</p>
+
+<p>As the aperture size increases, the depth of field decreases in size, but
+the amount of light hitting the sensor increases. Low light cinematography
+has historically relied on “fast” lenses rather than increased sensor
+sensitivity, primarily due to the increasing role that sensor “noise” 
+plays at high ISO levels. This tradeoff means that you may have to decide
+whether depth of field or light sensitivity will be the primary determining
+factor in the maximum aperture rating of the lenses you’re using.</p>
+
+<p><em>NOTE: Another thing to note is that lenses tend not to be their sharpest
+or best when fully open, so you may have to shoot slightly further shut
+than the maximum aperture rating.</em></p>
+
+<h2 id="vintage-lenses">Vintage Lenses</h2>
+
+<p>Some cinematographers (and photographers) will <em>swear</em> by vintage glass.
+Optics from lenses like old Carl Zeiss lenses are still amazing, and some
+of these lenses are sold for less than the comparable modern lenses for
+them. It can be a potentially <em>expensive</em> habit, however, since
+cinematographers have been driving up the cost of purchasing these lenses,
+as their lack of focus controls is far less bothersome than it would be
+to photographers.</p>
+
+<p>If you can purchase vintage lenses (or happen upon a cache of them), it’s
+something to seriously consider. They have their own character, and when
+used thoughtfully, can add much to your footage.</p>
+
+<h2 id="focal-length">Focal length</h2>
+
+<p><em>NOTE: If you’re going with variable focal length lenses exclusively, 
+you may be able to safely skip this section. It deals mostly with the
+reasoning behind using certain focal length lenses.</em></p>
+
+<p>Selection of focal length depends on a number of factors. Entire chapters,
+and even whole <em>books</em> have been written about selecting focal lengths
+for cinematography and photography. A great deal of it has to do with
+the type of shot you are working with, as well as the framing, etc. I’m
+going to hit some of the considerations, but I suggest further reading.</p>
+
+<p>When considering focal lengths on cameras, I tend to consider them using
+the standard of a “full frame” sensor, since my camera has one. This means
+that the written focal length of a lens corresponds directly to the
+<em>effective</em> focal length of that lens. A larger “crop factor” (which is
+the case for smaller sensor sizes, like the Canon APS-C sensor and the
+Micro 4/3 sensors) means that a lens’s effective focal length is longer
+for those sensors. You can figure out the effective focal length by
+multiplying the stated focal length by the crop factor. For example,
+an APS-C crop factor is 1.5x, so a 35mm lens would have an effective
+focal length of 52.5mm, and a 50mm lens would have an effective focal
+length of 75mm.</p>
+
+<p>“Wide angle” shots, which are usually used for establishing shots in
+cinema, generally tend to rely on very “wide” lenses, which are lenses
+with short focal lengths. As you move further away from 35mm effective
+focal length, the field of view present in your frame increases, which
+increases geometric distortion towards the edges of the frame. This has
+been referred to as a “fish eye” effect, when present in more than
+moderate amounts.</p>
+
+<p>As an aside, I have seen cinematographers use extremely wide lenses
+(18mm and shorter) to shoot closeup shots of actors and actresses in
+tight quarters – and I must warn against it, unless you are 
+<strong>acutely aware</strong> of the geometric distortion which you are introducing
+into the frame. This has very unpleasant effects on the faces of actors
+when used for close shots, and I know few actors who take kindly to being
+represented in a grossly distorted manner.</p>
+
+<p>A 50mm effective focal length is essentially what your eye sees; at least,
+that’s the way I’ve come to think of it. It’s a very neutral lens to use
+for most shots. I recommend that this length be a standard part of any
+lens kit you’re putting together.</p>
+
+<p>50mm lenses have been popular with the Canon DSLR cinematography crowd,
+primarily due to the inexpensive nature of the “nifty fifty”, a 50mm
+f/1.8 prime which clocks in at a little over 100 USD new. Its optics aren’t
+that fantastic, but its point of entry is so low in the cost department
+that many people will own one. If you do, consider buying an f/1.4 version
+of the same lens (or the f/1.2 L, if you’re successful, or have some sort
+of trust fund laying around), as the optical and build quality is far
+superior to the 50mm f/1.8 lens. It’s a “midway” focal length, but very
+usable for a variety of shots.</p>
+
+<p>Greater than 50mm effective focal lengh lenses are considered “long”
+lenses. They tend to “compress” the space they capture, much as wide angle
+lenses tend to expand and distort it. One must be careful with using long
+lenses for handheld and steadicam work, as camera shake tends to be
+magnified with longer lenses. </p>
+
+<p>Long lenses can also be used for closeup and extreme closeup shots by using
+“extension tubes” – what my brother used to refer to as “expensive air”.
+They increase the amount of light required, and are not as easy or compact
+as most macro lenses, but they’re relatively cheap, and cut down on the
+number of lenses you have to carry.</p>
+
+<h2 id="what-the-hell-is-a-bokeh">What the hell is a “bokeh”?</h2>
+
+<p>The term “bokeh” is a recent addition to the vocabulary of the photographer
+and cinematographer ; it simply refers to the blur produced by out of
+focus objects, particularly lights, by a lens. It is determined largely by
+the quality of the optics of the lens, as well as the number of blades in
+the lens’s aperture. Higher blade counts generally produce more “pleasing”
+bokeh, approaching the cinematic standard of almost circular light blur.</p>
+
+<h2 id="you-havent-told-me-which-lenses">You haven’t told me which lenses!</h2>
+
+<p>This isn’t intended to dictate which lenses a cinematographer <em>must</em> carry,
+nor push certain choices over others, but merely to attempt to educate
+about sensible lens selection.</p>
+
+<p>Consider buying a Pelican case, or other shock resistant case, for travelling
+to shoots. If you’re carrying a lot of glass, you can’t afford to deal
+with the downtime of a broken lens.</p>
+
+<p>There are a huge number of lenses, both modern and “ancient”, and you can
+equip yourself with any variety of lenses, depending on your particular
+idiom and shooting style. Don’t fall into the trap of assuming that lens
+selection is unnecessary, or that everything should be shot with a single
+lens ; it’s just another aspect of cinematic creativity. Good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dynamic range]]></title>
+    <link href="http://jbuchbinder.com/2013/11/28/dynamic-range/"/>
+    <updated>2013-11-28T11:08:17-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/28/dynamic-range</id>
+    <content type="html"><![CDATA[<p>As a photographer or cinematographer, I’m sure you’ve come into contact with
+limitations in <a href="http://en.wikipedia.org/wiki/Dynamic_range">dynamic range</a>.
+I have run into limitations with dynamic range in both the visual and audio
+field, since anything that involves “real world” signals is going to 
+potentially run up against the ability of the digital mediums on which we
+rely to properly store the entire gamut of available analog data that we are
+able to perceive with our eyes and ears. To combat the loss of data, computer
+scientists and electrical engineers developed the process of dynamic range
+compression, which is usually referred to as simple “compression”. This
+reduces the gamut of presented information to a digitally representable
+format. There is, however, something which is lost – and that is the
+original dynamic range ; the amount of variance between the strongest and
+weakest signal. In small doses, or when done with finesse, this provides the
+ability to produce better sounding and better looking content in the digital
+realm. When overused, we see results like the <a href="http://en.wikipedia.org/wiki/Loudness_war">loudness war</a>.</p>
+
+<p>I like to explore the more figurative aspects of many technical concepts, to 
+which most avid readers of my work would attest. In that vein of ideas, consider
+the derivative concept of dynamics as a function of cinematic tension/resolution
+and feeling.</p>
+
+<p>Much like a written work, cinematic works generally tend to follow a
+“<a href="http://www.dailywritingtips.com/how-to-structure-a-story-the-eight-point-arc/">plot/story arc</a>”,
+which have a number of basic stages, even if the presentation, order, and
+presence will vary between works. As cinematographers, one of our jobs is to
+attempt to portray the basic plot elements, character interactions, and other
+potentially metaphysical aspects of the story through the lensing, lighting,
+focal points, composition, and method of stabilization and capture we use.
+<em>(I’m aware that there are other control points, but forgive me my omissions
+for the sake of some semblence of brevity.)</em> For example, for a more
+“cinéma vérité” style for a combat or heavy action sequence, a filmmaker could
+choose to shoot with less stabilization, looser composition, and less staged
+lighting, which would present the audience with the perception that the scene
+is far closer to the work of a documentarian than a staged film scene. In
+<a href="http://www.imdb.com/title/tt0120815/">Saving Private Ryan</a>, for example, the
+battle scenes have a decreased exposure time, resulting in action appearing
+far more caustic and (what we believe is) more realistic. This allows the
+relative dynamics of the scenes in question to be raised to allow far more
+tension and action to be shown, through simple camera work.</p>
+
+<p>The issue with techniques like this begin to manifest themselves when they
+begin to flatten the dynamic of a film work through rampant and flagrant
+overuse. At some point, cinematographers realized that they could shoot
+<em>entire films</em> with these techniques, ostensibly to raise those tension and
+action levels to that same high. By doing this, they have effectively
+flattened the dynamic range of their works, producing an effectively and
+uniformly “loud” work. The questions that you might be asking are “why is this
+a bad thing, and why should I care?”</p>
+
+<p>We view things as deltas, or differences. We understand happiness because we
+understand sadness, heat because we experience cold, and comfort and
+companionship because we can contrast it with loneliness. If the range we are
+give to deal with is only the “best parts”, we begin to lose our ability to
+appreciate it, and all of those things which should have made it special and
+artistic become mere convention. Think about it – if everyone screamed
+everything at the same volume, rather than having varying levels of emphasis
+and volume, wouldn’t that screaming have lost its impact and importance?</p>
+
+<p>Every technique that you have as a cinematographer or photographer is another
+potential tool in your figurative tool box; but just because you have them
+doesn’t mean that you have to use one particular one <em>all the time</em>. Handheld
+camerawork has its place, and even though modern technology has provided many
+methods of stabilizing camera and lens motion, from the steadicam to image
+stabilization/vibration reduction lens to three point shoulder rigs, we still
+find many cinematographers intentionally introducing shake into their
+footage. I wrote an <a href="http://jbuchbinder.com/2013/06/03/stabilization/">entire essay</a> 
+on the importance of stabilization, so I won’t reiterate my grievances here.</p>
+
+<p>It’s important to understand why you’re doing something rather than
+simply doing it for convenience or convention. If you’re using a wide open
+aperture, are you doing it because you’re having lighting issues, or simply
+because you think that everything should be shot with the thinnest DOF
+possible? Is there some sort of artistic reason why you chose to shoot with
+a 24mm vs a 35mm lens for a particular shot? Are you using a tripod-based
+shot rather than a steadicam for a reason? Asking questions and analyzing
+your own work, as well as the work of others, is key to artistic growth, as
+well as understanding how to use your skillset as a photographer or
+cinematographer.</p>
+
+<p>I am, by no means, at the top of the skill grouping for photography <em>or</em>
+cinematography. Many of the entries I have authored here are products of
+making mistakes, and they are the attempt I am making to keep others from
+having to make some of the very same mistakes I have made. Even films and
+other work which we don’t particularly like as a whole may have a few 
+setups or shots which provide food for thought. So, watch those films with
+a critical eye, and hopefully we can all expand our “toolboxes”, as well
+as learn how to use them in a more effective manner. Good luck!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Signal to noise ratio]]></title>
+    <link href="http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio/"/>
+    <updated>2013-11-19T15:06:51-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/19/signal-to-noise-ratio</id>
+    <content type="html"><![CDATA[<p>To quote the venerable Wikipedia:</p>
+
+<blockquote>
+  <p>Signal-to-noise ratio (often abbreviated SNR or S/N) is a measure used in science and engineering that compares the level of a desired signal to the level of background noise.</p>
+</blockquote>
+
+<p>This has a number of applications in engineering, but it also nicely
+encapsulates a basic truth of dealing with equipment, people, and works –
+there is always a certain amount of background noise. (For more information
+on the concept, check out <a href="http://en.wikipedia.org/wiki/Signal-to-noise_ratio">this article</a>.)</p>
+
+<p>In an ideal world, all equipment would be flawless and noiseless, everyone
+would be wonderful at what they do, and all works would be exceptional 
+<em>(don’t mind the inherent logical issue in the statement “all works would be
+exceptional”; I was trying to make a point, so please forgive me my
+linguistic foibles)</em>. As it so happens, due to a fun little thing called the
+<a href="http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Krueger Effect</a>,
+we tend to assume that our works are better than they actual are, until we
+reach a particular skill level, at which point we start underestimating our
+own skill levels. Succinctly put, we’re all terrible at figuring out how good
+or bad we are at any particular skill.</p>
+
+<p>This is a real pickle, especially when dealing with other people. With very
+few exceptions, we’re going to end up working with other people. This is more
+applicable in cinematography than in photography, since there are usually more
+people involved with a film production than with a still photo shoot (although
+I’m sure there are plenty of instances which would prove me wrong in that
+aspect). </p>
+
+<p><em>I’m going to restrict my examples to cinematography projects, to keep
+this a bit more manageable and readable.</em></p>
+
+<p>First, look at your potential crew. If you’re dealing with a low-budget indie
+shoot, which most of us are, you are either not paying your crew or are paying
+them very little money. You’ve already eliminated the possibility of a great
+number of highly experienced, educated, and trained people being involved,
+simply by eliminating the carrot of a serious payday. It could be additionally
+argued that those who do work for a living are not necessarily <em>great</em> at
+what they do, but that’s a little tangential to the core of the argument.
+Out of those people, you’re generally going to tend to see the talent curve
+follow the infamous <a href="http://mathworld.wolfram.com/NormalDistribution.html">standard/normal distribution curve</a>.
+This means some will be utterly atrocious, some will be genius, and the
+vast majority will lie somewhere between those two points. The outliers and
+bounds will depend on the sample size, but the general concept tends to be
+the same, which is that most people are not going to possess genius-level
+skills in the vast majority of a sample set.</p>
+
+<p>Second, look at your potential actors/on-screen talent. You’re in the same
+boat as you were with the crew – except that a single truly terrible actor
+will destroy the illusion you’re trying to create, so you have to hope that
+your lower bound is pretty high, otherwise your end product will most likely
+suffer. (It should also be said that a really great director has been known
+to coax amazing performances out of lackluster talent, but we can’t all be
+Stanley Kubrick, Darren Aronofsky, or P.T. Anderson…)</p>
+
+<p>So, what are we to do? We need to start acknowledging that not everything
+we’re going to make is going to be the best thing <strong>ever</strong>. It’s an anathema
+to the general self-aggrandizing L.A. film culture, but we have to respect
+the normal distribution curve – most films will be mediocre, some will be
+agonizingly bad, and some will be amazing. The DKE means we’ll always think
+that they’re all amazingly wonderful, but we need to be far more critical of
+our own works ; at least, if we want to try to produce high-quality output.</p>
+
+<p>We also need to understand that there’s a place for our hubris, as well as
+our humility. We cannot grow as filmmakers, photographers, artists, or as
+people, until we both appreciate the skill-set we have, while at the same
+time understanding the limits of what we have accomplished right now, and
+always striving to produce better, become better, and encourage better. We
+can’t all be the <strong>best</strong>, but we can all become <strong>better</strong>.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Checking for deprecated Wordpress functions]]></title>
+    <link href="http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions/"/>
+    <updated>2013-11-13T15:29:00-05:00</updated>
+    <id>http://jbuchbinder.com/2013/11/13/checking-for-deprecated-wordpress-functions</id>
+    <content type="html"><![CDATA[<p>One of the major pains involved in Wordpress development and work (and one
+of the reasons why this isn’t hosted on Wordpress anymore) is that of their
+quickly changing API.</p>
+
+<p>I’ve encountered issues where plugins have suddenly (and quietly) stopped
+functioning, due to a deprecated function call being removed from the
+Wordpress API. I’m sharing my “solution” to this issue, which is a script
+(which can be integrated into a CI system), which scans your plugin and/or
+theme code and gives you a list of the deprecated functions you’re using,
+as well as where they exist in your code.</p>
+
+<div><script src="https://gist.github.com/7419000.js"></script>
+<noscript><pre><code>#!/bin/bash
+#
+# Wordpress Deprecated function checker
+#
+# Version: 0.2
+#
+# Author: Michiel Roos &lt;michiel@donationbasedhosting.org&gt;
+#         Jeff Buchbinder (https://github.com/jbuchbinder)
+# 
+# www.php.net/manual/en/migration53.deprecated.php
+#
+# Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
+#
+# Jeff's notes:
+#
+# *) This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
+#    functions are found, which should allow easy integration into CI systems.
+# *) This was adapted from a deprecated function checker to allow Wordpress
+#    specific pre-upgrade checks.
+
+tag=$1
+
+if [ &quot;$tag&quot; == &quot;&quot; ]; then
+    echo &quot;Wordpress version must be specified.&quot;
+    exit 1
+fi
+
+whereami=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot;; pwd )&quot;
+
+function dfunctions() {
+    tag=$1
+    
+    # Derived from the list at http://codex.wordpress.org/Category:Deprecated_Functions
+    # (Use Coral Cache to cut down on Wordpress TRAC load.)
+    deprecated_sources=(
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/pluggable-deprecated.ph?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/ms-deprecated.php?format=txt
+    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/ms-deprecated.php?format=txt
+    )
+    
+    for s in ${deprecated_sources}; do
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+    done
+}
+deprecatedFunctions=(
+    $( dfunctions ${tag} )
+)
+
+len=${#deprecatedFunctions[*]}
+i=0
+
+echo &quot;Checking for deprectated functions ______________________________________&quot;
+echo &quot;&quot;
+
+found=0
+
+while [ $i -lt $len ]; do
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
+    if [ $? -ne 0 ]; then
+        found=1
+    fi
+    echo &quot;&quot;
+    let i++
+done
+
+exit $found
+</code></pre></noscript></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building Ganglia for OpenBSD 4.3]]></title>
+    <link href="http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3/"/>
+    <updated>2013-10-29T12:32:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/29/building-ganglia-for-openbsd-4-dot-3</id>
+    <content type="html"><![CDATA[<p>I recently had to build a modern version of the <a href="http://ganglia.info">Ganglia</a>
+monitoring system for an <a href="http://www.openbsd.org/">OpenBSD</a> 4.3 firewall, which
+hadn’t been upgraded to a modern version of OpenBSD in quite some time. I
+documented the process, which I’m sharing here.</p>
+
+<div><script src="https://gist.github.com/7217488.js"></script>
+<noscript><pre><code># Build and install gmond on OpenBSD 4.3
+
+# Install prerequisites
+pkg add automake-1.9.6p2 autoconf-2.61p1 libtool libconfuse unzip wget
+
+# Compile and install apr-1.4
+wget -c http://mirrors.gigenet.com/apache/apr/apr-1.4.8.tar.gz
+tar zxvf apr-1.4.8.tar.gz
+cd apr-1.4.8
+./configure &amp;&amp; make &amp;&amp; make install
+cd ..
+
+# Download and install monitor-core
+wget -c https://github.com/ganglia/monitor-core/archive/master.zip -O master.zip --no-check-certificate
+unzip master.zip
+cd monitor-core-master
+export AUTOMAKE_VERSION=1.9
+export AUTOCONF_VERSION=2.61
+./bootstrap
+./configure --sysconfdir=/etc --without-gmetad --with-libapr=/usr/local/apr/bin/apr-1-config --with-libconfuse=/usr/local 
+
+# Need to patch some minor stuff...
+# libmetrics/openbsd/metrics.c:
+#   line 446:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 466:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 468 should be commented out.
+
+make all &amp;&amp; make install
+cd ..</code></pre></noscript></div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Preparing for and recovering from disaster]]></title>
+    <link href="http://jbuchbinder.com/2013/10/13/preparing-for-and-recovering-from-disaster/"/>
+    <updated>2013-10-13T20:01:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/10/13/preparing-for-and-recovering-from-disaster</id>
+    <content type="html"><![CDATA[<p>One of the greatest nightmares associated with digital cinematography and
+photography is that of the specter of data loss. The very notion that your
+carefully planned shots or footage could disappear in a single instant can
+be Earth-shattering, since it may not be possible to reshoot (or may be
+prohibitively expensive). The best defense is to be prepared, not only for
+the possibility that you may lose data, but also to safeguard against that
+possibility through preventitive measures.</p>
+
+<h2 id="preparation">Preparation</h2>
+
+<p>There are a number of things you can do to try to protect against data loss,
+both before and after shooting has taken place. Here are a few of them:</p>
+
+<p><strong>Don’t use dodgy or off-brand memory cards.</strong> This may seem pretty obvious
+to those who have been down this road, but really crappy cards tend to have
+dodgy QA processes involved in their manufacture, so although you may get a
+good card, you’re just as likely to get a dud – which could end up with your
+data. I’ve found that “Amazon Basics” and “KomputerBay” cards have failed me
+pretty regularly. Even “Transcend” cards have been pretty dodgy for me, on
+occasion. I tend to stick with “SanDisk” branded cards, when I use SD media,
+and there are a few decent manufacturers of CF media (Lexar, SanDisk, etc),
+which tend to produce quality cards, in my experience.</p>
+
+<p><strong>Storage media doesn’t last forever.</strong> Every piece of flash media has a
+certain number of R/W cycles before it becomes unstable and/or unusable.
+After a period of time, you might want to start regularly replacing your
+media cards to avoid the possibility that errors will begin to occur. It’s
+also a good idea to low-level format the cards in between uses, which
+supposedly increases their lifespan.</p>
+
+<p><strong>A single physical copy of your product is a bad idea.</strong> If you just move
+files off to your laptop harddrive, you’re practically expecting something
+to destroy your media. A single SSD or spinning platter in a laptop is a
+prime target for an accident to wipe out your data. Ideally, a RAID
+(<em>R</em>edundant <em>A</em>rray of <em>I</em>nexpensive <em>D</em>isks) array would provide a
+good tradeoff between inexpensive media and redundant storage. I built a
+pretty inexpensive one with the following components:</p>
+
+<ul>
+  <li><a href="http://amzn.to/19EmtYA">Sans Digital MR2UT+ MobileRAID</a>: A two-disk
+enclosure, which, when set to RAID-1, gives you a set of mirrored
+hard disks, accessible by USB 3.0 or an eSATA interface.</li>
+  <li><a href="http://amzn.to/19IlAdp">Seagate Barracuda 2 TB HDD</a>: Two of these
+disks will provide you with a total of 2 TB of redundant storage.</li>
+</ul>
+
+<p><strong>A single physical location is a bad idea.</strong> Consider off-site backup. If
+you don’t have the money to store your data in <a href="http://aws.amazon.com/s3/">S3</a>
+or a similar service, consider using something like
+<a href="http://labs.bittorrent.com/experiments/sync.html">Bittorrent Sync</a>, with a
+friend or two providing remote backup locations. If this isn’t feasible,
+periodically backing up to <a href="http://en.wikipedia.org/wiki/Digital_Linear_Tape">DLT</a>
+or another backup tape, then storing that offsite, may be useful. If you
+are questioning “why do I need off-site backup”, just remember that a single
+fire or natural disaster can destroy all of your hard work…</p>
+
+<p><strong>Camera-based writing solutions.</strong> Certain cameras (the Canon EOS 5D
+Mark III, for example) have multiple media card slots, and have the ability
+to write multiple copies of the same media. This can help circumvent the
+tragic circumstance (to which I have fallen victim) of a completed shoot
+with the inability to read any of the captured data later on. To understand
+this, <a href="http://protogtech.com/cameras/canon-5d-mark-iii-record-separately-vs-record-to-multiple-performance-comparison/">read more here</a>.
+It should be noted that there are some performance limitations to this,
+but if you’re not shooting RAW video and your camera body can handle this,
+you might want to seriously consider it.</p>
+
+<h2 id="recovery">Recovery</h2>
+
+<p>There is a pantheon of free and open-source software suites which provide
+recovery of lost files, deleted files, destroyed partitions, etc. The true
+nightmare scenario would involve a piece of damaged media, from which the
+data cannot be extracted – but never assume this unless you have exhausted
+all other avenues of recovery.</p>
+
+<ul>
+  <li><a href="http://www.cgsecurity.org/wiki/PhotoRec">PhotoRec/Testdisk</a> (Open source,
+Linux/Windows/Mac/DOS/etc). This is one of my favorites, although it
+may potentially require some fairly in-depth technical expertise to
+fully exploit its potential.</li>
+  <li><a href="http://www.piriform.com/recuva">Recuva</a> (Freeware, Windows). Recovers
+deleted files.</li>
+  <li><a href="http://www.hirensbootcd.org">Hiren’s Boot CD</a> (Freeware, Boot Disc).
+Hiren’s is a classic recovery and utility boot disk, which can be
+booted on any Intel-based computer. The download is free, and it has
+a very comprehensive suite of recovery tools. If you don’t have a copy
+of this disc hanging around your studio or house – why not?</li>
+  <li><a href="http://www.wondershare.com/disk-utility/cr2-photo-recovery.html">Wondershare Photo Recovery</a> (Freeware, Windows/Mac).
+A semi-commercial digital media file recovery suite.</li>
+  <li><a href="http://www.icare-recovery.com/free/camera-raw-photo-recovery-free.html">iCare Recovery Free</a> (Trialware, Windows).
+This has a 2GB maximum data file recovery limit with the trial, otherwise
+a license has to be purchased.</li>
+  <li><a href="https://homes.cs.washington.edu/~oskin/saveimg.html">saveimg</a> (Opensource, Linux/Mac).
+Extracts JPEG images from raw disk devices. Requires some expert
+knowledge to use properly.</li>
+  <li><a href="http://foremost.sourceforge.net/">Foremost</a> (Opensource, Linux/Mac).
+Digital forensic tool to recover files based on headers, footers, and
+internal data structures.</li>
+  <li><a href="http://www.lc-tech.com/pc/sandisk-rescuepro-and-rescuepro-deluxe/">SanDisk RescuePRO</a> (Trialware, Windows).
+SanDisk’s recommended recovery software.</li>
+  <li><a href="http://www.gnu.org/software/ddrescue/ddrescue.html">ddrescue</a> (Opensource, Linux/Mac).
+A data recovery tool. It copies data from one file or block device
+(hard disc, cdrom, etc) to another, trying hard to rescue data in case
+of read errors.</li>
+  <li><a href="http://www.stellarphotorecoverysoftware.com/camera-recovery/">Stellar Photo Recovery</a> (Trialware, Windows/Mac).
+Another digital photo recovery suite. The trialware shows what can be
+recovered, with previews.</li>
+  <li><a href="http://www.pcinspector.de/default.htm?language=1">PC Inspector</a> (Freeware, Windows).</li>
+  <li><a href="http://www.prosofteng.com/products/data_rescue.php">DataRescue</a> (Mac).</li>
+  <li><a href="http://subrosasoft.com/OSXSoftware/index.php?main_page=product_info&amp;cPath=1&amp;products_id=3">Camera Salvage</a> (Freeware, Windows).</li>
+  <li><a href="http://datarescue.com/">PhotoRescue</a> (Windows/Mac).</li>
+  <li><a href="http://www.cfcardrecovery.com/">CF Card Recovery</a> (Trialware, Windows/Mac).</li>
+</ul>
+
+<p>Hopefully, this will either make it easier to avoid potential data loss, or
+at least help to minimize the impact, if and when you end up losing data.</p>
+
+<p>As always, good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Composing for Aspect Ratios]]></title>
+    <link href="http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios/"/>
+    <updated>2013-09-30T20:13:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/30/composing-for-aspect-ratios</id>
+    <content type="html"><![CDATA[<p>Aspect ratios, simply put (for those who are unaware), are the ratios between
+the width and height of a single frame of video. Television has had a 4:3
+ratio (4 units of width to 3 units of height), until the popularization of
+“HD” television, using a “widescreen” ratio of 16:9. I’m not going to go
+through the entire history of aspect ratios in cinema, as there is a
+<a href="http://vimeo.com/68830569">great retrospective available on vimeo</a>.</p>
+
+<div class="embed-video-container"><iframe src="http://player.vimeo.com/video/68830569 "></iframe></div>
+
+<p>Most DSLR cinematography is done, by default, with a 16:9 ratio, as the
+maximum capture size for their video is generally 1920x1080, abbreviated as
+1080p (to additionally indicate progressive, rather than interlaced, scan).
+It is relatively easy to enforce a “wider” aspect ratio by dropping lines at
+the top and bottom of the frame, which most watch-at-home film viewers will
+identify as “black bars” at the top and bottom of the frame. This does,
+however, introduce an interesting issue – that of composing inside that
+frame. That ends up looking something like this:</p>
+
+<p><img src="http://jbuchbinder.com/images/black-bars-aspect-ratio-16-9-21-9-4-3-cinemawide.png" alt="Black bars for different aspect ratios" title="Black bars for different aspect ratios" /></p>
+
+<p>Standard compositional rules generally make use of the two frame diagonals
+(top left to bottom right, and bottom left to top right) and both horizontal
+and vertical thirds. Most compositional choices for “balanced” frames have
+tended to rely on these invisible divisions to create a pleasing image, even
+though the rules are really <em>guidelines</em>, and are not absolute. If you, as
+a cinematographer, decide that you’re going to use an alternate aspect ratio,
+you cannot properly compose by using the thirds or diagonals indicated by any
+common guide or viewfinder in 16:9 ratio, as they will result in a vastly
+skewed product, compared to the original on-camera image. I’ve seen a number
+of forums on DSLR cinematography which had suggested everything from
+using a black marker to denote the frame to using black tape to cover the
+segments outside of the final crop. A more “modern” solution for Canon
+DSLR owners is using <a href="http://magiclantern.wikia.com/wiki/Cropmarks">Magic Lantern cropmarks</a>.
+If you’re shooting with another DSLR brand, you may be at the mercy of the
+firmware, or any of the aforementioned hacks.</p>
+
+<p><em>NOTE: I’d like to mention, at this point in this article, that there are
+other compositional rules, including <a href="http://photoinf.com/Golden_Mean/Eugene_Ilchenko/GoldenSection.html">golden ratio/mean/spiral/rectangle</a>,
+so please don’t take the rule of thirds and diagonals to be the only important
+and pleasing ways to frame an image….</em></p>
+
+<p>Besides attempting to find a way to follow common compositional rules, there
+is another side to aspect ratio: selecting the appropriate one for the story
+you are attempting to tell. Apart from the 16:9 ratio being the “standard
+format” for HDTV broadcasts and web-based series, it is much taller (i.e.,
+it offers more headroom for shots) than Cinemascope (2.35:1) or some of the
+other aspect ratios. Depending on the types of shots which you are using to
+compose your film, it may be advantageous to have a wider, yet thinner,
+view of the world which comes with “shorter” aspect ratios. Again there is
+no “one size fits all” for aspect ratios, and it should be a conscious
+decision for the material which you are filming.</p>
+
+<p>An added advantage to using a shorter aspect ratio is that, due to the
+camera bodies recording the entire frame, regardless of target aspect
+ratio, additional editing and recomposition “wiggle room” is available in
+the editing and post-production process. If something isn’t framed in the
+exact way it should be, this can be corrected later by adjusting the vertical
+positioning of the frame within the crop. Most (if not all) NLE software
+has vertical positioning, including
+<a href="http://help.adobe.com/en_US/premierepro/cs/using/WSC7A162B6-6EF1-49e1-8622-8127366710BB.html">Adobe Premiere</a>,
+<a href="http://vegasaur.com/pan-crop-assistant">Sony Vegas</a>,
+and <a href="http://www.peachpit.com/articles/article.aspx?p=1677950&amp;seqNum=8">Final Cut Pro</a>,
+so you shouldn’t have any issues doing this. I’m aware that the ideal
+cinematographer does everything in-camera (as I have vociferously
+advocated in past), and does not rely on post-production to fix mistakes,
+this does allow for that possibility.</p>
+
+<p>Aspect ratios additionally carry some subconscious baggage with them, due
+to the associations we have made with previous material filmed using them,
+much in the same way we associate film grain with high-end Hollywood
+pictures, even when, in many cases, that film grain was added back to
+the digital footage in post-production.</p>
+
+<p>The quick takeaway is that you shouldn’t embark on a project without having
+made a conscious decision regarding the aspect ratio which you are using for
+that project, considered the ramifications and technical concerns associated
+with that decision (including making sure that you can properly frame and
+compose shots in that aspect ratio), and storyboarded and/or prepared your
+material considering your chosen aspect ratio. It is yet another variable
+which can be tweaked to help make an already good project that much better,
+and like all power, it comes with responsibility. So, choose –
+<a href="http://www.youtube.com/watch?v=oF2UrYSDb3k">but choose wisely</a>, and as
+always, good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[On Documentary Filming]]></title>
+    <link href="http://jbuchbinder.com/2013/09/19/on-documentary-filming/"/>
+    <updated>2013-09-19T16:58:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/19/on-documentary-filming</id>
+    <content type="html"><![CDATA[<p>I recently had the pleasure of shooting for a documentary down in
+Birmingham, AL, about one of the people involved in the 
+<a href="http://www.nps.gov/nr/travel/civilrights/al11.htm">16th Street Baptist Church Bombing</a>
+in 1963. For those who don’t know, that event was one of the most
+important parts of the Civil Rights movement in the 1960s. The
+50th anniversary of the bombing was this September (2013), so I had
+gone with a small film crew to cover the event, and interview some of
+the people involved.</p>
+
+<p>I had never shot documentary footage, apart from some small controlled
+one-on-one interviews, so this was an interesting learning experience for
+me. I’d like to share some of the more important things which I learned
+over the course of my experience down there.</p>
+
+<p><strong>Batteries</strong>. You’re going to run out of them. I ran through four batteries
+over the course of a filming day – which I thought would be enough, but
+weren’t. If you have one thing which requires a strange and unique battery,
+you should have at least one spare, even if it’s new. Someone is invariably
+going to leave something on, chew up the battery, and leave you short a
+vital piece of equipment. If you’re shooting with a DSLR, try to get a
+multi-battery grip, so that you don’t have to change batteries as often.</p>
+
+<p><strong>One Shot</strong>. You only have <em>one shot</em> to get event coverage correctly,
+which means that, ideally, you should be covering from more than one angle,
+to provide not only options in editing, but some sort of redundancy.
+Otherwise, you can easily be left with a serious dearth of footage for
+what could be a vital part.</p>
+
+<p><strong>Focus and Calibration</strong>. Get there early, get set up, get everything
+metered and working properly <em>before</em> things start moving. You really can’t
+easily recalibrate during taping without potentially ruining footage. Did
+I forget to mention that you only get <em>one shot</em> with event footage?</p>
+
+<p><strong>Depth of Field: More is Better</strong>. You’re not shooting an art piece, you’re
+trying to cover something which probably only happens once, so you shouldn’t
+be shooting at f/2.8 or something ridiculous like that. Yes, you can sometimes
+take advantage of the <a href="http://en.wikipedia.org/wiki/Hyperfocal_distance">hyperfocal distance</a>
+of a lens to keep far-away objects in focus – but you should, most likely,
+find a fairly closed aperture to work with. This can be challenging in low
+light scenarios, where you’ll be fighting the specter of sensor noise at
+extremely high ISO levels when you close the iris more than a little.</p>
+
+<p><strong>Positivity</strong>. You need to be happy and in a good place when shooting people
+and interviews, especially in a one-on-one setting. Other people take certain
+cues from your body language and demeanor, and hostility will produce
+hostility. If at all possible, try to work on documentary projects which you
+like, or identify with.</p>
+
+<p><strong>Lens Changes</strong>. If you can avoid it, don’t. Wear cargo pants or a vest with
+lens pockets, much like most photographers, if you absolutely <em>must</em> change
+lenses. If you’re shooting a long distance, go with something like the
+<a href="http://amzn.to/14nI8Cm">Canon EF 70-200mm f/2.8L IS II USM</a> lens, or if you
+are dealing with shorter distances, the
+<a href="http://amzn.to/189gQmi">Canon EF 24-70mm f/2.8L II USM</a> lens. Carrying a few
+primes around will work well for static interview shots, but they’re going to
+be a real pain when you’re dealing with moving targets, no matter how quick
+you are with focus peaking assistance. If you’re shooting with a shoulder rig,
+you’re going to want an IS/VR lens, if you have one available – it cuts down
+on a lot of shudder and shake.</p>
+
+<p><strong>Bring a Spare</strong>. Got one lav mic? You might want to bring a second one.
+If there’s a small piece of equipment or accessory which, if missing, could
+screw you, it’s going to go missing. Especially when you’re far from home
+base and without the benefit of an equipment store.</p>
+
+<p><strong>You’re Going To Mess Up</strong>. This is pretty obvious – no matter how careful
+you are, something is going to get messed up. The trick is to try to make
+everything redundant enough that it doesn’t matter.</p>
+
+<p><strong>It’s Not About Your Equipment</strong>. Someone there is going to have a better
+camera, better lenses, and better <em>everything</em> than you have. Go far enough,
+and your rig is going to look bad to someone. Just remember, you’re there for
+a reason, so know your equipment, and use it as well as you can.</p>
+
+<p><strong>Rocking Out</strong>. If you’re interviewing someone who is rocking back and forth,
+bring it to their attention. It creates massive focusing, framing, and
+perspective issues. Don’t be intimidated; they can rock as much as they’d
+like, just as soon as you’re done filming.</p>
+
+<p><strong>Network</strong>. If you’re looking for an interview with someone, talking to
+some of the people around them may lead you to another interviewee who may
+produce even better results. There’s no cost associated with being polite.</p>
+
+<p><strong>Respect the Eyeline</strong>. For static interviews, don’t shoot up or down on
+someone’s eye-line unless you are trying to indicate something about that
+person. You should be even with their eye-line on initial shot setup. This
+is also a good idea when doing non-static interviews, when possible.</p>
+
+<p><strong>Make Two Copies</strong>. When you transfer the data off of your memory cards,
+make two copies, and if possible, don’t transport them together. Redundancy
+is the name of the game here, since even the best footage means diddly/squat
+if no one ever gets to see it.</p>
+
+<p><strong>Bring a Sound Guy</strong>. I know, you don’t think you need one – you’ve got a
+lav mic, right? A sound engineer is half of your production, since you’re in
+charge of the visuals. Also, boom mic operators generally should be fairly
+competent sound engineers, to avoid issues later on in the post-production
+process – when possible.</p>
+
+<p><strong>Don’t Go For The Cheaper Chicken</strong>. When booking accommodations, don’t go
+for the least expensive hotel – there’s a good chance that it’s in a dodgy
+part of town, and that extra 10 dollars a night might buy you not only a
+bit of security, but might buy you a better night’s sleep. Protip: the
+cheapest hotel is generally right next to a) train tracks with 24-hour train
+service, b) an open-air coal mine, c) a condemned house with mysterious
+block parties at all hours of the night, or d) all of the above…</p>
+
+<p><strong>Get Stills</strong>. If you’re doing a documentary with a bunch of
+<a href="http://en.wikipedia.org/wiki/Ken_Burns_effect">Ken Burns effect</a> style
+picture montages, you should try to either take stills yourself, or have
+another camera operator capture some for you. If you can, attempt to take
+pictures of landmarks or buildings when they are not occupied, unless it
+specifically works in your storytelling to have them occupied or surrounded.</p>
+
+<p>There are many, many more things to think about when it comes to filming
+documentaries and documentary footage – but hopefully, these bullet points
+will help someone else avoid some of the pitfalls I experienced on my first
+documentary shoot. Good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Are you a cinematographer or a camera operator?]]></title>
+    <link href="http://jbuchbinder.com/2013/09/10/are-you-a-cinematographer-or-a-camera-operator/"/>
+    <updated>2013-09-10T21:55:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/10/are-you-a-cinematographer-or-a-camera-operator</id>
+    <content type="html"><![CDATA[<p>There’s only a slight difference in the textbook definition between a
+<a href="http://en.wikipedia.org/wiki/Cinematographer">cinematographer</a> and a
+<a href="http://en.wikipedia.org/wiki/Camera_operator">camera operator</a>. Besides the
+slight variance in responsibilities (a cinematographer/DP can be responsible
+for several camera operators), there are some additional skills and
+aptitudes which play into the decision to try to be a cinematographer.</p>
+
+<p>None of this is meant to downplay the skill and experience which make a
+great camera operator. Knowing your equipment, being able to choose the
+proper lenses and camera settings, being able to operate that equipment,
+being able to interpret the direction of both the director and the
+cinematographer, and being able to hold together a cohesive shot –
+these are all the hallmarks of a great camera operator.</p>
+
+<p>At a much, much more basic level, there’s an <em>art</em> to cinematography, which
+transcends the physical manipulations of the equipment involved, and becomes
+more about creating a sort of separate reality; that of capturing a little
+slice of time and space, motion and stillness, light and dark, vibrant
+colors and subtle undertones. That’s the part of this that, to me, offers
+the most promising creativity and the most fulfilling, yet burdening, tasks.</p>
+
+<p>It’s very easy to get lost in the minutiae of camera settings adjustments,
+equipment acquisition, troubleshooting and stabilization, among other
+demons – but the <em>art</em> is the derivative of those functions.</p>
+
+<p>To properly illustrate this, I think of a concert I attended, quite a few
+years ago. The guitarist, <a href="https://www.facebook.com/VernonReid">Vernon Reid</a>,
+was (and still is), an amazing technical instrumentalist. I watched him dance
+over the semi-circle of effects pedals and boxes, his hands moving,
+seemingly effortlessly over the six strings on his instrument. It struck me
+as astounding. We are all, in some way, capable of recognizing genius and
+immense skill, even if we cannot reproduce it, or explain it in purely
+quantifiable terms. In that way, the body of his technical skills simply
+became a foundation for the <em>art</em> which was made by way of them. I wish I
+could explain it better – I only know that I could recognize it when I saw
+it. The man himself, whom I had the pleasure of speaking with for a few
+brief moments, was very humble and very “zen” about his skill and his art.</p>
+
+<p>Due to my particular circumstances, I’ve been able to pick and choose projects,
+more of late, specifically based on their relative merits to me. As such, I
+haven’t had much experience acting strictly as a “camera operator”. There
+may be some hubris, on my part, which would have come out of getting to
+perform the artistic duties of a cinematographer on the vast majority of the
+projects on which I’ve been involved. It has given me an affinity for the
+creative aspects of the job. For as long as I’ve been involved with
+cinematography, I have always assumed that being a “camera operator” has been
+a step towards being a cinematographer; a way of honing the technical
+foundation of the craft, so that the art can come later. It seemed like an
+“apprenticeship”, much as the old focus pullers became second unit
+cameramen, to eventually move up to first units, then perhaps aspire to
+become a cinematographer one day…</p>
+
+<p>The landscape, mostly due to the explosion of low-cost cinematography
+(fueled primarily by DSLR cinematography), has been shifting away from that
+old model. Most projects have one, perhaps two camera operators – and the
+primary camera operator is usually the cinematographer/DP. Many projects
+don’t even <em>have</em> a second camera operator – it simply isn’t required.</p>
+
+<p>Ultimately, it depends what your plans and/or revenue model is.</p>
+
+<ul>
+  <li>If you want to learn more about how to get your equipment to perform
+the way you want it to perform, you may do well working as a camera
+operator with a seasoned cinematographer, rather than holding out for
+a DP position on a project.</li>
+  <li>If you want to make a living behind a camera, you can’t really differentiate
+between cinematography and camera operator work – at least as long as
+you want to keep a steady revenue stream up. Even the best cinematographers
+can moonlight as strict “camera operators” when the pay is right.</li>
+  <li>If you want to work in a lower pressure environment, you might want to
+be a camera operator. Cinematographers are responsible for everything
+visual which goes on in a project, and it can be a lot of stress.</li>
+  <li>If you feel passionate enough about a project to want to be involved at
+any cost, you might sign on as a camera operator.</li>
+</ul>
+
+<p>Even though there’s a lot of competition for certain spots on certain
+projects, we’re all on the same team; we all (for the most part) are
+interested in shooting great footage, and many of us are concerned about
+creating enduring works of art, wherever possible. We all have great
+potential for growth, so whatever your career and job choice, good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Prime Lenses and Proper Depth of Field]]></title>
+    <link href="http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field/"/>
+    <updated>2013-09-10T13:24:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/10/prime-lenses-and-proper-depth-of-field</id>
+    <content type="html"><![CDATA[<p>Depth of field is a massively misunderstood “side effect” of iris size, and
+an ultimately useful storytelling tool (when used properly).</p>
+
+<p>DSLR photography has spawned a large group of cinematographers who are
+dealing with largely light-insensitive camera sensors (usually producing
+fairly unacceptable noise when used at greater sensitivies than ISO 800).
+This has created a need for “fast” lenses, which are lenses which have very
+large maximum apertures, featuring maximum f-stop ratings like f/2.0, f/1.8,
+and even f/1.4 (there are even some <a href="http://www.dpreview.com/news/2013/08/06/kubrick-s-f-0-7-lenses-now-available-for-rent-but-start-saving-up">f/0.7 lenses</a> out there, but I’m
+sticking to the realm of affordable DSLR cinematography, at the moment).
+Using firmware like <a href="http://magiclantern.fm/">Magic Lantern</a> allows us to use
+focus peaking to exploit manual-focus and non-EF mount lenses (for those
+Canon-philes among us), to bring down the effective cost of shooting “fast”
+lenses. I have some M42 “Pentax screw-mount” lenses which open to f/2.8 –
+acquired for less than 10 USD each, plus a 7 USD <a href="http://amzn.to/1fVPGyf">M42-to-EF adapter ring</a>.
+If you’re interested in more information on how to use focus peaking, check
+out <a href="http://fstoppers.com/using-magic-lantern-with-focus-peaking-for-free-lensing">how it works</a>.</p>
+
+<p>So, you’ve beaten high-cost DSLR and cinema camera body manufacturers by
+using “fast” lenses, right? Well, not so fast, there… You have to consider
+the <em>side effect</em> of fast lenses and wide apertures: the shallow depth of
+field. It’s both a blessing and a curse; we tend to associate shallow depth
+of field images and video with expensive equipment (rightfully so, in most
+cases) and a more personal type of image, but those lenses are not
+universally usable “wide open”. Many shots come off looking amateurish and
+ill-composed, when half of the subjects are out of focus, because they’ve
+exceeded the edges of the “sharp” area in the focus range.</p>
+
+<p>(There’s also lack of lens sharpness and chromatic abberation to consider,
+which are generally present, to some degree, in the widest aperture settings
+available on most lenses. That’s a very intensely technical discussion,
+however, and will probably be reserved for a future posting.)</p>
+
+<p>When considering the depth of field you want, consider the subject (or
+literal <em>focus</em>) of the shot, and figure out how much of the shot needs to
+be in focus to properly tell your story. The depth of field is very
+important for exposing the mise-en-scène in the way which best represents
+both the explicit visuals and external representation of internal
+character development and exposition. If your character needs to “pop”
+out of the scenery, a narrow DOF would be perfect – but if they are to
+appear as a figurative cog in the machinery of the world, you’re probably
+going to be looking for the widest DOF (approaching infinity) as you can
+get. When widening the DOF like this, you’ll most likely have to compensate
+by boosting the ambient lighting, or adding additional lighting, to
+adjust for the decreased light hitting your camera sensor.</p>
+
+<p>There are a number of tools for figuring out the proper DOF for a certain
+shot, based on the camera/sensor, lens focal length, and distance to
+primary focal point.</p>
+
+<ul>
+  <li><a href="http://www.dofmaster.com/dofjs.html">Web-based DOF calculator</a></li>
+  <li><a href="http://www.dofmaster.com/android.html">Android calculator</a></li>
+  <li><a href="http://www.dofmaster.com/iphone.html">iOS calculator</a></li>
+</ul>
+
+<p>There are more of them, but if you specify the variables, you can adjust
+the aperture f-stop to the widest setting which properly fits the scene
+and visuals which you’re attempting to achieve.</p>
+
+<p>Like anything else, this isn’t strictly an instructional A-to-B guide on
+how to achieve stunning visuals; it’s simply an attempt to share some of
+what I’ve learned, and to help share the knowledge and tools to exploit
+your own inner artistic vision. Good luck shooting!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[To post or not to post]]></title>
+    <link href="http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post/"/>
+    <updated>2013-09-07T13:18:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post</id>
+    <content type="html"><![CDATA[<p>Even though a good portion of the work has been completed when you press the
+shutter button, or stop rolling, since all of your planning and execution has
+been completed, there’s still a final step (or series of steps) to bring that
+artistic effort to a presentable format.</p>
+
+<p>Many people shoot with default (or very close to default) settings on their
+camera or videocamera, and do simple “post production” by simply cropping or
+cutting whatever comes out of their camera body. This is a very “purist” way
+of going about shooting, but can also rob your end product of some of the
+polish and slight adjustments which can take good pictures or footage and
+make them into something extraordinary.</p>
+
+<p>All of that being said, there’s a limit to the types and amounts of post
+production which can and should be used, much in the way that overproducing
+a musical album can result in a homogenous and lifeless product, robbed of
+the “soul” and variances which make it unique. You are the only person who
+can decide how much, if any, post processing is right for your project or
+other artistic endeavor.</p>
+
+<p><strong>RAW versus JPEG/H.264</strong></p>
+
+<p>With DSLR cameras being used for both photography and cinematography, there
+are places where the “processing” aspect can be pushed off into the post
+production process.</p>
+
+<p>For photography, RAW format pictures can allow recovery past some of the
+previously accepted limits of what would normally be considered lost or
+unusable. Effectively, it allows you to make the decisions which are
+normally pushed off on your camera’s processor (the DIGIC processor(s),
+for all of you Canon users). It adds an additional step to the
+post-processing workflow, in that you’ll need a piece of software like
+<a href="http://www.adobe.com/products/photoshop-lightroom.html">Adobe Lightroom</a> for Windows/Mac users, or if you’re a Linux user like me,
+<a href="http://rawstudio.org/">Raw Studio</a>. It also adds a significant amount of time to the
+photographic post-processing workflow, in that there are a number of
+additional parameters which can be adjusted, which would normally result
+in image degradation, but can be adjusted in RAW images with little or no
+deleterious effect. If you’re a <a href="http://www.magiclantern.fm/">Magic Lantern</a> user, you can also
+experiment with “dual ISO” images, which can create images with enormous
+dynamic range through sensor tricks – but which adds an another step
+before RAW processing, that of running a CR2HDR binary. (If you’re
+interested in trying this out, but don’t want to compile a CR2HDR binary
+for Windows or Linux, I have binaries available <a href="https://bitbucket.org/rufustfirefly/magic-lantern/downloads">here</a>)</p>
+
+<p>For cinematography, there’s a lot more to think about. Magic Lantern users
+of Canon 5Dmk3 models (and some others, as well) have the option of being
+able to shoot RAW video with some very fast CF cards. This adds a pretty
+substantial amount of post-processing steps <em>before</em> your NLE (non-linear
+editor) of choice enters the picture. There are a pretty wide swath of
+applications which now support the Magic Lantern RAW format, including
+<a href="http://www.magiclantern.fm/forum/index.php?action=printpage;topic=5557.0">RAWanizer</a>, but your best bet is to get involved with the Magic
+Lantern forum if you want to begin working with a RAW workflow. The other
+serious disadvantage is storage space. Standard H.264 video, which is
+shot by most DSLR camera bodies, has issues with some digital artifacts in
+certain scenarios, as well as some dynamic range issues (some of which can
+be made better by use of flat color profiles like <a href="https://www.technicolorcinestyle.com/download/">Cinestyle</a>, but I’ll
+leave that for later) – but it produces fairly compact files, even at
+1080p/24p (1920x1080 24fps progressive) resolution. RAW data can take
+upwards of a gigabyte of space every 15-20 seconds. Your storage media
+and backup solutions have to be able to deal with that, so it’s something
+to seriously consider before deciding to move a project to work with that
+format.</p>
+
+<p><strong>White Balance</strong></p>
+
+<p>It used to be accepted that white balancing (determining where “true white”
+lies in an image, compensating for varying light color temperatures) had to
+be done “in camera”, before shots were taken. There are a number of tools
+which allow this to be done in post-processing.</p>
+
+<p>Photographers can do this when shooting with RAW camera images very
+simply, as most RAW image processors have a simple white balancing tool. It’s
+still possible to do this with processed JPEG images, but with the
+potential for losing some image data. Depending on how comfortable you are
+with straying from the “truest possible image”, you can decide where you
+feel comfortable dealing with white balancing.</p>
+
+<p>Cinematographers have a pretty vast array of white balancing and color
+correction plugins available for their NLE of choice. I’m most familiar with
+Adobe Premiere, so I’d mention <a href="http://blogs.adobe.com/VideoRoad/2010/05/using_the_fast_color_corrector.html">Fast Color Corrector</a> and
+<a href="http://philipbloom.net/forum/threads/tutorial-color-grading-and-styling-with-colorista-ii.2528/">Red Giant Colorista II</a>, both of which offer pretty decent white
+balancing capabilities, among other things. If you’re concerned about
+render speed, Fast Color Corrector seems to win out against Colorista II,
+but Colorista II has some additional parameters and capabilities which
+far outstrip what FCC has to offer. There’s also software like
+<a href="http://tv.adobe.com/watch/learn-premiere-pro-cc/color-grading-premiere-pro-sequences-in-speedgrade/">Adobe Speedgrade</a> and <a href="http://digitalfilms.wordpress.com/2013/02/02/davinci-resolve-workflows/">Blackmagic Design Davinci Resolve</a>, both
+of which offer white balancing, color correction, and color grading
+capabilities. There are a few threads <a href="http://forums.planet5d.com/threads/123505-Adobe-Speedgrade-vs-DaVinci-Resolve">comparing the two of them</a>.</p>
+
+<p>The important distinction is whether or not you want to spend the time
+to properly white balance your images or footage before you take pictures.
+It’s not always condusive to your shooting workflow to do so, and if this
+is a factor, you should seriously consider some of the post-processing
+options. It’s obviously to your greatest advantage to have the most
+accurate input images/footage to bring into your post-processing
+workflow, but sometimes it’s not pragmatic to take a completely purist
+attitude in this regard.</p>
+
+<p><strong>Exposure</strong></p>
+
+<p>We’ve all been bitten by changing light conditions, unexpected events, or
+incorrect metering producing images or footage which has exposure problems.
+If you’re shooting RAW (or using Magic Lantern’s Dual ISO hack), this is
+an ideal place to examine using post-processing to correct these issues.</p>
+
+<p>We would all like to properly expose everything (unless we have a
+particular artistic reason for doing otherwise, since in the art of
+photography or cinematography, there are generally exceptions to every
+rule, rules were made to be broken, etc), but taking a post-processing
+detour to correct such things is generally preferable to re-arranging a
+shoot.</p>
+
+<p><strong>Special Effects</strong></p>
+
+<p>I’m not a big fan of post-processing special effects, mainly because I 
+am a proponent of the idea that it takes some of the artistry out of
+pulling off those same effects “in camera”. I do understand that there
+are certain effects which would be either very difficult or downright
+impossible to achieve without the use of computer generated effects –
+but there’s a lot of things which can be accomplished <em>without</em> that.</p>
+
+<p>Lighting is something which I’ve seen done in post, which generally
+baffles me. It’s something which is pretty simple to execute properly,
+given a little time and effort. Saving images or footage with issues
+might be a good use for that, but it’s probably not something I would
+recommend doing for everyday editing and processing.</p>
+
+<p>For example, having someone “eaten” by light can be accomplished for
+a cinematographer, simply by adjusting the fill light to blow out the
+whites, then opening the iris of the lens (using a focus pulling kit,
+or just a spare hand, for the less equipment-heavy among us) to allow
+the fill light to “eat” the remainder of the image. That can be done
+without any specific post-processing.</p>
+
+<p><strong>Flat Color Profiles</strong></p>
+
+<p>This is pretty much for cinematographers, since photographers could
+simply take RAW photos – and cinematographers shooting RAW should
+probably ignore this section, as well.</p>
+
+<p>There are quite a few “flat color profiles” available for DSLR
+(and other) bodies, such as the aforementioned Technicolor Cinestyle
+profile and the <a href="http://www.similaar.com/foto/flaat-picture-styles/long-1.html">Flaat Picture Style</a>. These work by effectively
+increasing the dynamic range being captured by the camera by storing
+the values differently than the stock picture profile.</p>
+
+<p>I highly recommend shooting with one, if you’re not going to make the
+leap to shoot RAW. It does add the additional step in post-processing
+of having to adjust the blacks/whites and/or applying a corrective
+LUT (look up table) to adjust the end product to look less “washed
+out”. There are LUTs and plugins available for virtually every NLE
+out there right now – and I suggest learning how to do this. The
+improvement in the end product is substantial for relatively little
+time investment.</p>
+
+<p><strong>Audio Post</strong></p>
+
+<p>This is another section just for cinematographers.</p>
+
+<p>The audio which is recorded with footage is generally “reference
+audio”, which is meant to be replaced by actual audio, generally
+recorded with something like a <a href="http://tascam.com/product/dr-40/">Tascam DR-40</a> or <a href="http://www.zoom.co.jp/english/products/h4n/">Zoom H4n</a>
+external recorder and a shotgun microphone. It’s far outside the
+scope of this to explain the majority of these technologies and
+techniques, but sufficed to say that they produce far cleaner and
+usable recordings than on-camera audio (even when using augmented
+on-camera microphones, etc). If you can afford it, use external
+audio, and have an experienced audio engineer perform some basic
+post-production on your audio.</p>
+
+<p>If you can’t afford it, or don’t have an audio engineer, there are
+a few basic steps to get cleaner audio.</p>
+
+<p>1) <em>Don’t use the microphone built into the camera</em>. It sounds pretty
+awful, and is noisy. Get a lav microphone for interviews, or a
+directional hot-shoe mounted external microphone for anything else.</p>
+
+<p>2) <em>Adjust the audio levels manually</em>. Automatic level adjustment is
+going to be terrible. It’s meant to avoid clipping, but it tends to
+make the noise floor (the level of background noise) jump around as
+the camera readjusts the audio recording level, so it may make your
+life significantly more difficult when it comes time to adjust the
+footage later. Adjust it to the loudest sound you’re going to be
+recording – then perhaps a click lower, for safety.</p>
+
+<p>3) <em>Respect the inverse square law</em>. For those unfamiliar, sounds
+drop at a logarithmic rate as you move away from the sound source,
+following the same inverse square law which is used to figure light
+source brightness. The closer you are to a recorded sounds, the
+cleaner and better the source audio will be. Every object which a
+sound hits will produce a “reflection” (much as light does). If that
+reflection is equal or louder than the volume of the source sound,
+you’re going to get a pretty terrible sounding audio recording.</p>
+
+<p>4) <em>Get the cleanest audio possible</em>. Try to cut down on external
+noise sources. Never assume that you can clean something later on;
+you should be trying to get clean audio. If something has to be
+re-taken to avoid a lawnmower being run in the background, then you
+should seriously consider doing it. It’ll save you from pulling out
+your hair.</p>
+
+<p>I’m sure that this isn’t a <em>comprehensive</em> list, but hopefully this
+will help everyone get started with deciding what, if anything, to
+relegate to their post-processing workflow. Good luck!</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Skill in the Age of Instagram]]></title>
+    <link href="http://jbuchbinder.com/2013/06/28/skill-in-the-age-of-instagram/"/>
+    <updated>2013-06-28T15:40:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/06/28/skill-in-the-age-of-instagram</id>
+    <content type="html"><![CDATA[<p>I had started a post a few months ago, which I had tentatively titled “Approximating Skill”. It was a fairly scathing indictment of what I had refered to as the “Instagram generation”.</p>
+
+<p>As anyone who has been following my recent posts here knows, I attach a lot of importance to the notion of “skill”, especially in relation to art forms where there are popular misconceptions regarding the ability to “buy” your way into a particular skill-set.</p>
+
+<p>In “<a href="http://jbuchbinder.com/2013/05/03/gear-vs-skill/">Skill vs Gear</a>”, I had tried to explain that, no matter how many toys or additional pieces were added into any mix, the most important variable is the skill of the operator/artist in control of the production. It seems like a fairly simple thing to understand, but in the muddied world of extensive post-production and devalued skill-sets, that common understanding is constantly called into question.</p>
+
+<p>Take <a href="http://instagram.com/">Instagram</a>, for example. It’s a fairly simple concept, being a marriage between Twitter-style <a href="http://en.wikipedia.org/wiki/Number_sign">hashtags</a> (don’t get me started on that – we should just call it U+0023 and get it over with), social networking, and cameraphone photography. (I happen to particularly loathe cameraphone photography, except for the ubiquitous and universally available nature of cameraphones.) The issues, as far as I’m concerned, begin to arise in the dual areas of devaluation and lack of appreciation.</p>
+
+<p><strong>Devaluation</strong>. This comes into play when every Instagram (or insert other type of skill-sapping or replacing app here) user begins to assume that they, yes they, are capable of producing professional results. Malcolm Gladwell famously claimed that it took <a href="http://en.wikipedia.org/wiki/Outliers_(book)">10,000 hours</a> of time to amass enough skill to master a certain skill-set. I prefer to refer to <a href="http://enticingthelight.com/wp-content/uploads/2010/01/Stages-of-a-Photographer.png">this chart</a> (ignore some of the strange and inappropriate labels – the sentiment is the important part). As perceived self-skill increases, valuation of others’ skill-sets decreases. This explains much of the reluctance to hire professional photographers and cinematographers/videographers, or to value their skills so little that an insulting amount of compensation is considered “reasonable” for their time and effort.</p>
+
+<p><strong>Lack of appreciation</strong>. Autotune and Instagram are both partially to blame for this – but it seems as though actual skill is barely recognizable anymore, to a vast swath of the population, for any given skill-set. I do understand that the <a href="http://rationalwiki.org/wiki/Dunning-Kruger_effect">Dunning-Kruger Effect</a> means that any person is going to assess their own skill-set incorrectly. This, however, reaches far beyond that conclusion. After having been subjected to hundreds, if not thousands, of hours of blown out and ill-colored photos, and subjected to far too many songs which have been pitch corrected beyond human recognition, the latest generation has mostly lost the ability to differentiate between “faked” output and true skill. I recently had an entire photoshoot (which I dutifully handed over to the photographed party) blown out, miscolored, and made to look like a bunch of terrible Instagram photos – all, supposedly, in the name of appealing to the younger generation, as they “appreciate” things that look like that. As far as faked output goes, it’s not limited to amateurs; big budget Hollywood studios have been <a href="http://www.cracked.com/article_18664_5-annoying-trends-that-make-every-movie-look-same.html">exploiting basic digital correction</a> to make everything look the same – the Instagramification of movies (that article also points out the annoying “shaky cam” stuff that I had been discussing in my <a href="http://jbuchbinder.com/2013/06/03/stabilization/">earlier post</a>). In the end, skills fall along the <a href="http://en.wikipedia.org/wiki/Normal_distribution">standard/normal distribution curve</a>, even if the skills represented by the vertical axis may be logarithmic in scale.</p>
+
+<p><strong>The Hipster Effect</strong>. I realize that I only counted two areas earlier in this post, but this would lack something if I didn’t mention the effect that the “Hipster” culture has had on perceived skills. Rather than reiterate every terrible think about Hipster culture, <a href="http://www.wolfgnards.com/index.php/2010/08/27/the-irony-of-the-ironic-hipsters-don-t-understand-irony">I’ll let this guy do it for me</a>. I don’t know if I can explain this better than <strong>there is no such thing as ironically bad music or photography</strong>. The misconception that there is has very deeply damaged the ability for the average hipster to properly appreciate music and photography, assuming that they are searching for ironically bad things, rather than attempting to appreciate skill. Crummy audio recordings, “vintage looks”, and other gimmicks serve to hide, rather than accentuate, the skills involved in the production of the underlying art.</p>
+
+<p><strong>Processing/Post-Production</strong>. When you do not require initial skill to create something, but can merely “<a href="http://knowyourmeme.com/memes/this-looks-shopped">shop</a>” your way out of any situation, the underlying skill is devalued, and sometimes forgotten. I’ve been trying to emphasize the value of learning to create effects and the vast majority of the cinematic treatment of the mise-en-scène, rather than simply using a series of post-production tools to bend the footage to my will. This has more to do with the propensity for forgetting basic cinematic technique which comes with foregoing the steps involved with figuring out how to do this work on set. The real damnation seems to come when there is <em>no actual knowledge</em> of the underpinnings and workings of the art, and a novice decides to use post-processing <em>exclusive of skill</em>. This is the disease which is Instagram, Autotune, and Photoshop, in a nutshell.</p>
+
+<p>The only way to fight this is to not concede defeat. If we are actually artists instead of simple camera jockeys, why shouldn’t we be pushing for our craft and skill-set to receive the recognition which it deserves? I understand that some of the lost ground, in terms of general appreciation, has been lost – but hopefully we can keep the situation from getting much worse through education and perserverence.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Age of DSLR Cinematography]]></title>
+    <link href="http://jbuchbinder.com/2013/06/20/the-age-of-dslr-cinematography/"/>
+    <updated>2013-06-20T16:57:00-04:00</updated>
+    <id>http://jbuchbinder.com/2013/06/20/the-age-of-dslr-cinematography</id>
+    <content type="html"><![CDATA[<p>DSLR cinematography (the practice of cinematography using relatively inexpensive DSLR camera bodies, which were originally purposed for still photography) has been enjoying a sort of minature renaissance over the last few years.</p>
+
+<p>I was pleasantly surprised to find out that Shane Carruth’s new movie, <a href="http://www.imdb.com/title/tt2084989/">Upstream Color</a>, was shot entirely on a DSLR body. The information I’ve been reading indicates that he used a Panasonic GH2 DSLR body, with a few lenses, including the <a href="http://slrgear.com/reviews/showproduct.php/product/1577/cat/110">Rokinon 85mm f/1.4</a> (which I highly recommend). It scored at Sundance, and if it hadn’t been for a few “behind the scenes” photos, it might not have been quite that apparent.</p>
+
+<p>Of course, Carruth also ended up using some <a href="http://www.kenrockwell.com/voigtlander/">Voigtlander</a> glass, which is by no stretch of the imagination cheap/affordable for cash-strapped indie filmmakers. There’s an interesting write-up on the whole thing <a href="http://www.eoshd.com/content/10309/gh2-shot-sci-fi-upstream-color-breaks-300000-mark-at-the-us-box-office">at EOSHD</a>.</p>
+
+<p>There’s a reason why I bring up “Upstream Color” – and it’s a point that I’ve been trying to make, off and on, for the past year or so. That film grossed over 300k dollars at the box office, and was shot on a small, inexpensive camera body. Still, it produced stunning visuals and did not seem to suffer from most of the “fatal flaws” that most seem to ascribe to DSLR cinematography, in general. The point, boiled down to its most essential component, is that the most important piece of equipment you’ve got is between your forehead and your nose. You can’t buy your way into it, and you can’t just assume that if you own it, you can shoot as well as cinematographer X who has the current successful movie on the big screen.</p>
+
+<p>Whether or not you’re a big fan of “Act of Valor” or the “Fast and Furious” franchise, you can still appreciate Shane Hurlbut’s <a href="http://blog.planet5d.com/2012/02/act-of-valor-leap-of-faith/">extensive use of Canon EOS 5D mk III bodies</a>. He has had a series of posts on his blog praising not only the relative inexpensive nature of the 5D bodies, but also their versatility.</p>
+
+<p>For every person who says “I shoot on the RED ONE” and produces sub-standard output, or bemoans not being able to afford an ARRI which would “really make a beautiful movie” – I call foul on that entire argument. Even contending with a more limited dynamic range (a common DSLR problem), a top resolution of 1080p for shooting, and mostly commodity lenses, Carruth managed to produce something beautiful. It’s not down to the equipment you buy, folks, it’s how you use it.</p>
+
+<p>Good luck.</p>
+
+]]></content>
+  </entry>
+  
+</feed>

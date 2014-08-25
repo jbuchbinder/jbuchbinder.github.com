@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Deploying GWT Applications with Jetty - /home/jeff/blog</title>
+  <meta name="author" content="jeff">
+
+  
+  <meta name="description" content="I’m not a big fan of tomcat, preferring Jetty where possible. Unfortunately there are a lot of catches involved with getting GWT applications working &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="/home/jeff/blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+<meta property="fb:app_id" content="159544250739435" />
+
+
+  
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49191923-1', 'auto');  // Replace with your property ID.
+  ga('send', 'pageview');
+
+  </script>
+  <!-- End Google Analytics -->
+
+
+  <meta property="og:url" content="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty/">
+<meta property="og:type" content="website" />
+
+<meta property="og:title" content="Deploying GWT Applications with Jetty">
+<meta property="og:description" content="">
+ 
+
+
+</head>
+
+<body   >
+  <!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MXV2JN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MXV2JN');</script>
+<!-- End Google Tag Manager -->
+
+  <header role="banner"><hgroup>
+  <h1><a href="/">/home/jeff/blog</a></h1>
+  
+    <h2>Sucking away valuable moments of your life ...</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:jbuchbinder.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/music">Music</a></li>
+  <li><a href="/pets">Pets</a></li>
+  <li><a href="/quotes">Quotes</a></li>
+  <!-- <li><a href="/studio">Studio</a></li> -->
+  <li><a href="/wishlist">Wishlist</a></li>
+  <li><a href="/in-memoriam">In Memoriam</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Deploying GWT Applications With Jetty</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-03-01T00:00:00-05:00" pubdate data-updated="true"></time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I’m not a big fan of tomcat, preferring <a href="http://www.mortbay.org/">Jetty</a> where possible. Unfortunately there are a lot of catches involved with getting <a href="http://code.google.com/webtoolkit/">GWT</a> applications working. I’ll try to break the changes down here. This assumes that you already have a GWT project built and made with projectCreator which you are migrating into Jetty.</p>
+
+<p>1) Pull the start.jar, bin/jetty.sh script (which will be moved to the base of your distribution), lib and etc directories from your Jetty distribution, and put them in $DIST (your distribution directory)</p>
+
+<p>2) Change your (appname)-shell script to be like the following:
+<strong>JettyTest-shell</strong>
+&lt;div class='bogus-wrapper'&gt;<notextile><figure class="code">&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class='code'&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</span><span class="line">GWT_HOME=/usr/lib/gwt
+</span><span class="line">ENTRY_POINT=net.cognitiveconsulting.gwt.JettyTest
+</span><span class="line">HOST_PAGE=JettyTest.html
+</span><span class="line">APPDIR=`dirname $0`;
+</span><span class="line">CPGWT=$APPDIR/src
+</span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-user.jar
+</span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-dev-linux.jar
+</span><span class="line">java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 "$@" $ENTRY_POINT/$HOST_PAGE</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+
+<p>3) Change your (appname)-compile script to look like:<br />
+<strong>JettyTest-compile</strong><br />
+&lt;div class='bogus-wrapper'&gt;<notextile><figure class="code">&lt;div class="highlight"&gt;&lt;table&gt;&lt;tr&gt;&lt;td class="gutter"&gt;&lt;pre class="line-numbers"&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class='code'&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</span><span class="line">APPDIR=`dirname $0`;
+</span><span class="line">echo "Compiling GWT portion of application ... "
+</span><span class="line">java  -cp "$APPDIR/src:$APPDIR/bin:/usr/lib/gwt/gwt-user.jar:/usr/lib/gwt/gwt-dev-linux.jar" com.google.gwt.dev.GWTCompiler -out "$APPDIR/webapps" "$@" net.cognitiveconsulting.gwt.JettyTest;
+</span><span class="line">echo "Compiling native Java part of application ... "
+</span><span class="line">ant -f net.cognitiveconsulting.gwt.JettyTest.ant.xml
+</span><span class="line">echo "Moving pieces into Jetty library path ... "
+</span><span class="line">( cd bin ; jar cf ../lib/net.cognitiveconsulting.gwt.JettyTest.jar * )</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+
+<p>Remember, after this, your output directory is no longer www, it’s now “webapps”.</p>
+
+<p>4) Create the directory $DIST/webapps/(appname)/WEB-INF, and create a web.xml file like this, with the definitions for your remote services:<br />
+<strong>webapps/net.cognitiveconsulting.gwt.JettyTest/WEB-INF/web.xml</strong></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">[servlet]
+</span><span class="line">    [servlet-name]Test[/servlet-name]
+</span><span class="line">    [servlet-class]net.cognitiveconsulting.gwt.server.TestImpl[/servlet-class]
+</span><span class="line">  [/servlet]
+</span><span class="line">
+</span><span class="line">  [servlet-mapping]
+</span><span class="line">    [servlet-name]Test[/servlet-name]
+</span><span class="line">    [url-pattern]/rpc/net.cognitiveconsulting.gwt.client.Test[/url-pattern]
+</span><span class="line">  [/servlet-mapping]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><em>(Please note that because wordpress ate my XML, I used a different kind of brackets, please substitute as required.)</em></p>
+
+<p>5) Create the ant build file:<br />
+<code>/usr/lib/gwt/projectCreator -ant net.cognitiveconsulting.gwt.JettyTest</code></p>
+
+<p>6) Make sure you have created working servlets under the internal tomcat implementation before you proceed, making sure that the servlet information is in the .gwt.xml file in your source directory like this:<br />
+``</p>
+
+<p>7) Make sure that a copy of $GWTDIR/gwt-servlet.jar and any other libraries you are using are installed in $DIST/lib — forget this and nothing is going to work.</p>
+
+<p>8) Create an empty “logs” directory under $DIST.</p>
+
+<p>You should be able to start Jetty at your convenience and browse to the (appname)/(startpage).html page. If you want to pack it as a war, just zip the (appname) directory in $DIST/webapps with a .war extension. Also, running jetty.sh with the parameter “supervise” will allow you to watch the logs as they go by.</p>
+
+<p>Hope this has been informative and helpful.</p>
+
+<p><strong>UPDATE</strong>: <em>Jan, one of the webtide guys, was nice enough to send me an ant build file which does much the same type of thing I was attempting to do here. It is attached <a href="http://jbuchbinder.com/wp-content/uploads/2008/03/build.xml">here</a>, for anyone else who would like a copy.</em></p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">jeff</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-03-01T00:00:00-05:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/development/'>development</a>, <a class='category' href='/categories/hacks/'>hacks</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty/" data-via="jbuchbinder" data-counturl="http://jbuchbinder.com/2008/03/01/deploying-gwt-applications-with-jetty/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2007/11/21/thanksgiving/" title="Previous Post: Thanksgiving">&laquo; Thanksgiving</a>
+      
+      
+        <a class="basic-alignment right" href="/2008/03/09/modding-that-old-xbox/" title="Next Post: Modding that old XBox">Modding that old XBox &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/">Modifying Computar 12.5mm C-mount Lens for M4/3</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2014/06/10/diy-7-dollars-film-slate/">DIY $7 Film Slate</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2014/05/12/boom/">Boom!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/">BMPC4K Workflow With Premiere and Resolve</a>
+      </li>
+    
+      <li class="post">
+        <a href="/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/">48 Hours With the Blackmagic Production Camera 4K</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Categories</h1>
+  <ul id="categories">
+    <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (21)</a></li>
+<li class='category'><a href='/categories/development/'>development (34)</a></li>
+<li class='category'><a href='/categories/film/'>film (1)</a></li>
+<li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
+<li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
+<li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
+<li class='category'><a href='/categories/music/'>music (14)</a></li>
+<li class='category'><a href='/categories/opinion/'>opinion (12)</a></li>
+<li class='category'><a href='/categories/photography/'>photography (10)</a></li>
+<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (81)</a></li>
+<li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
+<li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>
+
+  </ul>
+</section>
+<section>
+  <h1>Links</h1>
+  <ul>
+    <li><a href="https://crated.com/jbuchbinder">Crated Photo Prints</a></li>
+    <li><a href="http://www.flickr.com/photos/whatsyourmeme/">Flickr Photos</a></li>
+    <li><a href="http://redlinedoc.com/">Redline Doc</a></li>
+    <li>
+        <a href="http://shootthemoonfilms.com/">Shoot the Moon Films</a>
+        <a href="http://www.facebook.com/ShootTheMoonFilms"><span class="socicon">b</span></a>
+        <a href="http://www.twitter.com/STM_Films"><span class="socicon">a</span></a>
+        <a href="http://www.youtube.com/ShootTheMoonVideos"><span class="socicon">r</span></a>
+    </li>
+    <li><a href="http://www.facebook.com/JeffreyBuchbinderFilm">Facebook Fan Page</a></li>
+    <li><a href="http://twitter.com/jbuchbinder">Twitter Feed</a></li>
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/jbuchbinder">@jbuchbinder</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'jbuchbinder',
+            count: 10,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/whatsyourmeme?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/whatsyourmeme">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/102632982740363465802?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - jeff -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'jbuchbinder';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  //js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  js.src = "//connect.facebook.net/en_US/all.js#appId=159544250739435&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

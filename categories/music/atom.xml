@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: music | /home/jeff/blog]]></title>
+  <link href="http://jbuchbinder.com/categories/music/atom.xml" rel="self"/>
+  <link href="http://jbuchbinder.com/"/>
+  <updated>2014-08-25T11:00:08-04:00</updated>
+  <id>http://jbuchbinder.com/</id>
+  <author>
+    <name><![CDATA[jeff]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Old Studio Recordings]]></title>
+    <link href="http://jbuchbinder.com/2009/01/17/old-studio-recordings/"/>
+    <updated>2009-01-17T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2009/01/17/old-studio-recordings</id>
+    <content type="html"><![CDATA[<p>I just posted 24 tracks (some are multiple versions of the same tracks) from the 2005 incarnation of the studio on mediafire. It’s mostly Jake, Natasha and I. A good deal of backing tracks provided by other musicians, featuring Bob Thurston on violin.</p>
+
+<p>Link: </p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Ardour is awesome]]></title>
+    <link href="http://jbuchbinder.com/2008/12/13/ardour-is-awesome/"/>
+    <updated>2008-12-13T00:00:00-05:00</updated>
+    <id>http://jbuchbinder.com/2008/12/13/ardour-is-awesome</id>
+    <content type="html"><![CDATA[<p>I finally got around to upgrading the studio to use <a href="http://ardour.org/node/2251">ardour 2.7.1</a>, from the stock version which comes with the Intrepid Ibex release of <a href="http://ubuntustudio.org/">Ubuntu Studio</a>. It took <a href="http://ardour.org/files/manual/sn-mackie.html">minimal configuration</a> to get my <a href="http://www.behringer.com/BCF2000/index.cfm">Behringer BCF2000 control surface</a> working, and it worked amazingly well. Unlike in the past when I had to manually bind controls to their functions in ardour, pretty much everything was automated, so besides forcing udev to create a static link for it (so that I could plug whatever in whenever I wanted to without disturbing the actual location in /dev) everything just *worked* when I brought jack ardour up for the first time. I’ve been using ardour since the pre-version-number days, and I have to say that this impressed the hell out of me. Paul, you rock.</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[JohnFest 2008 Recordings]]></title>
+    <link href="http://jbuchbinder.com/2008/09/15/johnfest-2008-recordings/"/>
+    <updated>2008-09-15T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2008/09/15/johnfest-2008-recordings</id>
+    <content type="html"><![CDATA[<p>I have just posted the first set (from the first two hours) of John Mayer’s summer music festival (here affectionately titled “JohnFest”) from 2008 here:</p>
+
+<p>The technical details … I used my trusty Thinkpad T61 with the Behringer UCA202 to pull sound off the board. As usualy, this means that the quality of the recording is based solely on the job of the mixing engineer. It was cut using mp3cut and normalized using mp3norm, as with most of the Stonewall Tavern recordings. Keep watching for the remaining hours to be posted.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Open Mic at the Stonewall Tavern]]></title>
+    <link href="http://jbuchbinder.com/2008/07/01/open-mic-at-the-stonewall-tavern/"/>
+    <updated>2008-07-01T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2008/07/01/open-mic-at-the-stonewall-tavern</id>
+    <content type="html"><![CDATA[<table>
+  <tbody>
+    <tr>
+      <td>As a kind of public service of some sort, I’ve been recording the Open Mic night at the <a href="http://www.myspace.com/thestonewalltavern">Stonewall Tavern</a> in <a href="http://en.wikipedia.org/wiki/Mansfield,_Connecticut">Eagleville, CT</a>, which has been hosted by the terrific <a href="http://www.myspace.com/blaneybrothers">Blaney Brothers</a> for the past few years. I have been putting the recordings up for anyone who wants them, arranged by date and artist on MediaFire, at . Enjoy… (But don’t complain too much about it. It’s all straight board-out to mp3 using this little gem: arecord -f cd -t raw -D hw:1,0</td>
+      <td>lame –verbose -x -s 44.1 - “${OUTPUTFILE}”)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(Also, I’ve been fortunate enough to do an actual studio session with the Blaneys. I’ll probably release it at some point, with their permission, of course.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Acoustic Album and Site for evoke]]></title>
+    <link href="http://jbuchbinder.com/2006/10/18/acoustic-album-and-site-for-evoke/"/>
+    <updated>2006-10-18T00:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2006/10/18/acoustic-album-and-site-for-evoke</id>
+    <content type="html"><![CDATA[<p>[![evoke_Acoustic_Autumn_Insert_page1_1.jpeg][2]][2]We’ve been working hard in the [studio][2] again, and there’s more to see. Besides the initial launch of the new [evoke site (evokeband.com)][3], there’s a new acoustic EP, entitled “<em>Acoustic Autumn</em>“, which has just been finished. Keep an eye out on the <strong>evoke</strong> site, there’s a good chance the entire album will be put online for listening …   </p>
+
+<p>[]: /wp-content/uploads/admin/images/evoke_Acoustic_Autumn_Insert_page1_1.jpeg
+ [2]: /studio
+ [3]: http://www.evokeband.com/</p>
+]]></content>
+  </entry>
+  
+</feed>
