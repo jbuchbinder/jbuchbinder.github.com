@@ -4,11 +4,13 @@ author: jeff
 layout: page
 ---
 
-* [Benji](/pets/benji)
-* [Ebony](/pets/ebony)
-* [Gabby](/pets/gabby)
+* [Benji](/pets/benji) (deceased)
+* [Ebony](/pets/ebony) (deceased)
+* [Gabby](/pets/gabby) (deceased)
 * [Isabella](/pets/isabella)
-* [Ivory](/pets/ivory)
-* [Muffy](/pets/muffy)
+* [Ivory](/pets/ivory) (deceased)
+* [Maggie](/pets/maggie)
+* [Muffy](/pets/muffy) (deceased)
 * [Stan](/pets/stan)
+* [TT](/pets/tt)
 
