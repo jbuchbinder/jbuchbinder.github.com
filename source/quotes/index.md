@@ -97,7 +97,7 @@ layout: page
 
 "They that can give up essential liberty to purchase a little temporary safety, deserve neither liberty nor safety." – Benjamin Franklin
 
-## Politics
+## Politics / Class
 
 "I am not a dictator. I have only simplified democracy." – Adolph Hitler (1936)
 
@@ -180,6 +180,8 @@ layout: page
  [28]: http://crooksandliars.com/brad-reed/breaking-americas-trickle-down-stockholm
 
 "All government suffer a recurring problem: Power attracts pathological personalities. It is not that power corrupts but that it is magnetic to the corruptible." – Frank Herbert
+
+"If wealth was the inevitable result of hard work and enterprise, every woman in Africa would be a millionaire." - George Monbiot, from [The Self-Attribution Fallacy](http://www.monbiot.com/2011/11/07/the-self-attribution-fallacy/)
 
 ## Racism, Bigotry and the Team Mentality
 
