@@ -42,6 +42,8 @@ layout: page
 
 "He who controls the past controls the future. He who controls the present controls the past." - George Orwell (from *1984*)
 
+"Most people do not listen with the intent to understand; they listen with the intent to reply." - Stephen R. Covey (from *The 7 Habits of Highly Effective People*)
+
 ## Healthcare
 
 "Even if you don’t have health insurance in America, you get taken care of. That could be defined as universal health care." – Tom Thompson, HHS Secretary, [as quoted by Senator Tom Daschle][1] as an example of politicians being out of touch with the realities of healthcare.
@@ -222,6 +224,8 @@ layout: page
 "Personally it’s not God I dislike, it’s his fan club I can’t stand." – Anonymous
 
 "Il y a eu des gens qui ont dit autrefois: Vous croyez des choses incompréhensibles, contradictoires, impossibles, parce que nous vous l’avons ordonné; faites donc des choses injustes parce que nous vous l’ordonnons. Ces gens-là raisonnaient à merveille. Certainement qui est en droit de vous rendre absurde est en droit de vous rendre injuste. Si vous n’opposez point aux ordres de croire l’impossible l’intelligence que Dieu a mise dans votre esprit, vous ne devez point opposer aux ordres de malfaire la justice que Dieu a mise dans votre coeur. Une faculté de votre âme étant une fois tyrannisée, toutes les autres facultés doivent l’être également. Et c’est là ce qui a produit tous les crimes religieux dont la terre a été inondée." *(Translated: "Formerly there were those who said: You believe things that are incomprehensible, inconsistent, impossible because we have commanded you to believe them; go then and do what is unjust because we command it. Such people show admirable reasoning. Truly, whoever is able to make you absurd is able to make you unjust. If the God-given understanding of your mind does not resist a demand to believe what is impossible, then you will not resist a demand to do wrong to that God-given sense of justice in your heart. As soon as one faculty of your soul has been dominated, other faculties will follow as well. And from this derives all those crimes of religion which have overrun the world.")* – Voltaire
+
+"If your belief system is not founded in an objective reality, you should not be making decisions that affect other people." - Neil deGrasse Tyson
 
 ## Society
 
