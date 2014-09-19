@@ -169,6 +169,11 @@ placing actors in front of the camera. You'll avoid a lot of time-wasting
 adjustment and blown takes, which will translated into better looking shots and
 a better end product.
 
+As far as "the enemy of the good is the perfect": it is rarely going to be
+perfect. Deciding how much time to spend on that one insert may be the thing
+which keeps you from rushing through the rest of your limited time at a
+location. This is as much about time management as anything.
+
 ## 8) Prepare.
 
 I've joked that my pre-production time on a film is longer than the actual
