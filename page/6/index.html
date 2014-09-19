@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me. Why someone would design a system to expose every &hellip;">
+  <meta name="description" content="The simple recipe is to add this to root’s cron: * * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +105,91 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/29/openbsd-pf-states-monitoring/">OpenBSD Pf States Monitoring</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-29T00:00:00-05:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/01/29/openbsd-pf-states-monitoring/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The simple recipe is to add this to root’s cron:</p>
+
+<p><code>
+* * * * * /usr/bin/gmetric -c /etc/gmond.conf -n pf_states -v $(/usr/local/sbin/pftop -b | grep pfTop | cut -d/ -f2 | cut -d, -f1) -t int32 -d 120 2&gt;&amp;#038;1 | logger -t pf_states
+</code></p>
+
+<p>and install the <strong>pftop</strong> package along with a gmetric binary and a working <strong>/etc/gmond.conf</strong> configuration file. It might be advantageous to check for the maximum number of states as well.</p>
+
+<p>In addition, you might want to know which pf rules are passing how much traffic. A nice easy way of doing this is to create this file as <strong>./pfstates</strong> (make it executable, of course):</p>
+
+<pre><code>#!/usr/bin/perl
+# pfstates
+# jeff@ourexchange.net
+my $limit = shift  || 0;
+ 
+my $seg = 0;
+my @s = [];
+
+while (chomp( my $line = )) {
+        $s[$seg] = $line;               
+        if ($seg == 2) {
+                $seg = 0;
+                if ($s[1] !~ /States: 0/) {
+                        my $states = 0;
+                        if ($s[1] =~ m/States: (d )/) {
+                                $states = $1;
+                        }
+                        if ($states &gt;= $limit) {
+                                print "[$states] $s[0]n";
+                        }
+                }
+        } else {
+                $seg  ;
+        }
+}
+</code></pre>
+
+<p>…. then you would pipe pfctl’s state output to it:</p>
+
+<pre><code>pfctl -v -s rules | ./pfstates
+</code></pre>
+
+<p>Optionally you could add a “minimum level” of connections you want to see:</p>
+
+<pre><code>pfctl -v -s rules | ./pfstates 100
+</code></pre>
+
+<p>for example to see only rules passing 100 or more active connections.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -577,50 +662,6 @@ String country = mTelephonyMgr.getNetworkCountryISO();
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/09/15/metaphor-du-jour/">Metaphor Du Jour</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-09-15T00:00:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2009/09/15/metaphor-du-jour/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>For those who don’t know much about my life or daily habits, I have to commute into Framingham, Massachussets most days for work, which is about an hour drive from Northeast Connecticut, where I live. Unfortunately, this means spending a fair amount of time in traffic, as well as on the <a href="http://www.masspike.com/">Mass Pike</a>, which is the sorry excuse for mass transit across Massachussets. Americans think of mass transit as highways instead of rail and its compatriots, for one reason or another.</p>
-
-<p>Getting on or off that road is a little dangerous — drivers in Massachussetts, less-than affectionately referred to as ‘<a href="http://www.masshole.com/">Massholes</a>‘ by drivers in other states, seem to have some hideous mental block which keeps them from being able to merge into traffic. A single lane merge on the Mass Pike can backup traffic for miles on some days. Instead of following the customary turn-taking merge technique which has become so commonplace in other parts of the country, drivers in the “Make it yours” state just slam their heavy feet down on the accelerator and attempt to cut off every other driver on the road.</p>
-
-<p>It struck me that this is a pretty decent metaphor for the issues with the illusion of “pure capitalism” mentality that has become so prevalent in this country. Common sense dictates that by not being rude to your countrymen and displaying common courtesy, everyone does better. You may get to work a few minutes later, or possibly everyone could get to work on time. People don’t need to step on other people to get ahead — they can still get where they’re going, but it’s far better for everyone involved to not be such a dick about it.</p>
-
-<p>And the second part of the metaphor is that if we just went with mass transit, we’d probably be better off, but no one is going to do it because we can’t show anyone our large shiny chrome and plastic wangs. Sadly, that might be the more apropos part of the metaphor.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="7">&larr; Older</a>
@@ -638,6 +679,10 @@ String country = mTelephonyMgr.getNetworkCountryISO();
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/09/19/ways-to-keep-your-work-from-appearing-cheap/">Ways to Keep Your Work From Appearing Cheap</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/">Modifying Computar 12.5mm C-mount Lens for M4/3</a>
       </li>
     
@@ -653,17 +698,13 @@ String country = mTelephonyMgr.getNetworkCountryISO();
         <a href="/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/">BMPC4K Workflow With Premiere and Resolve</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/">48 Hours With the Blackmagic Production Camera 4K</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (21)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (22)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
