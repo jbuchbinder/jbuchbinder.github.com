@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-09-19T17:02:49-04:00</updated>
+  <updated>2014-10-21T15:37:56-04:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,239 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Another 48 Hours]]></title>
+    <link href="http://jbuchbinder.com/2014/10/19/another-48-hours/"/>
+    <updated>2014-10-19T20:00:00-04:00</updated>
+    <id>http://jbuchbinder.com/2014/10/19/another-48-hours</id>
+    <content type="html"><![CDATA[<p>Almost six months after the Boston 48 Hour Film Festival, my team
+(<a href="http://www.shootthemoonfilms.com/">Shoot the Moon Films</a>) is entering the
+2014 <a href="http://www.48hourfilm.com/providence/horror/2014/">Providence 48 Hour Horror Festival</a>. Along
+with seventeen other teams, we’re going to try to make a 4-7 minute
+horror film in 48 hours.</p>
+
+<p>This is pretty far out of my wheelhouse, as I haven’t made a practice of
+making horror films, but my team and I are excited, and I’m going to keep
+track of both our successes and our missteps here.</p>
+
+<h2 id="day-one-preproduction-kickoff-and-writing">Day One: Preproduction, Kickoff, and Writing</h2>
+
+<p>The one crazy moment I ended up having before everything got started was
+the realization that I didn’t have enough space on the primary editing
+workstation drive – and I ended up ameliorating that by purchasing another
+drive down the road. Crisis averted, no hair lost.</p>
+
+<p>I don’t like the roads around Providence, which proved to be a pain both
+heading out to the kickoff event (horrific traffic and rubbernecking) as well
+as on the way back (incorrect signage sending me to take a nasty U-turn in
+Providence). As our producer couldn’t make the trip to the kickoff event,
+I ended up taking his place.</p>
+
+<p>After a two or three story jaunt up a staircase in a pretty non-descript
+mill building in Pawtucket, I joined a group of mostly younger filmmakers,
+eager to pick a category and get moving. As this was a “horror” themed
+festival, we had a list of genres – and the writers had asked that I not
+request one of the contingency genres, as they were more difficult to pull
+off.</p>
+
+<p>The guy standing behind me, after telling me how much he hated “Found Footage”
+as a genre (which, by the way, I also loathe), ended up pulling that genre.
+We ended up getting “Satanic/Demonic Possession”, and I messaged the
+information back to the writers, so that they could get started on the
+planning and writing process before I got back.</p>
+
+<p>Both of the writers were coming from previous engagements, including one
+who was starring in a theater production of “Frankenstein” – but they still
+managed to crank out the final version of a script before midnight. Everyone,
+cast and crew, got sent copies.</p>
+
+<p>From midnight until about 2:00 - 2:30 a.m., I wrote out a tentative shot list
+and printed a huge piles of copies of the script. I got to sleep a little
+before 3:00 a.m.</p>
+
+<h2 id="day-two-production--shooting">Day Two: Production / Shooting</h2>
+
+<p>At around 6:00 a.m., my wife and I got up, packed all of the equipment into
+the car, and met the rest of the cast and crew at our shooting location at
+7:00 a.m. We ended up having to scramble around to get all of the set
+dressing components for the set, and got production underway around 10:30 -
+11:00 a.m. Shooting with the BMPC4K camera made shooting, in most instances,
+much faster since we could shoot in 4K and simply “punch in” for close up
+shots without losing resolution. It was a neat trick which had been suggested
+to me about two years ago by the director of “Chez Upshaw”, which a project
+of mine had screened with at BIFF.</p>
+
+<p>I got a chance to trot out a snorricam rig which hadn’t been used in almost
+two years. It couldn’t handle the weight of the production camera, so we
+were using a Blackmagic Pocket Cinema Camera with a modified Computar 12.5mm
+f/1.3 lens stopped down to about f/4 to replace the GoPro Hero 2 we used to
+use. The footage is nicely inter-cuttable with the Production Camera footage,
+so I wouldn’t have to pull any rabbits out of hats in color grading.</p>
+
+<p>We had a hard deadline for wrapping up principal photography of 5:30 p.m.,
+since a number of actors and crew members had to make it back to the theater
+for another performance of “Frankenstein” – including two of our actors,
+our production designer <em>and</em> our makeup artist. We barely finished our last
+take of our last outside shot as it started to rain heavily outside. No
+equipment damaged, no shot missed.</p>
+
+<p>We had to return props, and since my wife had taken the car, our producer
+loaded up half of the equipment and my friend Chris helped me with the rest
+of it, as well as helping me return some of our borrowed props. Another cup
+of coffee later, and we were transferring about 280+ GB of footage off of the
+two cameras and the boom rig.</p>
+
+<p>One of the actors and the producer took turns sitting with me while I made
+the bulk of the edits. We finished the rough cut at a little past 11:50 p.m.
+The cast and crew members present watched the rough cut to confirm that there 
+weren’t any glaring issues with the cut, then my wife and I went through all
+of the audio to catalogue shot numbers and takes for easy sound replacement
+referencing. I rendered out a reference copy for the musician doing the
+scoring, uploaded it, and went to sleep before I passed out on my keyboard.</p>
+
+<h2 id="day-three-post-production-and-making-the-deadline">Day Three: Post-production and Making the Deadline</h2>
+
+<p>After a brief hour and a half or so of sleep, I ended up having to get up
+to help my geriatric dog, who has periodic breathing issues. I got another
+hour or so of sleep before my wife tossed me out of bed, and I stumbled down
+the street to grab a cup of delicious Peruvian coffee to wake up. I’m pretty
+sure my eyes weren’t open until half way back to the house.</p>
+
+<p>From 6:30 a.m. until 10:30 a.m., I did the bulk of the sound replacement and
+matching work as well as the coloring in Resolve. I dumped out an export for
+Audition to take with me for ADR, and headed off to get the few lines that
+we needed done.</p>
+
+<p>Five actors met me over at our original shoot location, primarily so that my
+dogs wouldn’t scuttle any of the takes. We wrapped sound collection around
+1:30 p.m., and headed back to recomposite everything. I sent out the audio
+to our audio engineer in Massachussetts, who recomposited everything together
+and cleaned up some of our slightly dirtier boom audio, as well as leveling
+out the speech. Final render time out of Premiere came right after that.</p>
+
+<p>A last minute call to the hotline for the festival confirmed that we could
+present HD 24 fps footage, rather than being limited to 30 fps footage (as
+the website had indicated). A quick burn of a DVD and dropping footage on
+a flash drive which felt <em>far</em> too large for the content we were putting on
+it, and we were off to the races – so to speak.</p>
+
+<p>We hauled the 45+ minute drive through Providence to the drop off point, and
+were the first team in our group (the “B” group) to hand in our materials
+40 minutes before the 7:30 p.m. drop-off deadline. Yahtzee!</p>
+
+<h2 id="lessons-learned">Lessons Learned</h2>
+
+<ul>
+  <li>
+    <p><strong>Have an on-site audio engineer to take care of ADR duties.</strong> It’s a
+serious pain to have to color <em>and</em> handle re-recording.</p>
+  </li>
+  <li>
+    <p><strong>Get the cleanest boom audio possible.</strong> Make sure your boom operator is
+getting pristine audio, as close as possible to the source, and monitoring
+the levels.</p>
+  </li>
+  <li>
+    <p><strong>Make sure your audio is being catalogued on set.</strong> It was a serious time
+waster to do this late at night, and put off coloring work until the next
+day.</p>
+  </li>
+  <li>
+    <p><strong>Make sure someone is arranging rides.</strong> If someone needs to shuttle crew
+around, make sure it’s not one of your department heads.</p>
+  </li>
+  <li>
+    <p><strong>Screen your graded footage a few times before finalizing.</strong> I’m really
+guilty of this one, as I noticed a few places where I needed to brighten
+the midtones a bit, or match the color of the grass in some exterior shots
+a bit better.</p>
+  </li>
+  <li>
+    <p><strong>Make sure to let everyone know how important they are.</strong> In a 48 hour
+film festival, there are no “unimportant” people. Everyone is doing their
+job, and without them, things wouldn’t come together properly. Our 1st AD
+(who is, by trade, a stage manager) had never worked on a film set before
+– but you’d never know it, since she brought her “A” game with her.</p>
+  </li>
+</ul>
+
+<h2 id="special-thanks">Special Thanks</h2>
+
+<p>I’d like to thank (in no particular order)…</p>
+
+<ul>
+  <li>
+    <p><strong>Natasha Darius</strong> – My wife, co-writer, and general driving force
+behind everything I do. We wouldn’t have done the 48 if it wasn’t
+for her.</p>
+  </li>
+  <li>
+    <p><strong>Nick Magrey</strong> – Although he overbooks <em>everything</em> and wears far too
+many hats, nothing would get done without him. Co-writing, acting,
+production designing, wardrobe supervising… the list goes on and
+on. Not to mention that he did this during the closing weekend of
+his leading role in “Frankenstein” at the Bradley Playhouse.</p>
+  </li>
+  <li>
+    <p><strong>Curtis Reid</strong> – I give him a lot of crap about everything, but he’s
+the other half of the organizational aspect of all of this, as well
+as running <strong>Shoot the Moon Films</strong>. I like to tell people “you need
+to get a Curtis” when they ask how I manage to get stuff done. I
+shouldn’t downplay his acting, either – I just usually focus on
+all of his producing duties.</p>
+  </li>
+  <li>
+    <p><strong>Jon Demers</strong> – He kept me awake, gopher’d the crap out of everyting,
+drove me everywhere, <strong>and</strong> found time to act. Give that man a gold
+star.</p>
+  </li>
+  <li>
+    <p><strong>Hannah Viens</strong> – 1st AD extraordinaire. She made sure that we were
+getting everything done, and that’s no small task.</p>
+  </li>
+  <li>
+    <p><strong>Chelle Wright</strong> – Even though she’s been doing MUA duties with us
+for a while, this was her acting debut. Thank you for not only putting
+in a great performance, but also for making everyone look so good!</p>
+  </li>
+  <li>
+    <p><strong>The Entire Verrill Clan</strong> – Elizabeth was acting and doing sound work,
+Patricia was taking still photos, and they were nice enough to lend
+their lovely home and property to us to trash judiciously for filming.</p>
+  </li>
+  <li>
+    <p><strong>Maureen Vlaco</strong> – You have one of the longest commutes to set, but
+you were cheery, helpful, and even drove <em>back</em> for audio re-recording
+right before a funeral. You brought that character to life – thank you!</p>
+  </li>
+  <li>
+    <p><strong>Keith Murphy</strong> – I’ve never worked with a stunt/fight guy before, but
+he was fantastic, in addition to lending a double-popped-collar
+performance.</p>
+  </li>
+  <li>
+    <p><strong>Paul Magrey</strong> – Booming, as well as helping with all sorts of other
+stuff on set. Awesome job!</p>
+  </li>
+  <li>
+    <p><strong>Brandi Demers</strong> – You’re my right hand on set, and threw in
+a performance to boot, not to mention the time you put in prepping props!</p>
+  </li>
+  <li>
+    <p><strong>Our post-production crew</strong> – Aaron and Garett, especially. You guys
+added so much production value with the precious little time we gave
+you to work, and your work <em>completely</em> speaks for itself.</p>
+  </li>
+</ul>
+
+<h2 id="screening">Screening</h2>
+
+<p><a href="http://www.imdb.com/title/tt4131910/">The Carving</a> is premiering on
+<a href="http://horrorpvd-b.eventbrite.com/">October 29th in Providence at 9:00 p.m.</a>.</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ways To Keep Your Work From Appearing Cheap]]></title>
@@ -618,77 +851,6 @@ boom mic rig, and keeping in mind that pictures are worth a thousand words…</p
 <p>Audio is half of your deliverables – so make sure your boom operator knows how
 to deliver the best possible audio to your audio engineer for post production.
 Good luck!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[BMPC4K Workflow with Premiere and Resolve]]></title>
-    <link href="http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/"/>
-    <updated>2014-05-08T07:05:17-04:00</updated>
-    <id>http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve</id>
-    <content type="html"><![CDATA[<p>There are a number of “accepted” workflows for going between Adobe Premiere
-(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K
-footage. I am going to detail the workflow I have been using, which should
-be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
-
-<ol>
-  <li>
-    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98
-fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same
-thing as the “24P” frame rate we are used to.</p>
-  </li>
-  <li>
-    <p><strong>Load your media onto your workstation</strong>.</p>
-  </li>
-  <li>
-    <p><strong>Create simple proxies</strong>. Using
-<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>,
-create “cheap” lower quality proxies encoded using the H.264 codec in
-Quicktime files. I have been experimenting with using the “.mpg”
-extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>,
-rather than the relatively dodgy external one, but the basic process
-is the same.</p>
-  </li>
-  <li>
-    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do
-not have to bother with any fancy transitions or effects yet – just
-perform a basic edit.</p>
-  </li>
-  <li>
-    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the
-File &gt; Export menu option.</p>
-  </li>
-  <li>
-    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project.
-Import the original files (not the proxies) into your media pool.</p>
-  </li>
-  <li>
-    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export,
-with “Automatically import source clips into pool” deselected. This last
-part is very important, as it forces Resolve to use the clips you already
-have in the Media Pool.</p>
-  </li>
-  <li>
-    <p><strong>Color Grade</strong>. Perform your color grade in Resolve.</p>
-  </li>
-  <li>
-    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose
-“Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options
-here to your liking.</p>
-  </li>
-  <li>
-    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in
-Premiere. This will bring in all of the graded footage.</p>
-  </li>
-  <li>
-    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or
-create your title cards, etc.</p>
-  </li>
-</ol>
-
-<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere
-workflow right now, and it may change.</em></p>
-
 ]]></content>
   </entry>
   
