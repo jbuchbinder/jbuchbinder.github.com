@@ -178,7 +178,7 @@ I'd like to thank (in no particular order)...
    shouldn't downplay his acting, either -- I just usually focus on
    all of his producing duties.
 
- * **Jon Demers** -- He kept me awake, gopher'd the crap out of everyting,
+ * **Jon Demers** -- He kept me awake, gopher'd the crap out of everything,
    drove me everywhere, **and** found time to act. Give that man a gold
    star.
 
