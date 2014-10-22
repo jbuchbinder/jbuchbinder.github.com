@@ -46,7 +46,8 @@ information back to the writers, so that they could get started on the
 planning and writing process before I got back.
 
 Both of the writers were coming from previous engagements, including one
-who was starring in a theater production of "Frankenstein" -- but they still
+who was starring in a theater production of "Frankenstein", the other who
+had costumed and was doing hair and prep work -- but they still
 managed to crank out the final version of a script before midnight. Everyone,
 cast and crew, got sent copies.
 
@@ -157,7 +158,12 @@ I'd like to thank (in no particular order)...
 
  * **Natasha Darius** -- My wife, co-writer, and general driving force
    behind everything I do. We wouldn't have done the 48 if it wasn't
-   for her.
+   for her talented writing and creative spark, her tenacity in keeping
+   everyone moving in the right direction, and her infectious optimism.
+   She was costuming and doing actor prep for "Frankenstein" during this
+   weekend, which made everything else she was able to do (including
+   prop shopping, organization, writing, et cetera) that much more
+   impressive.
 
  * **Nick Magrey** -- Although he overbooks *everything* and wears far too
    many hats, nothing would get done without him. Co-writing, acting,
