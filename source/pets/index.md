@@ -11,6 +11,6 @@ layout: page
 * [Ivory](/pets/ivory) (deceased)
 * [Maggie](/pets/maggie)
 * [Muffy](/pets/muffy) (deceased)
-* [Stan](/pets/stan)
+* [Stan](/pets/stan) (deceased)
 * [TT](/pets/tt)
 
