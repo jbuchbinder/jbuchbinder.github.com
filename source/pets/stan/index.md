@@ -20,3 +20,5 @@ My best friend is [Ebony][4], who I room with.
 
 {% flickr_image 115715659 n left "The look says it all" %}
 
+*Update: Stan died on October 28th, 2014 at 10:45 AM EDT. Thanks to all of his friends who have sent their condolences.*
+

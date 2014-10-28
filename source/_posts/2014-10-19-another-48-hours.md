@@ -154,60 +154,69 @@ were the first team in our group (the "B" group) to hand in our materials
 
 ## Special Thanks
 
-I'd like to thank (in no particular order)...
+I'd like to thank:
 
- * **Natasha Darius** -- My wife, co-writer, and general driving force
-   behind everything I do. We wouldn't have done the 48 if it wasn't
-   for her talented writing and creative spark, her tenacity in keeping
-   everyone moving in the right direction, and her infectious optimism.
-   She was costuming and doing actor prep for "Frankenstein" during this
-   weekend, which made everything else she was able to do (including
-   prop shopping, organization, writing, et cetera) that much more
-   impressive.
+ * **[Natasha Darius](http://www.imdb.com/name/nm5720821/)** -- My
+   wife, co-writer, and general driving force behind everything I do. We
+   wouldn't have done the 48 if it wasn't for her talented writing and
+   creative spark, her tenacity in keeping everyone moving in the right
+   direction, and her infectious optimism. She was costuming and doing
+   actor prep for "Frankenstein" during this weekend, which made
+   everything else she was able to do (including prop shopping,
+   organization, writing, et cetera) that much more impressive.
 
- * **Nick Magrey** -- Although he overbooks *everything* and wears far too
+ * **[Nick Magrey](http://www.imdb.com/name/nm3895408/)** --
+   Although he overbooks *everything* and wears far too
    many hats, nothing would get done without him. Co-writing, acting,
    production designing, wardrobe supervising... the list goes on and
    on. Not to mention that he did this during the closing weekend of
    his leading role in "Frankenstein" at the Bradley Playhouse.
 
- * **Curtis Reid** -- I give him a lot of crap about everything, but he's
-   the other half of the organizational aspect of all of this, as well
-   as running **Shoot the Moon Films**. I like to tell people "you need
-   to get a Curtis" when they ask how I manage to get stuff done. I
-   shouldn't downplay his acting, either -- I just usually focus on
-   all of his producing duties.
+ * **[Curtis Reid](http://www.imdb.com/name/nm4840208/)** -- I give
+   him a lot of crap about everything, but he's the other half of the
+   organizational aspect of all of this, as well as running **Shoot the
+   Moon Films**. I like to tell people "you need to get a Curtis" when
+   they ask how I manage to get stuff done. I shouldn't downplay his
+   acting, either -- I just usually focus on all of his producing duties.
 
- * **Jon Demers** -- He kept me awake, gopher'd the crap out of everything,
-   drove me everywhere, **and** found time to act. Give that man a gold
-   star.
+ * **[Jon Demers](http://www.imdb.com/name/nm6562104/)** -- He kept me
+   awake, gopher'd the crap out of everything, drove me everywhere, 
+   **and** found time to act. Give that man a gold star.
 
- * **Hannah Viens** -- 1st AD extraordinaire. She made sure that we were
-   getting everything done, and that's no small task.
+ * **[Hannah Viens](http://www.imdb.com/name/nm6854892/)** -- 1st AD 
+   extraordinaire. She made sure that we were getting everything done,
+   and that's no small task.
 
- * **Chelle Wright** -- Even though she's been doing MUA duties with us
-   for a while, this was her acting debut. Thank you for not only putting
-   in a great performance, but also for making everyone look so good!
+ * **[Chelle Wright](http://www.imdb.com/name/nm6562109/)** -- Even
+   though she's been doing MUA duties with us for a while, this was her
+   acting debut. Thank you for not only putting in a great performance,
+   but also for making everyone look so good!
 
- * **The Entire Verrill Clan** -- Elizabeth was acting and doing sound work,
-   Patricia was taking still photos, and they were nice enough to lend
-   their lovely home and property to us to trash judiciously for filming.
+ * **The Entire Verrill Clan** -- 
+   [Elizabeth](http://www.imdb.com/name/nm5220888/) was acting and doing
+   sound work, [Patricia](http://www.imdb.com/name/nm6854893/) was taking
+   still photos, and they were nice enough to lend their lovely home and
+   property to us to trash judiciously for filming.
 
- * **Maureen Vlaco** -- You have one of the longest commutes to set, but
-   you were cheery, helpful, and even drove *back* for audio re-recording
-   right before a funeral. You brought that character to life -- thank you!
+ * **[Maureen Vlaco](http://www.imdb.com/name/nm4941340/)** -- You have
+   one of the longest commutes to set, but you were cheery, helpful, and
+   even drove *back* for audio re-recording right before a funeral. You
+   brought that character to life -- thank you!
 
- * **Keith Murphy** -- I've never worked with a stunt/fight guy before, but
-   he was fantastic, in addition to lending a double-popped-collar
-   performance.
+ * **[Keith Murphy](http://www.imdb.com/name/nm6854891/)** -- I've never
+   worked with a stunt/fight guy before, but he was fantastic, in addition
+   to lending a double-popped-collar performance.
 
- * **Paul Magrey** -- Booming, as well as helping with all sorts of other
-   stuff on set. Awesome job!
+ * **[Paul Magrey](http://www.imdb.com/name/nm6562110/)** -- Booming, as
+   well as helping with all sorts of other stuff on set. Awesome job!
 
- * **Brandi Demers** -- You're my right hand on set, and threw in
-   a performance to boot, not to mention the time you put in prepping props!
+ * **[Brandi Demers](http://www.imdb.com/name/nm6562108/)** -- You're my
+   right hand on set, and threw in a performance to boot, not to mention
+   the time you put in prepping props!
 
- * **Our post-production crew** -- Aaron and Garett, especially. You guys
+ * **Our post-production crew** -- 
+   [Aaron](http://www.imdb.com/name/nm6854894/) and
+   [Garett](http://www.imdb.com/name/nm6476893/), especially. You guys
    added so much production value with the precious little time we gave
    you to work, and your work *completely* speaks for itself.
 
