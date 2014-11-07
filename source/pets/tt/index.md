@@ -6,5 +6,6 @@ layout: page
 
 {% flickr_image 15051465931 n left 'TT' %}
 
-Hi, my name is **TT**, and I’m a toy poodle.
+Hi, my name is **TT**, and I’m a toy poodle. ("TT" stands for "tauntaun",
+since I look a lot like one.)
 

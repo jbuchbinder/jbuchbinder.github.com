@@ -4,13 +4,15 @@ author: jeff
 layout: page
 ---
 
-* [Benji](/pets/benji) (deceased)
-* [Ebony](/pets/ebony) (deceased)
-* [Gabby](/pets/gabby) (deceased)
-* [Isabella](/pets/isabella)
-* [Ivory](/pets/ivory) (deceased)
-* [Maggie](/pets/maggie)
-* [Muffy](/pets/muffy) (deceased)
+My pets, in the order in which they were introduced into my life.
+
 * [Stan](/pets/stan) (deceased)
+* [Benji](/pets/benji) (deceased)
+* [Gabby](/pets/gabby) (deceased)
+* [Ivory](/pets/ivory) (deceased)
+* [Ebony](/pets/ebony) (deceased)
+* [Muffy](/pets/muffy) (deceased)
+* [Isabella](/pets/isabella)
+* [Maggie](/pets/maggie)
 * [TT](/pets/tt)
 
