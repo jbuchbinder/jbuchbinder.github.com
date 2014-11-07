@@ -33,6 +33,8 @@ This is a list of things that I’d like to have at some point or other, split u
 *   <del>[Two lighting umbrellas, stands, bulbs](http://cgi.ebay.com/Photo-Studio-Light-Umbrella-Lighting-Essentials-FBB57_W0QQitemZ390165706188QQihZ026QQcategoryZ79009QQssPageNameZWDVWQQrdZ1QQcmdZViewItem)</del>
 *   [Three backdrops and stand](http://cgi.ebay.com/Portrait-Backdrop-Background-Stand-3-Muslins-MS03-/260614029943)
 *   [Wireless flash trigger](http://cgi.ebay.com/PT-04-Wireless-Flash-Trigger-CANON-EOS-DSLR-SPEEDLIGHT-/280565851558)
+*   [Feelworld SDI/HDMI Monitor](http://www.ebay.com/itm/US-SHIPPING-Feelworld-10-1-IPS-SCREEN-1280-800-LCD-HD-SDI-HDMI-Camera-Monitor-/181396222663) - $340
+*   [CAME-8000 3-axis gimbal](http://www.came-tv.com/preorder-came8000-gimbal-for-bmcc-and-red-camera-p-566.html) - $1980
 *   [Amazon Photography/Cinematography Wishlist](http://www.amazon.com/registry/wishlist/24PJBXIODO1IK/): Externally maintained wishlist for my photography/cinematography gear. If you owe me one (or just like me a lot), I always appreciate gift purchases from there.
 
 ## Computer/Gadget Related
