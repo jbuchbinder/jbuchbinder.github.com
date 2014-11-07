@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the &hellip;">
+  <meta name="description" content="I have just wrapped up (no pun intended) work on an initial version of a CLI JasperReports wrapper, based heavily off the work of jasperCall. It’s &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +108,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/31/jasperwrapper/">JasperWrapper</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-31T00:00:00-05:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/01/31/jasperwrapper/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have just wrapped up (no pun intended) work on an initial version of a CLI <a href="http://jasperforge.org/projects/jasperreports">JasperReports</a> wrapper, based heavily off the work of <a href="http://jasperforge.org/plugins/project/project_home.php?group_id=97">jasperCall</a>. It’s also quite similar to the work being done on <a href="http://code.google.com/p/runjasperreports/">RunJasperReports</a>, although it was specifically designed to be integrated into <a href="http://freemedsoftware.org/">FreeMED’s</a> reporting engine, as it is put together as a fatjar. It currently supports PDF, XML, XLS and HTML output, and should theoretically support parameter passing, though I haven’t tried it out yet. It has a newer version of <a href="http://www.mysql.com/products/connector/">MySQL Connector/J</a> baked in as well, so it shouldn’t require any external libraries outside a standard JRE install to function properly.</p>
+
+<p>The code can be check out of anonymous Subversion from  if anyone is interested in building it. (It obviously should require Java 6 JDK to compile properly.) Hopefully I’ll get around to tagging and releasing versions of it for download shortly, if anyone shows interest in it.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -606,57 +646,6 @@ $sc = new SoapClient( file_get_contents($url), array(
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/11/13/serial-and-parallel-interfaces-in-java/">Serial and Parallel Interfaces in Java</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-11-13T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2009/11/13/serial-and-parallel-interfaces-in-java/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>To sum up before I even begin: they *suck*.</p>
-
-<p>One of Java’s exceptionally weak points is serial and parallel interfaces, since it’s not within the normal bundled class library specification. In developing for Linux systems, I found that there are two basic routes you can take, being <a href="http://java.sun.com/products/javacomm/">Java Communications API</a> and <a href="http://users.frii.com/jarvi/rxtx/">RXTX</a>, with the latter being a reimplementation/extension of the former. To say that these are painful to work with doesn’t adequately state the gravity of the situation.</p>
-
-<p>For example, the <em>javax.comm.properties</em> file needed by both libraries has to exist in the classpath or buried deep in the JRE. This is an offshoot of the issue that they require JNI libraries to function, which debian handles nicely in the form of a librxtx-java package which does most of the heavy lifting with the exception of that nasty properties file. In dealing with a J2EE app, this becomes a pain if you want to stick with the “single file” WAR deployment. Eventually I baked an additional instruction into my build.xml file to relocate the properties file on execution.</p>
-
-<p>The documentation for rxtx, at least in terms of practical examples, is horrid. The wiki server isn’t up and running (at least when I went to look) and the only evidence that anyone had ever tried to use this library for the purposes I was looking to use it for were a few old javadocs and a handful of mailing list entries.</p>
-
-<p>This really should *not* be this painful. Virtually every system targeted by the JRE has I/O devices which should be covered by the scope of the basic class libraries. I should not have to practically reinvent the wheel simply to push data out to a peripheral.</p>
-
-<p>By the look of the documentation, this wouldn’t have been any easier doing it with Windows, and I believe I managed to kill its ability to be cross-platform in any meaningful sense when I decided to use RXTX. This is just as bad as those asshats who make completely crossplatform applications then tie them intrinsically to Windows in some completely brain-dead way for no apparent reason.</p>
-
-<p>Hey Sun, when you made this specification, could you have possibly thought to include support for devices which have been around since <a href="http://en.wikipedia.org/wiki/RS-232">1969</a> … </p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="7">&larr; Older</a>
@@ -674,6 +663,10 @@ $sc = new SoapClient( file_get_contents($url), array(
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/11/07/winning-a-48-hour-film-project/">Winning a 48 Hour Film Project</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/10/19/another-48-hours/">Another 48 Hours</a>
       </li>
     
@@ -689,17 +682,13 @@ $sc = new SoapClient( file_get_contents($url), array(
         <a href="/2014/06/10/diy-7-dollars-film-slate/">DIY $7 Film Slate</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/05/12/boom/">Boom!</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (23)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (24)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>

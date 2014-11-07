@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I have created a wordpress “diff” which can be applied to easily upgrade WordPress 2.0.1 to WordPress 2.0.3 instead of going through the long and &hellip;">
+  <meta name="description" content="To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the rc_firewall nvram variable (non-volatile ram &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +108,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/07/31/wrt54g-multiple-external-ip-trick/">WRT54G Multiple External IP Trick</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-07-31T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2006/07/31/wrt54g-multiple-external-ip-trick/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the <code>rc_firewall</code> nvram variable (non-volatile ram):</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"> nvram set rc_firewall="
+</span><span class="line"> iptables -t nat -I PREROUTING -d x.y.z.1 -j DNAT --to-destination 192.168.1.x
+</span><span class="line"> iptables -t nat -I PREROUTING -d x.y.z.2 -j DNAT --to-destination 192.168.1.x
+</span><span class="line"> "
+</span><span class="line"> nvram commit</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This will protect the changes against being lost when the router is reset.</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -495,45 +547,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2006/01/01/new-year-caching-etc/">New Year, Caching, Etc</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-01T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2006/01/01/new-year-caching-etc/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Happy New Year, as well as happy <a href="http://ancienthistory.about.com/od/winterholidays/p/WinterHolidays.htm">whatever solstice holiday you choose to celebrate</a>! Once again, I’m <a href="http://www.subgenius.com/">slacking</a> in the <a href="http://mama.indstate.edu/users/bones/WhyIHateWebLogs.html">“blogging”</a> department. I recently made a few changes to the server, the most important of which will speed this up by fixing the <a href="http://turck-mmcache.sourceforge.net/">memory map cache</a> used to render pages, thereby removing the molasses from the page loading process. There are also a few new tracks under <strong>Artists and Projects</strong> on the site, so please feel free to take a listen. More development news coming soon, as I’m planning on a new <a href="http://freemedsoftware.org/">FreeMED</a> release (0.8.2), as soon as we’re done with <a href="http://www.shitthrowingmonkeys.com/">QA testing</a>.</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="17">&larr; Older</a>
@@ -551,6 +564,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/11/07/winning-a-48-hour-film-project/">Winning a 48 Hour Film Project</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/10/19/another-48-hours/">Another 48 Hours</a>
       </li>
     
@@ -566,17 +583,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2014/06/10/diy-7-dollars-film-slate/">DIY $7 Film Slate</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/05/12/boom/">Boom!</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (23)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (24)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>

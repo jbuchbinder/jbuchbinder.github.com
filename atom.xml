@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-11-07T14:49:23-05:00</updated>
+  <updated>2014-11-07T16:39:09-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,112 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Winning a 48 Hour Film Project]]></title>
+    <link href="http://jbuchbinder.com/2014/11/07/winning-a-48-hour-film-project/"/>
+    <updated>2014-11-07T15:37:26-05:00</updated>
+    <id>http://jbuchbinder.com/2014/11/07/winning-a-48-hour-film-project</id>
+    <content type="html"><![CDATA[<p>My team, <a href="http://www.shootthemoonfilms.com/">Shoot the Moon Films</a>, won the
+2014 Providence Horror Film Project’s “Best Picture” award, as well as scoring
+a “Best Actor” award for <a href="http://www.imdb.com/name/nm3895408/">Nicholas Magrey</a>, a “Best Writing” award for
+<a href="http://www.imdb.com/name/nm5720821/">Natasha Darius</a> and <a href="http://www.imdb.com/name/nm3895408/">Nicholas Magrey</a>, and a “Best Sound Design” award for
+<a href="http://www.imdb.com/name/nm6854894/">Aaron Theodore Berton</a> for our short film
+“<a href="http://www.facebook.com/TheCarving">The Carving</a>” (<a href="http://www.imdb.com/title/tt4131910/">IMDb</a>).</p>
+
+<div class="embed-video-container"><iframe src="http://www.youtube.com/embed/l4OQm1J0F0w "></iframe></div>
+
+<p>I’m used to doing post-mortem analyses on failures, so this is a fairly
+unusual task ; why did “The Carving” win against other films – especially
+against some very strong contenders?</p>
+
+<h2 id="its-all-about-the-story">It’s all about the story.</h2>
+
+<p>As usual, we didn’t base our story off of any pre-existing concepts, scripts,
+etc. Although it is expressly forbidden in the rules of the 48 hour film
+projects, it is common knowledge that many teams engage in this practice,
+presumably because of the difficulty of producing a good screenplay in the
+alloted time.</p>
+
+<p>I’m always proud of our writers, and this was no exception. When you’re
+writing a story which has to come out as a four to seven minute short, you
+can’t write an over-complicated concept, or take a half hour concept and
+cut it down to a few minutes of film. We had used a fairly complicated
+concept for our last 48 hour effort, <a href="http://www.imdb.com/title/tt3713362/">Desire</a>,
+and it did not fare very well.</p>
+
+<p>It helps to have writers who know basic tenets of writing, and there are
+a ton of online courses, books, and general help to improve scripts. Without
+the screenwriters, we would not have won.</p>
+
+<h2 id="sound-is-important-too">Sound is important, too.</h2>
+
+<p>We spend an inordinate amount of post production time on ADR-ing, Foley-ing,
+and otherwise enjoying the hard work of our sound engineer, which resulted
+in the best <strong>sounding</strong> audio track of any of the films in the festival.
+(Don’t take my word for it – it won an award specifically for that.)</p>
+
+<p>Your boom operator has to be paying attention, and your audio setup has to
+be… something. Don’t rely on a single source of audio, either. We had an
+issue with a cable which resulted in having to use on-camera audio for a
+closeup shot. This wouldn’t have been possible without a backup.</p>
+
+<p>(It’s worth noting that in editing, I ended up doing as much audio replacement
+as I could before handing off to our sound engineer, to cut down on the
+amount of time which he’d have to burn finding the nicest audio for a certain
+take.)</p>
+
+<h2 id="take-footage-of-only-what-you-need-to-survive">Take (footage of) only what you need to survive.</h2>
+
+<p>Overly fancy cinematography, while fun to execute (and great for winning
+Cinematography awards), is nothing if it doesn’t help propel your story
+forward. If you’re trying desperately to find a way to put a quadcopter
+shot into your film, you may have lost already.</p>
+
+<p>I’m a huge fan of indulgent, long, complicated shots – but they have to
+fit your idiom. If you’re making a four to seven minute long short, you
+probably shouldn’t do things just for the sake of doing them. A quick
+example was that I had originally planned a jib/crane shot for a particular
+piece of exposition, but ended up going with a snorricam rigged shot
+instead. The snorricam doesn’t add as much “value” to the end product, but
+it told the story <em>better</em>.</p>
+
+<h2 id="on-the-other-hand-think-about-your-video-quality-a-bit">On the other hand, think about your video quality a bit.</h2>
+
+<p>If you’re shooting on a handicam, why? Entry level DSLRs are cheap and
+easy to come by, and with the right set of eyes behind the camera, they
+can produce great footage.</p>
+
+<p>If you’re not color correcting or grading your footage, why? The walls
+behind your characters shouldn’t be changing between shots unless you
+intend for them to be doing so. White balancing doesn’t cost any money.</p>
+
+<p>If you’re not lighting your footage, why? A guy with a decent eye and
+a few clamp lights can add immeasurable depth and character to your
+shots. I know that “low light cinematography” is making the rounds as
+the new fad, but you’re not going to get the same type of picture. It
+doesn’t cost much (or anything if you already have the equipment at
+home), so what’s the harm?</p>
+
+<h2 id="if-you-cant-do-something-find-someone-who-can">If you can’t do something, find someone who can.</h2>
+
+<p>Unless you’re a one person shop, consider finding other people to handle
+tasks – especially if they’re better at something than you are. Get
+someone with a good eye to handle the cinematography, someone who can
+write well to pen your piece, and people who are good with audio to handle
+your post production.</p>
+
+<h2 id="dont-try-to-win-try-to-put-out-the-best-film-you-can">Don’t try to win, try to put out the best film you can.</h2>
+
+<p>This is advice I had received right before the 48 started, and it’s some
+of the best I’ve had. Because we specifically tried to make the best film
+we could make in 48 hours (within the constraints outlined by the 48), we
+have a film for our own promotion and uses after the festival ended.</p>
+
+<p>Good luck to you in all of your cinematographic adventures!</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Another 48 Hours]]></title>
@@ -2362,218 +2468,6 @@ and visuals which you’re attempting to achieve.</p>
 how to achieve stunning visuals; it’s simply an attempt to share some of
 what I’ve learned, and to help share the knowledge and tools to exploit
 your own inner artistic vision. Good luck shooting!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[To post or not to post]]></title>
-    <link href="http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post/"/>
-    <updated>2013-09-07T13:18:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post</id>
-    <content type="html"><![CDATA[<p>Even though a good portion of the work has been completed when you press the
-shutter button, or stop rolling, since all of your planning and execution has
-been completed, there’s still a final step (or series of steps) to bring that
-artistic effort to a presentable format.</p>
-
-<p>Many people shoot with default (or very close to default) settings on their
-camera or videocamera, and do simple “post production” by simply cropping or
-cutting whatever comes out of their camera body. This is a very “purist” way
-of going about shooting, but can also rob your end product of some of the
-polish and slight adjustments which can take good pictures or footage and
-make them into something extraordinary.</p>
-
-<p>All of that being said, there’s a limit to the types and amounts of post
-production which can and should be used, much in the way that overproducing
-a musical album can result in a homogenous and lifeless product, robbed of
-the “soul” and variances which make it unique. You are the only person who
-can decide how much, if any, post processing is right for your project or
-other artistic endeavor.</p>
-
-<p><strong>RAW versus JPEG/H.264</strong></p>
-
-<p>With DSLR cameras being used for both photography and cinematography, there
-are places where the “processing” aspect can be pushed off into the post
-production process.</p>
-
-<p>For photography, RAW format pictures can allow recovery past some of the
-previously accepted limits of what would normally be considered lost or
-unusable. Effectively, it allows you to make the decisions which are
-normally pushed off on your camera’s processor (the DIGIC processor(s),
-for all of you Canon users). It adds an additional step to the
-post-processing workflow, in that you’ll need a piece of software like
-<a href="http://www.adobe.com/products/photoshop-lightroom.html">Adobe Lightroom</a> for Windows/Mac users, or if you’re a Linux user like me,
-<a href="http://rawstudio.org/">Raw Studio</a>. It also adds a significant amount of time to the
-photographic post-processing workflow, in that there are a number of
-additional parameters which can be adjusted, which would normally result
-in image degradation, but can be adjusted in RAW images with little or no
-deleterious effect. If you’re a <a href="http://www.magiclantern.fm/">Magic Lantern</a> user, you can also
-experiment with “dual ISO” images, which can create images with enormous
-dynamic range through sensor tricks – but which adds an another step
-before RAW processing, that of running a CR2HDR binary. (If you’re
-interested in trying this out, but don’t want to compile a CR2HDR binary
-for Windows or Linux, I have binaries available <a href="https://bitbucket.org/rufustfirefly/magic-lantern/downloads">here</a>)</p>
-
-<p>For cinematography, there’s a lot more to think about. Magic Lantern users
-of Canon 5Dmk3 models (and some others, as well) have the option of being
-able to shoot RAW video with some very fast CF cards. This adds a pretty
-substantial amount of post-processing steps <em>before</em> your NLE (non-linear
-editor) of choice enters the picture. There are a pretty wide swath of
-applications which now support the Magic Lantern RAW format, including
-<a href="http://www.magiclantern.fm/forum/index.php?action=printpage;topic=5557.0">RAWanizer</a>, but your best bet is to get involved with the Magic
-Lantern forum if you want to begin working with a RAW workflow. The other
-serious disadvantage is storage space. Standard H.264 video, which is
-shot by most DSLR camera bodies, has issues with some digital artifacts in
-certain scenarios, as well as some dynamic range issues (some of which can
-be made better by use of flat color profiles like <a href="https://www.technicolorcinestyle.com/download/">Cinestyle</a>, but I’ll
-leave that for later) – but it produces fairly compact files, even at
-1080p/24p (1920x1080 24fps progressive) resolution. RAW data can take
-upwards of a gigabyte of space every 15-20 seconds. Your storage media
-and backup solutions have to be able to deal with that, so it’s something
-to seriously consider before deciding to move a project to work with that
-format.</p>
-
-<p><strong>White Balance</strong></p>
-
-<p>It used to be accepted that white balancing (determining where “true white”
-lies in an image, compensating for varying light color temperatures) had to
-be done “in camera”, before shots were taken. There are a number of tools
-which allow this to be done in post-processing.</p>
-
-<p>Photographers can do this when shooting with RAW camera images very
-simply, as most RAW image processors have a simple white balancing tool. It’s
-still possible to do this with processed JPEG images, but with the
-potential for losing some image data. Depending on how comfortable you are
-with straying from the “truest possible image”, you can decide where you
-feel comfortable dealing with white balancing.</p>
-
-<p>Cinematographers have a pretty vast array of white balancing and color
-correction plugins available for their NLE of choice. I’m most familiar with
-Adobe Premiere, so I’d mention <a href="http://blogs.adobe.com/VideoRoad/2010/05/using_the_fast_color_corrector.html">Fast Color Corrector</a> and
-<a href="http://philipbloom.net/forum/threads/tutorial-color-grading-and-styling-with-colorista-ii.2528/">Red Giant Colorista II</a>, both of which offer pretty decent white
-balancing capabilities, among other things. If you’re concerned about
-render speed, Fast Color Corrector seems to win out against Colorista II,
-but Colorista II has some additional parameters and capabilities which
-far outstrip what FCC has to offer. There’s also software like
-<a href="http://tv.adobe.com/watch/learn-premiere-pro-cc/color-grading-premiere-pro-sequences-in-speedgrade/">Adobe Speedgrade</a> and <a href="http://digitalfilms.wordpress.com/2013/02/02/davinci-resolve-workflows/">Blackmagic Design Davinci Resolve</a>, both
-of which offer white balancing, color correction, and color grading
-capabilities. There are a few threads <a href="http://forums.planet5d.com/threads/123505-Adobe-Speedgrade-vs-DaVinci-Resolve">comparing the two of them</a>.</p>
-
-<p>The important distinction is whether or not you want to spend the time
-to properly white balance your images or footage before you take pictures.
-It’s not always condusive to your shooting workflow to do so, and if this
-is a factor, you should seriously consider some of the post-processing
-options. It’s obviously to your greatest advantage to have the most
-accurate input images/footage to bring into your post-processing
-workflow, but sometimes it’s not pragmatic to take a completely purist
-attitude in this regard.</p>
-
-<p><strong>Exposure</strong></p>
-
-<p>We’ve all been bitten by changing light conditions, unexpected events, or
-incorrect metering producing images or footage which has exposure problems.
-If you’re shooting RAW (or using Magic Lantern’s Dual ISO hack), this is
-an ideal place to examine using post-processing to correct these issues.</p>
-
-<p>We would all like to properly expose everything (unless we have a
-particular artistic reason for doing otherwise, since in the art of
-photography or cinematography, there are generally exceptions to every
-rule, rules were made to be broken, etc), but taking a post-processing
-detour to correct such things is generally preferable to re-arranging a
-shoot.</p>
-
-<p><strong>Special Effects</strong></p>
-
-<p>I’m not a big fan of post-processing special effects, mainly because I 
-am a proponent of the idea that it takes some of the artistry out of
-pulling off those same effects “in camera”. I do understand that there
-are certain effects which would be either very difficult or downright
-impossible to achieve without the use of computer generated effects –
-but there’s a lot of things which can be accomplished <em>without</em> that.</p>
-
-<p>Lighting is something which I’ve seen done in post, which generally
-baffles me. It’s something which is pretty simple to execute properly,
-given a little time and effort. Saving images or footage with issues
-might be a good use for that, but it’s probably not something I would
-recommend doing for everyday editing and processing.</p>
-
-<p>For example, having someone “eaten” by light can be accomplished for
-a cinematographer, simply by adjusting the fill light to blow out the
-whites, then opening the iris of the lens (using a focus pulling kit,
-or just a spare hand, for the less equipment-heavy among us) to allow
-the fill light to “eat” the remainder of the image. That can be done
-without any specific post-processing.</p>
-
-<p><strong>Flat Color Profiles</strong></p>
-
-<p>This is pretty much for cinematographers, since photographers could
-simply take RAW photos – and cinematographers shooting RAW should
-probably ignore this section, as well.</p>
-
-<p>There are quite a few “flat color profiles” available for DSLR
-(and other) bodies, such as the aforementioned Technicolor Cinestyle
-profile and the <a href="http://www.similaar.com/foto/flaat-picture-styles/long-1.html">Flaat Picture Style</a>. These work by effectively
-increasing the dynamic range being captured by the camera by storing
-the values differently than the stock picture profile.</p>
-
-<p>I highly recommend shooting with one, if you’re not going to make the
-leap to shoot RAW. It does add the additional step in post-processing
-of having to adjust the blacks/whites and/or applying a corrective
-LUT (look up table) to adjust the end product to look less “washed
-out”. There are LUTs and plugins available for virtually every NLE
-out there right now – and I suggest learning how to do this. The
-improvement in the end product is substantial for relatively little
-time investment.</p>
-
-<p><strong>Audio Post</strong></p>
-
-<p>This is another section just for cinematographers.</p>
-
-<p>The audio which is recorded with footage is generally “reference
-audio”, which is meant to be replaced by actual audio, generally
-recorded with something like a <a href="http://tascam.com/product/dr-40/">Tascam DR-40</a> or <a href="http://www.zoom.co.jp/english/products/h4n/">Zoom H4n</a>
-external recorder and a shotgun microphone. It’s far outside the
-scope of this to explain the majority of these technologies and
-techniques, but sufficed to say that they produce far cleaner and
-usable recordings than on-camera audio (even when using augmented
-on-camera microphones, etc). If you can afford it, use external
-audio, and have an experienced audio engineer perform some basic
-post-production on your audio.</p>
-
-<p>If you can’t afford it, or don’t have an audio engineer, there are
-a few basic steps to get cleaner audio.</p>
-
-<p>1) <em>Don’t use the microphone built into the camera</em>. It sounds pretty
-awful, and is noisy. Get a lav microphone for interviews, or a
-directional hot-shoe mounted external microphone for anything else.</p>
-
-<p>2) <em>Adjust the audio levels manually</em>. Automatic level adjustment is
-going to be terrible. It’s meant to avoid clipping, but it tends to
-make the noise floor (the level of background noise) jump around as
-the camera readjusts the audio recording level, so it may make your
-life significantly more difficult when it comes time to adjust the
-footage later. Adjust it to the loudest sound you’re going to be
-recording – then perhaps a click lower, for safety.</p>
-
-<p>3) <em>Respect the inverse square law</em>. For those unfamiliar, sounds
-drop at a logarithmic rate as you move away from the sound source,
-following the same inverse square law which is used to figure light
-source brightness. The closer you are to a recorded sounds, the
-cleaner and better the source audio will be. Every object which a
-sound hits will produce a “reflection” (much as light does). If that
-reflection is equal or louder than the volume of the source sound,
-you’re going to get a pretty terrible sounding audio recording.</p>
-
-<p>4) <em>Get the cleanest audio possible</em>. Try to cut down on external
-noise sources. Never assume that you can clean something later on;
-you should be trying to get clean audio. If something has to be
-re-taken to avoid a lawnmower being run in the background, then you
-should seriously consider doing it. It’ll save you from pulling out
-your hair.</p>
-
-<p>I’m sure that this isn’t a <em>comprehensive</em> list, but hopefully this
-will help everyone get started with deciding what, if anything, to
-relegate to their post-processing workflow. Good luck!</p>
 
 ]]></content>
   </entry>
