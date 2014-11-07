@@ -267,10 +267,7 @@ layout: page
 
 "Never attribute to malice that which can be adequately explained by stupidity." – Hanlon’s Razor
 
-"The problem is, you literally can’t fix stupid. When it comes to combating stupid, smart simply can’t comprehend it, can’t deploy a strategy against it. Smart can only try to explain the facts or educate the audience – but if they’re up against a case of the stupids, the best you can hope for is a small percentage of people understanding." – "[shadowgm][45]" on [crooksandliars][46]
-
- [45]: http://crooksandliars.com/users/shadowgm
- [46]: http://crooksandliars.com/comment/permalink/1238862
+"The problem is, you literally can’t fix stupid. When it comes to combating stupid, smart simply can’t comprehend it, can’t deploy a strategy against it. Smart can only try to explain the facts or educate the audience – but if they’re up against a case of the stupids, the best you can hope for is a small percentage of people understanding." – "[shadowgm](http://crooksandliars.com/users/shadowgm)" on [crooksandliars](http://crooksandliars.com/comment/permalink/1238862)
 
 "Never interrupt your enemy when he is making a mistake." – Napoleon Bonaparte (1769 – 1821)
 
@@ -282,13 +279,17 @@ layout: page
 
 "There is no shame in not knowing. The problem arises when irrational thought and attendant behavior fill the vacuum left by ignorance." - Neil deGrasse Tyson
 
+"A learned man is an idler who kills time with study. Beware of his false knowledge: it is more dangerous than ignorance." - George Bernard Shaw, from "Maxims for Revolutionists" (1903) (*This quote is usually butchered to change its meaning.*)
+
+"There are known knowns; there are things that we know that we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns, the ones we don't know we don't know. And then there are unknown knowns. That is to say, things that you think you know; that it turns out you did not." - Donald Rumsfeld, attempting to justify the false intelligence that was instrumental in instigating a second war in Iraq
+
 ## War / Military / Terrorism
 
 "No bastard ever won a war by dying for his country. He won it by making the other poor dumb bastard die for his country." – General George S. Patton
 
 "I believe that if we had and would keep our dirty, bloody, dollar-soaked fingers out of the business of these nations so full of depressed, exploited people, they will arrive at a solution of their own — and if unfortunately their revolution must be of the violent type because the "haves" refuse to share with the "have-nots" by any peaceful method, at least what they get will be their own, and not the American style, which they don’t want and above all don’t want crammed down their throats by Americans." – General David M. Shoup, Commandant of the Marine Corps 1960-63, recipient of the Congressional Medal of Honor
 
-"It’s obviously disturbing to hear torture still referred to by the president as a ‘technique.’ That’s like saying bank robbery is a "technique" for withdrawing money from a bank. It’s not a ‘technique’, it’s a crime…" – Jonathan Turley, constitutional law professor
+"It’s obviously disturbing to hear torture still referred to by the president as a ‘technique.’ That’s like saying bank robbery is a "technique" for withdrawing money from a bank. It’s not a ‘technique’, it’s a crime ..." – Jonathan Turley, constitutional law professor
 
 "Soldiers, by and large, are tools used to advance the interests of those who own and run the country. They are lied to, conned and conditioned to believe they are fighting for ‘freedom’ when in most cases they are killing, dying and being maimed to enrich domestic elites and their allies/business partners. This is a big hard truth to swallow, which is why a lot of military personnel, and many vets, prefer the standard story. Recently, I caught on radio a reporter just back from Iraq, and he addressed this very issue. Many of the soldiers he spoke to were upset that what was said to them by recruiters and officers did not hold up in Iraq. The con job was cracking. But instead of exploring why this was so, many of these disgruntled soldiers further retreated into a black & white world, where they are on the side of Good and anyone opposing them is Bad. This is understandable on a basic human level — nobody likes to be lied to or made a chump. But it’s also dishonest and potentially destructive, both to the soldier and the society at large. The Soldier Mantra cited above is an authoritarian appeal and an intellectual and historical dodge. You don’t honor the troops by reducing them to stereotypes, however seemingly attractive." – Dennis Perrin from "[Red State Son][47]"
 
