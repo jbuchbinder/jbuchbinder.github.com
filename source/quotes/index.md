@@ -301,6 +301,8 @@ layout: page
 
  [48]: http://dissidentvoice.org/2010/09/johnny-got-his-pills-and-so-do-we/
 
+"... [W]ar is an instrument entirely inefficient toward redressing wrong; that it multiplies, instead of indemnifying losses." - Thomas Jefferson (in a letter to Sir John Sinclair)
+
 ## "b"
 
 "I was in Las Vegas recently, and the entire strip was full of fullscreen content stretched to fit widescreens. It seemed like a little metaphor for Las Vegas, really"- [rkanodia][49] on [slashdot][50]
