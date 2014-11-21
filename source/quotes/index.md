@@ -6,6 +6,10 @@ layout: page
 
 *This is my quote file. I update it when it occurs to me. All quotes are the property of the person who wrote them. If they offend you, read no further.*
 
+## Acting / Film
+
+"Listen, what do you think your job is? To learn the words? The usher can do that. Your job is to say them for the first time. Each time." - Mike Nichols (to a struggling actor)
+
 ## Existentialism
 
 "There are two ways to get enough: One is to continue to accumulate more and more. The other is to desire less." – G.K. Chesterton
@@ -302,6 +306,8 @@ layout: page
  [48]: http://dissidentvoice.org/2010/09/johnny-got-his-pills-and-so-do-we/
 
 "... [W]ar is an instrument entirely inefficient toward redressing wrong; that it multiplies, instead of indemnifying losses." - Thomas Jefferson (in a letter to Sir John Sinclair)
+
+"The essential act of war is destruction, not necessarily of human lives, but of the products of human labour. War is a way of shattering to pieces, or pouring into the stratosphere, or sinking in the depths of the sea, materials which might otherwise be used to make the masses too comfortable, and hence, in the long run, too intelligent. Even when weapons of war are not actually destroyed, their manufacture is still a convenient way of expending labour power without producing anything that can be consumed." - George Orwell, "1984"
 
 ## "b"
 
