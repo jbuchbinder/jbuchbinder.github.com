@@ -38,6 +38,8 @@ layout: page
 
 "We think we understand the rules when we become adults, but what we really experience is a narrowing of imagination." – David Lynch
 
+"Humanity is a great idea ... in theory. But we're not quite there yet." - Chris Viens
+
 "Too many young folk have addiction to superficial things and not enough conviction for substantial things like justice, truth and love." – Dr Cornel West
 
 "Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage to move in the opposite direction." - E. F. Schumacher (from *Small is Beautiful: A Study of Economics As If People Mattered*)
@@ -47,6 +49,8 @@ layout: page
 "He who controls the past controls the future. He who controls the present controls the past." - George Orwell (from *1984*)
 
 "Most people do not listen with the intent to understand; they listen with the intent to reply." - Stephen R. Covey (from *The 7 Habits of Highly Effective People*)
+
+"It is the divine comedy. We all root for the Devil when he is on our side and curse him when he is not." - Chris Viens (on moral relativism and "Batman")
 
 ## Healthcare
 
