@@ -14,6 +14,8 @@ This is my list of generally observed human behaviors, in relation to how they a
 
 The expectations and rules which we assume apply to other people are not applied to ourselves in the same way, nor with the same sense of scale. Benefits which we receive are generally considered justly rewarded, whereas beneits received by others (or those who are not members of our tribe) are considered ill-gotten gains -- even when the order of magnitude is far less than anything we (or those in our tribe) have received.
 
+An excellent example of this is the "moral hazard" built into health insurance. It stipulates that a certain amount of the burden for procedures and other health services should fall on those receiving the services because otherwise (theoretically) those receiving those services would have no disincentive to abuse the system. For the most part, the same people who complain about the underprivileged abusing the system are the same people who complain about deductables and copayments -- which are elements of the moral hazard system. 
+
 ## Cognitive Bias
 
 > A cognitive bias is a pattern of deviation in judgment, whereby inferences about other people and situations may be drawn in an illogical fashion. Individuals create their own "subjective social reality" from their perception of the input. An individual's construction of social reality, not the objective input, may dictate their behaviour in the social world. Thus, cognitive biases may sometimes lead to perceptual distortion, inaccurate judgment, illogical interpretation, or what is broadly called irrationality.
@@ -31,4 +33,3 @@ We believe that cognition and skills are general, whereas in reality, they are v
 ## Intent
 
 We are unable to determine intent from a simple third-person observation of the result(s) of unseen actions.
-
