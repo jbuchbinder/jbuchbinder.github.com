@@ -2,8 +2,10 @@
 title: Mike Praytor
 author: jeff
 layout: page
+cover: /images/mike-praytor.jpg
 ---
-# 
+
+{% img /images/mike-praytor.jpg 'Mike Praytor' %}
 
 From [this online obit][1]:
 
