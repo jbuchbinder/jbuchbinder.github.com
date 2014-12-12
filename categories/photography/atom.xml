@@ -4,7 +4,7 @@
   <title><![CDATA[Category: photography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/photography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-12-05T13:36:39-05:00</updated>
+  <updated>2014-12-11T21:08:09-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Importance of Failure]]></title>
+    <link href="http://jbuchbinder.com/2014/12/11/the-importance-of-failure/"/>
+    <updated>2014-12-11T20:04:35-05:00</updated>
+    <id>http://jbuchbinder.com/2014/12/11/the-importance-of-failure</id>
+    <content type="html"><![CDATA[<p>Failing is a terrible thing, we are taught. As a result of inherent cognitive biases and our own illusory superiority (look up the <a href="http://www.spring.org.uk/2012/06/the-dunning-kruger-effect-why-the-incompetent-dont-know-theyre-incompetent.php">Dunning-Kruger effect</a>, if you’re curious about this), we believe that we are right the majority of times, that we are more skilled than those around us, and that we have nothing of import to learn from not succeeding.</p>
+
+<p>I’m going to uncharacteristically detour into a quick anecdote. I was attending a film festival a little while ago, and had ended up talking to one of the festival’s organizers. She had asked me about how I got into film, and talked a little bit about some of her own projects. After a while, I mentioned how I learned more from my failures than I did from my successes. She stopped the line of conversion, and said that she didn’t, because she “always” succeeded.</p>
+
+<p>There’s a lesson to be learned from her. If you never fail (or never allow yourself to be put in a situation when you fail, or never accept that you have failed), you aren’t going to be able to examine your process to figure out how you can improve. If we’re at the height of our skill set at the present moment, I view that assessment as a dismal failure; we should always expect that, given time and effort, we should continue to improve as time goes on.</p>
+
+<p>I don’t necessarily <em>hate</em> everything I’ve done in past projects, but can instead view my previous work as evolutionary improvement. Every project I do should be the best work I’ve done <em>so far</em>, and if it isn’t, I should be taking steps to make sure that the next one is.</p>
+
+<h2 id="understanding-failure-and-criticism">Understanding Failure and Criticism</h2>
+
+<p>We do not accept criticism well – especially not as artists. Most of our work is, to some degree, very personal. We then view attacks on our work as attacks on some part of ourselves, and become much more defensive than we should be.</p>
+
+<p><strong>Cognitive bias</strong> is a serious issue with us accepting criticism, or any differing points of view from our own. Without getting into too much detail about the mechanics of cognitive bias, it is important to emphasize the importance of recognizing that we all possess it, to one degree or another.</p>
+
+<p><strong>High expectations</strong> tends to result in a feeling of having failed at a much deeper level than the project at hand. A very insightful person had written (about film festival contests, in particular) that you had to be committed to making the best thing you could, not winning. It may not sound like a lot of inherent difference, but stripping your expectations for a project can allow you to be much more free in your ability to execute that project.</p>
+
+<p><strong>People who criticize or critique can help you.</strong> Every failure which is left without analysis is a missed opportunity. You cannot learn from your missteps and mistakes without looking at them with a critical eye. A third party with less vested interest in you and your project can give you the perspective you need to improve.</p>
+
+<h2 id="post-mortem-analyses">Post Mortem Analyses</h2>
+
+<p>I come from a pretty heavy information technology background, and one of the favorite “failure analysis” tools we tend to use after something breaks is something called a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation">post mortem</a>, which is short for “post mortem documentation”. It involves a rigorous process of analyzing key elements which were responsible for both successful and unsuccessful aspects of a project or event.</p>
+
+<p>For example, I performed both a post mortem on our <a href="/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/">2014 48 Hour Boston Festival project</a>, which documented some of the things I learned about working with a new camera body, as well as working under tight time constraints, and a post mortem on our <a href="/2014/11/07/winning-a-48-hour-film-project/">2014 48 Hour Providence Horror Festival project</a>, which took home a number of awards, including “Best Film”. Even the analysis of our <strong>successful</strong> project found issues which needed to be addressed before our next project.</p>
+
+<h2 id="your-worst-critic">Your Worst Critic</h2>
+
+<p>… is you (or at least, it should be). You need to be the harshest critic you have.</p>
+
+<p>The rationale I give for this is that you cannot rely on those intrinsically involved in either your professional or personal life, who all have some sort of stake in how well you do something, to be critical enough of what you do. If you can’t expect complete, harsh honesty from those around you – then <em>you</em> are going to have to try to be as harsh as possible with what you’re putting out.</p>
+
+<p><em>(Yes, I’m aware that the younger generation has been indoctrinated, to a certain point, with the notion that everything they do is the best, most awesome, most <strong>EPIC</strong> thing that any human being has ever done – but if you want to succeed artistically, you’ve got to overcome that.)</em></p>
+
+<h2 id="avoid-negativity">Avoid Negativity</h2>
+
+<p>Failure doesn’t have to be a negative thing. Any experience from which we learn a valuable lesson or draw potential improvement from should not be a negative experience. Much like the rest of life, this isn’t the end product of what you’re capable of. It isn’t the last, greatest thing you do – unless, of course, you become disheartened and stop producing things.</p>
+
+<p>Stay positive, learn from your successes <strong>and</strong> your failures – and good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Dynamic range]]></title>
@@ -520,20 +565,6 @@ your hair.</p>
 <p>I’m sure that this isn’t a <em>comprehensive</em> list, but hopefully this
 will help everyone get started with deciding what, if anything, to
 relegate to their post-processing workflow. Good luck!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Succumbing to the Camera Phone]]></title>
-    <link href="http://jbuchbinder.com/2010/03/02/succumbing-to-the-camera-phone/"/>
-    <updated>2010-03-02T00:00:00-05:00</updated>
-    <id>http://jbuchbinder.com/2010/03/02/succumbing-to-the-camera-phone</id>
-    <content type="html"><![CDATA[<p>I do not like camera phones in the same way that I don’t particularly care for flash photography; you can produce good results (or at least passable results) with either, but the majority of stuff that comes out of it is just pure crap.</p>
-
-<p>I recently moved to one of Sprint’s CDMA Android offerings, the HTC Hero. I just finished the <a href="http://geekfor.me/">flashing/rooting process</a>, since I don’t particularly care for devices that try to lock me out of their own functionality. (The key to doing this with the “newer” Sprint CDMA Hero phones is apparently using an older version of the recovery image and making sure you have enough available memory to run the image flash, but that’s beside the point.) This particular device came with a 5 megapixel built-in camera, and though I know that <a href="http://forum.digitalcamerareview.com/showthread.php?p=5354">resolution != quality</a>, it does seem to produce *passable* images. Not great, but passable. I’m hoping to see an improvement when the CDMA Hero sees “official” <a href="http://phandroid.com/2010/02/16/sprint-hero-moment-getting-android-2-1-early-2q10/">Android 2.1 support</a>. This OS version fragmentation is bunk, but at least I can upgrade as soon as the pieces are available for another model. <a href="http://www.engadget.com/2009/02/18/editorial-ten-reasons-why-windows-mobile-6-5-misses-the-mark/">Suck that, closed source technology</a>.</p>
-
-<p>Am I giving up the <a href="http://www.usa.canon.com/consumer/controller?act=ModelInfoAct&amp;fcategoryid=139&amp;modelid=17779">40D</a>? Hell emphatically *no*. But I can capture a few things I might miss fumbling for the camera bag. At least, I hope I can.</p>
 
 ]]></content>
   </entry>
