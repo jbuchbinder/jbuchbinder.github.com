@@ -2,6 +2,7 @@
 title: Open Mic at the Stonewall Tavern
 author: jeff
 layout: page
+cover: https://farm3.staticflickr.com/2276/2418842052_0f024740a5_z.jpg
 ---
 
 {% flickr_image 2418842052 n left 'Open mic sign on the bathroom door' %}

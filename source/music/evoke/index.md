@@ -2,6 +2,7 @@
 title: evoke
 author: jeff
 layout: page
+cover: https://farm4.staticflickr.com/3533/3746460565_49a63fff93_z.jpg
 ---
 
 The band I’ve played in since 2000, bass and backing vocals.
