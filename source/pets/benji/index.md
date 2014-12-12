@@ -2,6 +2,7 @@
 title: Benji
 author: jeff
 layout: page
+cover: http://farm2.staticflickr.com/1385/3163845817_1be5a03ae6_z_d.jpg
 ---
 
 {% img http://farm2.staticflickr.com/1385/3163845817_1be5a03ae6_z_d.jpg 640 425 'Benji %}

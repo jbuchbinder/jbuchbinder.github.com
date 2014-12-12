@@ -2,6 +2,7 @@
 title: Ebony
 author: jeff
 layout: page
+cover: http://farm1.staticflickr.com/63/165931736_78f834dec2_d.jpg
 ---
 
 {% img http://farm1.staticflickr.com/63/165931736_78f834dec2_d.jpg 500 333 'Ebony in sunlight' %}

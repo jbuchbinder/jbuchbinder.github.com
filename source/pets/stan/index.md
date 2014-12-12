@@ -2,6 +2,7 @@
 title: Stan
 author: jeff
 layout: page
+cover: https://farm1.staticflickr.com/46/115274606_5df2b02636_o.jpg
 ---
 
 {% flickr_image 115274606 n left "Mr Lonely" %}

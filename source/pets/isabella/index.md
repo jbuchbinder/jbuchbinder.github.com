@@ -2,9 +2,12 @@
 title: Isabella
 author: jeff
 layout: page
+cover: http://farm5.staticflickr.com/4123/4771921002_6ee6b0f444_d.jpg
 ---
 
-[![Loneliest Mup ... ever.][2]][2] My name is **Isabella**, and I’m a gremlin. (no one knows my real breed) My old owner boarded me up in a foreclosed house and left me to die, but Jeff and Tasha took me in. I’m kinda partial to them…
+[![Loneliest Mup ... ever.][2]][2] 
+
+My name is **Isabella**, and I’m a gremlin. (no one knows my real breed) My old owner boarded me up in a foreclosed house and left me to die, but Jeff and Tasha took me in. I’m kinda partial to them…
 
  [2]: http://farm5.staticflickr.com/4123/4771921002_6ee6b0f444_d.jpg
 

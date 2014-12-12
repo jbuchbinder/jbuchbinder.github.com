@@ -2,6 +2,7 @@
 title: Ivory
 author: jeff
 layout: page
+cover: https://farm1.staticflickr.com/54/143202507_d635db2c47_o.jpg
 ---
 
 Half tomcat, half Samoan, Ivory succumbed to what the doctors believed was multi-systemic cancer at 3:00 AM on the morning of November 23rd, 2009, at the Tufts Medical Center. This page is kept as a memorial to her.
