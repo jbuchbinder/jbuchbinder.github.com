@@ -2,6 +2,7 @@
 title: Bill Chapple
 author: jeff
 layout: page
+cover: /images/chapple04.jpeg
 ---
 
 [![Bill Chapple][1]][1]

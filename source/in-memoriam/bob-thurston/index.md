@@ -2,8 +2,8 @@
 title: Bob Thurston
 author: jeff
 layout: page
+cover: /images/bob_thurston_drawing.jpg
 ---
-# 
 
 [![Bob Thurston][2]][2]
 
