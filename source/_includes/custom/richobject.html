@@ -6,13 +6,21 @@
 <meta property="og:title"       content="{{ page.title }}" />
 <meta property="og:description" content="{{ page.description }}" />
  {% if page.cover %}
+   {% if page.cover contains 'http:' %}
+<meta property="og:image"       content="{{ page.cover }}" />
+   {% else %}
 <meta property="og:image"       content="{{ site.url }}{{ page.cover }}" />
+   {% endif %}
  {% endif %}
 {% else %}
 <meta property="og:title"       content="{{ site.title }}" />
 <meta property="og:description" content="{{ site.description }}" />
  {% if site.cover %}
+   {% if site.cover contains 'http:' %}
+<meta property="og:image"       content="{{ site.cover }}" />
+   {% else %}
 <meta property="og:image"       content="{{ site.url }}{{ site.cover }}" />
+   {% endif %}
  {% endif %}
 {% endif %}
 <meta property="fb:app_id"      content="159544250739435" />

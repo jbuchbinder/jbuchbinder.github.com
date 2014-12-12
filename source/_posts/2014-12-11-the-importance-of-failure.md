@@ -4,7 +4,7 @@ title: "The Importance of Failure"
 date: 2014-12-11 20:04:35 -0500
 comments: true
 description: Failures are as important, if not more important, than successes.
-cover:
+cover: http://zdnet4.cbsistatic.com/hub/i/2014/10/03/03d14937-4b57-11e4-b6a0-d4ae52e95e57/f85479f1bc4eee7f5893ec8c0eaed05f/doctors-postmortem.jpg
 categories:
  - Cinematography
  - Photography
