@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-12-12T12:12:33-05:00</updated>
+  <updated>2014-12-14T19:52:29-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -32,13 +32,13 @@
 
 <p><strong>Cognitive bias</strong> is a serious issue with us accepting criticism, or any differing points of view from our own. Without getting into too much detail about the mechanics of cognitive bias, it is important to emphasize the importance of recognizing that we all possess it, to one degree or another.</p>
 
-<p><strong>High expectations</strong> tends to result in a feeling of having failed at a much deeper level than the project at hand. A very insightful person had written (about film festival contests, in particular) that you had to be committed to making the best thing you could, not winning. It may not sound like a lot of inherent difference, but stripping your expectations for a project can allow you to be much more free in your ability to execute that project.</p>
+<p><strong>High expectations</strong> tend to result in a feeling of having failed at a much deeper level than the project at hand. A very insightful person had written (about film festival contests, in particular) that you had to be committed to making the best thing you could, not winning. It may not sound like a lot of inherent difference, but stripping your expectations for a project can allow you to be much more free in your ability to execute that project.</p>
 
 <p><strong>People who criticize or critique can help you.</strong> Every failure which is left without analysis is a missed opportunity. You cannot learn from your missteps and mistakes without looking at them with a critical eye. A third party with less vested interest in you and your project can give you the perspective you need to improve.</p>
 
 <h2 id="post-mortem-analyses">Post Mortem Analyses</h2>
 
-<p>I come from a pretty heavy information technology background, and one of the favorite “failure analysis” tools we tend to use after something breaks is something called a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation">post mortem</a>, which is short for “post mortem documentation”. It involves a rigorous process of analyzing key elements which were responsible for both successful and unsuccessful aspects of a project or event.</p>
+<p>I come from a pretty heavy information technology background, and one of the favorite “failure analysis” tools we tend to use after something breaks is something called a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation">post mortem</a>, which is shorthand for “post mortem documentation”. It involves a rigorous process of analyzing key elements which were responsible for both successful and unsuccessful aspects of a project or event.</p>
 
 <p>For example, I performed both a post mortem on our <a href="http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/">2014 48 Hour Boston Festival project</a>, which documented some of the things I learned about working with a new camera body, as well as working under tight time constraints, and a post mortem on our <a href="http://jbuchbinder.com/2014/11/07/winning-a-48-hour-film-project/">2014 48 Hour Providence Horror Festival project</a>, which took home a number of awards, including “Best Film”. Even the analysis of our <strong>successful</strong> project found issues which needed to be addressed before our next project.</p>
 
@@ -1025,68 +1025,45 @@ Good luck!</p>
     <link href="http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/"/>
     <updated>2014-05-08T07:05:17-04:00</updated>
     <id>http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve</id>
-    <content type="html"><![CDATA[<p>There are a number of “accepted” workflows for going between Adobe Premiere
-(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K
-footage. I am going to detail the workflow I have been using, which should
-be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
+    <content type="html"><![CDATA[<p>There are a number of “accepted” workflows for going between Adobe Premiere (as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K footage. I am going to detail the workflow I have been using, which should be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
 
 <ol>
   <li>
-    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98
-fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same
-thing as the “24P” frame rate we are used to.</p>
+    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98 fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same thing as the “24P” frame rate we are used to.</p>
   </li>
   <li>
     <p><strong>Load your media onto your workstation</strong>.</p>
   </li>
   <li>
-    <p><strong>Create simple proxies</strong>. Using
-<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>,
-create “cheap” lower quality proxies encoded using the H.264 codec in
-Quicktime files. I have been experimenting with using the “.mpg”
-extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>,
-rather than the relatively dodgy external one, but the basic process
-is the same.</p>
+    <p><strong>Create simple proxies</strong>. Using <a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>, create “cheap” lower quality proxies encoded using the H.264 codec in Quicktime files. I have been experimenting with using the “.mpg” extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>, rather than the relatively dodgy external one, but the basic process is the same. <em>Note: This isn’t really necessary with more recent versions of Premiere, as it tends to play relatively nicely with BMD Prores video files.</em></p>
   </li>
   <li>
-    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do
-not have to bother with any fancy transitions or effects yet – just
-perform a basic edit.</p>
+    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do not have to bother with any fancy transitions or effects yet – just perform a basic edit.</p>
   </li>
   <li>
-    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the
-File &gt; Export menu option.</p>
+    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the File &gt; Export menu option.</p>
   </li>
   <li>
-    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project.
-Import the original files (not the proxies) into your media pool.</p>
+    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project. Import the original files (not the proxies) into your media pool.</p>
   </li>
   <li>
-    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export,
-with “Automatically import source clips into pool” deselected. This last
-part is very important, as it forces Resolve to use the clips you already
-have in the Media Pool.</p>
+    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export, with “Automatically import source clips into pool” deselected. This last part is very important, as it forces Resolve to use the clips you already have in the Media Pool.</p>
   </li>
   <li>
     <p><strong>Color Grade</strong>. Perform your color grade in Resolve.</p>
   </li>
   <li>
-    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose
-“Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options
-here to your liking.</p>
+    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose “Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options here to your liking.</p>
   </li>
   <li>
-    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in
-Premiere. This will bring in all of the graded footage.</p>
+    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in Premiere. This will bring in all of the graded footage.</p>
   </li>
   <li>
-    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or
-create your title cards, etc.</p>
+    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or create your title cards, etc.</p>
   </li>
 </ol>
 
-<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere
-workflow right now, and it may change.</em></p>
+<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere workflow right now, and it may change.</em></p>
 
 ]]></content>
   </entry>
@@ -1896,7 +1873,7 @@ as well as where they exist in your code.</p>
 #
 # Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
 #
-# Jeff&#39;s notes:
+# Jeff's notes:
 #
 # *) This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
 #    functions are found, which should allow easy integration into CI systems.
@@ -1926,7 +1903,7 @@ function dfunctions() {
     )
     
     for s in ${deprecated_sources}; do
-	    wget -q -O /dev/stdout &quot;$s&quot; | grep &#39;^function &#39; | cut -d&#39; &#39; -f2 | cut -d&#39;(&#39; -f 1
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
     done
 }
 deprecatedFunctions=(
@@ -1942,7 +1919,7 @@ echo &quot;&quot;
 found=0
 
 while [ $i -lt $len ]; do
-    echo &quot;  // checking for &#39;${deprecatedFunctions[$i]}()&#39;&quot;
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
     grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
     if [ $? -ne 0 ]; then
         found=1

@@ -839,7 +839,7 @@ as well as where they exist in your code.</p>
 #
 # Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
 #
-# Jeff&#39;s notes:
+# Jeff's notes:
 #
 # *) This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
 #    functions are found, which should allow easy integration into CI systems.
@@ -869,7 +869,7 @@ function dfunctions() {
     )
     
     for s in ${deprecated_sources}; do
-	    wget -q -O /dev/stdout &quot;$s&quot; | grep &#39;^function &#39; | cut -d&#39; &#39; -f2 | cut -d&#39;(&#39; -f 1
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
     done
 }
 deprecatedFunctions=(
@@ -885,7 +885,7 @@ echo &quot;&quot;
 found=0
 
 while [ $i -lt $len ]; do
-    echo &quot;  // checking for &#39;${deprecatedFunctions[$i]}()&#39;&quot;
+    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
     grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
     if [ $? -ne 0 ]; then
         found=1
