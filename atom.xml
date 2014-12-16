@@ -4,7 +4,7 @@
   <title><![CDATA[/home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-12-14T19:52:29-05:00</updated>
+  <updated>2014-12-16T14:09:56-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The danger of the shortcut mentality]]></title>
+    <link href="http://jbuchbinder.com/2014/12/16/the-danger-of-the-shortcut-mentality/"/>
+    <updated>2014-12-16T13:00:26-05:00</updated>
+    <id>http://jbuchbinder.com/2014/12/16/the-danger-of-the-shortcut-mentality</id>
+    <content type="html"><![CDATA[<p>In “<a href="http://jbuchbinder.com/2013/06/28/skill-in-the-age-of-instagram/">Skill in the Age of Instagram</a>”, I had opined about the lost value of skill sets, and how the modern approach to skills is to “approximate” them with shortcuts like Instagram, Autotune, and Photoshop.</p>
+
+<p>Even though these tools offer the quickest and shortest “path” to the immediate goal, being your current project, they retard your potential growth by limiting your skills and knowledge about what you’re doing. If the pseudo-magic time-saving software is taken away (or encounters a limitation), how will you continue to be able to function without it?</p>
+
+<h2 id="in-cinematography">In cinematography</h2>
+
+<p>Cinematography is rife with this kind of intellectual laziness, as all creative fields have a tendency to be. A few of the places I’ve seen this have been:</p>
+
+<ul>
+  <li>
+    <p><strong>Cameras</strong>. If you haven’t met a single cinematographer who has lamented that s/he is being held back by his/her rig, you haven’t gotten out very much. I call crap on that argument, mainly because of fine work like <a href="http://erbpfilm.com/film/upstreamcolor">Shane Carruth’s “Upstream Color”</a>. Learn to use what you’ve got, rather than pining for something better / different.</p>
+  </li>
+  <li>
+    <p><strong>Color correction and grading</strong>. Virtually every amateur forum on color correction and grading is full of people asking where they can get a “one size fits all” <a href="http://nofilmschool.com/2011/05/what-is-a-look-up-table-lut-anyway">LUT</a> which will make their footage look “like Hollywood”. If there was such a thing, the entire industry of color grading specialists would just be wasting their time and skills. There’s even an “Instagram” of sorts for color grading – Magic Bullet Looks.</p>
+  </li>
+  <li>
+    <p><strong>Focus</strong>. I’m still surprised at the number of people who complain that cameras do not do the focusing work <em>for</em> them. (It’s easier to remind them that, much like other electronics, more expensive things have fewer bells and whistles – and autofocus is a terrible, terrible idea.)</p>
+  </li>
+  <li>
+    <p><strong>Lighting</strong>. As soon as low light cameras capable of cine work, like the A7s, came out, people came crawling out of the woodwork, happy that they no longer would have to worry about learning to light a scene. Putting aside the relative noisiness of the sensors, low light / no light <em>still</em> does not look like actual lit footage.</p>
+  </li>
+</ul>
+
+<p>Falling into these thought pattern “traps” may seem easier at first, but following this “shortcut mentality” doesn’t may off in the long game.</p>
+
+<h2 id="why">Why?</h2>
+
+<p>I’m not sure. I have previously said that I believed intellectual laziness or possibly a culture obsessed with instant gratification could be blamed for attempting to take the easy way out. Upon further observation, I cannot isolate a single cause behind the widespread acceptance of these tools and shortcuts.</p>
+
+<h2 id="whats-the-solution">What’s the solution?</h2>
+
+<p>This is where I’m at a bit of a loss. I’d like to believe that, given time, those who possess the requisite skills of the trade will advance, simply by virtue of having learned to ply their skills more effectively, and those who use “skill approximation” software will drop off, or will continue to produce mediocre or cookie-cutter output.</p>
+
+<p>That being said, it didn’t happen that way with pitch-correction software. Musical artists no longer have to be able to sing in tune (although, you could point at musicians like Bob Dylan to say “they never had to be able to”, but I digress) to be able to rise to the top of the pop music charts, and photographers don’t have to be able to take a clean picture to be able to produce a cover image for a magazine. The exact opposite, in fact, is expected from professional photographers – knowledge of manipulation tools is <em>expected</em>, and some photographers are becoming well known through their Instagram-filtered images.</p>
+
+<p><em>(As an aside, even though I do have an <a href="http://instagram.com/jbuchbinderphotos">Instagram account</a>, I do tag my photos with <strong>#nofilter</strong> and <strong>#noprocessing</strong> to indicate that I do not manipulate them, apart from the forced square ratio imposed by Instagram.)</em></p>
+
+<p>I can only recommend the long road – and I’m going to end this post with a quote that, while it may seem to be a bit cliché, is perfectly apropos:</p>
+
+<blockquote>
+  <p>Two roads diverged in a wood, and I— /
+I took the one less traveled by, /
+And that has made all the difference.
+- “The Road Not Taken”, Robert Frost</p>
+</blockquote>
+
+<p>It is even more appropriate that the oft-misconstrued sentiment of Frost’s poem was to lament that he had chosen the more difficult route, not to celebrate that he had taken it.</p>
+
+<p>So please, take the long road of learning and discovery, rather than looking for shortcuts ; you’ll be a better, more skilled person for having done so. Good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Importance of Failure]]></title>
@@ -32,13 +89,13 @@
 
 <p><strong>Cognitive bias</strong> is a serious issue with us accepting criticism, or any differing points of view from our own. Without getting into too much detail about the mechanics of cognitive bias, it is important to emphasize the importance of recognizing that we all possess it, to one degree or another.</p>
 
-<p><strong>High expectations</strong> tend to result in a feeling of having failed at a much deeper level than the project at hand. A very insightful person had written (about film festival contests, in particular) that you had to be committed to making the best thing you could, not winning. It may not sound like a lot of inherent difference, but stripping your expectations for a project can allow you to be much more free in your ability to execute that project.</p>
+<p><strong>High expectations</strong> tends to result in a feeling of having failed at a much deeper level than the project at hand. A very insightful person had written (about film festival contests, in particular) that you had to be committed to making the best thing you could, not winning. It may not sound like a lot of inherent difference, but stripping your expectations for a project can allow you to be much more free in your ability to execute that project.</p>
 
 <p><strong>People who criticize or critique can help you.</strong> Every failure which is left without analysis is a missed opportunity. You cannot learn from your missteps and mistakes without looking at them with a critical eye. A third party with less vested interest in you and your project can give you the perspective you need to improve.</p>
 
 <h2 id="post-mortem-analyses">Post Mortem Analyses</h2>
 
-<p>I come from a pretty heavy information technology background, and one of the favorite “failure analysis” tools we tend to use after something breaks is something called a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation">post mortem</a>, which is shorthand for “post mortem documentation”. It involves a rigorous process of analyzing key elements which were responsible for both successful and unsuccessful aspects of a project or event.</p>
+<p>I come from a pretty heavy information technology background, and one of the favorite “failure analysis” tools we tend to use after something breaks is something called a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation">post mortem</a>, which is short for “post mortem documentation”. It involves a rigorous process of analyzing key elements which were responsible for both successful and unsuccessful aspects of a project or event.</p>
 
 <p>For example, I performed both a post mortem on our <a href="http://jbuchbinder.com/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/">2014 48 Hour Boston Festival project</a>, which documented some of the things I learned about working with a new camera body, as well as working under tight time constraints, and a post mortem on our <a href="http://jbuchbinder.com/2014/11/07/winning-a-48-hour-film-project/">2014 48 Hour Providence Horror Festival project</a>, which took home a number of awards, including “Best Film”. Even the analysis of our <strong>successful</strong> project found issues which needed to be addressed before our next project.</p>
 
@@ -1025,45 +1082,68 @@ Good luck!</p>
     <link href="http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/"/>
     <updated>2014-05-08T07:05:17-04:00</updated>
     <id>http://jbuchbinder.com/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve</id>
-    <content type="html"><![CDATA[<p>There are a number of “accepted” workflows for going between Adobe Premiere (as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K footage. I am going to detail the workflow I have been using, which should be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
+    <content type="html"><![CDATA[<p>There are a number of “accepted” workflows for going between Adobe Premiere
+(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K
+footage. I am going to detail the workflow I have been using, which should
+be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
 
 <ol>
   <li>
-    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98 fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same thing as the “24P” frame rate we are used to.</p>
+    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98
+fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same
+thing as the “24P” frame rate we are used to.</p>
   </li>
   <li>
     <p><strong>Load your media onto your workstation</strong>.</p>
   </li>
   <li>
-    <p><strong>Create simple proxies</strong>. Using <a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>, create “cheap” lower quality proxies encoded using the H.264 codec in Quicktime files. I have been experimenting with using the “.mpg” extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>, rather than the relatively dodgy external one, but the basic process is the same. <em>Note: This isn’t really necessary with more recent versions of Premiere, as it tends to play relatively nicely with BMD Prores video files.</em></p>
+    <p><strong>Create simple proxies</strong>. Using
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>,
+create “cheap” lower quality proxies encoded using the H.264 codec in
+Quicktime files. I have been experimenting with using the “.mpg”
+extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>,
+rather than the relatively dodgy external one, but the basic process
+is the same.</p>
   </li>
   <li>
-    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do not have to bother with any fancy transitions or effects yet – just perform a basic edit.</p>
+    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do
+not have to bother with any fancy transitions or effects yet – just
+perform a basic edit.</p>
   </li>
   <li>
-    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the File &gt; Export menu option.</p>
+    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the
+File &gt; Export menu option.</p>
   </li>
   <li>
-    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project. Import the original files (not the proxies) into your media pool.</p>
+    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project.
+Import the original files (not the proxies) into your media pool.</p>
   </li>
   <li>
-    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export, with “Automatically import source clips into pool” deselected. This last part is very important, as it forces Resolve to use the clips you already have in the Media Pool.</p>
+    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export,
+with “Automatically import source clips into pool” deselected. This last
+part is very important, as it forces Resolve to use the clips you already
+have in the Media Pool.</p>
   </li>
   <li>
     <p><strong>Color Grade</strong>. Perform your color grade in Resolve.</p>
   </li>
   <li>
-    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose “Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options here to your liking.</p>
+    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose
+“Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options
+here to your liking.</p>
   </li>
   <li>
-    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in Premiere. This will bring in all of the graded footage.</p>
+    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in
+Premiere. This will bring in all of the graded footage.</p>
   </li>
   <li>
-    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or create your title cards, etc.</p>
+    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or
+create your title cards, etc.</p>
   </li>
 </ol>
 
-<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere workflow right now, and it may change.</em></p>
+<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere
+workflow right now, and it may change.</em></p>
 
 ]]></content>
   </entry>
@@ -1873,7 +1953,7 @@ as well as where they exist in your code.</p>
 #
 # Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
 #
-# Jeff's notes:
+# Jeff&#39;s notes:
 #
 # *) This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
 #    functions are found, which should allow easy integration into CI systems.
@@ -1903,7 +1983,7 @@ function dfunctions() {
     )
     
     for s in ${deprecated_sources}; do
-	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep &#39;^function &#39; | cut -d&#39; &#39; -f2 | cut -d&#39;(&#39; -f 1
     done
 }
 deprecatedFunctions=(
@@ -1919,7 +1999,7 @@ echo &quot;&quot;
 found=0
 
 while [ $i -lt $len ]; do
-    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    echo &quot;  // checking for &#39;${deprecatedFunctions[$i]}()&#39;&quot;
     grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
     if [ $? -ne 0 ]; then
         found=1
@@ -2327,96 +2407,6 @@ specifically works in your storytelling to have them occupied or surrounded.</p>
 documentaries and documentary footage – but hopefully, these bullet points
 will help someone else avoid some of the pitfalls I experienced on my first
 documentary shoot. Good luck!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Are you a cinematographer or a camera operator?]]></title>
-    <link href="http://jbuchbinder.com/2013/09/10/are-you-a-cinematographer-or-a-camera-operator/"/>
-    <updated>2013-09-10T21:55:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/09/10/are-you-a-cinematographer-or-a-camera-operator</id>
-    <content type="html"><![CDATA[<p>There’s only a slight difference in the textbook definition between a
-<a href="http://en.wikipedia.org/wiki/Cinematographer">cinematographer</a> and a
-<a href="http://en.wikipedia.org/wiki/Camera_operator">camera operator</a>. Besides the
-slight variance in responsibilities (a cinematographer/DP can be responsible
-for several camera operators), there are some additional skills and
-aptitudes which play into the decision to try to be a cinematographer.</p>
-
-<p>None of this is meant to downplay the skill and experience which make a
-great camera operator. Knowing your equipment, being able to choose the
-proper lenses and camera settings, being able to operate that equipment,
-being able to interpret the direction of both the director and the
-cinematographer, and being able to hold together a cohesive shot –
-these are all the hallmarks of a great camera operator.</p>
-
-<p>At a much, much more basic level, there’s an <em>art</em> to cinematography, which
-transcends the physical manipulations of the equipment involved, and becomes
-more about creating a sort of separate reality; that of capturing a little
-slice of time and space, motion and stillness, light and dark, vibrant
-colors and subtle undertones. That’s the part of this that, to me, offers
-the most promising creativity and the most fulfilling, yet burdening, tasks.</p>
-
-<p>It’s very easy to get lost in the minutiae of camera settings adjustments,
-equipment acquisition, troubleshooting and stabilization, among other
-demons – but the <em>art</em> is the derivative of those functions.</p>
-
-<p>To properly illustrate this, I think of a concert I attended, quite a few
-years ago. The guitarist, <a href="https://www.facebook.com/VernonReid">Vernon Reid</a>,
-was (and still is), an amazing technical instrumentalist. I watched him dance
-over the semi-circle of effects pedals and boxes, his hands moving,
-seemingly effortlessly over the six strings on his instrument. It struck me
-as astounding. We are all, in some way, capable of recognizing genius and
-immense skill, even if we cannot reproduce it, or explain it in purely
-quantifiable terms. In that way, the body of his technical skills simply
-became a foundation for the <em>art</em> which was made by way of them. I wish I
-could explain it better – I only know that I could recognize it when I saw
-it. The man himself, whom I had the pleasure of speaking with for a few
-brief moments, was very humble and very “zen” about his skill and his art.</p>
-
-<p>Due to my particular circumstances, I’ve been able to pick and choose projects,
-more of late, specifically based on their relative merits to me. As such, I
-haven’t had much experience acting strictly as a “camera operator”. There
-may be some hubris, on my part, which would have come out of getting to
-perform the artistic duties of a cinematographer on the vast majority of the
-projects on which I’ve been involved. It has given me an affinity for the
-creative aspects of the job. For as long as I’ve been involved with
-cinematography, I have always assumed that being a “camera operator” has been
-a step towards being a cinematographer; a way of honing the technical
-foundation of the craft, so that the art can come later. It seemed like an
-“apprenticeship”, much as the old focus pullers became second unit
-cameramen, to eventually move up to first units, then perhaps aspire to
-become a cinematographer one day…</p>
-
-<p>The landscape, mostly due to the explosion of low-cost cinematography
-(fueled primarily by DSLR cinematography), has been shifting away from that
-old model. Most projects have one, perhaps two camera operators – and the
-primary camera operator is usually the cinematographer/DP. Many projects
-don’t even <em>have</em> a second camera operator – it simply isn’t required.</p>
-
-<p>Ultimately, it depends what your plans and/or revenue model is.</p>
-
-<ul>
-  <li>If you want to learn more about how to get your equipment to perform
-the way you want it to perform, you may do well working as a camera
-operator with a seasoned cinematographer, rather than holding out for
-a DP position on a project.</li>
-  <li>If you want to make a living behind a camera, you can’t really differentiate
-between cinematography and camera operator work – at least as long as
-you want to keep a steady revenue stream up. Even the best cinematographers
-can moonlight as strict “camera operators” when the pay is right.</li>
-  <li>If you want to work in a lower pressure environment, you might want to
-be a camera operator. Cinematographers are responsible for everything
-visual which goes on in a project, and it can be a lot of stress.</li>
-  <li>If you feel passionate enough about a project to want to be involved at
-any cost, you might sign on as a camera operator.</li>
-</ul>
-
-<p>Even though there’s a lot of competition for certain spots on certain
-projects, we’re all on the same team; we all (for the most part) are
-interested in shooting great footage, and many of us are concerned about
-creating enduring works of art, wherever possible. We all have great
-potential for growth, so whatever your career and job choice, good luck!</p>
 
 ]]></content>
   </entry>

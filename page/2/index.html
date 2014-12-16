@@ -9,9 +9,9 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I was lucky enough to be one of the early people on the waiting list for
-Blackmagic Design’s new 4K “Production
-Camera” body, which I received last &hellip;">
+  <meta name="description" content="As part of setting up the Blackmagic Production Camera 4K,
+I have been trying to put together a solid, fairly low-cost set of
+accessories for the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -110,6 +110,109 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/03/18/came-06-blackmagic-cage-review/">CAME-06 Blackmagic Cage Review</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-18T21:52:29-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2014/03/18/came-06-blackmagic-cage-review/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>As part of setting up the <a href="http://www.blackmagicdesign.com/products/blackmagicproductioncamera4k">Blackmagic Production Camera 4K</a>,
+I have been trying to put together a solid, fairly low-cost set of
+accessories for the camera body.</p>
+
+<p>I became aware of a low-cost Chinese cage for the BMCC/BMPC4K
+bodies manufactured by an outfit called
+“<a href="http://www.came-tv.com/">Xiamen Came Photographic Equipment Co., Ltd.</a>”,
+which are available sporting both top and bottom 15mm rail mounts, 
+along with the normal mounting options and handles present with
+most cage designs. The cage in question is available for
+<a href="http://www.came-tv.com/came06-bmcc-cage-for-blackmagic-design-cinema-camera-15mm-rail-p-477.html">$198, shipping included, from the manufacturer</a>.</p>
+
+<p><img src="/images/came-06.jpg" width="289" height="400" title="&#34;CAME-06 Cage&#34;" alt="&#34;CAME-06 Cage&#34;" /></p>
+
+<p>My unit arrived today, via DHL, in a box which seemed almost
+Ikea-esque in its packing. First thing to note, which is not
+indicated either on the website or the packaging: “some assembly
+required”. Secondly – no instructions. Thankfully, the entire
+assembly procedure seemed pretty obvious with the provided
+Allen wrenches. I noticed that there is a 5/8” mount on the
+bottom of the unit (as well as a 1/4”-20 mount) for attaching to
+the fluid head or quick-release plate of your choosing. This wasn’t
+indicated on the website, but I had my suspicions, which were
+thankfully confirmed.</p>
+
+<p>The first major issue I encountered was the lack of four of the
+required screws for assembly. Undaunted, I took a quick trip to 
+the nearest “home improvement” store, and purchased four
+M4-.70 x 12 bolts with phillips heads (in packs of two), which
+worked like a charm.</p>
+
+<p>The second slightly annoying issue was that one of the included
+30cm 15mm rods was completely unthreaded, so it wouldn’t be
+possible to attach it to any other rods, should it need to be
+extended. The inclusion of the rods was a bit of a plus, so I
+can’t really be too upset about that.</p>
+
+<p>The build quality, once assembled, is quite good. The CAME-06
+cage is machined properly, and does not interfere with the
+operation of the BMPC4K unit at all, and has enough mount points
+to allow me to put handles, arms, and other accessories on it,
+which was the secondary purpose of purchasing the cage, after
+being able to properly mount the camera on a decent QR plate.</p>
+
+<p>Additionally, it has a set of Hirth joints on either side,
+ostensibly for attaching handle mounts. I have no use for them
+at the moment, but they seem to be workable.</p>
+
+<p>As the next step up in price is another 70$, and this unit
+arrived from China in less than four business days from my
+initial order, the annoyance of a $1.00 bolt purchase seems
+miniscule, considering the usability of the cage itself. It
+isn’t a full system, like the Tilta, Lanparte, and others,
+but can be built into a system incrementally.</p>
+
+<p>Verdict: Know what you’re getting yourself into. If you want
+a pre-assembled unit, next day shipping, and would rather pay
+more money for the lack of inconvenience, you should avoid the
+CAME-06. It’s a good deal for the price, however.</p>
+
+<p>Good luck!</p>
+
+<p><em>Postscript: The manufacturer offered to reimburse me for the
+missing screws within a day of me writing to them, so they do
+seem to be relatively responsive whenever there is a mixup.</em></p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -839,7 +942,7 @@ as well as where they exist in your code.</p>
 #
 # Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
 #
-# Jeff's notes:
+# Jeff&#39;s notes:
 #
 # *) This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
 #    functions are found, which should allow easy integration into CI systems.
@@ -869,7 +972,7 @@ function dfunctions() {
     )
     
     for s in ${deprecated_sources}; do
-	    wget -q -O /dev/stdout &quot;$s&quot; | grep '^function ' | cut -d' ' -f2 | cut -d'(' -f 1
+	    wget -q -O /dev/stdout &quot;$s&quot; | grep &#39;^function &#39; | cut -d&#39; &#39; -f2 | cut -d&#39;(&#39; -f 1
     done
 }
 deprecatedFunctions=(
@@ -885,7 +988,7 @@ echo &quot;&quot;
 found=0
 
 while [ $i -lt $len ]; do
-    echo &quot;  // checking for '${deprecatedFunctions[$i]}()'&quot;
+    echo &quot;  // checking for &#39;${deprecatedFunctions[$i]}()&#39;&quot;
     grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
     if [ $? -ne 0 ]; then
         found=1
@@ -1417,125 +1520,6 @@ documentary shoot. Good luck!</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/09/10/are-you-a-cinematographer-or-a-camera-operator/">Are You a Cinematographer or a Camera Operator?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-10T21:55:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2013/09/10/are-you-a-cinematographer-or-a-camera-operator/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>There’s only a slight difference in the textbook definition between a
-<a href="http://en.wikipedia.org/wiki/Cinematographer">cinematographer</a> and a
-<a href="http://en.wikipedia.org/wiki/Camera_operator">camera operator</a>. Besides the
-slight variance in responsibilities (a cinematographer/DP can be responsible
-for several camera operators), there are some additional skills and
-aptitudes which play into the decision to try to be a cinematographer.</p>
-
-<p>None of this is meant to downplay the skill and experience which make a
-great camera operator. Knowing your equipment, being able to choose the
-proper lenses and camera settings, being able to operate that equipment,
-being able to interpret the direction of both the director and the
-cinematographer, and being able to hold together a cohesive shot –
-these are all the hallmarks of a great camera operator.</p>
-
-<p>At a much, much more basic level, there’s an <em>art</em> to cinematography, which
-transcends the physical manipulations of the equipment involved, and becomes
-more about creating a sort of separate reality; that of capturing a little
-slice of time and space, motion and stillness, light and dark, vibrant
-colors and subtle undertones. That’s the part of this that, to me, offers
-the most promising creativity and the most fulfilling, yet burdening, tasks.</p>
-
-<p>It’s very easy to get lost in the minutiae of camera settings adjustments,
-equipment acquisition, troubleshooting and stabilization, among other
-demons – but the <em>art</em> is the derivative of those functions.</p>
-
-<p>To properly illustrate this, I think of a concert I attended, quite a few
-years ago. The guitarist, <a href="https://www.facebook.com/VernonReid">Vernon Reid</a>,
-was (and still is), an amazing technical instrumentalist. I watched him dance
-over the semi-circle of effects pedals and boxes, his hands moving,
-seemingly effortlessly over the six strings on his instrument. It struck me
-as astounding. We are all, in some way, capable of recognizing genius and
-immense skill, even if we cannot reproduce it, or explain it in purely
-quantifiable terms. In that way, the body of his technical skills simply
-became a foundation for the <em>art</em> which was made by way of them. I wish I
-could explain it better – I only know that I could recognize it when I saw
-it. The man himself, whom I had the pleasure of speaking with for a few
-brief moments, was very humble and very “zen” about his skill and his art.</p>
-
-<p>Due to my particular circumstances, I’ve been able to pick and choose projects,
-more of late, specifically based on their relative merits to me. As such, I
-haven’t had much experience acting strictly as a “camera operator”. There
-may be some hubris, on my part, which would have come out of getting to
-perform the artistic duties of a cinematographer on the vast majority of the
-projects on which I’ve been involved. It has given me an affinity for the
-creative aspects of the job. For as long as I’ve been involved with
-cinematography, I have always assumed that being a “camera operator” has been
-a step towards being a cinematographer; a way of honing the technical
-foundation of the craft, so that the art can come later. It seemed like an
-“apprenticeship”, much as the old focus pullers became second unit
-cameramen, to eventually move up to first units, then perhaps aspire to
-become a cinematographer one day…</p>
-
-<p>The landscape, mostly due to the explosion of low-cost cinematography
-(fueled primarily by DSLR cinematography), has been shifting away from that
-old model. Most projects have one, perhaps two camera operators – and the
-primary camera operator is usually the cinematographer/DP. Many projects
-don’t even <em>have</em> a second camera operator – it simply isn’t required.</p>
-
-<p>Ultimately, it depends what your plans and/or revenue model is.</p>
-
-<ul>
-  <li>If you want to learn more about how to get your equipment to perform
-the way you want it to perform, you may do well working as a camera
-operator with a seasoned cinematographer, rather than holding out for
-a DP position on a project.</li>
-  <li>If you want to make a living behind a camera, you can’t really differentiate
-between cinematography and camera operator work – at least as long as
-you want to keep a steady revenue stream up. Even the best cinematographers
-can moonlight as strict “camera operators” when the pay is right.</li>
-  <li>If you want to work in a lower pressure environment, you might want to
-be a camera operator. Cinematographers are responsible for everything
-visual which goes on in a project, and it can be a lot of stress.</li>
-  <li>If you feel passionate enough about a project to want to be involved at
-any cost, you might sign on as a camera operator.</li>
-</ul>
-
-<p>Even though there’s a lot of competition for certain spots on certain
-projects, we’re all on the same team; we all (for the most part) are
-interested in shooting great footage, and many of us are concerned about
-creating enduring works of art, wherever possible. We all have great
-potential for growth, so whatever your career and job choice, good luck!</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="3">&larr; Older</a>
@@ -1553,6 +1537,10 @@ potential for growth, so whatever your career and job choice, good luck!</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/12/11/the-importance-of-failure/">The Importance of Failure</a>
       </li>
     
@@ -1568,17 +1556,13 @@ potential for growth, so whatever your career and job choice, good luck!</p>
         <a href="/2014/09/19/ways-to-keep-your-work-from-appearing-cheap/">Ways to Keep Your Work From Appearing Cheap</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/">Modifying Computar 12.5mm C-mount Lens for M4/3</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (25)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (26)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
@@ -1586,7 +1570,7 @@ potential for growth, so whatever your career and job choice, good luck!</p>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>opinion (12)</a></li>
-<li class='category'><a href='/categories/photography/'>photography (11)</a></li>
+<li class='category'><a href='/categories/photography/'>photography (12)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (81)</a></li>
 <li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>

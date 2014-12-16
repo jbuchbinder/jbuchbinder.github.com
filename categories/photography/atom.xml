@@ -4,7 +4,7 @@
   <title><![CDATA[Category: photography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/photography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2014-12-14T19:52:29-05:00</updated>
+  <updated>2014-12-16T14:09:56-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The danger of the shortcut mentality]]></title>
+    <link href="http://jbuchbinder.com/2014/12/16/the-danger-of-the-shortcut-mentality/"/>
+    <updated>2014-12-16T13:00:26-05:00</updated>
+    <id>http://jbuchbinder.com/2014/12/16/the-danger-of-the-shortcut-mentality</id>
+    <content type="html"><![CDATA[<p>In “<a href="/2013/06/28/skill-in-the-age-of-instagram/">Skill in the Age of Instagram</a>”, I had opined about the lost value of skill sets, and how the modern approach to skills is to “approximate” them with shortcuts like Instagram, Autotune, and Photoshop.</p>
+
+<p>Even though these tools offer the quickest and shortest “path” to the immediate goal, being your current project, they retard your potential growth by limiting your skills and knowledge about what you’re doing. If the pseudo-magic time-saving software is taken away (or encounters a limitation), how will you continue to be able to function without it?</p>
+
+<h2 id="in-cinematography">In cinematography</h2>
+
+<p>Cinematography is rife with this kind of intellectual laziness, as all creative fields have a tendency to be. A few of the places I’ve seen this have been:</p>
+
+<ul>
+  <li>
+    <p><strong>Cameras</strong>. If you haven’t met a single cinematographer who has lamented that s/he is being held back by his/her rig, you haven’t gotten out very much. I call crap on that argument, mainly because of fine work like <a href="http://erbpfilm.com/film/upstreamcolor">Shane Carruth’s “Upstream Color”</a>. Learn to use what you’ve got, rather than pining for something better / different.</p>
+  </li>
+  <li>
+    <p><strong>Color correction and grading</strong>. Virtually every amateur forum on color correction and grading is full of people asking where they can get a “one size fits all” <a href="http://nofilmschool.com/2011/05/what-is-a-look-up-table-lut-anyway">LUT</a> which will make their footage look “like Hollywood”. If there was such a thing, the entire industry of color grading specialists would just be wasting their time and skills. There’s even an “Instagram” of sorts for color grading – Magic Bullet Looks.</p>
+  </li>
+  <li>
+    <p><strong>Focus</strong>. I’m still surprised at the number of people who complain that cameras do not do the focusing work <em>for</em> them. (It’s easier to remind them that, much like other electronics, more expensive things have fewer bells and whistles – and autofocus is a terrible, terrible idea.)</p>
+  </li>
+  <li>
+    <p><strong>Lighting</strong>. As soon as low light cameras capable of cine work, like the A7s, came out, people came crawling out of the woodwork, happy that they no longer would have to worry about learning to light a scene. Putting aside the relative noisiness of the sensors, low light / no light <em>still</em> does not look like actual lit footage.</p>
+  </li>
+</ul>
+
+<p>Falling into these thought pattern “traps” may seem easier at first, but following this “shortcut mentality” doesn’t may off in the long game.</p>
+
+<h2 id="why">Why?</h2>
+
+<p>I’m not sure. I have previously said that I believed intellectual laziness or possibly a culture obsessed with instant gratification could be blamed for attempting to take the easy way out. Upon further observation, I cannot isolate a single cause behind the widespread acceptance of these tools and shortcuts.</p>
+
+<h2 id="whats-the-solution">What’s the solution?</h2>
+
+<p>This is where I’m at a bit of a loss. I’d like to believe that, given time, those who possess the requisite skills of the trade will advance, simply by virtue of having learned to ply their skills more effectively, and those who use “skill approximation” software will drop off, or will continue to produce mediocre or cookie-cutter output.</p>
+
+<p>That being said, it didn’t happen that way with pitch-correction software. Musical artists no longer have to be able to sing in tune (although, you could point at musicians like Bob Dylan to say “they never had to be able to”, but I digress) to be able to rise to the top of the pop music charts, and photographers don’t have to be able to take a clean picture to be able to produce a cover image for a magazine. The exact opposite, in fact, is expected from professional photographers – knowledge of manipulation tools is <em>expected</em>, and some photographers are becoming well known through their Instagram-filtered images.</p>
+
+<p><em>(As an aside, even though I do have an <a href="http://instagram.com/jbuchbinderphotos">Instagram account</a>, I do tag my photos with <strong>#nofilter</strong> and <strong>#noprocessing</strong> to indicate that I do not manipulate them, apart from the forced square ratio imposed by Instagram.)</em></p>
+
+<p>I can only recommend the long road – and I’m going to end this post with a quote that, while it may seem to be a bit cliché, is perfectly apropos:</p>
+
+<blockquote>
+  <p>Two roads diverged in a wood, and I— /
+I took the one less traveled by, /
+And that has made all the difference.
+- “The Road Not Taken”, Robert Frost</p>
+</blockquote>
+
+<p>It is even more appropriate that the oft-misconstrued sentiment of Frost’s poem was to lament that he had chosen the more difficult route, not to celebrate that he had taken it.</p>
+
+<p>So please, take the long road of learning and discovery, rather than looking for shortcuts ; you’ll be a better, more skilled person for having done so. Good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Importance of Failure]]></title>
@@ -32,13 +89,13 @@
 
 <p><strong>Cognitive bias</strong> is a serious issue with us accepting criticism, or any differing points of view from our own. Without getting into too much detail about the mechanics of cognitive bias, it is important to emphasize the importance of recognizing that we all possess it, to one degree or another.</p>
 
-<p><strong>High expectations</strong> tend to result in a feeling of having failed at a much deeper level than the project at hand. A very insightful person had written (about film festival contests, in particular) that you had to be committed to making the best thing you could, not winning. It may not sound like a lot of inherent difference, but stripping your expectations for a project can allow you to be much more free in your ability to execute that project.</p>
+<p><strong>High expectations</strong> tends to result in a feeling of having failed at a much deeper level than the project at hand. A very insightful person had written (about film festival contests, in particular) that you had to be committed to making the best thing you could, not winning. It may not sound like a lot of inherent difference, but stripping your expectations for a project can allow you to be much more free in your ability to execute that project.</p>
 
 <p><strong>People who criticize or critique can help you.</strong> Every failure which is left without analysis is a missed opportunity. You cannot learn from your missteps and mistakes without looking at them with a critical eye. A third party with less vested interest in you and your project can give you the perspective you need to improve.</p>
 
 <h2 id="post-mortem-analyses">Post Mortem Analyses</h2>
 
-<p>I come from a pretty heavy information technology background, and one of the favorite “failure analysis” tools we tend to use after something breaks is something called a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation">post mortem</a>, which is shorthand for “post mortem documentation”. It involves a rigorous process of analyzing key elements which were responsible for both successful and unsuccessful aspects of a project or event.</p>
+<p>I come from a pretty heavy information technology background, and one of the favorite “failure analysis” tools we tend to use after something breaks is something called a <a href="http://en.wikipedia.org/wiki/Postmortem_documentation">post mortem</a>, which is short for “post mortem documentation”. It involves a rigorous process of analyzing key elements which were responsible for both successful and unsuccessful aspects of a project or event.</p>
 
 <p>For example, I performed both a post mortem on our <a href="/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/">2014 48 Hour Boston Festival project</a>, which documented some of the things I learned about working with a new camera body, as well as working under tight time constraints, and a post mortem on our <a href="/2014/11/07/winning-a-48-hour-film-project/">2014 48 Hour Providence Horror Festival project</a>, which took home a number of awards, including “Best Film”. Even the analysis of our <strong>successful</strong> project found issues which needed to be addressed before our next project.</p>
 
@@ -353,218 +410,6 @@ recovered, with previews.</li>
 at least help to minimize the impact, if and when you end up losing data.</p>
 
 <p>As always, good luck!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[To post or not to post]]></title>
-    <link href="http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post/"/>
-    <updated>2013-09-07T13:18:00-04:00</updated>
-    <id>http://jbuchbinder.com/2013/09/07/to-post-or-not-to-post</id>
-    <content type="html"><![CDATA[<p>Even though a good portion of the work has been completed when you press the
-shutter button, or stop rolling, since all of your planning and execution has
-been completed, there’s still a final step (or series of steps) to bring that
-artistic effort to a presentable format.</p>
-
-<p>Many people shoot with default (or very close to default) settings on their
-camera or videocamera, and do simple “post production” by simply cropping or
-cutting whatever comes out of their camera body. This is a very “purist” way
-of going about shooting, but can also rob your end product of some of the
-polish and slight adjustments which can take good pictures or footage and
-make them into something extraordinary.</p>
-
-<p>All of that being said, there’s a limit to the types and amounts of post
-production which can and should be used, much in the way that overproducing
-a musical album can result in a homogenous and lifeless product, robbed of
-the “soul” and variances which make it unique. You are the only person who
-can decide how much, if any, post processing is right for your project or
-other artistic endeavor.</p>
-
-<p><strong>RAW versus JPEG/H.264</strong></p>
-
-<p>With DSLR cameras being used for both photography and cinematography, there
-are places where the “processing” aspect can be pushed off into the post
-production process.</p>
-
-<p>For photography, RAW format pictures can allow recovery past some of the
-previously accepted limits of what would normally be considered lost or
-unusable. Effectively, it allows you to make the decisions which are
-normally pushed off on your camera’s processor (the DIGIC processor(s),
-for all of you Canon users). It adds an additional step to the
-post-processing workflow, in that you’ll need a piece of software like
-<a href="http://www.adobe.com/products/photoshop-lightroom.html">Adobe Lightroom</a> for Windows/Mac users, or if you’re a Linux user like me,
-<a href="http://rawstudio.org/">Raw Studio</a>. It also adds a significant amount of time to the
-photographic post-processing workflow, in that there are a number of
-additional parameters which can be adjusted, which would normally result
-in image degradation, but can be adjusted in RAW images with little or no
-deleterious effect. If you’re a <a href="http://www.magiclantern.fm/">Magic Lantern</a> user, you can also
-experiment with “dual ISO” images, which can create images with enormous
-dynamic range through sensor tricks – but which adds an another step
-before RAW processing, that of running a CR2HDR binary. (If you’re
-interested in trying this out, but don’t want to compile a CR2HDR binary
-for Windows or Linux, I have binaries available <a href="https://bitbucket.org/rufustfirefly/magic-lantern/downloads">here</a>)</p>
-
-<p>For cinematography, there’s a lot more to think about. Magic Lantern users
-of Canon 5Dmk3 models (and some others, as well) have the option of being
-able to shoot RAW video with some very fast CF cards. This adds a pretty
-substantial amount of post-processing steps <em>before</em> your NLE (non-linear
-editor) of choice enters the picture. There are a pretty wide swath of
-applications which now support the Magic Lantern RAW format, including
-<a href="http://www.magiclantern.fm/forum/index.php?action=printpage;topic=5557.0">RAWanizer</a>, but your best bet is to get involved with the Magic
-Lantern forum if you want to begin working with a RAW workflow. The other
-serious disadvantage is storage space. Standard H.264 video, which is
-shot by most DSLR camera bodies, has issues with some digital artifacts in
-certain scenarios, as well as some dynamic range issues (some of which can
-be made better by use of flat color profiles like <a href="https://www.technicolorcinestyle.com/download/">Cinestyle</a>, but I’ll
-leave that for later) – but it produces fairly compact files, even at
-1080p/24p (1920x1080 24fps progressive) resolution. RAW data can take
-upwards of a gigabyte of space every 15-20 seconds. Your storage media
-and backup solutions have to be able to deal with that, so it’s something
-to seriously consider before deciding to move a project to work with that
-format.</p>
-
-<p><strong>White Balance</strong></p>
-
-<p>It used to be accepted that white balancing (determining where “true white”
-lies in an image, compensating for varying light color temperatures) had to
-be done “in camera”, before shots were taken. There are a number of tools
-which allow this to be done in post-processing.</p>
-
-<p>Photographers can do this when shooting with RAW camera images very
-simply, as most RAW image processors have a simple white balancing tool. It’s
-still possible to do this with processed JPEG images, but with the
-potential for losing some image data. Depending on how comfortable you are
-with straying from the “truest possible image”, you can decide where you
-feel comfortable dealing with white balancing.</p>
-
-<p>Cinematographers have a pretty vast array of white balancing and color
-correction plugins available for their NLE of choice. I’m most familiar with
-Adobe Premiere, so I’d mention <a href="http://blogs.adobe.com/VideoRoad/2010/05/using_the_fast_color_corrector.html">Fast Color Corrector</a> and
-<a href="http://philipbloom.net/forum/threads/tutorial-color-grading-and-styling-with-colorista-ii.2528/">Red Giant Colorista II</a>, both of which offer pretty decent white
-balancing capabilities, among other things. If you’re concerned about
-render speed, Fast Color Corrector seems to win out against Colorista II,
-but Colorista II has some additional parameters and capabilities which
-far outstrip what FCC has to offer. There’s also software like
-<a href="http://tv.adobe.com/watch/learn-premiere-pro-cc/color-grading-premiere-pro-sequences-in-speedgrade/">Adobe Speedgrade</a> and <a href="http://digitalfilms.wordpress.com/2013/02/02/davinci-resolve-workflows/">Blackmagic Design Davinci Resolve</a>, both
-of which offer white balancing, color correction, and color grading
-capabilities. There are a few threads <a href="http://forums.planet5d.com/threads/123505-Adobe-Speedgrade-vs-DaVinci-Resolve">comparing the two of them</a>.</p>
-
-<p>The important distinction is whether or not you want to spend the time
-to properly white balance your images or footage before you take pictures.
-It’s not always condusive to your shooting workflow to do so, and if this
-is a factor, you should seriously consider some of the post-processing
-options. It’s obviously to your greatest advantage to have the most
-accurate input images/footage to bring into your post-processing
-workflow, but sometimes it’s not pragmatic to take a completely purist
-attitude in this regard.</p>
-
-<p><strong>Exposure</strong></p>
-
-<p>We’ve all been bitten by changing light conditions, unexpected events, or
-incorrect metering producing images or footage which has exposure problems.
-If you’re shooting RAW (or using Magic Lantern’s Dual ISO hack), this is
-an ideal place to examine using post-processing to correct these issues.</p>
-
-<p>We would all like to properly expose everything (unless we have a
-particular artistic reason for doing otherwise, since in the art of
-photography or cinematography, there are generally exceptions to every
-rule, rules were made to be broken, etc), but taking a post-processing
-detour to correct such things is generally preferable to re-arranging a
-shoot.</p>
-
-<p><strong>Special Effects</strong></p>
-
-<p>I’m not a big fan of post-processing special effects, mainly because I 
-am a proponent of the idea that it takes some of the artistry out of
-pulling off those same effects “in camera”. I do understand that there
-are certain effects which would be either very difficult or downright
-impossible to achieve without the use of computer generated effects –
-but there’s a lot of things which can be accomplished <em>without</em> that.</p>
-
-<p>Lighting is something which I’ve seen done in post, which generally
-baffles me. It’s something which is pretty simple to execute properly,
-given a little time and effort. Saving images or footage with issues
-might be a good use for that, but it’s probably not something I would
-recommend doing for everyday editing and processing.</p>
-
-<p>For example, having someone “eaten” by light can be accomplished for
-a cinematographer, simply by adjusting the fill light to blow out the
-whites, then opening the iris of the lens (using a focus pulling kit,
-or just a spare hand, for the less equipment-heavy among us) to allow
-the fill light to “eat” the remainder of the image. That can be done
-without any specific post-processing.</p>
-
-<p><strong>Flat Color Profiles</strong></p>
-
-<p>This is pretty much for cinematographers, since photographers could
-simply take RAW photos – and cinematographers shooting RAW should
-probably ignore this section, as well.</p>
-
-<p>There are quite a few “flat color profiles” available for DSLR
-(and other) bodies, such as the aforementioned Technicolor Cinestyle
-profile and the <a href="http://www.similaar.com/foto/flaat-picture-styles/long-1.html">Flaat Picture Style</a>. These work by effectively
-increasing the dynamic range being captured by the camera by storing
-the values differently than the stock picture profile.</p>
-
-<p>I highly recommend shooting with one, if you’re not going to make the
-leap to shoot RAW. It does add the additional step in post-processing
-of having to adjust the blacks/whites and/or applying a corrective
-LUT (look up table) to adjust the end product to look less “washed
-out”. There are LUTs and plugins available for virtually every NLE
-out there right now – and I suggest learning how to do this. The
-improvement in the end product is substantial for relatively little
-time investment.</p>
-
-<p><strong>Audio Post</strong></p>
-
-<p>This is another section just for cinematographers.</p>
-
-<p>The audio which is recorded with footage is generally “reference
-audio”, which is meant to be replaced by actual audio, generally
-recorded with something like a <a href="http://tascam.com/product/dr-40/">Tascam DR-40</a> or <a href="http://www.zoom.co.jp/english/products/h4n/">Zoom H4n</a>
-external recorder and a shotgun microphone. It’s far outside the
-scope of this to explain the majority of these technologies and
-techniques, but sufficed to say that they produce far cleaner and
-usable recordings than on-camera audio (even when using augmented
-on-camera microphones, etc). If you can afford it, use external
-audio, and have an experienced audio engineer perform some basic
-post-production on your audio.</p>
-
-<p>If you can’t afford it, or don’t have an audio engineer, there are
-a few basic steps to get cleaner audio.</p>
-
-<p>1) <em>Don’t use the microphone built into the camera</em>. It sounds pretty
-awful, and is noisy. Get a lav microphone for interviews, or a
-directional hot-shoe mounted external microphone for anything else.</p>
-
-<p>2) <em>Adjust the audio levels manually</em>. Automatic level adjustment is
-going to be terrible. It’s meant to avoid clipping, but it tends to
-make the noise floor (the level of background noise) jump around as
-the camera readjusts the audio recording level, so it may make your
-life significantly more difficult when it comes time to adjust the
-footage later. Adjust it to the loudest sound you’re going to be
-recording – then perhaps a click lower, for safety.</p>
-
-<p>3) <em>Respect the inverse square law</em>. For those unfamiliar, sounds
-drop at a logarithmic rate as you move away from the sound source,
-following the same inverse square law which is used to figure light
-source brightness. The closer you are to a recorded sounds, the
-cleaner and better the source audio will be. Every object which a
-sound hits will produce a “reflection” (much as light does). If that
-reflection is equal or louder than the volume of the source sound,
-you’re going to get a pretty terrible sounding audio recording.</p>
-
-<p>4) <em>Get the cleanest audio possible</em>. Try to cut down on external
-noise sources. Never assume that you can clean something later on;
-you should be trying to get clean audio. If something has to be
-re-taken to avoid a lawnmower being run in the background, then you
-should seriously consider doing it. It’ll save you from pulling out
-your hair.</p>
-
-<p>I’m sure that this isn’t a <em>comprehensive</em> list, but hopefully this
-will help everyone get started with deciding what, if anything, to
-relegate to their post-processing workflow. Good luck!</p>
 
 ]]></content>
   </entry>

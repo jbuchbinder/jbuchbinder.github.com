@@ -140,45 +140,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </header>
 
 
-<div class="entry-content"><p>There are a number of “accepted” workflows for going between Adobe Premiere (as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K footage. I am going to detail the workflow I have been using, which should be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
+<div class="entry-content"><p>There are a number of “accepted” workflows for going between Adobe Premiere
+(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K
+footage. I am going to detail the workflow I have been using, which should
+be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
 
 <ol>
   <li>
-    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98 fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same thing as the “24P” frame rate we are used to.</p>
+    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98
+fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same
+thing as the “24P” frame rate we are used to.</p>
   </li>
   <li>
     <p><strong>Load your media onto your workstation</strong>.</p>
   </li>
   <li>
-    <p><strong>Create simple proxies</strong>. Using <a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>, create “cheap” lower quality proxies encoded using the H.264 codec in Quicktime files. I have been experimenting with using the “.mpg” extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>, rather than the relatively dodgy external one, but the basic process is the same. <em>Note: This isn’t really necessary with more recent versions of Premiere, as it tends to play relatively nicely with BMD Prores video files.</em></p>
+    <p><strong>Create simple proxies</strong>. Using
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>,
+create “cheap” lower quality proxies encoded using the H.264 codec in
+Quicktime files. I have been experimenting with using the “.mpg”
+extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>,
+rather than the relatively dodgy external one, but the basic process
+is the same.</p>
   </li>
   <li>
-    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do not have to bother with any fancy transitions or effects yet – just perform a basic edit.</p>
+    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do
+not have to bother with any fancy transitions or effects yet – just
+perform a basic edit.</p>
   </li>
   <li>
-    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the File &gt; Export menu option.</p>
+    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the
+File &gt; Export menu option.</p>
   </li>
   <li>
-    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project. Import the original files (not the proxies) into your media pool.</p>
+    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project.
+Import the original files (not the proxies) into your media pool.</p>
   </li>
   <li>
-    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export, with “Automatically import source clips into pool” deselected. This last part is very important, as it forces Resolve to use the clips you already have in the Media Pool.</p>
+    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export,
+with “Automatically import source clips into pool” deselected. This last
+part is very important, as it forces Resolve to use the clips you already
+have in the Media Pool.</p>
   </li>
   <li>
     <p><strong>Color Grade</strong>. Perform your color grade in Resolve.</p>
   </li>
   <li>
-    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose “Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options here to your liking.</p>
+    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose
+“Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options
+here to your liking.</p>
   </li>
   <li>
-    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in Premiere. This will bring in all of the graded footage.</p>
+    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in
+Premiere. This will bring in all of the graded footage.</p>
   </li>
   <li>
-    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or create your title cards, etc.</p>
+    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or
+create your title cards, etc.</p>
   </li>
 </ol>
 
-<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere workflow right now, and it may change.</em></p>
+<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere
+workflow right now, and it may change.</em></p>
 
 </div>
 
@@ -253,6 +276,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/12/11/the-importance-of-failure/">The Importance of Failure</a>
       </li>
     
@@ -268,17 +295,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2014/09/19/ways-to-keep-your-work-from-appearing-cheap/">Ways to Keep Your Work From Appearing Cheap</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/">Modifying Computar 12.5mm C-mount Lens for M4/3</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (25)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (26)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
@@ -286,7 +309,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>opinion (12)</a></li>
-<li class='category'><a href='/categories/photography/'>photography (11)</a></li>
+<li class='category'><a href='/categories/photography/'>photography (12)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (81)</a></li>
 <li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>
