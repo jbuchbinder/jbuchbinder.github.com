@@ -40,7 +40,7 @@ I'm not sure. I have previously said that I believed intellectual laziness or po
 
  * **"Keeping up with the Joneses"**. There is a look and feel "arms race", which closely parallels the [loudness war](http://www.soundonsound.com/sos/sep11/articles/loudness.htm), in that photographers and cinematographers are pressed to try to replicate the look and feel of their Instagrammified and Photoshopped brethren.
 
- **The social disease**. No, not "the herp"; the disease of social networking. A seemingly endless desire for likes, "+1"s, shares, and every other type of social networking accolades, has been a driving force in recent years; "[self-status seeking](http://online.liebertpub.com/doi/abs/10.1089/cpb.2009.0003)" is one of the primary goals of those who engage in social networking. In efforts to garner the esteem of "friends" and "contacts" on these social networks, users are adopting the lowest common denominator, in many cases, to attempt to appeal to the greatest number of followers. 
+ * **The social disease**. No, not "the herp"; the disease of social networking. A seemingly endless desire for likes, "+1"s, shares, and every other type of social networking accolades, has been a driving force in recent years; "[self-status seeking](http://online.liebertpub.com/doi/abs/10.1089/cpb.2009.0003)" is one of the primary goals of those who engage in social networking. In efforts to garner the esteem of "friends" and "contacts" on these social networks, users are adopting the lowest common denominator, in many cases, to attempt to appeal to the greatest number of followers. 
 
 ## What's the solution?
 
