@@ -30,7 +30,17 @@ Falling into these thought pattern "traps" may seem easier at first, but followi
 
 ## Why?
 
-I'm not sure. I have previously said that I believed intellectual laziness or possibly a culture obsessed with instant gratification could be blamed for attempting to take the easy way out. Upon further observation, I cannot isolate a single cause behind the widespread acceptance of these tools and shortcuts.
+I'm not sure. I have previously said that I believed intellectual laziness or possibly a culture obsessed with instant gratification could be blamed for attempting to take the easy way out. Upon further observation, I cannot isolate a single cause behind the widespread acceptance of these tools and shortcuts, but I'll iterate through possible causes.
+
+ * **Illusory superiority**. We aren't very good at figuring out how good or bad we are at something (the concept of illusory superiority contends that we usually overestimate our skill level, and the Dunning-Kruger effect also stipulates that we will eventually *under*-estimate our skill level, once we've gotten past a certain point). It's one of the reasons why 90% of drivers believe that they're in the top 10% of the skill curve -- and also could help explain why using some of the aforementioned tools has become so prevalent. If we believe we're in the top percentiles of a skill set, we'll also believe that whatever we do (as part of our "process") is, and must be, inherently correct. This can be seen by the inability of many Instagram filter users to understand why their tool is an "easy way out".
+
+ * **Instant gratification**. Our culture, especially the now-pervasive "[millenial generation](http://www.pewsocialtrends.org/2014/03/07/millennials-in-adulthood/)", which has come into cultural power with a shorter-than-ever attention span and a lack of any understanding of their own skill levels, thanks to a society hell-bent on issuing participation awards to everyone.
+
+ * **Intellectual laziness**. Increasingly, people seem to be less interested in *how* something works, and simply interested *that* it works.
+
+ * **"Keeping up with the Joneses"**. There is a look and feel "arms race", which closely parallels the [loudness war](http://www.soundonsound.com/sos/sep11/articles/loudness.htm), in that photographers and cinematographers are pressed to try to replicate the look and feel of their Instagrammified and Photoshopped brethren.
+
+ **The social disease**. No, not "the herp"; the disease of social networking. A seemingly endless desire for likes, "+1"s, shares, and every other type of social networking accolades, has been a driving force in recent years; "[self-status seeking](http://online.liebertpub.com/doi/abs/10.1089/cpb.2009.0003)" is one of the primary goals of those who engage in social networking. In efforts to garner the esteem of "friends" and "contacts" on these social networks, users are adopting the lowest common denominator, in many cases, to attempt to appeal to the greatest number of followers. 
 
 ## What's the solution?
 
