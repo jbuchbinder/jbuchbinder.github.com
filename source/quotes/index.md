@@ -52,6 +52,8 @@ layout: page
 
 "It is the divine comedy. We all root for the Devil when he is on our side and curse him when he is not." - Chris Viens (on moral relativism and "Batman")
 
+"All people know the same truth. Our lives consist of how we choose to distort it." - Woody Allen (from *Deconstructing Harry*)
+
 ## Healthcare
 
 "Even if you don’t have health insurance in America, you get taken care of. That could be defined as universal health care." – Tom Thompson, HHS Secretary, [as quoted by Senator Tom Daschle][1] as an example of politicians being out of touch with the realities of healthcare.
