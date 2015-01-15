@@ -9,9 +9,9 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="As part of setting up the Blackmagic Production Camera 4K,
-I have been trying to put together a solid, fairly low-cost set of
-accessories for the &hellip;">
+  <meta name="description" content="This year, my team (Shoot the Moon Films),
+entered the 2014 Boston 48 Hour Film Festival
+for the first time. It’s an interesting experience, going &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -110,6 +110,179 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/">48 Hours With the Blackmagic Production Camera 4K</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-07T13:45:23-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2014/05/07/48-hours-with-the-blackmagic-production-camera-4k/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This year, my team (<a href="http://www.shootthemoonfilms.com">Shoot the Moon Films</a>),
+entered the 2014 <a href="http://48hourfilm.com/en/boston/">Boston 48 Hour Film Festival</a>
+for the first time. It’s an interesting experience, going from genre and
+parameters to fully formed script, to planning and preproduction, to
+shooting and execution, to editing, scoring, grading, and full post-production
+in a single weekend. I’ve learned a lot about working with the 
+<a href="http://www.blackmagicdesign.com/products/blackmagicproductioncamera4k">BMPC4K</a>
+camera in that time. I am going to iterate over some of the more important
+things that I learned over the weekend.</p>
+
+<h2 id="overheating">Overheating</h2>
+
+<p>This simply did not happen. I had heard some horror stories about the camera
+body breaking or overheating after long periods of filming, but even in 
+direct sunlight for significant periods of time, I did not find this to be
+the case. My EOS body used to overheat more than this one…</p>
+
+<h2 id="nd-filters">ND filters</h2>
+
+<p>My Tiffen 77VND was indispensible. If I didn’t have that single piece of
+equipment, every exterior shot would have been very, very different. I wanted
+a medium DOF and a standard shutter rate for my exterior shots – which meant
+that the sunlight had to be stopped down. The variable ND filter delivered
+perfectly.</p>
+
+<h2 id="evf">EVF</h2>
+
+<p>The Cineroid was a life-saver. I do not think I would have done as well
+without its superior focus-peaking, crop indications, etc. The only feature
+sorely missing from the EVF4CSS is waveforms/scopes, which would have been
+a bit more useful than eyeballing the full extent of the dynamic range.</p>
+
+<h2 id="v-mount-batteries">V-mount batteries</h2>
+
+<p>If you are not turning your camera off between takes, you are going to need
+more than one battery for a day-long shoot. Do <strong>NOT</strong> skimp on a V-mount
+battery charger. They take a very long time to trickle charge, so make sure
+you have a rapid charger. Also, spares. They may be expensive, but having to
+wait on a battery charging could blow a shoot.</p>
+
+<h2 id="audio">Audio</h2>
+
+<p>This is less a “thing” with the BMPC4K body, and more of a general observation.
+You cannot skimp on sound. You just <em>can’t</em>. You can always rely entirely on
+tight OTS shots and other closeups and use on-camera mics, but it shuts off
+an entire avenue of creative wider shots. A boom operator is <em>not</em> just your
+buddy holding a mic on a pole – they need to know what they are doing,
+otherwise you could be pushing very substandard audio into post-production.
+Especially on a tight time limit, this can make the difference between making
+a deadline, or having truly horrendous sound.</p>
+
+<p>Also, get a really competent audio engineer. Preferably a really anal-retentive
+one with an insane attention to detail. Even if you have perfect video, really
+crappy audio can break the illusion of your film. <strong>DO NOT SKIMP</strong>. SERIOUSLY.</p>
+
+<h2 id="that-pa-or-ad----you-need-them-more-than-you-think">That PA or AD – you need them more than you think</h2>
+
+<p>If someone is not taking copious shot notes, you are going to find yourself
+up at some ungodly hour, digging through footage for that shot that you
+<em>know</em> you got. Save yourself the trouble, and have someone taking care of
+all of that.</p>
+
+<h2 id="proxy-files">Proxy files</h2>
+
+<p>I used a new method of creating intermediate proxy files for editing, since
+Premiere was not very cooperative in directly loading the Prores files from
+the camera. <em>I made my code public in a project called
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>.</em> This
+little trick made sure that, instead of having to render all of my footage
+out at the Davinci Resolve speed of 3-6 fps (on my non-Red-Rocket workstation),
+I was able to render it to proxies at about full speed (which was about 24fps).
+Without this, I wouldn’t have been able to edit the footage without several
+footage drops during the day – if at all – during the limited timeframe I
+had to do so.</p>
+
+<h2 id="premiere-quicktime-support-on-windows-is-dog-food">Premiere Quicktime support on Windows is dog food</h2>
+
+<p>Something is wrong with it. I have no idea why, but the QT decoder decided
+to “give up the ghost” quite a few times during editing. There is supposedly
+a renaming hack, which allows the Premiere internal decoder to handle the
+files, but I was not privvy to this information during editing. I will update
+my documentation and/or author a post on this at some point in the near future,
+as it is <strong>VERY</strong> irritating.</p>
+
+<h2 id="too-many-cooks">Too many cooks</h2>
+
+<p>One person edits. Someone can <em>assist</em> them, but you need to have one editor, 
+who makes the decisions as to what goes into your final product. If you try
+to “edit by committee”, you may end up with a very tired and frustrated primary
+editor, and the possibility of some very incomprehensible footage.</p>
+
+<p>If your editor and director are not the same person, the director sits in
+with the editor to make decisions, where they need to be made. Ideally the
+script notes, etc, provide enough information to the editor to perform his
+job.</p>
+
+<p>Also, do not get caught up in reviewing dailies if you are taking part in a
+time-sensitive competition. This is a recipe for disaster.</p>
+
+<h2 id="coloring">Coloring</h2>
+
+<p>Even shooting with 10-bit ProRes 422 HQ, the advantage over H.264 DSLR
+footage is immediately apparent. There is a lot of latitude for coloring
+and correction, which would simply not be possible with the same level of
+output quality with H.264.</p>
+
+<p>I ended up performing a manual grading (as in, no LUTs or presets) for the
+project we did, and I am very satisfied with the end result.</p>
+
+<h2 id="grain">Grain</h2>
+
+<p>I love the “film grain” that the sensor on this camera produces. I am sure
+that I have mentioned it in earlier posts, but it really does give that
+organic film look to your output.</p>
+
+<h2 id="do-not-use-services-like-google-drive-for-your-deliverables">Do not use services like Google Drive for your deliverables</h2>
+
+<p>They tend to like to really hurt you in upstream speeds – only when you are
+on serious deadline. A better alternative for large media files is to set up
+<a href="http://www.bittorrent.com/sync">btsync</a> on both sides, and transfer with far
+more efficiency. You will be glad that you did it.</p>
+
+<h2 id="too-many-hats--sink-ships">Too many hats … sink ships?</h2>
+
+<p>There is serious temptation to wear more than one hat. Hell, we all wear more
+than one hat on most small sets. The issue comes when you end up wearing
+three or four (director, cinematographer, editor, colorist), and realize that
+you do not get to sleep until everything is “out the door”. Delegate. Find
+people who are good at this stuff, and let them do it. You do not have to be
+good at everything, just find people who are.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I had a good time – but I could have been less stressed out, if I had known
+some of this in advance.</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1364,162 +1537,6 @@ always, good luck!</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/09/19/on-documentary-filming/">On Documentary Filming</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-19T16:58:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2013/09/19/on-documentary-filming/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I recently had the pleasure of shooting for a documentary down in
-Birmingham, AL, about one of the people involved in the 
-<a href="http://www.nps.gov/nr/travel/civilrights/al11.htm">16th Street Baptist Church Bombing</a>
-in 1963. For those who don’t know, that event was one of the most
-important parts of the Civil Rights movement in the 1960s. The
-50th anniversary of the bombing was this September (2013), so I had
-gone with a small film crew to cover the event, and interview some of
-the people involved.</p>
-
-<p>I had never shot documentary footage, apart from some small controlled
-one-on-one interviews, so this was an interesting learning experience for
-me. I’d like to share some of the more important things which I learned
-over the course of my experience down there.</p>
-
-<p><strong>Batteries</strong>. You’re going to run out of them. I ran through four batteries
-over the course of a filming day – which I thought would be enough, but
-weren’t. If you have one thing which requires a strange and unique battery,
-you should have at least one spare, even if it’s new. Someone is invariably
-going to leave something on, chew up the battery, and leave you short a
-vital piece of equipment. If you’re shooting with a DSLR, try to get a
-multi-battery grip, so that you don’t have to change batteries as often.</p>
-
-<p><strong>One Shot</strong>. You only have <em>one shot</em> to get event coverage correctly,
-which means that, ideally, you should be covering from more than one angle,
-to provide not only options in editing, but some sort of redundancy.
-Otherwise, you can easily be left with a serious dearth of footage for
-what could be a vital part.</p>
-
-<p><strong>Focus and Calibration</strong>. Get there early, get set up, get everything
-metered and working properly <em>before</em> things start moving. You really can’t
-easily recalibrate during taping without potentially ruining footage. Did
-I forget to mention that you only get <em>one shot</em> with event footage?</p>
-
-<p><strong>Depth of Field: More is Better</strong>. You’re not shooting an art piece, you’re
-trying to cover something which probably only happens once, so you shouldn’t
-be shooting at f/2.8 or something ridiculous like that. Yes, you can sometimes
-take advantage of the <a href="http://en.wikipedia.org/wiki/Hyperfocal_distance">hyperfocal distance</a>
-of a lens to keep far-away objects in focus – but you should, most likely,
-find a fairly closed aperture to work with. This can be challenging in low
-light scenarios, where you’ll be fighting the specter of sensor noise at
-extremely high ISO levels when you close the iris more than a little.</p>
-
-<p><strong>Positivity</strong>. You need to be happy and in a good place when shooting people
-and interviews, especially in a one-on-one setting. Other people take certain
-cues from your body language and demeanor, and hostility will produce
-hostility. If at all possible, try to work on documentary projects which you
-like, or identify with.</p>
-
-<p><strong>Lens Changes</strong>. If you can avoid it, don’t. Wear cargo pants or a vest with
-lens pockets, much like most photographers, if you absolutely <em>must</em> change
-lenses. If you’re shooting a long distance, go with something like the
-<a href="http://amzn.to/14nI8Cm">Canon EF 70-200mm f/2.8L IS II USM</a> lens, or if you
-are dealing with shorter distances, the
-<a href="http://amzn.to/189gQmi">Canon EF 24-70mm f/2.8L II USM</a> lens. Carrying a few
-primes around will work well for static interview shots, but they’re going to
-be a real pain when you’re dealing with moving targets, no matter how quick
-you are with focus peaking assistance. If you’re shooting with a shoulder rig,
-you’re going to want an IS/VR lens, if you have one available – it cuts down
-on a lot of shudder and shake.</p>
-
-<p><strong>Bring a Spare</strong>. Got one lav mic? You might want to bring a second one.
-If there’s a small piece of equipment or accessory which, if missing, could
-screw you, it’s going to go missing. Especially when you’re far from home
-base and without the benefit of an equipment store.</p>
-
-<p><strong>You’re Going To Mess Up</strong>. This is pretty obvious – no matter how careful
-you are, something is going to get messed up. The trick is to try to make
-everything redundant enough that it doesn’t matter.</p>
-
-<p><strong>It’s Not About Your Equipment</strong>. Someone there is going to have a better
-camera, better lenses, and better <em>everything</em> than you have. Go far enough,
-and your rig is going to look bad to someone. Just remember, you’re there for
-a reason, so know your equipment, and use it as well as you can.</p>
-
-<p><strong>Rocking Out</strong>. If you’re interviewing someone who is rocking back and forth,
-bring it to their attention. It creates massive focusing, framing, and
-perspective issues. Don’t be intimidated; they can rock as much as they’d
-like, just as soon as you’re done filming.</p>
-
-<p><strong>Network</strong>. If you’re looking for an interview with someone, talking to
-some of the people around them may lead you to another interviewee who may
-produce even better results. There’s no cost associated with being polite.</p>
-
-<p><strong>Respect the Eyeline</strong>. For static interviews, don’t shoot up or down on
-someone’s eye-line unless you are trying to indicate something about that
-person. You should be even with their eye-line on initial shot setup. This
-is also a good idea when doing non-static interviews, when possible.</p>
-
-<p><strong>Make Two Copies</strong>. When you transfer the data off of your memory cards,
-make two copies, and if possible, don’t transport them together. Redundancy
-is the name of the game here, since even the best footage means diddly/squat
-if no one ever gets to see it.</p>
-
-<p><strong>Bring a Sound Guy</strong>. I know, you don’t think you need one – you’ve got a
-lav mic, right? A sound engineer is half of your production, since you’re in
-charge of the visuals. Also, boom mic operators generally should be fairly
-competent sound engineers, to avoid issues later on in the post-production
-process – when possible.</p>
-
-<p><strong>Don’t Go For The Cheaper Chicken</strong>. When booking accommodations, don’t go
-for the least expensive hotel – there’s a good chance that it’s in a dodgy
-part of town, and that extra 10 dollars a night might buy you not only a
-bit of security, but might buy you a better night’s sleep. Protip: the
-cheapest hotel is generally right next to a) train tracks with 24-hour train
-service, b) an open-air coal mine, c) a condemned house with mysterious
-block parties at all hours of the night, or d) all of the above…</p>
-
-<p><strong>Get Stills</strong>. If you’re doing a documentary with a bunch of
-<a href="http://en.wikipedia.org/wiki/Ken_Burns_effect">Ken Burns effect</a> style
-picture montages, you should try to either take stills yourself, or have
-another camera operator capture some for you. If you can, attempt to take
-pictures of landmarks or buildings when they are not occupied, unless it
-specifically works in your storytelling to have them occupied or surrounded.</p>
-
-<p>There are many, many more things to think about when it comes to filming
-documentaries and documentary footage – but hopefully, these bullet points
-will help someone else avoid some of the pitfalls I experienced on my first
-documentary shoot. Good luck!</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="3">&larr; Older</a>
@@ -1537,6 +1554,10 @@ documentary shoot. Good luck!</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/01/15/the-fine-line-between-confidence-and-hubris/">The Fine Line Between Confidence and Hubris</a>
+      </li>
+    
+      <li class="post">
         <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
       </li>
     
@@ -1552,17 +1573,13 @@ documentary shoot. Good luck!</p>
         <a href="/2014/10/19/another-48-hours/">Another 48 Hours</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/09/19/ways-to-keep-your-work-from-appearing-cheap/">Ways to Keep Your Work From Appearing Cheap</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (26)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (27)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
@@ -1570,7 +1587,7 @@ documentary shoot. Good luck!</p>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>music (14)</a></li>
 <li class='category'><a href='/categories/opinion/'>opinion (12)</a></li>
-<li class='category'><a href='/categories/photography/'>photography (12)</a></li>
+<li class='category'><a href='/categories/photography/'>photography (13)</a></li>
 <li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (81)</a></li>
 <li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>
