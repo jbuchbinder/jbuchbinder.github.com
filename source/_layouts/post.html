@@ -25,6 +25,9 @@ single: true
     </p>
   </footer>
 </article>
+{% for post in site.related_posts %}
+<a href="{{ root_url }}{{ post.url }}">{{post.title}}</a><br/>
+{% endfor %}
 {% if site.disqus_short_name and page.comments == true %}
   <section>
     <h1>Comments</h1>

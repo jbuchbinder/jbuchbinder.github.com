@@ -64,6 +64,9 @@ default_asides: [asides/recent_posts.html, custom/asides/category_list.html, cus
 #   3rd Party Settings    #
 # ----------------------- #
 
+# list of repos to hide from the sidebar. ex: [blog, username.github.io, old_embarrassing_project]
+github_skip_repos: [jbuchbinder.github.com]
+
 # Github repositories
 github_user: jbuchbinder
 github_repo_count: 10 
