@@ -23,4 +23,6 @@
    {% endif %}
  {% endif %}
 {% endif %}
-<meta property="fb:app_id"      content="159544250739435" />
+{% if site.facebook_appid %}
+<meta property="fb:app_id"      content="{{ site.facebook_appid }}" />
+{% endif %}
