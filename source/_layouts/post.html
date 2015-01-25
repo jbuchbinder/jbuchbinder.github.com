@@ -25,9 +25,16 @@ single: true
     </p>
   </footer>
 </article>
-{% for post in site.related_posts %}
-<a href="{{ root_url }}{{ post.url }}">{{post.title}}</a><br/>
-{% endfor %}
+{% if site.related_posts %}
+<section>
+    <h1>Related Posts</h1>
+    <ul>
+      {% for post in site.related_posts %}
+        <li><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a>{% if post.description %} - {{post.description}}{% endif %}</li>
+      {% endfor %}
+    </ul>
+</section>
+{% endif %}
 {% if site.disqus_short_name and page.comments == true %}
   <section>
     <h1>Comments</h1>
