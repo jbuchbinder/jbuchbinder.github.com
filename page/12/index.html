@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="“The definition of stupidity is doing the same thing over and over again and expecting different results.” — Albert Einstein America has at least a &hellip;">
+  <meta name="description" content="This past week, I stumbled on a strange problem with Dell “PERC” RAID controllers in certain rackmount servers, where they would suddenly just stop &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +108,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/09/12/perc-controllers-and-why-dell-needs-a-kick-in-the-can/">PERC Controllers and Why Dell Needs a Kick in the Can</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-12T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2008/09/12/perc-controllers-and-why-dell-needs-a-kick-in-the-can/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This past week, I stumbled on a strange problem with Dell “PERC” RAID controllers in certain rackmount servers, where they would suddenly just stop working for no apparent reason. The nice people at Dell did actually have firmware available for the PERC 3 and 4 controllers to fix this problem, which was pretty nice.</p>
+
+<p>The part that *wasn’t* nice was that they were some stupid <a href="http://www.eskimo.com/~webguy/writings/winsucks.html">Windows</a> binaries which required a floppy disk to be inserted.</p>
+
+<p>First of all, who has a laptop with a floppy drive anymore, and second of all, what if you, like other sane people, don’t use Windows? Thirdly, how often does a floppy disk magically fail to work in a floppy drive?</p>
+
+<p>I ended up doing the following:</p>
+
+<ul>
+  <li>Create a <a href="http://www.virtualbox.org/">VirtualBox</a> VM</li>
+  <li>Use <code>dd if=/dev/zero of=floppy.img bs=1k count=1440</code> to create a floppy image, which I mounted in the VirtualBox</li>
+  <li>“Format” the floppy image in the VM, because apparently Dell’s fuqtard utility can’t write an image to an unformatted disk.</li>
+  <li>Use the stupid utility to write the floppy image.</li>
+  <li>Use <code>mkisofs -pad -b floppy.img -R -o cd.iso floppy.img</code> to create a CD image</li>
+</ul>
+
+<p>Dell, I hate you. Your laptops overheat and suck out loud, and your stupid Windows-only disks and defective RAID controllers bother me. I’m not buying any more of your hardware. You can subsidize Microsoft some other way.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -575,46 +629,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2008/05/20/roving-access-point/">Roving Access Point</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-05-20T00:00:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2008/05/20/roving-access-point/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I finally got around to getting a 12VDC power supply for the car (15 USD, cheap!), so my <a href="http://www.linksys.com/servlet/Satellite?c=L_Product_C2&amp;childpagename=US/Layout&amp;pagename=Linksys/Common/VisitorWrapper&amp;cid=1160093298732">WRT54G3G-ST</a> is mobile, and I got to enjoy trying out <a href="http://www.skype.com/">Skype</a> while doing 65mph on the Mass Pike.</p>
-
-<p>There’s some sort of gee-whiz factor in all this, but I guess it’s just another way to become more and more endlessly connected.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="13">&larr; Older</a>
@@ -632,6 +646,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/01/24/exposure/">Exposure</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/01/15/the-fine-line-between-confidence-and-hubris/">The Fine Line Between Confidence and Hubris</a>
       </li>
     
@@ -647,17 +665,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2014/11/07/winning-a-48-hour-film-project/">Winning a 48 Hour Film Project</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/10/19/another-48-hours/">Another 48 Hours</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (27)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (28)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>

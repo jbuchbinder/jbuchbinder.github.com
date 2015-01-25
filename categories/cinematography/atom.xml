@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cinematography | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/cinematography/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2015-01-15T19:51:45-05:00</updated>
+  <updated>2015-01-24T23:20:10-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -12,6 +12,76 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Exposure]]></title>
+    <link href="http://jbuchbinder.com/2015/01/24/exposure/"/>
+    <updated>2015-01-24T20:11:34-05:00</updated>
+    <id>http://jbuchbinder.com/2015/01/24/exposure</id>
+    <content type="html"><![CDATA[<p>This is my workup on effective exposure practices for cinematography. It’s an attempt to provide a fairly effective set of practices for ensuring the best consistent image.</p>
+
+<h2 id="why">Why</h2>
+
+<p>To keep a consistent feel between shots (and overall), there are a few factors which should generally stay the same between shots:</p>
+
+<ul>
+  <li><strong>ISO Sensitivity</strong>. This generally should remain at the “native ISO” level of your camera’s sensor, which is the level at which the sensor exhibits the maximum amount of dynamic range (levels of difference in luma between lightest and darkest areas representable). I’ve been pretty good about shooting most of my footage at 400 ASA, which matches light levels used with the most common traditional film, but this may vary, depending on the camera body you’re using.</li>
+  <li><strong>Shutter Speed</strong>. It’s an amateur mistake to unwittingly vary the shutter speed / exposure time between shots, because the way we perceive motion in film is very particular. The majority of film work tends to use a 180 degree “shutter angle”, which corresponds to <code>1 / 2 x fps</code> – which means that with a frame rate of 24 fps, your exposure time / shutter speed would be 1/48th of a second to correspond to a 180 degree shutter angle. (There are obviously exceptions to this basic rule, but it <em>tends</em> to be consistent within a scene.)</li>
+  <li><strong>Aperture</strong>. This may not have to remain constant between shots, but you don’t want your aperture settings to be dictated by the amount of light available to you, alone. It’s better to be able to compose a shot artistically, then deal with the amount of light coming into your lens separately. Not to mention that far too many “independent film” cinematographers have gotten a reputation for jacking the aperture all the way open and leaving it there.</li>
+</ul>
+
+<h2 id="zones-and-the-zone-system">Zones, and the Zone System</h2>
+
+<p>This is an interesting working understanding of light, and how to properly expose, put together by <a href="http://www.anseladams.com/ansel-adams-information/">Ansel Adams</a> and Fred Archer. I’m not going to go into the specifics of the <a href="http://en.wikipedia.org/wiki/Zone_System">Zone System</a>, but it is important to understand the basic concepts to properly understand the rest of this article.</p>
+
+<h2 id="light-metering">Light metering</h2>
+
+<p>I can’t recommend a traditional light meter enough. It’s completely worth the cost, and will save hours of wasted work and blown shots – and generally will tend to be superior, in terms of accuracy, to cellphone apps.</p>
+
+<p>(My light meter is an old manual light meter, which my father gave to me – just showing that it’s not the bells and whistles, but rather the basics which are important to have.)</p>
+
+<h2 id="nd-filters-vari-and-otherwise">ND filters (vari and otherwise)</h2>
+
+<p>So, if you can’t adjust the ISO sensitivity or shutter speed, and shouldn’t be adjusting via the aperture, how do we control our exposure levels?</p>
+
+<p>Enter the <strong>neutral density filter</strong>; sunglasses for your lens. Depending on your rig (and funding levels), you could either use a “vari ND filter” (which is essentially two circular polarizing filters, mounted in a single assembly), or a series of single ND filter sheets of varying ratings (which can be combined to form particular exposure reduction values). Most indie cinematographers tend not to have 4x4 filter slots, so it may be easier, with the notable exception of lens changes, to go with vari ND filters.</p>
+
+<p>I highly recommend the <a href="http://amzn.to/1B6v40h">Tiffen 77VND filter</a> for vari ND work, assuming a 77mm filter thread – which is common amongst a fair amount of cine lenses. (If you’re working with Cooke primes or similar glass, you’re probably not going to be be worried about any of <em>my</em> recommendations, but you’d also probably have to spring for vari ND filters with a larger filter thread size.)</p>
+
+<p>One caveat about ND filters – they have the potential for introducing slight color casts into the picture, which makes grey cards or other white/color balancing equipment even more necessary.</p>
+
+<p>The trick with ND filters is using them to adjust for your Zone V reading, which means understanding how to reliably adjust them to cut down a certain number of stops of light. This is an entire set of tutorials, and another topic, which is best covered elsewhere.</p>
+
+<h2 id="lighting-for-standard-exposure">Lighting for standard exposure</h2>
+
+<p>Medium-to-light skinned people generally are supposed to be exposed for Zone VI (+1 EV), with darker skinned people exposed for Zone V (0 EV). Zone V is pretty easy to expose for, since it essentially means setting exposure for the metering value, but Zone VI needs to be exposed at +1 EV, which means that it should be twice as bright (or a full stop brighter) than the metering value. Exposing this way may leave certain things blown out or underexposed, based on your lighting setup, but it will produce “ideal” skin lighting for a standard well-balanced exposure.</p>
+
+<h2 id="exposing-to-the-left-right-">Exposing to the left, right …</h2>
+
+<p>ETTR maximizes dynamic range by exposing for highlights, and ETTL maximizes dynamic range by exposing for shadows. The former prevents blown highlights, and the latter prevents details from being lost in the shadows. If you decide to use one of these techniques, it should depend on which portions of your image you’re willing to lose details in.</p>
+
+<p>ETTR is very popular, partly due to its ability to hide one of the primary deficiencies inherent in most DSLR and inexpensive digital sensors – the way that highlights immediately clip, rather than gradually rolling off (as they do with film and more expensive sensors).</p>
+
+<p>There are some mitigating techniques which can be used to avoid over-exposure (blowing highlights). Some of the more common ones are:</p>
+
+<ul>
+  <li><strong>Gobos</strong> - A simple “go between”, which can be used to block light. This can be made of any opaque material, and only needs to be clamped or secured between the light source and the target object or person.</li>
+  <li><strong>Scrims</strong> - A screen used to soften light. This can disperse a hard light source in to a softer one, and is secured much like a gobo. As it does not decrease the amount of light appreciably, but instead spreads it out, this may not be effective for heavy over-exposure.</li>
+  <li><strong>ND Film</strong> - Windows can be covered with neutral density film, effectively reducing their light-transmitting capacity. This technique has been used with great effectiveness in a number of bigger budget productions, but can be a little pricey.</li>
+  <li><strong>Fill light</strong> - Matched light temperature fill light or bounced fill light can be used to raise the overall exposure level, which will bring higher zones back to a more manageable level. The disadvantage with this technique is that digital sensors tend to like a certain amount of light level variance, or they may produce a seemingly “flat” image.</li>
+</ul>
+
+<h2 id="variations">Variations</h2>
+
+<p>These techniques are designed to try to produce the widest dynamic range possible for your camera, as well as the widest possible latitude in post-processing for retaining details and image quality. There are a number of circumstances where the “standard” way of doing things could be eschewed in favor of a particular dynamic or idiom. An example would be intentionally losing the background in black to hide a lack of depth or intentionally blowing highlights around an actor to produce an ethereal quality.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Much like other parts of cinematography, there’s no one right way to do things. You don’t <em>have</em> to maintain ISO, aperture, and shutter angle / exposure time – but it can help, depending on what you’re trying to accomplish.</p>
+
+<p>Good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Fine Line Between Confidence and Hubris]]></title>
@@ -114,7 +184,7 @@
     <p><strong>“Keeping up with the Joneses”</strong>. There is a look and feel “arms race”, which closely parallels the <a href="http://www.soundonsound.com/sos/sep11/articles/loudness.htm">loudness war</a>, in that photographers and cinematographers are pressed to try to replicate the look and feel of their Instagrammified and Photoshopped brethren.</p>
   </li>
   <li>
-    <p><strong>The social disease</strong>. No, not “the herp”; the disease of social networking. A seemingly endless desire for likes, “+1”s, shares, and every other type of social networking accolades, has been a driving force in recent years; “<a href="http://online.liebertpub.com/doi/abs/10.1089/cpb.2009.0003">self-status seeking</a>” is one of the primary goals of those who engage in social networking. In efforts to garner the esteem of “friends” and “contacts” on these social networks, users are adopting the lowest common denominator, in many cases, to attempt to appeal to the greatest number of followers. </p>
+    <p><strong>The social disease</strong>. No, not “the herp”; the disease of social networking. A seemingly endless desire for likes, “+1”s, shares, and every other type of social networking accolades, has been a driving force in recent years; “<a href="http://online.liebertpub.com/doi/abs/10.1089/cpb.2009.0003">self-status seeking</a>” is one of the primary goals of those who engage in social networking. In efforts to garner the esteem of “friends” and “contacts” on these social networks, users are adopting the lowest common denominator, in many cases, to attempt to appeal to the greatest number of followers.</p>
   </li>
 </ul>
 
@@ -288,254 +358,6 @@ we could make in 48 hours (within the constraints outlined by the 48), we
 have a film for our own promotion and uses after the festival ended.</p>
 
 <p>Good luck to you in all of your cinematographic adventures!</p>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Another 48 Hours]]></title>
-    <link href="http://jbuchbinder.com/2014/10/19/another-48-hours/"/>
-    <updated>2014-10-19T20:00:00-04:00</updated>
-    <id>http://jbuchbinder.com/2014/10/19/another-48-hours</id>
-    <content type="html"><![CDATA[<p>Almost six months after the Boston 48 Hour Film Festival, my team
-(<a href="http://www.shootthemoonfilms.com/">Shoot the Moon Films</a>) is entering the
-2014 <a href="http://www.48hourfilm.com/providence/horror/2014/">Providence 48 Hour Horror Festival</a>. Along
-with seventeen other teams, we’re going to try to make a 4-7 minute
-horror film in 48 hours.</p>
-
-<p>This is pretty far out of my wheelhouse, as I haven’t made a practice of
-making horror films, but my team and I are excited, and I’m going to keep
-track of both our successes and our missteps here.</p>
-
-<h2 id="day-one-preproduction-kickoff-and-writing">Day One: Preproduction, Kickoff, and Writing</h2>
-
-<p>The one crazy moment I ended up having before everything got started was
-the realization that I didn’t have enough space on the primary editing
-workstation drive – and I ended up ameliorating that by purchasing another
-drive down the road. Crisis averted, no hair lost.</p>
-
-<p>I don’t like the roads around Providence, which proved to be a pain both
-heading out to the kickoff event (horrific traffic and rubbernecking) as well
-as on the way back (incorrect signage sending me to take a nasty U-turn in
-Providence). As our producer couldn’t make the trip to the kickoff event,
-I ended up taking his place.</p>
-
-<p>After a two or three story jaunt up a staircase in a pretty non-descript
-mill building in Pawtucket, I joined a group of mostly younger filmmakers,
-eager to pick a category and get moving. As this was a “horror” themed
-festival, we had a list of genres – and the writers had asked that I not
-request one of the contingency genres, as they were more difficult to pull
-off.</p>
-
-<p>The guy standing behind me, after telling me how much he hated “Found Footage”
-as a genre (which, by the way, I also loathe), ended up pulling that genre.
-We ended up getting “Satanic/Demonic Possession”, and I messaged the
-information back to the writers, so that they could get started on the
-planning and writing process before I got back.</p>
-
-<p>Both of the writers were coming from previous engagements, including one
-who was starring in a theater production of “Frankenstein”, the other who
-had costumed and was doing hair and prep work – but they still
-managed to crank out the final version of a script before midnight. Everyone,
-cast and crew, got sent copies.</p>
-
-<p>From midnight until about 2:00 - 2:30 a.m., I wrote out a tentative shot list
-and printed a huge piles of copies of the script. I got to sleep a little
-before 3:00 a.m.</p>
-
-<h2 id="day-two-production--shooting">Day Two: Production / Shooting</h2>
-
-<p>At around 6:00 a.m., my wife and I got up, packed all of the equipment into
-the car, and met the rest of the cast and crew at our shooting location at
-7:00 a.m. We ended up having to scramble around to get all of the set
-dressing components for the set, and got production underway around 10:30 -
-11:00 a.m. Shooting with the BMPC4K camera made shooting, in most instances,
-much faster since we could shoot in 4K and simply “punch in” for close up
-shots without losing resolution. It was a neat trick which had been suggested
-to me about two years ago by the director of “Chez Upshaw”, which a project
-of mine had screened with at BIFF.</p>
-
-<p>I got a chance to trot out a snorricam rig which hadn’t been used in almost
-two years. It couldn’t handle the weight of the production camera, so we
-were using a Blackmagic Pocket Cinema Camera with a modified Computar 12.5mm
-f/1.3 lens stopped down to about f/4 to replace the GoPro Hero 2 we used to
-use. The footage is nicely inter-cuttable with the Production Camera footage,
-so I wouldn’t have to pull any rabbits out of hats in color grading.</p>
-
-<p>We had a hard deadline for wrapping up principal photography of 5:30 p.m.,
-since a number of actors and crew members had to make it back to the theater
-for another performance of “Frankenstein” – including two of our actors,
-our production designer <em>and</em> our makeup artist. We barely finished our last
-take of our last outside shot as it started to rain heavily outside. No
-equipment damaged, no shot missed.</p>
-
-<p>We had to return props, and since my wife had taken the car, our producer
-loaded up half of the equipment and my friend Chris helped me with the rest
-of it, as well as helping me return some of our borrowed props. Another cup
-of coffee later, and we were transferring about 280+ GB of footage off of the
-two cameras and the boom rig.</p>
-
-<p>One of the actors and the producer took turns sitting with me while I made
-the bulk of the edits. We finished the rough cut at a little past 11:50 p.m.
-The cast and crew members present watched the rough cut to confirm that there 
-weren’t any glaring issues with the cut, then my wife and I went through all
-of the audio to catalogue shot numbers and takes for easy sound replacement
-referencing. I rendered out a reference copy for the musician doing the
-scoring, uploaded it, and went to sleep before I passed out on my keyboard.</p>
-
-<h2 id="day-three-post-production-and-making-the-deadline">Day Three: Post-production and Making the Deadline</h2>
-
-<p>After a brief hour and a half or so of sleep, I ended up having to get up
-to help my geriatric dog, who has periodic breathing issues. I got another
-hour or so of sleep before my wife tossed me out of bed, and I stumbled down
-the street to grab a cup of delicious Peruvian coffee to wake up. I’m pretty
-sure my eyes weren’t open until half way back to the house.</p>
-
-<p>From 6:30 a.m. until 10:30 a.m., I did the bulk of the sound replacement and
-matching work as well as the coloring in Resolve. I dumped out an export for
-Audition to take with me for ADR, and headed off to get the few lines that
-we needed done.</p>
-
-<p>Five actors met me over at our original shoot location, primarily so that my
-dogs wouldn’t scuttle any of the takes. We wrapped sound collection around
-1:30 p.m., and headed back to recomposite everything. I sent out the audio
-to our audio engineer in Massachussetts, who recomposited everything together
-and cleaned up some of our slightly dirtier boom audio, as well as leveling
-out the speech. Final render time out of Premiere came right after that.</p>
-
-<p>A last minute call to the hotline for the festival confirmed that we could
-present HD 24 fps footage, rather than being limited to 30 fps footage (as
-the website had indicated). A quick burn of a DVD and dropping footage on
-a flash drive which felt <em>far</em> too large for the content we were putting on
-it, and we were off to the races – so to speak.</p>
-
-<p>We hauled the 45+ minute drive through Providence to the drop off point, and
-were the first team in our group (the “B” group) to hand in our materials
-40 minutes before the 7:30 p.m. drop-off deadline. Yahtzee!</p>
-
-<h2 id="lessons-learned">Lessons Learned</h2>
-
-<ul>
-  <li>
-    <p><strong>Have an on-site audio engineer to take care of ADR duties.</strong> It’s a
-serious pain to have to color <em>and</em> handle re-recording.</p>
-  </li>
-  <li>
-    <p><strong>Get the cleanest boom audio possible.</strong> Make sure your boom operator is
-getting pristine audio, as close as possible to the source, and monitoring
-the levels.</p>
-  </li>
-  <li>
-    <p><strong>Make sure your audio is being catalogued on set.</strong> It was a serious time
-waster to do this late at night, and put off coloring work until the next
-day.</p>
-  </li>
-  <li>
-    <p><strong>Make sure someone is arranging rides.</strong> If someone needs to shuttle crew
-around, make sure it’s not one of your department heads.</p>
-  </li>
-  <li>
-    <p><strong>Screen your graded footage a few times before finalizing.</strong> I’m really
-guilty of this one, as I noticed a few places where I needed to brighten
-the midtones a bit, or match the color of the grass in some exterior shots
-a bit better.</p>
-  </li>
-  <li>
-    <p><strong>Make sure to let everyone know how important they are.</strong> In a 48 hour
-film festival, there are no “unimportant” people. Everyone is doing their
-job, and without them, things wouldn’t come together properly. Our 1st AD
-(who is, by trade, a stage manager) had never worked on a film set before
-– but you’d never know it, since she brought her “A” game with her.</p>
-  </li>
-</ul>
-
-<h2 id="special-thanks">Special Thanks</h2>
-
-<p>I’d like to thank:</p>
-
-<ul>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm5720821/">Natasha Darius</a></strong> – My
-wife, co-writer, and general driving force behind everything I do. We
-wouldn’t have done the 48 if it wasn’t for her talented writing and
-creative spark, her tenacity in keeping everyone moving in the right
-direction, and her infectious optimism. She was costuming and doing
-actor prep for “Frankenstein” during this weekend, which made
-everything else she was able to do (including prop shopping,
-organization, writing, et cetera) that much more impressive.</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm3895408/">Nick Magrey</a></strong> –
-Although he overbooks <em>everything</em> and wears far too
-many hats, nothing would get done without him. Co-writing, acting,
-production designing, wardrobe supervising… the list goes on and
-on. Not to mention that he did this during the closing weekend of
-his leading role in “Frankenstein” at the Bradley Playhouse.</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm4840208/">Curtis Reid</a></strong> – I give
-him a lot of crap about everything, but he’s the other half of the
-organizational aspect of all of this, as well as running <strong>Shoot the
-Moon Films</strong>. I like to tell people “you need to get a Curtis” when
-they ask how I manage to get stuff done. I shouldn’t downplay his
-acting, either – I just usually focus on all of his producing duties.</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm6562104/">Jon Demers</a></strong> – He kept me
-awake, gopher’d the crap out of everything, drove me everywhere, 
-<strong>and</strong> found time to act. Give that man a gold star.</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm6854892/">Hannah Viens</a></strong> – 1st AD 
-extraordinaire. She made sure that we were getting everything done,
-and that’s no small task.</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm6562109/">Chelle Wright</a></strong> – Even
-though she’s been doing MUA duties with us for a while, this was her
-acting debut. Thank you for not only putting in a great performance,
-but also for making everyone look so good!</p>
-  </li>
-  <li>
-    <p><strong>The Entire Verrill Clan</strong> – 
-<a href="http://www.imdb.com/name/nm5220888/">Elizabeth</a> was acting and doing
-sound work, <a href="http://www.imdb.com/name/nm6854893/">Patricia</a> was taking
-still photos, and they were nice enough to lend their lovely home and
-property to us to trash judiciously for filming.</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm4941340/">Maureen Vlaco</a></strong> – You have
-one of the longest commutes to set, but you were cheery, helpful, and
-even drove <em>back</em> for audio re-recording right before a funeral. You
-brought that character to life – thank you!</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm6854891/">Keith Murphy</a></strong> – I’ve never
-worked with a stunt/fight guy before, but he was fantastic, in addition
-to lending a double-popped-collar performance.</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm6562110/">Paul Magrey</a></strong> – Booming, as
-well as helping with all sorts of other stuff on set. Awesome job!</p>
-  </li>
-  <li>
-    <p><strong><a href="http://www.imdb.com/name/nm6562108/">Brandi Demers</a></strong> – You’re my
-right hand on set, and threw in a performance to boot, not to mention
-the time you put in prepping props!</p>
-  </li>
-  <li>
-    <p><strong>Our post-production crew</strong> – 
-<a href="http://www.imdb.com/name/nm6854894/">Aaron</a> and
-<a href="http://www.imdb.com/name/nm6476893/">Garett</a>, especially. You guys
-added so much production value with the precious little time we gave
-you to work, and your work <em>completely</em> speaks for itself.</p>
-  </li>
-</ul>
-
-<h2 id="screening">Screening</h2>
-
-<p><a href="http://www.imdb.com/title/tt4131910/">The Carving</a> is premiering on
-<a href="http://horrorpvd-b.eventbrite.com/">October 29th in Providence at 9:00 p.m.</a>.</p>
 
 ]]></content>
   </entry>

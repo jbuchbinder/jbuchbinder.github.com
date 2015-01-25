@@ -9,9 +9,8 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="This year, my team (Shoot the Moon Films),
-entered the 2014 Boston 48 Hour Film Festival
-for the first time. It’s an interesting experience, going &hellip;">
+  <meta name="description" content="There are a number of “accepted” workflows for going between Adobe Premiere
+(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -110,6 +109,106 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/">BMPC4K Workflow With Premiere and Resolve</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-08T07:05:17-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2014/05/08/bmpc4k-workflow-with-premiere-and-resolve/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There are a number of “accepted” workflows for going between Adobe Premiere
+(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K
+footage. I am going to detail the workflow I have been using, which should
+be useful both for the BMPC4K camera, as well as the BMPCC and BMCC cameras.</p>
+
+<ol>
+  <li>
+    <p><strong>Preparation</strong>. Make sure your camera is producing footage at the 23.98
+fps frame rate, rather than 24 fps. “True” 24 fps is not quite the same
+thing as the “24P” frame rate we are used to.</p>
+  </li>
+  <li>
+    <p><strong>Load your media onto your workstation</strong>.</p>
+  </li>
+  <li>
+    <p><strong>Create simple proxies</strong>. Using
+<a href="https://github.com/shootthemoonfilms/prores-proxies">prores-proxies</a>,
+create “cheap” lower quality proxies encoded using the H.264 codec in
+Quicktime files. I have been experimenting with using the “.mpg”
+extension to <a href="http://blogs.adobe.com/VideoRoad/2012/12/premiere-pro-and-quicktime-and-nikon-oh-my.html">force Premiere to use its own internal Quicktime decoder</a>,
+rather than the relatively dodgy external one, but the basic process
+is the same.</p>
+  </li>
+  <li>
+    <p><strong>Edit</strong>. Using the proxy files, edit your footage in Premiere. You do
+not have to bother with any fancy transitions or effects yet – just
+perform a basic edit.</p>
+  </li>
+  <li>
+    <p><strong>Export to Resolve</strong>. Export a “Final Cut Pro XML” file, using the
+File &gt; Export menu option.</p>
+  </li>
+  <li>
+    <p><strong>Create a new Resolve Project</strong>. Open Resolve, and create a new project.
+Import the original files (not the proxies) into your media pool.</p>
+  </li>
+  <li>
+    <p><strong>Import the XML from Premiere</strong>. Import the “Final Cut Pro XML” export,
+with “Automatically import source clips into pool” deselected. This last
+part is very important, as it forces Resolve to use the clips you already
+have in the Media Pool.</p>
+  </li>
+  <li>
+    <p><strong>Color Grade</strong>. Perform your color grade in Resolve.</p>
+  </li>
+  <li>
+    <p><strong>Export</strong>. In the “Delivery” tab, select the whole timeline, choose
+“Easy Setup”,and select  “Final Cut Pro XML Round-Trip”. Change any options
+here to your liking.</p>
+  </li>
+  <li>
+    <p><strong>Import Roundtrip XML in Premiere</strong>. Import the Round-Trip XML file in
+Premiere. This will bring in all of the graded footage.</p>
+  </li>
+  <li>
+    <p><strong>Perform the remainder of your edits</strong>. Tweak your footage, copy or
+create your title cards, etc.</p>
+  </li>
+</ol>
+
+<p><em>This is a very basic overview of my current BMPC4K + Resolve + Premiere
+workflow right now, and it may change.</em></p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1416,127 +1515,6 @@ at least help to minimize the impact, if and when you end up losing data.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/09/30/composing-for-aspect-ratios/">Composing for Aspect Ratios</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-09-30T20:13:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2013/09/30/composing-for-aspect-ratios/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Aspect ratios, simply put (for those who are unaware), are the ratios between
-the width and height of a single frame of video. Television has had a 4:3
-ratio (4 units of width to 3 units of height), until the popularization of
-“HD” television, using a “widescreen” ratio of 16:9. I’m not going to go
-through the entire history of aspect ratios in cinema, as there is a
-<a href="http://vimeo.com/68830569">great retrospective available on vimeo</a>.</p>
-
-<div class="embed-video-container"><iframe src="http://player.vimeo.com/video/68830569 "></iframe></div>
-
-<p>Most DSLR cinematography is done, by default, with a 16:9 ratio, as the
-maximum capture size for their video is generally 1920x1080, abbreviated as
-1080p (to additionally indicate progressive, rather than interlaced, scan).
-It is relatively easy to enforce a “wider” aspect ratio by dropping lines at
-the top and bottom of the frame, which most watch-at-home film viewers will
-identify as “black bars” at the top and bottom of the frame. This does,
-however, introduce an interesting issue – that of composing inside that
-frame. That ends up looking something like this:</p>
-
-<p><img src="/images/black-bars-aspect-ratio-16-9-21-9-4-3-cinemawide.png" alt="Black bars for different aspect ratios" title="Black bars for different aspect ratios" /></p>
-
-<p>Standard compositional rules generally make use of the two frame diagonals
-(top left to bottom right, and bottom left to top right) and both horizontal
-and vertical thirds. Most compositional choices for “balanced” frames have
-tended to rely on these invisible divisions to create a pleasing image, even
-though the rules are really <em>guidelines</em>, and are not absolute. If you, as
-a cinematographer, decide that you’re going to use an alternate aspect ratio,
-you cannot properly compose by using the thirds or diagonals indicated by any
-common guide or viewfinder in 16:9 ratio, as they will result in a vastly
-skewed product, compared to the original on-camera image. I’ve seen a number
-of forums on DSLR cinematography which had suggested everything from
-using a black marker to denote the frame to using black tape to cover the
-segments outside of the final crop. A more “modern” solution for Canon
-DSLR owners is using <a href="http://magiclantern.wikia.com/wiki/Cropmarks">Magic Lantern cropmarks</a>.
-If you’re shooting with another DSLR brand, you may be at the mercy of the
-firmware, or any of the aforementioned hacks.</p>
-
-<p><em>NOTE: I’d like to mention, at this point in this article, that there are
-other compositional rules, including <a href="http://photoinf.com/Golden_Mean/Eugene_Ilchenko/GoldenSection.html">golden ratio/mean/spiral/rectangle</a>,
-so please don’t take the rule of thirds and diagonals to be the only important
-and pleasing ways to frame an image….</em></p>
-
-<p>Besides attempting to find a way to follow common compositional rules, there
-is another side to aspect ratio: selecting the appropriate one for the story
-you are attempting to tell. Apart from the 16:9 ratio being the “standard
-format” for HDTV broadcasts and web-based series, it is much taller (i.e.,
-it offers more headroom for shots) than Cinemascope (2.35:1) or some of the
-other aspect ratios. Depending on the types of shots which you are using to
-compose your film, it may be advantageous to have a wider, yet thinner,
-view of the world which comes with “shorter” aspect ratios. Again there is
-no “one size fits all” for aspect ratios, and it should be a conscious
-decision for the material which you are filming.</p>
-
-<p>An added advantage to using a shorter aspect ratio is that, due to the
-camera bodies recording the entire frame, regardless of target aspect
-ratio, additional editing and recomposition “wiggle room” is available in
-the editing and post-production process. If something isn’t framed in the
-exact way it should be, this can be corrected later by adjusting the vertical
-positioning of the frame within the crop. Most (if not all) NLE software
-has vertical positioning, including
-<a href="http://help.adobe.com/en_US/premierepro/cs/using/WSC7A162B6-6EF1-49e1-8622-8127366710BB.html">Adobe Premiere</a>,
-<a href="http://vegasaur.com/pan-crop-assistant">Sony Vegas</a>,
-and <a href="http://www.peachpit.com/articles/article.aspx?p=1677950&amp;seqNum=8">Final Cut Pro</a>,
-so you shouldn’t have any issues doing this. I’m aware that the ideal
-cinematographer does everything in-camera (as I have vociferously
-advocated in past), and does not rely on post-production to fix mistakes,
-this does allow for that possibility.</p>
-
-<p>Aspect ratios additionally carry some subconscious baggage with them, due
-to the associations we have made with previous material filmed using them,
-much in the same way we associate film grain with high-end Hollywood
-pictures, even when, in many cases, that film grain was added back to
-the digital footage in post-production.</p>
-
-<p>The quick takeaway is that you shouldn’t embark on a project without having
-made a conscious decision regarding the aspect ratio which you are using for
-that project, considered the ramifications and technical concerns associated
-with that decision (including making sure that you can properly frame and
-compose shots in that aspect ratio), and storyboarded and/or prepared your
-material considering your chosen aspect ratio. It is yet another variable
-which can be tweaked to help make an already good project that much better,
-and like all power, it comes with responsibility. So, choose –
-<a href="http://www.youtube.com/watch?v=oF2UrYSDb3k">but choose wisely</a>, and as
-always, good luck!</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="3">&larr; Older</a>
@@ -1554,6 +1532,10 @@ always, good luck!</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/01/24/exposure/">Exposure</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/01/15/the-fine-line-between-confidence-and-hubris/">The Fine Line Between Confidence and Hubris</a>
       </li>
     
@@ -1569,17 +1551,13 @@ always, good luck!</p>
         <a href="/2014/11/07/winning-a-48-hour-film-project/">Winning a 48 Hour Film Project</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/10/19/another-48-hours/">Another 48 Hours</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (27)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (28)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
 <li class='category'><a href='/categories/film/'>film (1)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
