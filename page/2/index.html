@@ -9,8 +9,8 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="There are a number of “accepted” workflows for going between Adobe Premiere
-(as an NLE) and Davinci Resolve (for color correction/grading) for BMPC4K &hellip;">
+  <meta name="description" content="There are quite a few guides, tutorials, videos, and other resources on how to
+capture usable boom audio. Most of these have a few usable sections &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +108,203 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/05/12/boom/">Boom!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-12T08:44:19-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2014/05/12/boom/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There are quite a few guides, tutorials, videos, and other resources on how to
+capture usable boom audio. Most of these have a few usable sections with a
+bunch of fluff or useless information accompanying them. This is my attempt to
+compile a “quick guide” to capturing usable boom audio, assuming you don’t have
+a competent audio engineer in your employ (which I highly recommend). Audio is
+half of your deliverable product, as a cinematographer, so you should make sure
+that you capture the highest quality audio possible.</p>
+
+<h2 id="proximity-reflections-and-the-inverse-square-law">Proximity, Reflections, and the Inverse Square Law</h2>
+
+<p>Much like light, sound decreases exponentially as you move away from the source
+of the sound. One of the first things which you will realize when starting to
+capture audio is that it sounds increasingly awful as you move further away –
+which can be attributed to two things:</p>
+
+<ol>
+  <li>
+    <p><strong>As you move further away, relative volume decreases</strong>. The background
+sounds (“noise floor”, for anyone trying to be technical), consisting of both
+the present background noises and any noises introduced in the recording
+process, increase when you increase the sensitivity of your recording
+equipment. As the source sound becomes quieter, bringing sound up in post
+production will also increase that noise. <em>(If anyone says “just record some
+room tone”, ignore them; it won’t help you if your source recording is
+terrible, since that’s only a solution if you can gate and isolate the
+primary sounds in post.)</em> This is one of the compelling reasons why boom
+operators are utilized; they allow a recording to be made from closer to
+the source.</p>
+  </li>
+  <li>
+    <p><strong>Reflections</strong>. Light bounces off of everything, as we are taught, and we
+have to be careful to deal with those reflections, in terms of color,
+brightness, et cetera. Sound does the same thing. It bounces off of surfaces,
+but because sound travels slower than light, we <em>notice</em> when it takes a
+few milliseconds longer for sound to arrive at our recording device. Even
+more insidious, those reflections (which take on different properties and
+sounds based on the materials on which they are reflecting) can sound
+<em>louder</em> than the original sound – which will make your recording sound
+terrible. The closer you are in proximity to the source, the softer the
+reflections will be, in comparison to the original sound.</p>
+  </li>
+</ol>
+
+<h2 id="polarpickup-patterns">Polar/Pickup Patterns</h2>
+
+<p>Not all microphones, or even microphone <em>types</em> are created equal. They all have
+different “<a href="http://en.wikipedia.org/wiki/Microphone#Microphone_polar_patterns">polar patterns</a>”
+which describe the areas of sensitivity which the microphones use to pick up
+sound. When attempting to capture dialog, for example, an omnidirectional
+microphone would be a poor choice, as it picks up sound equally from all
+directions, taking away the ability to create greater isolation for the primary
+sound source. The most popular boom microphone type is the “shotgun” microphone,
+which has a very directed polar pattern, allowing specific isolation of the
+sound in question.</p>
+
+<h2 id="levels-peaking-and-limiting">Levels, Peaking, and Limiting</h2>
+
+<p>Getting the recording level <em>just right</em> is one of the more tricky parts of
+recording external boom audio. If the audio is too high, “peaking” will occur.
+Peaking is the phenomenon which can be heard when the top part of a sinusoidal
+wave (which naturally recorded sounds have) becomes squared when the top of the
+wave is clipped by hitting the top limit for recording signal. If the audio is
+too low, the signal-to-noise ratio will be too low, and bringing the signal up
+to a usable level will bring the sound floor up to an obscenely loud level –
+making gating nearly impossible to perform.</p>
+
+<p>To properly deal with this, you need to adjust the signal level so that the
+loudest sound comes in under 0 dB, which is where most recorders “peak”. If
+certain sounds surpass 0 dB, some audio recorders have the ability to apply a
+“limiter” effect, which will push the sound level back down to a usable value
+as it is recorded. It’s not a desired effect, but it can save you from
+clipping.</p>
+
+<p>As you’re adjusting audio levels, you’ll see a constantly fluctuating level of
+audio when no primary sound source is active. This is the “sound floor”, and
+should be as far away from the bulk of the primary sound levels as possible.</p>
+
+<h2 id="portable-recording-devices">Portable Recording Devices</h2>
+
+<p>I recommend avoiding the <a href="http://amzn.to/1jyOxm5">Tascam DR-40</a> unit unless
+you’re <em>positive</em> that you are using a balanced microphone. It tends to have a
+weird firmware issue which produces a
+<a href="http://www.dvxuser.com/V6/showthread.php?268124-Tascam-Dr-40-Buzz-Clicking-noise">strange clicking sound</a>
+(almost impossible to remove) every quarter of a second when presented with an
+unbalanced microphone. If you’re worried about this, go for the
+<a href="http://amzn.to/QAUvXD">Zoom H4n</a>. It’s a bit more expensive, but it seems to
+handle less expensive microphones in a more able fashion, as well as having
+signal limiting and a host of other interesting features.</p>
+
+<h2 id="compression-and-formats">Compression and Formats</h2>
+
+<p>Most digital recorder units will record, at a minimum MP3 and WAV formats. WAV
+is an uncompressed audio format, which means that it takes up more storage space
+than a compressed format, but retains all of the information captured (at the
+resolution captured). MP3 is a compressed format, using a psycho-acoustic model,
+which means that it drops pieces of information which it figures we aren’t going
+to be able to hear. MP3 files take up a smaller amount of space compared to
+the same resolution WAV files – but that comes at the cost of throwing some
+of the information out. MP3 @ 192kbps or above tends to have enough information
+for most uses.</p>
+
+<h2 id="equipment">Equipment</h2>
+
+<p>There’s no “correct” equipment which you need to purchase to be able to capture
+boom audio properly. There are, however, a few piece of equipment you’re
+probably going to need.</p>
+
+<ul>
+  <li><strong>Extendable Boom Pole</strong>. It’s tempting to go with a converted painters’
+pole, but trust me – it pays to go with a decent boom pole. This is mainly
+due to the additional noises which can be generated by swinging around a
+makeshift boom pole. I personally recommend the
+<a href="http://amzn.to/1l3TQaQ">On Stage MBP7000</a> boom pole for budget operators. It
+doesn’t have an internal mic cable, but it works very well.</li>
+  <li><strong>Microphone Cable (XLR)</strong>. This is an easy place to skimp for some people,
+but you don’t want to pick up outside noise, so make sure you go with a
+shielded XLR cable which is a few feet longer than the maximum size of your
+boom pole, fully extended.</li>
+  <li><strong>Clip / Shockmount / Zeppelin / Windscreen</strong>. You need something to isolate
+the microphone from the wind, vibration, and other distorting effects of
+the environment, which would distract from otherwise relatively clean
+audio. Shockmounts can be had for relatively little, as can windscreens.
+A zeppelin can cost a bundle, unless you make a DIY one – but they produce
+very clean-sounding results.</li>
+  <li><strong>Wire clips / wraps</strong>. Either some electrical tape (a cinematographer’s
+best friend, after gaffe tape), or some inexpensive bobble hair ties
+(available at most dollar stores) will allow you to keep the XLR cable
+near the pole – otherwise you may find it dropping into frame at the most
+inopportune times.</li>
+  <li><strong>Microphone</strong>. There is a great deal of conjecture over the “best” budget
+microphone to use. The most important things to consider are the polar
+pickup pattern, the signal-to-noise ratio, and the frequency response of
+any microphone you’re testing.</li>
+  <li><strong>Portable digital recorder</strong>. Covered in the portable recorder section.</li>
+  <li><strong>Headphones</strong>. A set of headphones, preferably full cup earphones, are
+essential to monitoring the sound for disturbances and/or interruptions.
+My favorite pair is the <a href="http://amzn.to/1qwuDgi">Sennheiser HD-280 PRO</a>,
+as they’re relatively inexpensive (under 100 USD), and produce a fairly
+accurate reproduction of live audio.</li>
+  <li><strong>Storage media</strong>. Make sure you don’t buy off-brand media cards. Try to
+stick with SanDisk and Lexar media, if you can. The trick is that these
+companies generally tend to QA their products a bit more rigorously than
+most off-brand manufacturers. This can make the difference between
+usable audio and a very upset director.</li>
+</ul>
+
+<h2 id="technique-and-directionality">Technique and Directionality</h2>
+
+<p>Rather than iterate all of the techniques involved in actually operating a
+boom mic rig, and keeping in mind that pictures are worth a thousand words…</p>
+
+<ul>
+  <li><a href="http://www.viddler.com/player/39021abf/0/">Boom Mic 101</a></li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Audio is half of your deliverables – so make sure your boom operator knows how
+to deliver the best possible audio to your audio engineer for post production.
+Good luck!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1359,161 +1556,6 @@ cd ..</code></pre></noscript></div>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/10/13/preparing-for-and-recovering-from-disaster/">Preparing for and Recovering From Disaster</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-13T20:01:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2013/10/13/preparing-for-and-recovering-from-disaster/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>One of the greatest nightmares associated with digital cinematography and
-photography is that of the specter of data loss. The very notion that your
-carefully planned shots or footage could disappear in a single instant can
-be Earth-shattering, since it may not be possible to reshoot (or may be
-prohibitively expensive). The best defense is to be prepared, not only for
-the possibility that you may lose data, but also to safeguard against that
-possibility through preventitive measures.</p>
-
-<h2 id="preparation">Preparation</h2>
-
-<p>There are a number of things you can do to try to protect against data loss,
-both before and after shooting has taken place. Here are a few of them:</p>
-
-<p><strong>Don’t use dodgy or off-brand memory cards.</strong> This may seem pretty obvious
-to those who have been down this road, but really crappy cards tend to have
-dodgy QA processes involved in their manufacture, so although you may get a
-good card, you’re just as likely to get a dud – which could end up with your
-data. I’ve found that “Amazon Basics” and “KomputerBay” cards have failed me
-pretty regularly. Even “Transcend” cards have been pretty dodgy for me, on
-occasion. I tend to stick with “SanDisk” branded cards, when I use SD media,
-and there are a few decent manufacturers of CF media (Lexar, SanDisk, etc),
-which tend to produce quality cards, in my experience.</p>
-
-<p><strong>Storage media doesn’t last forever.</strong> Every piece of flash media has a
-certain number of R/W cycles before it becomes unstable and/or unusable.
-After a period of time, you might want to start regularly replacing your
-media cards to avoid the possibility that errors will begin to occur. It’s
-also a good idea to low-level format the cards in between uses, which
-supposedly increases their lifespan.</p>
-
-<p><strong>A single physical copy of your product is a bad idea.</strong> If you just move
-files off to your laptop harddrive, you’re practically expecting something
-to destroy your media. A single SSD or spinning platter in a laptop is a
-prime target for an accident to wipe out your data. Ideally, a RAID
-(<em>R</em>edundant <em>A</em>rray of <em>I</em>nexpensive <em>D</em>isks) array would provide a
-good tradeoff between inexpensive media and redundant storage. I built a
-pretty inexpensive one with the following components:</p>
-
-<ul>
-  <li><a href="http://amzn.to/19EmtYA">Sans Digital MR2UT+ MobileRAID</a>: A two-disk
-enclosure, which, when set to RAID-1, gives you a set of mirrored
-hard disks, accessible by USB 3.0 or an eSATA interface.</li>
-  <li><a href="http://amzn.to/19IlAdp">Seagate Barracuda 2 TB HDD</a>: Two of these
-disks will provide you with a total of 2 TB of redundant storage.</li>
-</ul>
-
-<p><strong>A single physical location is a bad idea.</strong> Consider off-site backup. If
-you don’t have the money to store your data in <a href="http://aws.amazon.com/s3/">S3</a>
-or a similar service, consider using something like
-<a href="http://labs.bittorrent.com/experiments/sync.html">Bittorrent Sync</a>, with a
-friend or two providing remote backup locations. If this isn’t feasible,
-periodically backing up to <a href="http://en.wikipedia.org/wiki/Digital_Linear_Tape">DLT</a>
-or another backup tape, then storing that offsite, may be useful. If you
-are questioning “why do I need off-site backup”, just remember that a single
-fire or natural disaster can destroy all of your hard work…</p>
-
-<p><strong>Camera-based writing solutions.</strong> Certain cameras (the Canon EOS 5D
-Mark III, for example) have multiple media card slots, and have the ability
-to write multiple copies of the same media. This can help circumvent the
-tragic circumstance (to which I have fallen victim) of a completed shoot
-with the inability to read any of the captured data later on. To understand
-this, <a href="http://protogtech.com/cameras/canon-5d-mark-iii-record-separately-vs-record-to-multiple-performance-comparison/">read more here</a>.
-It should be noted that there are some performance limitations to this,
-but if you’re not shooting RAW video and your camera body can handle this,
-you might want to seriously consider it.</p>
-
-<h2 id="recovery">Recovery</h2>
-
-<p>There is a pantheon of free and open-source software suites which provide
-recovery of lost files, deleted files, destroyed partitions, etc. The true
-nightmare scenario would involve a piece of damaged media, from which the
-data cannot be extracted – but never assume this unless you have exhausted
-all other avenues of recovery.</p>
-
-<ul>
-  <li><a href="http://www.cgsecurity.org/wiki/PhotoRec">PhotoRec/Testdisk</a> (Open source,
-Linux/Windows/Mac/DOS/etc). This is one of my favorites, although it
-may potentially require some fairly in-depth technical expertise to
-fully exploit its potential.</li>
-  <li><a href="http://www.piriform.com/recuva">Recuva</a> (Freeware, Windows). Recovers
-deleted files.</li>
-  <li><a href="http://www.hirensbootcd.org">Hiren’s Boot CD</a> (Freeware, Boot Disc).
-Hiren’s is a classic recovery and utility boot disk, which can be
-booted on any Intel-based computer. The download is free, and it has
-a very comprehensive suite of recovery tools. If you don’t have a copy
-of this disc hanging around your studio or house – why not?</li>
-  <li><a href="http://www.wondershare.com/disk-utility/cr2-photo-recovery.html">Wondershare Photo Recovery</a> (Freeware, Windows/Mac).
-A semi-commercial digital media file recovery suite.</li>
-  <li><a href="http://www.icare-recovery.com/free/camera-raw-photo-recovery-free.html">iCare Recovery Free</a> (Trialware, Windows).
-This has a 2GB maximum data file recovery limit with the trial, otherwise
-a license has to be purchased.</li>
-  <li><a href="https://homes.cs.washington.edu/~oskin/saveimg.html">saveimg</a> (Opensource, Linux/Mac).
-Extracts JPEG images from raw disk devices. Requires some expert
-knowledge to use properly.</li>
-  <li><a href="http://foremost.sourceforge.net/">Foremost</a> (Opensource, Linux/Mac).
-Digital forensic tool to recover files based on headers, footers, and
-internal data structures.</li>
-  <li><a href="http://www.lc-tech.com/pc/sandisk-rescuepro-and-rescuepro-deluxe/">SanDisk RescuePRO</a> (Trialware, Windows).
-SanDisk’s recommended recovery software.</li>
-  <li><a href="http://www.gnu.org/software/ddrescue/ddrescue.html">ddrescue</a> (Opensource, Linux/Mac).
-A data recovery tool. It copies data from one file or block device
-(hard disc, cdrom, etc) to another, trying hard to rescue data in case
-of read errors.</li>
-  <li><a href="http://www.stellarphotorecoverysoftware.com/camera-recovery/">Stellar Photo Recovery</a> (Trialware, Windows/Mac).
-Another digital photo recovery suite. The trialware shows what can be
-recovered, with previews.</li>
-  <li><a href="http://www.pcinspector.de/default.htm?language=1">PC Inspector</a> (Freeware, Windows).</li>
-  <li><a href="http://www.prosofteng.com/products/data_rescue.php">DataRescue</a> (Mac).</li>
-  <li><a href="http://subrosasoft.com/OSXSoftware/index.php?main_page=product_info&amp;cPath=1&amp;products_id=3">Camera Salvage</a> (Freeware, Windows).</li>
-  <li><a href="http://datarescue.com/">PhotoRescue</a> (Windows/Mac).</li>
-  <li><a href="http://www.cfcardrecovery.com/">CF Card Recovery</a> (Trialware, Windows/Mac).</li>
-</ul>
-
-<p>Hopefully, this will either make it easier to avoid potential data loss, or
-at least help to minimize the impact, if and when you end up losing data.</p>
-
-<p>As always, good luck!</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="3">&larr; Older</a>
@@ -1531,6 +1573,10 @@ at least help to minimize the impact, if and when you end up losing data.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/01/24/exposure/">Exposure</a>
       </li>
     
@@ -1546,10 +1592,6 @@ at least help to minimize the impact, if and when you end up losing data.</p>
         <a href="/2014/12/11/the-importance-of-failure/">The Importance of Failure</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/11/07/winning-a-48-hour-film-project/">Winning a 48 Hour Film Project</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -1563,9 +1605,9 @@ at least help to minimize the impact, if and when you end up losing data.</p>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>opinion (12)</a></li>
+<li class='category'><a href='/categories/opinion/'>opinion (13)</a></li>
 <li class='category'><a href='/categories/photography/'>photography (13)</a></li>
-<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (81)</a></li>
+<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (82)</a></li>
 <li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>
 

@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="Horse eyes by What&#8217;s Your MemeHorse eyes Tasha and I went down to a horse farm in Hebron, CT, and took a bunch of pictures. I’m trying to get &hellip;">
+  <meta name="description" content="I was playing around with using ScanSoft Realspeak for Linux, and finally found the “magic sequence” to generate the appropriate GSM prompts for &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,6 +107,71 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/05/19/creating-tts-prompts-for-asterisk-with-realspeak/">Creating TTS Prompts for Asterisk With Realspeak</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-05-19T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2006/05/19/creating-tts-prompts-for-asterisk-with-realspeak/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was playing around with using ScanSoft Realspeak for Linux, and finally found the “magic sequence” to generate the appropriate GSM prompts for Asterisk.</p>
+
+<p>Requires: </p>
+
+<ul>
+  <li>Standard installation of Scansoft Realspeak 4 with American English Jill voice</li>
+  <li>Debian’s libgsm-tools and sox</li>
+</ul>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd /usr/local/ScanSoft/RealSpeak_4.0
+</span><span class="line">echo " - TTS being performed on $1 ... "
+</span><span class="line">export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ScanSoft/RealSpeak_4.0/api/lib
+</span><span class="line">export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/ScanSoft/RealSpeak_4.0/speech/components/common/
+</span><span class="line">./standard "American English" Jill ./speech text.txt
+</span><span class="line">echo " - Converting to 8000Hz WAV ... "
+</span><span class="line">sox -r 8000 -t raw -w -s /usr/local/ScanSoft/RealSpeak_4.0/standard.pcm text.wav
+</span><span class="line">sox text.wav text.au
+</span><span class="line">cat text.au | toast -c -s &gt; text.gsm</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -461,45 +526,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2005/09/25/lab-hl7-interface/">Lab HL7 Interface</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-09-25T00:00:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2005/09/25/lab-hl7-interface/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have been working on an interface with <a href="http://www.questdiagnostics.com/">Quest Diagnostics</a> to be able to automagically import <a href="http://www.hl7.org/">HL7</a> v2.3 messages into <a href="http://freemedsoftware.org/">FreeMED</a>. They were nice enough to furnish me with some documentation, and I have an <a href="http://upload.wikimedia.org/wikipedia/en/7/7e/Hindenburg_disaster.png">alpha-quality</a> implementation ready for some beating in one of our alpha sites. Now that 0.8.0 is out, I’m working steadily on a 0.8.1 release, with mostly bugfixes, some rearchitecturing, and a few nice features like this one (hopefully).</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="18">&larr; Older</a>
@@ -517,6 +543,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/01/24/exposure/">Exposure</a>
       </li>
     
@@ -532,10 +562,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2014/12/11/the-importance-of-failure/">The Importance of Failure</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/11/07/winning-a-48-hour-film-project/">Winning a 48 Hour Film Project</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -549,9 +575,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>opinion (12)</a></li>
+<li class='category'><a href='/categories/opinion/'>opinion (13)</a></li>
 <li class='category'><a href='/categories/photography/'>photography (13)</a></li>
-<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (81)</a></li>
+<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (82)</a></li>
 <li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>
 
