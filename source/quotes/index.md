@@ -195,6 +195,8 @@ layout: page
 
 "If wealth was the inevitable result of hard work and enterprise, every woman in Africa would be a millionaire." - George Monbiot, from [The Self-Attribution Fallacy](http://www.monbiot.com/2011/11/07/the-self-attribution-fallacy/)
 
+"When I was a boy on the Mississippi River there was a proposition in a township there to discontinue public schools because they were too expensive. An old farmer spoke up and said if they stopped building the schools they would not save anything, because every time a school was closed a jail had to be built." - Mark Twain
+
 ## Racism, Bigotry and the Team Mentality
 
 "Slavery is slavery no matter how nicely the master treats you." – nada from [crooksandliars][29]
