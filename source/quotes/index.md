@@ -197,25 +197,21 @@ layout: page
 
 "When I was a boy on the Mississippi River there was a proposition in a township there to discontinue public schools because they were too expensive. An old farmer spoke up and said if they stopped building the schools they would not save anything, because every time a school was closed a jail had to be built." - Mark Twain
 
+"La majestueuse égalité des lois, qui interdit au riche comme au pauvre de coucher sous les ponts, de mendier dans les rues et de voler du pain." (*Translated: "In its majestic equality, the law forbids rich and poor alike to sleep under bridges, beg in the streets and steal loaves of bread."*) - Anatole France (Le Lys Rouge, 1894)
+
 ## Racism, Bigotry and the Team Mentality
 
 "Slavery is slavery no matter how nicely the master treats you." – nada from [crooksandliars][29]
 
  [29]: http://www.crooksandliars.com/2008/09/16/the-free-market-traders/#comment-905257
 
-"there’s idiot bigots in every race and culture..though…it does seem that us white folk have it down to a science." – "liberalINmoderation" on [crooksandliars.com][30]
+"there’s idiot bigots in every race and culture .. though ... it does seem that us white folk have it down to a science." – "liberalINmoderation" on [crooksandliars.com][30]
 
  [30]: http://crooksandliars.com/david-neiwert/racist-backlash-obamas-presidency#comment-929188
 
-"It’s this creepily worshipful, breathtakingly infantile abdication of intellect to a blatantly dishonest hypocrite that makes Limbaugh’s audience so goddamn sad and pathetic. These useless, insecure, failures of men look to Rush as the champion of their impotent rage, helping them to externalize responsibility for their own deficiencies, pinning the blame on those darn liberals and their racial and gender equality. And, sadly, they vote." – ["Carl Gordon"][31] on [crooksandliars.com][32]
+"It’s this creepily worshipful, breathtakingly infantile abdication of intellect to a blatantly dishonest hypocrite that makes Limbaugh’s audience so goddamn sad and pathetic. These useless, insecure, failures of men look to Rush as the champion of their impotent rage, helping them to externalize responsibility for their own deficiencies, pinning the blame on those darn liberals and their racial and gender equality. And, sadly, they vote." – ["Carl Gordon"](http://crooksandliars.com/users/carl-gordon) on [crooksandliars.com](http://crooksandliars.com/jamie/how-our-tech-savvy-president-could-really-sa#comment-988247)
 
- [31]: http://crooksandliars.com/users/carl-gordon
- [32]: http://crooksandliars.com/jamie/how-our-tech-savvy-president-could-really-sa#comment-988247
-
-"NEWS FLASH – WHAT PASSED FOR SOME FANTASY CALLED THE AMERICAN DREAM IS D E A D. Why? Because somewhere along the way our elected officials and a good portion of our countrymen and women convinced themselves that caring about each other is a sign of weakness." – [BlueSam][33] on [crooksandliars.com][34]
-
- [33]: http://videocafe.crooksandliars.com/users/bluesam
- [34]: http://videocafe.crooksandliars.com/comment/permalink/1237239
+"NEWS FLASH – WHAT PASSED FOR SOME FANTASY CALLED THE AMERICAN DREAM IS D E A D. Why? Because somewhere along the way our elected officials and a good portion of our countrymen and women convinced themselves that caring about each other is a sign of weakness." – [BlueSam](http://videocafe.crooksandliars.com/users/bluesam) on [crooksandliars.com](http://videocafe.crooksandliars.com/comment/permalink/1237239)
 
 "Like an unchecked cancer, hate corrodes the personality and eats away its vital unity. Hate destroys a man’s sense of values and his objectivity. It causes him to describe the beautiful as ugly and the ugly as beautiful, and to confuse the true with the false and the false with the true." – Dr Martin Luther King Jr.
 
