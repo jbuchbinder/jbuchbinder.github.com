@@ -54,6 +54,8 @@ layout: page
 
 "All people know the same truth. Our lives consist of how we choose to distort it." - Woody Allen (from *Deconstructing Harry*)
 
+"As long as I have a want, I have a reason for living. Satisfaction is death." - George Bernard Shaw (from *Overruled*, 1912)
+
 ## Healthcare
 
 "Even if you don’t have health insurance in America, you get taken care of. That could be defined as universal health care." – Tom Thompson, HHS Secretary, [as quoted by Senator Tom Daschle][1] as an example of politicians being out of touch with the realities of healthcare.
@@ -224,6 +226,8 @@ layout: page
 
 "But it is not enough for me to stand before you tonight and condemn riots. It would be morally irresponsible for me to do that without, at the same time, condemning the contingent, intolerable conditions that exist in our society. These conditions are the things that cause individuals to feel that they have no other alternative than to engage in violent rebellions to get attention. And I must say tonight that a riot is the language of the unheard. And what is it America has failed to hear? It has failed to hear that the plight of the negro poor has worsened over the last twelve or fifteen years. It has failed to hear that the promises of freedom and justice have not been met. And it has failed to hear that large segments of white society are more concerned about tranquility and the status quo than about justice and humanity." - Martin Luther King, Jr (from "[The Other America](http://www.gphistorical.org/mlk/mlkspeech/)", speech at Grosse Pointe High School on March 14, 1968)
 
+"Patriotism is, fundamentally, a conviction that a particular country is the best in the world because you were born in it ... " - George Bernard Shaw (from *The World*, November 15, 1893)
+
 ## Religion
 
 "Christians and other faiths have long tolerated violence in the name of ‘god’ and the extremists in their midst. You, and anybody who calls themselves ‘Christian’ own this as much as the Saudi royal family own the attacks of September 11, 2001. Maybe you have not particiapted in atrocity but neither have I heard a loud voice condemning this sort of behavior from Christians, until after the fact. In the end, it is a superstition that historically has killed far more people than it has saved and that’s just a fact." – [Margaret][37] on [crooksandliars][38].
@@ -326,3 +330,5 @@ layout: page
 
  [51]: http://slashdot.org/~Moryath
  [52]: http://slashdot.org/comments.pl?sid=1217607&cid=27773965
+
+"A man doesn't need a women who thinks he's amazing -- he needs one who can see him in all the ways he is not, to help him become a better person."
