@@ -9,8 +9,9 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="There are quite a few guides, tutorials, videos, and other resources on how to
-capture usable boom audio. Most of these have a few usable sections &hellip;">
+  <meta name="description" content="I can’t claim credit for this one – my extremely talented and resourceful
+production designer got the idea to
+use an inexpensive slate “prop” and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,6 +109,89 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/06/10/diy-7-dollars-film-slate/">DIY $7 Film Slate</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-10T15:50:07-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2014/06/10/diy-7-dollars-film-slate/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I can’t claim credit for this one – my extremely talented and resourceful
+<a href="http://www.imdb.com/name/nm3895408/">production designer</a> got the idea to
+use an inexpensive slate “prop” and modify it slightly to allow the use of
+erasable whiteboard markers. These are usually a bit more than seven dollars,
+and we didn’t have the time to wait for one to arrive in the mail for the
+shoot in question.</p>
+
+<p>There are only two pieces of “hardware” which are required to make this,
+along with a few pieces of duct tape, a sharpie, a ruler, and whatever 
+whiteboard markers and erasers you are planning to use on the finished
+slate.</p>
+
+<p>You will need to buy these two items from a <a href="http://www.fivebelow.com/">Five Below</a> discount shop:</p>
+
+<ul>
+  <li>Slate Prop - $5</li>
+  <li><a href="http://www.fivebelow.com/8-5-x-11-neon-dry-erase-boards.html">8.5 x 11 Eraseable Whiteboard</a> - $2</li>
+</ul>
+
+<p><em>Apologies for not giving a product link for the slate prop – I had trouble finding it on the Five Below site. I assure you, it does exist…</em></p>
+
+<h2 id="assembly-instructions">Assembly Instructions</h2>
+
+<ol>
+  <li>
+    <p>Break the frame of the whiteboard, and remove the cardboard backing and
+the broken frame. You should now have a piece of unencumbered whiteboard.</p>
+  </li>
+  <li>
+    <p>Position the whiteboard over the slate prop’s useless slate writing. You
+can’t write on the slate with chalk, so it is pretty useless as-is.
+Center it as best you can, then use strips of duct or gaff tape to attach
+the whiteboard surface to the clapper.</p>
+  </li>
+  <li>
+    <p>Use the ruler as a straight-edge to draw sharpie lines to denote the
+different markable areas on your slate. In the best penmanship you can
+muster, label them with the sharpie.</p>
+  </li>
+</ol>
+
+<p>It is a pretty simple hack, but quite effective for giving your editor a bit
+of A/V sync assistance.</p>
+
+<p><img src="/images/7-dollar-slate.jpg" title="'My production designer holding the finished slate'" /></p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1475,87 +1559,6 @@ exit $found
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/10/29/building-ganglia-for-openbsd-4-dot-3/">Building Ganglia for OpenBSD 4.3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-10-29T12:32:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2013/10/29/building-ganglia-for-openbsd-4-dot-3/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I recently had to build a modern version of the <a href="http://ganglia.info">Ganglia</a>
-monitoring system for an <a href="http://www.openbsd.org/">OpenBSD</a> 4.3 firewall, which
-hadn’t been upgraded to a modern version of OpenBSD in quite some time. I
-documented the process, which I’m sharing here.</p>
-
-<div><script src="https://gist.github.com/7217488.js"></script>
-<noscript><pre><code># Build and install gmond on OpenBSD 4.3
-
-# Install prerequisites
-pkg add automake-1.9.6p2 autoconf-2.61p1 libtool libconfuse unzip wget
-
-# Compile and install apr-1.4
-wget -c http://mirrors.gigenet.com/apache/apr/apr-1.4.8.tar.gz
-tar zxvf apr-1.4.8.tar.gz
-cd apr-1.4.8
-./configure &amp;&amp; make &amp;&amp; make install
-cd ..
-
-# Download and install monitor-core
-wget -c https://github.com/ganglia/monitor-core/archive/master.zip -O master.zip --no-check-certificate
-unzip master.zip
-cd monitor-core-master
-export AUTOMAKE_VERSION=1.9
-export AUTOCONF_VERSION=2.61
-./bootstrap
-./configure --sysconfdir=/etc --without-gmetad --with-libapr=/usr/local/apr/bin/apr-1-config --with-libconfuse=/usr/local 
-
-# Need to patch some minor stuff...
-# libmetrics/openbsd/metrics.c:
-#   line 446:
-#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
-#   should be changed to:
-#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
-#
-#   line 466:
-#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
-#   should be changed to:
-#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
-#
-#   line 468 should be commented out.
-
-make all &amp;&amp; make install
-cd ..</code></pre></noscript></div>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="3">&larr; Older</a>
@@ -1573,6 +1576,10 @@ cd ..</code></pre></noscript></div>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
       </li>
     
@@ -1588,10 +1595,6 @@ cd ..</code></pre></noscript></div>
         <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/12/11/the-importance-of-failure/">The Importance of Failure</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -1605,9 +1608,9 @@ cd ..</code></pre></noscript></div>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>opinion (13)</a></li>
+<li class='category'><a href='/categories/opinion/'>opinion (14)</a></li>
 <li class='category'><a href='/categories/photography/'>photography (13)</a></li>
-<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (82)</a></li>
+<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (83)</a></li>
 <li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>
 

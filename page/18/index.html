@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I have been working on an interface with Quest Diagnostics to be able to automagically import HL7 v2.3 messages into FreeMED. They were nice enough &hellip;">
+  <meta name="description" content="My newest project with FreeMED has been to implement a way to securely warehouse medical data offsite. This relates to Dr Gnu’s article about &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,6 +107,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2005/10/12/secure-data-warehousing/">Secure Data Warehousing</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2005-10-12T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2005/10/12/secure-data-warehousing/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My newest project with <a href="http://freemedsoftware.org/">FreeMED</a> has been to implement a way to securely warehouse medical data offsite. This relates to <a href="http://drgnu.blogspot.com/2005/10/disaster-planning.html">Dr Gnu’s article</a> about disaster recovery. I have been using SSL <a href="http://www.webdav.org/">WebDAV</a> with a slim C client built on <a href="http://www.webdav.org/neon/">neon</a> to push <a href="http://www.gnupg.org/">gnupg</a>-encrypted SQL dumps (both incremental and full) to the archive server, which is perhaps temporarily residing at <a href="https://archive.freemedsoftware.net/">https://archive.freemedsoftare.net/</a>. In this way, whoever is hosting the archive cannot read the medical data without the gnupg keys held only by the provider who “owns” the medical records. <a href="http://www.aapsonline.org/confiden/survcomm.htm">HIPAA compliance</a>, here we are …</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -468,48 +507,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2005/02/27/resource-based-scheduling-et-cetera/">Resource Based Scheduling, Et Cetera</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-02-27T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2005/02/27/resource-based-scheduling-et-cetera/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This weekend I have been putting in some enormous amount of overtime, working on a rehaul of a few of FreeMED’s features. In particular, I have been pounding away at getting the scheduler completely rewritten, since the current one was only supposed to be a temporary hack. We’re moving to a template-driven resource-based scheduler, which so far seems to out-perform the old one in terms of usability and efficency. We’ll see if it progresses far enough for me to replace the old scheduler in CVS.</p>
-
-<p>I’m also working to try to set up “ticklers”, which allow the system to perform actions at specified times (even when no one is logged in, et cetera) and “notifications”, which can be set to remind providers of impending events, since even the most fastidious would forget to follow up on something that occurred six months ago with no notification. </p>
-
-<p>In summary, development is steamrolling along. Everything is being documented as we’re going, so hopefully other people won’t be so bashful about contributing code …</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="19">&larr; Older</a>
@@ -527,6 +524,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
       </li>
     
@@ -542,10 +543,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/12/11/the-importance-of-failure/">The Importance of Failure</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -559,9 +556,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
 <li class='category'><a href='/categories/music/'>music (14)</a></li>
-<li class='category'><a href='/categories/opinion/'>opinion (13)</a></li>
+<li class='category'><a href='/categories/opinion/'>opinion (14)</a></li>
 <li class='category'><a href='/categories/photography/'>photography (13)</a></li>
-<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (82)</a></li>
+<li class='category'><a href='/categories/remember-no-one-cares/'>remember, no one cares (83)</a></li>
 <li class='category'><a href='/categories/reviews/'>reviews (2)</a></li>
 <li class='category'><a href='/categories/video-and-animation/'>video and animation (3)</a></li>
 
