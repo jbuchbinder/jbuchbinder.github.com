@@ -3,7 +3,6 @@ title: Artists and Projects
 author: jeff
 layout: page
 ---
-# 
 
 ![[Studio]][1]
 
@@ -11,56 +10,27 @@ layout: page
 
  [1]: /wp-content/images/mem_logo.png
 
-![][2]
+## Blaney Brothers
 
-The Eighth Floor – The name may sound strange, but the music is rocking; listen below for samples.
+Very talented duo — and yes, they are actually brothers.
 
-![][3]
+One of their originals is [Cold Dark Places](http://www.mediafire.com/file/ew3fz2cmgjy/Blaney Brothers - Cold Dark Places.mp3)
 
-Jake Bachand – Started working on a full-length studio project. A talented guitar player and songwriter, and all-around good guy. Past projects include *Maranatha*, *evoke*, and *Earthset*.
+## Mark Mandeville and Raianne Richards
 
-![][4]
+Recorded "[Hard Times & Woes](http://markmandevilleraiannerichards.bandcamp.com/album/hard-times-woes)" in 2013/2014.
 
-Natasha Darius – Beautiful voice, great lyrics, and something \*definitely\* worth listening to.
+Reviews:
 
-![][5]
+ * [Aiding & Abetting](http://www.aidabet.com/2014/041514.html)
+ * [Red Line Roots](http://www.redlineroots.com/2014/04/mark-mandeville-and-raianne-richards-hardtimes-and-woes-album-review/)
+ * [The Noise, Boston](http://thenoise-boston.com/2015/02/top-ten-of-2014/)
 
-[Justin Fox][6] – Working on the audiobook for his original novel series “*The Chronicles of Centack*“. 
-[Click for a short sample.][7]   ![][8]
+## Seamus McMullan
 
-[Blaney Brothers][9]. Very talented duo — and yes, they are actually brothers. 
-One of their originals is [Cold Dark Places][10].    
+Recorded "[Distant Roots](http://www.cdbaby.com/cd/seamusmcmullan)" in 2012.
 
+## Natasha Darius
 
-The samples provided here are low-quality Ogg Vorbis files. Codecs and players to listen to these files are available below if your computer does not already play these files. (Ogg Vorbis files are similar to the more popular MP3 file format, but they provide higher quality with smaller file sizes.)
+Beautiful voice, great lyrics, and something \*definitely\* worth listening to.
 
-Codec/Player downloads 
-
-Operating System
-
-Codec
-
-Linux
-
-[XMMS][11] or other players
-
-Mac OS
-
-[Quicktime component][12]
-
-Windows
-
-[DirectShow plugin][13]
-
- [2]: /wp-content/audio/8th.jpg
- [3]: /wp-content/images/jake.thumb.png
- [4]: /wp-content/images/natasha.thumb.png
- [5]: /wp-content/images/centack.thumb.jpg
- [6]: http://justintfox.com/
- [7]: /wp-content/audio/centack.sample.ogg
- [8]: /wp-content/images/blaneybrothers.jpg
- [9]: http://www.myspace.com/blaneybrothers
- [10]: http://www.mediafire.com/file/ew3fz2cmgjy/Blaney Brothers - Cold Dark Places.mp3
- [11]: http://www.xmms.org/
- [12]: http://qtcomponents.sourceforge.net/
- [13]: http://tobias.everwicked.com/oggds.htm
