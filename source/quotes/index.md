@@ -331,4 +331,6 @@ layout: page
  [51]: http://slashdot.org/~Moryath
  [52]: http://slashdot.org/comments.pl?sid=1217607&cid=27773965
 
+"I can’t find boots high enough to go into Twitter anymore." - [nines09](http://littlegreenfootballs.com/pages/nines09) on [Little Green Footballs](http://littlegreenfootballs.com/comment/9/10690776)
+
 "A man doesn't need a women who thinks he's amazing -- he needs one who can see him in all the ways he is not, to help him become a better person."
