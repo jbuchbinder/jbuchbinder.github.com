@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="Well, after many years of living in podunk cowville, I’ve moved back into a slightly more suburban area, complete with ridiculous historic figures. &hellip;">
+  <meta name="description" content="After more than six months of dealing with the Synaptics touchpad driver interpreting my hand brushing against the pad as a “click”, I found a small &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,6 +107,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/06/29/ubuntu-touchpad-annoyance/">Ubuntu Touchpad Annoyance</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-06-29T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2006/06/29/ubuntu-touchpad-annoyance/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>After more than six months of dealing with the Synaptics touchpad driver interpreting my hand brushing against the pad as a “click”, I <a href="http://ubuntu.wordpress.com/2006/03/24/disable-synaptics-touchpad/">found a small change</a> to xorg.conf which will take away the sting of using a touchpad with <a href="http://www.ubuntu.com">Ubuntu</a>/<a href="http://www.kubuntu.org/">Kubuntu</a>.</p>
+
+<p>Simply add the following lines in <strong>/etc/X11/xorg.conf</strong> in the InputDevice clause for the touchpad, and restart X:
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">    Option          "SHMConfig"             "on"
+</span><span class="line">    Option          "MaxTapTime"            "0"</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+
+<p>Just had to share that, it took me so long to get up the resolve to actually <em>look</em> for a solution …</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -487,45 +533,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2005/10/19/pluggable-authentication-for-freemed/">Pluggable Authentication for FreeMED</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2005-10-19T00:00:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2005/10/19/pluggable-authentication-for-freemed/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I finally mustered up the spare time to move from the old system of <a href="http://freemedsoftware.org/">FreeMED</a> authentication to a pluggable system. I have only coded up two plugins for now: a “Password” plugin, which uses the old system of authentication and password checking, and a “Basic” plugin, supporting HTTP Basic Authentication. I’m also currently considering writing an LDAP plugin to allow FreeMED credentials and basic ACL information to be stored on an LDAP server, to really allow for enterprise deployments. On top of all this, I have been doing some “house cleaning” in the code so that FreeMED is more autonomous on startup.</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="18">&larr; Older</a>
@@ -553,6 +560,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/02/26/film-epistemology/">Film Epistemology</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
@@ -568,19 +579,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2015/01/15/the-fine-line-between-confidence-and-hubris/">The Fine Line Between Confidence and Hubris</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (28)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (29)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (1)</a></li>
+<li class='category'><a href='/categories/film/'>film (2)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>

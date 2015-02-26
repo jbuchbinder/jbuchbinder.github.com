@@ -9,9 +9,8 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I can’t claim credit for this one – my extremely talented and resourceful
-production designer got the idea to
-use an inexpensive slate “prop” and &hellip;">
+  <meta name="description" content="For whatever reason, there seems to be a serious dearth of information
+regarding lens modification on the C-mount Computar 12.5mm f/1.3 lens. I am &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -109,6 +108,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/">Modifying Computar 12.5mm C-mount Lens for M4/3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-14T15:21:30-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2014/08/14/modifying-computar-12-dot-5mm-c-mount-lens-for-m4-slash-3/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>For whatever reason, there seems to be a serious dearth of information
+regarding lens modification on the C-mount Computar 12.5mm f/1.3 lens. I am
+going to share my experience modifying this lens, in the hope that it will
+prevent other people from having the same issues which I have encountered.</p>
+
+<p>As a quick disclaimer, you really should not blame me if you break your lens,
+or if it eats your children or animals. This either will or will not work for
+you. You have been warned.</p>
+
+<p>You will need:</p>
+
+<ul>
+  <li>File or dremel</li>
+  <li>Very small screwdriver (flathead)</li>
+  <li>C-mount to M4/3 adapter (I used the Fotoasy one)</li>
+</ul>
+
+<p>1) <strong>File down the edges of the back mount a little.</strong> I do not think that I
+   can stress “a little” enough. If you file this down too much, you will run
+   into the same issue I ran into, and will break the back metal piece of
+   your lens. I used a triangular file and edged it down to a nice smooth
+   surface.</p>
+
+<p>2) <strong>Unscrew the three screws at the base.</strong> This will remove the metal
+   back of the lens.</p>
+
+<p>3) <strong>Loosen the center column of the lens.</strong> You will see a small lens
+   assembly protruding from the back of the rest of the lens. Loosen it a
+   few turns. This is a trial-and-error thing, so be patient.</p>
+
+<p>4) <strong>Reattach the backing with the screws.</strong> The lens assembly should be
+   protruding further from the back of the C-mount to M4/3 adapter, when
+   attached.</p>
+
+<p>5) <strong>Attempt infinity focus.</strong> Attach to the camera, attempt focus.</p>
+
+<p>If infinity focus is not attainable by step 5, repeat steps 2-5 until it is.</p>
+
+<p>If you end up breaking or cracking the rear C-mount, you can permanently attach the lens to your C-mount to M4/3 adapter using some solder or hot-glue.</p>
+
+<p>Good luck!</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1439,126 +1517,6 @@ can’t all be the <strong>best</strong>, but we can all become <strong>better</
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/11/13/checking-for-deprecated-wordpress-functions/">Checking for Deprecated Wordpress Functions</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-11-13T15:29:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2013/11/13/checking-for-deprecated-wordpress-functions/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>One of the major pains involved in Wordpress development and work (and one
-of the reasons why this isn’t hosted on Wordpress anymore) is that of their
-quickly changing API.</p>
-
-<p>I’ve encountered issues where plugins have suddenly (and quietly) stopped
-functioning, due to a deprecated function call being removed from the
-Wordpress API. I’m sharing my “solution” to this issue, which is a script
-(which can be integrated into a CI system), which scans your plugin and/or
-theme code and gives you a list of the deprecated functions you’re using,
-as well as where they exist in your code.</p>
-
-<div><script src="https://gist.github.com/7419000.js"></script>
-<noscript><pre><code>#!/bin/bash
-#
-# Wordpress Deprecated function checker
-#
-# Version: 0.2
-#
-# Author: Michiel Roos &lt;michiel@donationbasedhosting.org&gt;
-#         Jeff Buchbinder (https://github.com/jbuchbinder)
-# 
-# www.php.net/manual/en/migration53.deprecated.php
-#
-# Original code: http://www.typofree.org/article/archive/2011/may/title/check-your-php-code-for-deprecated-ini-directives-and-functions/
-#
-# Jeff&#39;s notes:
-#
-# *) This version should return a non-zero bash &quot;errorlevel&quot; if deprecated
-#    functions are found, which should allow easy integration into CI systems.
-# *) This was adapted from a deprecated function checker to allow Wordpress
-#    specific pre-upgrade checks.
-
-tag=$1
-
-if [ &quot;$tag&quot; == &quot;&quot; ]; then
-    echo &quot;Wordpress version must be specified.&quot;
-    exit 1
-fi
-
-whereami=&quot;$( cd &quot;$(dirname &quot;$0&quot;)&quot;; pwd )&quot;
-
-function dfunctions() {
-    tag=$1
-    
-    # Derived from the list at http://codex.wordpress.org/Category:Deprecated_Functions
-    # (Use Coral Cache to cut down on Wordpress TRAC load.)
-    deprecated_sources=(
-    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/deprecated.php?format=txt
-    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/deprecated.php?format=txt
-    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/pluggable-deprecated.ph?format=txt
-    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-includes/ms-deprecated.php?format=txt
-    	http://core.trac.wordpress.org.nyud.net/browser/tags/${tag}/src/wp-admin/includes/ms-deprecated.php?format=txt
-    )
-    
-    for s in ${deprecated_sources}; do
-	    wget -q -O /dev/stdout &quot;$s&quot; | grep &#39;^function &#39; | cut -d&#39; &#39; -f2 | cut -d&#39;(&#39; -f 1
-    done
-}
-deprecatedFunctions=(
-    $( dfunctions ${tag} )
-)
-
-len=${#deprecatedFunctions[*]}
-i=0
-
-echo &quot;Checking for deprectated functions ______________________________________&quot;
-echo &quot;&quot;
-
-found=0
-
-while [ $i -lt $len ]; do
-    echo &quot;  // checking for &#39;${deprecatedFunctions[$i]}()&#39;&quot;
-    grep -rn --color --include=*.php &quot;^[^#\/]*[^a-zA-Z_]${deprecatedFunctions[$i]}[[:space:]]*(&quot; *;
-    if [ $? -ne 0 ]; then
-        found=1
-    fi
-    echo &quot;&quot;
-    let i++
-done
-
-exit $found
-</code></pre></noscript></div>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="3">&larr; Older</a>
@@ -1586,6 +1544,10 @@ exit $found
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/02/26/film-epistemology/">Film Epistemology</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
@@ -1601,19 +1563,15 @@ exit $found
         <a href="/2015/01/15/the-fine-line-between-confidence-and-hubris/">The Fine Line Between Confidence and Hubris</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (28)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (29)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (1)</a></li>
+<li class='category'><a href='/categories/film/'>film (2)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>

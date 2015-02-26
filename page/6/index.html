@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I ended up passing out on top of the sheets in the hotel due to the tired state in which I arrived, but today was full of plenty of excitement and &hellip;">
+  <meta name="description" content="The clinic was open for the first of the two days it will be open during my stay in Xela. It was a pretty crazy scene — a line going to the end, if &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,6 +107,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/09/21/xela-day-three-clinic/">Xela Day Three: Clinic</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-21T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/09/21/xela-day-three-clinic/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The clinic was open for the first of the two days it will be open during my stay in Xela. It was a pretty crazy scene — a line going to the end, if not around the end, of the block.</p>
+
+<p>We had Isabel, the local intake/registration person, working with my sister Shelley to do registrations, after which the patients were sent to Jorge, who war running triage. Dr Meg Sullivan treated the pediatric patients, while Irv and one of the local doctors handled the adult patients. Within a half hour or so, the makeshift waiting rooms upstairs and downstairs in the clinic were packed with waiting patients. One thing I did notice was that the children were remarkably well behaved — much more so than children their ages in the United States.</p>
+
+<p>American Airlines, never striving to be the speediest in baggage recovery, still hasn’t delivered the bag containing the primary server. As I haven’t had any actually setup or installation work to do, I spent my time alternately documenting methods, coding some pieces for FreeMED which would handle some of clinic’s various registration and triage functions, taking pictures for fundraising use, and doing basic gopher tasks for the doctors and nurses. It’s a little disconcerting that we aren’t able to get people trained up on the system yet, but it’s just going to have to wait until their server comes in.</p>
+
+<p>Another hurdle is the wiring. There isn’t really any “modern” electrical wiring, in that most of the circuits aren’t grounded at all. Most look like they barely have any sort of insulation over their conductors. The clinic has a little bit of money for supplies and such things, so we may end up having a UPS purchased to attempt to shield the servers from the somewhat inconsistent wiring and power grid there. The laptops can probably function with simple surge protectors, since they have their own sort of “UPS” through the use of their batteries.</p>
+
+<p>Well, apart from an emergency colo flip for work (which I’ve been up until a little after midnight local time performing), I’m looking to get some shut-eye, as we’re heading out to the pueblos early tomorrow morning. I think that I’m going to be a little less useful than I have been in the clinic, but hopefully I can glean some further “best practices” and workflow in such a way that I can make it easier for the docs to do their jobs.</p>
+
+<p><em>Update for those who were waiting for pictures: I’m in the process of uploading some pictures from the POP-WUJ clinic to a Flickr set, so check my Flickr account early Wednesday morning or so to see the first batch.</em></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -564,55 +612,6 @@ while (chomp( my $line = )) {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/">Backing Up MAPI Contacts and Calendar From Exchange Server</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-22T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2010/01/22/backing-up-mapi-contacts-and-calendar-from-exchange-server/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have a hate/hate relationship with Exchange Server. I hate it, and I’m pretty sure it hates me.</p>
-
-<p>Why someone would design a system to expose every bit of data for a system through a nice standard protocol like IMAP, then only allow certain things to be viewed through a piece of crap proprietary protocol like MAPI just boggles the mind. I’m sure it’s part of their “vendor lock-in” thing, but it just pisses me off.</p>
-
-<p>Anyway, I found out that to completely backup an Exchange account (as I have been doing over the last week or so for different accounts), you also have to backup the non-mail portions. I ended up using a deprecated library called <a href="http://jakarta.apache.org/slide/clientjavadoc/overview-summary.html">Jakarta Slide</a> for WebDAV client support, which helpfully came with a <strong>SearchMethod</strong> call which was capable of running the specialized XML query required to backup the data.</p>
-
-<p>The XML I ended up using was:</p>
-
-<pre><code>SELECT * FROM "URL"
-</code></pre>
-
-<p>in case anyone is interested. Again, I have a fatjar of this utility, but I have to check with work to make sure they’re okay with me releasing it before I can post it anywhere.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="7">&larr; Older</a>
@@ -640,6 +639,10 @@ while (chomp( my $line = )) {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/02/26/film-epistemology/">Film Epistemology</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
@@ -655,19 +658,15 @@ while (chomp( my $line = )) {
         <a href="/2015/01/15/the-fine-line-between-confidence-and-hubris/">The Fine Line Between Confidence and Hubris</a>
       </li>
     
-      <li class="post">
-        <a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The Danger of the Shortcut Mentality</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
-<li class='category'><a href='/categories/cinematography/'>cinematography (28)</a></li>
+<li class='category'><a href='/categories/cinematography/'>cinematography (29)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (1)</a></li>
+<li class='category'><a href='/categories/film/'>film (2)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
