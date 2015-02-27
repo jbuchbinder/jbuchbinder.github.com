@@ -7,6 +7,7 @@ description: The contradiction inherent in artistic self-assessment
 cover: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wheel_of_Konark%2C_Orissa%2C_India.JPG/800px-Wheel_of_Konark%2C_Orissa%2C_India.JPG
 categories:
  - Cinematography
+ - Film Theory
  - Photography
 ---
 

@@ -8,8 +8,9 @@ cover: /images/inception.jpg
 cover-x: 537
 cover-y: 225
 categories:
- - cinematography
- - film 
+ - Cinematography
+ - Film 
+ - Film Theory
 ---
 
 I'd like to take a brief look at film epistemology. In order for that to work, I'm going to be positing that for our purposes, each film is its own self-contained universe with its own rules and knowledge both known and unknown.
