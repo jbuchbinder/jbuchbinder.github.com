@@ -99,6 +99,10 @@ layout: page
  [10]: http://slashdot.org/~phantomfive
  [11]: http://slashdot.org/comments.pl?sid=1135267&cid=26933509
 
+## Money
+
+"Money is the enemy of the thoughtfully good."
+
 ## Optimism
 
 "The optimist proclaims that we live in the best of all possible worlds; and the pessimist fears this is true." - James Branch Cabell, The Silver Stallion (1926)
