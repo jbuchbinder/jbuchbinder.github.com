@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="There seems to be an almost delectable thread of irony heading through my life as I head into Thanksgiving Day. Strangely enough, a few days ago I &hellip;">
+  <meta name="description" content="I’m not a big fan of tomcat, preferring Jetty where possible. Unfortunately there are a lot of catches involved with getting GWT applications working &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,6 +107,129 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2008/03/01/deploying-gwt-applications-with-jetty/">Deploying GWT Applications With Jetty</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-03-01T00:00:00-05:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2008/03/01/deploying-gwt-applications-with-jetty/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I’m not a big fan of tomcat, preferring <a href="http://www.mortbay.org/">Jetty</a> where possible. Unfortunately there are a lot of catches involved with getting <a href="http://code.google.com/webtoolkit/">GWT</a> applications working. I’ll try to break the changes down here. This assumes that you already have a GWT project built and made with projectCreator which you are migrating into Jetty.</p>
+
+<p>1) Pull the start.jar, bin/jetty.sh script (which will be moved to the base of your distribution), lib and etc directories from your Jetty distribution, and put them in $DIST (your distribution directory)</p>
+
+<p>2) Change your (appname)-shell script to be like the following:
+<strong>JettyTest-shell</strong>
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</span><span class="line">GWT_HOME=/usr/lib/gwt
+</span><span class="line">ENTRY_POINT=net.cognitiveconsulting.gwt.JettyTest
+</span><span class="line">HOST_PAGE=JettyTest.html
+</span><span class="line">APPDIR=`dirname $0`;
+</span><span class="line">CPGWT=$APPDIR/src
+</span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-user.jar
+</span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-dev-linux.jar
+</span><span class="line">java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 "$@" $ENTRY_POINT/$HOST_PAGE</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+
+<p>3) Change your (appname)-compile script to look like:<br />
+<strong>JettyTest-compile</strong><br />
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</span><span class="line">APPDIR=`dirname $0`;
+</span><span class="line">echo "Compiling GWT portion of application ... "
+</span><span class="line">java  -cp "$APPDIR/src:$APPDIR/bin:/usr/lib/gwt/gwt-user.jar:/usr/lib/gwt/gwt-dev-linux.jar" com.google.gwt.dev.GWTCompiler -out "$APPDIR/webapps" "$@" net.cognitiveconsulting.gwt.JettyTest;
+</span><span class="line">echo "Compiling native Java part of application ... "
+</span><span class="line">ant -f net.cognitiveconsulting.gwt.JettyTest.ant.xml
+</span><span class="line">echo "Moving pieces into Jetty library path ... "
+</span><span class="line">( cd bin ; jar cf ../lib/net.cognitiveconsulting.gwt.JettyTest.jar * )</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+
+<p>Remember, after this, your output directory is no longer www, it’s now “webapps”.</p>
+
+<p>4) Create the directory $DIST/webapps/(appname)/WEB-INF, and create a web.xml file like this, with the definitions for your remote services:<br />
+<strong>webapps/net.cognitiveconsulting.gwt.JettyTest/WEB-INF/web.xml</strong></p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">[servlet]
+</span><span class="line">    [servlet-name]Test[/servlet-name]
+</span><span class="line">    [servlet-class]net.cognitiveconsulting.gwt.server.TestImpl[/servlet-class]
+</span><span class="line">  [/servlet]
+</span><span class="line">
+</span><span class="line">  [servlet-mapping]
+</span><span class="line">    [servlet-name]Test[/servlet-name]
+</span><span class="line">    [url-pattern]/rpc/net.cognitiveconsulting.gwt.client.Test[/url-pattern]
+</span><span class="line">  [/servlet-mapping]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p><em>(Please note that because wordpress ate my XML, I used a different kind of brackets, please substitute as required.)</em></p>
+
+<p>5) Create the ant build file:<br />
+<code>/usr/lib/gwt/projectCreator -ant net.cognitiveconsulting.gwt.JettyTest</code></p>
+
+<p>6) Make sure you have created working servlets under the internal tomcat implementation before you proceed, making sure that the servlet information is in the .gwt.xml file in your source directory like this:<br />
+&#8220;</p>
+
+<p>7) Make sure that a copy of $GWTDIR/gwt-servlet.jar and any other libraries you are using are installed in $DIST/lib — forget this and nothing is going to work.</p>
+
+<p>8) Create an empty “logs” directory under $DIST.</p>
+
+<p>You should be able to start Jetty at your convenience and browse to the (appname)/(startpage).html page. If you want to pack it as a war, just zip the (appname) directory in $DIST/webapps with a .war extension. Also, running jetty.sh with the parameter “supervise” will allow you to watch the logs as they go by.</p>
+
+<p>Hope this has been informative and helpful.</p>
+
+<p><strong>UPDATE</strong>: <em>Jan, one of the webtide guys, was nice enough to send me an ant build file which does much the same type of thing I was attempting to do here. It is attached <a href="http://jbuchbinder.com/wp-content/uploads/2008/03/build.xml">here</a>, for anyone else who would like a copy.</em></p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -512,52 +635,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/03/23/the-ghost-of-hunter-s-strikes-again/">The Ghost of Hunter S Strikes Again</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-03-23T00:00:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2007/03/23/the-ghost-of-hunter-s-strikes-again/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>It hasn’t been that long since the passing of the great <a href="">Hunter S Thompson</a>, creator of the so-called “Gonzo journalism”, and all-around lunatic. Apart from being eminently <a href="http://en.wikiquote.org/wiki/Hunter_S._Thompson">quotable</a>, Hunter Thompson was deeply involved in politics; he especially hated Richard Nixon, whom he frequently <a href="http://www.liberalavenger.com/2005/02/hunter-s-thompson-on-nixons-death.html">wished malfeasance upon.</a>. I’m unsure as to whether Hunter really would have approved of where his “Gonzo” journalism has gone.</p>
-
-<p>Glen Greenwald recently pointed out that so-called “blogger” journalists <a href="http://www.salon.com/opinion/greenwald/2007/03/22/politico/">have been creating their own “facts”, and in some cases completely fabricating stories</a>, in an effort to influence the news which they purport to report. The aim of these fabricated new stories seem to be the adjustment of the average American viewpoint toward a center that is far more irrational than anything reality-based could ever be. Arguably, some of the freedom in America is the right to be informed ; the Freedom of the Press of which we have heard so much. Where is the fabled “American Dream”, that freedom that we are trying to export to other people so desperately even over the cost of their own lives?</p>
-
-<p>Where does the benefit lie in defrauding America through lying to the American people? This is a perversion of the spirit of Gonzo journalism, which was supposed to celebrate the “American Dream”. But, to close this out, here’s a quote from Hunter Thompson regarding the current situation in this country, from “Kingdom of Fear”:</p>
-
-<blockquote>
-  <p>We have become a Nazi monster in the eyes of the whole world, a nation of bullies and bastards who would rather kill than live peacefully. We are not just Whores for power and oil, but killer whores with hate and fear in our hearts. We are human scum, and that is how history will judge us. No redeeming social value. Just whores. Get out of our way, or we’ll kill you. Who does vote for these dishonest shitheads? Who among us can be happy and proud of having all this innocent blood on our hands? Who are these swine? These flag-sucking half-wits who get fleeced and fooled by stupid little rich kids like George Bush? They are the same ones who wanted to have Muhammad Ali locked up for refusing to kill gooks. They speak for all that is cruel and stupid and vicious in the American character. They are the racists and hate mongers among us; they are the Ku Klux Klan. I piss down the throats of these Nazis. And I am too old to worry about whether they like it or not. Fuck them. – Hunter S Thompson</p>
-</blockquote>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="15">&larr; Older</a>
@@ -585,6 +662,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/03/02/narrative-exposition-in-film/">Narrative Exposition in Film</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/02/26/film-epistemology/">Film Epistemology</a>
       </li>
     
@@ -600,10 +681,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2015/01/24/exposure/">Exposure</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/01/15/the-fine-line-between-confidence-and-hubris/">The Fine Line Between Confidence and Hubris</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -612,8 +689,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>cinematography (29)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (2)</a></li>
-<li class='category'><a href='/categories/film-theory/'>film theory (2)</a></li>
+<li class='category'><a href='/categories/film/'>film (3)</a></li>
+<li class='category'><a href='/categories/film-theory/'>film theory (3)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
