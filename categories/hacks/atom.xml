@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hacks | /home/jeff/blog]]></title>
   <link href="http://jbuchbinder.com/categories/hacks/atom.xml" rel="self"/>
   <link href="http://jbuchbinder.com/"/>
-  <updated>2015-03-03T23:10:18-05:00</updated>
+  <updated>2015-03-03T23:13:32-05:00</updated>
   <id>http://jbuchbinder.com/</id>
   <author>
     <name><![CDATA[jeff]]></name>
@@ -22,6 +22,8 @@
 regarding lens modification on the C-mount Computar 12.5mm f/1.3 lens. I am
 going to share my experience modifying this lens, in the hope that it will
 prevent other people from having the same issues which I have encountered.</p>
+
+<!-- more -->
 
 <p>As a quick disclaimer, you really should not blame me if you break your lens,
 or if it eats your children or animals. This either will or will not work for
@@ -59,7 +61,6 @@ you. You have been warned.</p>
 <p>If you end up breaking or cracking the rear C-mount, you can permanently attach the lens to your C-mount to M4/3 adapter using some solder or hot-glue.</p>
 
 <p>Good luck!</p>
-
 ]]></content>
   </entry>
   
