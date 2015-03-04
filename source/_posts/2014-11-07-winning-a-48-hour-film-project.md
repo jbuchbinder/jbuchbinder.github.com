@@ -25,6 +25,8 @@ I'm used to doing post-mortem analyses on failures, so this is a fairly
 unusual task ; why did "The Carving" win against other films -- especially
 against some very strong contenders?
 
+<!-- more -->
+
 ## It's all about the story.
 
 As usual, we didn't base our story off of any pre-existing concepts, scripts,
@@ -109,4 +111,3 @@ we could make in 48 hours (within the constraints outlined by the 48), we
 have a film for our own promotion and uses after the festival ended.
 
 Good luck to you in all of your cinematographic adventures!
-

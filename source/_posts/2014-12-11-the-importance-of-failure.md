@@ -12,6 +12,8 @@ categories:
 
 Failing is a terrible thing, we are taught. As a result of inherent cognitive biases and our own illusory superiority (look up the [Dunning-Kruger effect](http://www.spring.org.uk/2012/06/the-dunning-kruger-effect-why-the-incompetent-dont-know-theyre-incompetent.php), if you're curious about this), we believe that we are right the majority of times, that we are more skilled than those around us, and that we have nothing of import to learn from not succeeding.
 
+<!-- more -->
+
 I'm going to uncharacteristically detour into a quick anecdote. I was attending a film festival a little while ago, and had ended up talking to one of the festival's organizers. She had asked me about how I got into film, and talked a little bit about some of her own projects. After a while, I mentioned how I learned more from my failures than I did from my successes. She stopped the line of conversion, and said that she didn't, because she "always" succeeded.
 
 There's a lesson to be learned from her. If you never fail (or never allow yourself to be put in a situation when you fail, or never accept that you have failed), you aren't going to be able to examine your process to figure out how you can improve. If we're at the height of our skill set at the present moment, I view that assessment as a dismal failure; we should always expect that, given time and effort, we should continue to improve as time goes on.

@@ -7,6 +7,7 @@ description: Tips for cinematographers to prevent your work from appearing cheap
 cover: /images/filmmaking.jpg
 categories:
  - Cinematography
+ - Film
 ---
 
 Okay; so you've got a DSLR, a RED, a Blackmagic Cinema Camera, a GoPro -- what's
@@ -18,6 +19,8 @@ together things that don't look terrible. Unfortunately, I've learned most of
 these through the painful process of trial and error. If there's an item listed
 in this article, I most likely ended up screwing up in that particular way at
 one time or another.
+
+<!-- more -->
 
 *A slight disclaimer: I'm a bit of a purist. I tend not to deal with
 post-production effects except when absolutely necessary. I also **hate**

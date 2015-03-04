@@ -12,6 +12,8 @@ categories:
 
 In the larger search for guidance, justification, or confirmation, we tend to weigh different opinions -- especially expert opinions -- based on how they relate to our trust "weighting" of them, by association. That being said, there are two, drastically different, models of weighted opinions: experts, or everybody (which can be understood through the concept of "universal relativism").
 
+<!-- more -->
+
 ## What constitutes an expert -- education vs experience?
 
 Experts, with expert opinions, are the preferred mechanism of conferred knowledge in academia. Departing from the trappings of academia for a moment, it can also be asserted that extensive experience also can produce an expert. I personally prefer the latter to the former. Anecdotally, [my father](http://redlinedoc.com/) (who is a physician, but not a GP), used to tell me that his functional medical knowledge came primarily from his internship and residency, rather than having been conferred during medical school.

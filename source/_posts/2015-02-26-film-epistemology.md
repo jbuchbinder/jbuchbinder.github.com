@@ -17,6 +17,8 @@ I'd like to take a brief look at film epistemology. In order for that to work, I
 
 *(As a disclaimer, I'm no Scott Eric Kaufmann; I'm not going to be using visual illustrations, and precious few (if any) citations. There are also bound to be spoilers of every variety, so if a film is mentioned, avert your gaze if you don't want to learn important truths about its ending.)*
 
+<!-- more -->
+
 ## Film as philosophy and self contained world
 
 As I've just mentioned, a singular film can be seen as its own self-contained universe -- a universe populated with rules and knowledge which are specific to that universe. Sometimes that world looks much like our own and shares many similar traits, sometimes it shares many visual similarities but a different history, and sometimes it bears little resemblance to the world and universe we know and try to understand.

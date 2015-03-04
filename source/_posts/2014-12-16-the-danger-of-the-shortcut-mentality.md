@@ -14,6 +14,8 @@ In "[Skill in the Age of Instagram](/2013/06/28/skill-in-the-age-of-instagram/)"
 
 Even though these tools offer the quickest and shortest "path" to the immediate goal, being your current project, they retard your potential growth by limiting your skills and knowledge about what you're doing. If the pseudo-magic time-saving software is taken away (or encounters a limitation), how will you continue to be able to function without it?
 
+<!-- more -->
+
 ## In cinematography
 
 Cinematography is rife with this kind of intellectual laziness, as all creative fields have a tendency to be. A few of the places I've seen this have been:

@@ -16,6 +16,8 @@ Within the confines of the skeleton of a film work (the script), there are many 
 
 As with any other aspect of film as an art form and medium, there isn't a single "correct" way of doing anything. There isn't one particular correct framing which needs to be used for a shot, not only a single focal length lens or camera brand which would have to be used to get the only valid shot possible -- and in much the same vein, there are many different more-or-less-equally-correct methods of imparting that information. I'd like to explore the mechanisms and caveats of each of them.
 
+<!-- more -->
+
 ## Objectivity and Subjectivity
 
 It's an interesting concept -- there is no real delineation between objectivity and subjectivity as far as narration goes, if we consider that any narration is part of the [artificially separate epistemic system of a film](/2015/02/26/film-epistemology/), and therefore could have a level of objectivity or subjectivity within the confines of a certain character, but which presents the same objective face to the viewing audience as a whole (in that they all will see the same footage), which will be subjectively interpreted by each viewer (since even though they physically see the same footage, each person subjectively interprets what they see differently).

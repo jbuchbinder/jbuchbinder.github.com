@@ -15,6 +15,8 @@ regarding lens modification on the C-mount Computar 12.5mm f/1.3 lens. I am
 going to share my experience modifying this lens, in the hope that it will
 prevent other people from having the same issues which I have encountered.
 
+<!-- more -->
+
 As a quick disclaimer, you really should not blame me if you break your lens,
 or if it eats your children or animals. This either will or will not work for
 you. You have been warned.
@@ -49,4 +51,3 @@ If infinity focus is not attainable by step 5, repeat steps 2-5 until it is.
 If you end up breaking or cracking the rear C-mount, you can permanently attach the lens to your C-mount to M4/3 adapter using some solder or hot-glue.
 
 Good luck!
-

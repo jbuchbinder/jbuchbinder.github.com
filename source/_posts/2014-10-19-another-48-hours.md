@@ -19,6 +19,8 @@ This is pretty far out of my wheelhouse, as I haven't made a practice of
 making horror films, but my team and I are excited, and I'm going to keep
 track of both our successes and our missteps here.
 
+<!-- more -->
+
 ## Day One: Preproduction, Kickoff, and Writing
 
 The one crazy moment I ended up having before everything got started was
@@ -224,4 +226,3 @@ I'd like to thank:
 
 [The Carving](http://www.imdb.com/title/tt4131910/) is premiering on
 [October 29th in Providence at 9:00 p.m.](http://horrorpvd-b.eventbrite.com/).
-

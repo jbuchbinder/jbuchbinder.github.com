@@ -7,11 +7,14 @@ description: The contradiction inherent in artistic self-assessment
 cover: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Wheel_of_Konark%2C_Orissa%2C_India.JPG/800px-Wheel_of_Konark%2C_Orissa%2C_India.JPG
 categories:
  - Cinematography
+ - Film
  - Film Theory
  - Photography
 ---
 
 I've been trying to make sense of two necessarily contrary positions in regard to skill, art, and aesthetics. This is something of which I've been trying to make sense for quite some time.
+
+<!-- more -->
 
 ## Aesthetics, Technique, and Intent
 
