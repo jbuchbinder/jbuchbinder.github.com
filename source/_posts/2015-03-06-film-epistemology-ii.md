@@ -3,7 +3,6 @@ layout: post
 title: "Film Epistemology II"
 date: 2015-03-06 09:12:05 -0500
 comments: true
-published: false
 description: Film as a self-contained universe, part II.
 cover: /images/inception.jpg
 cover-x: 537
@@ -61,9 +60,9 @@ The emotional and subjective knowledge baggage we bring into a film don't necess
 
 ## Reboot -- uncorrupting the epistemology?
 
-Over time, epistemology of a canon can become corrupted, self-contradictory, or suffer an overall loss in quality. One of the accepted methods for uncorrupting the epistemology of a larger work has been the *reboot*. There are a number of different successful methodologies which have been used for epistemic resets through reboots:
+Over time, epistemology of a canon can become corrupted, self-contradictory, or suffer an overall loss in quality. One of the accepted methods for uncorrupting the epistemology of a larger work has been the *reboot*, another is retroactive continuity, or "retconning", which has been used extensively in graphic novel and comic works as well as [television and film](https://matthewkirshenblatt.wordpress.com/2013/12/24/time-travel-and-retconning-revisionism-and-reconstructionism-in-doctor-who/). There are a number of different successful methodologies which have been used for epistemic resets through reboots:
 
  * **Complete epistemic do-over**. This involves a disregarding of the entire literal epistemology, perhaps keeping some of the more commonly regarded portions of the canon, most likely to appease the target demographic's past connection with prior incarnations. Examples of this would include the multiple Batman series reboots (Burton, Nolan), as well as the recent Spiderman reboots.
- * **Time Travel Adjustment**. (Terminator:Genysis, Star Trek)
+ * **Time Travel Adjustment**. This is when a series simply invents a [time-travel type retcon or reset](http://tvtropes.org/pmwiki/pmwiki.php/Main/CosmicRetcon) in order to change basic principals of the epistemology. This differs from complete epistemic reconfigurations because the original continuity and epistemology is respected and then explained away or altered through the use of a time-travel narrative device. Popular examples of this include Abrams' [Star Trek](http://www.imdb.com/title/tt0796366/) reboot, and the [Terminator: Genisys](http://www.imdb.com/title/tt1340138/) film. Zemeckis's [Back to the Future]() franchise worked almost entirely by turning this concept into a plot device -- a concept mirrored by the recent [12 Monkeys](http://www.imdb.com/title/tt3148266/) television series, but ironically not from its source material, the Gilliam [Twelve Monkeys](http://www.imdb.com/title/tt0114746/) film.
  * **Hand Wave**. Quite possibly the *laziest* form of epistemic reset. It generally involves simply ignoring certain aspects of previous epistemology in the canon -- usually prior films within a designated series. A general example of this would be the *Highlander* sequels.
  * **Revisionist Adjustment**. Adjusting portions of an already established epistemology for the purpose of correcting perceived mistakes or inadequacies. An example of this would be the introduction of Darth Vader as Luke Skywalker's father in [Empire Strikes Back](http://www.imdb.com/title/tt0080684/) after it was explained through explicit narrative exposition in [A New Hope](http://www.imdb.com/title/tt0076759/) that Vader had *murdered* Luke's father; it was [retconned](http://tvtropes.org/pmwiki/pmwiki.php/Main/Retcon) during [Return of the Jedi](http://www.imdb.com/title/tt0086190/) through a particularly clumsy dialogue-based hand wave. (This is only one of many, many examples of retroactive continuity in the Star Wars universe.)
