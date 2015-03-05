@@ -104,4 +104,7 @@ google_analytics_tracking_id: UA-49191923-1
 # Facebook Like
 facebook_like: true
 facebook_appid: 159544250739435
+facebook_profile_url: https://www.facebook.com/JeffreyBuchbinderFilm
 
+# Twitter name
+twitter_name: jbuchbinder

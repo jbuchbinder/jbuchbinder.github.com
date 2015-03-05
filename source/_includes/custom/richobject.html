@@ -1,15 +1,16 @@
-<meta property="og:url"         content="{{ site.url }}{{ page.url }}" />
-<meta property="og:type"        content="article" />
-<meta property="og:locale"      content="en_US" />
-<meta property="og:site_name"   content="/home/jeff/blog" />
+<meta property="og:url"          content="{{ site.url }}{{ page.url }}" />
+<meta property="og:type"         content="article" />
+<meta property="og:locale"       content="en_US" />
+<meta property="og:site_name"    content="{{ site.title }}" />
+<meta property="author:author"   content="{{ site.facebook_profile_url }}" />
 {% if page.title %}
-<meta property="og:title"       content="{{ page.title }}" />
-<meta property="og:description" content="{{ page.description }}" />
+<meta property="og:title"        content="{{ page.title }}" />
+<meta property="og:description"  content="{{ page.description }}" />
  {% if page.cover %}
    {% if page.cover contains 'http:' %}
-<meta property="og:image"       content="{{ page.cover }}" />
+<meta property="og:image"        content="{{ page.cover }}" />
    {% else %}
-<meta property="og:image"       content="{{ site.url }}{{ page.cover }}" />
+<meta property="og:image"        content="{{ site.url }}{{ page.cover }}" />
    {% endif %}
    {% if page.cover_width %}
 <meta property="og:image:width"  content="{{ page.cover_width }}" />
@@ -17,16 +18,22 @@
    {% endif %}
  {% endif %}
 {% else %}
-<meta property="og:title"       content="{{ site.title }}" />
-<meta property="og:description" content="{{ site.description }}" />
+<meta property="og:title"        content="{{ site.title }}" />
+<meta property="og:description"  content="{{ site.description }}" />
  {% if site.cover %}
    {% if site.cover contains 'http:' %}
-<meta property="og:image"       content="{{ site.cover }}" />
+<meta property="og:image"        content="{{ site.cover }}" />
    {% else %}
-<meta property="og:image"       content="{{ site.url }}{{ site.cover }}" />
+<meta property="og:image"        content="{{ site.url }}{{ site.cover }}" />
    {% endif %}
  {% endif %}
 {% endif %}
 {% if site.facebook_appid %}
-<meta property="fb:app_id"      content="{{ site.facebook_appid }}" />
+<meta property="fb:app_id"       content="{{ site.facebook_appid }}" />
 {% endif %}
+
+<!-- Twitter Open Graph tags -->
+
+<meta name="twitter:card"        content="summary" />
+<meta name="twitter:site"        content="@{{ site.twitter_name }}" />
+<meta name="twitter:creator"     content="@{{ site.twitter_name }}" />

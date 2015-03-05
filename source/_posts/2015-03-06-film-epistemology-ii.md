@@ -5,8 +5,8 @@ date: 2015-03-06 09:12:05 -0500
 comments: true
 description: Film as a self-contained universe, part II.
 cover: /images/inception.jpg
-cover-x: 537
-cover-y: 225
+cover_width: 537
+cover_height: 225
 categories: 
  - Cinematography
  - Film
