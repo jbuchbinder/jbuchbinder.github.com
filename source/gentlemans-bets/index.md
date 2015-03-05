@@ -43,7 +43,7 @@ coffee at the end of the bet period.
 		<td>J: No epidemic<br/>C: Epidemic</td>
 		<td>2</td>
 		<td>2014-12-31</td>
-		<td> - </td>
+		<td>Jeff</td>
 	</tr>
 
 	<tr>
@@ -57,4 +57,3 @@ coffee at the end of the bet period.
 	</tr>
 
 </table>
-
