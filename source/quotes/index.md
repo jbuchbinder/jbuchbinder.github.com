@@ -99,6 +99,10 @@ layout: page
  [10]: http://slashdot.org/~phantomfive
  [11]: http://slashdot.org/comments.pl?sid=1135267&cid=26933509
 
+## Knowledge
+
+"Epistemic paranoia is exhausting and paralyzing – the computational overhead is oppressive, never mind the existential anxiety. The ability to sustain delusional confidence seems to be necessary for daily functioning in this culture." - "[St. Rev](http://st-rev.livejournal.com/)" responding to [Scott Alexander](http://slatestarcodex.com/)'s [](http://slatestarcodex.com/2014/04/15/the-cowpox-of-doubt/)
+
 ## Money
 
 "Money is the enemy of the thoughtfully good."

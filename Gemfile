@@ -20,6 +20,7 @@ group :development do
   gem 'persistent_memoize'
   gem 'directory_watcher', '1.4.1'
   gem 'feedjira'
+  gem 'kramdown', '~> 1.6.0'
 end
 
 gem 'sinatra', '~> 1.4.2'
