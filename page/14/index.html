@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="If you’ve got an old junky XBox around, and would like to put something, well, *useful* on it, like XBMC, then I’ve got a great link for you which &hellip;">
+  <meta name="description" content="I had a bit of a revelation the other day. Natasha and I had gone to pick up food to bring to a small dinner party, although it wasn’t a very formal &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -120,6 +120,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
   <header>
     
+      <h1 class="entry-title"><a href="/2008/04/14/surviving/">Surviving</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-04-14T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2008/04/14/surviving/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I had a bit of a revelation the other day. Natasha and I had gone to pick up food to bring to a small dinner party, although it wasn’t a very formal occasion. She, on a lark, decided to grab one of those ridiculous celebrity tabloid-type magazines to read in the car on the way over.</p>
+
+<p>The cashier, who looked to be somewhere between her mid forties and fifties, reacted with much excitement, and started talking to Natasha about some of the celebrities mentioned on the cover. None of this would have been very interesting, until I hear her start defending one of them. She said that it “wasn’t fair” that they were treating the celebrity “like that”, and that “she’s too good for that”. As if she knew her.</p>
+
+<p>And something that has made a lot of sense to a lot of other people finally clicked in my head. A forty to fifty year old woman working a dead end cashiering job in the middle of nowhere doesn’t have anything to look forward to, and probably won’t ever attain any measure of fame and fortune. But by living vicariously through the glossy images in the impulse purchase area, she gets to feel as though she has some great connection. I used to think that welfare and Jerry Springer were our modern day bread and circus combination, but maybe that’s not it.</p>
+
+<p>When you feel that you’re part of something bigger than yourself, you have some sort of purpose, and that the Universe is a sane, fair and rational place. You ignore poverty, poor health, overwork and stress, and instead focus on a place where the Universe revolves around you. Not exactly a “<a href="http://www.damninteresting.com/?p=864">Total Perspective Vortex</a>“, if you catch my drift. Maybe it’s just as much a way of getting by as betting the house on a better afterlife, or blowing all of your spare change on lottery tickets. I can’t exactly complain about it, since I think the perception of happiness trumps the reality of misery almost every time.</p>
+
+<p>Pass the remote control, I’m tired of this station.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/2008/03/09/modding-that-old-xbox/">Modding That Old XBox</a></h1>
     
     
@@ -192,8 +238,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>1) Pull the start.jar, bin/jetty.sh script (which will be moved to the base of your distribution), lib and etc directories from your Jetty distribution, and put them in $DIST (your distribution directory)</p>
 
 <p>2) Change your (appname)-shell script to be like the following:
-<strong>JettyTest-shell</strong>
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<strong>JettyTest-shell</strong></p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -202,7 +248,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span class="line-number">7</span>
 <span class="line-number">8</span>
 <span class="line-number">9</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</pre></td><td class="code"><pre><code class=""><span class="line">#!/bin/sh
 </span><span class="line">GWT_HOME=/usr/lib/gwt
 </span><span class="line">ENTRY_POINT=net.cognitiveconsulting.gwt.JettyTest
 </span><span class="line">HOST_PAGE=JettyTest.html
@@ -210,11 +256,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </span><span class="line">CPGWT=$APPDIR/src
 </span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-user.jar
 </span><span class="line">CPGWT=$CPGWT:$GWT_HOME/gwt-dev-linux.jar
-</span><span class="line">java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 "$@" $ENTRY_POINT/$HOST_PAGE</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+</span><span class="line">java -cp $CPGWT com.google.gwt.dev.GWTShell -logLevel DEBUG -noserver -port 8080 "$@" $ENTRY_POINT/$HOST_PAGE</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>3) Change your (appname)-compile script to look like:<br />
-<strong>JettyTest-compile</strong><br />
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<strong>JettyTest-compile</strong></p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 <span class="line-number">4</span>
@@ -222,14 +268,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span class="line-number">6</span>
 <span class="line-number">7</span>
 <span class="line-number">8</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">#!/bin/sh
+</pre></td><td class="code"><pre><code class=""><span class="line">#!/bin/sh
 </span><span class="line">APPDIR=`dirname $0`;
 </span><span class="line">echo "Compiling GWT portion of application ... "
 </span><span class="line">java  -cp "$APPDIR/src:$APPDIR/bin:/usr/lib/gwt/gwt-user.jar:/usr/lib/gwt/gwt-dev-linux.jar" com.google.gwt.dev.GWTCompiler -out "$APPDIR/webapps" "$@" net.cognitiveconsulting.gwt.JettyTest;
 </span><span class="line">echo "Compiling native Java part of application ... "
 </span><span class="line">ant -f net.cognitiveconsulting.gwt.JettyTest.ant.xml
 </span><span class="line">echo "Moving pieces into Jetty library path ... "
-</span><span class="line">( cd bin ; jar cf ../lib/net.cognitiveconsulting.gwt.JettyTest.jar * )</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+</span><span class="line">( cd bin ; jar cf ../lib/net.cognitiveconsulting.gwt.JettyTest.jar * )</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>Remember, after this, your output directory is no longer www, it’s now “webapps”.</p>
 
@@ -582,59 +628,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </header>
 
 
-  <div class="entry-content"><p>Our first few stopmotion animation tests were successful. As per everything else we do, everything was done with Linux and freely available opensource software. In this case, <a href="http://gphoto.org">gphoto2</a>, imagemagick and mplayer (with ffmpeg thrown in for the .flv conversion for <a href="http://www.youtube.com/">Gootube</a>. </p>
+  <div class="entry-content"><p>Our first few stopmotion animation tests were successful. As per everything else we do, everything was done with Linux and freely available opensource software. In this case, <a href="http://gphoto.org">gphoto2</a>, imagemagick and mplayer (with ffmpeg thrown in for the .flv conversion for <a href="http://www.youtube.com/">Gootube</a>.</p>
 
 <p>We used my Canon 350D mounted on a tripod with <a href="http://www.flickr.com/photos/grendelkhan/">Adam’s</a> fixed focal length 135mm lens, with fixed lighting and a green background for eventual <a href="http://en.wikipedia.org/wiki/Chroma_key">chromakeying</a>. There was a quick hack involved getting gphoto2 to immediately spit out a photo, instead of trying to logically process it, which was solved with:</p>
 
 <p><code>gphoto2 --set-config "Capture size class"="Full Image" --capture-preview --filename "${OUTPUTFILE}" --force-overwrite</code></p>
 
-<p>(If you choose to try this, remember that whatever format you set your camera to will be the format that it comes out in, so don’t set it to RAW unless you really don’t value your time and want to have to convert it using dcraw.) </p>
+<p>(If you choose to try this, remember that whatever format you set your camera to will be the format that it comes out in, so don’t set it to RAW unless you really don’t value your time and want to have to convert it using dcraw.)</p>
 
 <p>The first video can be viewed at .</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2007/04/29/missing/">Missing</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-04-29T00:00:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2007/04/29/missing/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I told a lie tonight ; I told it twice. I was asked by a stranger if I was “okay”, and I mechanically replied that I was. Not that I wasn’t “okay” in the physical sense, just that something seemed to be … missing.</p>
-
-<p>It seems that the very moments when we are the most contemplative and the furthest away from understanding our place in the universe are the very moments when we find ourselves the most desperately alone. And yet, even surrounded by well-wishers, are we that far away from being alone? The disjointed nature of not feeling your place in the larger puzzle pushes us to not relate with those around us. It’s an odd sense of being ; not depression, not sadness, just a strange sense of loss and emptiness. Words cannot express.</p>
-
-<p>And yet I am one of the lucky ones. I’m not hungry, I have food in my stomach. I’m not indigent, I have a roof over my head. I’m not ignored, there are those who love and care for me. I know no suffering, I have led a fairly sheltered and protected life. I don’t *want* to be oppressed, miserable or unhappy, and I don’t think I’m any of the above.</p>
-
-<p>Writing always seemed like the deepest form of narcissism; shouting blindly into an uncaring void, hoping that some imaginary audience would either applaud or revile the deepest of translated thoughts. Who are we to be the heroes of our own lives, the narrators of our own volumes, the winner of our contests? If we are allowed to continuously revise those parts of us which we feel to be the least fit, will we find some kind of sick perfection? Perhaps if and when we become capable of viewing life without the forced blinders of individual perception, we can know something more of why and what we are missing.</p>
 </div>
   
   
@@ -669,6 +671,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/03/08/layers/">Layers, the Inner Film, and Reality</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/03/06/film-epistemology-ii/">Film Epistemology II</a>
       </li>
     
@@ -684,10 +690,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -696,8 +698,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>cinematography (30)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (7)</a></li>
-<li class='category'><a href='/categories/film-theory/'>film theory (4)</a></li>
+<li class='category'><a href='/categories/film/'>film (8)</a></li>
+<li class='category'><a href='/categories/film-theory/'>film theory (5)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
@@ -721,9 +723,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="http://www.facebook.com/ShootTheMoonFilms"><span class="socicon">b</span></a>
         <a href="http://www.twitter.com/STM_Films"><span class="socicon">a</span></a>
         <a href="http://www.youtube.com/ShootTheMoonVideos"><span class="socicon">r</span></a>
+        <a href="http://instagram.com/ShootTheMoonFilms"><span class="socicon">x</span></a>
+        <a href="http://github.com/shootthemoonfilms"><span class="socicon">Q</span></a>
+        <a href="https://www.linkedin.com/pub/shoot-the-moon-films/89/782/426"><span class="socicon">j</span></a>
+        <a href="https://plus.google.com/114413567868577530515"><span class="socicon">c</span></a>
     </li>
     <li><a href="http://www.facebook.com/JeffreyBuchbinderFilm">Facebook Fan Page</a></li>
     <li><a href="http://twitter.com/jbuchbinder">Twitter Feed</a></li>
+    <li><a href="http://instagram.com/jbuchbinderphotos">Instagram Feed</a></li>
   </ul>
 </section>
 
@@ -749,7 +756,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             user: 'jbuchbinder',
             count: 10,
             skip_forks: true,
-            skip_repos: [ "jbuchbinder.github.com" ],
+            skip_repos: [ "jbuchbinder.github.com", "songbook" ],
             target: '#gh_repos'
         });
     });

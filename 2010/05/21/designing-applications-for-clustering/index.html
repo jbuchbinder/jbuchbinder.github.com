@@ -145,7 +145,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="entry-content"><p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
 
 <ul>
-  <li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS … </li>
+  <li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS …</li>
   <li><strong>API abstraction</strong> – Don’t write this one off too quickly. A good API layer means that whenever you have to make these sweeping changes, you’re only playing with a few files of source code, as opposed to completely rewriting a good chunk of your codebase. Without the few layers of API which I had been using, I would not have been able to implement the database backed information store which I just completed.</li>
   <li><strong>Database backed file store</strong> – This was the part I had just finished up. Storing files locally and relying on filesystem-based replication from some of the new clustering filesystems may *seem* like a good idea, but it’s not. Database gives you a single authoritative source, and unless we’re looking at multi-gigabyte files, there should not be an appreciable toll. Besides, you indexed your tables properly, right … ?</li>
   <li><strong>Design for concurrency</strong> – That record locking may seem like a pain, but two people working on the same object can be catastrophic. Take the time to add a locking field if you have to.</li>
@@ -215,6 +215,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <h1>Related Posts</h1>
     <ul>
       
+        <li><a href="/2015/03/08/layers/">Layers, the Inner Film, and Reality</a> - Looking at film within film; stories within stories.</li>
+      
         <li><a href="/2015/03/06/film-epistemology-ii/">Film Epistemology II</a> - Film as a self-contained universe, part II.</li>
       
         <li><a href="/2015/03/02/narrative-exposition-in-film/">Narrative Exposition in Film</a> - An exploration of the way backstory is brought to light in film.</li>
@@ -232,8 +234,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li><a href="/2014/12/16/the-danger-of-the-shortcut-mentality/">The danger of the shortcut mentality</a> - Why you shouldn't always be looking for the easiest solution.</li>
       
         <li><a href="/2014/12/11/the-importance-of-failure/">The Importance of Failure</a> - Failures are as important, if not more important, than successes.</li>
-      
-        <li><a href="/2014/11/07/winning-a-48-hour-film-project/">Winning a 48 Hour Film Project</a> - Lessons learned from winning a 48 hour film project</li>
       
     </ul>
 </section>
@@ -258,6 +258,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/03/08/layers/">Layers, the Inner Film, and Reality</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/03/06/film-epistemology-ii/">Film Epistemology II</a>
       </li>
     
@@ -273,10 +277,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -285,8 +285,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>cinematography (30)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (7)</a></li>
-<li class='category'><a href='/categories/film-theory/'>film theory (4)</a></li>
+<li class='category'><a href='/categories/film/'>film (8)</a></li>
+<li class='category'><a href='/categories/film-theory/'>film theory (5)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
@@ -310,9 +310,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="http://www.facebook.com/ShootTheMoonFilms"><span class="socicon">b</span></a>
         <a href="http://www.twitter.com/STM_Films"><span class="socicon">a</span></a>
         <a href="http://www.youtube.com/ShootTheMoonVideos"><span class="socicon">r</span></a>
+        <a href="http://instagram.com/ShootTheMoonFilms"><span class="socicon">x</span></a>
+        <a href="http://github.com/shootthemoonfilms"><span class="socicon">Q</span></a>
+        <a href="https://www.linkedin.com/pub/shoot-the-moon-films/89/782/426"><span class="socicon">j</span></a>
+        <a href="https://plus.google.com/114413567868577530515"><span class="socicon">c</span></a>
     </li>
     <li><a href="http://www.facebook.com/JeffreyBuchbinderFilm">Facebook Fan Page</a></li>
     <li><a href="http://twitter.com/jbuchbinder">Twitter Feed</a></li>
+    <li><a href="http://instagram.com/jbuchbinderphotos">Instagram Feed</a></li>
   </ul>
 </section>
 
@@ -338,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             user: 'jbuchbinder',
             count: 10,
             skip_forks: true,
-            skip_repos: [ "jbuchbinder.github.com" ],
+            skip_repos: [ "jbuchbinder.github.com", "songbook" ],
             target: '#gh_repos'
         });
     });

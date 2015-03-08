@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I’ve decided to do a little feature on films that I liked for one reason or another, and to start out, I have chosen a scifi/comedy flick from the &hellip;">
+  <meta name="description" content="I have just wrapped up (no pun intended) work on an initial version of a CLI JasperReports wrapper, based heavily off the work of jasperCall. It’s &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/01/31/jasperwrapper/">JasperWrapper</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-31T00:00:00-05:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/01/31/jasperwrapper/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have just wrapped up (no pun intended) work on an initial version of a CLI <a href="http://jasperforge.org/projects/jasperreports">JasperReports</a> wrapper, based heavily off the work of <a href="http://jasperforge.org/plugins/project/project_home.php?group_id=97">jasperCall</a>. It’s also quite similar to the work being done on <a href="http://code.google.com/p/runjasperreports/">RunJasperReports</a>, although it was specifically designed to be integrated into <a href="http://freemedsoftware.org/">FreeMED’s</a> reporting engine, as it is put together as a fatjar. It currently supports PDF, XML, XLS and HTML output, and should theoretically support parameter passing, though I haven’t tried it out yet. It has a newer version of <a href="http://www.mysql.com/products/connector/">MySQL Connector/J</a> baked in as well, so it shouldn’t require any external libraries outside a standard JRE install to function properly.</p>
+
+<p>The code can be check out of anonymous Subversion from  if anyone is interested in building it. (It obviously should require Java 6 JDK to compile properly.) Hopefully I’ll get around to tagging and releasing versions of it for download shortly, if anyone shows interest in it.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -453,7 +493,7 @@ $sc = new SoapClient( file_get_contents($url), array(
   <p><em>The buildds[sic] have no internet access, so you can’t use installer packages (packages which need to download the undistributable archive from the official location) on buildds (e.g. as build dependencies).</em></p>
 </blockquote>
 
-<p>I swear, it’s a feature, not a bug. </p>
+<p>I swear, it’s a feature, not a bug.</p>
 </div>
   
   
@@ -555,7 +595,7 @@ $sc = new SoapClient( file_get_contents($url), array(
 
 <p><strong>Public Option, Single Payer, Medicare for All?</strong> The most contentious part of healthcare reform has been the concept of a government run health care plan. <a href="http://www.govtrack.us/congress/bill.xpd?bill=h111-676">HR 676</a> refers to the idea of “Medicare for All”, extending our Medicare program for seniors to cover all Americans, effectively creating a single payer system in America. As expected, people who <a href="http://www.huffingtonpost.com/byron-williams/republicans-undercut-thei_b_292760.html">didn’t give a crap about running up deficits to blow holes in the sand halfway across the globe</a> were outraged, *outraged* at the idea that we could possibly spend money on healthcare. So much, in fact, that they <a href="http://www.clipsandcomment.com/2009/02/27/idiots-on-camera-clevelands-tea-party-covered-by-blogger-interrupted/">paraded around like morons</a>, complaining about how large and awful government has gotten. (You know, after they didn’t say jack since the *last* Democrat was president.) A simple google search seems to show that the only places that are worried about Medicare deficits are <a href="http://www.google.com/search?q=medicare financial crisis">right-wing thinktanks like the “Heritage Society” and Pravda-like news organizations like “Fox News”</a>. Did I forget to mention that Kaiser and BCBS were up there as well? Trusting insurance companies to control costs in healthcare is like handing over a chicken farm to a drooling fox. No mention whatsoever that <a href="http://www.pnhp.org/facts/what_is_single_payer.php">estimates of savings with single payer are in the hundreds of *billions* of dollars</a>. And those estimates aren’t some cherry-picked thinktank garbage. It’s from the CBO. PNHP has a <a href="http://www.pnhp.org/facts/single_payer_system_cost.php?page=all">substantial list</a> of studies which all seem to conclude that we’re flushing money into private insurance companies. Not to mention that <a href="http://www.annals.org/cgi/reprint/148/7/566">59% of doctors favor it</a>.</p>
 
-<p><strong>Don’t let that fool you. The Insurance companies *love* this new bill.</strong> For all their hemming and hawing, the health insurance complex is almost giddy with this new bill, which would allow them to effectively [dump the lowest income, highest risk people][8] onto a publically subsidized [but privately run][9] healthcare system. All the profits, none of the risk. Sounds like Goldman Sachs 101 to me. In a related vein, one of the major reasons that the banking and financial industry has come out against HR 676 was that part of it </p>
+<p><strong>Don’t let that fool you. The Insurance companies *love* this new bill.</strong> For all their hemming and hawing, the health insurance complex is almost giddy with this new bill, which would allow them to effectively [dump the lowest income, highest risk people][8] onto a publically subsidized [but privately run][9] healthcare system. All the profits, none of the risk. Sounds like Goldman Sachs 101 to me. In a related vein, one of the major reasons that the banking and financial industry has come out against HR 676 was that part of it</p>
 </div>
   
   
@@ -612,57 +652,6 @@ $sc = new SoapClient( file_get_contents($url), array(
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2009/11/13/serial-and-parallel-interfaces-in-java/">Serial and Parallel Interfaces in Java</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-11-13T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2009/11/13/serial-and-parallel-interfaces-in-java/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>To sum up before I even begin: they *suck*.</p>
-
-<p>One of Java’s exceptionally weak points is serial and parallel interfaces, since it’s not within the normal bundled class library specification. In developing for Linux systems, I found that there are two basic routes you can take, being <a href="http://java.sun.com/products/javacomm/">Java Communications API</a> and <a href="http://users.frii.com/jarvi/rxtx/">RXTX</a>, with the latter being a reimplementation/extension of the former. To say that these are painful to work with doesn’t adequately state the gravity of the situation.</p>
-
-<p>For example, the <em>javax.comm.properties</em> file needed by both libraries has to exist in the classpath or buried deep in the JRE. This is an offshoot of the issue that they require JNI libraries to function, which debian handles nicely in the form of a librxtx-java package which does most of the heavy lifting with the exception of that nasty properties file. In dealing with a J2EE app, this becomes a pain if you want to stick with the “single file” WAR deployment. Eventually I baked an additional instruction into my build.xml file to relocate the properties file on execution.</p>
-
-<p>The documentation for rxtx, at least in terms of practical examples, is horrid. The wiki server isn’t up and running (at least when I went to look) and the only evidence that anyone had ever tried to use this library for the purposes I was looking to use it for were a few old javadocs and a handful of mailing list entries.</p>
-
-<p>This really should *not* be this painful. Virtually every system targeted by the JRE has I/O devices which should be covered by the scope of the basic class libraries. I should not have to practically reinvent the wheel simply to push data out to a peripheral.</p>
-
-<p>By the look of the documentation, this wouldn’t have been any easier doing it with Windows, and I believe I managed to kill its ability to be cross-platform in any meaningful sense when I decided to use RXTX. This is just as bad as those asshats who make completely crossplatform applications then tie them intrinsically to Windows in some completely brain-dead way for no apparent reason.</p>
-
-<p>Hey Sun, when you made this specification, could you have possibly thought to include support for devices which have been around since <a href="http://en.wikipedia.org/wiki/RS-232">1969</a> … </p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="8">&larr; Older</a>
@@ -690,6 +679,10 @@ $sc = new SoapClient( file_get_contents($url), array(
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/03/08/layers/">Layers, the Inner Film, and Reality</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/03/06/film-epistemology-ii/">Film Epistemology II</a>
       </li>
     
@@ -705,10 +698,6 @@ $sc = new SoapClient( file_get_contents($url), array(
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -717,8 +706,8 @@ $sc = new SoapClient( file_get_contents($url), array(
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>cinematography (30)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (7)</a></li>
-<li class='category'><a href='/categories/film-theory/'>film theory (4)</a></li>
+<li class='category'><a href='/categories/film/'>film (8)</a></li>
+<li class='category'><a href='/categories/film-theory/'>film theory (5)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
@@ -742,9 +731,14 @@ $sc = new SoapClient( file_get_contents($url), array(
         <a href="http://www.facebook.com/ShootTheMoonFilms"><span class="socicon">b</span></a>
         <a href="http://www.twitter.com/STM_Films"><span class="socicon">a</span></a>
         <a href="http://www.youtube.com/ShootTheMoonVideos"><span class="socicon">r</span></a>
+        <a href="http://instagram.com/ShootTheMoonFilms"><span class="socicon">x</span></a>
+        <a href="http://github.com/shootthemoonfilms"><span class="socicon">Q</span></a>
+        <a href="https://www.linkedin.com/pub/shoot-the-moon-films/89/782/426"><span class="socicon">j</span></a>
+        <a href="https://plus.google.com/114413567868577530515"><span class="socicon">c</span></a>
     </li>
     <li><a href="http://www.facebook.com/JeffreyBuchbinderFilm">Facebook Fan Page</a></li>
     <li><a href="http://twitter.com/jbuchbinder">Twitter Feed</a></li>
+    <li><a href="http://instagram.com/jbuchbinderphotos">Instagram Feed</a></li>
   </ul>
 </section>
 
@@ -770,7 +764,7 @@ $sc = new SoapClient( file_get_contents($url), array(
             user: 'jbuchbinder',
             count: 10,
             skip_forks: true,
-            skip_repos: [ "jbuchbinder.github.com" ],
+            skip_repos: [ "jbuchbinder.github.com", "songbook" ],
             target: '#gh_repos'
         });
     });

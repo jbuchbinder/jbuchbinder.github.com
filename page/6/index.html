@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="Today we left early in the morning, around 7am, to head out to the village of “Aldea Pujujil” in Solola, Guatemala to do a travelling clinic. We took &hellip;">
+  <meta name="description" content="More than half our our crew parted ways to do a mobile clinic today, whereas Irv, Shelley and I stayed behind with Dr Christian and a few med &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2010/09/24/xela-day-six-implementation/">Xela Day Six: Implementation</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-24T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2010/09/24/xela-day-six-implementation/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>More than half our our crew parted ways to do a mobile clinic today, whereas Irv, Shelley and I stayed behind with Dr Christian and a few med students to attempt to get the EMR functional in a way which would jive with the clinic’s workflow. I hit quite a few snags in some of the UI implementation, since I have been pretty hands-off in the development of the UI over the last few months. Even with that, we managed to get the registration and triage components up and operational, while at the same time stringing category 5 cable around the clinic.</p>
+
+<p>(Again, my job called me for another favor — this time a load balancer reconfiguration. I wonder if I get comp’d vacation time for this?)</p>
+
+<p>So, after a day of implementation and clinic beautification, the POP-WUJ Clinic looks much better than it did before we arrived. The staff doctors thanked us all profusely for our help in making the clinic a nicer place — however, there was one moment which Jonathan referred to as the “pay it forward” moment. A local carpenter’s wife had been seen in the clinic, and he noticed that one of the doors seemed ill-fitted in regards to the frame in which it sat. He came back down later that day and refitted the door by shaving it down properly as a sort of thanks for the clinic having attended to his wife.</p>
+
+<p>As an end of week “send off”, Dr Sullivan and her husband invited us over to their house for some wine and cheese. The whole thing would probably have been a little bit better if the sky hadn’t opened up with a monsoon on our way over, but thankfully most of us were wearing suitable rain gear. On the way back, we got lost trying to drop Shelley off at her host family’s house, so Irv and I ended up taking a cab back to Casa Mañen, more or less completely drenched.</p>
+
+<p>It has been a fantastic week, and we have accomplished a great deal — but I’m getting to the point where I really miss being home. One more day of picking up stuff for the wife at the local market, driving to Antigua for Saturday evening, and I’m on a series of planes back to New England. Maybe we didn’t save the world this week, but at least we did our best to make some improvement, somewhere.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -439,7 +485,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="entry-content"><p>I have been recently been trying to redesign <a href="http://freemedsoftware.org">FreeMED</a> (my opensource GPL’d EMR/PM system) in order to work in a “clustered” environment, so that I could support scenarios where multiple application servers were load-balanced to handle larger quantities of traffic. The latest piece of this has been to move filesystem-based storage into the database layer so that I don’t have to mess around with clustered file storage and replication. Some of the highlights of this have been:</p>
 
 <ul>
-  <li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS … </li>
+  <li><strong>Database-based session handling</strong> – At least when dealing with stateless applications like FreeMED, session information has a bad habit of being confined to the local filesystem. We ended up using PEAR’s HTTP_Session2 to support database-backed sessions. I can’t help but think this would be so much easier using JAAS …</li>
   <li><strong>API abstraction</strong> – Don’t write this one off too quickly. A good API layer means that whenever you have to make these sweeping changes, you’re only playing with a few files of source code, as opposed to completely rewriting a good chunk of your codebase. Without the few layers of API which I had been using, I would not have been able to implement the database backed information store which I just completed.</li>
   <li><strong>Database backed file store</strong> – This was the part I had just finished up. Storing files locally and relying on filesystem-based replication from some of the new clustering filesystems may *seem* like a good idea, but it’s not. Database gives you a single authoritative source, and unless we’re looking at multi-gigabyte files, there should not be an appreciable toll. Besides, you indexed your tables properly, right … ?</li>
   <li><strong>Design for concurrency</strong> – That record locking may seem like a pain, but two people working on the same object can be catastrophic. Take the time to add a locking field if you have to.</li>
@@ -489,7 +535,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Since then, <a href="http://go7007.imploder.org/">someone</a> was nice enough to post an updated version of the driver, but without DVD Xpress DX2 support. I put together a patch which ensures that the drivers now compile and use the new I2C and V4L2 APIs. I can’t guarantee that it works, only that it compiles the driver properly now. Theoretically it should work, but I can’t find my DVD Xpress DX2 to try out the hardware properly.</p>
 
 <p>Original driver : <br />
-Patch : </p>
+Patch :</p>
 </div>
   
   
@@ -540,46 +586,6 @@ Patch : </p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2010/01/31/jasperwrapper/">JasperWrapper</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-31T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2010/01/31/jasperwrapper/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have just wrapped up (no pun intended) work on an initial version of a CLI <a href="http://jasperforge.org/projects/jasperreports">JasperReports</a> wrapper, based heavily off the work of <a href="http://jasperforge.org/plugins/project/project_home.php?group_id=97">jasperCall</a>. It’s also quite similar to the work being done on <a href="http://code.google.com/p/runjasperreports/">RunJasperReports</a>, although it was specifically designed to be integrated into <a href="http://freemedsoftware.org/">FreeMED’s</a> reporting engine, as it is put together as a fatjar. It currently supports PDF, XML, XLS and HTML output, and should theoretically support parameter passing, though I haven’t tried it out yet. It has a newer version of <a href="http://www.mysql.com/products/connector/">MySQL Connector/J</a> baked in as well, so it shouldn’t require any external libraries outside a standard JRE install to function properly.</p>
-
-<p>The code can be check out of anonymous Subversion from  if anyone is interested in building it. (It obviously should require Java 6 JDK to compile properly.) Hopefully I’ll get around to tagging and releasing versions of it for download shortly, if anyone shows interest in it.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="7">&larr; Older</a>
@@ -607,6 +613,10 @@ Patch : </p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/03/08/layers/">Layers, the Inner Film, and Reality</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/03/06/film-epistemology-ii/">Film Epistemology II</a>
       </li>
     
@@ -622,10 +632,6 @@ Patch : </p>
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -634,8 +640,8 @@ Patch : </p>
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>cinematography (30)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (7)</a></li>
-<li class='category'><a href='/categories/film-theory/'>film theory (4)</a></li>
+<li class='category'><a href='/categories/film/'>film (8)</a></li>
+<li class='category'><a href='/categories/film-theory/'>film theory (5)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
@@ -659,9 +665,14 @@ Patch : </p>
         <a href="http://www.facebook.com/ShootTheMoonFilms"><span class="socicon">b</span></a>
         <a href="http://www.twitter.com/STM_Films"><span class="socicon">a</span></a>
         <a href="http://www.youtube.com/ShootTheMoonVideos"><span class="socicon">r</span></a>
+        <a href="http://instagram.com/ShootTheMoonFilms"><span class="socicon">x</span></a>
+        <a href="http://github.com/shootthemoonfilms"><span class="socicon">Q</span></a>
+        <a href="https://www.linkedin.com/pub/shoot-the-moon-films/89/782/426"><span class="socicon">j</span></a>
+        <a href="https://plus.google.com/114413567868577530515"><span class="socicon">c</span></a>
     </li>
     <li><a href="http://www.facebook.com/JeffreyBuchbinderFilm">Facebook Fan Page</a></li>
     <li><a href="http://twitter.com/jbuchbinder">Twitter Feed</a></li>
+    <li><a href="http://instagram.com/jbuchbinderphotos">Instagram Feed</a></li>
   </ul>
 </section>
 
@@ -687,7 +698,7 @@ Patch : </p>
             user: 'jbuchbinder',
             count: 10,
             skip_forks: true,
-            skip_repos: [ "jbuchbinder.github.com" ],
+            skip_repos: [ "jbuchbinder.github.com", "songbook" ],
             target: '#gh_repos'
         });
     });

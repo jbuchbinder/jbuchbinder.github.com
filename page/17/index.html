@@ -9,7 +9,7 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="I have created a wordpress “diff” which can be applied to easily upgrade WordPress 2.0.1 to WordPress 2.0.3 instead of going through the long and &hellip;">
+  <meta name="description" content="To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the rc_firewall nvram variable (non-volatile ram &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -114,6 +114,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2006/07/31/wrt54g-multiple-external-ip-trick/">WRT54G Multiple External IP Trick</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2006-07-31T00:00:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2006/07/31/wrt54g-multiple-external-ip-trick/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>To assign multiple external IP addresses to a WRT54G/S, you have to push a multiline variable into the <code>rc_firewall</code> nvram variable (non-volatile ram):</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"> nvram set rc_firewall="
+</span><span class="line"> iptables -t nat -I PREROUTING -d x.y.z.1 -j DNAT --to-destination 192.168.1.x
+</span><span class="line"> iptables -t nat -I PREROUTING -d x.y.z.2 -j DNAT --to-destination 192.168.1.x
+</span><span class="line"> "
+</span><span class="line"> nvram commit</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>This will protect the changes against being lost when the router is reset.</p>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -225,11 +277,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="entry-content"><p>After more than six months of dealing with the Synaptics touchpad driver interpreting my hand brushing against the pad as a “click”, I <a href="http://ubuntu.wordpress.com/2006/03/24/disable-synaptics-touchpad/">found a small change</a> to xorg.conf which will take away the sting of using a touchpad with <a href="http://www.ubuntu.com">Ubuntu</a>/<a href="http://www.kubuntu.org/">Kubuntu</a>.</p>
 
-<p>Simply add the following lines in <strong>/etc/X11/xorg.conf</strong> in the InputDevice clause for the touchpad, and restart X:
-&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<p>Simply add the following lines in <strong>/etc/X11/xorg.conf</strong> in the InputDevice clause for the touchpad, and restart X:</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class=""><span class="line">    Option          "SHMConfig"             "on"
-</span><span class="line">    Option          "MaxTapTime"            "0"</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
+</pre></td><td class="code"><pre><code class=""><span class="line">    Option          "SHMConfig"             "on"
+</span><span class="line">    Option          "MaxTapTime"            "0"</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>Just had to share that, it took me so long to get up the resolve to actually <em>look</em> for a solution …</p>
 </div>
@@ -310,7 +362,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="entry-content"><p>I was playing around with using ScanSoft Realspeak for Linux, and finally found the “magic sequence” to generate the appropriate GSM prompts for Asterisk.</p>
 
-<p>Requires: </p>
+<p>Requires:</p>
 
 <ul>
   <li>Standard installation of Scansoft Realspeak 4 with American English Jill voice</li>
@@ -501,45 +553,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2006/01/01/new-year-caching-etc/">New Year, Caching, Etc</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-01T00:00:00-05:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2006/01/01/new-year-caching-etc/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Happy New Year, as well as happy <a href="http://ancienthistory.about.com/od/winterholidays/p/WinterHolidays.htm">whatever solstice holiday you choose to celebrate</a>! Once again, I’m <a href="http://www.subgenius.com/">slacking</a> in the <a href="http://mama.indstate.edu/users/bones/WhyIHateWebLogs.html">“blogging”</a> department. I recently made a few changes to the server, the most important of which will speed this up by fixing the <a href="http://turck-mmcache.sourceforge.net/">memory map cache</a> used to render pages, thereby removing the molasses from the page loading process. There are also a few new tracks under <strong>Artists and Projects</strong> on the site, so please feel free to take a listen. More development news coming soon, as I’m planning on a new <a href="http://freemedsoftware.org/">FreeMED</a> release (0.8.2), as soon as we’re done with <a href="http://www.shitthrowingmonkeys.com/">QA testing</a>.</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="18">&larr; Older</a>
@@ -567,6 +580,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/03/08/layers/">Layers, the Inner Film, and Reality</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/03/06/film-epistemology-ii/">Film Epistemology II</a>
       </li>
     
@@ -582,10 +599,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="/2015/02/01/whom-do-you-root-for/">Whom Do You Root For?</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/01/28/experts-vs-relativism/">Experts vs Relativism</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -594,8 +607,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>cinematography (30)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (7)</a></li>
-<li class='category'><a href='/categories/film-theory/'>film theory (4)</a></li>
+<li class='category'><a href='/categories/film/'>film (8)</a></li>
+<li class='category'><a href='/categories/film-theory/'>film theory (5)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
@@ -619,9 +632,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <a href="http://www.facebook.com/ShootTheMoonFilms"><span class="socicon">b</span></a>
         <a href="http://www.twitter.com/STM_Films"><span class="socicon">a</span></a>
         <a href="http://www.youtube.com/ShootTheMoonVideos"><span class="socicon">r</span></a>
+        <a href="http://instagram.com/ShootTheMoonFilms"><span class="socicon">x</span></a>
+        <a href="http://github.com/shootthemoonfilms"><span class="socicon">Q</span></a>
+        <a href="https://www.linkedin.com/pub/shoot-the-moon-films/89/782/426"><span class="socicon">j</span></a>
+        <a href="https://plus.google.com/114413567868577530515"><span class="socicon">c</span></a>
     </li>
     <li><a href="http://www.facebook.com/JeffreyBuchbinderFilm">Facebook Fan Page</a></li>
     <li><a href="http://twitter.com/jbuchbinder">Twitter Feed</a></li>
+    <li><a href="http://instagram.com/jbuchbinderphotos">Instagram Feed</a></li>
   </ul>
 </section>
 
@@ -647,7 +665,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             user: 'jbuchbinder',
             count: 10,
             skip_forks: true,
-            skip_repos: [ "jbuchbinder.github.com" ],
+            skip_repos: [ "jbuchbinder.github.com", "songbook" ],
             target: '#gh_repos'
         });
     });
