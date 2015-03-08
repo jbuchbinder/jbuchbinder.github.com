@@ -65,7 +65,7 @@ default_asides: [custom/asides/social.html, asides/recent_posts.html, custom/asi
 # ----------------------- #
 
 # list of repos to hide from the sidebar. ex: [blog, username.github.io, old_embarrassing_project]
-github_skip_repos: [jbuchbinder.github.com]
+github_skip_repos: [jbuchbinder.github.com,songbook]
 
 # Github repositories
 github_user: jbuchbinder
