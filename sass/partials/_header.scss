@@ -1,22 +1,10 @@
-body > header {
-  //background: $header-bg;
-  background-image: url(/images/CanonLensLineup.jpg) !important;
-  background-position: -100px -400px !important;
-  background: $header-bg;
-  h1 {
-    display: inline-block;
-    margin: 0;
-    a, a:visited, a:hover {
-      color: $title_color;
-      text-decoration: none;
+header[role=banner] .navbar {
+    /* fix email / rss icon for bootstrap navbar */
+    li img {
+        height: 18px;
     }
-    text-shadow: 2px 2px #000000;
-  }
-  h2 {
-    margin: .2em 0 0;
-    @extend .sans;
-    font-size: 1em;
-    color: $subtitle-color;
-    font-weight: normal;
-  }
+    a.subscribe-rss, a.subscribe-email {
+        padding-top: 0.9em;
+        padding-bottom: 0.9em;
+    }
 }
