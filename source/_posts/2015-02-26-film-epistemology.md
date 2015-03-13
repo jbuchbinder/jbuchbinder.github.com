@@ -94,3 +94,5 @@ The Big Lie is that it's all fake; documentaries and flights of fantasy alike.
 We enter into an unspoken and unwritten agreement with the filmmakers to suspend our ability to differentiate the 24 still frames flying past our eyes as individual discrete images, and instead peek into another world with its own laws, knowledge, and history. We all know, somewhere inside us, that it's all a Big Lie, but we agree to leave our sense of reality, suspend our disbelief, and share in a small piece of something unlike what we're used to seeing.
 
 The problems with ignoring the separate epistemology of a film is that it can limit our ability to enjoy that film by removing lingering doubts or questions, or possibly coming a little too close or far away from what we understand to be reasonable deviations from our own local experiences.
+
+*This is continued in a [subsequent article on epistemology in film](/2015/03/06/film-epistemology-ii/).*
