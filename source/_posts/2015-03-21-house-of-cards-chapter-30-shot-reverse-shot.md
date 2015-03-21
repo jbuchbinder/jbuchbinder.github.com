@@ -39,15 +39,15 @@ As Dunbar commits to the conversation, she moves into the center of the frame, a
 
 ![003](/images/2015/03/hoc-304-003.jpg)  
 
-The conversation continues, and we finally get a closer shot of Stamper; but he's still mostly obscured by the shadows, finally occupying a larger part of the frame as his position becomes more important to Dunbar.
+The conversation continues, and we finally get a closer shot of Stamper; but he's still mostly obscured by the shadows, finally occupying a larger part of the frame as his position becomes more important to Dunbar. He's talking about how he's been "out of the game" (on the *sidelines*) as he's physically away from the center of the frame.
 
 ![004](/images/2015/03/hoc-304-004.jpg)  
 
-The perspective is flipped, mid conversation, to show Stamper's point of view. We can see that Dunbar is isolated, but of prime importance, occupying the center portion of the frame with all lines leading directly to her. It's also fairly impersonal, as we can't see her face.
+The perspective is flipped, mid conversation, to show Stamper's point of view. We can see that Dunbar is isolated, but of prime importance, occupying the center portion of the frame with all lines leading directly to her. It's also fairly impersonal, as we can't see her face. 
 
 ![005](/images/2015/03/hoc-304-005.jpg)  
 
-The monster (Stamper) approaches. His features are still mostly obscured, which is part of some of the horror/thriller idiom. We know that this is *not* a good person, even if we haven't seen the previous seasons of *House of Cards*. He's quite *literally* blocking the light and bringing darkness wherever he goes.
+The monster (Stamper) approaches. His features are still mostly obscured, which is part of some of the horror/thriller idiom. (I actually left out a floor level shot of his feet, which also speaks to that.) We know that this is *not* a good person, even if we haven't seen the previous seasons of *House of Cards*. He's quite *literally* blocking the light and bringing darkness wherever he goes. As he draws closer, the reverse shot of her draws in.
 
 ![006](/images/2015/03/hoc-304-006.jpg) 
 
@@ -59,7 +59,7 @@ As he comes close to Dunbar, it should be noted that we never see their faces in
 
 ![008](/images/2015/03/hoc-304-008.jpg) 
 
-When she finally emerges from his shadow, we see that the are represented as equals in frame size and position.
+When she finally emerges from his shadow, we see that the are represented as equals in frame size and position. He passes just as he mentions that they both "rub shoulders" with different people ; her with the leadership, he with those who work for them.
 
 ![009](/images/2015/03/hoc-304-009.jpg) 
 
