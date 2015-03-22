@@ -3,7 +3,7 @@ layout: post
 title: "House of Cards Chapter 30: Shot / Reverse Shot"
 date: 2015-03-21 18:14:23 -0400
 comments: true
-description: Exploring shot / reverse shot in House of Card's Chapter 30
+description: Exploring shot / reverse shot in House of Cards' Chapter 30
 cover: /images/2015/03/hoc-304-002.jpg
 cover_width: 640
 cover_height: 326
