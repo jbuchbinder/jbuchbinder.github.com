@@ -3,7 +3,7 @@ layout: post
 title: "The Adventures of Baron Munchausen: Gilliam and the Art of the Reveal"
 date: 2015-03-22 15:50:57 -0400
 comments: true
-description: Examining Gilliam's reveal shots in "The Adventures of Baron Munchausen"
+description: Examining Gilliam's reveal shots in The Adventures of Baron Munchausen
 cover: /images/2015/03/munchausen-reveal-B-07.jpg
 cover_width: 576
 cover_height: 312
