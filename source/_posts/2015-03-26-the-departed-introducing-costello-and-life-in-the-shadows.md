@@ -107,4 +107,8 @@ But, for the final act of his introduction -- comprising the most salient point 
 
 The gravity of this reveal is absolutely intrinsic to the plot of the film, as Costello is more or less *both*, being an FBI informant (revealed much later in the film), as well as being one of the most violent and wanted criminals in Boston. He doesn't see a difference because, for him, there is none, as his true self is revealed.
 
+It is also key in the dual plot threads of criminal pretending to be cop (Sullivan) and cop pretending to be criminal (Costigan) which make up the majority of the film.
+
+One important take-away is that what you don't see and don't know can be as important, if not more important, than what you do see and do know. Withholding Costello from us fully for about *five minutes* means that his introduction is going to mean much more to us, both in *how* it is done (emerging from the shadows) and *when* it is done (the context of his speech).
+
 *(All images are presented under [fair use guidelines](http://libguides.mit.edu/usingimages) -- all frame grabs are property of **Warner Brothers, Plan B Entertainment, Initial Entertainment Group (IEG)**, or any other entities who hold copyright on this film. They are presented for exclusively educational purposes.)*
