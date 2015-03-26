@@ -103,6 +103,8 @@ layout: page
 
 "Epistemic paranoia is exhausting and paralyzing – the computational overhead is oppressive, never mind the existential anxiety. The ability to sustain delusional confidence seems to be necessary for daily functioning in this culture." - "[St. Rev](http://st-rev.livejournal.com/)" responding to [Scott Alexander](http://slatestarcodex.com/)'s [The Cowpox of Doubt](http://slatestarcodex.com/2014/04/15/the-cowpox-of-doubt/)
 
+"And the more informed you are, the less arrogant and aggressive you are." - Nelson Mandela, from an [interview with Oprah Winfrey](http://www.oprah.com/world/Oprah-Interviews-Nelson-Mandela/1)
+
 ## Money
 
 "Money is the enemy of the thoughtfully good."
