@@ -61,7 +61,7 @@ Even the medium shot of Costello doesn't offer us much in terms of detail. He's 
 
 ![departed-0012.jpg](/images/2015/03/departed-0012.jpg)  
 
-When Sullivan's younger self is revealed, sitting down, Costello and Sullivan are represented at thirds, and we can see that there's light everwhere ...
+When Sullivan's younger self is revealed, sitting down, Costello and Sullivan are represented at thirds, and we can see that there's light everywhere ...
 
 ![departed-0016.jpg](/images/2015/03/departed-0016.jpg)  
 
