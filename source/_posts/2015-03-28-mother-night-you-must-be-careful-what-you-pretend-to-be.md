@@ -3,7 +3,7 @@ layout: post
 title: "Mother Night: You Must Be Careful What You Pretend To Be"
 date: 2015-03-28 21:54:28 -0400
 comments: true
-description: Examining the intersections of perception and reality in "Mother Night"
+description: Examining the intersections of perception and reality in Mother Night
 cover: /images/2015/03/mother-night-0024.jpg
 cover_width: 640
 cover_height: 352
