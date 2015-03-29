@@ -9,8 +9,9 @@
   <meta name="author" content="jeff">
 
   
-  <meta name="description" content="One of the greatest nightmares associated with digital cinematography and
-photography is that of the specter of data loss. The very notion that your &hellip;">
+  <meta name="description" content="I recently had to build a modern version of the Ganglia
+monitoring system for an OpenBSD 4.3 firewall, which
+hadn’t been upgraded to a modern version &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -115,6 +116,87 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/2013/10/29/building-ganglia-for-openbsd-4-dot-3/">Building Ganglia for OpenBSD 4.3</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-29T12:32:00-04:00" pubdate data-updated="true"></time>
+        
+         | <a href="/2013/10/29/building-ganglia-for-openbsd-4-dot-3/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I recently had to build a modern version of the <a href="http://ganglia.info">Ganglia</a>
+monitoring system for an <a href="http://www.openbsd.org/">OpenBSD</a> 4.3 firewall, which
+hadn’t been upgraded to a modern version of OpenBSD in quite some time. I
+documented the process, which I’m sharing here.</p>
+
+<div><script src="https://gist.github.com/7217488.js"></script>
+<noscript><pre><code># Build and install gmond on OpenBSD 4.3
+
+# Install prerequisites
+pkg add automake-1.9.6p2 autoconf-2.61p1 libtool libconfuse unzip wget
+
+# Compile and install apr-1.4
+wget -c http://mirrors.gigenet.com/apache/apr/apr-1.4.8.tar.gz
+tar zxvf apr-1.4.8.tar.gz
+cd apr-1.4.8
+./configure &amp;&amp; make &amp;&amp; make install
+cd ..
+
+# Download and install monitor-core
+wget -c https://github.com/ganglia/monitor-core/archive/master.zip -O master.zip --no-check-certificate
+unzip master.zip
+cd monitor-core-master
+export AUTOMAKE_VERSION=1.9
+export AUTOCONF_VERSION=2.61
+./bootstrap
+./configure --sysconfdir=/etc --without-gmetad --with-libapr=/usr/local/apr/bin/apr-1-config --with-libconfuse=/usr/local 
+
+# Need to patch some minor stuff...
+# libmetrics/openbsd/metrics.c:
+#   line 446:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 466:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, sizeof(struct kinfo_proc), &amp;cnt);
+#   should be changed to:
+#     kp = kvm_getprocs(kd, KERN_PROC_ALL, 0, &amp;cnt);
+#
+#   line 468 should be commented out.
+
+make all &amp;&amp; make install
+cd ..</code></pre></noscript></div>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1231,93 +1313,6 @@ to let shake stand in the way of otherwise great footage.</li>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/2013/05/03/gear-vs-skill/">Gear vs Skill</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-03T18:10:00-04:00" pubdate data-updated="true"></time>
-        
-         | <a href="/2013/05/03/gear-vs-skill/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I remember a conversation I had with my brother, a few years back. He was
-talking about the amount of photographic equipment which he had been dumping
-money into purchasing, in the hopes of improving the output from his camera.
-After months, if not years, of ordering and collecting equipment, he thought
-that <em>one more thing</em> would make some difference. He then had an epiphany,
-after viewing a photo of a sunset taken with a $12 disposable camera. The
-full comment was:</p>
-
-<blockquote><p>It&#8217;s even more impressive that such a sweet shot was taken with that cheapass Dakota. Every time I get the fool notion into my head that some new and expensive piece of equipment will make me a better photographer, I look at this picture and think, &#8220;ah, yes. Right.&#8221;</p></blockquote>
-
-<p>I’ve been thinking about this, as I acquire more cinematography gear. At
-which point does it become less about the gear, and more about the wetware?
-(Wetware, for those who are unaware, refers to your biological “meat
-equipment”.)</p>
-
-<p>I’m divided on this point. I do feel that there are certain limitations
-inherent in not possessing the proper tool for the job. To put a concrete
-example together: if you’re using a Canon EOS T2i, your image quality isn’t
-going to be the same as using a much higher quality camera and sensor
-(sticking to the DSLR for this point), but it’s theoretically possible to
-clean up footage in post-production to <em>approach</em> the type of output which
-you could achieve with a higher-grade sensor and optics. However, if you’re
-using a standard kit lens on that camera (which probably tops out at an f/3.5
-if you’re really, really lucky), you’re not going to be able to get the
-narrow depth-of-field which is associated with most “cinematic” shots. A
-<a href="http://www.usa.canon.com/cusa/consumer/products/cameras/ef_lens_lineup/ef_50mm_f_1_8_ii">Canon 50mm f/1.8 “plastic fantastic”</a> lens (on which I’ve seen far too many
-budding cinematographers rely exclusively) is an interesting start, but can’t
-completely replace a series of really wide open glass primes (sub-f/2.0).</p>
-
-<p>The flip side of the coin is the point which my brother had made; if your
-eye sucks, your footage sucks. A lot of the cinematographers (and just plain
-old camera operators) with which I’ve come in contact have bemoaned not
-owning a RED ONE, or even a higher grade DSLR camera body – and assuming
-that any decent footage I can pull has everything to do with the equipment
-I’m using, and nothing to do with my ability to use said equipment.</p>
-
-<p>Years ago, I remember a gig I had, as a bass player. At the time, I had
-brought a <a href="http://www.vintagewashburn.com/Bass/Mercurybass.html">Washburn MB-6</a> (a strange Mercury series instrument with
-fantastic action, scored on eBay for very little money), and had finished
-a really heart-felt set. Some jackass came up to me and complimented the
-instrument.  I figured, from that point on, I would just assume that if
-someone commented on my instrument, they were implicitly insulting me, by
-implying that the instrument provided the quality which they admired, and
-that anyone would have been able to do the same, given the chance to play
-that instrument.</p>
-
-<p>To sum up, you need a good eye – more than anything else – but it’s also
-important to have the right equipment for the right purpose. Oh, and don’t
-forget to stabilize your shots …</p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="5">&larr; Older</a>
@@ -1345,6 +1340,10 @@ forget to stabilize your shots …</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/2015/03/28/mother-night-you-must-be-careful-what-you-pretend-to-be/">Mother Night: You Must Be Careful What You Pretend to Be</a>
+      </li>
+    
+      <li class="post">
         <a href="/2015/03/26/the-departed-introducing-costello-and-life-in-the-shadows/">The Departed: Introducing Costello and Life in the Shadows</a>
       </li>
     
@@ -1360,10 +1359,6 @@ forget to stabilize your shots …</p>
         <a href="/2015/03/22/the-adventures-of-baron-munchausen-gilliam-and-the-art-of-the-reveal/">The Adventures of Baron Munchausen: Gilliam and the Art of the Reveal</a>
       </li>
     
-      <li class="post">
-        <a href="/2015/03/21/house-of-cards-chapter-30-shot-reverse-shot/">House of Cards Chapter 30: Shot / Reverse Shot</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -1372,8 +1367,8 @@ forget to stabilize your shots …</p>
     <li class='category'><a href='/categories/android-development/'>android development (1)</a></li>
 <li class='category'><a href='/categories/cinematography/'>cinematography (35)</a></li>
 <li class='category'><a href='/categories/development/'>development (34)</a></li>
-<li class='category'><a href='/categories/film/'>film (13)</a></li>
-<li class='category'><a href='/categories/film-theory/'>film theory (10)</a></li>
+<li class='category'><a href='/categories/film/'>film (14)</a></li>
+<li class='category'><a href='/categories/film-theory/'>film theory (11)</a></li>
 <li class='category'><a href='/categories/freemed/'>freemed (24)</a></li>
 <li class='category'><a href='/categories/hacks/'>hacks (30)</a></li>
 <li class='category'><a href='/categories/maemo-n800-/'>maemo (n800) (1)</a></li>
