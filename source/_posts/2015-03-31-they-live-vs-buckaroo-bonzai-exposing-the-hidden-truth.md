@@ -12,7 +12,7 @@ categories:
 - Film Theory
 ---
 
-If you were asked what John Carpenter's [They Live](http://www.imdb.com/title/tt0096256/) had in common with the campy 1980s sci-fi pastiche [The Adventures of Buckaroo Bonzai Across the Eight Dimension](http://www.imdb.com/title/tt0086856/), the first answer to come to mind might have something to do with aliens; I'm going to examine the way that a hidden truth, or additional story/film [layer](/2015/03/08/layers/) is exposed to some characters within the epistemic system of a film.
+If you were asked what John Carpenter's [They Live](http://www.imdb.com/title/tt0096256/) had in common with the campy 1980s sci-fi pastiche [The Adventures of Buckaroo Bonzai Across the Eight Dimension](http://www.imdb.com/title/tt0086856/), the first answer to come to mind might have something to do with aliens; I'm going to examine the way that a hidden truth, or additional story/film [layer](/2015/03/08/layers/) is exposed to some characters within the [epistemic system of a film](/2015/02/26/film-epistemology/).
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ If you were asked what John Carpenter's [They Live](http://www.imdb.com/title/tt
 
 > Quick! Check the angular vector of the moon! - Hans Zarkov, Flash Gordon
 
-This film is a delightfully polarizing work; people either seem to recognize it as a clever pastiche of alien-themed sci-fi and action/adventure films, or they outright *hate* it. One of the things that really sold me on *Bonzai* is how the Renaissance Man protagonist, played by Peter Weller, never seems to be in on the joke. He plays the role with a level of seriousness which rivals the way Topol played Hans Zarkov in the cult-classic-level-of-awful 1980s [Flash Gordon](http://www.imdb.com/title/tt0080745/).
+This film is a delightfully polarizing work; people either seem to recognize it as a clever pastiche of alien-themed sci-fi and action/adventure films, or they just *hate* it. One of the things that really sold me on *Bonzai* is how the Renaissance Man protagonist, played by Peter Weller, never seems to be in on the joke. He plays the role with a level of seriousness which rivals the way Topol played Hans Zarkov in the cult-classic-level-of-awful 1980s [Flash Gordon](http://www.imdb.com/title/tt0080745/).
 
 ![0001](/images/2015/03/bonzai-0001.jpg)  
 
@@ -56,7 +56,7 @@ Rawhide tells everyone not to touch Bonzai, as he writhes around on the floor.
 
 ![0009](/images/2015/03/bonzai-0009.jpg)  
 
-In what is the most puzzling part of this entire sequence, Bonzai begins to write on his hand ...
+In what is the most puzzling part of this entire sequence (at the time -- we find out later what he's doing), Bonzai begins to write on his hand ...
 
 ![0010](/images/2015/03/bonzai-0010.jpg)  
 
@@ -64,7 +64,7 @@ In what is the most puzzling part of this entire sequence, Bonzai begins to writ
 
 ![0011](/images/2015/03/bonzai-0011.jpg)  
 
-... and pulls the Zarkov hero pose to proclaim his hero lines. Notice that Weller is comically shorter than both Rawhide and New Jersey. The camera pulls in towards Weller, pushing everyone else out of the frame. They're obviously concerned about their leader, but Goldblum's New Jersey shows a level of confusion on his face that indicates that it's the historical aspects of Bonzai's character which are causing his allegiance -- he doesn't see what Bonzai sees. 
+... and pulls the Zarkov hero pose to proclaim his hero lines. Notice that Weller, our hero, is comically shorter than both Rawhide and New Jersey. The camera pulls in towards Weller, pushing everyone else out of the frame. They're obviously concerned about their leader, but Goldblum's New Jersey shows a level of confusion on his face that indicates that it's the historical aspects of Bonzai's character which are causing his allegiance -- he doesn't see what Bonzai sees. 
 
 ![0012](/images/2015/03/bonzai-0012.jpg)  
 
@@ -186,6 +186,6 @@ They differ significantly in their execution. *Bonzai* tends towards bombastic d
 
 *They Live* exploits both production and costume design to visually separate its protagonist from the unknowing masses, as well as a narrow depth of field. This far more subtle separation seems to play better for me for tension -- but *Bonzai* is playing for laughs, so it may not be a fair comparison.
 
-In both films, the inner mechanism of societal separation is played out through externally visible means because *we can't look inside of a character*.
+In both films, the inner mechanism of societal separation is played out through externally visible means because *we can't look inside of a character* -- but they both construct point of view shots to try to help us see through their protagonists' eyes.
 
 *(All images are presented under [fair use guidelines](http://libguides.mit.edu/usingimages) -- all frame grabs are property of **Sherwood Productions, Alive Films, Larry Franco Productions**, or any other entities who hold copyright on this film. They are presented for exclusively educational purposes.)*
