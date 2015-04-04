@@ -251,6 +251,8 @@ layout: page
 
 "If your belief system is not founded in an objective reality, you should not be making decisions that affect other people." - Neil deGrasse Tyson
 
+"I find it truly stunning how many people can shrug off stuff like this, preferring instead a tiny, cramped cosmos just 6,000 years old, scheduled to end any-time-now in a scripted stage show of unfathomable violence and cruelty. An ancient and immense and ongoing cosmos is so vastly more dramatic and worthy of a majestic Creator. Our brains, capable of exploring His universe, picking up His tools and doing His work, seem destined for much greater tasks than cowering in a small groups of the elect, praying that some of our neighbors will go to perdition..." - David Brin, [commenting on the discovery of Homo floresiensis](http://www.mail-archive.com/brin-l@mccmedia.com/msg38195.html)
+
 ## Society
 
 "I lay this all at the feet of MY generation. The so-called ‘baby boom’, free love, anti establishment generation…who became the most narcissistic, consumerist, pro establishment generation in the history of our country. They grew fat and happy on the hard work of their parents and grandparents…who fought the wars, got their heads broken to create worker rights and sacrificed themselves to lay the groundwork for the creation of the middle class. This generation disgusts me. They truly do. And they DESERVE everything that happens to them. They failed their children…they failed the country." – "[liberalANDproud][24]" on [crooksandliars.com][39], talking about the failure of the United States to provide healthcare for its citizens
