@@ -309,6 +309,8 @@ layout: page
 
 "There are known knowns; there are things that we know that we know. We also know there are known unknowns; that is to say we know there are some things we do not know. But there are also unknown unknowns, the ones we don't know we don't know. And then there are unknown knowns. That is to say, things that you think you know; that it turns out you did not." - Donald Rumsfeld, attempting to justify the false intelligence that was instrumental in instigating a second war in Iraq
 
+"Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning." - Rick Cook, in The Wizardry Compiled (1989)
+
 ## War / Military / Terrorism
 
 "No bastard ever won a war by dying for his country. He won it by making the other poor dumb bastard die for his country." – General George S. Patton
