@@ -18,7 +18,7 @@ How do you isolate a character in a crowd of people? How do you film an entire t
 
 <!-- more -->
 
-There are a plethora of well composed and interesting shot sequences in *Unbreakable*, but the one which sticks out in my mind is the train sequence.
+There is a plethora of well composed and interesting shot sequences in *Unbreakable*, but the one which sticks out in my mind is the train sequence.
 
 We first meet David Dunn (Willis) returning from a job interview in New York City. We know virtually nothing about him at this point, and the footage of the film we've seen before this point has been expositional footage of Elijah Price's birth. The beginning of this sequence takes place while credits are still being displayed on the screen, and we start out with an isolated shot of Dunn, blocked off from the rest of the car, and viewed from the front. The world outside is bright and garish, but the inside of the train car is drab, much like his clothes. Dunn is staring wistfully out the window, observing a life which he can see, but not have.
 
