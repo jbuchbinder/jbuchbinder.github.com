@@ -12,6 +12,8 @@ categories:
 - Film Theory
 ---
 
+> "Do you know what the scariest thing is? To not know your place in this world, to not know why you're here." - Elijah Price
+
 How do you isolate a character in a crowd of people? How do you film an entire train scene with only three actors? M. Night Shyamalan managed to pull this off in his second collaboration with Bruce Willis, the superhero / drama film *Unbreakable*. 
 
 *If you haven't watched the film yet, this is your warning that **THERE BE SPOILERS HERE**.*
