@@ -5,6 +5,8 @@ date: 2015-04-20 17:56:31 -0400
 comments: true
 description: Exploring character through layered epistemology in The Life and Death of Peter Sellers
 cover: /images/2015/04/sellers1-0032.jpg
+cover_width: 640
+cover_height: 368
 categories: 
 - Film
 - Film Theory

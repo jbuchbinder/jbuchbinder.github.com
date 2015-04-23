@@ -2,6 +2,7 @@
 title: Photography
 author: jeff
 layout: page
+description: My photography ventures
 ---
 
 Welcome to my digital photography page!

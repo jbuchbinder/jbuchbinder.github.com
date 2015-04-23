@@ -8,6 +8,7 @@ little_people:
     Aubrianna and Alexavier
 studio_name:
   - MEM Studio
+description: Information about MEM Studio
 ---
 
 ![[Studio]][1]

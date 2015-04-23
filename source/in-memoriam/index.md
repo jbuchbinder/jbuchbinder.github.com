@@ -2,6 +2,7 @@
 title: In Memoriam
 author: jeff
 layout: page
+description: Memorial pages for friends and family
 ---
 
 * [Bill Chapple](/in-memoriam/bill-chapple) - Musician, neurobiologist, and one of the foremost authorities on hermit crabs

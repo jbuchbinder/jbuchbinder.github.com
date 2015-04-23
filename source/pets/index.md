@@ -2,6 +2,7 @@
 title: Pets
 author: jeff
 layout: page
+description: Pets, past and present
 ---
 
 My pets, in the order in which they were introduced into my life.

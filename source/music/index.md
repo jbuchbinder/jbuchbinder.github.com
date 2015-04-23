@@ -2,6 +2,7 @@
 title: Music
 author: jeff
 layout: page
+description: Music projects
 ---
 
 > *Without music life would be a mistake. – Friedrich Wilhelm Nietzsche*

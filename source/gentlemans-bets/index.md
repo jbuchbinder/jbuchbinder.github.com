@@ -5,6 +5,7 @@ date: 2013-10-22 15:42
 comments: true
 sharing: true
 footer: true
+description: Bets with my friend Chris
 ---
 
 This is a list of "Gentleman's Bets" which I have undertaken with my friend

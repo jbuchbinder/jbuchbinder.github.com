@@ -2,6 +2,7 @@
 title: Applications
 author: jeff
 layout: page
+description: Hosted applications
 ---
 
  * [Full Screen Mario](/apps/mario/index.html) - Victim of an unfair DMCA
