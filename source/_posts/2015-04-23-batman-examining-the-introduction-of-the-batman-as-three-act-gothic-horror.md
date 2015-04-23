@@ -20,6 +20,7 @@ Much like the overall structured arc of the film, the introduction of The Batman
 
 There are a few themes which should be pointed out before we delve into shot analysis:
 
+ * **Expectation/Subversion**. What we see may be misleading.
  * **Gothic Horror**. Even though we don't encounter him until the "third act", gothic horror is a prevailing theme of this sequence.
  * **Canted shots**. Partly visual homage to the Adam West Batman series, partly subtle inference.
  * **Voyeurism**. Certain elements of the visual framework rely heavily on an element of voyeurism in order to raise the level of suspense.
@@ -346,7 +347,9 @@ All of the visual cues in the first act seem designed to promote unease and conf
 
 The third act plays as a simple horror: the monster that cannot be heard or killed, the victim who cannot escape. The Batman *has* to be a supernatural force, for his "power" is that the mystery of what he may or may not be is feared far more than the threat of impending violence.
 
-As far as the dutch angle (which I refer to as a "cant" pretty consistently), there's a reason why it is sometimes referred to as a "Batman angle": from the Adam West campy series through this film, it is used heavily. Not only is it an effective way to fill horizontal space with vertical content in a wide frame, but the disconcerting nature of that compositional technique lends itself to The Batman *and* his foes. Much as Gilliam has made extensive use of canted shots in his films (*Tideland* and *Fear and Loathing in Las Vegas* come to mind), *Batman* also relies heavily on the technique without *over-using* it -- which is a rookie filmmaker mistake.
+As far as the dutch angle (which I refer to as a "cant" pretty consistently), there's a reason why it is sometimes referred to as a "Batman angle": from the Adam West campy series through this film, it is used heavily. Not only is it an effective way to fill horizontal space with vertical content in a wide frame, but the disconcerting nature of that compositional technique lends itself to The Batman *and* his foes. Much as Gilliam has made extensive use of canted shots in his films (*Tideland* and *Fear and Loathing in Las Vegas* come to mind), *Batman* also relies heavily on the technique without *over-using* it -- which is a popular rookie filmmaker mistake.
+
+The AV Club's [Scott Eric Kaufman](http://acephalous.typepad.com/) kindly pointed out to me that the theme of the misleading woman in red -- what could be seen as a semi-literal "red herring" -- is a repetitive theme. It is a retelling of the Batman origin story to a degree; we have the rich parents, the child forced to watch, the backdrop of the alley. We are *expecting* the film to open with the all-too-familiar Batman origin, but Burton uses that expectation to make the third-act introduction of The Batman that much more poignant. Virtually every part of the setup creates -- then subverts -- the expectations of the viewer coming from a knowledge of a larger canon, as well as the expectation of a new viewer to the Batman canon.
 
 It is fitting that the re-introduction of The Batman should be staged as a three-act story ; a figure that much larger-than-life deserves it.
 
