@@ -311,7 +311,7 @@ Now, a very subtlely angled shot / reverse-shot setup in the standard over-the-s
 
 ![0112](/images/2015/04/batman1-0112.jpg)  
 
-The Batman throws his prey to a save space, then stands at the edge of the roof from our voyeuristic high vantage point. 
+The Batman throws his prey to a safe space, then stands at the edge of the roof from our voyeuristic high vantage point. 
 
 ![0113](/images/2015/04/batman1-0113.jpg)  
 
