@@ -4,7 +4,9 @@ title: "The Virgin Suicides: The Loss of Innocence and the Illusion of Normality
 date: 2015-04-28 16:45:43 -0400
 comments: true
 description: Examining The Virgin Suicides for visual clues
-cover: 
+cover: /images/2015/04/suicides1-0010.jpg
+cover_width: 1280
+cover_height: 729
 categories: 
 - Film
 - Film Theory
