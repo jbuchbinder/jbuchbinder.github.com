@@ -7,6 +7,8 @@ description:
 cover: /images/2014-boston-48hr-festival.jpg
 categories: 
  - Cinematography
+ - Film
+ - Post-Mortem
 ---
 
 This year, my team ([Shoot the Moon Films](http://www.shootthemoonfilms.com)),

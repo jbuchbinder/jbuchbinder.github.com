@@ -7,6 +7,8 @@ description: Yet another 48 hour film festival...
 cover: /images/2014-providence-48hr-horror-festival.png
 categories: 
  - Cinematography
+ - Film
+ - Post-Mortem
 ---
 
 Almost six months after the Boston 48 Hour Film Festival, my team
