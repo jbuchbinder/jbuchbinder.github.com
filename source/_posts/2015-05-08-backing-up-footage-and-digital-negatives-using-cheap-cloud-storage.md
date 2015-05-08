@@ -50,3 +50,7 @@ The solution I found -- opensource/free, of course -- is [Cryptomator](https://c
 ## Other features
 
 Amazon Cloud Drive also provides the ability to share files directly from its web interface -- but I haven't had cause to use it, since I still use Google Drive and other services to share files with people. Still, it's a nice feature to have, and hopefully it will mature in the coming months/years.
+
+## Why not any of the alternatives?
+
+Beyond cost, it comes down to *accessibility* and *fine print* for me. Backblaze's backup service, for example, relies on the idea that a single machine with a single drive can be backed up for 5$/month (60$/year) -- which wouldn't work for the myriad backup drives and shifting on-workstation content which defines a video or photo editing workstation. As far as accessibility goes, Amazon Cloud Drive is workable from my Linux machine as easily as it is from my Windows workstation (or, heaven forfend, a machine from the Cult of the Bitten Fruit) -- and I can put together my own client(s) if I find something lacking in the generally available ones.
