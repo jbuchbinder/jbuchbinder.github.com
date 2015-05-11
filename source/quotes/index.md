@@ -288,6 +288,8 @@ description: Quote file
 
 "I don't mind younger people playing on my lawn. I detest them acting like they planted the fucking thing." - Jace Paul
 
+"Humankind doesn't scale very well."
+
 ## Stupidity
 
 "You can stop eating to lose weight, but you’d have to stop breathing to lose stupid" – Anonymous Coward on slashdot
