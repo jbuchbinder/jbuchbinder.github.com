@@ -4,7 +4,7 @@ title: "Starter Pro Cine Rig on a Budget"
 date: 2015-05-14 09:23:54 -0400
 comments: true
 description: Putting together a first rig on a budget without sacrificing quality
-cover: https://images.blackmagicdesign.com/media/products/blackmagicpocketcinemacamera/landing/shoot-digital-film.jpg
+cover: http://images.blackmagicdesign.com/media/products/blackmagicpocketcinemacamera/landing/shoot-digital-film.jpg
 cover_width: 960
 cover_height: 529
 categories: 
@@ -15,6 +15,8 @@ categories:
 Whereas it it true that gear matters much less than a good eye and a good set of camera skills, a decent rig can help that good eye translate into great output. People spend thousands of dollars on their starter rigs -- but a great professional rig can be had for under $1500 if you have a few decent photography lenses laying around. It also includes a great audio capture solution.
 
 <!-- more -->
+
+> Note to readers: This is meant to be a **starter** kit. It's an entry-level solution to being able to get into filmmaking without spending thousands of dollars. Keeping that in mind, there are limitations to this setup, but it should scale well enough to allow you to shoot a feature film or television series that will stand up to professional scrutiny -- assuming that you've learned to use the equipment properly. - JB
 
 ## Video
 
@@ -37,18 +39,18 @@ Being able to capture pristine audio is important -- possibly even more importan
  * [9' Boom Pole](http://amzn.to/1JecAmu) - $39 - Even though painters' poles, etc, can be used as makeshift boom poles, they tend to clack and shake. This produces unwanted noice which can destroy otherwise pristine audio. This pole is a nice hybrid of cheap and "good enough", with its one perceptible drawback being that it does not have an embedded XLR signal cable. However ...
  * [XLR Cable, 20 ft](http://amzn.to/1G75Wxs) - $6 - A long enough XLR cable to make it from the back of the microphone to the recorder.
  * [Cable Velcro Ties, 50 ct](http://www.lowes.com/pd_172729-388-90924___) - $5 - Don't forget these. Using a few of these ties can save you a hundred dollars on an XLR-embedded boom pole or the heartache of having an XLR cable dip into frame. Use them to secure the XLR cable in two or three points to your boom pole.
- * [EM-320E Microphone](http://amzn.to/1G76mDW) - $26 - The response curve isn't the same as an NTG2, but it's "good enough" to get started. The bass roll-off can be fixed in post, and besides the embedded AA battery, there are few downsides to this mic.
- * [Shotgun Mount](http://www.ebay.com/itm/Shotgun-Microphone-Mic-Suspension-Shock-Mount-Pencil-Clamp-Condenser-Holder-Clip-/281688667764) - $6 - This shock mount can be used for those times when the soon-to-be-mentioned blimp is overkill -- like indoor shots.
- * Homemade Blimp - $20 - There are a number of how-to tutorials on Youtube on building a blimp/zeppelin for a boom mic. This is of paramount importance for any outdoor shots when there's any sort of moving air -- and I include it because good audio during moving air 
+ * [EM-320E Microphone](http://amzn.to/1G76mDW) - $26 - The response curve isn't the same as an NTG2, but it's "good enough" to get started. The bass roll-off can be fixed in post, and other than the embedded AA battery, there are few downsides to this mic.
+ * [Shotgun Mount](http://www.ebay.com/itm/Shotgun-Microphone-Mic-Suspension-Shock-Mount-Pencil-Clamp-Condenser-Holder-Clip-/281688667764) - $6 - This shock mount can be used for those times when the soon-to-be-mentioned blimp is overkill -- like most indoor shots.
+ * Homemade Blimp - $20 - There are a number of how-to tutorials on Youtube on building a blimp/zeppelin for a boom mic. This is of paramount importance for any outdoor shots when there's any sort of moving air -- and I include it because capturing good audio outside is *very* difficult without it. A little elbow grease, a few Youtube video tutorials, and you don't have to plunk down a few hundred dollars for a brand-name blimp.
  * Total: **$315**
 
 ## Lenses
 
-The only serious concern left is *lenses*. If you already have photographic lenses, or can lay your hands on them at a decent price, you'll be all set. It's worth remembering that the BMPCC has a Super 16 sensor, so you have a 2.88x crop factor from full frame size (1.8x crop from APS-C). To figure how much "longer" your existing lenses are going to appear to be from your existing photographic camera body, multiply their focal lengths by those crop factors.
+The only serious concern left for a basic kit is *lenses*. If you already have photographic lenses, or can lay your hands on them at a decent price, you'll be all set. It's worth remembering that the BMPCC has a Super 16 sensor, so you have a 2.88x crop factor from full frame size (1.8x crop from APS-C). To figure how much "longer" your existing lenses are going to appear to be from your existing photographic camera body, multiply their focal lengths by those crop factors.
 
 (If you have extra money, you can always buy focal reducers which make up for a good portion of this disparity -- but they may be a little pricey.)
 
-This is a list of adapters which will work for most lens types, and are around $20. If you already own a micro-4/3 camera (Olympus, Panasonic) your lenses will already work without an adapter.
+This is a list of adapters which will work for most lens types, and are around $20. If you already own a micro-4/3 camera (Olympus, Panasonic) your lenses will  work without an additional adapter.
 
  * Canon FD : [Canon FD to M4/3 mount adapter](http://amzn.to/1L3KCsP) - $16
  * Canon EF : [Canon EF to M4/3 mount adapter - no aperture control](http://amzn.to/1H4wFXE) - $17
