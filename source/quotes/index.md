@@ -11,6 +11,8 @@ description: Quote file
 
 "Listen, what do you think your job is? To learn the words? The usher can do that. Your job is to say them for the first time. Each time." - Mike Nichols (to a struggling actor)
 
+"I'm not interested in a realistic look - not at all, not ever. Every film should look the way I feel." - [Martin Scorsese](http://www.rogerebert.com/interviews/interview-with-martin-scorsese), 1976
+
 ## Existentialism
 
 "There are two ways to get enough: One is to continue to accumulate more and more. The other is to desire less." – G.K. Chesterton
