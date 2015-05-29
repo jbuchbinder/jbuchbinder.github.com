@@ -46,7 +46,7 @@ The art gallery's owner, Vanessa, approaches him as she attempts to make smallta
 
 ![0003](/images/2015/05/daredevil1-0003.jpg)  
 
-Fisk's face cannot be seen throughout this. He is either left out of the diagetic space or shadowed, much like [Frank Costello in *The Departed*](/2015/03/26/the-departed-introducing-costello-and-life-in-the-shadows/). We are given an implicit concept of Fisk in this way -- hiding in plain sight, much like the rabbit in the snowstorm.
+Fisk's face cannot be seen throughout this. He is either left out of the diagetic space or shadowed, much like [Frank Costello in *The Departed*](/2015/03/26/the-departed-introducing-costello-and-life-in-the-shadows/). We are presented an implicit sketch of Fisk's character in this way -- hiding in plain sight, much like the rabbit in the snowstorm.
 
 We first see his whole face as Vanessa asks him how it makes him feel.
 
