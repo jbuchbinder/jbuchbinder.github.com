@@ -6,5 +6,5 @@ layout: page
 
 [![2][2]][2]
 
- [2]: /wp-content/uploads/2010/05/jordan-obit.jpg
+ [2]: /images/2010/05/jordan-obit.jpg
 
