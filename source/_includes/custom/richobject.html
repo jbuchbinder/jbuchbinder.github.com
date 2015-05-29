@@ -4,8 +4,8 @@
 <meta property="og:site_name"    content="{{ site.title }}" />
 <meta property="author:author"   content="{{ site.facebook_profile_url }}" />
 {% if page.title %}
-<meta property="og:title"        content="{{ page.title }}" />
-<meta property="og:description"  content="{{ page.description }}" />
+<meta property="og:title"        content="{{ page.title | escape }}" />
+<meta property="og:description"  content="{{ page.description | escape }}" />
  {% if page.cover %}
    {% if page.cover contains 'http:' %}
 <meta property="og:image"        content="{{ page.cover }}" />
@@ -18,8 +18,8 @@
    {% endif %}
  {% endif %}
 {% else %}
-<meta property="og:title"        content="{{ site.title }}" />
-<meta property="og:description"  content="{{ site.description }}" />
+<meta property="og:title"        content="{{ site.title | escape }}" />
+<meta property="og:description"  content="{{ site.description | escape }}" />
  {% if site.cover %}
    {% if site.cover contains 'http:' %}
 <meta property="og:image"        content="{{ site.cover }}" />
@@ -37,3 +37,4 @@
 <meta name="twitter:card"        content="summary" />
 <meta name="twitter:site"        content="@{{ site.twitter_name }}" />
 <meta name="twitter:creator"     content="@{{ site.twitter_name }}" />
+
