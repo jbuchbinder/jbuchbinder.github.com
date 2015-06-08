@@ -3,7 +3,6 @@ layout: post
 title: "Mad Men \"Severance\": Misleading Expectations"
 date: 2015-05-26 20:43:35 -0400
 comments: true
-published: false
 description: Using expectations and camerawork to mislead in Mad Men's "Severance"
 cover: /images/2015/05/madmen708-0037.jpg
 cover_width: 720
@@ -71,7 +70,7 @@ We continue the same shot / reverse-shot pattern for another rotation ...
 
 *Something* is off about this situation, even though we're not initially aware of exactly what it is. The framing, so far, has been relatively intimate and close, although the shots have been getting wider.
 
-We jump cut to a medium-wide shot, with the two characters occupying the same positions on the horizontal thirds.
+We jump cut to a medium-wide shot, with the two characters occupying the same positions on the vertical thirds.
 
 ![madmen708-0021](/images/2015/05/madmen708-0021.jpg)  
 
@@ -107,7 +106,7 @@ As Don drops his cigarette into his coffee (which can be viewed, in the context 
 
 ![madmen708-0032](/images/2015/05/madmen708-0032.jpg)  
 
-But what is this -- we jump back out to a medium-wide shot, as we show the unnamed woman walking between the horizontal thirds:
+But what is this -- we jump back out to a medium-wide shot, as we show the unnamed woman walking between the vertical thirds:
 
 ![madmen708-0033](/images/2015/05/madmen708-0033.jpg)  
 
