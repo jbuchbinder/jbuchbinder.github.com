@@ -292,6 +292,8 @@ description: Quote file
 
 "Humankind doesn't scale very well."
 
+"We are buried beneath the weight of information, which is being confused with knowledge; quantity is being confused with abundance and wealth with happiness. We are monkeys with money and guns." - Tom Waits
+
 ## Stupidity
 
 "You can stop eating to lose weight, but you’d have to stop breathing to lose stupid" – Anonymous Coward on slashdot
