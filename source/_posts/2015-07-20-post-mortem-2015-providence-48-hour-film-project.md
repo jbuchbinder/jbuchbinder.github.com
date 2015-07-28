@@ -4,7 +4,7 @@ title: "Post-Mortem: 2015 Providence 48 Hour Film Project"
 date: 2015-07-20 12:11:10 -0400
 comments: true
 description: Analyzing and documenting our entry in the 2015 Providence 48 Hour Film Project
-cover: https://scontent-lga1-1.xx.fbcdn.net/hphotos-xat1/v/t1.0-9/11539612_10205952056812821_8443581336021782454_n.jpg?oh=e5d76b4ad64fb8c1c9e009d634d28451&oe=56194B6E
+cover: /images/2015/07/fbcover.jpg
 cover_width: 815
 cover_height: 315
 categories: 
