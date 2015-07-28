@@ -20,7 +20,7 @@ My 48 Hour Film Project team, [Shoot the Moon Films](http://shootthemoonfilms.co
 
 ## Day One: Preproduction, Kickoff, Writing, and Planning
 
-After deciding to participate in the project this year, we collectively decided that we weren't particularly in going the safer route with most of our production decisions. We put much more effort into ensuring good audio (including putting together mic body packs for wide shots -- just in case) and lighting. For the first time, we asked for a Best Boy to work with our lighting designer, and gave her much wider latitude on lighting decisions.
+After deciding to participate in the project this year, we collectively decided that we weren't particularly interested in going the safer route with most of our production decisions. We put much more effort into ensuring good audio (including putting together mic body packs for wide shots -- just in case) and lighting. For the first time, we asked for a Best Boy to work with our lighting designer, and gave her much wider latitude on lighting decisions.
 
 Unfortunately, we were unable to work with Aaron, our usual sound wizard, for post-production (he had won the Sound Design award at the 48 Hour Providence Horror Project last year), and the engineer we worked with on [The Gift of Fate](http://www.imdb.com/title/tt4694700/), Ben, was also unavailable. At what seemed like the eleventh hour, we were able to bring a new audio engineer, Rob, on board. I had never worked with him before (or met him), so there was a bit of apprehension on my part.
 
