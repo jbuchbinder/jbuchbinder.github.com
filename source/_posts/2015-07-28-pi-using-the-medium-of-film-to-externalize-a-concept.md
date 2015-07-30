@@ -3,7 +3,6 @@ layout: post
 title: "Pi: Using the Medium of Film to Externalize a Concept"
 date: 2015-07-28 13:21:20 -0400
 comments: true
-published: true
 description: Examining thematic elements exposed through the physical medium of Darren Aronofsky's "Pi"
 cover: /images/2015/07/pi-0007.jpg
 cover_width: 1792
