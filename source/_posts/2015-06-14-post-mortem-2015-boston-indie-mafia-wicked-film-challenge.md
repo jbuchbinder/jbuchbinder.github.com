@@ -47,7 +47,7 @@ We met a little after 8:00 A.M. at the "Little Theater" building, and loaded our
 
 The initial shot in the theater involved an almost-two-minute-long unbroken tracking shot using a gimbal. As it was impossible to use a boom mic in an effective way, our sound engineer rigged our H4n up as a mic pack with a lav mic we had in our kit, allowing us to capture pristine audio without trying to hide our boom operator.
 
-
+We loaded our extras into the theater and shot until lunch break. The most difficult shots tended to be the Ronin shots, but we had kept them to an iterated minimum.
 
 ## Shoot Day 2: Period Set
 
@@ -62,4 +62,8 @@ We ended up having to meet for ADR in Massachusetts to take care of the unusable
 Notes for improvement:
 
  * **Know your judges**. As the winners of the competition seemed to center around cute children winning "Best Actress" and hipster reference-laded sketches-spliced-together winning "Best Script" and "Best Film", this particular entry didn't stand a chance of winning anything. Look at the previous year's winners and gauge the idiom they're expecting, when possible, if you're attempting to produce a film with the sole purpose of winning.
- * **Outdoor sound**.
+ * **Outdoor sound**. We ended up having to ADR audio for an entire scene because we didn't prepare for the possibility of serious wind. We built a blimp/zeppelin for our boom mic operator for our next project, which worked out very well -- but this could have been done in time for *The Gift of Fate*.
+ * **More mic packs**. The mic pack we used on David Hopcroft worked very well -- but there were a number of other long shots which could have benefited from having additional packs set up on the actors.
+ * **More testing**. This was the Ronin's maiden voyage with us, and there were a few kinks to work out of the system before we started using it.
+ * **The right equipment for the right shot**. One of the Ronin shots we did probably should have been set up as a dolly shot, but in the interests of setup time, I decided against it. This would have worked *far* better as a dolly shot -- so planning something that's *almost* right may not necessarily work out.
+
