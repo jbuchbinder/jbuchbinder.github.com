@@ -1,7 +1,11 @@
 ---
-title: "Documentary, Polemic, and Propaganda: Film Classification and the Public Missive about the Planned Parenthood Videos"
+title: "Documentary, Polemic, and Propaganda"
+description: "Film Classification and the Public Missive about the Planned Parenthood Videos"
 author: David Hopcroft
 layout: page
+cover: /images/documentary.jpg
+cover_width: 3456
+cover_height: 2304
 ---
 
 > Reposted from [https://www.facebook.com/groups/indyfilms/permalink/10153527265498688/](https://www.facebook.com/groups/indyfilms/permalink/10153527265498688/) with the author's permission - JB
