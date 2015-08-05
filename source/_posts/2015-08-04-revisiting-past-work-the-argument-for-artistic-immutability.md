@@ -3,7 +3,7 @@ layout: post
 title: "Revisiting Past Work: The Argument for Artistic Immutability"
 date: 2015-08-04 21:29:31 -0400
 comments: true
-description: An argument for film to be immutable 
+description: An argument for film to be immutable after its completion.
 cover: /images/2015/08/colorized.jpg
 cover_width: 1200
 cover_height: 780
@@ -31,6 +31,8 @@ This means that repeated consumption of the same source material can yield diffe
 The original intent behind a work cannot change once the artwork has been completed, as it is part of a singular point in time -- part of the holistic process of creation. The only intent which could potentially change would be **revisionist intent** (the artists' externally represented intent) or **perceived intent**.
 
 ## Interpretation Over Time
+
+> "Do I read my old fiction? No. Why would I do that? I did the books as well as I could at the time. To go back would be a torment." - Richard Ford
 
 Part of any work of art is how that piece of art is interpreted over time. This is a collectively-held opinion, for the most part, as artistic works are said to "hold up over time" or not -- and many of the most respected works in film genres are gauged partially by their power to transcend the era in which their creative intents were fomented. 
 
