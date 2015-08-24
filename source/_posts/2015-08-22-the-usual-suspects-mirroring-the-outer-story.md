@@ -12,7 +12,7 @@ categories:
  - Film Theory
 ---
 
-One of my favorite thematic plot devices in the medium of film has been "inner story mirrors outer story" (especially [across epistemic layers](/2015/03/08/layers/)). Bryan Singer's 1995 neo-noir classic *The Usual Suspects* is told through a series of flashbacks -- and manages to use this thematic device to great advantage.
+One of my favorite thematic plot devices in the medium of film has been "inner story mirrors outer story" (especially [across epistemic layers](/2015/03/08/layers/)). Bryan Singer's 1995 neo-noir classic *[The Usual Suspects](http://amzn.to/1hArFFc)* is told through a series of flashbacks -- and manages to use this thematic device to great advantage.
 
 **WARNING: There be spoilers here. If you're one of the small group of people who haven't actually *watched* The Usual Suspects yet, go watch it, *then* read on. Seriously. Don't spoil this for yourself.**
 
