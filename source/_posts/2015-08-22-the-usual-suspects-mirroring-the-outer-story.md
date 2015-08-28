@@ -66,7 +66,7 @@ Denouement:
 
 ![usualsuspects-0013](/images/2015/08/usualsuspects-0013.jpg)  
 
-We experienced the coffee cup dropping to the floor from three different observational points -- and the cup shattered completely differently each time. Even though the effective outcome was the same (the cup is broken, there's liquid on the floor), what *actually happened* was completely different, based on our observational viewpoint.
+We experienced the coffee cup dropping to the floor from three different observational points -- and the cup shattered completely differently each time. Even though the effective outcome was the same (the cup is broken, there's liquid on the floor), what *actually happened* was completely different, based on our observational viewpoint. This is realized through the discontinuous editing which Singer uses to emphasize the disparate nature of the angles we're seeing of the event in question.
 
 It is essentially a microcosm for the idea that the point of view with which a story is presented completely shapes our perception of that story. We fell victim to the same narrative fallacy as Agent Kujan, as we attempted to stitch together facts and images from a story told by an unreliable narrator -- and most of us were taken in by the same "premature enlightenment" as Kujan.
 
