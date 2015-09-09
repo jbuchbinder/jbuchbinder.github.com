@@ -5,6 +5,8 @@ date: 2015-08-26 22:51:03 -0400
 comments: true
 description: A review of Sean Weather's blaxploitation film "Ace Jackson is a Dead Man"
 cover: /images/2015/08/acejackson1.jpg
+cover_width: 1920
+cover_height: 1080
 categories: 
  - Film
  - Reviews
