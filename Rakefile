@@ -277,6 +277,9 @@ task :rsync do
   end
   puts "## Deploying website via Rsync"
   ok_failed system("rsync -avze 'ssh -p #{ssh_port}' #{exclude} #{rsync_args} #{"--delete" unless rsync_delete == false} #{public_dir}/ #{ssh_user}:#{document_root}")
+  puts "## Fixing file permissions for images"
+  ok_failed system("ssh -p #{ssh_port} #{ssh_user} chmod 755 #{document_root}/images/????/??")
+  ok_failed system("ssh -p #{ssh_port} #{ssh_user} chmod 644 #{document_root}/images/????/??/*")
 end
 
 desc "deploy public directory to github pages"
