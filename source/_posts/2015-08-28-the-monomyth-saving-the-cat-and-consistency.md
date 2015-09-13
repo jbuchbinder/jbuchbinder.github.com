@@ -38,8 +38,6 @@ Snyder had publicly stated that he was espousing a *structure* not a *formula*, 
 
 ## Salty, Sweet, and Fatty
 
-(This story isn't apocryphal, I promise.)
-
 There is a pretty strong theory in the scientific community that our predilection for salty, sweet, and fatty foods is an outgrowth of our [evolutionary survival needs](http://www.ncbi.nlm.nih.gov/books/NBK53528/), since food availability pre-agricultural-revolution was not necessarily guaranteed in most populations. This seems like an utterly harmless observation, until it is coupled with [shareholder expectations for unbounded profits in the food industry](http://www.npr.org/sections/thesalt/2013/02/26/172969363/how-the-food-industry-manipulates-taste-buds-with-salt-sugar-fat). We end up with a push to create food-like substances which push certain evolutionary triggers in our physiology, causing us to be drawn towards them -- eventually creating an arms race to create the most attractive food-like substance to create the highest level of profit for the company producing those substances.
 
 ## Pushing buttons and the race to the bottom
@@ -60,4 +58,4 @@ The monomyth and its formulaic corollaries aren't specifically instructions for 
 
 Not every theater-going experience has to be a series of mental calisthenics, although I will admit that delving into film analysis and theory has ruined some of the surprise and awe for me -- much in the same way that any sense of wonder or amazement can be dulled by a comprehensive understanding of the less-than-supernatural nature of things. (This is actually one of the reasons why I prefer that stories not engage in annoyingly comprehensive epistemological completion in their respective knowledge systems, since my imagination tends to be more interesting than most rote knowledge completions -- but I digress.)
 
-Sometimes, you have to be able to go somewhere and turn off your brain for a bit and enjoy something that *feels good*, even if it is derivative, or overplayed, or just plain guilty indulgence. In this aspect, the film properties heavily derived from *Save the Cat* (or even the monomyth directly) can be seen has having their place.  
+Sometimes, you have to be able to go somewhere and turn off your brain for a bit and enjoy something that *feels good*, even if it is derivative, or overplayed, or just plain guilty indulgence. In this aspect, the film properties heavily derived from *Save the Cat* (or even the monomyth directly) can be seen as having their place.  
