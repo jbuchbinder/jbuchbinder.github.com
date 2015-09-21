@@ -53,7 +53,7 @@ Look at the outside ...
 
 ![pi-0002](/images/2015/07/pi-0002.jpg)  
 
-Max Cohen always comes across as trapped and confined, even when he is in a wide-open space, like sitting on a park bench.
+The basic gamut is much the same. Additionally, Max Cohen always comes across as trapped and confined, even when he is in a wide-open space, like sitting on a park bench.
 
 More importantly, everything is black and white. There are few, if any midtones present. I believe that this mirrors the outer story of man vs god/sun/enlightenment/understanding by giving us only two elements: light and dark. The Go game shows also shows us a stark visual representation of two polar opposites, engaged in quiet battle, through its black and white game pieces.
 
@@ -73,7 +73,7 @@ Even though he is the center of the proceedings, Max is not the center of attent
 
 The story of Icarus, also referenced in Danny Boyle's sci-fi epic [Sunshine](http://www.imdb.com/title/tt0448134/), is reflected throughout the film, and Sol even recites the story to Max during their Go game. It is indicative of the larger thematic story of man attempting to understand the divine. Another similar story in the canonical bible (rather than Greek mythology) is of the Tower of Babel, where man attempts to climb to the heights of their god so that they can understand him, but are thwarted by the introduction of many languages.
 
-Let's not forget the Go game, as well.
+The Go game also represents both the monochromatic opposing forces at play, but also ends up reinforcing the notion of the mathematical spiral being such an intrinsic concept in everything, as Sol leaves it as a final message to his greatest pupil:
 
 ![pi-0010](/images/2015/07/pi-0010.jpg)  
 
@@ -93,6 +93,6 @@ If you remember the oft-repeated voiceover:
 
 > When I was a little kid, my mother told me not to stare into the sun, so when I was six I did...
 
-Sol plays the white pieces, Max plays the black pieces. And in the end, the game is never finished.
+Sol plays the white pieces, Max plays the black pieces. As Sol points out, an infinite number of moves are possible, but as the game progresses, fewer and fewer outcomes remain, until there is only a single outcome.
 
 *(All images are presented under [fair use guidelines](http://libguides.mit.edu/usingimages) -- all frame grabs are property of **Harvest Filmworks, Truth and Soul Pictures, Plantain Films**, or any other entities who hold copyright on this film. They are presented for exclusively educational purposes.)*
