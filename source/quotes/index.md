@@ -294,6 +294,8 @@ description: Quote file
 
 "We are buried beneath the weight of information, which is being confused with knowledge; quantity is being confused with abundance and wealth with happiness. We are monkeys with money and guns." - Tom Waits
 
+"Wealth, in even the most improbable cases, manages to convey the aspect of intelligence.  If anything is evident about people who manage money, it is that the task attracts a very low level of talent, one that is protected in its highly imperfect profession by the mystery that is thought to enfold the subject of economics in general and of money in particular." - J.K. Galbraith
+
 ## Stupidity
 
 "You can stop eating to lose weight, but you’d have to stop breathing to lose stupid" – Anonymous Coward on slashdot
