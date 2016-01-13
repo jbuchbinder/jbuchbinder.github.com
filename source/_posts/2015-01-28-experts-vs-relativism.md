@@ -44,10 +44,10 @@ We're bad at self-assessment. It's a cognitive bias that has the backing of some
 
 Universal relativism and a system of experts are mutually impossible. They simply cannot co-exist within a person's framework for judging expertise. This can be logically broken down like this:
 
-1) Relativism believes that everyone's opinions and observations have equal weight.
-2) A system of experts believes that certain people have acquired a superior skill set or knowledge base than those around them.
-3) Opinions and observations hold the same essential position as learned skills and knowledge, using the patterns established by relativism. (The Dunning-Kruger Effect would indicate that those with a certain belief in their own knowledge and skill will tend to over-estimate them against other people.)
-4) A hierarchy of expertise cannot, therefore, exist in a system where everyone's opinions and truths are considered equally valid.
+1. Relativism believes that everyone's opinions and observations have equal weight.
+2. A system of experts believes that certain people have acquired a superior skill set or knowledge base than those around them.
+3. Opinions and observations hold the same essential position as learned skills and knowledge, using the patterns established by relativism. (The Dunning-Kruger Effect would indicate that those with a certain belief in their own knowledge and skill will tend to over-estimate them against other people.)
+4. A hierarchy of expertise cannot, therefore, exist in a system where everyone's opinions and truths are considered equally valid.
 
 ## Confirmation bias, or why we want to have it both ways
 
