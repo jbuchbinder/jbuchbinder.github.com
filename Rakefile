@@ -280,6 +280,7 @@ task :rsync do
   puts "## Fixing file permissions for images"
   ok_failed system("ssh -p #{ssh_port} #{ssh_user} chmod 755 #{document_root}/images/????/??")
   ok_failed system("ssh -p #{ssh_port} #{ssh_user} chmod 644 #{document_root}/images/????/??/*")
+  ok_failed system("ssh -p #{ssh_port} #{ssh_user} chmod 644 #{document_root}/images/*.???")
 end
 
 desc "deploy public directory to github pages"
