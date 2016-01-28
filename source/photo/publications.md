@@ -14,5 +14,6 @@ Some of the places my photos have appeared include:
 * 2014 Plainfield Country Music Talent Show [promotional photos](https://www.facebook.com/CMTS12/posts/827321643963746) and [coverage in the Norwich Bulletin](http://www.norwichbulletin.com/article/20140515/NEWS/140519582).
 * [The Bradley Playhouse](http://www.thebradleyplayhouse.org/) promo photos for the 2014 production of "Frankenstein": [1](https://www.facebook.com/181407235204720/photos/a.209502649061845.59754.181407235204720/855193697826067/?type=1) -- as well as a [picture in the Norwich Bulletin](/images/frankenstein-2014-bulletin.jpg).
 * [The Bradley Playhouse](http://www.thebradleyplayhouse.org/) promo photos for the 2015 production of "Nunsense", including [uncredited Norwich Bulletin photos](http://www.norwichbulletin.com/article/20150330/NEWS/150339953/1994/NEWS) (appearing on the [front page of the arts section](/images/nunsense-2015-bulletin.jpg)).
+* [The Bradley Playhouse](http://www.thebradleyplayhouse.org/) promo photos for the 2016 production of "The Complete Works of William Shakespeare (Abridged)", including the [Norwich Bulletin article](#) (appearing on the [front page of the arts/GO! section](/images/shakespeare-2016-bulletin.jpg)).
 * [Estee Bridal](https://www.facebook.com/esteebridal/posts/1661320670819252) reposted photos I had taken of a wedding in Alamagordo, NM.
 
