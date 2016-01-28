@@ -50,8 +50,10 @@ A random auto-didactic film school education through moderately accessible films
 
  * Adaptation (2002). Director: Spike Jonze.
  * The Adventures of Baron Munchausen (1988). Director: Terry Gilliam.
+ * Birdman (2014). Director: Alejandro González Iñárritu.
  * Black Swan (2010). Director: Darren Aronofsky.
  * Blow-Up (1966). Director: Michelangelo Antonini.
+ * Brazil (1985). Director: Terry Gilliam.
  * Dark City (1998). Director: Alex Proyas.
  * Deconstructing Harry (1997). Director: Woody Allen.
  * Eternal Sunshine of the Spotless Mind (2004). Director: Spike Jonze
@@ -94,8 +96,14 @@ A random auto-didactic film school education through moderately accessible films
 
  * 2001: A Space Odyssey (1968). Director: Stanley Kubrick.
  * Blade Runner (1982). Director: Ridley Scott.
+ * Children of Men (2006). Director: Alfonso Cuarón.
+ * Ex Machina (2015). Director: Alex Garland.
+ * Gattaca (1997). Director: Andrew Niccol.
+ * Metropolis (1927). Directory: Fritz Lang.
+ * Moon (2009). Director: Duncan Jones.
  * Primer (2004). Director: Shane Carruth.
  * Sunshine (2007). Director: Danny Boyle.
+ * The Fifth Element (1997). Director: Luc Besson.
 
 ## War
 
