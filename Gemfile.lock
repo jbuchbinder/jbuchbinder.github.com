@@ -61,9 +61,8 @@ GEM
     mini_portile (0.6.0)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
-    octopress-date-format (2.0.0)
-      jekyll (~> 2.0)
-      octopress-hooks (~> 2.0)
+    octopress-date-format (3.0.3)
+      jekyll (>= 2.0)
     octopress-hooks (2.2.1)
       jekyll (~> 2.0)
     parslet (1.5.0)
@@ -115,7 +114,7 @@ DEPENDENCIES
   jekyll-sitemap
   kramdown (~> 1.6.0)
   liquid (~> 2.5.5)
-  octopress-date-format (~> 2.0)
+  octopress-date-format (~> 3.0)
   octopress-hooks (~> 2.2)
   persistent_memoize
   rake (~> 10.0)
@@ -125,3 +124,6 @@ DEPENDENCIES
   sass-globbing (~> 1.0.0)
   sinatra (~> 1.4.2)
   stringex (~> 1.4.0)
+
+BUNDLED WITH
+   1.10.6
