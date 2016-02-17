@@ -216,6 +216,8 @@ description: Quote file
 
 "La majestueuse égalité des lois, qui interdit au riche comme au pauvre de coucher sous les ponts, de mendier dans les rues et de voler du pain." (*Translated: "In its majestic equality, the law forbids rich and poor alike to sleep under bridges, beg in the streets and steal loaves of bread."*) - Anatole France (Le Lys Rouge, 1894)
 
+"That's the standard technique of privatization: defund, make sure things don't work, people get angry, you hand it over to private capital." - Noam Chomsky ([source video](https://www.youtube.com/watch?v=UikhLJNLFK4))
+
 ## Racism, Bigotry and the Team Mentality
 
 "Slavery is slavery no matter how nicely the master treats you." – nada from [crooksandliars][29]
