@@ -59,6 +59,8 @@ description: Quote file
 
 "As long as I have a want, I have a reason for living. Satisfaction is death." - George Bernard Shaw (from *Overruled*, 1912)
 
+"We're all islands shouting lies to each other across seas of misunderstanding." - Rudyard Kipling (from *The Light That Failed*, 1890)
+
 ## Healthcare
 
 "Even if you don’t have health insurance in America, you get taken care of. That could be defined as universal health care." – Tom Thompson, HHS Secretary, [as quoted by Senator Tom Daschle][1] as an example of politicians being out of touch with the realities of healthcare.
