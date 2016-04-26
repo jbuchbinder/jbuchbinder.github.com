@@ -13,6 +13,8 @@ description: Quote file
 
 "I'm not interested in a realistic look - not at all, not ever. Every film should look the way I feel." - [Martin Scorsese](http://www.rogerebert.com/interviews/interview-with-martin-scorsese), 1976
 
+"A story should have a beginning, a middle and an end, but not necessarily in that order." - Jean-Luc Godard
+
 ## Existentialism
 
 "There are two ways to get enough: One is to continue to accumulate more and more. The other is to desire less." – G.K. Chesterton
@@ -60,6 +62,8 @@ description: Quote file
 "As long as I have a want, I have a reason for living. Satisfaction is death." - George Bernard Shaw (from *Overruled*, 1912)
 
 "We're all islands shouting lies to each other across seas of misunderstanding." - Rudyard Kipling (from *The Light That Failed*, 1890)
+
+"I'm killing time while I wait for life to shower me with meaning and happiness.” - Bill Watterson
 
 ## Healthcare
 
