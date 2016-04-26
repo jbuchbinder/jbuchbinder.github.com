@@ -18,7 +18,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.19)
-    curb (0.8.5)
+    curb (0.8.8)
     directory_watcher (1.4.1)
     execjs (2.2.1)
     fast-stemmer (1.0.2)
@@ -42,7 +42,7 @@ GEM
       mercenary (~> 0.3.3)
       pygments.rb (~> 0.5.0)
       redcarpet (~> 3.1)
-      safe_yaml (~> 1.0)
+      safe_yaml (~> 1.0.4)
       toml (~> 0.1.0)
     jekyll-coffeescript (1.0.0)
       coffee-script (~> 2.2)
@@ -75,14 +75,14 @@ GEM
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
-    rake (10.4.2)
+    rake (11.1.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdiscount (2.1.7.1)
     redcarpet (3.1.2)
     rubypants (0.2.0)
-    safe_yaml (1.0.3)
+    safe_yaml (1.0.4)
     sass (3.2.19)
     sass-globbing (1.0.0)
       sass (>= 3.1)
@@ -117,7 +117,7 @@ DEPENDENCIES
   octopress-date-format (~> 3.0)
   octopress-hooks (~> 2.2)
   persistent_memoize
-  rake (~> 10.0)
+  rake (~> 11.1)
   rb-fsevent (~> 0.9)
   rdiscount (~> 2.0)
   rubypants (~> 0.2.0)
@@ -126,4 +126,4 @@ DEPENDENCIES
   stringex (~> 1.4.0)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
