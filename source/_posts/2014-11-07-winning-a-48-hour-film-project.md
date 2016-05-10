@@ -7,6 +7,7 @@ description: Lessons learned from winning a 48 hour film project
 cover: /images/2014-providence-48hr-horror-festival.png
 categories: 
  - Cinematography
+ - Post-Mortem
 ---
 
 My team, [Shoot the Moon Films](http://www.shootthemoonfilms.com/), won the
