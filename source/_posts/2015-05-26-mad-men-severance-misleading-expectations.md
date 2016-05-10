@@ -144,7 +144,7 @@ This would not have been possible without our pre-existing expectations for Don'
 
 ![madmen708-0042](/images/2015/05/madmen708-0042.jpg)  
 
-Using the mirror as a device to indicate deception is a common practice in noir and neo-noir films and television, but it's not often used to indicate deception as part of the perspective with which we are presented the diagetic reality of the scene.
+Using the mirror as a device to indicate deception is a common practice in noir and neo-noir films and television, but it's not often used to indicate deception as part of the perspective with which we are presented the diegetic reality of the scene.
 
 This reveal reminds me of the Gilliam reveals from [Baron Munchausen](/2015/03/25/the-adventures-of-baron-munchausen-gilliam-and-the-art-of-the-reveal-part-iii/); Hornbacher shows you everything -- or so you believe -- only to show you that he has been misleading you the entire time.
 

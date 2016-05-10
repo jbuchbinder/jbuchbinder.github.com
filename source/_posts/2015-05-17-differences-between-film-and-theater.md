@@ -20,7 +20,7 @@ Before film became possible through Edison and the Lumière Brothers' fantastica
 
 Theater has, by its nature, a single frame through which everything is viewed. The stage (and sometimes the theater itself) forms the space which contains the entire epistemic system of the play. There are a number of meta-theatrical productions (*Nunsense* comes to mind) as well as a number of plays which directly address the audience as part of the set (*Gypsy* does this in the first scene; the theater is both the theater of our reality and the theater represented in the epistemological system of the play), but even then, the audience is still perceiving a series of actions and reactions which occur within the confines of a limited physical space. Theatrical productions tend to get around this through creative use of scenery and backdrop changes -- but the audience's frame of reference is still the stage in front of them.
 
-Film uses the notion of diagetic space -- the space which is in front of the camera, or can be perceived -- along with the notion of non-diagetic action and sound which occurs off-camera. This means that the mise-en-scène can dynamically change and with it our perception of the action and dialogue taking place.
+Film uses the notion of diegetic space -- the space which is in front of the camera, or can be perceived -- along with the notion of non-diegetic action and sound which occurs off-camera. This means that the mise-en-scène can dynamically change and with it our perception of the action and dialogue taking place.
 
 ## Montage theory and discontinity
 
@@ -32,7 +32,7 @@ It should be noted that some aspects of film montage theory are present in certa
 
 ## Forced perspective and shifting vision through the lens of the camera
 
-As mentioned earlier, film relies on the notion of diagetic space to present its epistemological reality; this allows the filmmaker to force us to view the world through his/her eyes. Unlike a theater patron, we are not able to view the entire artificial world of the set to focus on different areas all of the time. Shifting to closer shots or differing perspectives forces us to view at least a part of this artificial world in the way that its auteur prescribes. It is a much less holistic view of that world when considered in that way.
+As mentioned earlier, film relies on the notion of diegetic space to present its epistemological reality; this allows the filmmaker to force us to view the world through his/her eyes. Unlike a theater patron, we are not able to view the entire artificial world of the set to focus on different areas all of the time. Shifting to closer shots or differing perspectives forces us to view at least a part of this artificial world in the way that its auteur prescribes. It is a much less holistic view of that world when considered in that way.
 
 There are several notions in film which reveal some of its theatrical roots. One of the most notable of these is the concept of the [180 degree rule](http://en.wikipedia.org/wiki/180-degree_rule). Having an imaginary line which (at least in most conventional non-arthouse cinema) cannot be crossed references the notion of a theater stage plane; no one can cross *behind* a theater set to view behind characters, and as such, we cannot understand jumping behind characters in most standard film editing montages.
 

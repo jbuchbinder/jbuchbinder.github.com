@@ -50,7 +50,7 @@ One slight wrinkle which was thrown in was that one of the principal actresses, 
 
 We skipped using the gimbal or any extremely complicated rigs for most shots to save on between-shot setup time. The two notable exceptions were the opening shot, which used my trusty [Glideshot](http://glideshot.com/product/gsce48/) portable jib, and one drawing back shot, using a rail set and dolly conversion for the tripod.
 
-Additionally, I had purchased a cheap SDI-HDMI converter to allow using an external monitor for the production designer and lighting designer to monitor the diagetic space, but which also came in handy so that multiple people could watch for any, ahem, "*unexpected exposure*".
+Additionally, I had purchased a cheap SDI-HDMI converter to allow using an external monitor for the production designer and lighting designer to monitor the diegetic space, but which also came in handy so that multiple people could watch for any, ahem, "*unexpected exposure*".
 
 For the most part, I mostly used a 35mm T/1.5 lens, occasionally swapping it out for a 24mm T/1.5 for constrained space or wide shots, an 85mm T/1.5 lens for CU/ECU shots, and a 70-200mm f/2.8 IS lens for depth tracking. I tried to stay with the 35mm lens to stay away from any sharp changes in perspective between characters -- unless it was necessary to tell the story.
 
@@ -66,7 +66,7 @@ Woke up at 7:00 A.M. (since we got the credits done the night before), walked do
 
 Around 1 P.M. we got the audio mixed with score back from our sound engineer, Rob. I did a quick review of the video to make sure everything was in order before we continued on.
 
-After watching it through again, we identified three issues: there was coloring missing from a particularly difficult multiple light color shot, the stabilization algo had malfunctioned catastrophically, and there was a non-diagetic sound missing. The first and third issues were remedied quickly -- but the second one turned into a bit of an issue.
+After watching it through again, we identified three issues: there was coloring missing from a particularly difficult multiple light color shot, the stabilization algo had malfunctioned catastrophically, and there was a non-diegetic sound missing. The first and third issues were remedied quickly -- but the second one turned into a bit of an issue.
 
 I completely retracked it and removed all non-background points **twice**, but both times the image "jumped" at a certain point. I ended up using (ugh) Warp Stabilizer in Premiere to smooth out the instability a little, but I blew almost an hour trying to fix that single shot.
 

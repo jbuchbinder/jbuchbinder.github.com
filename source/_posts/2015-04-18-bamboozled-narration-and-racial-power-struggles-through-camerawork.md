@@ -228,7 +228,7 @@ Sloan tries to protest ...
 
 ![0060](/images/2015/04/bamboozled-0060.jpg)  
 
-It is worth noting that in this scene, other than the claustrophobic wide shot of all of the characters, Dunwitty is always shown separately from the other characters. The personification of the white power structure in the storyline doesn't share diagetic space with the black characters. No matter how much they try to belong, we're told visually that they never will.
+It is worth noting that in this scene, other than the claustrophobic wide shot of all of the characters, Dunwitty is always shown separately from the other characters. The personification of the white power structure in the storyline doesn't share diegetic space with the black characters. No matter how much they try to belong, we're told visually that they never will.
 
 A quick one-off shot of the same three despondent characters, claustrophobic in an open frame, looking at the pictures detailing their eventual degradation:
 

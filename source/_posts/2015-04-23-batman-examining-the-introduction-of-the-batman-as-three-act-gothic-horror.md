@@ -231,7 +231,7 @@ Reverse for relatively close-up reaction shots from the thieves. We have to get 
 
 ![0080](/images/2015/04/batman1-0080.jpg)  
 
-Back to The Batman. He's standing fully -- just standing there, occupying the negative space in the center of the frame. His mere presence is pushing them out of the diagetic space of the frame.
+Back to The Batman. He's standing fully -- just standing there, occupying the negative space in the center of the frame. His mere presence is pushing them out of the diegetic space of the frame.
 
 ![0081](/images/2015/04/batman1-0081.jpg)  
 

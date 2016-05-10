@@ -26,7 +26,7 @@ We open with the entire proceedings being framed by a period television framing 
 
 ![0001](/images/2015/04/sellers1-0001.jpg)  
 
-We cut to a medium shot of Peg, Peter's mother, anxiously anticipating the outcome of the award presentation. We're given almost no context for this ; as far as our diagetic world is concerned, we only know about Peg and the ceremony -- if another character were present, we definitely don't know about them yet. This is one of my favorite scene opening techniques: saving a bit of information for a few moments longer by withholding wider shots until all of the important plot elements have been revealed.
+We cut to a medium shot of Peg, Peter's mother, anxiously anticipating the outcome of the award presentation. We're given almost no context for this ; as far as our diegetic world is concerned, we only know about Peg and the ceremony -- if another character were present, we definitely don't know about them yet. This is one of my favorite scene opening techniques: saving a bit of information for a few moments longer by withholding wider shots until all of the important plot elements have been revealed.
 
 ![0002](/images/2015/04/sellers1-0002.jpg)  
 
