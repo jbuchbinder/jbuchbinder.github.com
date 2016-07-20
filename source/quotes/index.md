@@ -65,6 +65,12 @@ description: Quote file
 
 "I'm killing time while I wait for life to shower me with meaning and happiness.” - Bill Watterson
 
+"We're all, to one degree or another, products of the society in which we live. We're all derivative, all remixes, all echoes of all that came before us."
+
+"Time is a zero sum game."
+
+"If the human race is ever to move forward, it will be in spite of, not because of, nostalgia."
+
 ## Healthcare
 
 "Even if you don’t have health insurance in America, you get taken care of. That could be defined as universal health care." – Tom Thompson, HHS Secretary, [as quoted by Senator Tom Daschle][1] as an example of politicians being out of touch with the realities of healthcare.
@@ -270,27 +276,18 @@ description: Quote file
 
 ## Society
 
-"I lay this all at the feet of MY generation. The so-called ‘baby boom’, free love, anti establishment generation…who became the most narcissistic, consumerist, pro establishment generation in the history of our country. They grew fat and happy on the hard work of their parents and grandparents…who fought the wars, got their heads broken to create worker rights and sacrificed themselves to lay the groundwork for the creation of the middle class. This generation disgusts me. They truly do. And they DESERVE everything that happens to them. They failed their children…they failed the country." – "[liberalANDproud][24]" on [crooksandliars.com][39], talking about the failure of the United States to provide healthcare for its citizens
-
- [39]: http://crooksandliars.com/comment/permalink/1174207
+"I lay this all at the feet of MY generation. The so-called ‘baby boom’, free love, anti establishment generation…who became the most narcissistic, consumerist, pro establishment generation in the history of our country. They grew fat and happy on the hard work of their parents and grandparents…who fought the wars, got their heads broken to create worker rights and sacrificed themselves to lay the groundwork for the creation of the middle class. This generation disgusts me. They truly do. And they DESERVE everything that happens to them. They failed their children…they failed the country." – "[liberalANDproud](http://crooksandliars.com/users/liberalANDproud)" on [crooksandliars.com](http://crooksandliars.com/comment/permalink/1174207), talking about the failure of the United States to provide healthcare for its citizens
 
 "Remember that the media have two basic functions. One is to indoctrinate the elites, to make sure they have the right ideas and know how to serve power. In fact, typically the elites are the most indoctrinated segment of a society, because they are the ones who are exposed to the most propaganda and actually take part in the decision-making process. For them you have the New York Times, and the Washington Post, and the Wall Street Journal, and so on. But there’s also a mass media, whose main function is just to get rid of the rest of the population — to marginalize and eliminate them, so they don’t interfere with decision-making. And the press that’s designed for that purpose isn’t the New York Times and the Washington Post, it’s sitcoms on television, and the National Enquirer, and sex and violence, and babies with three heads, and football, all that kind of stuff." – Noam Chomsky
 
-"How very odd. [quoting] Mackey began his piece with a quote from Margaret Thatcher–"The problem with socialism is that eventually you run out of other people’s money" [/quoting] That’s precisely the same problem with capitalism. Just ask Wall Street. Reminds me of the comic in East Berlin during the Cold War that was jailed for this joke: ‘I’m here to explain the difference between communism and capitalism; in capitalism, man oppresses man, whereas in communism it’s completely the opposite.’" – ["Escher Sketch"][40] on [agonist.org][41], regarding the CEO of Whole Foods, Inc implying that healthcare for all is socialism, and that the poor people are fine spending "his money"
+"How very odd. [quoting] Mackey began his piece with a quote from Margaret Thatcher - 'The problem with socialism is that eventually you run out of other people’s money' [/quoting] That’s precisely the same problem with capitalism. Just ask Wall Street. Reminds me of the comic in East Berlin during the Cold War that was jailed for this joke: ‘I’m here to explain the difference between communism and capitalism; in capitalism, man oppresses man, whereas in communism it’s completely the opposite.’" – ["Escher Sketch"](http://agonist.org/user/escher_sketch) on [agonist.org](http://agonist.org/nat_wilson_turner/20090814/whole_foods_and_the_pox_of_the_hippie_businessman), regarding the CEO of Whole Foods, Inc implying that healthcare for all is socialism, and that the poor people are fine spending "his money"
 
- [40]: http://agonist.org/user/escher_sketch
- [41]: http://agonist.org/nat_wilson_turner/20090814/whole_foods_and_the_pox_of_the_hippie_businessman
-
+ 
 "Not in riches does our happiness consist, but in our natural needs. For in our needs there is also love; love does not pursue riches, riches defraud the fellow man. But this is against God, and the blessed life becomes worm-eaten. If the patient gives you, physician, what you need and nothing more, then you are both blessed. If you give him health, which is his need, and nothing more, then you are both blessed. … Let them give you as much as you need, but no riches; riches would bring you only damnation, but poverty will bring you blessedness. For our kingdom is not of this world, but of the life everlasting. Without the rich, nothing can be accomplished in behalf of the poor; the rich are bound to the poor as by a chain. … You, rich men, learn to know this chain, for if you ever break one link of it, you will not only by breaking the chain, but you yourselves will be cast aside like the broken link. Why do you make yourselves free from the poor and deny them your help? Just as by taking a few links from a chain, you would be making it too short, so without the poor, your path will be too short to lead to Heaven, and you will never attain to the goal that lies at the end of the chain." – Paracelsus
 
-"In a world where a billion workers cannot find a decent job or any employment at all, it bears stating the obvious: We cannot by any means — monetarily, governmentally or charitably — create a sense of value and dignity in people’s lives when we are simultaneously creating a society that clearly has no need for them." – Paul Hawken, from "[Natural Capitalism Creating Industrial Revolution][42]"
+"In a world where a billion workers cannot find a decent job or any employment at all, it bears stating the obvious: We cannot by any means — monetarily, governmentally or charitably — create a sense of value and dignity in people’s lives when we are simultaneously creating a society that clearly has no need for them." – Paul Hawken, from "[Natural Capitalism Creating Industrial Revolution](http://www.amazon.com/Natural-Capitalism-Creating-Industrial-Revolution/dp/0316353000)"
 
- [42]: http://www.amazon.com/Natural-Capitalism-Creating-Industrial-Revolution/dp/0316353000
-
-"And there lies the "genius" of capitalism — as a rip off at least it is rather clever. At some point the people who came up with the system, figured out how to convince people that an abstract concept such as capital/credit is "worth" more than actual real assets and labor. It is a singularity in human evolution. Capital makes sense as a tool to agilize the exchange of labor and assets. Alas, when things like "credit" and "interest" enter the fray, capital becomes the end not the means. Imagine for example, that every time you talk to someone you are forced to transfer some of your wealth to those who have a monopoly in language for some reason. It sounds silly, but at a basic level that is exactly what financial systems and banks work just like." – "[ixnay][43]" on [crooksandliars.com][44], on Ben Bernanke saying that the economy is recovering, but only the market
-
- [43]: http://crooksandliars.com/users/ixnay
- [44]: http://crooksandliars.com/comment/permalink/1621192
+"And there lies the "genius" of capitalism — as a rip off at least it is rather clever. At some point the people who came up with the system, figured out how to convince people that an abstract concept such as capital/credit is "worth" more than actual real assets and labor. It is a singularity in human evolution. Capital makes sense as a tool to agilize the exchange of labor and assets. Alas, when things like "credit" and "interest" enter the fray, capital becomes the end not the means. Imagine for example, that every time you talk to someone you are forced to transfer some of your wealth to those who have a monopoly in language for some reason. It sounds silly, but at a basic level that is exactly what financial systems and banks work just like." – "[ixnay](http://crooksandliars.com/users/ixnay)" on [crooksandliars.com](http://crooksandliars.com/comment/permalink/1621192), on Ben Bernanke saying that the economy is recovering, but only the market
 
 "The test of a civilization is in the way that it cares for its helpless members." – Pearl Buck
 
@@ -342,17 +339,13 @@ description: Quote file
 
 "I believe that if we had and would keep our dirty, bloody, dollar-soaked fingers out of the business of these nations so full of depressed, exploited people, they will arrive at a solution of their own — and if unfortunately their revolution must be of the violent type because the "haves" refuse to share with the "have-nots" by any peaceful method, at least what they get will be their own, and not the American style, which they don’t want and above all don’t want crammed down their throats by Americans." – General David M. Shoup, Commandant of the Marine Corps 1960-63, recipient of the Congressional Medal of Honor
 
-"It’s obviously disturbing to hear torture still referred to by the president as a ‘technique.’ That’s like saying bank robbery is a "technique" for withdrawing money from a bank. It’s not a ‘technique’, it’s a crime ..." – Jonathan Turley, constitutional law professor
+"It’s obviously disturbing to hear torture still referred to by the president as a ‘technique.’ That’s like saying bank robbery is a 'technique' for withdrawing money from a bank. It’s not a ‘technique’, it’s a crime ..." – Jonathan Turley, constitutional law professor
 
-"Soldiers, by and large, are tools used to advance the interests of those who own and run the country. They are lied to, conned and conditioned to believe they are fighting for ‘freedom’ when in most cases they are killing, dying and being maimed to enrich domestic elites and their allies/business partners. This is a big hard truth to swallow, which is why a lot of military personnel, and many vets, prefer the standard story. Recently, I caught on radio a reporter just back from Iraq, and he addressed this very issue. Many of the soldiers he spoke to were upset that what was said to them by recruiters and officers did not hold up in Iraq. The con job was cracking. But instead of exploring why this was so, many of these disgruntled soldiers further retreated into a black & white world, where they are on the side of Good and anyone opposing them is Bad. This is understandable on a basic human level — nobody likes to be lied to or made a chump. But it’s also dishonest and potentially destructive, both to the soldier and the society at large. The Soldier Mantra cited above is an authoritarian appeal and an intellectual and historical dodge. You don’t honor the troops by reducing them to stereotypes, however seemingly attractive." – Dennis Perrin from "[Red State Son][47]"
-
- [47]: http://redstateson.blogspot.com/2006/01/freedom-granted-freedom-won.html
+"Soldiers, by and large, are tools used to advance the interests of those who own and run the country. They are lied to, conned and conditioned to believe they are fighting for ‘freedom’ when in most cases they are killing, dying and being maimed to enrich domestic elites and their allies/business partners. This is a big hard truth to swallow, which is why a lot of military personnel, and many vets, prefer the standard story. Recently, I caught on radio a reporter just back from Iraq, and he addressed this very issue. Many of the soldiers he spoke to were upset that what was said to them by recruiters and officers did not hold up in Iraq. The con job was cracking. But instead of exploring why this was so, many of these disgruntled soldiers further retreated into a black & white world, where they are on the side of Good and anyone opposing them is Bad. This is understandable on a basic human level — nobody likes to be lied to or made a chump. But it’s also dishonest and potentially destructive, both to the soldier and the society at large. The Soldier Mantra cited above is an authoritarian appeal and an intellectual and historical dodge. You don’t honor the troops by reducing them to stereotypes, however seemingly attractive." – Dennis Perrin from "[Red State Son](http://redstateson.blogspot.com/2006/01/freedom-granted-freedom-won.html)"
 
 "You cannot simultaneously prevent and prepare for war." – Albert Einstein
 
-"War is insane. It isn’t hell; it’s a planned, coordinated communal psychosis." – ["E.R. Bills"‘s article][48] on medicating military personnel for PTSD
-
- [48]: http://dissidentvoice.org/2010/09/johnny-got-his-pills-and-so-do-we/
+"War is insane. It isn’t hell; it’s a planned, coordinated communal psychosis." – ["E.R. Bills"‘s article](http://dissidentvoice.org/2010/09/johnny-got-his-pills-and-so-do-we/) on medicating military personnel for PTSD
 
 "... [W]ar is an instrument entirely inefficient toward redressing wrong; that it multiplies, instead of indemnifying losses." - Thomas Jefferson (in a letter to Sir John Sinclair)
 
@@ -360,15 +353,9 @@ description: Quote file
 
 ## "b"
 
-"I was in Las Vegas recently, and the entire strip was full of fullscreen content stretched to fit widescreens. It seemed like a little metaphor for Las Vegas, really"- [rkanodia][49] on [slashdot][50]
+"I was in Las Vegas recently, and the entire strip was full of fullscreen content stretched to fit widescreens. It seemed like a little metaphor for Las Vegas, really" - [rkanodia](http://slashdot.org/~rkanodia) on [slashdot](http://slashdot.org/comments.pl?sid=1152003&cid=27098549)
 
- [49]: http://slashdot.org/~rkanodia
- [50]: http://slashdot.org/comments.pl?sid=1152003&cid=27098549
-
-"More money is currently spent on research into skin treatments, breast augmentation, and penile enlargement/enhancement treatments, than neurodegenerative disease (like alzheimer’s) treatments. In other words, in 20 years’ time the world is going to be full of 80-year-old people with firm skin, perky tits, big throbbing erections, and absolutely no fucking memory of what to do with them." – [Moryath][51] on [slashdot][52]
-
- [51]: http://slashdot.org/~Moryath
- [52]: http://slashdot.org/comments.pl?sid=1217607&cid=27773965
+"More money is currently spent on research into skin treatments, breast augmentation, and penile enlargement/enhancement treatments, than neurodegenerative disease (like alzheimer’s) treatments. In other words, in 20 years’ time the world is going to be full of 80-year-old people with firm skin, perky tits, big throbbing erections, and absolutely no fucking memory of what to do with them." – [Moryath](http://slashdot.org/~Moryath) on [slashdot](http://slashdot.org/comments.pl?sid=1217607&cid=27773965)
 
 "I can’t find boots high enough to go into Twitter anymore." - [nines09](http://littlegreenfootballs.com/pages/nines09) on [Little Green Footballs](http://littlegreenfootballs.com/comment/9/10690776)
 
