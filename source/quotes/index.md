@@ -116,6 +116,8 @@ description: Quote file
 
 "No schooling was allowed to interfere with my education." - Grant Allen
 
+"If you don't understand why something is happening, you can't fix it. If you didn't fix it, it ain't fixed." - Artur Bergman, "[Full Stack Awareness](https://www.youtube.com/watch?v=oebqlzblfyo)", Velocity Europe
+
 ## Money
 
 "Money is the enemy of the thoughtfully good."
