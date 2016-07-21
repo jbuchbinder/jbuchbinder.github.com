@@ -8,7 +8,7 @@ description: /home/jeff/blog
   {% assign index = true %}
   {% for post in paginator.posts %}
   {% assign content = post.content %}
-    <article>
+    <article class="index">
       {% include article.html %}
     </article>
   {% endfor %}

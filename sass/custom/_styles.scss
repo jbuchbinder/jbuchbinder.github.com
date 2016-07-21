@@ -1,6 +1,39 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+// http://www.lifeathighroad.com/web-development/forcing-to-wraps-to-the-width-of-an-image-using-css-only/
+figure {
+	display: table;
+	width: 1px;
+}
+figure.center {
+	margin: 0 auto 1.5em;
+}
+figure.left {
+	float: left;
+	margin-right: 1.5em;
+}
+figure.right {
+	float: right;
+	margin-left: 1.5em;
+}
+
+// as per the comments on the previous link, when img's max-width is set to 100%, it breaks
+// so, when on large screen, instead of using 100%, use the $max-width
+@media screen and (min-width: 960px) {
+	figure {
+		img { max-width: $max-width; }
+	}
+}
+
+// Align figcaption.
+figure > figcaption {
+	text-align: center;
+	margin-bottom: 1em;
+	font-style: italics;
+	color: #aaa;
+}
+
 table.zebra {
 	margin: auto;
 	font-size: 70%;

@@ -19,3 +19,48 @@
 //$sidebar-pad-medium: 15px;
 //$sidebar-pad-wide: 20px;
 //$sidebar-width-wide: 300px;
+
+.relative {
+	position: relative;
+}
+
+ARTICLE.index {
+	position: relative;
+	height: 600px;
+}
+
+.index-cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+        opacity: 0.2;
+}
+
+@media only screen and (max-width: 768px) {
+	ARTICLE.index {
+		height: auto;
+	}
+	.index-cover {
+		display: none;
+	}
+}
+@media only screen and (max-width: 550px) {
+	ARTICLE.index {
+		height: auto;
+	}
+	.index-cover {
+		display: none;
+	}
+}
+@media only screen and (max-width: 992px) {
+	ARTICLE.index {
+		height: auto;
+	}
+	.index-cover {
+		display: none;
+	}
+}
+
