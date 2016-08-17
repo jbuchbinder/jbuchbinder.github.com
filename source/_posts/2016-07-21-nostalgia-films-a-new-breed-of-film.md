@@ -18,7 +18,7 @@ Amidst a raging torrent of smarmy self-aware postmodern / post-postmodern film, 
 
 ## What is "nostalgia film"?
 
-Plainly put, nostalgia film is film which directly or circuitously references a previous incarnation of the same [larger epistemic system](/2015/03/08/layers/) in an attempt to connect with a viewer. Nostalgia film is no longer content simply to *imply* a sense of nostalgia and self-reference, but instead relies on those qualities in an attempt to deliver a certain level of emotional content.
+Plainly put, nostalgia film is film which directly or circuitously references a previous incarnation of the same [larger epistemic system](/2015/03/08/layers/) in an attempt to connect with a viewer. Nostalgia film is no longer content simply to *imply* a sense of nostalgia and self-reference, but instead relies on those qualities in an attempt to deliver a certain level of emotional content. 
 
 Films have been stealing subject matter from each other for as long as there have been films, and remakes / reboots have been [recycling the same basic plots in different packages](/2015/08/28/the-monomyth-saving-the-cat-and-consistency/). The differences between nostalgia films and remakes are the level of exposed self-awareness in what they're doing and an attempt to capitalize off of that self-referential nature, either monetarily or artistically.
 
