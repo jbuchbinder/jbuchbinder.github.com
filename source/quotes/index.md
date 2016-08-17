@@ -232,6 +232,8 @@ description: Quote file
 
 "That's the standard technique of privatization: defund, make sure things don't work, people get angry, you hand it over to private capital." - Noam Chomsky ([source video](https://www.youtube.com/watch?v=UikhLJNLFK4))
 
+"The dubious beauty of partisan politics is that for partisans, the people are almost interchangeable, and they'll hold their nose and vote for anyone - as long as the candidate they've been told to fear doesn't win." - "[penguinisto](https://slashdot.org/~Penguinisto)" on [slashdot](https://politics.slashdot.org/story/16/07/22/1713226/the-hillary-leaks---wikileaks-releases-19252-previously-unseen-dnc-emails)
+
 ## Racism, Bigotry and the Team Mentality
 
 "Slavery is slavery no matter how nicely the master treats you." – nada from [crooksandliars][29]
