@@ -307,6 +307,8 @@ description: Quote file
 
 "We spend much of our adult lives belonging to clubs to which we secretly believe we are not worthy of belonging."
 
+""A pox on all those who tear down the old merely to make way for something new." - Stan Rogers, Canadian songwriter (forward from "Songs from Fogarty's Cove")
+
 ## Stupidity
 
 "You can stop eating to lose weight, but you’d have to stop breathing to lose stupid" – Anonymous Coward on slashdot
