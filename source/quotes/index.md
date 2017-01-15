@@ -337,6 +337,8 @@ description: Quote file
 
 "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning." - Rick Cook, in The Wizardry Compiled (1989)
 
+"To argue with a man who has renounced the use and authority of reason, and whose philosophy consists in holding humanity in contempt, is like administering medicine to the dead, or endeavoring to convert an atheist by scripture." - Thomas Paine, "The American Crisis" (1776–1783)
+
 ## War / Military / Terrorism
 
 "No bastard ever won a war by dying for his country. He won it by making the other poor dumb bastard die for his country." – General George S. Patton
