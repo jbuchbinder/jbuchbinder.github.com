@@ -16,5 +16,6 @@ Since then, [someone][2] was nice enough to post an updated version of the drive
 
  [2]: http://go7007.imploder.org/
 
-Original driver :   
-Patch : 
+* Original driver :   
+* Patch : [wis-go7007-linux-098-5-20100325.diff](/images/2010/03/wis-go7007-linux-098-5-20100325.diff)
+
