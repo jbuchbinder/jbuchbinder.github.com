@@ -124,6 +124,8 @@ description: Quote file
 
 "If you don't understand why something is happening, you can't fix it. If you didn't fix it, it ain't fixed." - Artur Bergman, "[Full Stack Awareness](https://www.youtube.com/watch?v=oebqlzblfyo)", Velocity Europe
 
+"The first thought that goes through your mind is what you have been conditioned to think; what you think next defines who you are." - Unknown
+
 ## Money
 
 "Money is the enemy of the thoughtfully good."
@@ -308,6 +310,8 @@ description: Quote file
 "We spend much of our adult lives belonging to clubs to which we secretly believe we are not worthy of belonging."
 
 ""A pox on all those who tear down the old merely to make way for something new." - Stan Rogers, Canadian songwriter (forward from "Songs from Fogarty's Cove")
+
+"Socialism never took root in America because the poor see themselves not as an exploited proletariat but as temporarily embarrassed millionaires." - John Steinbeck
 
 ## Stupidity
 
