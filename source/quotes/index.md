@@ -126,6 +126,8 @@ description: Quote file
 
 "The first thought that goes through your mind is what you have been conditioned to think; what you think next defines who you are." - Unknown
 
+"Everything is a poison, nothing is a poison.  It is the dose that makes the poison." - Paracelsus
+
 ## Money
 
 "Money is the enemy of the thoughtfully good."
